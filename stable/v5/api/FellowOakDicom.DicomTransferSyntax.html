@@ -1,0 +1,2095 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DicomTransferSyntax
+   | Fellow Oak DICOM 5 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DicomTransferSyntax
+   | Fellow Oak DICOM 5 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FellowOakDicom.DicomTransferSyntax">
+  
+  
+  <h1 id="FellowOakDicom_DicomTransferSyntax" data-uid="FellowOakDicom.DicomTransferSyntax" class="text-break">Class DicomTransferSyntax
+  </h1>
+  <div class="markdown level0 summary"><p>Representation of a DICOM transfer syntax.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="FellowOakDicom.DicomParseable.html">DicomParseable</a></div>
+    <div class="level2"><span class="xref">DicomTransferSyntax</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomParseable.html#FellowOakDicom_DicomParseable_Parse__1_System_String_">DicomParseable.Parse&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.html">FellowOakDicom</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="FellowOakDicom_DicomTransferSyntax_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DicomTransferSyntax : DicomParseable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_DeflatedExplicitVRLittleEndian" data-uid="FellowOakDicom.DicomTransferSyntax.DeflatedExplicitVRLittleEndian">DeflatedExplicitVRLittleEndian</h4>
+  <div class="markdown level1 summary"><p>Deflated Explicit VR Little Endian</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax DeflatedExplicitVRLittleEndian</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_ExplicitVRBigEndian" data-uid="FellowOakDicom.DicomTransferSyntax.ExplicitVRBigEndian">ExplicitVRBigEndian</h4>
+  <div class="markdown level1 summary"><p>Explicit VR Big Endian</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax ExplicitVRBigEndian</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_ExplicitVRLittleEndian" data-uid="FellowOakDicom.DicomTransferSyntax.ExplicitVRLittleEndian">ExplicitVRLittleEndian</h4>
+  <div class="markdown level1 summary"><p>Explicit VR Little Endian</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax ExplicitVRLittleEndian</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_GEPrivateImplicitVRBigEndian" data-uid="FellowOakDicom.DicomTransferSyntax.GEPrivateImplicitVRBigEndian">GEPrivateImplicitVRBigEndian</h4>
+  <div class="markdown level1 summary"><p>GE Private Implicit VR Big Endian</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax GEPrivateImplicitVRBigEndian</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_DicomTransferSyntax_GEPrivateImplicitVRBigEndian_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Same as Implicit VR Little Endian except for big endian pixel data.</p>
+</div>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_HEVCH265Main10ProfileLevel51" data-uid="FellowOakDicom.DicomTransferSyntax.HEVCH265Main10ProfileLevel51">HEVCH265Main10ProfileLevel51</h4>
+  <div class="markdown level1 summary"><p>HEVC/H.265 Main 10 Profile / Level 5.1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax HEVCH265Main10ProfileLevel51</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_HEVCH265MainProfileLevel51" data-uid="FellowOakDicom.DicomTransferSyntax.HEVCH265MainProfileLevel51">HEVCH265MainProfileLevel51</h4>
+  <div class="markdown level1 summary"><p>HEVC/H.265 Main Profile / Level 5.1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax HEVCH265MainProfileLevel51</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_ImplicitVRBigEndian" data-uid="FellowOakDicom.DicomTransferSyntax.ImplicitVRBigEndian">ImplicitVRBigEndian</h4>
+  <div class="markdown level1 summary"><p>Virtual transfer syntax for reading datasets improperly encoded in Big Endian format with implicit VR.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax ImplicitVRBigEndian</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_ImplicitVRLittleEndian" data-uid="FellowOakDicom.DicomTransferSyntax.ImplicitVRLittleEndian">ImplicitVRLittleEndian</h4>
+  <div class="markdown level1 summary"><p>Implicit VR Little Endian</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax ImplicitVRLittleEndian</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEG2000Lossless" data-uid="FellowOakDicom.DicomTransferSyntax.JPEG2000Lossless">JPEG2000Lossless</h4>
+  <div class="markdown level1 summary"><p>JPEG 2000 Lossless Image Compression</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEG2000Lossless</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEG2000Lossy" data-uid="FellowOakDicom.DicomTransferSyntax.JPEG2000Lossy">JPEG2000Lossy</h4>
+  <div class="markdown level1 summary"><p>JPEG 2000 Lossy Image Compression</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEG2000Lossy</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEG2000Part2MultiComponent" data-uid="FellowOakDicom.DicomTransferSyntax.JPEG2000Part2MultiComponent">JPEG2000Part2MultiComponent</h4>
+  <div class="markdown level1 summary"><p>JPEG 2000 Part 2 Multi-component Image Compression</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEG2000Part2MultiComponent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEG2000Part2MultiComponentLosslessOnly" data-uid="FellowOakDicom.DicomTransferSyntax.JPEG2000Part2MultiComponentLosslessOnly">JPEG2000Part2MultiComponentLosslessOnly</h4>
+  <div class="markdown level1 summary"><p>JPEG 2000 Part 2 Multi-component Image Compression (Lossless Only)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEG2000Part2MultiComponentLosslessOnly</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGLSLossless" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGLSLossless">JPEGLSLossless</h4>
+  <div class="markdown level1 summary"><p>JPEG-LS Lossless Image Compression</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGLSLossless</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGLSNearLossless" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGLSNearLossless">JPEGLSNearLossless</h4>
+  <div class="markdown level1 summary"><p>JPEG-LS Lossy (Near-Lossless) Image Compression</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGLSNearLossless</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess1" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess1">JPEGProcess1</h4>
+  <div class="markdown level1 summary"><p>JPEG Baseline (Process 1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess10_12Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess10_12Retired">JPEGProcess10_12Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Full Progression, Non-Hierarchical (Process 10 &amp; 12) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess10_12Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess11_13Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess11_13Retired">JPEGProcess11_13Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Full Progression, Non-Hierarchical (Process 11 &amp; 13) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess11_13Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess14" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess14">JPEGProcess14</h4>
+  <div class="markdown level1 summary"><p>JPEG Lossless, Non-Hierarchical (Process 14)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess14</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess14SV1" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess14SV1">JPEGProcess14SV1</h4>
+  <div class="markdown level1 summary"><p>JPEG Lossless, Non-Hierarchical, First-Order Prediction (Process 14 [Selection Value 1])</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess14SV1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess15Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess15Retired">JPEGProcess15Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Lossless, Non-Hierarchical (Process 15) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess15Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess16_18Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess16_18Retired">JPEGProcess16_18Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Extended, Hierarchical (Process 16 &amp; 18) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess16_18Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess17_19Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess17_19Retired">JPEGProcess17_19Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Extended, Hierarchical (Process 17 &amp; 19) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess17_19Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess2_4" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess2_4">JPEGProcess2_4</h4>
+  <div class="markdown level1 summary"><p>JPEG Extended (Process 2 &amp; 4)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess2_4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess20_22Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess20_22Retired">JPEGProcess20_22Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Spectral Selection, Hierarchical (Process 20 &amp; 22) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess20_22Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess21_23Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess21_23Retired">JPEGProcess21_23Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Spectral Selection, Hierarchical (Process 21 &amp; 23) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess21_23Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess24_26Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess24_26Retired">JPEGProcess24_26Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Full Progression, Hierarchical (Process 24 &amp; 26) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess24_26Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess25_27Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess25_27Retired">JPEGProcess25_27Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Full Progression, Hierarchical (Process 25 &amp; 27) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess25_27Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess28Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess28Retired">JPEGProcess28Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Lossless, Hierarchical (Process 28) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess28Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess29Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess29Retired">JPEGProcess29Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Lossless, Hierarchical (Process 29) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess29Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess3_5Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess3_5Retired">JPEGProcess3_5Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Extended (Process 3 &amp; 5) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess3_5Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess6_8Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess6_8Retired">JPEGProcess6_8Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Spectral Selection, Non-Hierarchical (Process 6 &amp; 8) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess6_8Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPEGProcess7_9Retired" data-uid="FellowOakDicom.DicomTransferSyntax.JPEGProcess7_9Retired">JPEGProcess7_9Retired</h4>
+  <div class="markdown level1 summary"><p>JPEG Spectral Selection, Non-Hierarchical (Process 7 &amp; 9) (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPEGProcess7_9Retired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPIPReferenced" data-uid="FellowOakDicom.DicomTransferSyntax.JPIPReferenced">JPIPReferenced</h4>
+  <div class="markdown level1 summary"><p>JPIP Referenced</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPIPReferenced</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_JPIPReferencedDeflate" data-uid="FellowOakDicom.DicomTransferSyntax.JPIPReferencedDeflate">JPIPReferencedDeflate</h4>
+  <div class="markdown level1 summary"><p>JPIP Referenced Deflate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax JPIPReferencedDeflate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_MPEG2" data-uid="FellowOakDicom.DicomTransferSyntax.MPEG2">MPEG2</h4>
+  <div class="markdown level1 summary"><p>MPEG2 Main Profile @ Main Level</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax MPEG2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_MPEG2MainProfileHighLevel" data-uid="FellowOakDicom.DicomTransferSyntax.MPEG2MainProfileHighLevel">MPEG2MainProfileHighLevel</h4>
+  <div class="markdown level1 summary"><p>MPEG2 Main Profile / High Level</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax MPEG2MainProfileHighLevel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_MPEG4AVCH264BDCompatibleHighProfileLevel41" data-uid="FellowOakDicom.DicomTransferSyntax.MPEG4AVCH264BDCompatibleHighProfileLevel41">MPEG4AVCH264BDCompatibleHighProfileLevel41</h4>
+  <div class="markdown level1 summary"><p>MPEG-4 AVC/H.264 BD-compatible High Profile / Level 4.1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax MPEG4AVCH264BDCompatibleHighProfileLevel41</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_MPEG4AVCH264HighProfileLevel41" data-uid="FellowOakDicom.DicomTransferSyntax.MPEG4AVCH264HighProfileLevel41">MPEG4AVCH264HighProfileLevel41</h4>
+  <div class="markdown level1 summary"><p>MPEG-4 AVC/H.264 High Profile / Level 4.1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax MPEG4AVCH264HighProfileLevel41</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_MPEG4AVCH264HighProfileLevel42For2DVideo" data-uid="FellowOakDicom.DicomTransferSyntax.MPEG4AVCH264HighProfileLevel42For2DVideo">MPEG4AVCH264HighProfileLevel42For2DVideo</h4>
+  <div class="markdown level1 summary"><p>MPEG-4 AVC/H.264 High Profile / Level 4.2 For 2D Video</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax MPEG4AVCH264HighProfileLevel42For2DVideo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_MPEG4AVCH264HighProfileLevel42For3DVideo" data-uid="FellowOakDicom.DicomTransferSyntax.MPEG4AVCH264HighProfileLevel42For3DVideo">MPEG4AVCH264HighProfileLevel42For3DVideo</h4>
+  <div class="markdown level1 summary"><p>MPEG-4 AVC/H.264 High Profile / Level 4.2 For 3D Video</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax MPEG4AVCH264HighProfileLevel42For3DVideo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_MPEG4AVCH264StereoHighProfileLevel42" data-uid="FellowOakDicom.DicomTransferSyntax.MPEG4AVCH264StereoHighProfileLevel42">MPEG4AVCH264StereoHighProfileLevel42</h4>
+  <div class="markdown level1 summary"><p>MPEG-4 AVC/H.264 Stereo High Profile / Level 4.2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax MPEG4AVCH264StereoHighProfileLevel42</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_Papyrus3ImplicitVRLittleEndianRetired" data-uid="FellowOakDicom.DicomTransferSyntax.Papyrus3ImplicitVRLittleEndianRetired">Papyrus3ImplicitVRLittleEndianRetired</h4>
+  <div class="markdown level1 summary"><p>Papyrus 3 Implicit VR Little Endian (Retired)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax Papyrus3ImplicitVRLittleEndianRetired</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_RFC2557MIMEEncapsulation" data-uid="FellowOakDicom.DicomTransferSyntax.RFC2557MIMEEncapsulation">RFC2557MIMEEncapsulation</h4>
+  <div class="markdown level1 summary"><p>RFC 2557 MIME encapsulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax RFC2557MIMEEncapsulation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_RLELossless" data-uid="FellowOakDicom.DicomTransferSyntax.RLELossless">RLELossless</h4>
+  <div class="markdown level1 summary"><p>RLE Lossless</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax RLELossless</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FellowOakDicom_DicomTransferSyntax_XMLEncoding" data-uid="FellowOakDicom.DicomTransferSyntax.XMLEncoding">XMLEncoding</h4>
+  <div class="markdown level1 summary"><p>XML Encoding</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomTransferSyntax XMLEncoding</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_Endian_" data-uid="FellowOakDicom.DicomTransferSyntax.Endian*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_Endian" data-uid="FellowOakDicom.DicomTransferSyntax.Endian">Endian</h4>
+  <div class="markdown level1 summary"><p>Gets the endianness of the transfer syntax.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Endian Endian { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Endian</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_IsDeflate_" data-uid="FellowOakDicom.DicomTransferSyntax.IsDeflate*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_IsDeflate" data-uid="FellowOakDicom.DicomTransferSyntax.IsDeflate">IsDeflate</h4>
+  <div class="markdown level1 summary"><p>Gets whether or not the transfer syntax represents deflatable objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDeflate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_IsEncapsulated_" data-uid="FellowOakDicom.DicomTransferSyntax.IsEncapsulated*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_IsEncapsulated" data-uid="FellowOakDicom.DicomTransferSyntax.IsEncapsulated">IsEncapsulated</h4>
+  <div class="markdown level1 summary"><p>Gets whether or not the transfer syntax data representation is encapsulated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEncapsulated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_IsExplicitVR_" data-uid="FellowOakDicom.DicomTransferSyntax.IsExplicitVR*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_IsExplicitVR" data-uid="FellowOakDicom.DicomTransferSyntax.IsExplicitVR">IsExplicitVR</h4>
+  <div class="markdown level1 summary"><p>Gets whether or not the Value Representation of the transfer syntax is explicit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExplicitVR { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_IsLossy_" data-uid="FellowOakDicom.DicomTransferSyntax.IsLossy*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_IsLossy" data-uid="FellowOakDicom.DicomTransferSyntax.IsLossy">IsLossy</h4>
+  <div class="markdown level1 summary"><p>Gets whether or not the transfer syntax data representation is lossy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLossy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_IsRetired_" data-uid="FellowOakDicom.DicomTransferSyntax.IsRetired*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_IsRetired" data-uid="FellowOakDicom.DicomTransferSyntax.IsRetired">IsRetired</h4>
+  <div class="markdown level1 summary"><p>Gets whether or not the transfer syntax is declared retired.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRetired { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_KnownEntries_" data-uid="FellowOakDicom.DicomTransferSyntax.KnownEntries*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_KnownEntries" data-uid="FellowOakDicom.DicomTransferSyntax.KnownEntries">KnownEntries</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;DicomTransferSyntax&gt; KnownEntries { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_LossyCompressionMethod_" data-uid="FellowOakDicom.DicomTransferSyntax.LossyCompressionMethod*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_LossyCompressionMethod" data-uid="FellowOakDicom.DicomTransferSyntax.LossyCompressionMethod">LossyCompressionMethod</h4>
+  <div class="markdown level1 summary"><p>Gets the lossy compression method identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LossyCompressionMethod { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_SwapPixelData_" data-uid="FellowOakDicom.DicomTransferSyntax.SwapPixelData*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_SwapPixelData" data-uid="FellowOakDicom.DicomTransferSyntax.SwapPixelData">SwapPixelData</h4>
+  <div class="markdown level1 summary"><p>Gets whether or not the pixel data requires swapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SwapPixelData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_UID_" data-uid="FellowOakDicom.DicomTransferSyntax.UID*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_UID" data-uid="FellowOakDicom.DicomTransferSyntax.UID">UID</h4>
+  <div class="markdown level1 summary"><p>Gets the unique identifier of the transfer syntax.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomUID UID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomUID.html">DicomUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_Equals_" data-uid="FellowOakDicom.DicomTransferSyntax.Equals*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_Equals_System_Object_" data-uid="FellowOakDicom.DicomTransferSyntax.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a></div>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_GetHashCode_" data-uid="FellowOakDicom.DicomTransferSyntax.GetHashCode*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_GetHashCode" data-uid="FellowOakDicom.DicomTransferSyntax.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a></div>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_Lookup_" data-uid="FellowOakDicom.DicomTransferSyntax.Lookup*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_Lookup_FellowOakDicom_DicomUID_" data-uid="FellowOakDicom.DicomTransferSyntax.Lookup(FellowOakDicom.DicomUID)">Lookup(DicomUID)</h4>
+  <div class="markdown level1 summary"><p>Get transfer syntax (pre-defined or built on-the-fly) for the specified <code data-dev-comment-type="paramref" class="paramref">uid</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DicomTransferSyntax Lookup(DicomUID uid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomUID.html">DicomUID</a></td>
+        <td><span class="parametername">uid</span></td>
+        <td><p>Transfer syntax UID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td><p>Transfer syntax object, either pre-defined or built on-the-fly.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_DicomTransferSyntax_Lookup_FellowOakDicom_DicomUID__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If transfer syntax object is built on-the-fly, value representation is set to Explicit, encapsulation is set to <pre><code>true</code></pre>
+and endianness is set to <a class="xref" href="FellowOakDicom.IO.Endian.html#FellowOakDicom_IO_Endian_Little">Little</a>.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomDataException.html">DicomDataException</a></td>
+        <td><p>Thrown in the specified UID is not a transfer syntax type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_Parse_" data-uid="FellowOakDicom.DicomTransferSyntax.Parse*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_Parse_System_String_" data-uid="FellowOakDicom.DicomTransferSyntax.Parse(System.String)">Parse(String)</h4>
+  <div class="markdown level1 summary"><p>Get the transfer syntax from the specified <code data-dev-comment-type="paramref" class="paramref">uid</code> string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DicomTransferSyntax Parse(string uid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">uid</span></td>
+        <td><p>String representing transfer syntax UID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td><p><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a> object corresponding to <code data-dev-comment-type="paramref" class="paramref">uid</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_DicomTransferSyntax_Parse_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html#FellowOakDicom_DicomTransferSyntax_Parse_System_String_">Parse(String)</a> is a wrapper around <a class="xref" href="FellowOakDicom.DicomTransferSyntax.html#FellowOakDicom_DicomTransferSyntax_Lookup_FellowOakDicom_DicomUID_">Lookup(DicomUID)</a> for string based <code data-dev-comment-type="paramref" class="paramref">uid</code>.</p>
+</div>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_Query_" data-uid="FellowOakDicom.DicomTransferSyntax.Query*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_Query_FellowOakDicom_DicomUID_" data-uid="FellowOakDicom.DicomTransferSyntax.Query(FellowOakDicom.DicomUID)">Query(DicomUID)</h4>
+  <div class="markdown level1 summary"><p>Query DicomTransferSyntax by UID. returns null if not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DicomTransferSyntax Query(DicomUID uid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomUID.html">DicomUID</a></td>
+        <td><span class="parametername">uid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_Register_" data-uid="FellowOakDicom.DicomTransferSyntax.Register*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_Register_FellowOakDicom_DicomUID_" data-uid="FellowOakDicom.DicomTransferSyntax.Register(FellowOakDicom.DicomUID)">Register(DicomUID)</h4>
+  <div class="markdown level1 summary"><p>register transfer syntax into internal dictionary, assuming Little Endian and Explicit VR.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DicomTransferSyntax Register(DicomUID uid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomUID.html">DicomUID</a></td>
+        <td><span class="parametername">uid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_Register_" data-uid="FellowOakDicom.DicomTransferSyntax.Register*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_Register_FellowOakDicom_DicomUID_Endian_System_Boolean_System_Boolean_" data-uid="FellowOakDicom.DicomTransferSyntax.Register(FellowOakDicom.DicomUID,Endian,System.Boolean,System.Boolean)">Register(DicomUID, Endian, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>register transfer syntax into internal dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DicomTransferSyntax Register(DicomUID uid, Endian endian, bool isExplicitVR = true, bool isEncapsulated = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomUID.html">DicomUID</a></td>
+        <td><span class="parametername">uid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Endian</span></td>
+        <td><span class="parametername">endian</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isExplicitVR</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isEncapsulated</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_ToString_" data-uid="FellowOakDicom.DicomTransferSyntax.ToString*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_ToString" data-uid="FellowOakDicom.DicomTransferSyntax.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_Unregister_" data-uid="FellowOakDicom.DicomTransferSyntax.Unregister*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_Unregister_FellowOakDicom_DicomTransferSyntax_" data-uid="FellowOakDicom.DicomTransferSyntax.Unregister(FellowOakDicom.DicomTransferSyntax)">Unregister(DicomTransferSyntax)</h4>
+  <div class="markdown level1 summary"><p>unregister transfer syntax from internal dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Unregister(DicomTransferSyntax ts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td><span class="parametername">ts</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_Unregister_" data-uid="FellowOakDicom.DicomTransferSyntax.Unregister*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_Unregister_FellowOakDicom_DicomUID_" data-uid="FellowOakDicom.DicomTransferSyntax.Unregister(FellowOakDicom.DicomUID)">Unregister(DicomUID)</h4>
+  <div class="markdown level1 summary"><p>unregister transfer syntax from internal dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Unregister(DicomUID uid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomUID.html">DicomUID</a></td>
+        <td><span class="parametername">uid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_op_Equality_" data-uid="FellowOakDicom.DicomTransferSyntax.op_Equality*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_op_Equality_FellowOakDicom_DicomTransferSyntax_FellowOakDicom_DicomTransferSyntax_" data-uid="FellowOakDicom.DicomTransferSyntax.op_Equality(FellowOakDicom.DicomTransferSyntax,FellowOakDicom.DicomTransferSyntax)">Equality(DicomTransferSyntax, DicomTransferSyntax)</h4>
+  <div class="markdown level1 summary"><p>Equivalence operator for <a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a> objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(DicomTransferSyntax a, DicomTransferSyntax b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>Left-hand side <a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a> to check for equivalence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Right-hand side <a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a> to check for equivalence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if <a class="xref" href="FellowOakDicom.DicomTransferSyntax.html#FellowOakDicom_DicomTransferSyntax_UID">UID</a> of <a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a> objects are equivalent or if both objects are <pre><code>null</code></pre>,
+false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomTransferSyntax_op_Inequality_" data-uid="FellowOakDicom.DicomTransferSyntax.op_Inequality*"></a>
+  <h4 id="FellowOakDicom_DicomTransferSyntax_op_Inequality_FellowOakDicom_DicomTransferSyntax_FellowOakDicom_DicomTransferSyntax_" data-uid="FellowOakDicom.DicomTransferSyntax.op_Inequality(FellowOakDicom.DicomTransferSyntax,FellowOakDicom.DicomTransferSyntax)">Inequality(DicomTransferSyntax, DicomTransferSyntax)</h4>
+  <div class="markdown level1 summary"><p>Non-equivalence operator for <a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a> objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(DicomTransferSyntax a, DicomTransferSyntax b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>Left-hand side <a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a> to check for non-eequivalence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Right-hand side <a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a> to check for non-equivalence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if <a class="xref" href="FellowOakDicom.DicomTransferSyntax.html#FellowOakDicom_DicomTransferSyntax_UID">UID</a> of <a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a> objects are non-equivalent or exactly one of
+the objects are <pre><code>null</code></pre>, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

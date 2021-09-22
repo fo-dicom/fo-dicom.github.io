@@ -1,0 +1,3093 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DicomDataset
+   | fo-dicom 4 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DicomDataset
+   | fo-dicom 4 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Dicom.DicomDataset">
+  
+  
+  <h1 id="Dicom_DicomDataset" data-uid="Dicom.DicomDataset" class="text-break">Class DicomDataset
+  </h1>
+  <div class="markdown level0 summary"><p>A collection of <a class="xref" href="Dicom.DicomItem.html">DicomItem</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">DicomDataset</span></div>
+      <div class="level2"><a class="xref" href="Dicom.DicomFileMetaInformation.html">DicomFileMetaInformation</a></div>
+      <div class="level2"><a class="xref" href="Dicom.Media.DicomDirectoryRecord.html">DicomDirectoryRecord</a></div>
+      <div class="level2"><a class="xref" href="Dicom.Printing.FilmBox.html">FilmBox</a></div>
+      <div class="level2"><a class="xref" href="Dicom.Printing.FilmSession.html">FilmSession</a></div>
+      <div class="level2"><a class="xref" href="Dicom.Printing.ImageBox.html">ImageBox</a></div>
+      <div class="level2"><a class="xref" href="Dicom.Printing.PresentationLut.html">PresentationLut</a></div>
+      <div class="level2"><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></div>
+      <div class="level2"><a class="xref" href="Dicom.StructuredReport.DicomMeasuredValue.html">DicomMeasuredValue</a></div>
+      <div class="level2"><a class="xref" href="Dicom.StructuredReport.DicomReferencedSOP.html">DicomReferencedSOP</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Dicom.DicomItem.html">DicomItem</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Dicom.html">Dicom</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Dicom_DicomDataset_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DicomDataset : IEnumerable&lt;DicomItem&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Dicom_DicomDataset__ctor_" data-uid="Dicom.DicomDataset.#ctor*"></a>
+  <h4 id="Dicom_DicomDataset__ctor" data-uid="Dicom.DicomDataset.#ctor">DicomDataset()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a> class with <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_InternalTransferSyntax">InternalTransferSyntax</a>
+set to Explicit VR Little Endian (DICOM default transfer syntax).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset()</code></pre>
+  </div>
+  
+  
+  <a id="Dicom_DicomDataset__ctor_" data-uid="Dicom.DicomDataset.#ctor*"></a>
+  <h4 id="Dicom_DicomDataset__ctor_Dicom_DicomItem___" data-uid="Dicom.DicomDataset.#ctor(Dicom.DicomItem[])">DicomDataset(DicomItem[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset(params DicomItem[] items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomItem.html">DicomItem</a>[]</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>An array of DICOM items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset__ctor_" data-uid="Dicom.DicomDataset.#ctor*"></a>
+  <h4 id="Dicom_DicomDataset__ctor_Dicom_DicomTransferSyntax_" data-uid="Dicom.DicomDataset.#ctor(Dicom.DicomTransferSyntax)">DicomDataset(DicomTransferSyntax)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset(DicomTransferSyntax internalTransferSyntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td><span class="parametername">internalTransferSyntax</span></td>
+        <td><p>Internal transfer syntax representation of the dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset__ctor_" data-uid="Dicom.DicomDataset.#ctor*"></a>
+  <h4 id="Dicom_DicomDataset__ctor_System_Collections_Generic_IEnumerable_Dicom_DicomItem__" data-uid="Dicom.DicomDataset.#ctor(System.Collections.Generic.IEnumerable{Dicom.DicomItem})">DicomDataset(IEnumerable&lt;DicomItem&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset(IEnumerable&lt;DicomItem&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Dicom.DicomItem.html">DicomItem</a>&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>A collection of DICOM items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Dicom_DicomDataset_AutoValidate_" data-uid="Dicom.DicomDataset.AutoValidate*"></a>
+  <h4 id="Dicom_DicomDataset_AutoValidate" data-uid="Dicom.DicomDataset.AutoValidate">AutoValidate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets if the content of DicomItems shall be validated as soon as they are added to the DicomDataset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use this property with care. You can suppress validation, but be aware you might create invalid Datasets if you need to set this property.&quot;, false)]
+public bool AutoValidate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_InternalTransferSyntax_" data-uid="Dicom.DicomDataset.InternalTransferSyntax*"></a>
+  <h4 id="Dicom_DicomDataset_InternalTransferSyntax" data-uid="Dicom.DicomDataset.InternalTransferSyntax">InternalTransferSyntax</h4>
+  <div class="markdown level1 summary"><p>Gets the DICOM transfer syntax of this dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomTransferSyntax InternalTransferSyntax { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Dicom_DicomDataset_Add_" data-uid="Dicom.DicomDataset.Add*"></a>
+  <h4 id="Dicom_DicomDataset_Add_Dicom_DicomItem___" data-uid="Dicom.DicomDataset.Add(Dicom.DicomItem[])">Add(DicomItem[])</h4>
+  <div class="markdown level1 summary"><p>Add a collection of DICOM items to the dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset Add(params DicomItem[] items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomItem.html">DicomItem</a>[]</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>Collection of DICOM items to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag of added item already exists in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_Add_" data-uid="Dicom.DicomDataset.Add*"></a>
+  <h4 id="Dicom_DicomDataset_Add_System_Collections_Generic_IEnumerable_Dicom_DicomItem__" data-uid="Dicom.DicomDataset.Add(System.Collections.Generic.IEnumerable{Dicom.DicomItem})">Add(IEnumerable&lt;DicomItem&gt;)</h4>
+  <div class="markdown level1 summary"><p>Add a collection of DICOM items to the dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset Add(IEnumerable&lt;DicomItem&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Dicom.DicomItem.html">DicomItem</a>&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>Collection of DICOM items to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag of added item already exists in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_Add_" data-uid="Dicom.DicomDataset.Add*"></a>
+  <h4 id="Dicom_DicomDataset_Add__1_Dicom_DicomTag___0___" data-uid="Dicom.DicomDataset.Add``1(Dicom.DicomTag,``0[])">Add&lt;T&gt;(DicomTag, T[])</h4>
+  <div class="markdown level1 summary"><p>Add single DICOM item given by <code data-dev-comment-type="paramref" class="paramref">tag</code> and <code data-dev-comment-type="paramref" class="paramref">values</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset Add&lt;T&gt;(DicomTag tag, params T[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>DICOM tag of the added item.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Values of the added item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of added values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag already exists in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_Add_" data-uid="Dicom.DicomDataset.Add*"></a>
+  <h4 id="Dicom_DicomDataset_Add__1_Dicom_DicomTag_Encoding___0___" data-uid="Dicom.DicomDataset.Add``1(Dicom.DicomTag,Encoding,``0[])">Add&lt;T&gt;(DicomTag, Encoding, T[])</h4>
+  <div class="markdown level1 summary"><p>Add single DICOM item given by <code data-dev-comment-type="paramref" class="paramref">tag</code> and <code data-dev-comment-type="paramref" class="paramref">values</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset Add&lt;T&gt;(DicomTag tag, Encoding encoding, params T[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>DICOM tag of the added item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Encoding to be applied when adding item to the dataset.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Values of the added item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of added values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag already exists in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_Add_" data-uid="Dicom.DicomDataset.Add*"></a>
+  <h4 id="Dicom_DicomDataset_Add__1_Dicom_DicomVR_Dicom_DicomTag___0___" data-uid="Dicom.DicomDataset.Add``1(Dicom.DicomVR,Dicom.DicomTag,``0[])">Add&lt;T&gt;(DicomVR, DicomTag, T[])</h4>
+  <div class="markdown level1 summary"><p>Add single DICOM item given by <code data-dev-comment-type="paramref" class="paramref">vr</code>, <code data-dev-comment-type="paramref" class="paramref">tag</code> and <code data-dev-comment-type="paramref" class="paramref">values</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset Add&lt;T&gt;(DicomVR vr, DicomTag tag, params T[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomVR.html">DicomVR</a></td>
+        <td><span class="parametername">vr</span></td>
+        <td><p>DICOM vr of the added item. Use when setting a private element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>DICOM tag of the added item.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Values of the added item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of added values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_DicomDataset_Add__1_Dicom_DicomVR_Dicom_DicomTag___0____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>No validation is performed on the <code data-dev-comment-type="paramref" class="paramref">vr</code> matching the element <code data-dev-comment-type="paramref" class="paramref">tag</code>
+This method is useful when adding a private tag and need to explicitly set the VR of the created element.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag already exists in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_Add_" data-uid="Dicom.DicomDataset.Add*"></a>
+  <h4 id="Dicom_DicomDataset_Add__1_Dicom_DicomVR_Dicom_DicomTag_Encoding___0___" data-uid="Dicom.DicomDataset.Add``1(Dicom.DicomVR,Dicom.DicomTag,Encoding,``0[])">Add&lt;T&gt;(DicomVR, DicomTag, Encoding, T[])</h4>
+  <div class="markdown level1 summary"><p>Add single DICOM item given by <code data-dev-comment-type="paramref" class="paramref">vr</code>, <code data-dev-comment-type="paramref" class="paramref">tag</code> and <code data-dev-comment-type="paramref" class="paramref">values</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset Add&lt;T&gt;(DicomVR vr, DicomTag tag, Encoding encoding, params T[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomVR.html">DicomVR</a></td>
+        <td><span class="parametername">vr</span></td>
+        <td><p>DICOM vr of the added item. Use when setting a private element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>DICOM tag of the added item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Encoding to be applied when adding item to the dataset.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Values of the added item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of added values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_DicomDataset_Add__1_Dicom_DicomVR_Dicom_DicomTag_Encoding___0____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>No validation is performed on the <code data-dev-comment-type="paramref" class="paramref">vr</code> matching the element <code data-dev-comment-type="paramref" class="paramref">tag</code>
+This method is useful when adding a private tag and need to explicitly set the VR of the created element.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag already exists in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_AddOrUpdate_" data-uid="Dicom.DicomDataset.AddOrUpdate*"></a>
+  <h4 id="Dicom_DicomDataset_AddOrUpdate_Dicom_DicomItem___" data-uid="Dicom.DicomDataset.AddOrUpdate(Dicom.DicomItem[])">AddOrUpdate(DicomItem[])</h4>
+  <div class="markdown level1 summary"><p>Add a collection of DICOM items to the dataset. Update existing items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset AddOrUpdate(params DicomItem[] items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomItem.html">DicomItem</a>[]</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>Collection of DICOM items to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_AddOrUpdate_" data-uid="Dicom.DicomDataset.AddOrUpdate*"></a>
+  <h4 id="Dicom_DicomDataset_AddOrUpdate_System_Collections_Generic_IEnumerable_Dicom_DicomItem__" data-uid="Dicom.DicomDataset.AddOrUpdate(System.Collections.Generic.IEnumerable{Dicom.DicomItem})">AddOrUpdate(IEnumerable&lt;DicomItem&gt;)</h4>
+  <div class="markdown level1 summary"><p>Add a collection of DICOM items to the dataset. Update existing items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset AddOrUpdate(IEnumerable&lt;DicomItem&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Dicom.DicomItem.html">DicomItem</a>&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>Collection of DICOM items to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_AddOrUpdate_" data-uid="Dicom.DicomDataset.AddOrUpdate*"></a>
+  <h4 id="Dicom_DicomDataset_AddOrUpdate__1_Dicom_DicomTag___0___" data-uid="Dicom.DicomDataset.AddOrUpdate``1(Dicom.DicomTag,``0[])">AddOrUpdate&lt;T&gt;(DicomTag, T[])</h4>
+  <div class="markdown level1 summary"><p>Add or update a single DICOM item given by <code data-dev-comment-type="paramref" class="paramref">tag</code> and <code data-dev-comment-type="paramref" class="paramref">values</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset AddOrUpdate&lt;T&gt;(DicomTag tag, params T[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>DICOM tag of the added item.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Values of the added item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of added values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_AddOrUpdate_" data-uid="Dicom.DicomDataset.AddOrUpdate*"></a>
+  <h4 id="Dicom_DicomDataset_AddOrUpdate__1_Dicom_DicomTag_Encoding___0___" data-uid="Dicom.DicomDataset.AddOrUpdate``1(Dicom.DicomTag,Encoding,``0[])">AddOrUpdate&lt;T&gt;(DicomTag, Encoding, T[])</h4>
+  <div class="markdown level1 summary"><p>Add or update a single DICOM item given by <code data-dev-comment-type="paramref" class="paramref">tag</code> and <code data-dev-comment-type="paramref" class="paramref">values</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset AddOrUpdate&lt;T&gt;(DicomTag tag, Encoding encoding, params T[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>DICOM tag of the added item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Encoding to be applied when adding item to the dataset.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Values of the added item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of added values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_AddOrUpdate_" data-uid="Dicom.DicomDataset.AddOrUpdate*"></a>
+  <h4 id="Dicom_DicomDataset_AddOrUpdate__1_Dicom_DicomVR_Dicom_DicomTag___0___" data-uid="Dicom.DicomDataset.AddOrUpdate``1(Dicom.DicomVR,Dicom.DicomTag,``0[])">AddOrUpdate&lt;T&gt;(DicomVR, DicomTag, T[])</h4>
+  <div class="markdown level1 summary"><p>Add or update a single DICOM item given by <code data-dev-comment-type="paramref" class="paramref">vr</code>, <code data-dev-comment-type="paramref" class="paramref">tag</code> and <code data-dev-comment-type="paramref" class="paramref">values</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset AddOrUpdate&lt;T&gt;(DicomVR vr, DicomTag tag, params T[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomVR.html">DicomVR</a></td>
+        <td><span class="parametername">vr</span></td>
+        <td><p>DICOM vr of the added item. Use when setting a private element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>DICOM tag of the added item.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Values of the added item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of added values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_DicomDataset_AddOrUpdate__1_Dicom_DicomVR_Dicom_DicomTag___0____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>No validation is performed on the <code data-dev-comment-type="paramref" class="paramref">vr</code> matching the element <code data-dev-comment-type="paramref" class="paramref">tag</code>
+This method is useful when adding a private tag and need to explicitly set the VR of the created element.</p>
+</div>
+  
+  
+  <a id="Dicom_DicomDataset_AddOrUpdate_" data-uid="Dicom.DicomDataset.AddOrUpdate*"></a>
+  <h4 id="Dicom_DicomDataset_AddOrUpdate__1_Dicom_DicomVR_Dicom_DicomTag_Encoding___0___" data-uid="Dicom.DicomDataset.AddOrUpdate``1(Dicom.DicomVR,Dicom.DicomTag,Encoding,``0[])">AddOrUpdate&lt;T&gt;(DicomVR, DicomTag, Encoding, T[])</h4>
+  <div class="markdown level1 summary"><p>Add or update a single DICOM item given by <code data-dev-comment-type="paramref" class="paramref">vr</code>, <code data-dev-comment-type="paramref" class="paramref">tag</code> and <code data-dev-comment-type="paramref" class="paramref">values</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset AddOrUpdate&lt;T&gt;(DicomVR vr, DicomTag tag, Encoding encoding, params T[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomVR.html">DicomVR</a></td>
+        <td><span class="parametername">vr</span></td>
+        <td><p>DICOM vr of the added item. Use when setting a private element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>DICOM tag of the added item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Encoding to be applied when adding item to the dataset.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Values of the added item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of added values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_DicomDataset_AddOrUpdate__1_Dicom_DicomVR_Dicom_DicomTag_Encoding___0____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>No validation is performed on the <code data-dev-comment-type="paramref" class="paramref">vr</code> matching the element <code data-dev-comment-type="paramref" class="paramref">tag</code>
+This method is useful when adding a private tag and need to explicitly set the VR of the created element.</p>
+</div>
+  
+  
+  <a id="Dicom_DicomDataset_AddOrUpdatePixelData_" data-uid="Dicom.DicomDataset.AddOrUpdatePixelData*"></a>
+  <h4 id="Dicom_DicomDataset_AddOrUpdatePixelData_Dicom_DicomVR_IByteBuffer_Dicom_DicomTransferSyntax_" data-uid="Dicom.DicomDataset.AddOrUpdatePixelData(Dicom.DicomVR,IByteBuffer,Dicom.DicomTransferSyntax)">AddOrUpdatePixelData(DicomVR, IByteBuffer, DicomTransferSyntax)</h4>
+  <div class="markdown level1 summary"><p>Add or update the image pixel data element in the dataset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use DicomPixelData.AddFrame(IByteBuffer) to add pixel data to underlying dataset.&quot;)]
+public DicomDataset AddOrUpdatePixelData(DicomVR vr, IByteBuffer pixelData, DicomTransferSyntax transferSyntax = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomVR.html">DicomVR</a></td>
+        <td><span class="parametername">vr</span></td>
+        <td><p>DICOM vr of the image pixel. For a PixelData element this value should be either DicomVR.OB or DicomVR.OW DICOM VR.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IByteBuffer</span></td>
+        <td><span class="parametername">pixelData</span></td>
+        <td><p>An <see cref="!:IByteBuffer"></see> that holds the image pixel data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td><span class="parametername">transferSyntax</span></td>
+        <td><p>A DicomTransferSyntax object of the <code data-dev-comment-type="paramref" class="paramref">pixelData</code> parameter.
+If parameter is not provided (null), then the default TransferSyntax &quot;ExplicitVRLittleEndian&quot; will be applied to the dataset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_DicomDataset_AddOrUpdatePixelData_Dicom_DicomVR_IByteBuffer_Dicom_DicomTransferSyntax__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use this method whenever you are attaching an external image pixel data to the dataset and provide the proper TransferSyntax</p>
+</div>
+  
+  
+  <a id="Dicom_DicomDataset_Clear_" data-uid="Dicom.DicomDataset.Clear*"></a>
+  <h4 id="Dicom_DicomDataset_Clear" data-uid="Dicom.DicomDataset.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Removes all items from the dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset Clear()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>Current Dataset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_Contains_" data-uid="Dicom.DicomDataset.Contains*"></a>
+  <h4 id="Dicom_DicomDataset_Contains_Dicom_DicomTag_" data-uid="Dicom.DicomDataset.Contains(Dicom.DicomTag)">Contains(DicomTag)</h4>
+  <div class="markdown level1 summary"><p>Checks the DICOM dataset to determine if the dataset already contains an item with the specified tag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(DicomTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>DICOM tag to test</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>True</code> if a DICOM item with the specified tag already exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_CopyTo_" data-uid="Dicom.DicomDataset.CopyTo*"></a>
+  <h4 id="Dicom_DicomDataset_CopyTo_Dicom_DicomDataset_" data-uid="Dicom.DicomDataset.CopyTo(Dicom.DicomDataset)">CopyTo(DicomDataset)</h4>
+  <div class="markdown level1 summary"><p>Copies all items to the destination dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset CopyTo(DicomDataset destination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>Destination Dataset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>Current Dataset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_CopyTo_" data-uid="Dicom.DicomDataset.CopyTo*"></a>
+  <h4 id="Dicom_DicomDataset_CopyTo_Dicom_DicomDataset_Dicom_DicomMaskedTag_" data-uid="Dicom.DicomDataset.CopyTo(Dicom.DicomDataset,Dicom.DicomMaskedTag)">CopyTo(DicomDataset, DicomMaskedTag)</h4>
+  <div class="markdown level1 summary"><p>Copies tags matching mask to the destination dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset CopyTo(DicomDataset destination, DicomMaskedTag mask)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>Destination Dataset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomMaskedTag.html">DicomMaskedTag</a></td>
+        <td><span class="parametername">mask</span></td>
+        <td><p>Tags to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>Current Dataset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_CopyTo_" data-uid="Dicom.DicomDataset.CopyTo*"></a>
+  <h4 id="Dicom_DicomDataset_CopyTo_Dicom_DicomDataset_Dicom_DicomTag___" data-uid="Dicom.DicomDataset.CopyTo(Dicom.DicomDataset,Dicom.DicomTag[])">CopyTo(DicomDataset, DicomTag[])</h4>
+  <div class="markdown level1 summary"><p>Copies tags to the destination dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset CopyTo(DicomDataset destination, params DicomTag[] tags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>Destination Dataset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a>[]</td>
+        <td><span class="parametername">tags</span></td>
+        <td><p>Tags to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>Current Dataset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_Get_" data-uid="Dicom.DicomDataset.Get*"></a>
+  <h4 id="Dicom_DicomDataset_Get_Dicom_DicomTag_System_Int32_" data-uid="Dicom.DicomDataset.Get(Dicom.DicomTag,System.Int32)">Get(DicomTag, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the integer element value of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>, or default value if dataset does not contain <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GetValue, GetValues, GetSingleValue or GetSequence instead. See https://github.com/fo-dicom/fo-dicom/wiki/Getting-data&quot;)]
+public int Get(DicomTag tag, int defaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td><p>Default value to apply if <code data-dev-comment-type="paramref" class="paramref">tag</code> is not contained in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>Element value corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataException.html">DicomDataException</a></td>
+        <td><p>If the element corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code> cannot be converted to an integer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_Get_" data-uid="Dicom.DicomDataset.Get*"></a>
+  <h4 id="Dicom_DicomDataset_Get__1_Dicom_DicomTag___0_" data-uid="Dicom.DicomDataset.Get``1(Dicom.DicomTag,``0)">Get&lt;T&gt;(DicomTag, T)</h4>
+  <div class="markdown level1 summary"><p>Gets the item or element value of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>, or default value if dataset does not contain <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GetValue, GetValues, GetSingleValue or GetSequence instead. See https://github.com/fo-dicom/fo-dicom/wiki/Getting-data&quot;)]
+public T Get&lt;T&gt;(DicomTag tag, T defaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td><p>Default value to apply if <code data-dev-comment-type="paramref" class="paramref">tag</code> is not contained in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Item or element value corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the return value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_DicomDataset_Get__1_Dicom_DicomTag___0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In code, consider to use this method with implicit type specification, since <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> can be inferred from
+<code data-dev-comment-type="paramref" class="paramref">defaultValue</code>, e.g. prefer <pre><code>dataset.Get(tag, &quot;Default&quot;)</code></pre> over <pre><code>dataset.Get&lt;string&gt;(tag, &quot;Default&quot;)</code></pre>.</p>
+</div>
+  
+  
+  <a id="Dicom_DicomDataset_Get_" data-uid="Dicom.DicomDataset.Get*"></a>
+  <h4 id="Dicom_DicomDataset_Get__1_Dicom_DicomTag_System_Int32_" data-uid="Dicom.DicomDataset.Get``1(Dicom.DicomTag,System.Int32)">Get&lt;T&gt;(DicomTag, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the item or element value of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GetValue, GetValues, GetSingleValue or GetSequence instead. See https://github.com/fo-dicom/fo-dicom/wiki/Getting-data&quot;)]
+public T Get&lt;T&gt;(DicomTag tag, int n = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>Item index (for multi-valued elements).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Item or element value corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the return value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataException.html">DicomDataException</a></td>
+        <td><p>If the dataset does not contain <code data-dev-comment-type="paramref" class="paramref">tag</code> or if the specified
+<code data-dev-comment-type="paramref" class="paramref">n</code> is out-of-range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_Get_" data-uid="Dicom.DicomDataset.Get*"></a>
+  <h4 id="Dicom_DicomDataset_Get__1_Dicom_DicomTag_System_Int32___0_" data-uid="Dicom.DicomDataset.Get``1(Dicom.DicomTag,System.Int32,``0)">Get&lt;T&gt;(DicomTag, Int32, T)</h4>
+  <div class="markdown level1 summary"><p>Gets the item or element value of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>, or default value if dataset does not contain <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GetValue, GetValues, GetSingleValue or GetSequence instead. See https://github.com/fo-dicom/fo-dicom/wiki/Getting-data&quot;)]
+public T Get&lt;T&gt;(DicomTag tag, int n, T defaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>Item index (for multi-valued elements).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td><p>Default value to apply if <code data-dev-comment-type="paramref" class="paramref">tag</code> is not contained in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Item or element value corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the return value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetCodeItem_" data-uid="Dicom.DicomDataset.GetCodeItem*"></a>
+  <h4 id="Dicom_DicomDataset_GetCodeItem_Dicom_DicomTag_" data-uid="Dicom.DicomDataset.GetCodeItem(Dicom.DicomTag)">GetCodeItem(DicomTag)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomCodeItem GetCodeItem(DicomTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DicomCodeItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetDicomItem_" data-uid="Dicom.DicomDataset.GetDicomItem*"></a>
+  <h4 id="Dicom_DicomDataset_GetDicomItem__1_Dicom_DicomTag_" data-uid="Dicom.DicomDataset.GetDicomItem``1(Dicom.DicomTag)">GetDicomItem&lt;T&gt;(DicomTag)</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Dicom.DicomItem.html">DicomItem</a> of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetDicomItem&lt;T&gt;(DicomTag tag)
+    where T : DicomItem</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Item corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code> or <pre><code>null</code></pre> if the <code data-dev-comment-type="paramref" class="paramref">tag</code> is not contained in the instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the return value. Must inherit from <a class="xref" href="Dicom.DicomItem.html">DicomItem</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetEnumerator_" data-uid="Dicom.DicomDataset.GetEnumerator*"></a>
+  <h4 id="Dicom_DicomDataset_GetEnumerator" data-uid="Dicom.DicomDataset.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Enumerates all DICOM items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;DicomItem&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Dicom.DicomItem.html">DicomItem</a>&gt;</td>
+        <td><p>Enumeration of DICOM items</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetMeasuredValue_" data-uid="Dicom.DicomDataset.GetMeasuredValue*"></a>
+  <h4 id="Dicom_DicomDataset_GetMeasuredValue_Dicom_DicomTag_" data-uid="Dicom.DicomDataset.GetMeasuredValue(Dicom.DicomTag)">GetMeasuredValue(DicomTag)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomMeasuredValue GetMeasuredValue(DicomTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DicomMeasuredValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetPrivateTag_" data-uid="Dicom.DicomDataset.GetPrivateTag*"></a>
+  <h4 id="Dicom_DicomDataset_GetPrivateTag_Dicom_DicomTag_" data-uid="Dicom.DicomDataset.GetPrivateTag(Dicom.DicomTag)">GetPrivateTag(DicomTag)</h4>
+  <div class="markdown level1 summary"><p>Converts a dictionary tag to a valid private tag. Creates the private creator tag if needed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomTag GetPrivateTag(DicomTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Dictionary DICOM tag</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><p>Private DICOM tag, or null if all groups are already used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetReferencedSOP_" data-uid="Dicom.DicomDataset.GetReferencedSOP*"></a>
+  <h4 id="Dicom_DicomDataset_GetReferencedSOP_Dicom_DicomTag_" data-uid="Dicom.DicomDataset.GetReferencedSOP(Dicom.DicomTag)">GetReferencedSOP(DicomTag)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomReferencedSOP GetReferencedSOP(DicomTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DicomReferencedSOP</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetSequence_" data-uid="Dicom.DicomDataset.GetSequence*"></a>
+  <h4 id="Dicom_DicomDataset_GetSequence_Dicom_DicomTag_" data-uid="Dicom.DicomDataset.GetSequence(Dicom.DicomTag)">GetSequence(DicomTag)</h4>
+  <div class="markdown level1 summary"><p>Gets the sequence of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomSequence GetSequence(DicomTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomSequence.html">DicomSequence</a></td>
+        <td><p>Sequence of datasets corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataException.html">DicomDataException</a></td>
+        <td><p>If the dataset does not contain <code data-dev-comment-type="paramref" class="paramref">tag</code> or this is not a sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetSingleValue_" data-uid="Dicom.DicomDataset.GetSingleValue*"></a>
+  <h4 id="Dicom_DicomDataset_GetSingleValue__1_Dicom_DicomTag_" data-uid="Dicom.DicomDataset.GetSingleValue``1(Dicom.DicomTag)">GetSingleValue&lt;T&gt;(DicomTag)</h4>
+  <div class="markdown level1 summary"><p>Gets the element value of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>, whose value multiplicity has to be 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetSingleValue&lt;T&gt;(DicomTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Element values corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the return value. This cannot be an array type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataException.html">DicomDataException</a></td>
+        <td><p>If the dataset does not contain <code data-dev-comment-type="paramref" class="paramref">tag</code>, is empty or is multi-valued.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetSingleValueOrDefault_" data-uid="Dicom.DicomDataset.GetSingleValueOrDefault*"></a>
+  <h4 id="Dicom_DicomDataset_GetSingleValueOrDefault__1_Dicom_DicomTag___0_" data-uid="Dicom.DicomDataset.GetSingleValueOrDefault``1(Dicom.DicomTag,``0)">GetSingleValueOrDefault&lt;T&gt;(DicomTag, T)</h4>
+  <div class="markdown level1 summary"><p>Gets the element value of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>, whose value multiplicity has to be 1, or the provided <code data-dev-comment-type="paramref" class="paramref">defaultValue</code> if the element value does not exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetSingleValueOrDefault&lt;T&gt;(DicomTag tag, T defaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td><p>Value that is returned if the requested element value does not exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the return value. This cannot be an array type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetString_" data-uid="Dicom.DicomDataset.GetString*"></a>
+  <h4 id="Dicom_DicomDataset_GetString_Dicom_DicomTag_" data-uid="Dicom.DicomDataset.GetString(Dicom.DicomTag)">GetString(DicomTag)</h4>
+  <div class="markdown level1 summary"><p>Gets a string representation of the value of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetString(DicomTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>String representing the element value corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataException.html">DicomDataException</a></td>
+        <td><p>If the dataset does not contain <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetValue_" data-uid="Dicom.DicomDataset.GetValue*"></a>
+  <h4 id="Dicom_DicomDataset_GetValue__1_Dicom_DicomTag_System_Int32_" data-uid="Dicom.DicomDataset.GetValue``1(Dicom.DicomTag,System.Int32)">GetValue&lt;T&gt;(DicomTag, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the <code data-dev-comment-type="paramref" class="paramref">index</code>-th element value of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetValue&lt;T&gt;(DicomTag tag, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Item index (for multi-valued elements).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Element value corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the return value. This cannot be an array type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataException.html">DicomDataException</a></td>
+        <td><p>If the dataset does not contain <code data-dev-comment-type="paramref" class="paramref">tag</code> or if the specified
+<code data-dev-comment-type="paramref" class="paramref">index</code> is out-of-range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetValueCount_" data-uid="Dicom.DicomDataset.GetValueCount*"></a>
+  <h4 id="Dicom_DicomDataset_GetValueCount_Dicom_DicomTag_" data-uid="Dicom.DicomDataset.GetValueCount(Dicom.DicomTag)">GetValueCount(DicomTag)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of values in the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetValueCount(DicomTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataException.html">DicomDataException</a></td>
+        <td><p>If the dataset does not contain <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetValueOrDefault_" data-uid="Dicom.DicomDataset.GetValueOrDefault*"></a>
+  <h4 id="Dicom_DicomDataset_GetValueOrDefault__1_Dicom_DicomTag_System_Int32___0_" data-uid="Dicom.DicomDataset.GetValueOrDefault``1(Dicom.DicomTag,System.Int32,``0)">GetValueOrDefault&lt;T&gt;(DicomTag, Int32, T)</h4>
+  <div class="markdown level1 summary"><p>Gets the <code data-dev-comment-type="paramref" class="paramref">index</code>-th element value of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code> or the provided <code data-dev-comment-type="paramref" class="paramref">defaultValue</code> if the requested value is not contained in the dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetValueOrDefault&lt;T&gt;(DicomTag tag, int index, T defaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Item index (for multi-valued elements).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td><p>Value that is returned if the requested element value does not exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the return value. This cannot be an array type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_GetValues_" data-uid="Dicom.DicomDataset.GetValues*"></a>
+  <h4 id="Dicom_DicomDataset_GetValues__1_Dicom_DicomTag_" data-uid="Dicom.DicomDataset.GetValues``1(Dicom.DicomTag)">GetValues&lt;T&gt;(DicomTag)</h4>
+  <div class="markdown level1 summary"><p>Gets the array of element values of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] GetValues&lt;T&gt;(DicomTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>Element values corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the return value. This cannot be an array type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataException.html">DicomDataException</a></td>
+        <td><p>If the dataset does not contain <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_Remove_" data-uid="Dicom.DicomDataset.Remove*"></a>
+  <h4 id="Dicom_DicomDataset_Remove_Dicom_DicomTag___" data-uid="Dicom.DicomDataset.Remove(Dicom.DicomTag[])">Remove(DicomTag[])</h4>
+  <div class="markdown level1 summary"><p>Removes items for specified tags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset Remove(params DicomTag[] tags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a>[]</td>
+        <td><span class="parametername">tags</span></td>
+        <td><p>DICOM tags to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>Current Dataset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_Remove_" data-uid="Dicom.DicomDataset.Remove*"></a>
+  <h4 id="Dicom_DicomDataset_Remove_System_Func_Dicom_DicomItem_System_Boolean__" data-uid="Dicom.DicomDataset.Remove(System.Func{Dicom.DicomItem,System.Boolean})">Remove(Func&lt;DicomItem, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes items where the selector function returns true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset Remove(Func&lt;DicomItem, bool&gt; selector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Dicom.DicomItem.html">DicomItem</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">selector</span></td>
+        <td><p>Selector function</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>Current Dataset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_ToString_" data-uid="Dicom.DicomDataset.ToString*"></a>
+  <h4 id="Dicom_DicomDataset_ToString" data-uid="Dicom.DicomDataset.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A string that represents the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  
+  
+  <a id="Dicom_DicomDataset_TryGetSequence_" data-uid="Dicom.DicomDataset.TryGetSequence*"></a>
+  <h4 id="Dicom_DicomDataset_TryGetSequence_Dicom_DicomTag_Dicom_DicomSequence__" data-uid="Dicom.DicomDataset.TryGetSequence(Dicom.DicomTag,Dicom.DicomSequence@)">TryGetSequence(DicomTag, out DicomSequence)</h4>
+  <div class="markdown level1 summary"><p>Gets the sequence of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetSequence(DicomTag tag, out DicomSequence sequence)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomSequence.html">DicomSequence</a></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>Sequence of datasets corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns <pre><code>true</code></pre> if the <code data-dev-comment-type="paramref" class="paramref">tag</code> could be returned as sequence, <pre><code>false</code></pre> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_TryGetSingleValue_" data-uid="Dicom.DicomDataset.TryGetSingleValue*"></a>
+  <h4 id="Dicom_DicomDataset_TryGetSingleValue__1_Dicom_DicomTag___0__" data-uid="Dicom.DicomDataset.TryGetSingleValue``1(Dicom.DicomTag,``0@)">TryGetSingleValue&lt;T&gt;(DicomTag, out T)</h4>
+  <div class="markdown level1 summary"><p>Tries to get the element value of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>, whose value multiplicity has to be 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetSingleValue&lt;T&gt;(DicomTag tag, out T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns <pre><code>true</code></pre> if the element values could be exctracted, otherwise <pre><code>false</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the return value. This cannot be an array type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_TryGetString_" data-uid="Dicom.DicomDataset.TryGetString*"></a>
+  <h4 id="Dicom_DicomDataset_TryGetString_Dicom_DicomTag_System_String__" data-uid="Dicom.DicomDataset.TryGetString(Dicom.DicomTag,System.String@)">TryGetString(DicomTag, out String)</h4>
+  <div class="markdown level1 summary"><p>Tries to get a string representation of the value of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetString(DicomTag tag, out string stringValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">stringValue</span></td>
+        <td><p>String representing the element value corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns <pre><code>false</code></pre> if the dataset does not contain the tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_TryGetValue_" data-uid="Dicom.DicomDataset.TryGetValue*"></a>
+  <h4 id="Dicom_DicomDataset_TryGetValue__1_Dicom_DicomTag_System_Int32___0__" data-uid="Dicom.DicomDataset.TryGetValue``1(Dicom.DicomTag,System.Int32,``0@)">TryGetValue&lt;T&gt;(DicomTag, Int32, out T)</h4>
+  <div class="markdown level1 summary"><p>Tries to get the <code data-dev-comment-type="paramref" class="paramref">index</code>-th element value of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetValue&lt;T&gt;(DicomTag tag, int index, out T elementValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Item index (for multi-valued elements).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">elementValue</span></td>
+        <td><p>Element value corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns <pre><code>true</code></pre> if the element value could be exctracted, otherwise <pre><code>false</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the return value. This cannot be an array type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_TryGetValues_" data-uid="Dicom.DicomDataset.TryGetValues*"></a>
+  <h4 id="Dicom_DicomDataset_TryGetValues__1_Dicom_DicomTag___0____" data-uid="Dicom.DicomDataset.TryGetValues``1(Dicom.DicomTag,``0[]@)">TryGetValues&lt;T&gt;(DicomTag, out T[])</h4>
+  <div class="markdown level1 summary"><p>Tries to get the array of element values of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetValues&lt;T&gt;(DicomTag tag, out T[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns <pre><code>true</code></pre> if the element values could be exctracted, otherwise <pre><code>false</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the return value. This cannot be an array type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_DicomDataset_Validate_" data-uid="Dicom.DicomDataset.Validate*"></a>
+  <h4 id="Dicom_DicomDataset_Validate" data-uid="Dicom.DicomDataset.Validate">Validate()</h4>
+  <div class="markdown level1 summary"><p>Performs a validation of all DICOM items that are contained in this DicomDataset. This explicit call for validation ignores the
+gobal DicomValidation.AutoValidate and DicomDataset.AutoValidate property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Validate()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomValidationException.html">DicomValidationException</a></td>
+        <td><p>A exception is thrown if one of the items does not pass the valiation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Dicom_DicomDataset_System_Collections_IEnumerable_GetEnumerator_" data-uid="Dicom.DicomDataset.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="Dicom_DicomDataset_System_Collections_IEnumerable_GetEnumerator" data-uid="Dicom.DicomDataset.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Enumerates all DICOM items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><p>Enumeration of DICOM items</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

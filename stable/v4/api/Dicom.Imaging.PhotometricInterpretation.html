@@ -1,0 +1,889 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PhotometricInterpretation
+   | fo-dicom 4 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PhotometricInterpretation
+   | fo-dicom 4 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Dicom.Imaging.PhotometricInterpretation">
+  
+  
+  <h1 id="Dicom_Imaging_PhotometricInterpretation" data-uid="Dicom.Imaging.PhotometricInterpretation" class="text-break">Class PhotometricInterpretation
+  </h1>
+  <div class="markdown level0 summary"><p>Photometric Interpretation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Dicom.DicomParseable.html">DicomParseable</a></div>
+    <div class="level2"><span class="xref">PhotometricInterpretation</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Dicom.DicomParseable.html#Dicom_DicomParseable_Parse__1_System_String_">DicomParseable.Parse&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Dicom.Imaging.html">Dicom.Imaging</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Dicom_Imaging_PhotometricInterpretation_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PhotometricInterpretation : DicomParseable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_Monochrome1" data-uid="Dicom.Imaging.PhotometricInterpretation.Monochrome1">Monochrome1</h4>
+  <div class="markdown level1 summary"><p>Pixel data represent a single monochrome image plane. The minimum sample value is intended
+to be displayed as white after any VOI gray scale transformations have been performed. See
+PS 3.4. This value may be used only when Samples per Pixel (0028,0002) has a value of 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly PhotometricInterpretation Monochrome1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_Monochrome2" data-uid="Dicom.Imaging.PhotometricInterpretation.Monochrome2">Monochrome2</h4>
+  <div class="markdown level1 summary"><p>Pixel data represent a single monochrome image plane. The minimum sample value is intended
+to be displayed as black after any VOI gray scale transformations have been performed. See
+PS 3.4. This value may be used only when Samples per Pixel (0028,0002) has a value of 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly PhotometricInterpretation Monochrome2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_PaletteColor" data-uid="Dicom.Imaging.PhotometricInterpretation.PaletteColor">PaletteColor</h4>
+  <div class="markdown level1 summary"><p>Pixel data describe a color image with a single sample per pixel (single image plane). The
+pixel value is used as an index into each of the Red, Blue, and Green Palette Color Lookup
+Tables (0028,1101-1103 &amp; 1201-1203). This value may be used only when Samples per Pixel (0028,0002)
+has a value of 1. When the Photometric Interpretation is Palette Color; Red, Blue, and Green
+Palette Color Lookup Tables shall be present.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly PhotometricInterpretation PaletteColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_Rgb" data-uid="Dicom.Imaging.PhotometricInterpretation.Rgb">Rgb</h4>
+  <div class="markdown level1 summary"><p>Pixel data represent a color image described by red, green, and blue image planes. The minimum
+sample value for each color plane represents minimum intensity of the color. This value may be
+used only when Samples per Pixel (0028,0002) has a value of 3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly PhotometricInterpretation Rgb</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_YbrFull" data-uid="Dicom.Imaging.PhotometricInterpretation.YbrFull">YbrFull</h4>
+  <div class="markdown level1 summary"><p>Pixel data represent a color image described by one luminance (Y) and two chrominance planes
+(Cb and Cr). This photometric interpretation may be used only when Samples per Pixel (0028,0002)
+has a value of 3. Black is represented by Y equal to zero. The absence of color is represented
+by both Cb and Cr values equal to half full scale.</p>
+<p>In the case where Bits Allocated (0028,0100) has a value of 8 then the following equations convert
+between RGB and YCBCR Photometric Interpretation:
+Y  = + .2990R + .5870G + .1140B
+Cb = - .1687R - .3313G + .5000B + 128
+Cr = + .5000R - .4187G - .0813B + 128</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly PhotometricInterpretation YbrFull</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_YbrFull422" data-uid="Dicom.Imaging.PhotometricInterpretation.YbrFull422">YbrFull422</h4>
+  <div class="markdown level1 summary"><p>The same as YBR_FULL except that the Cb and Cr values are sampled horizontally at half the Y rate
+and as a result there are half as many Cb and Cr values as Y values.</p>
+<p>This Photometric Interpretation is only allowed with Planar Configuration (0028,0006) equal to 0.<br>
+Two Y values shall be stored followed by one Cb and one Cr value. The Cb and Cr values shall be
+sampled at the location of the first of the two Y values. For each Row of Pixels, the first Cb and
+Cr samples shall be at the location of the first Y sample. The next Cb and Cr samples shall be
+at the location of the third Y sample etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly PhotometricInterpretation YbrFull422</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_YbrIct" data-uid="Dicom.Imaging.PhotometricInterpretation.YbrIct">YbrIct</h4>
+  <div class="markdown level1 summary"><p>Pixel data represent a color image described by one luminance (Y) and two chrominance planes
+(Cb and Cr). This photometric interpretation may be used only when Samples per Pixel (0028,0002) has
+a value of 3. Black is represented by Y equal to zero. The absence of color is represented by both
+Cb and Cr values equal to zero.</p>
+<p>Regardless of the value of Bits Allocated (0028,0100), the following equations convert between RGB
+and YCbCr Photometric Interpretation:
+Y  = + .29900R + .58700G + .11400B
+Cb = - .16875R - .33126G + .50000B
+Cr = + .50000R - .41869G - .08131B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly PhotometricInterpretation YbrIct</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_YbrPartial420" data-uid="Dicom.Imaging.PhotometricInterpretation.YbrPartial420">YbrPartial420</h4>
+  <div class="markdown level1 summary"><p>The same as YBR_PARTIAL_422 except that the Cb and Cr values are sampled horizontally and vertically
+at half the Y rate and as a result there are four times less Cb and Cr values than Y values, versus
+twice less for YBR_PARTIAL_422.</p>
+<p>This Photometric Interpretation is only allowed with Planar Configuration (0028,0006) equal to 0.<br>
+The Cb and Cr values shall be sampled at the location of the first of the two Y values. For the first
+Row of Pixels (etc.), the first Cb and Cr samples shall be at the location of the first Y sample.  The
+next Cb and Cr samples shall be at the location of the third Y sample etc. The next Rows of Pixels
+containing Cb and Cr samples (at the same locations than for the first Row) will be the third etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly PhotometricInterpretation YbrPartial420</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_YbrPartial422" data-uid="Dicom.Imaging.PhotometricInterpretation.YbrPartial422">YbrPartial422</h4>
+  <div class="markdown level1 summary"><p>The same as YBR_FULL_422 except that:</p>
+<ol><li></li><li></li><li></li><li></li><li></li></ol>
+<p>In the case where Bits Allocated (0028,0100) has value of 8 then the following equations convert
+between RGB and YBR_PARTIAL_422 Photometric Interpretation:
+Y  = + .2568R + .5041G + .0979B + 16
+Cb = - .1482R - .2910G + .4392B + 128
+Cr = + .4392R - .3678G - .0714B + 128</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly PhotometricInterpretation YbrPartial422</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_YbrRct" data-uid="Dicom.Imaging.PhotometricInterpretation.YbrRct">YbrRct</h4>
+  <div class="markdown level1 summary"><p>Pixel data represent a color image described by one luminance (Y) and two chrominance planes
+(Cb and Cr). This photometric interpretation may be used only when Samples per Pixel (0028,0002)
+has a value of 3. Black is represented by Y equal to zero. The absence of color is represented
+by both Cb and Cr values equal to zero.</p>
+<p>Regardless of the value of Bits Allocated (0028,0100), the following equations convert between
+RGB and YBR_RCT Photometric Interpretation:
+Y  = floor((R + 2G +B) / 4)
+Cb = B - G
+Cr = R - G</p>
+<p>The following equations convert between YBR_RCT and RGB Photometric Interpretation:
+R = Cr + G
+G = Y – floor((Cb + Cr) / 4)
+B = Cb + G</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly PhotometricInterpretation YbrRct</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Dicom_Imaging_PhotometricInterpretation_ColorSpace_" data-uid="Dicom.Imaging.PhotometricInterpretation.ColorSpace*"></a>
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_ColorSpace" data-uid="Dicom.Imaging.PhotometricInterpretation.ColorSpace">ColorSpace</h4>
+  <div class="markdown level1 summary"><p>Gets the color space of the photometric interpretation, or <pre><code>null</code></pre> if <a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html#Dicom_Imaging_PhotometricInterpretation_IsPalette">IsPalette</a> is <pre><code>false</code></pre>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ColorSpace ColorSpace { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.ColorSpace.html">ColorSpace</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Imaging_PhotometricInterpretation_Description_" data-uid="Dicom.Imaging.PhotometricInterpretation.Description*"></a>
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_Description" data-uid="Dicom.Imaging.PhotometricInterpretation.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets the description of the photometric interpretation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Imaging_PhotometricInterpretation_IsColor_" data-uid="Dicom.Imaging.PhotometricInterpretation.IsColor*"></a>
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_IsColor" data-uid="Dicom.Imaging.PhotometricInterpretation.IsColor">IsColor</h4>
+  <div class="markdown level1 summary"><p>Gets whether or not the photometric interpretation represents color (true) or grayscale (false).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Imaging_PhotometricInterpretation_IsPalette_" data-uid="Dicom.Imaging.PhotometricInterpretation.IsPalette*"></a>
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_IsPalette" data-uid="Dicom.Imaging.PhotometricInterpretation.IsPalette">IsPalette</h4>
+  <div class="markdown level1 summary"><p>Gets whether or not the photometric interpretation is represented by a palette of colors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPalette { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Imaging_PhotometricInterpretation_IsYBR_" data-uid="Dicom.Imaging.PhotometricInterpretation.IsYBR*"></a>
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_IsYBR" data-uid="Dicom.Imaging.PhotometricInterpretation.IsYBR">IsYBR</h4>
+  <div class="markdown level1 summary"><p>Gets whether or not the photometric interpretation represents an YBR color scheme.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsYBR { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Imaging_PhotometricInterpretation_Value_" data-uid="Dicom.Imaging.PhotometricInterpretation.Value*"></a>
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_Value" data-uid="Dicom.Imaging.PhotometricInterpretation.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Gets the identifier value, corresponding with a DICOM defined term for tag (0028, 0004).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Dicom_Imaging_PhotometricInterpretation_Equals_" data-uid="Dicom.Imaging.PhotometricInterpretation.Equals*"></a>
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_Equals_System_Object_" data-uid="Dicom.Imaging.PhotometricInterpretation.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a></div>
+  
+  
+  <a id="Dicom_Imaging_PhotometricInterpretation_GetHashCode_" data-uid="Dicom.Imaging.PhotometricInterpretation.GetHashCode*"></a>
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_GetHashCode" data-uid="Dicom.Imaging.PhotometricInterpretation.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a></div>
+  
+  
+  <a id="Dicom_Imaging_PhotometricInterpretation_Parse_" data-uid="Dicom.Imaging.PhotometricInterpretation.Parse*"></a>
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_Parse_System_String_" data-uid="Dicom.Imaging.PhotometricInterpretation.Parse(System.String)">Parse(String)</h4>
+  <div class="markdown level1 summary"><p>Parse the photometric interpretation based on a string, typically obtained by reading DICOM tag (0028,0004).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PhotometricInterpretation Parse(string photometricInterpretation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">photometricInterpretation</span></td>
+        <td><p>String to be parsed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td><p><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a> object corresponding to the parsed <code data-dev-comment-type="paramref" class="paramref">photometricInterpretation</code> string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.DicomImagingException.html">DicomImagingException</a></td>
+        <td><p>Thrown when the parsed string cannot be matched with the known photometric interpretations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Imaging_PhotometricInterpretation_ToString_" data-uid="Dicom.Imaging.PhotometricInterpretation.ToString*"></a>
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_ToString" data-uid="Dicom.Imaging.PhotometricInterpretation.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="Dicom_Imaging_PhotometricInterpretation_op_Equality_" data-uid="Dicom.Imaging.PhotometricInterpretation.op_Equality*"></a>
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_op_Equality_Dicom_Imaging_PhotometricInterpretation_Dicom_Imaging_PhotometricInterpretation_" data-uid="Dicom.Imaging.PhotometricInterpretation.op_Equality(Dicom.Imaging.PhotometricInterpretation,Dicom.Imaging.PhotometricInterpretation)">Equality(PhotometricInterpretation, PhotometricInterpretation)</h4>
+  <div class="markdown level1 summary"><p>Equivalence operator for <a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(PhotometricInterpretation a, PhotometricInterpretation b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>Left-hand side object to compare for equivalence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Right-hand side object to compare for equivalence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if both objects are <pre><code>null</code></pre> or <a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a> objects with the same <a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html#Dicom_Imaging_PhotometricInterpretation_Value">Value</a>,
+false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Imaging_PhotometricInterpretation_op_Inequality_" data-uid="Dicom.Imaging.PhotometricInterpretation.op_Inequality*"></a>
+  <h4 id="Dicom_Imaging_PhotometricInterpretation_op_Inequality_Dicom_Imaging_PhotometricInterpretation_Dicom_Imaging_PhotometricInterpretation_" data-uid="Dicom.Imaging.PhotometricInterpretation.op_Inequality(Dicom.Imaging.PhotometricInterpretation,Dicom.Imaging.PhotometricInterpretation)">Inequality(PhotometricInterpretation, PhotometricInterpretation)</h4>
+  <div class="markdown level1 summary"><p>Non-equivalence operator for <a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(PhotometricInterpretation a, PhotometricInterpretation b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>Left-hand side object to compare for non-equivalence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Right-hand side object to compare for none-equivalence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if exactly one object is <pre><code>null</code></pre> or if both are <a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a> objects with different <a class="xref" href="Dicom.Imaging.PhotometricInterpretation.html#Dicom_Imaging_PhotometricInterpretation_Value">Value</a>,
+false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
