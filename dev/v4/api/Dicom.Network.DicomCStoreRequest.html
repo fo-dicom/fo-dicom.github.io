@@ -1,0 +1,571 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DicomCStoreRequest
+   | fo-dicom 4 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DicomCStoreRequest
+   | fo-dicom 4 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Dicom.Network.DicomCStoreRequest">
+  
+  
+  <h1 id="Dicom_Network_DicomCStoreRequest" data-uid="Dicom.Network.DicomCStoreRequest" class="text-break">Class DicomCStoreRequest
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a DICOM C-Store request to be sent to a C-Store SCP or a C-Store request that has been received from a C-Store SCU.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Dicom.Network.DicomMessage.html">DicomMessage</a></div>
+    <div class="level2"><a class="xref" href="Dicom.Network.DicomRequest.html">DicomRequest</a></div>
+    <div class="level3"><a class="xref" href="Dicom.Network.DicomPriorityRequest.html">DicomPriorityRequest</a></div>
+    <div class="level4"><span class="xref">DicomCStoreRequest</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomPriorityRequest.html#Dicom_Network_DicomPriorityRequest_Priority">DicomPriorityRequest.Priority</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomRequest.html#Dicom_Network_DicomRequest_MessageID">DicomRequest.MessageID</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomRequest.html#Dicom_Network_DicomRequest_OnTimeout">DicomRequest.OnTimeout</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomRequest.html#Dicom_Network_DicomRequest_CreatePresentationContext_Dicom_DicomTransferSyntax___">DicomRequest.CreatePresentationContext(DicomTransferSyntax[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_Type">DicomMessage.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_SOPClassUID">DicomMessage.SOPClassUID</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_HasDataset">DicomMessage.HasDataset</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_PresentationContext">DicomMessage.PresentationContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_ApplicationInfo">DicomMessage.ApplicationInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_Command">DicomMessage.Command</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_Dataset">DicomMessage.Dataset</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_UserState">DicomMessage.UserState</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_PendingSince">DicomMessage.PendingSince</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_LastPDUSent">DicomMessage.LastPDUSent</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_LastPendingResponseReceived">DicomMessage.LastPendingResponseReceived</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_IsTimedOut_System_TimeSpan_">DicomMessage.IsTimedOut(TimeSpan)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_ToString">DicomMessage.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_ToString_System_Boolean_">DicomMessage.ToString(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_ToString_Dicom_Network_DicomCommandField_">DicomMessage.ToString(DicomCommandField)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomMessage.html#Dicom_Network_DicomMessage_IsRequest_Dicom_Network_DicomCommandField_">DicomMessage.IsRequest(DicomCommandField)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Dicom.Network.html">Dicom.Network</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Dicom_Network_DicomCStoreRequest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class DicomCStoreRequest : DicomPriorityRequest</code></pre>
+  </div>
+  <h5 id="Dicom_Network_DicomCStoreRequest_examples"><strong>Examples</strong></h5>
+  <p>The following example shows how to use the <a class="xref" href="Dicom.Network.DicomClient.html">DicomClient</a> class to send DICOM C-Store requests to a DICOM C-Store SCP.</p>
+<pre><code>var client = new DicomClient();
+
+// queue C-Store request to send DICOM file
+client.Add(new DicomCStoreRequest(@&quot;test1.dcm&quot;) {
+	OnResponseReceived = (DicomCStoreRequest req, DicomCStoreResponse rsp) => {
+		Console.WriteLine(&quot;{0}: {1}&quot;, req.SOPInstanceUID, rsp.Status);
+	}
+});
+
+// queue C-Store request with additional proposed transfer syntaxes
+client.Add(new DicomCStoreRequest(@&quot;test2.dcm&quot;) {
+	AdditionalTransferSyntaxes = new DicomTransferSyntax[] {
+		DicomTransferSyntax.JPEGLSLossless,
+		DicomTransferSyntax.JPEG2000Lossless
+	}
+});
+
+// connect and send queued requests
+client.Send(&quot;127.0.0.1&quot;, 12345, false, &quot;SCU&quot;, &quot;ANY-SCP&quot;);</code></pre>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Dicom_Network_DicomCStoreRequest__ctor_" data-uid="Dicom.Network.DicomCStoreRequest.#ctor*"></a>
+  <h4 id="Dicom_Network_DicomCStoreRequest__ctor_Dicom_DicomDataset_" data-uid="Dicom.Network.DicomCStoreRequest.#ctor(Dicom.DicomDataset)">DicomCStoreRequest(DicomDataset)</h4>
+  <div class="markdown level1 summary"><p>Constructor for DICOM C-Store request received from SCU.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomCStoreRequest(DicomDataset command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>DICOM Command Dataset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_Network_DicomCStoreRequest__ctor_Dicom_DicomDataset__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In most use cases this constructor will only be called by the library.</p>
+</div>
+  
+  
+  <a id="Dicom_Network_DicomCStoreRequest__ctor_" data-uid="Dicom.Network.DicomCStoreRequest.#ctor*"></a>
+  <h4 id="Dicom_Network_DicomCStoreRequest__ctor_Dicom_DicomFile_Dicom_Network_DicomPriority_" data-uid="Dicom.Network.DicomCStoreRequest.#ctor(Dicom.DicomFile,Dicom.Network.DicomPriority)">DicomCStoreRequest(DicomFile, DicomPriority)</h4>
+  <div class="markdown level1 summary"><p>Initializes DICOM C-Store request to be sent to SCP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomCStoreRequest(DicomFile file, DicomPriority priority = DicomPriority.Medium)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomFile.html">DicomFile</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>DICOM file to be sent</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomPriority.html">DicomPriority</a></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>Priority of request</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomCStoreRequest__ctor_" data-uid="Dicom.Network.DicomCStoreRequest.#ctor*"></a>
+  <h4 id="Dicom_Network_DicomCStoreRequest__ctor_System_String_Dicom_Network_DicomPriority_" data-uid="Dicom.Network.DicomCStoreRequest.#ctor(System.String,Dicom.Network.DicomPriority)">DicomCStoreRequest(String, DicomPriority)</h4>
+  <div class="markdown level1 summary"><p>Initializes DICOM C-Store request to be sent to SCP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomCStoreRequest(string fileName, DicomPriority priority = DicomPriority.Medium)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>DICOM file to be sent</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomPriority.html">DicomPriority</a></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>Priority of request</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Dicom_Network_DicomCStoreRequest_OnResponseReceived" data-uid="Dicom.Network.DicomCStoreRequest.OnResponseReceived">OnResponseReceived</h4>
+  <div class="markdown level1 summary"><p>Delegate to be executed when the response for the DICOM C-Store request is received.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomCStoreRequest.ResponseDelegate OnResponseReceived</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomCStoreRequest.ResponseDelegate.html">DicomCStoreRequest.ResponseDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Dicom_Network_DicomCStoreRequest_AdditionalTransferSyntaxes_" data-uid="Dicom.Network.DicomCStoreRequest.AdditionalTransferSyntaxes*"></a>
+  <h4 id="Dicom_Network_DicomCStoreRequest_AdditionalTransferSyntaxes" data-uid="Dicom.Network.DicomCStoreRequest.AdditionalTransferSyntaxes">AdditionalTransferSyntaxes</h4>
+  <div class="markdown level1 summary"><p>Additional transfer syntaxes to propose in the association request.</p>
+<p>DICOM dataset will be transcoded on the fly if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomTransferSyntax[] AdditionalTransferSyntaxes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTransferSyntax.html">DicomTransferSyntax</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomCStoreRequest_CommonServiceClassUid_" data-uid="Dicom.Network.DicomCStoreRequest.CommonServiceClassUid*"></a>
+  <h4 id="Dicom_Network_DicomCStoreRequest_CommonServiceClassUid" data-uid="Dicom.Network.DicomCStoreRequest.CommonServiceClassUid">CommonServiceClassUid</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the (optional) Common Extended Negotiation Service Class UID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomUID CommonServiceClassUid { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomUID.html">DicomUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomCStoreRequest_File_" data-uid="Dicom.Network.DicomCStoreRequest.File*"></a>
+  <h4 id="Dicom_Network_DicomCStoreRequest_File" data-uid="Dicom.Network.DicomCStoreRequest.File">File</h4>
+  <div class="markdown level1 summary"><p>Gets the DICOM file associated with this DICOM C-Store request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomFile File { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomFile.html">DicomFile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomCStoreRequest_RelatedGeneralSopClasses_" data-uid="Dicom.Network.DicomCStoreRequest.RelatedGeneralSopClasses*"></a>
+  <h4 id="Dicom_Network_DicomCStoreRequest_RelatedGeneralSopClasses" data-uid="Dicom.Network.DicomCStoreRequest.RelatedGeneralSopClasses">RelatedGeneralSopClasses</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the (optional) Common Extended Negotiation Related General SOP Class Identification</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;DicomUID&gt; RelatedGeneralSopClasses { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Dicom.DicomUID.html">DicomUID</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomCStoreRequest_SOPInstanceUID_" data-uid="Dicom.Network.DicomCStoreRequest.SOPInstanceUID*"></a>
+  <h4 id="Dicom_Network_DicomCStoreRequest_SOPInstanceUID" data-uid="Dicom.Network.DicomCStoreRequest.SOPInstanceUID">SOPInstanceUID</h4>
+  <div class="markdown level1 summary"><p>Gets the SOP Instance UID of the DICOM file associated with this DICOM C-Store request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomUID SOPInstanceUID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomUID.html">DicomUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomCStoreRequest_TransferSyntax_" data-uid="Dicom.Network.DicomCStoreRequest.TransferSyntax*"></a>
+  <h4 id="Dicom_Network_DicomCStoreRequest_TransferSyntax" data-uid="Dicom.Network.DicomCStoreRequest.TransferSyntax">TransferSyntax</h4>
+  <div class="markdown level1 summary"><p>Gets the transfer syntax of the DICOM file associated with this DICOM C-Store request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomTransferSyntax TransferSyntax { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Dicom_Network_DicomCStoreRequest_PostResponse_" data-uid="Dicom.Network.DicomCStoreRequest.PostResponse*"></a>
+  <h4 id="Dicom_Network_DicomCStoreRequest_PostResponse_Dicom_Network_DicomService_Dicom_Network_DicomResponse_" data-uid="Dicom.Network.DicomCStoreRequest.PostResponse(Dicom.Network.DicomService,Dicom.Network.DicomResponse)">PostResponse(DicomService, DicomResponse)</h4>
+  <div class="markdown level1 summary"><p>Internal. Executes the DICOM C-Store response callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void PostResponse(DicomService service, DicomResponse response)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomService.html">DicomService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td><p>DICOM SCP implementation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomResponse.html">DicomResponse</a></td>
+        <td><span class="parametername">response</span></td>
+        <td><p>Received DICOM response</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Dicom.Network.DicomRequest.html#Dicom_Network_DicomRequest_PostResponse_Dicom_Network_DicomService_Dicom_Network_DicomResponse_">DicomRequest.PostResponse(DicomService, DicomResponse)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

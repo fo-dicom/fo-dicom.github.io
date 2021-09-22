@@ -1,0 +1,835 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DicomServer
+   | fo-dicom 4 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DicomServer
+   | fo-dicom 4 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Dicom.Network.DicomServer">
+  
+  
+  <h1 id="Dicom_Network_DicomServer" data-uid="Dicom.Network.DicomServer" class="text-break">Class DicomServer
+  </h1>
+  <div class="markdown level0 summary"><p>Support class for managing multiple DICOM server instances.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">DicomServer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Dicom.Network.html">Dicom.Network</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Dicom_Network_DicomServer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DicomServer</code></pre>
+  </div>
+  <h5 id="Dicom_Network_DicomServer_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Controls that only one DICOM server per <a class="xref" href="Dicom.Network.IDicomServer.html#Dicom_Network_IDicomServer_Port">Port</a> is initialized. Current implementation
+only allows one server per port. It is not possible to initialize multiple servers listening to different network interfaces
+(for example IPv4 vs. IPv6) via these methods if the port is the same.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Dicom_Network_DicomServer_Create_" data-uid="Dicom.Network.DicomServer.Create*"></a>
+  <h4 id="Dicom_Network_DicomServer_Create__1_System_Int32_System_Object_System_String_Dicom_Network_DicomServiceOptions_Encoding_Logger_" data-uid="Dicom.Network.DicomServer.Create``1(System.Int32,System.Object,System.String,Dicom.Network.DicomServiceOptions,Encoding,Logger)">Create&lt;T&gt;(Int32, Object, String, DicomServiceOptions, Encoding, Logger)</h4>
+  <div class="markdown level1 summary"><p>Creates a DICOM server object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use suitable DicomServer.Create overload instead.&quot;)]
+public static IDicomServer Create&lt;T&gt;(int port, object userState, string certificateName = null, DicomServiceOptions options = null, Encoding fallbackEncoding = null, Logger logger = null)
+    where T : DicomService, IDicomServiceProvider</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port to listen to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">userState</span></td>
+        <td><p>Optional optional parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>Certificate name for authenticated connections.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomServiceOptions.html">DicomServiceOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Service options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">fallbackEncoding</span></td>
+        <td><p>Fallback encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Logger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>Logger, if null default logger will be applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.IDicomServer.html">IDicomServer</a></td>
+        <td><p>An instance of <a class="xref" href="Dicom.Network.DicomServer-1.html">DicomServer&lt;T&gt;</a>, that starts listening for connections in the background.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>DICOM service that the server should manage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomServer_Create_" data-uid="Dicom.Network.DicomServer.Create*"></a>
+  <h4 id="Dicom_Network_DicomServer_Create__1_System_Int32_System_String_Dicom_Network_DicomServiceOptions_Encoding_Logger_" data-uid="Dicom.Network.DicomServer.Create``1(System.Int32,System.String,Dicom.Network.DicomServiceOptions,Encoding,Logger)">Create&lt;T&gt;(Int32, String, DicomServiceOptions, Encoding, Logger)</h4>
+  <div class="markdown level1 summary"><p>Creates a DICOM server object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDicomServer Create&lt;T&gt;(int port, string certificateName = null, DicomServiceOptions options = null, Encoding fallbackEncoding = null, Logger logger = null)
+    where T : DicomService, IDicomServiceProvider</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port to listen to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>Certificate name for authenticated connections.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomServiceOptions.html">DicomServiceOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Service options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">fallbackEncoding</span></td>
+        <td><p>Fallback encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Logger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>Logger, if null default logger will be applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.IDicomServer.html">IDicomServer</a></td>
+        <td><p>An instance of <a class="xref" href="Dicom.Network.DicomServer-1.html">DicomServer&lt;T&gt;</a>, that starts listening for connections in the background.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>DICOM service that the server should manage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomServer_Create_" data-uid="Dicom.Network.DicomServer.Create*"></a>
+  <h4 id="Dicom_Network_DicomServer_Create__1_System_String_System_Int32_System_Object_System_String_Dicom_Network_DicomServiceOptions_Encoding_Logger_" data-uid="Dicom.Network.DicomServer.Create``1(System.String,System.Int32,System.Object,System.String,Dicom.Network.DicomServiceOptions,Encoding,Logger)">Create&lt;T&gt;(String, Int32, Object, String, DicomServiceOptions, Encoding, Logger)</h4>
+  <div class="markdown level1 summary"><p>Creates a DICOM server object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDicomServer Create&lt;T&gt;(string ipAddress, int port, object userState = null, string certificateName = null, DicomServiceOptions options = null, Encoding fallbackEncoding = null, Logger logger = null)
+    where T : DicomService, IDicomServiceProvider</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">ipAddress</span></td>
+        <td><p>IP address(es) to listen to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port to listen to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">userState</span></td>
+        <td><p>Optional optional parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>Certificate name for authenticated connections.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomServiceOptions.html">DicomServiceOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Service options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">fallbackEncoding</span></td>
+        <td><p>Fallback encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Logger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>Logger, if null default logger will be applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.IDicomServer.html">IDicomServer</a></td>
+        <td><p>An instance of <a class="xref" href="Dicom.Network.DicomServer-1.html">DicomServer&lt;T&gt;</a>, that starts listening for connections in the background.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>DICOM service that the server should manage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomServer_Create_" data-uid="Dicom.Network.DicomServer.Create*"></a>
+  <h4 id="Dicom_Network_DicomServer_Create__2_System_String_System_Int32_System_Object_System_String_Dicom_Network_DicomServiceOptions_Encoding_Logger_" data-uid="Dicom.Network.DicomServer.Create``2(System.String,System.Int32,System.Object,System.String,Dicom.Network.DicomServiceOptions,Encoding,Logger)">Create&lt;T, TServer&gt;(String, Int32, Object, String, DicomServiceOptions, Encoding, Logger)</h4>
+  <div class="markdown level1 summary"><p>Creates a DICOM server object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDicomServer Create&lt;T, TServer&gt;(string ipAddress, int port, object userState = null, string certificateName = null, DicomServiceOptions options = null, Encoding fallbackEncoding = null, Logger logger = null)
+    where T : DicomService, IDicomServiceProvider where TServer : IDicomServer&lt;T&gt;, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">ipAddress</span></td>
+        <td><p>IP address(es) to listen to. Value <pre><code>null</code></pre> applies default, IPv4Any.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port to listen to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">userState</span></td>
+        <td><p>Optional optional parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>Certificate name for authenticated connections.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomServiceOptions.html">DicomServiceOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Service options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">fallbackEncoding</span></td>
+        <td><p>Fallback encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Logger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>Logger, if null default logger will be applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.IDicomServer.html">IDicomServer</a></td>
+        <td><p>An instance of <code data-dev-comment-type="typeparamref" class="typeparamref">TServer</code>, that starts listening for connections in the background.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>DICOM service that the server should manage.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TServer</span></td>
+        <td><p>Concrete DICOM server type to be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomServer_GetInstance_" data-uid="Dicom.Network.DicomServer.GetInstance*"></a>
+  <h4 id="Dicom_Network_DicomServer_GetInstance_System_Int32_" data-uid="Dicom.Network.DicomServer.GetInstance(System.Int32)">GetInstance(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets DICOM server instance registered to <code data-dev-comment-type="paramref" class="paramref">port</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDicomServer GetInstance(int port)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port number for which DICOM server is requested.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.IDicomServer.html">IDicomServer</a></td>
+        <td><p>Registered DICOM server for <code data-dev-comment-type="paramref" class="paramref">port</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomServer_GetInstance_" data-uid="Dicom.Network.DicomServer.GetInstance*"></a>
+  <h4 id="Dicom_Network_DicomServer_GetInstance_System_Int32_System_String_" data-uid="Dicom.Network.DicomServer.GetInstance(System.Int32,System.String)">GetInstance(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Gets DICOM server instance registered to <code data-dev-comment-type="paramref" class="paramref">port</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDicomServer GetInstance(int port, string ipAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port number for which DICOM server is requested.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">ipAddress</span></td>
+        <td><p>IP Address for which the service listener is requested.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.IDicomServer.html">IDicomServer</a></td>
+        <td><p>Registered DICOM server for <code data-dev-comment-type="paramref" class="paramref">port</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomServer_GetListener_" data-uid="Dicom.Network.DicomServer.GetListener*"></a>
+  <h4 id="Dicom_Network_DicomServer_GetListener_System_Int32_" data-uid="Dicom.Network.DicomServer.GetListener(System.Int32)">GetListener(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets service listener for the DICOM server instance registered to <code data-dev-comment-type="paramref" class="paramref">port</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task GetListener(int port)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port number for which the service listener is requested.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Service listener for the <code data-dev-comment-type="paramref" class="paramref">port</code> DICOM server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomServer_GetListener_" data-uid="Dicom.Network.DicomServer.GetListener*"></a>
+  <h4 id="Dicom_Network_DicomServer_GetListener_System_Int32_System_String_" data-uid="Dicom.Network.DicomServer.GetListener(System.Int32,System.String)">GetListener(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Gets service listener for the DICOM server instance registered to <code data-dev-comment-type="paramref" class="paramref">port</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task GetListener(int port, string ipAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port number for which the service listener is requested.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">ipAddress</span></td>
+        <td><p>IP Address for which the service listener is requested.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Service listener for the <code data-dev-comment-type="paramref" class="paramref">port</code> DICOM server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomServer_IsListening_" data-uid="Dicom.Network.DicomServer.IsListening*"></a>
+  <h4 id="Dicom_Network_DicomServer_IsListening_System_Int32_" data-uid="Dicom.Network.DicomServer.IsListening(System.Int32)">IsListening(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets an indicator of whether a DICOM server is registered and listening on the specified <code data-dev-comment-type="paramref" class="paramref">port</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsListening(int port)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port number for which listening status is requested.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if DICOM server on <code data-dev-comment-type="paramref" class="paramref">port</code> is registered and listening, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_DicomServer_IsListening_" data-uid="Dicom.Network.DicomServer.IsListening*"></a>
+  <h4 id="Dicom_Network_DicomServer_IsListening_System_Int32_System_String_" data-uid="Dicom.Network.DicomServer.IsListening(System.Int32,System.String)">IsListening(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Gets an indicator of whether a DICOM server is registered and listening on the specified <code data-dev-comment-type="paramref" class="paramref">port</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsListening(int port, string ipAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port number for which listening status is requested.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">ipAddress</span></td>
+        <td><p>IP Address for which listening status is requested.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if DICOM server on <code data-dev-comment-type="paramref" class="paramref">port</code> is registered and listening, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

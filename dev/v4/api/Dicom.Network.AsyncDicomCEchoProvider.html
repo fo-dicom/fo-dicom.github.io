@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AsyncDicomCEchoProvider
+   | fo-dicom 4 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AsyncDicomCEchoProvider
+   | fo-dicom 4 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Dicom.Network.AsyncDicomCEchoProvider">
+  
+  
+  <h1 id="Dicom_Network_AsyncDicomCEchoProvider" data-uid="Dicom.Network.AsyncDicomCEchoProvider" class="text-break">Class AsyncDicomCEchoProvider
+  </h1>
+  <div class="markdown level0 summary"><p>Implementation of an asynchronous C-ECHO Service Class Provider.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Dicom.Network.DicomService.html">DicomService</a></div>
+    <div class="level2"><span class="xref">AsyncDicomCEchoProvider</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Dicom.Network.IDicomServiceRunner.html">IDicomServiceRunner</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="Dicom.Network.IDicomServiceProvider.html">IDicomServiceProvider</a></div>
+    <div><a class="xref" href="Dicom.Network.IDicomService.html">IDicomService</a></div>
+    <div><a class="xref" href="Dicom.Network.IAsyncDicomCEchoProvider.html">IAsyncDicomCEchoProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService__isDisconnectedFlag">DicomService._isDisconnectedFlag</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService__dimseStream">DicomService._dimseStream</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService__dimseStreamFile">DicomService._dimseStreamFile</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_Logger">DicomService.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_Options">DicomService.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_UserState">DicomService.UserState</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_Association">DicomService.Association</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_IsConnected">DicomService.IsConnected</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_IsSendQueueEmpty">DicomService.IsSendQueueEmpty</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_IsSendNextMessageRequired">DicomService.IsSendNextMessageRequired</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_MaximumPDUsInQueue">DicomService.MaximumPDUsInQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_DoHandlePDUBytes">DicomService.DoHandlePDUBytes</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_Dispose">DicomService.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_Dispose_System_Boolean_">DicomService.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_SendRequestAsync_Dicom_Network_DicomRequest_">DicomService.SendRequestAsync(DicomRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_SendResponseAsync_Dicom_Network_DicomResponse_">DicomService.SendResponseAsync(DicomResponse)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_CreateCStoreReceiveStream_Dicom_DicomFile_">DicomService.CreateCStoreReceiveStream(DicomFile)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_GetCStoreDicomFile">DicomService.GetCStoreDicomFile()</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_SendPDUAsync_Dicom_Network_PDU_">DicomService.SendPDUAsync(PDU)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_SendAssociationRequestAsync_Dicom_Network_DicomAssociation_">DicomService.SendAssociationRequestAsync(DicomAssociation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_SendAssociationAcceptAsync_Dicom_Network_DicomAssociation_">DicomService.SendAssociationAcceptAsync(DicomAssociation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_SendAssociationRejectAsync_Dicom_Network_DicomRejectResult_Dicom_Network_DicomRejectSource_Dicom_Network_DicomRejectReason_">DicomService.SendAssociationRejectAsync(DicomRejectResult, DicomRejectSource, DicomRejectReason)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_SendAssociationReleaseRequestAsync">DicomService.SendAssociationReleaseRequestAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_SendAssociationReleaseResponseAsync">DicomService.SendAssociationReleaseResponseAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_SendAbortAsync_Dicom_Network_DicomAbortSource_Dicom_Network_DicomAbortReason_">DicomService.SendAbortAsync(DicomAbortSource, DicomAbortReason)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_RunAsync">DicomService.RunAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.Network.DicomService.html#Dicom_Network_DicomService_OnSendQueueEmptyAsync">DicomService.OnSendQueueEmptyAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Dicom.Network.html">Dicom.Network</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Dicom_Network_AsyncDicomCEchoProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AsyncDicomCEchoProvider : DicomService, IDicomServiceRunner, IDisposable, IDicomServiceProvider, IDicomService, IAsyncDicomCEchoProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Dicom_Network_AsyncDicomCEchoProvider__ctor_" data-uid="Dicom.Network.AsyncDicomCEchoProvider.#ctor*"></a>
+  <h4 id="Dicom_Network_AsyncDicomCEchoProvider__ctor_Dicom_Network_INetworkStream_Encoding_Logger_" data-uid="Dicom.Network.AsyncDicomCEchoProvider.#ctor(Dicom.Network.INetworkStream,Encoding,Logger)">AsyncDicomCEchoProvider(INetworkStream, Encoding, Logger)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="Dicom.Network.DicomCEchoProvider.html">DicomCEchoProvider</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsyncDicomCEchoProvider(INetworkStream stream, Encoding fallbackEncoding, Logger log)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.INetworkStream.html">INetworkStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Network stream on which DICOM communication is establshed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">fallbackEncoding</span></td>
+        <td><p>Text encoding if not specified within messaging.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Logger</span></td>
+        <td><span class="parametername">log</span></td>
+        <td><p>DICOM logger.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Dicom_Network_AsyncDicomCEchoProvider_OnCEchoRequestAsync_" data-uid="Dicom.Network.AsyncDicomCEchoProvider.OnCEchoRequestAsync*"></a>
+  <h4 id="Dicom_Network_AsyncDicomCEchoProvider_OnCEchoRequestAsync_Dicom_Network_DicomCEchoRequest_" data-uid="Dicom.Network.AsyncDicomCEchoProvider.OnCEchoRequestAsync(Dicom.Network.DicomCEchoRequest)">OnCEchoRequestAsync(DicomCEchoRequest)</h4>
+  <div class="markdown level1 summary"><p>Event handler for C-ECHO request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DicomCEchoResponse&gt; OnCEchoRequestAsync(DicomCEchoRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomCEchoRequest.html">DicomCEchoRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>C-ECHO request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Dicom.Network.DicomCEchoResponse.html">DicomCEchoResponse</a>&gt;</td>
+        <td><p>C-ECHO response with Success status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_AsyncDicomCEchoProvider_OnConnectionClosed_" data-uid="Dicom.Network.AsyncDicomCEchoProvider.OnConnectionClosed*"></a>
+  <h4 id="Dicom_Network_AsyncDicomCEchoProvider_OnConnectionClosed_System_Exception_" data-uid="Dicom.Network.AsyncDicomCEchoProvider.OnConnectionClosed(System.Exception)">OnConnectionClosed(Exception)</h4>
+  <div class="markdown level1 summary"><p>Callback when connection is closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConnectionClosed(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>Exception, if any, that forced connection to close.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_AsyncDicomCEchoProvider_OnReceiveAbort_" data-uid="Dicom.Network.AsyncDicomCEchoProvider.OnReceiveAbort*"></a>
+  <h4 id="Dicom_Network_AsyncDicomCEchoProvider_OnReceiveAbort_Dicom_Network_DicomAbortSource_Dicom_Network_DicomAbortReason_" data-uid="Dicom.Network.AsyncDicomCEchoProvider.OnReceiveAbort(Dicom.Network.DicomAbortSource,Dicom.Network.DicomAbortReason)">OnReceiveAbort(DicomAbortSource, DicomAbortReason)</h4>
+  <div class="markdown level1 summary"><p>Callback on recieving an abort message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnReceiveAbort(DicomAbortSource source, DicomAbortReason reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomAbortSource.html">DicomAbortSource</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Abort source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomAbortReason.html">DicomAbortReason</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>Detailed reason for abort.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_AsyncDicomCEchoProvider_OnReceiveAssociationReleaseRequestAsync_" data-uid="Dicom.Network.AsyncDicomCEchoProvider.OnReceiveAssociationReleaseRequestAsync*"></a>
+  <h4 id="Dicom_Network_AsyncDicomCEchoProvider_OnReceiveAssociationReleaseRequestAsync" data-uid="Dicom.Network.AsyncDicomCEchoProvider.OnReceiveAssociationReleaseRequestAsync">OnReceiveAssociationReleaseRequestAsync()</h4>
+  <div class="markdown level1 summary"><p>Callback to invoke when receiving an association release request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task OnReceiveAssociationReleaseRequestAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_AsyncDicomCEchoProvider_OnReceiveAssociationRequestAsync_" data-uid="Dicom.Network.AsyncDicomCEchoProvider.OnReceiveAssociationRequestAsync*"></a>
+  <h4 id="Dicom_Network_AsyncDicomCEchoProvider_OnReceiveAssociationRequestAsync_Dicom_Network_DicomAssociation_" data-uid="Dicom.Network.AsyncDicomCEchoProvider.OnReceiveAssociationRequestAsync(Dicom.Network.DicomAssociation)">OnReceiveAssociationRequestAsync(DicomAssociation)</h4>
+  <div class="markdown level1 summary"><p>Callback to invoke when receiving an association request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task OnReceiveAssociationRequestAsync(DicomAssociation association)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomAssociation.html">DicomAssociation</a></td>
+        <td><span class="parametername">association</span></td>
+        <td><p>DICOM association corresponding to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Dicom.Network.IDicomServiceRunner.html">IDicomServiceRunner</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Dicom.Network.IDicomServiceProvider.html">IDicomServiceProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="Dicom.Network.IDicomService.html">IDicomService</a>
+  </div>
+  <div>
+      <a class="xref" href="Dicom.Network.IAsyncDicomCEchoProvider.html">IAsyncDicomCEchoProvider</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

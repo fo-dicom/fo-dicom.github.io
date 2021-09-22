@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDicomClientState
+   | fo-dicom 4 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDicomClientState
+   | fo-dicom 4 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Dicom.Network.Client.States.IDicomClientState">
+  
+  
+  <h1 id="Dicom_Network_Client_States_IDicomClientState" data-uid="Dicom.Network.Client.States.IDicomClientState" class="text-break">Interface IDicomClientState
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Dicom.Network.Client.States.html">Dicom.Network.Client.States</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Dicom_Network_Client_States_IDicomClientState_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDicomClientState : IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Dicom_Network_Client_States_IDicomClientState_AddRequestAsync_" data-uid="Dicom.Network.Client.States.IDicomClientState.AddRequestAsync*"></a>
+  <h4 id="Dicom_Network_Client_States_IDicomClientState_AddRequestAsync_Dicom_Network_DicomRequest_" data-uid="Dicom.Network.Client.States.IDicomClientState.AddRequestAsync(Dicom.Network.DicomRequest)">AddRequestAsync(DicomRequest)</h4>
+  <div class="markdown level1 summary"><p>Enqueues a new DICOM request for execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddRequestAsync(DicomRequest dicomRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomRequest.html">DicomRequest</a></td>
+        <td><span class="parametername">dicomRequest</span></td>
+        <td><p>The DICOM request to send</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_Client_States_IDicomClientState_GetNextStateAsync_" data-uid="Dicom.Network.Client.States.IDicomClientState.GetNextStateAsync*"></a>
+  <h4 id="Dicom_Network_Client_States_IDicomClientState_GetNextStateAsync_Dicom_Network_Client_DicomClientCancellation_" data-uid="Dicom.Network.Client.States.IDicomClientState.GetNextStateAsync(Dicom.Network.Client.DicomClientCancellation)">GetNextStateAsync(DicomClientCancellation)</h4>
+  <div class="markdown level1 summary"><p>Is called when entering this state, and is used to move forward in the state transition flow</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IDicomClientState&gt; GetNextStateAsync(DicomClientCancellation cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.Client.DicomClientCancellation.html">DicomClientCancellation</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Dicom.Network.Client.States.IDicomClientState.html">IDicomClientState</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_Client_States_IDicomClientState_OnConnectionClosedAsync_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnConnectionClosedAsync*"></a>
+  <h4 id="Dicom_Network_Client_States_IDicomClientState_OnConnectionClosedAsync_System_Exception_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnConnectionClosedAsync(System.Exception)">OnConnectionClosedAsync(Exception)</h4>
+  <div class="markdown level1 summary"><p>Callback when connection is closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnConnectionClosedAsync(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>Exception, if any, that forced connection to close.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_Client_States_IDicomClientState_OnReceiveAbortAsync_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnReceiveAbortAsync*"></a>
+  <h4 id="Dicom_Network_Client_States_IDicomClientState_OnReceiveAbortAsync_Dicom_Network_DicomAbortSource_Dicom_Network_DicomAbortReason_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnReceiveAbortAsync(Dicom.Network.DicomAbortSource,Dicom.Network.DicomAbortReason)">OnReceiveAbortAsync(DicomAbortSource, DicomAbortReason)</h4>
+  <div class="markdown level1 summary"><p>Callback on receiving an abort message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnReceiveAbortAsync(DicomAbortSource source, DicomAbortReason reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomAbortSource.html">DicomAbortSource</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Abort source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomAbortReason.html">DicomAbortReason</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>Detailed reason for abort.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_Client_States_IDicomClientState_OnReceiveAssociationAcceptAsync_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnReceiveAssociationAcceptAsync*"></a>
+  <h4 id="Dicom_Network_Client_States_IDicomClientState_OnReceiveAssociationAcceptAsync_Dicom_Network_DicomAssociation_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnReceiveAssociationAcceptAsync(Dicom.Network.DicomAssociation)">OnReceiveAssociationAcceptAsync(DicomAssociation)</h4>
+  <div class="markdown level1 summary"><p>Callback for handling association accept scenarios.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnReceiveAssociationAcceptAsync(DicomAssociation association)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomAssociation.html">DicomAssociation</a></td>
+        <td><span class="parametername">association</span></td>
+        <td><p>Accepted association.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_Client_States_IDicomClientState_OnReceiveAssociationRejectAsync_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnReceiveAssociationRejectAsync*"></a>
+  <h4 id="Dicom_Network_Client_States_IDicomClientState_OnReceiveAssociationRejectAsync_Dicom_Network_DicomRejectResult_Dicom_Network_DicomRejectSource_Dicom_Network_DicomRejectReason_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnReceiveAssociationRejectAsync(Dicom.Network.DicomRejectResult,Dicom.Network.DicomRejectSource,Dicom.Network.DicomRejectReason)">OnReceiveAssociationRejectAsync(DicomRejectResult, DicomRejectSource, DicomRejectReason)</h4>
+  <div class="markdown level1 summary"><p>Callback for handling association reject scenarios.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnReceiveAssociationRejectAsync(DicomRejectResult result, DicomRejectSource source, DicomRejectReason reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomRejectResult.html">DicomRejectResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>Specification of rejection result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomRejectSource.html">DicomRejectSource</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source of rejection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomRejectReason.html">DicomRejectReason</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>Detailed reason for rejection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_Client_States_IDicomClientState_OnReceiveAssociationReleaseResponseAsync_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnReceiveAssociationReleaseResponseAsync*"></a>
+  <h4 id="Dicom_Network_Client_States_IDicomClientState_OnReceiveAssociationReleaseResponseAsync" data-uid="Dicom.Network.Client.States.IDicomClientState.OnReceiveAssociationReleaseResponseAsync">OnReceiveAssociationReleaseResponseAsync()</h4>
+  <div class="markdown level1 summary"><p>Callback on response from an association release.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnReceiveAssociationReleaseResponseAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_Client_States_IDicomClientState_OnRequestCompletedAsync_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnRequestCompletedAsync*"></a>
+  <h4 id="Dicom_Network_Client_States_IDicomClientState_OnRequestCompletedAsync_Dicom_Network_DicomRequest_Dicom_Network_DicomResponse_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnRequestCompletedAsync(Dicom.Network.DicomRequest,Dicom.Network.DicomResponse)">OnRequestCompletedAsync(DicomRequest, DicomResponse)</h4>
+  <div class="markdown level1 summary"><p>Callback when a request has been completed (a final response was received, causing it to be removed from the pending queue)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnRequestCompletedAsync(DicomRequest request, DicomResponse response)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomRequest.html">DicomRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The original request that was sent, which has now been fulfilled.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomResponse.html">DicomResponse</a></td>
+        <td><span class="parametername">response</span></td>
+        <td><p>The final response from the DICOM server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_Client_States_IDicomClientState_OnRequestTimedOutAsync_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnRequestTimedOutAsync*"></a>
+  <h4 id="Dicom_Network_Client_States_IDicomClientState_OnRequestTimedOutAsync_Dicom_Network_DicomRequest_System_TimeSpan_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnRequestTimedOutAsync(Dicom.Network.DicomRequest,System.TimeSpan)">OnRequestTimedOutAsync(DicomRequest, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Callback when a request has timed out (no final response was received, but the timeout was exceeded and the request has been removed from the pending queue)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnRequestTimedOutAsync(DicomRequest request, TimeSpan timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.DicomRequest.html">DicomRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The original request that was sent, which could not be fulfilled</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>The timeout duration that has been exceeded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_Client_States_IDicomClientState_OnSendQueueEmptyAsync_" data-uid="Dicom.Network.Client.States.IDicomClientState.OnSendQueueEmptyAsync*"></a>
+  <h4 id="Dicom_Network_Client_States_IDicomClientState_OnSendQueueEmptyAsync" data-uid="Dicom.Network.Client.States.IDicomClientState.OnSendQueueEmptyAsync">OnSendQueueEmptyAsync()</h4>
+  <div class="markdown level1 summary"><p>Callback when there are no new requests to send and no existing requests in process (waiting for reply)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnSendQueueEmptyAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Awaitable task</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Network_Client_States_IDicomClientState_SendAsync_" data-uid="Dicom.Network.Client.States.IDicomClientState.SendAsync*"></a>
+  <h4 id="Dicom_Network_Client_States_IDicomClientState_SendAsync_Dicom_Network_Client_DicomClientCancellation_" data-uid="Dicom.Network.Client.States.IDicomClientState.SendAsync(Dicom.Network.Client.DicomClientCancellation)">SendAsync(DicomClientCancellation)</h4>
+  <div class="markdown level1 summary"><p>Sends existing requests to DICOM service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendAsync(DicomClientCancellation cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Network.Client.DicomClientCancellation.html">DicomClientCancellation</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

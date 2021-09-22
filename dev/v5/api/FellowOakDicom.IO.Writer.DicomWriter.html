@@ -1,0 +1,683 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DicomWriter
+   | Fellow Oak DICOM 5 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DicomWriter
+   | Fellow Oak DICOM 5 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FellowOakDicom.IO.Writer.DicomWriter">
+  
+  
+  <h1 id="FellowOakDicom_IO_Writer_DicomWriter" data-uid="FellowOakDicom.IO.Writer.DicomWriter" class="text-break">Class DicomWriter
+  </h1>
+  <div class="markdown level0 summary"><p>DICOM object writer.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">DicomWriter</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FellowOakDicom.IDicomDatasetWalker.html">IDicomDatasetWalker</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.Writer.html">FellowOakDicom.IO.Writer</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="FellowOakDicom_IO_Writer_DicomWriter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DicomWriter : IDicomDatasetWalker</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter__ctor_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.#ctor*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter__ctor_FellowOakDicom_DicomTransferSyntax_FellowOakDicom_IO_Writer_DicomWriteOptions_FellowOakDicom_IO_IByteTarget_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.#ctor(FellowOakDicom.DicomTransferSyntax,FellowOakDicom.IO.Writer.DicomWriteOptions,FellowOakDicom.IO.IByteTarget)">DicomWriter(DicomTransferSyntax, DicomWriteOptions, IByteTarget)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of <a class="xref" href="FellowOakDicom.IO.Writer.DicomWriter.html">DicomWriter</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomWriter(DicomTransferSyntax syntax, DicomWriteOptions options, IByteTarget target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Writer transfer syntax.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.IO.Writer.DicomWriteOptions.html">DicomWriteOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Writer options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.IO.IByteTarget.html">IByteTarget</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Target to which to write the DICOM object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_Syntax_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.Syntax*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_Syntax" data-uid="FellowOakDicom.IO.Writer.DicomWriter.Syntax">Syntax</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the DICOM transfer syntax to apply in writing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomTransferSyntax Syntax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_OnBeginFragment_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnBeginFragment*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_OnBeginFragment_FellowOakDicom_DicomFragmentSequence_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnBeginFragment(FellowOakDicom.DicomFragmentSequence)">OnBeginFragment(DicomFragmentSequence)</h4>
+  <div class="markdown level1 summary"><p>Handler for traversing beginning of fragment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnBeginFragment(DicomFragmentSequence fragment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomFragmentSequence.html">DicomFragmentSequence</a></td>
+        <td><span class="parametername">fragment</span></td>
+        <td><p>Fragment sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if traversing completed without issues, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_IO_Writer_DicomWriter_OnBeginFragment_FellowOakDicom_DicomFragmentSequence__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>On false return value, the method will invoke the callback method passed in <a class="xref" href="FellowOakDicom.IDicomDatasetWalker.html#FellowOakDicom_IDicomDatasetWalker_OnBeginWalk">OnBeginWalk()</a> before returning.</p>
+</div>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_OnBeginSequence_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnBeginSequence*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_OnBeginSequence_FellowOakDicom_DicomSequence_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnBeginSequence(FellowOakDicom.DicomSequence)">OnBeginSequence(DicomSequence)</h4>
+  <div class="markdown level1 summary"><p>Handler for traversing beginning of sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnBeginSequence(DicomSequence sequence)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomSequence.html">DicomSequence</a></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>Sequence to traverse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if traversing completed without issues, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_IO_Writer_DicomWriter_OnBeginSequence_FellowOakDicom_DicomSequence__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>On false return value, the method will invoke the callback method passed in <a class="xref" href="FellowOakDicom.IDicomDatasetWalker.html#FellowOakDicom_IDicomDatasetWalker_OnBeginWalk">OnBeginWalk()</a> before returning.</p>
+</div>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_OnBeginSequenceItem_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnBeginSequenceItem*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_OnBeginSequenceItem_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnBeginSequenceItem(FellowOakDicom.DicomDataset)">OnBeginSequenceItem(DicomDataset)</h4>
+  <div class="markdown level1 summary"><p>Handler for traversing beginning of sequence item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnBeginSequenceItem(DicomDataset dataset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">dataset</span></td>
+        <td><p>Item dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if traversing completed without issues, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_IO_Writer_DicomWriter_OnBeginSequenceItem_FellowOakDicom_DicomDataset__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>On false return value, the method will invoke the callback method passed in <a class="xref" href="FellowOakDicom.IDicomDatasetWalker.html#FellowOakDicom_IDicomDatasetWalker_OnBeginWalk">OnBeginWalk()</a> before returning.</p>
+</div>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_OnBeginWalk_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnBeginWalk*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_OnBeginWalk" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnBeginWalk">OnBeginWalk()</h4>
+  <div class="markdown level1 summary"><p>Handler for beginning the traversal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBeginWalk()</code></pre>
+  </div>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_OnElement_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnElement*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_OnElement_FellowOakDicom_DicomElement_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnElement(FellowOakDicom.DicomElement)">OnElement(DicomElement)</h4>
+  <div class="markdown level1 summary"><p>Handler for traversing a DICOM element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnElement(DicomElement element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomElement.html">DicomElement</a></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>Element to traverse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if traversing completed without issues, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_IO_Writer_DicomWriter_OnElement_FellowOakDicom_DicomElement__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>On false return value, the method will invoke the callback method passed in <a class="xref" href="FellowOakDicom.IDicomDatasetWalker.html#FellowOakDicom_IDicomDatasetWalker_OnBeginWalk">OnBeginWalk()</a> before returning.</p>
+</div>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_OnElementAsync_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnElementAsync*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_OnElementAsync_FellowOakDicom_DicomElement_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnElementAsync(FellowOakDicom.DicomElement)">OnElementAsync(DicomElement)</h4>
+  <div class="markdown level1 summary"><p>Asynchronous handler for traversing a DICOM element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; OnElementAsync(DicomElement element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomElement.html">DicomElement</a></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>Element to traverse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>true if traversing completed without issues, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_OnEndFragment_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnEndFragment*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_OnEndFragment" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnEndFragment">OnEndFragment()</h4>
+  <div class="markdown level1 summary"><p>Handler for traversing end of fragment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnEndFragment()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if traversing completed without issues, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_IO_Writer_DicomWriter_OnEndFragment_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>On false return value, the method will invoke the callback method passed in <a class="xref" href="FellowOakDicom.IDicomDatasetWalker.html#FellowOakDicom_IDicomDatasetWalker_OnBeginWalk">OnBeginWalk()</a> before returning.</p>
+</div>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_OnEndSequence_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnEndSequence*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_OnEndSequence" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnEndSequence">OnEndSequence()</h4>
+  <div class="markdown level1 summary"><p>Handler for traversing end of sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnEndSequence()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if traversing completed without issues, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_IO_Writer_DicomWriter_OnEndSequence_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>On false return value, the method will invoke the callback method passed in <a class="xref" href="FellowOakDicom.IDicomDatasetWalker.html#FellowOakDicom_IDicomDatasetWalker_OnBeginWalk">OnBeginWalk()</a> before returning.</p>
+</div>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_OnEndSequenceItem_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnEndSequenceItem*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_OnEndSequenceItem" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnEndSequenceItem">OnEndSequenceItem()</h4>
+  <div class="markdown level1 summary"><p>Handler for traversing end of sequence item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnEndSequenceItem()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if traversing completed without issues, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_IO_Writer_DicomWriter_OnEndSequenceItem_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>On false return value, the method will invoke the callback method passed in <a class="xref" href="FellowOakDicom.IDicomDatasetWalker.html#FellowOakDicom_IDicomDatasetWalker_OnBeginWalk">OnBeginWalk()</a> before returning.</p>
+</div>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_OnEndWalk_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnEndWalk*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_OnEndWalk" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnEndWalk">OnEndWalk()</h4>
+  <div class="markdown level1 summary"><p>Handler for end of traversal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEndWalk()</code></pre>
+  </div>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_OnFragmentItem_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnFragmentItem*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_OnFragmentItem_IByteBuffer_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnFragmentItem(IByteBuffer)">OnFragmentItem(IByteBuffer)</h4>
+  <div class="markdown level1 summary"><p>Handler for traversing fragment item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnFragmentItem(IByteBuffer item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IByteBuffer</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Buffer containing the fragment item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if traversing completed without issues, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_IO_Writer_DicomWriter_OnFragmentItem_IByteBuffer__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>On false return value, the method will invoke the callback method passed in <a class="xref" href="FellowOakDicom.IDicomDatasetWalker.html#FellowOakDicom_IDicomDatasetWalker_OnBeginWalk">OnBeginWalk()</a> before returning.</p>
+</div>
+  
+  
+  <a id="FellowOakDicom_IO_Writer_DicomWriter_OnFragmentItemAsync_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnFragmentItemAsync*"></a>
+  <h4 id="FellowOakDicom_IO_Writer_DicomWriter_OnFragmentItemAsync_IByteBuffer_" data-uid="FellowOakDicom.IO.Writer.DicomWriter.OnFragmentItemAsync(IByteBuffer)">OnFragmentItemAsync(IByteBuffer)</h4>
+  <div class="markdown level1 summary"><p>Asynchronous handler for traversing fragment item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; OnFragmentItemAsync(IByteBuffer item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IByteBuffer</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Buffer containing the fragment item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>true if traversing completed without issues, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.IDicomDatasetWalker.html">IDicomDatasetWalker</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

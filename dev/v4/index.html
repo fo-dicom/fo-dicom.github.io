@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Documentation for fo-dicom version 4 | fo-dicom 4 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Documentation for fo-dicom version 4 | fo-dicom 4 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="documentation-for-fo-dicom-version-4">Documentation for fo-dicom version 4</h1>
+
+<p>Fellow Oak DICOM, a DICOM toolkit in C# for .NET Framework, .NET Core, Universal Windows, Android, iOS, Mono and Unity.</p>
+<p><em>Note:</em>
+Version 4 is the last version of <code>fo-dicom</code> that is based on the
+<a href="https://docs.microsoft.com/en-us/xamarin/cross-platform/app-fundamentals/pcl">Portable Class Library (PCL)</a>.
+As PCL is deprecated by Microsoft, newer versions of <code>fo-dicom</code> (starting with 5.0.0) use
+<a href="https://docs.microsoft.com/en-us/xamarin/cross-platform/app-fundamentals/net-standard">.NET Standard</a> instead.
+Bugfixes and minor improvements will still be added to <code>fo-dicom 4</code> for some time.</p>
+<h2 id="main-features">Main features</h2>
+<ul>
+<li>Portable Class Library (PCL)</li>
+<li>Targets .NET 4.5.2 and higher, .NET Core (.NET Standard 1.3 and higher), Universal Windows Platform, Xamarin iOS, Xamarin Android, Mono and Unity</li>
+<li>DICOM dictionary version 2021b</li>
+<li>High-performance, fully asynchronous async/await API</li>
+<li>JPEG (including lossless), JPEG-LS, JPEG2000, and RLE image compression (limited on .NET Core, Xamarin, Mono and Unity platforms)</li>
+<li>Supports very large datasets with content loading on demand</li>
+<li>Platform-specific image rendering</li>
+<li>JSON import and export</li>
+<li>XML export</li>
+<li>Anonymization</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>The newest <code>fo-dicom 4</code> release binaries can be obtained from <a href="https://www.nuget.org/packages/fo-dicom/4.0.8">NuGet</a>.
+This package references the core <em>fo-dicom</em> assemblies for all Microsoft and Xamarin platforms.</p>
+<h2 id="nuget-packages">NuGet Packages</h2>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom/">fo-dicom</a></td>
+<td>Dependencies package including core libraries for Microsoft and Xamarin platforms</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.Portable/">fo-dicom.Portable</a></td>
+<td>Core library for PCL Profile 111</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.Desktop/">fo-dicom.Desktop</a></td>
+<td>Core library and native codec libraries for .NET 4.5.2 and higher</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.NetCore/">fo-dicom.NetCore</a></td>
+<td>Core library for .NET Core applications, Level 1.3 and higher</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.Universal/">fo-dicom.Universal</a></td>
+<td>Core library and native codec libraries for Universal Windows Platform</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.Android/">fo-dicom.Android</a></td>
+<td>Core library for Xamarin Android</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.iOS/">fo-dicom.iOS</a></td>
+<td>Core library for Xamarin iOS (Unified)</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.Mono/">fo-dicom.Mono</a></td>
+<td>Core library for Mono 4.5 and higher</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.log4net/">fo-dicom.log4net</a></td>
+<td>.NET connector to enable <em>fo-dicom</em> logging with log4net</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.MetroLog/">fo-dicom.MetroLog</a></td>
+<td>PCL Profile 111 connector to enable <em>fo-dicom</em> logging with MetroLog</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.NLog/">fo-dicom.NLog</a></td>
+<td>.NET connector to enable <em>fo-dicom</em> logging with NLog</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.Serilog/">fo-dicom.Serilog</a></td>
+<td>.NET connector to enable <em>fo-dicom</em> logging with Serilog</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.Json/">fo-dicom.Json</a></td>
+<td>PCL profile 111 library for JSON I/O support</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.Drawing/">fo-dicom.Drawing</a></td>
+<td>.NET Core library providing <em>System.Drawing</em> based image rendering and printing</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/fo-dicom.ImageSharp/">fo-dicom.ImageSharp</a></td>
+<td>.NET Standard library providing <em>SixLabors.ImageSharp</em> based image rendering</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fo-dicom/fo-dicom/blob/development/Documentation/v4/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Platform specifics | fo-dicom 4 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Platform specifics | fo-dicom 4 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p><strong>NOTE! This image rendering API applies from version 2.0.0 and to version 4.0.x of <em>fo-dicom</em>.</strong></p>
+<p>We have implemented an image abstraction layer that facilitates the adoption of <em>fo-dicom</em> image rendering functionality to various platforms.</p>
+<p>We have introduced an interface <code>IImage</code> to represent an image object. This interface has been implemented for <code>System.Drawing.Image</code> (<code>WinFormsImage</code>) and <code>System.Windows.Media.Imaging.WriteableBitmap</code> (<code>WPFImage</code>) on .NET as well as for the relevant image types on the other platforms that <em>fo-dicom</em> target (<code>WriteableBitmap</code> on the <em>Universal Windows Platform</em>, <code>CGImage</code> on <em>iOS</em>, <code>Bitmap</code> on <em>Android</em> etc.).</p>
+<p>The <code>IImage</code> interface is minimal; its only operational method is <code>DrawGraphics</code>, which is used to draw image layers when rendering a <code>CompositeGraphic</code>.</p>
+<p>For consumers of <code>IImage</code> on different platforms, the most important interface method is however</p>
+<pre><code>T As&lt;T&gt;();
+</code></pre>
+<p>which allows you to cast the <code>IImage</code> object to the real image type on whatever platform you are targeting!</p>
+<p>Which <code>IImage</code> implementation to use is determined in the new <code>ImageManager</code> class (compare with <code>LogManager</code> and the recently added <code>IOManager</code>). On :NET, with two image manager implementations, <em>Windows Forms</em> based imaging is selected by default. To select <em>WPF</em> based imaging, call:</p>
+<pre><code>ImageManager.SetImplementation(WPFImageManager.Instance);
+</code></pre>
+<p>To encompass the introduction of <code>IImage</code>, the public API has been changed as follows:</p>
+<p><code>IGraphic {</code><br>
+<code>IImage RenderImage(ILUT lut);</code><br>
+<del><code>System.Drawing.Image RenderImage(ILUT lut);</code></del><br>
+<del><code>System.Windows.Media.Imaging.BitmapSource RenderImageSource(ILUT lut);</code></del><br>
+<code>}</code><br></p>
+<p><code>DicomImage {</code><br>
+<code>IImage RenderImage(int frame = 0);</code><br>
+<del><code>System.Drawing.Image RenderImage(int frame = 0);</code></del><br>
+<del><code>System.Windows.Media.ImageSource RenderImageSource(int frame = 0);</code></del><br>
+<code>}</code><br></p>
+<p>The direct (and only practical) consequence of these changes to the public API is that to get the real image object, it will be necessary to use the <code>As&lt;T&gt;()</code> &quot;cast operator&quot;.</p>
+<p>For example, in a <em>Windows Forms</em> application (provided <code>ImageManager</code> is using the <code>WinFormsImageManager</code> implementation):</p>
+<pre><code>Bitmap renderedImage = dicomImage.RenderImage().As&lt;Bitmap&gt;();
+</code></pre>
+<p>And in a <em>WPF</em> application (provided <code>ImageManager</code> is using the <code>WPFImageManager</code> implementation):</p>
+<pre><code>WriteableBitmap renderedImage = dicomImage.RenderImage().As&lt;WriteableBitmap&gt;();
+</code></pre>
+<p>With these changes, it is now completely possible to maintain for example the <code>DicomImage</code> implementation in a platform-agnostic core library, whereas the <code>WinFormsImage</code> and <code>WPFImage</code> implementations can be moved to a <em>Windows desktop</em> specific support library. What's more, on the <em>Mono</em> platform where WPF is not available, the <code>WinFormsImage</code> implementation can still be included in a <em>Mono</em> specific support library (see #13).</p>
+<h3 id="platform-specifics">Platform specifics</h3>
+<h4 id="net">.NET</h4>
+<p>There are convenience extension methods for obtaining <code>Bitmap</code> and <code>WriteableBitmap</code> objects, that circumvent the use of <code>IImage.As&lt;&gt;</code>:</p>
+<pre><code>IImage.AsBitmap();
+IImage.AsWriteableBitmap();
+</code></pre>
+<h4 id="ios">iOS</h4>
+<p>On <em>iOS</em>, an <code>IImage</code> object can be cast, using the <code>As&lt;&gt;()</code> method, to <code>CGImage</code>, <code>UIImage</code> and <code>CIImage</code>.</p>
+<p>There are convenience extension methods for obtaining different iOS image objects, that circumvent the use of <code>IImage.As&lt;&gt;</code>:</p>
+<pre><code>IImage.AsCGImage();
+IImage.AsCIImage();
+IImage.AsUIImage();
+</code></pre>
+<h4 id="android">Android</h4>
+<p>On <em>Android</em>, an <code>IImage</code> object can be cast, using the <code>As&lt;&gt;()</code> method, to <code>Android.Graphics.Bitmap</code>.</p>
+<p>There is a convenience extension method for obtaining <code>Android.Graphics.Bitmap</code> objects, that circumvent the use of <code>IImage.As&lt;&gt;</code>:</p>
+<pre><code>IImage.AsBitmap();
+</code></pre>
+<h4 id="universal-windows-platform">Universal Windows Platform</h4>
+<p>On the <em>Universal Windows Platform</em>, an <code>IImage</code> object can be cast, using the <code>As&lt;&gt;()</code> method, to <code>WriteableBitmap</code> or any of its superclasses, i.e. <code>BitmapSource</code> or <code>ImageSource</code>.</p>
+<p>There is a convenience extension method for obtaining <code>WriteableBitmap</code> objects, that circumvent the use of <code>IImage.As&lt;&gt;</code>:</p>
+<pre><code>IImage.AsWriteableBitmap();
+</code></pre>
+<h4 id="mono">Mono</h4>
+<p>On <em>Mono</em>, the <code>WinFormsImageManager</code> is re-used, meaning that the <code>IImage</code> object can be cast to <code>Bitmap</code> or its superclass <code>Image</code>.</p>
+<h4 id="unity">Unity</h4>
+<p>On <em>Unity</em>, an <code>IImage</code> object can be cast, using the <code>As&lt;&gt;()</code> method, to <code>Texture2D</code>.</p>
+<p>There is a convenience extension method for obtaining <code>Texture2D</code> objects, that circumvent the use of <code>IImage.As&lt;&gt;</code>:</p>
+<pre><code>IImage.AsTexture2D();
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fo-dicom/fo-dicom/blob/development/Documentation/v4/usage/image_rendering.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1381 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FilmBox
+   | fo-dicom 4 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FilmBox
+   | fo-dicom 4 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Dicom.Printing.FilmBox">
+  
+  
+  <h1 id="Dicom_Printing_FilmBox" data-uid="Dicom.Printing.FilmBox" class="text-break">Class FilmBox
+  </h1>
+  <div class="markdown level0 summary"><p>Basic film box</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></div>
+    <div class="level2"><span class="xref">FilmBox</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Dicom.DicomItem.html">DicomItem</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_InternalTransferSyntax">DicomDataset.InternalTransferSyntax</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_AutoValidate">DicomDataset.AutoValidate</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetDicomItem__1_Dicom_DicomTag_">DicomDataset.GetDicomItem&lt;T&gt;(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetSequence_Dicom_DicomTag_">DicomDataset.GetSequence(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetCodeItem_Dicom_DicomTag_">DicomDataset.GetCodeItem(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetMeasuredValue_Dicom_DicomTag_">DicomDataset.GetMeasuredValue(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetReferencedSOP_Dicom_DicomTag_">DicomDataset.GetReferencedSOP(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_TryGetSequence_Dicom_DicomTag_Dicom_DicomSequence__">DicomDataset.TryGetSequence(DicomTag, DicomSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetValueCount_Dicom_DicomTag_">DicomDataset.GetValueCount(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetValue__1_Dicom_DicomTag_System_Int32_">DicomDataset.GetValue&lt;T&gt;(DicomTag, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_TryGetValue__1_Dicom_DicomTag_System_Int32___0__">DicomDataset.TryGetValue&lt;T&gt;(DicomTag, Int32, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetValueOrDefault__1_Dicom_DicomTag_System_Int32___0_">DicomDataset.GetValueOrDefault&lt;T&gt;(DicomTag, Int32, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetValues__1_Dicom_DicomTag_">DicomDataset.GetValues&lt;T&gt;(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_TryGetValues__1_Dicom_DicomTag___0____">DicomDataset.TryGetValues&lt;T&gt;(DicomTag, T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetSingleValue__1_Dicom_DicomTag_">DicomDataset.GetSingleValue&lt;T&gt;(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_TryGetSingleValue__1_Dicom_DicomTag___0__">DicomDataset.TryGetSingleValue&lt;T&gt;(DicomTag, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetSingleValueOrDefault__1_Dicom_DicomTag___0_">DicomDataset.GetSingleValueOrDefault&lt;T&gt;(DicomTag, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetString_Dicom_DicomTag_">DicomDataset.GetString(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_TryGetString_Dicom_DicomTag_System_String__">DicomDataset.TryGetString(DicomTag, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Validate">DicomDataset.Validate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Get__1_Dicom_DicomTag_System_Int32_">DicomDataset.Get&lt;T&gt;(DicomTag, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Get_Dicom_DicomTag_System_Int32_">DicomDataset.Get(DicomTag, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Get__1_Dicom_DicomTag___0_">DicomDataset.Get&lt;T&gt;(DicomTag, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Get__1_Dicom_DicomTag_System_Int32___0_">DicomDataset.Get&lt;T&gt;(DicomTag, Int32, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetPrivateTag_Dicom_DicomTag_">DicomDataset.GetPrivateTag(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Add_Dicom_DicomItem___">DicomDataset.Add(DicomItem[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Add_System_Collections_Generic_IEnumerable_Dicom_DicomItem__">DicomDataset.Add(IEnumerable&lt;DicomItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Add__1_Dicom_DicomTag___0___">DicomDataset.Add&lt;T&gt;(DicomTag, T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Add__1_Dicom_DicomTag_Encoding___0___">DicomDataset.Add&lt;T&gt;(DicomTag, Encoding, T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Add__1_Dicom_DicomVR_Dicom_DicomTag___0___">DicomDataset.Add&lt;T&gt;(DicomVR, DicomTag, T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Add__1_Dicom_DicomVR_Dicom_DicomTag_Encoding___0___">DicomDataset.Add&lt;T&gt;(DicomVR, DicomTag, Encoding, T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_AddOrUpdate_Dicom_DicomItem___">DicomDataset.AddOrUpdate(DicomItem[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_AddOrUpdate_System_Collections_Generic_IEnumerable_Dicom_DicomItem__">DicomDataset.AddOrUpdate(IEnumerable&lt;DicomItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_AddOrUpdate__1_Dicom_DicomTag___0___">DicomDataset.AddOrUpdate&lt;T&gt;(DicomTag, T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_AddOrUpdate__1_Dicom_DicomTag_Encoding___0___">DicomDataset.AddOrUpdate&lt;T&gt;(DicomTag, Encoding, T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_AddOrUpdate__1_Dicom_DicomVR_Dicom_DicomTag___0___">DicomDataset.AddOrUpdate&lt;T&gt;(DicomVR, DicomTag, T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_AddOrUpdate__1_Dicom_DicomVR_Dicom_DicomTag_Encoding___0___">DicomDataset.AddOrUpdate&lt;T&gt;(DicomVR, DicomTag, Encoding, T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_AddOrUpdatePixelData_Dicom_DicomVR_IByteBuffer_Dicom_DicomTransferSyntax_">DicomDataset.AddOrUpdatePixelData(DicomVR, IByteBuffer, DicomTransferSyntax)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Contains_Dicom_DicomTag_">DicomDataset.Contains(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Remove_Dicom_DicomTag___">DicomDataset.Remove(DicomTag[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Remove_System_Func_Dicom_DicomItem_System_Boolean__">DicomDataset.Remove(Func&lt;DicomItem, Boolean&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_Clear">DicomDataset.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_CopyTo_Dicom_DicomDataset_">DicomDataset.CopyTo(DicomDataset)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_CopyTo_Dicom_DicomDataset_Dicom_DicomTag___">DicomDataset.CopyTo(DicomDataset, DicomTag[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_CopyTo_Dicom_DicomDataset_Dicom_DicomMaskedTag_">DicomDataset.CopyTo(DicomDataset, DicomMaskedTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_GetEnumerator">DicomDataset.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_System_Collections_IEnumerable_GetEnumerator">DicomDataset.IEnumerable.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Dicom.DicomDataset.html#Dicom_DicomDataset_ToString">DicomDataset.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Dicom.Printing.html">Dicom.Printing</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Dicom_Printing_FilmBox_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FilmBox : DicomDataset, IEnumerable&lt;DicomItem&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Dicom_Printing_FilmBox__ctor_" data-uid="Dicom.Printing.FilmBox.#ctor*"></a>
+  <h4 id="Dicom_Printing_FilmBox__ctor_Dicom_Printing_FilmSession_Dicom_DicomUID_Dicom_DicomDataset_" data-uid="Dicom.Printing.FilmBox.#ctor(Dicom.Printing.FilmSession,Dicom.DicomUID,Dicom.DicomDataset)">FilmBox(FilmSession, DicomUID, DicomDataset)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FilmBox(FilmSession filmSession, DicomUID sopInstance, DicomDataset dataset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Printing.FilmSession.html">FilmSession</a></td>
+        <td><span class="parametername">filmSession</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomUID.html">DicomUID</a></td>
+        <td><span class="parametername">sopInstance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">dataset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox__ctor_" data-uid="Dicom.Printing.FilmBox.#ctor*"></a>
+  <h4 id="Dicom_Printing_FilmBox__ctor_Dicom_Printing_FilmSession_Dicom_DicomUID_Dicom_DicomTransferSyntax_" data-uid="Dicom.Printing.FilmBox.#ctor(Dicom.Printing.FilmSession,Dicom.DicomUID,Dicom.DicomTransferSyntax)">FilmBox(FilmSession, DicomUID, DicomTransferSyntax)</h4>
+  <div class="markdown level1 summary"><p>Create baisc film box for specified film session</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FilmBox(FilmSession filmSession, DicomUID sopInstance, DicomTransferSyntax transferSyntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Printing.FilmSession.html">FilmSession</a></td>
+        <td><span class="parametername">filmSession</span></td>
+        <td><p>Film session instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomUID.html">DicomUID</a></td>
+        <td><span class="parametername">sopInstance</span></td>
+        <td><p>Basic film box SOP Instance UID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomTransferSyntax.html">DicomTransferSyntax</a></td>
+        <td><span class="parametername">transferSyntax</span></td>
+        <td><p>Requested internal transfer syntax.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Dicom_Printing_FilmBox_SOPClassUID" data-uid="Dicom.Printing.FilmBox.SOPClassUID">SOPClassUID</h4>
+  <div class="markdown level1 summary"><p>Basic film box SOP class UID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DicomUID SOPClassUID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomUID.html">DicomUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Dicom_Printing_FilmBox_AnnotationDisplayFormatID_" data-uid="Dicom.Printing.FilmBox.AnnotationDisplayFormatID*"></a>
+  <h4 id="Dicom_Printing_FilmBox_AnnotationDisplayFormatID" data-uid="Dicom.Printing.FilmBox.AnnotationDisplayFormatID">AnnotationDisplayFormatID</h4>
+  <div class="markdown level1 summary"><p>Identification of annotation display format. The definition of the annotation
+display formats and the annotation box position sequence are defined in the Conformance
+Statement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AnnotationDisplayFormatID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_BasicImageBoxes_" data-uid="Dicom.Printing.FilmBox.BasicImageBoxes*"></a>
+  <h4 id="Dicom_Printing_FilmBox_BasicImageBoxes" data-uid="Dicom.Printing.FilmBox.BasicImageBoxes">BasicImageBoxes</h4>
+  <div class="markdown level1 summary"><p>Basic image boxes list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;ImageBox&gt; BasicImageBoxes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Dicom.Printing.ImageBox.html">ImageBox</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_BorderDensity_" data-uid="Dicom.Printing.FilmBox.BorderDensity*"></a>
+  <h4 id="Dicom_Printing_FilmBox_BorderDensity" data-uid="Dicom.Printing.FilmBox.BorderDensity">BorderDensity</h4>
+  <div class="markdown level1 summary"><p>Density of the film areas surrounding and between images on the film.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BorderDensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_Printing_FilmBox_BorderDensity_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Defined Terms:</p>
+<ul><li>BLACK</li><li>WHITE</li><li>
+i where i represents the desired density in hundredths of OD (e.g. 150 corresponds with 1.5 OD)
+</li></ul>
+</div>
+  
+  
+  <a id="Dicom_Printing_FilmBox_ConfigurationInformation_" data-uid="Dicom.Printing.FilmBox.ConfigurationInformation*"></a>
+  <h4 id="Dicom_Printing_FilmBox_ConfigurationInformation" data-uid="Dicom.Printing.FilmBox.ConfigurationInformation">ConfigurationInformation</h4>
+  <div class="markdown level1 summary"><p>Character string that contains either the ID of the printer configuration
+table that contains a set of values for implementation specific print parameters
+(e.g. perception LUT related parameters) or one or more configuration data values,
+encoded as characters. If there are multiple configuration data values encoded in
+the string, they shall be separated by backslashes. The definition of values shall
+be contained in the SCP's Conformance Statement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConfigurationInformation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_Printing_FilmBox_ConfigurationInformation_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Defined Terms:</p>
+<p>Note: It is recommended that for SCPs, CS000 represent the lowest contrast and CS999
+the highest contrast levels available.</p>
+</div>
+  
+  
+  <a id="Dicom_Printing_FilmBox_EmptyImageDensity_" data-uid="Dicom.Printing.FilmBox.EmptyImageDensity*"></a>
+  <h4 id="Dicom_Printing_FilmBox_EmptyImageDensity" data-uid="Dicom.Printing.FilmBox.EmptyImageDensity">EmptyImageDensity</h4>
+  <div class="markdown level1 summary"><p>Density of the image box area on the film that contains no image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EmptyImageDensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_Printing_FilmBox_EmptyImageDensity_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Defined Terms:</p>
+<ul><li>BLACK</li><li>WHITE</li><li>
+i where i represents the desired density in hundredths of OD 
+(e.g. 150 corresponds with 1.5 OD)
+</li></ul>
+</div>
+  
+  
+  <a id="Dicom_Printing_FilmBox_FilmOrientation_" data-uid="Dicom.Printing.FilmBox.FilmOrientation*"></a>
+  <h4 id="Dicom_Printing_FilmBox_FilmOrientation" data-uid="Dicom.Printing.FilmBox.FilmOrientation">FilmOrientation</h4>
+  <div class="markdown level1 summary"><p>Film orientation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FilmOrientation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_Printing_FilmBox_FilmOrientation_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Enumerated Values:</p>
+<ul><li>PORTRAITvertical film position</li><li>LANDSCAPEhorizontal film position</li></ul>
+</div>
+  
+  
+  <a id="Dicom_Printing_FilmBox_FilmSession_" data-uid="Dicom.Printing.FilmBox.FilmSession*"></a>
+  <h4 id="Dicom_Printing_FilmBox_FilmSession" data-uid="Dicom.Printing.FilmBox.FilmSession">FilmSession</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FilmSession FilmSession { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Printing.FilmSession.html">FilmSession</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_FilmSizeID_" data-uid="Dicom.Printing.FilmBox.FilmSizeID*"></a>
+  <h4 id="Dicom_Printing_FilmBox_FilmSizeID" data-uid="Dicom.Printing.FilmBox.FilmSizeID">FilmSizeID</h4>
+  <div class="markdown level1 summary"><p>Film size identification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FilmSizeID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_Printing_FilmBox_FilmSizeID_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Defined Terms:</p>
+<ul><li>8INX10IN</li><li>8_5INX11IN</li><li>10INX12IN</li><li>10INX14IN</li><li>11INX14IN</li><li>11INX17IN</li><li>14INX14IN</li><li>14INX17IN</li><li>24CMX24CM</li><li>24CMX30CM</li><li>A4</li><li>A3</li></ul>
+<p>Notes:
+10INX14IN corresponds with 25.7CMX36.4CM
+A4 corresponds with 210 x 297 millimeters
+A3 corresponds with 297 x 420 millimeters</p>
+</div>
+  
+  
+  <a id="Dicom_Printing_FilmBox_Illumination_" data-uid="Dicom.Printing.FilmBox.Illumination*"></a>
+  <h4 id="Dicom_Printing_FilmBox_Illumination" data-uid="Dicom.Printing.FilmBox.Illumination">Illumination</h4>
+  <div class="markdown level1 summary"><p>Luminance of lightbox illuminating a piece of transmissive film, or for the case of reflective media,
+luminance obtainable from diffuse reflection of the illumination present. Expressed as L0, in candelas
+per square meter (cd/m2).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort Illumination { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_ImageDisplayFormat_" data-uid="Dicom.Printing.FilmBox.ImageDisplayFormat*"></a>
+  <h4 id="Dicom_Printing_FilmBox_ImageDisplayFormat" data-uid="Dicom.Printing.FilmBox.ImageDisplayFormat">ImageDisplayFormat</h4>
+  <div class="markdown level1 summary"><p>Type of image display format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ImageDisplayFormat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_Printing_FilmBox_ImageDisplayFormat_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Enumerated Values:</p>
+<ul><li>STANDARD\C,R
+  film contains equal size rectangular image boxes with R rows of image 
+  boxes and C columns of image boxes; C and R are integers.
+</li><li>ROW\R1,R2,R3, etc.
+film contains rows with equal size rectangular image boxes with R1 
+image boxes in the first row, R2 image boxes in second row, R3 image boxes in third 
+row, etc.; R1, R2, R3, etc. are integers.
+</li><li>COL\C1,C2,C3, etc.
+film contains columns with equal size rectangular image boxes with C1 
+image boxes in the first column, C2 image boxes in second column, C3 image boxes in 
+third column, etc.; C1, C2, C3, etc. are integers.
+</li><li>SLIDE
+film contains 35mm slides; the number of slides for a particular film 
+size is configuration dependent.
+</li><li>SUPERSLIDE
+film contains 40mm slides; the number of slides for a particular film 
+size is configuration dependent.
+</li><li>CUSTOM\i
+film contains a customized ordering of rectangular image boxes; i identifies 
+the image display format; the definition of the image display formats is defined in the 
+Conformance Statement; i is an integer
+.</li></ul>
+</div>
+  
+  
+  <a id="Dicom_Printing_FilmBox_MagnificationType_" data-uid="Dicom.Printing.FilmBox.MagnificationType*"></a>
+  <h4 id="Dicom_Printing_FilmBox_MagnificationType" data-uid="Dicom.Printing.FilmBox.MagnificationType">MagnificationType</h4>
+  <div class="markdown level1 summary"><p>Interpolation type by which the printer magnifies or decimates the image
+in order to fit the image in the image box on film.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MagnificationType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_Printing_FilmBox_MagnificationType_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Defined Terms:</p>
+<ul><li>REPLICATE</li><li>BILINEAR</li><li>CUBIC</li><li>NONE</li></ul>
+</div>
+  
+  
+  <a id="Dicom_Printing_FilmBox_MaxDensity_" data-uid="Dicom.Printing.FilmBox.MaxDensity*"></a>
+  <h4 id="Dicom_Printing_FilmBox_MaxDensity" data-uid="Dicom.Printing.FilmBox.MaxDensity">MaxDensity</h4>
+  <div class="markdown level1 summary"><p>Maximum density of the images on the film, expressed in hundredths of OD. If Max Density is higher than
+maximum printer density than Max Density is set to maximum printer density.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort MaxDensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_MinDensity_" data-uid="Dicom.Printing.FilmBox.MinDensity*"></a>
+  <h4 id="Dicom_Printing_FilmBox_MinDensity" data-uid="Dicom.Printing.FilmBox.MinDensity">MinDensity</h4>
+  <div class="markdown level1 summary"><p>Minimum density of the images on the film, expressed in hundredths of OD. If Min Density is lower than
+minimum printer density than Min Density is set to minimum printer density.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort MinDensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_PresentationLut_" data-uid="Dicom.Printing.FilmBox.PresentationLut*"></a>
+  <h4 id="Dicom_Printing_FilmBox_PresentationLut" data-uid="Dicom.Printing.FilmBox.PresentationLut">PresentationLut</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PresentationLut PresentationLut { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Printing.PresentationLut.html">PresentationLut</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_ReferencedPresentationLutSequence_" data-uid="Dicom.Printing.FilmBox.ReferencedPresentationLutSequence*"></a>
+  <h4 id="Dicom_Printing_FilmBox_ReferencedPresentationLutSequence" data-uid="Dicom.Printing.FilmBox.ReferencedPresentationLutSequence">ReferencedPresentationLutSequence</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomSequence ReferencedPresentationLutSequence { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomSequence.html">DicomSequence</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_ReflectedAmbientLight_" data-uid="Dicom.Printing.FilmBox.ReflectedAmbientLight*"></a>
+  <h4 id="Dicom_Printing_FilmBox_ReflectedAmbientLight" data-uid="Dicom.Printing.FilmBox.ReflectedAmbientLight">ReflectedAmbientLight</h4>
+  <div class="markdown level1 summary"><p>For transmissive film, luminance contribution due to reflected ambient light.
+Expressed as La, in candelas per square meter (cd/m2).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort ReflectedAmbientLight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_RequestedResolutionID_" data-uid="Dicom.Printing.FilmBox.RequestedResolutionID*"></a>
+  <h4 id="Dicom_Printing_FilmBox_RequestedResolutionID" data-uid="Dicom.Printing.FilmBox.RequestedResolutionID">RequestedResolutionID</h4>
+  <div class="markdown level1 summary"><p>Specifies the resolution at which images in this Film Box are to be printed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RequestedResolutionID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_Printing_FilmBox_RequestedResolutionID_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Defined Terms:</p>
+<ul><li>STANDARDapproximately 4k x 5k printable pixels on a 14 x 17 inch film</li><li>HIGHApproximately twice the resolution of STANDARD.</li></ul>
+</div>
+  
+  
+  <a id="Dicom_Printing_FilmBox_SmoothingType_" data-uid="Dicom.Printing.FilmBox.SmoothingType*"></a>
+  <h4 id="Dicom_Printing_FilmBox_SmoothingType" data-uid="Dicom.Printing.FilmBox.SmoothingType">SmoothingType</h4>
+  <div class="markdown level1 summary"><p>Further specifies the type of the interpolation function. Values are defined in Conformance Statement.
+Only valid for Magnification Type (2010,0060) = CUBIC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SmoothingType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_SOPInstanceUID_" data-uid="Dicom.Printing.FilmBox.SOPInstanceUID*"></a>
+  <h4 id="Dicom_Printing_FilmBox_SOPInstanceUID" data-uid="Dicom.Printing.FilmBox.SOPInstanceUID">SOPInstanceUID</h4>
+  <div class="markdown level1 summary"><p>Basic film box SOP instance UID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomUID SOPInstanceUID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomUID.html">DicomUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_Trim_" data-uid="Dicom.Printing.FilmBox.Trim*"></a>
+  <h4 id="Dicom_Printing_FilmBox_Trim" data-uid="Dicom.Printing.FilmBox.Trim">Trim</h4>
+  <div class="markdown level1 summary"><p>Specifies whether a trim box shall be printed surrounding each image on the film.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Trim { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dicom_Printing_FilmBox_Trim_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Enumerated Values:</p>
+<ul><li>YES</li><li>NO</li></ul>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Dicom_Printing_FilmBox_Clone_" data-uid="Dicom.Printing.FilmBox.Clone*"></a>
+  <h4 id="Dicom_Printing_FilmBox_Clone" data-uid="Dicom.Printing.FilmBox.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Create clone of basic film box instanct</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FilmBox Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Printing.FilmBox.html">FilmBox</a></td>
+        <td><p>The cloned basic film box instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_FindImageBox_" data-uid="Dicom.Printing.FilmBox.FindImageBox*"></a>
+  <h4 id="Dicom_Printing_FilmBox_FindImageBox_Dicom_DicomUID_" data-uid="Dicom.Printing.FilmBox.FindImageBox(Dicom.DicomUID)">FindImageBox(DicomUID)</h4>
+  <div class="markdown level1 summary"><p>Find specific basic image box using its SOP instance UID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageBox FindImageBox(DicomUID sopInstance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomUID.html">DicomUID</a></td>
+        <td><span class="parametername">sopInstance</span></td>
+        <td><p>Image box SOP instance UID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Printing.ImageBox.html">ImageBox</a></td>
+        <td><p>The basic image box instance for specified SOP instance UID or null if no matches found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_Initialize_" data-uid="Dicom.Printing.FilmBox.Initialize*"></a>
+  <h4 id="Dicom_Printing_FilmBox_Initialize" data-uid="Dicom.Printing.FilmBox.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Initalize the film box dataset attributes to defaults</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Initialize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if film box attributes could be initialized, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_IsColor_" data-uid="Dicom.Printing.FilmBox.IsColor*"></a>
+  <h4 id="Dicom_Printing_FilmBox_IsColor" data-uid="Dicom.Printing.FilmBox.IsColor">IsColor()</h4>
+  <div class="markdown level1 summary"><p>Gets whether one or more image boxes is colored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsColor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_Load_" data-uid="Dicom.Printing.FilmBox.Load*"></a>
+  <h4 id="Dicom_Printing_FilmBox_Load_Dicom_Printing_FilmSession_System_String_" data-uid="Dicom.Printing.FilmBox.Load(Dicom.Printing.FilmSession,System.String)">Load(FilmSession, String)</h4>
+  <div class="markdown level1 summary"><p>Load a film box for a specific session from a specific folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FilmBox Load(FilmSession filmSession, string filmBoxFolder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Printing.FilmSession.html">FilmSession</a></td>
+        <td><span class="parametername">filmSession</span></td>
+        <td><p>Film session.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filmBoxFolder</span></td>
+        <td><p>Folder in which film box is stored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Printing.FilmBox.html">FilmBox</a></td>
+        <td><p>Film box for the specified <code data-dev-comment-type="paramref" class="paramref">filmSession</code> located in the <code data-dev-comment-type="paramref" class="paramref">filmBoxFolder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_PrintColumnFormat_" data-uid="Dicom.Printing.FilmBox.PrintColumnFormat*"></a>
+  <h4 id="Dicom_Printing_FilmBox_PrintColumnFormat_System_String___Dicom_Imaging_Mathematics_RectF_" data-uid="Dicom.Printing.FilmBox.PrintColumnFormat(System.String[],Dicom.Imaging.Mathematics.RectF)">PrintColumnFormat(String[], RectF)</h4>
+  <div class="markdown level1 summary"><p>Generate rectangles arranged in column format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RectF[] PrintColumnFormat(string[] parts, RectF marginBounds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="parametername">parts</span></td>
+        <td><p>Display format data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.Mathematics.RectF.html">RectF</a></td>
+        <td><span class="parametername">marginBounds</span></td>
+        <td><p>Margin bounds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.Mathematics.RectF.html">RectF</a>[]</td>
+        <td><p>Rectangles arranged in column format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_PrintRowFormat_" data-uid="Dicom.Printing.FilmBox.PrintRowFormat*"></a>
+  <h4 id="Dicom_Printing_FilmBox_PrintRowFormat_System_String___Dicom_Imaging_Mathematics_RectF_" data-uid="Dicom.Printing.FilmBox.PrintRowFormat(System.String[],Dicom.Imaging.Mathematics.RectF)">PrintRowFormat(String[], RectF)</h4>
+  <div class="markdown level1 summary"><p>Generate rectangles arranged in row format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RectF[] PrintRowFormat(string[] parts, RectF marginBounds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="parametername">parts</span></td>
+        <td><p>Display format data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.Mathematics.RectF.html">RectF</a></td>
+        <td><span class="parametername">marginBounds</span></td>
+        <td><p>Margin bounds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.Mathematics.RectF.html">RectF</a>[]</td>
+        <td><p>Rectangles arranged in row format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_PrintStandardFormat_" data-uid="Dicom.Printing.FilmBox.PrintStandardFormat*"></a>
+  <h4 id="Dicom_Printing_FilmBox_PrintStandardFormat_System_String___Dicom_Imaging_Mathematics_RectF_" data-uid="Dicom.Printing.FilmBox.PrintStandardFormat(System.String[],Dicom.Imaging.Mathematics.RectF)">PrintStandardFormat(String[], RectF)</h4>
+  <div class="markdown level1 summary"><p>Generate rectangles arranged in standard format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RectF[] PrintStandardFormat(string[] parts, RectF marginBounds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="parametername">parts</span></td>
+        <td><p>Display format data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.Mathematics.RectF.html">RectF</a></td>
+        <td><span class="parametername">marginBounds</span></td>
+        <td><p>Margin bounds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.Imaging.Mathematics.RectF.html">RectF</a>[]</td>
+        <td><p>Rectangles arranged in standard format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_Printing_FilmBox_Save_" data-uid="Dicom.Printing.FilmBox.Save*"></a>
+  <h4 id="Dicom_Printing_FilmBox_Save_System_String_" data-uid="Dicom.Printing.FilmBox.Save(System.String)">Save(String)</h4>
+  <div class="markdown level1 summary"><p>Save the contents of the film box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(string filmBoxFolder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filmBoxFolder</span></td>
+        <td><p>Folder in which to save the film box contents.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1174 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DicomContentItem
+   | fo-dicom 4 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DicomContentItem
+   | fo-dicom 4 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Dicom.StructuredReport.DicomContentItem">
+  
+  
+  <h1 id="Dicom_StructuredReport_DicomContentItem" data-uid="Dicom.StructuredReport.DicomContentItem" class="text-break">Class DicomContentItem
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">DicomContentItem</span></div>
+      <div class="level2"><a class="xref" href="Dicom.StructuredReport.DicomStructuredReport.html">DicomStructuredReport</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Dicom.StructuredReport.html">Dicom.StructuredReport</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Dicom_StructuredReport_DicomContentItem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DicomContentItem</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem__ctor_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem__ctor_Dicom_DicomDataset_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor(Dicom.DicomDataset)">DicomContentItem(DicomDataset)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem(DicomDataset dataset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">dataset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem__ctor_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem__ctor_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_DicomUID_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.DicomUID)">DicomContentItem(DicomCodeItem, DicomRelationship, DicomUID)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem(DicomCodeItem code, DicomRelationship relationship, DicomUID value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomUID.html">DicomUID</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem__ctor_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem__ctor_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_StructuredReport_DicomCodeItem_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.StructuredReport.DicomCodeItem)">DicomContentItem(DicomCodeItem, DicomRelationship, DicomCodeItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem(DicomCodeItem code, DicomRelationship relationship, DicomCodeItem value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem__ctor_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem__ctor_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_StructuredReport_DicomContinuity_Dicom_StructuredReport_DicomContentItem___" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.StructuredReport.DicomContinuity,Dicom.StructuredReport.DicomContentItem[])">DicomContentItem(DicomCodeItem, DicomRelationship, DicomContinuity, DicomContentItem[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem(DicomCodeItem code, DicomRelationship relationship, DicomContinuity continuity, params DicomContentItem[] items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContinuity.html">DicomContinuity</a></td>
+        <td><span class="parametername">continuity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContentItem.html">DicomContentItem</a>[]</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem__ctor_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem__ctor_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_StructuredReport_DicomMeasuredValue_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.StructuredReport.DicomMeasuredValue)">DicomContentItem(DicomCodeItem, DicomRelationship, DicomMeasuredValue)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem(DicomCodeItem code, DicomRelationship relationship, DicomMeasuredValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomMeasuredValue.html">DicomMeasuredValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem__ctor_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem__ctor_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_StructuredReport_DicomValueType_Dicom_StructuredReport_DicomReferencedSOP_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.StructuredReport.DicomValueType,Dicom.StructuredReport.DicomReferencedSOP)">DicomContentItem(DicomCodeItem, DicomRelationship, DicomValueType, DicomReferencedSOP)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem(DicomCodeItem code, DicomRelationship relationship, DicomValueType type, DicomReferencedSOP value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomValueType.html">DicomValueType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomReferencedSOP.html">DicomReferencedSOP</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem__ctor_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem__ctor_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_StructuredReport_DicomValueType_System_DateTime_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.StructuredReport.DicomValueType,System.DateTime)">DicomContentItem(DicomCodeItem, DicomRelationship, DicomValueType, DateTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem(DicomCodeItem code, DicomRelationship relationship, DicomValueType type, DateTime value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomValueType.html">DicomValueType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem__ctor_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem__ctor_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_StructuredReport_DicomValueType_System_String_" data-uid="Dicom.StructuredReport.DicomContentItem.#ctor(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.StructuredReport.DicomValueType,System.String)">DicomContentItem(DicomCodeItem, DicomRelationship, DicomValueType, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem(DicomCodeItem code, DicomRelationship relationship, DicomValueType type, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomValueType.html">DicomValueType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Code_" data-uid="Dicom.StructuredReport.DicomContentItem.Code*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Code" data-uid="Dicom.StructuredReport.DicomContentItem.Code">Code</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomCodeItem Code { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Continuity_" data-uid="Dicom.StructuredReport.DicomContentItem.Continuity*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Continuity" data-uid="Dicom.StructuredReport.DicomContentItem.Continuity">Continuity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContinuity Continuity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContinuity.html">DicomContinuity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Dataset_" data-uid="Dicom.StructuredReport.DicomContentItem.Dataset*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Dataset" data-uid="Dicom.StructuredReport.DicomContentItem.Dataset">Dataset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset Dataset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomDataset.html">DicomDataset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Relationship_" data-uid="Dicom.StructuredReport.DicomContentItem.Relationship*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Relationship" data-uid="Dicom.StructuredReport.DicomContentItem.Relationship">Relationship</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomRelationship Relationship { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Type_" data-uid="Dicom.StructuredReport.DicomContentItem.Type*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Type" data-uid="Dicom.StructuredReport.DicomContentItem.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomValueType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomValueType.html">DicomValueType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Add_" data-uid="Dicom.StructuredReport.DicomContentItem.Add*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Add_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_DicomUID_" data-uid="Dicom.StructuredReport.DicomContentItem.Add(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.DicomUID)">Add(DicomCodeItem, DicomRelationship, DicomUID)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem Add(DicomCodeItem code, DicomRelationship relationship, DicomUID value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.DicomUID.html">DicomUID</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContentItem.html">DicomContentItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Add_" data-uid="Dicom.StructuredReport.DicomContentItem.Add*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Add_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_StructuredReport_DicomCodeItem_" data-uid="Dicom.StructuredReport.DicomContentItem.Add(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.StructuredReport.DicomCodeItem)">Add(DicomCodeItem, DicomRelationship, DicomCodeItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem Add(DicomCodeItem code, DicomRelationship relationship, DicomCodeItem value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContentItem.html">DicomContentItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Add_" data-uid="Dicom.StructuredReport.DicomContentItem.Add*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Add_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_StructuredReport_DicomContinuity_Dicom_StructuredReport_DicomContentItem___" data-uid="Dicom.StructuredReport.DicomContentItem.Add(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.StructuredReport.DicomContinuity,Dicom.StructuredReport.DicomContentItem[])">Add(DicomCodeItem, DicomRelationship, DicomContinuity, DicomContentItem[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem Add(DicomCodeItem code, DicomRelationship relationship, DicomContinuity continuity, params DicomContentItem[] items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContinuity.html">DicomContinuity</a></td>
+        <td><span class="parametername">continuity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContentItem.html">DicomContentItem</a>[]</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContentItem.html">DicomContentItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Add_" data-uid="Dicom.StructuredReport.DicomContentItem.Add*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Add_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_StructuredReport_DicomMeasuredValue_" data-uid="Dicom.StructuredReport.DicomContentItem.Add(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.StructuredReport.DicomMeasuredValue)">Add(DicomCodeItem, DicomRelationship, DicomMeasuredValue)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem Add(DicomCodeItem code, DicomRelationship relationship, DicomMeasuredValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomMeasuredValue.html">DicomMeasuredValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContentItem.html">DicomContentItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Add_" data-uid="Dicom.StructuredReport.DicomContentItem.Add*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Add_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_StructuredReport_DicomValueType_Dicom_StructuredReport_DicomReferencedSOP_" data-uid="Dicom.StructuredReport.DicomContentItem.Add(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.StructuredReport.DicomValueType,Dicom.StructuredReport.DicomReferencedSOP)">Add(DicomCodeItem, DicomRelationship, DicomValueType, DicomReferencedSOP)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem Add(DicomCodeItem code, DicomRelationship relationship, DicomValueType type, DicomReferencedSOP value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomValueType.html">DicomValueType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomReferencedSOP.html">DicomReferencedSOP</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContentItem.html">DicomContentItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Add_" data-uid="Dicom.StructuredReport.DicomContentItem.Add*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Add_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_StructuredReport_DicomValueType_System_DateTime_" data-uid="Dicom.StructuredReport.DicomContentItem.Add(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.StructuredReport.DicomValueType,System.DateTime)">Add(DicomCodeItem, DicomRelationship, DicomValueType, DateTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem Add(DicomCodeItem code, DicomRelationship relationship, DicomValueType type, DateTime value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomValueType.html">DicomValueType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContentItem.html">DicomContentItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Add_" data-uid="Dicom.StructuredReport.DicomContentItem.Add*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Add_Dicom_StructuredReport_DicomCodeItem_Dicom_StructuredReport_DicomRelationship_Dicom_StructuredReport_DicomValueType_System_String_" data-uid="Dicom.StructuredReport.DicomContentItem.Add(Dicom.StructuredReport.DicomCodeItem,Dicom.StructuredReport.DicomRelationship,Dicom.StructuredReport.DicomValueType,System.String)">Add(DicomCodeItem, DicomRelationship, DicomValueType, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem Add(DicomCodeItem code, DicomRelationship relationship, DicomValueType type, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomRelationship.html">DicomRelationship</a></td>
+        <td><span class="parametername">relationship</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomValueType.html">DicomValueType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContentItem.html">DicomContentItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Add_" data-uid="Dicom.StructuredReport.DicomContentItem.Add*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Add_Dicom_StructuredReport_DicomContentItem_" data-uid="Dicom.StructuredReport.DicomContentItem.Add(Dicom.StructuredReport.DicomContentItem)">Add(DicomContentItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomContentItem Add(DicomContentItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContentItem.html">DicomContentItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomContentItem.html">DicomContentItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Children_" data-uid="Dicom.StructuredReport.DicomContentItem.Children*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Children" data-uid="Dicom.StructuredReport.DicomContentItem.Children">Children()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;DicomContentItem&gt; Children()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Dicom.StructuredReport.DicomContentItem.html">DicomContentItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Get_" data-uid="Dicom.StructuredReport.DicomContentItem.Get*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Get__1" data-uid="Dicom.StructuredReport.DicomContentItem.Get``1">Get&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_Get_" data-uid="Dicom.StructuredReport.DicomContentItem.Get*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_Get__1_Dicom_StructuredReport_DicomCodeItem___0_" data-uid="Dicom.StructuredReport.DicomContentItem.Get``1(Dicom.StructuredReport.DicomCodeItem,``0)">Get&lt;T&gt;(DicomCodeItem, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(DicomCodeItem code, T defaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dicom.StructuredReport.DicomCodeItem.html">DicomCodeItem</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dicom_StructuredReport_DicomContentItem_ToString_" data-uid="Dicom.StructuredReport.DicomContentItem.ToString*"></a>
+  <h4 id="Dicom_StructuredReport_DicomContentItem_ToString" data-uid="Dicom.StructuredReport.DicomContentItem.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

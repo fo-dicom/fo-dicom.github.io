@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Prerequisites for development branch | Fellow Oak DICOM 5 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Prerequisites for development branch | Fellow Oak DICOM 5 API ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="prerequisites-for-development-branch">Prerequisites for <em>development</em> branch</h3>
+
+<p>Fellow Oak Dicom is developed with Visual Studio 2017 or later.</p>
+<p><em>fo-dicom.core</em> targets .Net Standard 2.0 and uses C# 8 as language version. This requires NetCore3 SDK to be installed on the machine.</p>
+<p><em>fo-dicom.Tests</em> are targeting .Net Framework 4.6.2, .Net Core 2.1 and .Net Core 3.1. In order to run the unittests you need to have those SDKs installed.</p>
+<h3 id="getting-the-source-code">Getting the source code</h3>
+<ul>
+<li>Fork the repository <a href="https://github.com/fo-dicom/fo-dicom">fo-dicom/fo-dicom</a> into your repository and clone it to your workstation using your favorite git client. This is the prefered way if you plan to contribute.</li>
+<li>Or simply download the sources as ZIP file from github.</li>
+</ul>
+<p>The repository contains several project and solution files. The current solution is <strong>FO-DICOM.Full.sln</strong>, so open this solution file. <em>Dicom.Full.sln</em> should be opened if you need to open the old version for bugfixing.</p>
+<p>After opening the solution file you will find several projects:</p>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FO-DICOM.Core</td>
+<td>This project contains the core logic for handling DICOM files, and working with DICOM services</td>
+</tr>
+<tr>
+<td>Tools/FO-DICOM.Dump</td>
+<td>Is is some sample project that can be used to reproduce some isses and debug into the code. The application opens files, shows all tags and values, can anonymize the file and render the image.</td>
+</tr>
+<tr>
+<td>Tests/FO-DICOM.Tests</td>
+<td>The xUnit based unit test project</td>
+</tr>
+<tr>
+<td>Tests/FO-DICOM.Benchmark</td>
+<td>This project executes a benchmark test for some typical actions like opening and parsing a dataset or sending a file via store scu and scp.</td>
+</tr>
+<tr>
+<td>Platform/*</td>
+<td>Within this folder there are several projects, that contain some platform specific code and can be then registered in DI container.</td>
+</tr>
+<tr>
+<td>Logging/*</td>
+<td>Projects integrating logging frameworks</td>
+</tr>
+<tr>
+<td>Serialization/*</td>
+<td>Projects integrationg serialization into Json, Xml or any other format</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fo-dicom/fo-dicom/blob/development/Documentation/v5/developer/buildnotes.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
