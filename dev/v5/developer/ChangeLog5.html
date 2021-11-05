@@ -8,7 +8,7 @@
     <title> | Fellow Oak DICOM 5 API </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content=" | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,6 +88,8 @@
 <li>Change: <code>DicomFile.Open</code> now throws a <code>DicomFileException</code> if the file size is less than 132 bytes (#641)</li>
 <li>Add XML documentation to nuget package</li>
 <li>Change: Trying to add a DICOM element with invalid group ID to DICOM meta information now throws <code>DicomDataException</code> (#750)</li>
+<li>Bug fix: Prevent DicomJsonConverter from consuming root end object token (#1251)</li>
+<li>Add missing handling of UV, SV and OV in DicomDatasetReaderObserver.OnElement</li>
 </ul>
 <h4 id="500-2021-09-13">5.0.0 (2021-09-13)</h4>
 <ul>
