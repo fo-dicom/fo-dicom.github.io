@@ -268,12 +268,12 @@
   
   
   <a id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_CopyToStream_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.CopyToStream*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_CopyToStream_Stream_System_Int64_System_Int32_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.CopyToStream(Stream,System.Int64,System.Int32)">CopyToStream(Stream, Int64, Int32)</h4>
+  <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_CopyToStream_Stream_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.CopyToStream(Stream)">CopyToStream(Stream)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CopyToStream(Stream s, long offset, int count)</code></pre>
+    <pre><code class="lang-csharp hljs">public void CopyToStream(Stream stream)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -287,17 +287,7 @@
     <tbody>
       <tr>
         <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">s</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><span class="parametername">offset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">count</span></td>
+        <td><span class="parametername">stream</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -305,12 +295,12 @@
   
   
   <a id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_CopyToStreamAsync_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.CopyToStreamAsync*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_CopyToStreamAsync_Stream_System_Int64_System_Int32_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.CopyToStreamAsync(Stream,System.Int64,System.Int32)">CopyToStreamAsync(Stream, Int64, Int32)</h4>
+  <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_CopyToStreamAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.CopyToStreamAsync(Stream,CancellationToken)">CopyToStreamAsync(Stream, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task CopyToStreamAsync(Stream s, long offset, int count)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task CopyToStreamAsync(Stream stream, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -324,17 +314,12 @@
     <tbody>
       <tr>
         <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">s</span></td>
+        <td><span class="parametername">stream</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><span class="parametername">offset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">count</span></td>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -402,6 +387,43 @@
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
         <td><p>Requested sub-range of the <see name="Data"></see> array.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_GetByteRange_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.GetByteRange*"></a>
+  <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_GetByteRange_System_Int64_System_Int32_System_Byte___" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.GetByteRange(System.Int64,System.Int32,System.Byte[])">GetByteRange(Int64, Int32, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetByteRange(long offset, int count, byte[] output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

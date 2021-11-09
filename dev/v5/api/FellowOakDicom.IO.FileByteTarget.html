@@ -189,58 +189,16 @@
   </h3>
   
   
-  <a id="FellowOakDicom_IO_FileByteTarget_ApplyToStream_" data-uid="FellowOakDicom.IO.FileByteTarget.ApplyToStream*"></a>
-  <h4 id="FellowOakDicom_IO_FileByteTarget_ApplyToStream_Action_Stream__" data-uid="FellowOakDicom.IO.FileByteTarget.ApplyToStream(Action{Stream})">ApplyToStream(Action&lt;Stream&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="FellowOakDicom_IO_FileByteTarget_AsWritableStream_" data-uid="FellowOakDicom.IO.FileByteTarget.AsWritableStream*"></a>
+  <h4 id="FellowOakDicom_IO_FileByteTarget_AsWritableStream" data-uid="FellowOakDicom.IO.FileByteTarget.AsWritableStream">AsWritableStream()</h4>
+  <div class="markdown level1 summary"><p>Exposes the current byte target as a writable stream
+Do not dispose of this stream! It will be disposed when the byte target is disposed</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ApplyToStream(Action&lt;Stream&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public Stream AsWritableStream()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">Stream</span>&gt;</td>
-        <td><span class="parametername">action</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_FileByteTarget_ApplyToStreamAsync_" data-uid="FellowOakDicom.IO.FileByteTarget.ApplyToStreamAsync*"></a>
-  <h4 id="FellowOakDicom_IO_FileByteTarget_ApplyToStreamAsync_Func_Stream_Task__" data-uid="FellowOakDicom.IO.FileByteTarget.ApplyToStreamAsync(Func{Stream,Task})">ApplyToStreamAsync(Func&lt;Stream, Task&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ApplyToStreamAsync(Func&lt;Stream, Task&gt; action)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">Stream</span>, <span class="xref">Task</span>&gt;</td>
-        <td><span class="parametername">action</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -251,8 +209,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
+        <td><span class="xref">Stream</span></td>
+        <td><p>A stream that, when written to, will write to the underlying byte target</p>
+</td>
       </tr>
     </tbody>
   </table>

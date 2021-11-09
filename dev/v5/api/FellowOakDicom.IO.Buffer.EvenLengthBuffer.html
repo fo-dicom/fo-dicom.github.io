@@ -236,6 +236,33 @@
   
   
   <a id="FellowOakDicom_IO_Buffer_EvenLengthBuffer_CopyToStream_" data-uid="FellowOakDicom.IO.Buffer.EvenLengthBuffer.CopyToStream*"></a>
+  <h4 id="FellowOakDicom_IO_Buffer_EvenLengthBuffer_CopyToStream_Stream_" data-uid="FellowOakDicom.IO.Buffer.EvenLengthBuffer.CopyToStream(Stream)">CopyToStream(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToStream(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_IO_Buffer_EvenLengthBuffer_CopyToStream_" data-uid="FellowOakDicom.IO.Buffer.EvenLengthBuffer.CopyToStream*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_EvenLengthBuffer_CopyToStream_Stream_System_Int64_System_Int32_" data-uid="FellowOakDicom.IO.Buffer.EvenLengthBuffer.CopyToStream(Stream,System.Int64,System.Int32)">CopyToStream(Stream, Int64, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -266,6 +293,53 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_IO_Buffer_EvenLengthBuffer_CopyToStreamAsync_" data-uid="FellowOakDicom.IO.Buffer.EvenLengthBuffer.CopyToStreamAsync*"></a>
+  <h4 id="FellowOakDicom_IO_Buffer_EvenLengthBuffer_CopyToStreamAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.IO.Buffer.EvenLengthBuffer.CopyToStreamAsync(Stream,CancellationToken)">CopyToStreamAsync(Stream, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CopyToStreamAsync(Stream stream, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -422,6 +496,43 @@ otherwise returns the buffer itself.</p>
   <h5 id="FellowOakDicom_IO_Buffer_EvenLengthBuffer_GetByteRange_System_Int64_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Allows for reach to the padded byte at the end of the even length buffer.</p>
 </div>
+  
+  
+  <a id="FellowOakDicom_IO_Buffer_EvenLengthBuffer_GetByteRange_" data-uid="FellowOakDicom.IO.Buffer.EvenLengthBuffer.GetByteRange*"></a>
+  <h4 id="FellowOakDicom_IO_Buffer_EvenLengthBuffer_GetByteRange_System_Int64_System_Int32_System_Byte___" data-uid="FellowOakDicom.IO.Buffer.EvenLengthBuffer.GetByteRange(System.Int64,System.Int32,System.Byte[])">GetByteRange(Int64, Int32, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetByteRange(long offset, int count, byte[] output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>
