@@ -104,10 +104,10 @@
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
@@ -157,12 +157,13 @@
       <tr>
         <td><a class="xref" href="FellowOakDicom.FileReadOption.html">FileReadOption</a></td>
         <td><span class="parametername">readOption</span></td>
-        <td></td>
+        <td><p>Defines how large values are handled.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">largeObjectSize</span></td>
-        <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
+        <td><p>Custom limit of what are large values and what are not. If 0 is passed, then the default of 64k is used.</p>
 </td>
       </tr>
     </tbody>
@@ -199,7 +200,7 @@
   
   <a id="FellowOakDicom_IO_StreamByteSource_Endian_" data-uid="FellowOakDicom.IO.StreamByteSource.Endian*"></a>
   <h4 id="FellowOakDicom_IO_StreamByteSource_Endian" data-uid="FellowOakDicom.IO.StreamByteSource.Endian">Endian</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the endianess.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the endianness.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -347,6 +348,32 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_IO_StreamByteSource_ReadOption_" data-uid="FellowOakDicom.IO.StreamByteSource.ReadOption*"></a>
+  <h4 id="FellowOakDicom_IO_StreamByteSource_ReadOption" data-uid="FellowOakDicom.IO.StreamByteSource.ReadOption">ReadOption</h4>
+  <div class="markdown level1 summary"><p>Gets the mode for handling large values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileReadOption ReadOption { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.FileReadOption.html">FileReadOption</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -831,6 +858,45 @@
         <td><span class="parametername">count</span></td>
         <td><p>Expected distance in bytes from the current position to the milestone.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_IO_StreamByteSource_ReadBytes_" data-uid="FellowOakDicom.IO.StreamByteSource.ReadBytes*"></a>
+  <h4 id="FellowOakDicom_IO_StreamByteSource_ReadBytes_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.IO.StreamByteSource.ReadBytes(System.Byte[],System.Int32,System.Int32)">ReadBytes(Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads the specified number of bytes from the stream, starting from a specified point
+in the byte array. <see cref="!:BinaryReader.Read()"></see> for more information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadBytes(byte[] buffer, int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
