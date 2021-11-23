@@ -179,6 +179,61 @@
   </table>
   
   
+  <a id="FellowOakDicom_Serialization_DicomJson_ConvertDicomToJson_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertDicomToJson*"></a>
+  <h4 id="FellowOakDicom_Serialization_DicomJson_ConvertDicomToJson_IEnumerable_FellowOakDicom_DicomDataset__System_Boolean_System_Boolean_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertDicomToJson(IEnumerable{FellowOakDicom.DicomDataset},System.Boolean,System.Boolean)">ConvertDicomToJson(IEnumerable&lt;DicomDataset&gt;, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Converts an array or list of <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a> to a Json-String.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConvertDicomToJson(IEnumerable&lt;DicomDataset&gt; dataset, bool writeTagsAsKeywords = false, bool formatIndented = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a>&gt;</td>
+        <td><span class="parametername">dataset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">writeTagsAsKeywords</span></td>
+        <td><p>Whether to write the json keys as DICOM keywords instead of tags. This makes the json non-compliant to DICOM JSON.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">formatIndented</span></td>
+        <td><p>Gets or sets a value that defines whether JSON should use pretty printing. By default, JSON is serialized without any extra white space.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="FellowOakDicom_Serialization_DicomJson_ConvertJsonToDicom_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertJsonToDicom*"></a>
   <h4 id="FellowOakDicom_Serialization_DicomJson_ConvertJsonToDicom_System_String_System_Boolean_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertJsonToDicom(System.String,System.Boolean)">ConvertJsonToDicom(String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Converts a Json-String to a <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a>.</p>
