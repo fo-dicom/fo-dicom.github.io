@@ -321,15 +321,39 @@ values that matches the members of the <a class="xref" href="FellowOakDicom.Netw
   <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
   
   
-  <a id="FellowOakDicom_Network_AAssociateRJ_Write_" data-uid="FellowOakDicom.Network.AAssociateRJ.Write*"></a>
-  <h4 id="FellowOakDicom_Network_AAssociateRJ_Write" data-uid="FellowOakDicom.Network.AAssociateRJ.Write">Write()</h4>
+  <a id="FellowOakDicom_Network_AAssociateRJ_WriteAsync_" data-uid="FellowOakDicom.Network.AAssociateRJ.WriteAsync*"></a>
+  <h4 id="FellowOakDicom_Network_AAssociateRJ_WriteAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.Network.AAssociateRJ.WriteAsync(Stream,CancellationToken)">WriteAsync(Stream, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Writes A-ASSOCIATE-RJ to PDU buffer</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RawPDU Write()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task WriteAsync(Stream stream, CancellationToken cancellationToken)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to write the PDU to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token that cancels the write operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -340,13 +364,13 @@ values that matches the members of the <a class="xref" href="FellowOakDicom.Netw
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.RawPDU.html">RawPDU</a></td>
-        <td><p>PDU buffer</p>
+        <td><span class="xref">Task</span></td>
+        <td><p>A Task that represents the asynchronous operation</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="FellowOakDicom_Network_AAssociateRJ_Write_remarks">Remarks</h5>
+  <h5 id="FellowOakDicom_Network_AAssociateRJ_WriteAsync_Stream_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When writing the rejection reason to the <a class="xref" href="FellowOakDicom.Network.RawPDU.html">RawPDU</a> object, the <a class="xref" href="FellowOakDicom.Network.DicomRejectSource.html">DicomRejectSource</a>
 specification in the underlying value is masked out, to ensure that the reason code matches the codes specified
 in Table 9-21 of DICOM Standard PS 3.8.</p>

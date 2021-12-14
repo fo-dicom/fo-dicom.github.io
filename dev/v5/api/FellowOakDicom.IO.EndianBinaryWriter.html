@@ -102,83 +102,13 @@
   
   
   <a id="FellowOakDicom_IO_EndianBinaryWriter__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(Stream)">EndianBinaryWriter(Stream)</h4>
+  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_Encoding_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(Stream,Encoding,FellowOakDicom.IO.Endian,System.Boolean)">EndianBinaryWriter(Stream, Encoding, Endian, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EndianBinaryWriter(Stream output)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">output</span></td>
-        <td><p>Stream to which output should be written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Uses the endianness of the system.</p>
-</div>
-  
-  
-  <a id="FellowOakDicom_IO_EndianBinaryWriter__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_Encoding_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(Stream,Encoding)">EndianBinaryWriter(Stream, Encoding)</h4>
-  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EndianBinaryWriter(Stream output, Encoding encoding)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">output</span></td>
-        <td><p>Stream to which output should be written.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Encoding</span></td>
-        <td><span class="parametername">encoding</span></td>
-        <td><p>Output encoding.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_Encoding__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Uses the endianness of the system.</p>
-</div>
-  
-  
-  <a id="FellowOakDicom_IO_EndianBinaryWriter__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_Encoding_FellowOakDicom_IO_Endian_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(Stream,Encoding,FellowOakDicom.IO.Endian)">EndianBinaryWriter(Stream, Encoding, Endian)</h4>
-  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EndianBinaryWriter(Stream output, Encoding encoding, Endian endian)</code></pre>
+    <pre><code class="lang-csharp hljs">public EndianBinaryWriter(Stream output, Encoding encoding, Endian endian, bool leaveOpen)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -208,18 +138,68 @@
         <td><p>Endianness of the output.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p><span class="xref">true</span> to leave the stream open after the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> object is disposed; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   
   
   <a id="FellowOakDicom_IO_EndianBinaryWriter__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_FellowOakDicom_IO_Endian_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(Stream,FellowOakDicom.IO.Endian)">EndianBinaryWriter(Stream, Endian)</h4>
+  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_Encoding_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(Stream,Encoding,System.Boolean)">EndianBinaryWriter(Stream, Encoding, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EndianBinaryWriter(Stream output, Endian endian)</code></pre>
+    <pre><code class="lang-csharp hljs">public EndianBinaryWriter(Stream output, Encoding encoding, bool leaveOpen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>Stream to which output should be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Output encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p><span class="xref">true</span> to leave the stream open after the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> object is disposed; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_Encoding_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Uses the endianness of the system.</p>
+</div>
+  
+  
+  <a id="FellowOakDicom_IO_EndianBinaryWriter__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor*"></a>
+  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(Stream,FellowOakDicom.IO.Endian,System.Boolean)">EndianBinaryWriter(Stream, Endian, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EndianBinaryWriter(Stream output, Endian endian, bool leaveOpen)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -243,8 +223,52 @@
         <td><p>Endianness of the output.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p><span class="xref">true</span> to leave the stream open after the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> object is disposed; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
     </tbody>
   </table>
+  
+  
+  <a id="FellowOakDicom_IO_EndianBinaryWriter__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor*"></a>
+  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(Stream,System.Boolean)">EndianBinaryWriter(Stream, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EndianBinaryWriter(Stream output, bool leaveOpen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>Stream to which output should be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p><span class="xref">true</span> to leave the stream open after the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> object is disposed; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Uses the endianness of the system.</p>
+</div>
   <h3 id="properties">Properties
   </h3>
   
@@ -278,13 +302,13 @@
   
   
   <a id="FellowOakDicom_IO_EndianBinaryWriter_Create_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Create_Stream_Encoding_FellowOakDicom_IO_Endian_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create(Stream,Encoding,FellowOakDicom.IO.Endian)">Create(Stream, Encoding, Endian)</h4>
+  <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Create_Stream_Encoding_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create(Stream,Encoding,FellowOakDicom.IO.Endian,System.Boolean)">Create(Stream, Encoding, Endian, Boolean)</h4>
   <div class="markdown level1 summary"><p>Convenience method for creating a sufficient binary writer based on specified <code data-dev-comment-type="paramref" class="paramref">endian</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BinaryWriter Create(Stream output, Encoding encoding, Endian endian)</code></pre>
+    <pre><code class="lang-csharp hljs">public static BinaryWriter Create(Stream output, Encoding encoding, Endian endian, bool leaveOpen)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -314,6 +338,12 @@
         <td><p>Endianness of the output.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p><span class="xref">true</span> to leave the stream open after the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> object is disposed; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -335,13 +365,13 @@
   
   
   <a id="FellowOakDicom_IO_EndianBinaryWriter_Create_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Create_Stream_FellowOakDicom_IO_Endian_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create(Stream,FellowOakDicom.IO.Endian)">Create(Stream, Endian)</h4>
+  <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Create_Stream_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create(Stream,FellowOakDicom.IO.Endian,System.Boolean)">Create(Stream, Endian, Boolean)</h4>
   <div class="markdown level1 summary"><p>Convenience method for creating a sufficient binary writer based on specified <code data-dev-comment-type="paramref" class="paramref">endian</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BinaryWriter Create(Stream output, Endian endian)</code></pre>
+    <pre><code class="lang-csharp hljs">public static BinaryWriter Create(Stream output, Endian endian, bool leaveOpen)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -363,6 +393,12 @@
         <td><a class="xref" href="FellowOakDicom.IO.Endian.html">Endian</a></td>
         <td><span class="parametername">endian</span></td>
         <td><p>Endianness of the output.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p><span class="xref">true</span> to leave the stream open after the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> object is disposed; otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>

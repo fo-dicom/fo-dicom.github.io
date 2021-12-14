@@ -94,6 +94,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FellowOakDicom.Network.PDU.html">PDU</a></div>
+    <div><span class="xref">IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -120,7 +121,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="FellowOakDicom_Network_PDataTF_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PDataTF : PDU</code></pre>
+    <pre><code class="lang-csharp hljs">public class PDataTF : PDU, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -165,6 +166,28 @@
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="FellowOakDicom_Network_PDataTF_Dispose_" data-uid="FellowOakDicom.Network.PDataTF.Dispose*"></a>
+  <h4 id="FellowOakDicom_Network_PDataTF_Dispose" data-uid="FellowOakDicom.Network.PDataTF.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes and clears the PDVs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="FellowOakDicom_Network_PDataTF_Finalize_" data-uid="FellowOakDicom.Network.PDataTF.Finalize*"></a>
+  <h4 id="FellowOakDicom_Network_PDataTF_Finalize" data-uid="FellowOakDicom.Network.PDataTF.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Finalizes P-DATA-TF to avoid issues with improper disposal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
   
   
   <a id="FellowOakDicom_Network_PDataTF_GetLengthOfPDVs_" data-uid="FellowOakDicom.Network.PDataTF.GetLengthOfPDVs*"></a>
@@ -250,15 +273,39 @@
   <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
   
   
-  <a id="FellowOakDicom_Network_PDataTF_Write_" data-uid="FellowOakDicom.Network.PDataTF.Write*"></a>
-  <h4 id="FellowOakDicom_Network_PDataTF_Write" data-uid="FellowOakDicom.Network.PDataTF.Write">Write()</h4>
-  <div class="markdown level1 summary"><p>Writes P-DATA-TF to PDU buffer</p>
+  <a id="FellowOakDicom_Network_PDataTF_WriteAsync_" data-uid="FellowOakDicom.Network.PDataTF.WriteAsync*"></a>
+  <h4 id="FellowOakDicom_Network_PDataTF_WriteAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.Network.PDataTF.WriteAsync(Stream,CancellationToken)">WriteAsync(Stream, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Writes P-DATA-TF to the provided stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RawPDU Write()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task WriteAsync(Stream stream, CancellationToken cancellationToken)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to write the PDU to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token that cancels the write operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -269,8 +316,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.RawPDU.html">RawPDU</a></td>
-        <td><p>PDU buffer</p>
+        <td><span class="xref">Task</span></td>
+        <td><p>A Task that represents the asynchronous operation</p>
 </td>
       </tr>
     </tbody>
@@ -278,6 +325,9 @@
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FellowOakDicom.Network.PDU.html">PDU</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
   </div>
 </article>
           </div>
