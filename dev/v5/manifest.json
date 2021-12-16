@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "developer/ChangeLog5.html",
-          "hash": "l4gipDCtkrbe/J4XJZ6OekZkn8isVg+HYeFX6vXsfcY="
+          "hash": "LVRxOvJRuykqxgIgTWmXNjoSx4acVBkmvXrmu8Oo3bY="
         }
       },
       "is_incremental": false,
@@ -4107,7 +4107,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.Client.DicomClient.html",
-          "hash": "60wtWT3NIXu9tNUQMNFuSPUDn5FY9J5FXjg8Gcedzag="
+          "hash": "LUAR94YaCs6mA5eBgcMOgiGANL0DV+WNwpsj31vfV2c="
         }
       },
       "is_incremental": false,
@@ -4191,7 +4191,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.Client.DicomClientOptions.html",
-          "hash": "5FZKz5zJe1Gi10Lrh+rgigTZBSnSYXJ0mBJCsG91IUM="
+          "hash": "KNsuAa7EXO+t3EK6MUeDCtjQdgWWJWGM6QAc8nnMivE="
         }
       },
       "is_incremental": false,
@@ -4216,6 +4216,18 @@
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.Client.EventArguments.AssociationRejectedEventArgs.html",
           "hash": "QM6PF5yJwr8LJUZzsDZ2/S72HjrsoLVKOwAEsqus788="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Network.Client.EventArguments.AssociationRequestTimedOutEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Network.Client.EventArguments.AssociationRequestTimedOutEventArgs.html",
+          "hash": "ATVBQlzp8UFc8gUWBMZFr+HOc1lnJUbgODuOf7Lhotk="
         }
       },
       "is_incremental": false,
@@ -4251,7 +4263,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.Client.EventArguments.html",
-          "hash": "g4ZoVSCyQ6U81HF8M2lN5ClmQzLTqH0lPmfGLia6V+A="
+          "hash": "PTLJfxQehbhHb1r4OXfXvtbiSFd3+qqnpDBLv7ZSo+w="
         }
       },
       "is_incremental": false,
@@ -4263,7 +4275,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.Client.IDicomClient.html",
-          "hash": "7KKNtPQWgvC0yv+arxy+l6d3yvFb7oudRgDErkUAhOI="
+          "hash": "yOQra5+1HdJr0DZRAwhgTUzB+GXzeizodMUu6c5zqAM="
         }
       },
       "is_incremental": false,
@@ -4684,6 +4696,18 @@
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.DicomAssociationRejectedException.html",
           "hash": "HrrjZb36sY+doA0eqD00xkACSP/Y6fX33PzaZ4BngFs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Network.DicomAssociationRequestTimedOutException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Network.DicomAssociationRequestTimedOutException.html",
+          "hash": "7cwGtN8KkOxJPE5mk/Bk0L/JqoJFkV2E3tDmtajW3vs="
         }
       },
       "is_incremental": false,
@@ -5271,7 +5295,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.DicomNetworkException.html",
-          "hash": "9yA66JEXCc1+emOrWoOHiuWQQP1w3V03C3BD4Way2f8="
+          "hash": "zngqAXHVSlOgydtyx3glViKPAZYXw56Jdr85ClRBhP0="
         }
       },
       "is_incremental": false,
@@ -5835,7 +5859,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.html",
-          "hash": "peYZ1TzD8hIkyD60vCc3+4men8v7z4eEavmd6FnzpKQ="
+          "hash": "Ko2ewLXpS1Dk0aY+cfjPDg5em7IzqJu1sakXOQYUS6g="
         }
       },
       "is_incremental": false,
@@ -6327,7 +6351,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "hlcBATU8oj8UUhVcaNwCqz5vieBrpZk6ibTTyuciOy8="
+          "hash": "UCTXw0nbG1+AIAoCvAgAe7TiKJGMIoWHb/GyBxiaYiY="
         }
       },
       "is_incremental": false,
@@ -6516,7 +6540,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 518,
+          "total_file_count": 520,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
