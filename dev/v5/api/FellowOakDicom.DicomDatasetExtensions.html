@@ -329,6 +329,64 @@
   </table>
   
   
+  <a id="FellowOakDicom_DicomDatasetExtensions_GetDateTimeOffset_" data-uid="FellowOakDicom.DicomDatasetExtensions.GetDateTimeOffset*"></a>
+  <h4 id="FellowOakDicom_DicomDatasetExtensions_GetDateTimeOffset_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTag_FellowOakDicom_DicomTag_" data-uid="FellowOakDicom.DicomDatasetExtensions.GetDateTimeOffset(FellowOakDicom.DicomDataset,FellowOakDicom.DicomTag,FellowOakDicom.DicomTag)">GetDateTimeOffset(DicomDataset, DicomTag, DicomTag)</h4>
+  <div class="markdown level1 summary"><p>Get a composite <see cref="!:DateTimeOffset"></see> instance based on <code data-dev-comment-type="paramref" class="paramref">date</code> and <code data-dev-comment-type="paramref" class="paramref">time</code> values.
+This will take any time zone information specified in the dataset into account</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTimeOffset GetDateTimeOffset(this DicomDataset dataset, DicomTag date, DicomTag time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">dataset</span></td>
+        <td><p>Dataset from which data should be retrieved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">date</span></td>
+        <td><p>Tag associated with date value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>Tag associated with time value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><p>Composite <see cref="!:DateTimeOffset"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="FellowOakDicom_DicomDatasetExtensions_NotValidated_" data-uid="FellowOakDicom.DicomDatasetExtensions.NotValidated*"></a>
   <h4 id="FellowOakDicom_DicomDatasetExtensions_NotValidated_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.DicomDatasetExtensions.NotValidated(FellowOakDicom.DicomDataset)">NotValidated(DicomDataset)</h4>
   <div class="markdown level1 summary"><p>Turns off validation on the passed DicomDataset and returns this Dataset</p>
