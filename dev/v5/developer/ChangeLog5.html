@@ -8,7 +8,7 @@
     <title> | Fellow Oak DICOM 5 API </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content=" | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.9.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -83,6 +83,7 @@
 <li>Added an extension to get a DateTimeOffset respecting the timezone info in the dataset (#1310)</li>
 <li>Fixed bug where anonymization threw an exception if a DicomTag of VR UI contained no value (#1308)</li>
 <li>Catch exception in logmessage, to avoid making the application crash because of logging (#1288)</li>
+<li>Fixed StreamByteBuffer to read an internally buffered stream completely (#1313)</li>
 </ul>
 <h4 id="502-2022-01-11">5.0.2 (2022-01-11)</h4>
 <ul>
