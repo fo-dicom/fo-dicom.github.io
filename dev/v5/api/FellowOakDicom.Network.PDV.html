@@ -102,24 +102,41 @@
   
   
   <a id="FellowOakDicom_Network_PDV__ctor_" data-uid="FellowOakDicom.Network.PDV.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_PDV__ctor" data-uid="FellowOakDicom.Network.PDV.#ctor">PDV()</h4>
+  <h4 id="FellowOakDicom_Network_PDV__ctor_IMemoryProvider_" data-uid="FellowOakDicom.Network.PDV.#ctor(IMemoryProvider)">PDV(IMemoryProvider)</h4>
   <div class="markdown level1 summary"><p>Initializes new PDV</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PDV()</code></pre>
+    <pre><code class="lang-csharp hljs">public PDV(IMemoryProvider memoryProvider)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="FellowOakDicom_Network_PDV__ctor_" data-uid="FellowOakDicom.Network.PDV.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_PDV__ctor_System_Byte_System_Byte___System_Boolean_System_Boolean_" data-uid="FellowOakDicom.Network.PDV.#ctor(System.Byte,System.Byte[],System.Boolean,System.Boolean)">PDV(Byte, Byte[], Boolean, Boolean)</h4>
+  <h4 id="FellowOakDicom_Network_PDV__ctor_System_Byte_IMemory_System_Int32_System_Boolean_System_Boolean_" data-uid="FellowOakDicom.Network.PDV.#ctor(System.Byte,IMemory,System.Int32,System.Boolean,System.Boolean)">PDV(Byte, IMemory, Int32, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes new PDV</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PDV(byte pcid, byte[] value, bool command, bool last)</code></pre>
+    <pre><code class="lang-csharp hljs">public PDV(byte pcid, IMemory value, int valueLength, bool command, bool last)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -138,9 +155,15 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">IMemory</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>PDV data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">valueLength</span></td>
+        <td><p>Length of the PDV data</p>
 </td>
       </tr>
       <tr>
@@ -195,31 +218,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsLastFragment { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_PDV_IsValueRented_" data-uid="FellowOakDicom.Network.PDV.IsValueRented*"></a>
-  <h4 id="FellowOakDicom_Network_PDV_IsValueRented" data-uid="FellowOakDicom.Network.PDV.IsValueRented">IsValueRented</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsValueRented { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -297,7 +295,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[] Value { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IMemory Value { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -309,7 +307,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">IMemory</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -318,11 +316,12 @@
   
   <a id="FellowOakDicom_Network_PDV_ValueLength_" data-uid="FellowOakDicom.Network.PDV.ValueLength*"></a>
   <h4 id="FellowOakDicom_Network_PDV_ValueLength" data-uid="FellowOakDicom.Network.PDV.ValueLength">ValueLength</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Length of the PDV data</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ValueLength { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int ValueLength { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

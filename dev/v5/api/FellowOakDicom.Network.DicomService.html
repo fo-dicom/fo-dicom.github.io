@@ -133,13 +133,13 @@
   
   
   <a id="FellowOakDicom_Network_DicomService__ctor_" data-uid="FellowOakDicom.Network.DicomService.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService__ctor_FellowOakDicom_Network_INetworkStream_Encoding_ILogger_ILogManager_FellowOakDicom_Network_INetworkManager_ITranscoderManager_" data-uid="FellowOakDicom.Network.DicomService.#ctor(FellowOakDicom.Network.INetworkStream,Encoding,ILogger,ILogManager,FellowOakDicom.Network.INetworkManager,ITranscoderManager)">DicomService(INetworkStream, Encoding, ILogger, ILogManager, INetworkManager, ITranscoderManager)</h4>
+  <h4 id="FellowOakDicom_Network_DicomService__ctor_FellowOakDicom_Network_INetworkStream_Encoding_ILogger_FellowOakDicom_Network_DicomServiceDependencies_" data-uid="FellowOakDicom.Network.DicomService.#ctor(FellowOakDicom.Network.INetworkStream,Encoding,ILogger,FellowOakDicom.Network.DicomServiceDependencies)">DicomService(INetworkStream, Encoding, ILogger, DicomServiceDependencies)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.Network.DicomService.html">DicomService</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected DicomService(INetworkStream stream, Encoding fallbackEncoding, ILogger logger, ILogManager logManager, INetworkManager networkManager, ITranscoderManager transcoderManager)</code></pre>
+    <pre><code class="lang-csharp hljs">protected DicomService(INetworkStream stream, Encoding fallbackEncoding, ILogger logger, DicomServiceDependencies dependencies)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -170,22 +170,9 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ILogManager</span></td>
-        <td><span class="parametername">logManager</span></td>
-        <td><p>The log manager</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a></td>
-        <td><span class="parametername">networkManager</span></td>
-        <td><p>The network manager</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">ITranscoderManager</span></td>
-        <td><span class="parametername">transcoderManager</span></td>
-        <td><p>The transcoder manager</p>
-</td>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomServiceDependencies.html">DicomServiceDependencies</a></td>
+        <td><span class="parametername">dependencies</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

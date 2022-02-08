@@ -127,24 +127,13 @@
   
   
   <a id="FellowOakDicom_Network_AAssociateRJ__ctor_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_AAssociateRJ__ctor" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor">AAssociateRJ()</h4>
+  <h4 id="FellowOakDicom_Network_AAssociateRJ__ctor_FellowOakDicom_Network_DicomRejectResult_FellowOakDicom_Network_DicomRejectSource_FellowOakDicom_Network_DicomRejectReason_IMemoryProvider_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor(FellowOakDicom.Network.DicomRejectResult,FellowOakDicom.Network.DicomRejectSource,FellowOakDicom.Network.DicomRejectReason,IMemoryProvider)">AAssociateRJ(DicomRejectResult, DicomRejectSource, DicomRejectReason, IMemoryProvider)</h4>
   <div class="markdown level1 summary"><p>Initializes new A-ASSOCIATE-RJ</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AAssociateRJ()</code></pre>
-  </div>
-  
-  
-  <a id="FellowOakDicom_Network_AAssociateRJ__ctor_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_AAssociateRJ__ctor_FellowOakDicom_Network_DicomRejectResult_FellowOakDicom_Network_DicomRejectSource_FellowOakDicom_Network_DicomRejectReason_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor(FellowOakDicom.Network.DicomRejectResult,FellowOakDicom.Network.DicomRejectSource,FellowOakDicom.Network.DicomRejectReason)">AAssociateRJ(DicomRejectResult, DicomRejectSource, DicomRejectReason)</h4>
-  <div class="markdown level1 summary"><p>Initializes new A-ASSOCIATE-RJ</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AAssociateRJ(DicomRejectResult rt, DicomRejectSource so, DicomRejectReason rn)</code></pre>
+    <pre><code class="lang-csharp hljs">public AAssociateRJ(DicomRejectResult rt, DicomRejectSource so, DicomRejectReason rn, IMemoryProvider memoryProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,6 +161,41 @@
         <td><a class="xref" href="FellowOakDicom.Network.DicomRejectReason.html">DicomRejectReason</a></td>
         <td><span class="parametername">rn</span></td>
         <td><p>Rejection reason</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td><p>The memory provider that will be used to allocate buffers</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_AAssociateRJ__ctor_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor*"></a>
+  <h4 id="FellowOakDicom_Network_AAssociateRJ__ctor_IMemoryProvider_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor(IMemoryProvider)">AAssociateRJ(IMemoryProvider)</h4>
+  <div class="markdown level1 summary"><p>Initializes new A-ASSOCIATE-RJ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AAssociateRJ(IMemoryProvider memoryProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td><p>The memory provider that will be used to allocate buffers</p>
 </td>
       </tr>
     </tbody>

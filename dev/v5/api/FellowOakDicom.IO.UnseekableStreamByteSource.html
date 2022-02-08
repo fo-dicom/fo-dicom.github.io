@@ -130,13 +130,13 @@
   
   
   <a id="FellowOakDicom_IO_UnseekableStreamByteSource__ctor_" data-uid="FellowOakDicom.IO.UnseekableStreamByteSource.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_UnseekableStreamByteSource__ctor_Stream_FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.IO.UnseekableStreamByteSource.#ctor(Stream,FellowOakDicom.FileReadOption,System.Int32)">UnseekableStreamByteSource(Stream, FileReadOption, Int32)</h4>
+  <h4 id="FellowOakDicom_IO_UnseekableStreamByteSource__ctor_Stream_FellowOakDicom_FileReadOption_System_Int32_IMemoryProvider_" data-uid="FellowOakDicom.IO.UnseekableStreamByteSource.#ctor(Stream,FellowOakDicom.FileReadOption,System.Int32,IMemoryProvider)">UnseekableStreamByteSource(Stream, FileReadOption, Int32, IMemoryProvider)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="FellowOakDicom.IO.UnseekableStreamByteSource.html">UnseekableStreamByteSource</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnseekableStreamByteSource(Stream stream, FileReadOption readOption = FileReadOption.Default, int largeObjectSize = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public UnseekableStreamByteSource(Stream stream, FileReadOption readOption, int largeObjectSize, IMemoryProvider memoryProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,6 +166,11 @@
         <td><p>Custom limit of what are large values and what are not.
 If 0 is passed, then the default of 64k is used.</p>
 </td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

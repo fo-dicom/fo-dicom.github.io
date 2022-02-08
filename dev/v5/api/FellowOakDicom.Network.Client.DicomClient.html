@@ -129,13 +129,13 @@
   
   
   <a id="FellowOakDicom_Network_Client_DicomClient__ctor_" data-uid="FellowOakDicom.Network.Client.DicomClient.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient__ctor_System_String_System_Int32_System_Boolean_System_String_System_String_FellowOakDicom_Network_Client_DicomClientOptions_FellowOakDicom_Network_DicomServiceOptions_FellowOakDicom_Network_INetworkManager_ILogManager_ITranscoderManager_" data-uid="FellowOakDicom.Network.Client.DicomClient.#ctor(System.String,System.Int32,System.Boolean,System.String,System.String,FellowOakDicom.Network.Client.DicomClientOptions,FellowOakDicom.Network.DicomServiceOptions,FellowOakDicom.Network.INetworkManager,ILogManager,ITranscoderManager)">DicomClient(String, Int32, Boolean, String, String, DicomClientOptions, DicomServiceOptions, INetworkManager, ILogManager, ITranscoderManager)</h4>
+  <h4 id="FellowOakDicom_Network_Client_DicomClient__ctor_System_String_System_Int32_System_Boolean_System_String_System_String_FellowOakDicom_Network_Client_DicomClientOptions_FellowOakDicom_Network_DicomServiceOptions_FellowOakDicom_Network_INetworkManager_ILogManager_ITranscoderManager_IMemoryProvider_" data-uid="FellowOakDicom.Network.Client.DicomClient.#ctor(System.String,System.Int32,System.Boolean,System.String,System.String,FellowOakDicom.Network.Client.DicomClientOptions,FellowOakDicom.Network.DicomServiceOptions,FellowOakDicom.Network.INetworkManager,ILogManager,ITranscoderManager,IMemoryProvider)">DicomClient(String, Int32, Boolean, String, String, DicomClientOptions, DicomServiceOptions, INetworkManager, ILogManager, ITranscoderManager, IMemoryProvider)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of <a class="xref" href="FellowOakDicom.Network.Client.DicomClient.html">DicomClient</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DicomClient(string host, int port, bool useTls, string callingAe, string calledAe, DicomClientOptions clientOptions, DicomServiceOptions serviceOptions, INetworkManager networkManager, ILogManager logManager, ITranscoderManager transcoderManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public DicomClient(string host, int port, bool useTls, string callingAe, string calledAe, DicomClientOptions clientOptions, DicomServiceOptions serviceOptions, INetworkManager networkManager, ILogManager logManager, ITranscoderManager transcoderManager, IMemoryProvider memoryProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -205,6 +205,12 @@
         <td><span class="xref">ITranscoderManager</span></td>
         <td><span class="parametername">transcoderManager</span></td>
         <td><p>The transcoder manager that will be used to transcode incoming or outgoing DICOM files</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td><p>The memory provider that will be used to allocate memory when sending and receiving messages</p>
 </td>
       </tr>
     </tbody>
@@ -457,6 +463,31 @@
     <tbody>
       <tr>
         <td><span class="xref">ILogManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_Client_DicomClient_MemoryProvider_" data-uid="FellowOakDicom.Network.Client.DicomClient.MemoryProvider*"></a>
+  <h4 id="FellowOakDicom_Network_Client_DicomClient_MemoryProvider" data-uid="FellowOakDicom.Network.Client.DicomClient.MemoryProvider">MemoryProvider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMemoryProvider MemoryProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
         <td></td>
       </tr>
     </tbody>

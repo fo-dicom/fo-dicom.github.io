@@ -129,12 +129,12 @@
   
   
   <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_ILogManager_FellowOakDicom_Network_INetworkManager_ITranscoderManager_IOptions_FellowOakDicom_Network_Client_DicomClientOptions__IOptions_FellowOakDicom_Network_DicomServiceOptions__" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor(ILogManager,FellowOakDicom.Network.INetworkManager,ITranscoderManager,IOptions{FellowOakDicom.Network.Client.DicomClientOptions},IOptions{FellowOakDicom.Network.DicomServiceOptions})">DefaultDicomClientFactory(ILogManager, INetworkManager, ITranscoderManager, IOptions&lt;DicomClientOptions&gt;, IOptions&lt;DicomServiceOptions&gt;)</h4>
+  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_ILogManager_FellowOakDicom_Network_INetworkManager_ITranscoderManager_IMemoryProvider_IOptions_FellowOakDicom_Network_Client_DicomClientOptions__IOptions_FellowOakDicom_Network_DicomServiceOptions__" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor(ILogManager,FellowOakDicom.Network.INetworkManager,ITranscoderManager,IMemoryProvider,IOptions{FellowOakDicom.Network.Client.DicomClientOptions},IOptions{FellowOakDicom.Network.DicomServiceOptions})">DefaultDicomClientFactory(ILogManager, INetworkManager, ITranscoderManager, IMemoryProvider, IOptions&lt;DicomClientOptions&gt;, IOptions&lt;DicomServiceOptions&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DefaultDicomClientFactory(ILogManager logManager, INetworkManager networkManager, ITranscoderManager transcoderManager, IOptions&lt;DicomClientOptions&gt; defaultClientOptions, IOptions&lt;DicomServiceOptions&gt; defaultServiceOptions)</code></pre>
+    <pre><code class="lang-csharp hljs">public DefaultDicomClientFactory(ILogManager logManager, INetworkManager networkManager, ITranscoderManager transcoderManager, IMemoryProvider memoryProvider, IOptions&lt;DicomClientOptions&gt; defaultClientOptions, IOptions&lt;DicomServiceOptions&gt; defaultServiceOptions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -159,6 +159,11 @@
       <tr>
         <td><span class="xref">ITranscoderManager</span></td>
         <td><span class="parametername">transcoderManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
+        <td><span class="parametername">memoryProvider</span></td>
         <td></td>
       </tr>
       <tr>
