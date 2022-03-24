@@ -6608,7 +6608,7 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Cannot build incrementally because docfx version changed from 2.58.4.0 to 2.59.0.0.",
+        "details": "Cannot build incrementally because docfx version changed from 2.58.9.0 to 2.59.0.0.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
