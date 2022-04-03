@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DicomJson
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.59.0.0">
+    <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -125,13 +125,13 @@
   
   
   <a id="FellowOakDicom_Serialization_DicomJson_ConvertDicomToJson_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertDicomToJson*"></a>
-  <h4 id="FellowOakDicom_Serialization_DicomJson_ConvertDicomToJson_FellowOakDicom_DicomDataset_System_Boolean_System_Boolean_System_Boolean_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertDicomToJson(FellowOakDicom.DicomDataset,System.Boolean,System.Boolean,System.Boolean)">ConvertDicomToJson(DicomDataset, Boolean, Boolean, Boolean)</h4>
+  <h4 id="FellowOakDicom_Serialization_DicomJson_ConvertDicomToJson_FellowOakDicom_DicomDataset_System_Boolean_System_Boolean_FellowOakDicom_Serialization_NumberSerializationMode_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertDicomToJson(FellowOakDicom.DicomDataset,System.Boolean,System.Boolean,FellowOakDicom.Serialization.NumberSerializationMode)">ConvertDicomToJson(DicomDataset, Boolean, Boolean, NumberSerializationMode)</h4>
   <div class="markdown level1 summary"><p>Converts a <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a> to a Json-String.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ConvertDicomToJson(DicomDataset dataset, bool writeTagsAsKeywords = false, bool formatIndented = false, bool autoValidate = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string ConvertDicomToJson(DicomDataset dataset, bool writeTagsAsKeywords = false, bool formatIndented = false, NumberSerializationMode numberSerializationMode = NumberSerializationMode.AsNumber)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,9 +161,9 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">autoValidate</span></td>
-        <td><p>Whether the content of DicomItems shall be validated when serializing or deserializing.</p>
+        <td><a class="xref" href="FellowOakDicom.Serialization.NumberSerializationMode.html">NumberSerializationMode</a></td>
+        <td><span class="parametername">numberSerializationMode</span></td>
+        <td><p>Defines how numbers should be serialized. Defaults to 'AsNumber', which will throw FormatException when a number is not parsable.</p>
 </td>
       </tr>
     </tbody>
