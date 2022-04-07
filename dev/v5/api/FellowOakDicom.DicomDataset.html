@@ -1887,6 +1887,57 @@ This method is useful when adding a private tag and need to explicitly set the V
   </table>
   
   
+  <a id="FellowOakDicom_DicomDataset_TryGetNonEmptySequence_" data-uid="FellowOakDicom.DicomDataset.TryGetNonEmptySequence*"></a>
+  <h4 id="FellowOakDicom_DicomDataset_TryGetNonEmptySequence_FellowOakDicom_DicomTag_FellowOakDicom_DicomSequence__" data-uid="FellowOakDicom.DicomDataset.TryGetNonEmptySequence(FellowOakDicom.DicomTag,FellowOakDicom.DicomSequence@)">TryGetNonEmptySequence(DicomTag, out DicomSequence)</h4>
+  <div class="markdown level1 summary"><p>Gets the sequence of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code> if it exists and is not empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetNonEmptySequence(DicomTag tag, out DicomSequence sequence)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomSequence.html">DicomSequence</a></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>Sequence of datasets corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns <pre><code>true</code></pre> if the <code data-dev-comment-type="paramref" class="paramref">tag</code> exists and is not empty, <pre><code>false</code></pre> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="FellowOakDicom_DicomDataset_TryGetSequence_" data-uid="FellowOakDicom.DicomDataset.TryGetSequence*"></a>
   <h4 id="FellowOakDicom_DicomDataset_TryGetSequence_FellowOakDicom_DicomTag_FellowOakDicom_DicomSequence__" data-uid="FellowOakDicom.DicomDataset.TryGetSequence(FellowOakDicom.DicomTag,FellowOakDicom.DicomSequence@)">TryGetSequence(DicomTag, out DicomSequence)</h4>
   <div class="markdown level1 summary"><p>Gets the sequence of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
