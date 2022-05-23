@@ -107,7 +107,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AssociationRequestTimedOutEventArgs(int timeout, int attempt, int maximumNumberOfAttempts)</code></pre>
+    <pre><code class="lang-csharp hljs">public AssociationRequestTimedOutEventArgs(int timeoutInMs, int attempt, int maximumNumberOfAttempts)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -121,18 +121,21 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">timeout</span></td>
-        <td></td>
+        <td><span class="parametername">timeoutInMs</span></td>
+        <td><p>the timeout in ms that was exceeded</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">attempt</span></td>
-        <td></td>
+        <td><p>the number of times this association request has timed out so far</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">maximumNumberOfAttempts</span></td>
-        <td></td>
+        <td><p>the maximum number of times this association request is allowed to time out before giving up</p>
+</td>
       </tr>
     </tbody>
   </table>

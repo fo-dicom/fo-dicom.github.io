@@ -329,84 +329,6 @@
   </table>
   
   
-  <a id="FellowOakDicom_Network_Client_IDicomClient_LogManager_" data-uid="FellowOakDicom.Network.Client.IDicomClient.LogManager*"></a>
-  <h4 id="FellowOakDicom_Network_Client_IDicomClient_LogManager" data-uid="FellowOakDicom.Network.Client.IDicomClient.LogManager">LogManager</h4>
-  <div class="markdown level1 summary"><p>Gets the log manager that will be used to log information to.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ILogManager LogManager { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ILogManager</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_Client_IDicomClient_MemoryProvider_" data-uid="FellowOakDicom.Network.Client.IDicomClient.MemoryProvider*"></a>
-  <h4 id="FellowOakDicom_Network_Client_IDicomClient_MemoryProvider" data-uid="FellowOakDicom.Network.Client.IDicomClient.MemoryProvider">MemoryProvider</h4>
-  <div class="markdown level1 summary"><p>The memory provider that will be used to allocate memory when sending and receiving messages</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IMemoryProvider MemoryProvider { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_Client_IDicomClient_NetworkManager_" data-uid="FellowOakDicom.Network.Client.IDicomClient.NetworkManager*"></a>
-  <h4 id="FellowOakDicom_Network_Client_IDicomClient_NetworkManager" data-uid="FellowOakDicom.Network.Client.IDicomClient.NetworkManager">NetworkManager</h4>
-  <div class="markdown level1 summary"><p>Gets the network manager that will be used to open connections.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">INetworkManager NetworkManager { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_OnCStoreRequest_" data-uid="FellowOakDicom.Network.Client.IDicomClient.OnCStoreRequest*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_OnCStoreRequest" data-uid="FellowOakDicom.Network.Client.IDicomClient.OnCStoreRequest">OnCStoreRequest</h4>
   <div class="markdown level1 summary"><p>Gets or sets the handler of a client C-STORE request.</p>
@@ -505,32 +427,6 @@
     <tbody>
       <tr>
         <td><a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_Client_IDicomClient_TranscoderManager_" data-uid="FellowOakDicom.Network.Client.IDicomClient.TranscoderManager*"></a>
-  <h4 id="FellowOakDicom_Network_Client_IDicomClient_TranscoderManager" data-uid="FellowOakDicom.Network.Client.IDicomClient.TranscoderManager">TranscoderManager</h4>
-  <div class="markdown level1 summary"><p>Gets the transcoder manager that will be used to transcode incoming or outgoing DICOM files.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ITranscoderManager TranscoderManager { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ITranscoderManager</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -868,7 +764,9 @@ If you want to cancel the process, be sure to cancel the cancellation token that
   
   
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_StateChanged" data-uid="FellowOakDicom.Network.Client.IDicomClient.StateChanged">StateChanged</h4>
-  <div class="markdown level1 summary"><p>Whenever the DICOM client changes state, an event will be emitted containing the old state and the new state.</p>
+  <div class="markdown level1 summary"><p>Whenever the DICOM client changes state, an event will be emitted containing the old state and the new state.
+The current DICOM client implementation is no longer state based, and has been rewritten as a wrapper around the new <see cref="!:IAdvancedDicomClientConnection"></see>
+This event handler is still supported for backwards compatibility reasons, but may be removed in the future.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

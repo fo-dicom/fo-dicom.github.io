@@ -83,29 +83,18 @@
   
   <h1 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState" class="text-break">Class DicomClientSendingRequestsState
   </h1>
-  <div class="markdown level0 summary"><p>The DICOM client is connected and has an active DICOM association. Every queued request will be sent one by one.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html">DicomClientWithConnectionState</a></div>
-    <div class="level2"><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithAssociationState.html">DicomClientWithAssociationState</a></div>
-    <div class="level3"><span class="xref">DicomClientSendingRequestsState</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="FellowOakDicom.Network.Client.States.IDicomClientState.html">IDicomClientState</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div class="level1"><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientState.html">DicomClientState</a></div>
+    <div class="level2"><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html">DicomClientWithConnectionState</a></div>
+    <div class="level3"><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithAssociationState.html">DicomClientWithAssociationState</a></div>
+    <div class="level4"><span class="xref">DicomClientSendingRequestsState</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithAssociationState.html#FellowOakDicom_Network_Client_States_DicomClientWithAssociationState_Association">DicomClientWithAssociationState.Association</a>
-    </div>
-    <div>
-      <a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_Connection">DicomClientWithConnectionState.Connection</a>
-    </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
     </div>
@@ -129,531 +118,36 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomClientSendingRequestsState : DicomClientWithAssociationState, IDicomClientState</code></pre>
+    <pre><code class="lang-csharp hljs">public class DicomClientSendingRequestsState : DicomClientWithAssociationState</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="fields">Fields
   </h3>
   
   
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState__ctor_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState__ctor_FellowOakDicom_Network_Client_DicomClient_FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_InitialisationParameters_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.#ctor(FellowOakDicom.Network.Client.DicomClient,FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.InitialisationParameters)">DicomClientSendingRequestsState(DicomClient, DicomClientSendingRequestsState.InitialisationParameters)</h4>
+  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_Instance" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.Instance">Instance</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DicomClientSendingRequestsState(DicomClient dicomClient, DicomClientSendingRequestsState.InitialisationParameters initialisationParameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly DicomClientSendingRequestsState Instance</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.Client.DicomClient.html">DicomClient</a></td>
-        <td><span class="parametername">dicomClient</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.InitialisationParameters.html">DicomClientSendingRequestsState.InitialisationParameters</a></td>
-        <td><span class="parametername">initialisationParameters</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.html">DicomClientSendingRequestsState</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_AddRequestAsync_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.AddRequestAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_AddRequestAsync_FellowOakDicom_Network_DicomRequest_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.AddRequestAsync(FellowOakDicom.Network.DicomRequest)">AddRequestAsync(DicomRequest)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task AddRequestAsync(DicomRequest dicomRequest)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a></td>
-        <td><span class="parametername">dicomRequest</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_AddRequestAsync_FellowOakDicom_Network_DicomRequest_">DicomClientWithConnectionState.AddRequestAsync(DicomRequest)</a></div>
-  
-  
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_Dispose_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.Dispose*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_Dispose" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_Dispose">DicomClientWithConnectionState.Dispose()</a></div>
-  
-  
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_GetNextStateAsync_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.GetNextStateAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_GetNextStateAsync_FellowOakDicom_Network_Client_DicomClientCancellation_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.GetNextStateAsync(FellowOakDicom.Network.Client.DicomClientCancellation)">GetNextStateAsync(DicomClientCancellation)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override async Task&lt;IDicomClientState&gt; GetNextStateAsync(DicomClientCancellation cancellation)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.Client.DicomClientCancellation.html">DicomClientCancellation</a></td>
-        <td><span class="parametername">cancellation</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="FellowOakDicom.Network.Client.States.IDicomClientState.html">IDicomClientState</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_GetNextStateAsync_FellowOakDicom_Network_Client_DicomClientCancellation_">DicomClientWithConnectionState.GetNextStateAsync(DicomClientCancellation)</a></div>
-  
-  
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnConnectionClosedAsync_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnConnectionClosedAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnConnectionClosedAsync_Exception_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnConnectionClosedAsync(Exception)">OnConnectionClosedAsync(Exception)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task OnConnectionClosedAsync(Exception exception)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Exception</span></td>
-        <td><span class="parametername">exception</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_OnConnectionClosedAsync_Exception_">DicomClientWithConnectionState.OnConnectionClosedAsync(Exception)</a></div>
-  
-  
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnReceiveAbortAsync_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnReceiveAbortAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnReceiveAbortAsync_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnReceiveAbortAsync(FellowOakDicom.Network.DicomAbortSource,FellowOakDicom.Network.DicomAbortReason)">OnReceiveAbortAsync(DicomAbortSource, DicomAbortReason)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task OnReceiveAbortAsync(DicomAbortSource source, DicomAbortReason reason)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomAbortSource.html">DicomAbortSource</a></td>
-        <td><span class="parametername">source</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomAbortReason.html">DicomAbortReason</a></td>
-        <td><span class="parametername">reason</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_OnReceiveAbortAsync_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_">DicomClientWithConnectionState.OnReceiveAbortAsync(DicomAbortSource, DicomAbortReason)</a></div>
-  
-  
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnReceiveAssociationAcceptAsync_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnReceiveAssociationAcceptAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnReceiveAssociationAcceptAsync_FellowOakDicom_Network_DicomAssociation_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnReceiveAssociationAcceptAsync(FellowOakDicom.Network.DicomAssociation)">OnReceiveAssociationAcceptAsync(DicomAssociation)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task OnReceiveAssociationAcceptAsync(DicomAssociation association)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomAssociation.html">DicomAssociation</a></td>
-        <td><span class="parametername">association</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_OnReceiveAssociationAcceptAsync_FellowOakDicom_Network_DicomAssociation_">DicomClientWithConnectionState.OnReceiveAssociationAcceptAsync(DicomAssociation)</a></div>
-  
-  
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnReceiveAssociationRejectAsync_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnReceiveAssociationRejectAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnReceiveAssociationRejectAsync_FellowOakDicom_Network_DicomRejectResult_FellowOakDicom_Network_DicomRejectSource_FellowOakDicom_Network_DicomRejectReason_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnReceiveAssociationRejectAsync(FellowOakDicom.Network.DicomRejectResult,FellowOakDicom.Network.DicomRejectSource,FellowOakDicom.Network.DicomRejectReason)">OnReceiveAssociationRejectAsync(DicomRejectResult, DicomRejectSource, DicomRejectReason)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task OnReceiveAssociationRejectAsync(DicomRejectResult result, DicomRejectSource source, DicomRejectReason reason)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomRejectResult.html">DicomRejectResult</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomRejectSource.html">DicomRejectSource</a></td>
-        <td><span class="parametername">source</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomRejectReason.html">DicomRejectReason</a></td>
-        <td><span class="parametername">reason</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_OnReceiveAssociationRejectAsync_FellowOakDicom_Network_DicomRejectResult_FellowOakDicom_Network_DicomRejectSource_FellowOakDicom_Network_DicomRejectReason_">DicomClientWithConnectionState.OnReceiveAssociationRejectAsync(DicomRejectResult, DicomRejectSource, DicomRejectReason)</a></div>
-  
-  
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnReceiveAssociationReleaseResponseAsync_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnReceiveAssociationReleaseResponseAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnReceiveAssociationReleaseResponseAsync" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnReceiveAssociationReleaseResponseAsync">OnReceiveAssociationReleaseResponseAsync()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task OnReceiveAssociationReleaseResponseAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_OnReceiveAssociationReleaseResponseAsync">DicomClientWithConnectionState.OnReceiveAssociationReleaseResponseAsync()</a></div>
-  
-  
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnRequestCompletedAsync_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnRequestCompletedAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnRequestCompletedAsync_FellowOakDicom_Network_DicomRequest_FellowOakDicom_Network_DicomResponse_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnRequestCompletedAsync(FellowOakDicom.Network.DicomRequest,FellowOakDicom.Network.DicomResponse)">OnRequestCompletedAsync(DicomRequest, DicomResponse)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task OnRequestCompletedAsync(DicomRequest request, DicomResponse response)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a></td>
-        <td><span class="parametername">response</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_OnRequestCompletedAsync_FellowOakDicom_Network_DicomRequest_FellowOakDicom_Network_DicomResponse_">DicomClientWithConnectionState.OnRequestCompletedAsync(DicomRequest, DicomResponse)</a></div>
-  
-  
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnRequestTimedOutAsync_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnRequestTimedOutAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnRequestTimedOutAsync_FellowOakDicom_Network_DicomRequest_TimeSpan_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnRequestTimedOutAsync(FellowOakDicom.Network.DicomRequest,TimeSpan)">OnRequestTimedOutAsync(DicomRequest, TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task OnRequestTimedOutAsync(DicomRequest request, TimeSpan timeout)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">TimeSpan</span></td>
-        <td><span class="parametername">timeout</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_OnRequestTimedOutAsync_FellowOakDicom_Network_DicomRequest_TimeSpan_">DicomClientWithConnectionState.OnRequestTimedOutAsync(DicomRequest, TimeSpan)</a></div>
-  
-  
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnSendQueueEmptyAsync_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnSendQueueEmptyAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_OnSendQueueEmptyAsync" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.OnSendQueueEmptyAsync">OnSendQueueEmptyAsync()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task OnSendQueueEmptyAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_OnSendQueueEmptyAsync">DicomClientWithConnectionState.OnSendQueueEmptyAsync()</a></div>
-  
-  
-  <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_SendAsync_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.SendAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_SendAsync_FellowOakDicom_Network_Client_DicomClientCancellation_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.SendAsync(FellowOakDicom.Network.Client.DicomClientCancellation)">SendAsync(DicomClientCancellation)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task SendAsync(DicomClientCancellation cancellation)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.Client.DicomClientCancellation.html">DicomClientCancellation</a></td>
-        <td><span class="parametername">cancellation</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.Network.Client.States.DicomClientWithConnectionState.html#FellowOakDicom_Network_Client_States_DicomClientWithConnectionState_SendAsync_FellowOakDicom_Network_Client_DicomClientCancellation_">DicomClientWithConnectionState.SendAsync(DicomClientCancellation)</a></div>
   
   
   <a id="FellowOakDicom_Network_Client_States_DicomClientSendingRequestsState_ToString_" data-uid="FellowOakDicom.Network.Client.States.DicomClientSendingRequestsState.ToString*"></a>
@@ -681,13 +175,6 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a></div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="FellowOakDicom.Network.Client.States.IDicomClientState.html">IDicomClientState</a>
-  </div>
-  <div>
-      <span class="xref">IDisposable</span>
-  </div>
 </article>
           </div>
           

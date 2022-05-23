@@ -153,6 +153,32 @@ If not specified or null, it will use the default/internal profile</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="FellowOakDicom_DicomAnonymizer__optionsCount" data-uid="FellowOakDicom.DicomAnonymizer._optionsCount">_optionsCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly int _optionsCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -164,7 +190,7 @@ If not specified or null, it will use the default/internal profile</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DicomAnonymizer.SecurityProfile Profile { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual DicomAnonymizer.SecurityProfile Profile { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,7 +216,7 @@ If not specified or null, it will use the default/internal profile</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; ReplacedUIDs { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Dictionary&lt;string, string&gt; ReplacedUIDs { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,7 +247,7 @@ If not specified or null, it will use the default/internal profile</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DicomDataset Anonymize(DicomDataset dataset)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual DicomDataset Anonymize(DicomDataset dataset)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -266,7 +292,7 @@ If not specified or null, it will use the default/internal profile</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DicomFile Anonymize(DicomFile file)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual DicomFile Anonymize(DicomFile file)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -311,7 +337,7 @@ If not specified or null, it will use the default/internal profile</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AnonymizeInPlace(DicomDataset dataset)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void AnonymizeInPlace(DicomDataset dataset)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -340,7 +366,7 @@ If not specified or null, it will use the default/internal profile</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AnonymizeInPlace(DicomFile file)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void AnonymizeInPlace(DicomFile file)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -357,6 +383,259 @@ If not specified or null, it will use the default/internal profile</p>
         <td><span class="parametername">file</span></td>
         <td><p>The file containing the dataset to be altered</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomAnonymizer_BlankItem_" data-uid="FellowOakDicom.DicomAnonymizer.BlankItem*"></a>
+  <h4 id="FellowOakDicom_DicomAnonymizer_BlankItem_FellowOakDicom_DicomDataset_FellowOakDicom_DicomItem_System_Boolean_" data-uid="FellowOakDicom.DicomAnonymizer.BlankItem(FellowOakDicom.DicomDataset,FellowOakDicom.DicomItem,System.Boolean)">BlankItem(DicomDataset, DicomItem, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Blanks an item to value suitable for the concrete item type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void BlankItem(DicomDataset dataset, DicomItem item, bool nonZeroLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">dataset</span></td>
+        <td><p>Reference to the dataset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>DICOM item subject to blanking.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">nonZeroLength</span></td>
+        <td><p>Require that new value is non-zero length (dummy) value?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomAnonymizer_ElementValueType_" data-uid="FellowOakDicom.DicomAnonymizer.ElementValueType*"></a>
+  <h4 id="FellowOakDicom_DicomAnonymizer_ElementValueType_FellowOakDicom_DicomItem_" data-uid="FellowOakDicom.DicomAnonymizer.ElementValueType(FellowOakDicom.DicomItem)">ElementValueType(DicomItem)</h4>
+  <div class="markdown level1 summary"><p>Evaluates whether an element has a generic valueType</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Type ElementValueType(DicomItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><p>The data type if found, otherwise null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomAnonymizer_GetConstructor_" data-uid="FellowOakDicom.DicomAnonymizer.GetConstructor*"></a>
+  <h4 id="FellowOakDicom_DicomAnonymizer_GetConstructor_FellowOakDicom_DicomItem_Type___" data-uid="FellowOakDicom.DicomAnonymizer.GetConstructor(FellowOakDicom.DicomItem,Type[])">GetConstructor(DicomItem, Type[])</h4>
+  <div class="markdown level1 summary"><p>Use reflection to get strongly-typed constructor info from <code data-dev-comment-type="paramref" class="paramref">item</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static ConstructorInfo GetConstructor(DicomItem item, params Type[] parameterTypes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>DICOM item for which to get constructor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span>[]</td>
+        <td><span class="parametername">parameterTypes</span></td>
+        <td><p>Expected parameter types in the requested constructor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ConstructorInfo</span></td>
+        <td><p>Constructor info corresponding to <code data-dev-comment-type="paramref" class="paramref">item</code> and <code data-dev-comment-type="paramref" class="paramref">parameterTypes</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomAnonymizer_IsOtherElement_" data-uid="FellowOakDicom.DicomAnonymizer.IsOtherElement*"></a>
+  <h4 id="FellowOakDicom_DicomAnonymizer_IsOtherElement_FellowOakDicom_DicomItem_" data-uid="FellowOakDicom.DicomAnonymizer.IsOtherElement(FellowOakDicom.DicomItem)">IsOtherElement(DicomItem)</h4>
+  <div class="markdown level1 summary"><p>Evaluates whether a DICOM item is of type Other*</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool IsOtherElement(DicomItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>A boolean flag indicating whether the item is of the expected type, otherwise false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomAnonymizer_ReplaceString_" data-uid="FellowOakDicom.DicomAnonymizer.ReplaceString*"></a>
+  <h4 id="FellowOakDicom_DicomAnonymizer_ReplaceString_FellowOakDicom_DicomDataset_FellowOakDicom_DicomItem_System_String_" data-uid="FellowOakDicom.DicomAnonymizer.ReplaceString(FellowOakDicom.DicomDataset,FellowOakDicom.DicomItem,System.String)">ReplaceString(DicomDataset, DicomItem, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void ReplaceString(DicomDataset dataset, DicomItem item, string newString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">dataset</span></td>
+        <td><p>Reference to the dataset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>DICOM item for which the string value should be replaced.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">newString</span></td>
+        <td><p>The replacement string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomAnonymizer_ReplaceUID_" data-uid="FellowOakDicom.DicomAnonymizer.ReplaceUID*"></a>
+  <h4 id="FellowOakDicom_DicomAnonymizer_ReplaceUID_FellowOakDicom_DicomDataset_FellowOakDicom_DicomItem_" data-uid="FellowOakDicom.DicomAnonymizer.ReplaceUID(FellowOakDicom.DicomDataset,FellowOakDicom.DicomItem)">ReplaceUID(DicomDataset, DicomItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ReplaceUID(DicomDataset dataset, DicomItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">dataset</span></td>
+        <td><p>Reference to the dataset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

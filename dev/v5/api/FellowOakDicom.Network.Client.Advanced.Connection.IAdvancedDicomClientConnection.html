@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IAdvancedDicomClientConnection
+   | Fellow Oak DICOM 5 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IAdvancedDicomClientConnection
+   | Fellow Oak DICOM 5 API ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection">
+  
+  
+  <h1 id="FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnection" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection" class="text-break">Interface IAdvancedDicomClientConnection
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an open DICOM connection, which contains two things:<br></p>
+<ol>
+<li>An open TCP socket to the port where the other AE is running<br></li>
+<li>A DICOM listener that collects incoming DICOM messages over this socket<br></li>
+</ol>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_NetworkStream">IDicomClientConnection.NetworkStream</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_Listener">IDicomClientConnection.Listener</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_IsSendNextMessageRequired">IDicomClientConnection.IsSendNextMessageRequired</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_IsSendQueueEmpty">IDicomClientConnection.IsSendQueueEmpty</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_StartListener">IDicomClientConnection.StartListener()</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_SendAssociationRequestAsync_FellowOakDicom_Network_DicomAssociation_">IDicomClientConnection.SendAssociationRequestAsync(DicomAssociation)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_SendAssociationReleaseRequestAsync">IDicomClientConnection.SendAssociationReleaseRequestAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_SendAbortAsync_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_">IDicomClientConnection.SendAbortAsync(DicomAbortSource, DicomAbortReason)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAssociationAcceptAsync_FellowOakDicom_Network_DicomAssociation_">IDicomClientConnection.OnReceiveAssociationAcceptAsync(DicomAssociation)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAssociationRejectAsync_FellowOakDicom_Network_DicomRejectResult_FellowOakDicom_Network_DicomRejectSource_FellowOakDicom_Network_DicomRejectReason_">IDicomClientConnection.OnReceiveAssociationRejectAsync(DicomRejectResult, DicomRejectSource, DicomRejectReason)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAssociationReleaseResponseAsync">IDicomClientConnection.OnReceiveAssociationReleaseResponseAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAbortAsync_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_">IDicomClientConnection.OnReceiveAbortAsync(DicomAbortSource, DicomAbortReason)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnConnectionClosedAsync_Exception_">IDicomClientConnection.OnConnectionClosedAsync(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_SendRequestAsync_FellowOakDicom_Network_DicomRequest_">IDicomClientConnection.SendRequestAsync(DicomRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_SendNextMessageAsync">IDicomClientConnection.SendNextMessageAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestCompletedAsync_FellowOakDicom_Network_DicomRequest_FellowOakDicom_Network_DicomResponse_">IDicomClientConnection.OnRequestCompletedAsync(DicomRequest, DicomResponse)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestPendingAsync_FellowOakDicom_Network_DicomRequest_FellowOakDicom_Network_DicomResponse_">IDicomClientConnection.OnRequestPendingAsync(DicomRequest, DicomResponse)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestTimedOutAsync_FellowOakDicom_Network_DicomRequest_TimeSpan_">IDicomClientConnection.OnRequestTimedOutAsync(DicomRequest, TimeSpan)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnCStoreRequestAsync_FellowOakDicom_Network_DicomCStoreRequest_">IDicomClientConnection.OnCStoreRequestAsync(DicomCStoreRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnNEventReportRequestAsync_FellowOakDicom_Network_DicomNEventReportRequest_">IDicomClientConnection.OnNEventReportRequestAsync(DicomNEventReportRequest)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.html">FellowOakDicom.Network.Client.Advanced.Connection</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAdvancedDicomClientConnection : IDicomClientConnection</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnection_OpenAssociationAsync_" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection.OpenAssociationAsync*"></a>
+  <h4 id="FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnection_OpenAssociationAsync_AdvancedDicomClientAssociationRequest_CancellationToken_" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection.OpenAssociationAsync(AdvancedDicomClientAssociationRequest,CancellationToken)">OpenAssociationAsync(AdvancedDicomClientAssociationRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Opens a new DICOM association over an existing TCP connection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IAdvancedDicomClientAssociation&gt; OpenAssociationAsync(AdvancedDicomClientAssociationRequest request, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AdvancedDicomClientAssociationRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request that specifies how the association should be opened</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token that will cancel the opening of the association.
+Depending on the timing, this may leave the connection unusable, it is safest to always reopen a new connection if cancellation occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IAdvancedDicomClientAssociation</span>&gt;</td>
+        <td><p>The opened association if the other AE accepted the association request</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomAssociationRejectedException.html">DicomAssociationRejectedException</a></td>
+        <td><p>When the association is rejected</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomAssociationAbortedException.html">DicomAssociationAbortedException</a></td>
+        <td><p>When the association is aborted prematurely</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomNetworkException.html">DicomNetworkException</a></td>
+        <td><p>When the connection is lost without an underlying IO exception</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></td>
+        <td><p>When the connection is lost</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

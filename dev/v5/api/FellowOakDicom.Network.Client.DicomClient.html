@@ -129,13 +129,13 @@
   
   
   <a id="FellowOakDicom_Network_Client_DicomClient__ctor_" data-uid="FellowOakDicom.Network.Client.DicomClient.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient__ctor_System_String_System_Int32_System_Boolean_System_String_System_String_FellowOakDicom_Network_Client_DicomClientOptions_FellowOakDicom_Network_DicomServiceOptions_FellowOakDicom_Network_INetworkManager_ILogManager_ITranscoderManager_IMemoryProvider_" data-uid="FellowOakDicom.Network.Client.DicomClient.#ctor(System.String,System.Int32,System.Boolean,System.String,System.String,FellowOakDicom.Network.Client.DicomClientOptions,FellowOakDicom.Network.DicomServiceOptions,FellowOakDicom.Network.INetworkManager,ILogManager,ITranscoderManager,IMemoryProvider)">DicomClient(String, Int32, Boolean, String, String, DicomClientOptions, DicomServiceOptions, INetworkManager, ILogManager, ITranscoderManager, IMemoryProvider)</h4>
+  <h4 id="FellowOakDicom_Network_Client_DicomClient__ctor_System_String_System_Int32_System_Boolean_System_String_System_String_FellowOakDicom_Network_Client_DicomClientOptions_FellowOakDicom_Network_DicomServiceOptions_ILogger_IAdvancedDicomClientConnectionFactory_" data-uid="FellowOakDicom.Network.Client.DicomClient.#ctor(System.String,System.Int32,System.Boolean,System.String,System.String,FellowOakDicom.Network.Client.DicomClientOptions,FellowOakDicom.Network.DicomServiceOptions,ILogger,IAdvancedDicomClientConnectionFactory)">DicomClient(String, Int32, Boolean, String, String, DicomClientOptions, DicomServiceOptions, ILogger, IAdvancedDicomClientConnectionFactory)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of <a class="xref" href="FellowOakDicom.Network.Client.DicomClient.html">DicomClient</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DicomClient(string host, int port, bool useTls, string callingAe, string calledAe, DicomClientOptions clientOptions, DicomServiceOptions serviceOptions, INetworkManager networkManager, ILogManager logManager, ITranscoderManager transcoderManager, IMemoryProvider memoryProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public DicomClient(string host, int port, bool useTls, string callingAe, string calledAe, DicomClientOptions clientOptions, DicomServiceOptions serviceOptions, ILogger logger, IAdvancedDicomClientConnectionFactory advancedDicomClientConnectionFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,27 +190,15 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a></td>
-        <td><span class="parametername">networkManager</span></td>
-        <td><p>The network manager that will be used to connect to the DICOM server</p>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The logger</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ILogManager</span></td>
-        <td><span class="parametername">logManager</span></td>
-        <td><p>The log manager that will be used to extract a default logger</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">ITranscoderManager</span></td>
-        <td><span class="parametername">transcoderManager</span></td>
-        <td><p>The transcoder manager that will be used to transcode incoming or outgoing DICOM files</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
-        <td><span class="parametername">memoryProvider</span></td>
-        <td><p>The memory provider that will be used to allocate memory when sending and receiving messages</p>
+        <td><span class="xref">IAdvancedDicomClientConnectionFactory</span></td>
+        <td><span class="parametername">advancedDicomClientConnectionFactory</span></td>
+        <td><p>The advanced DICOM client factory that will be used to actually send the requests</p>
 </td>
       </tr>
     </tbody>
@@ -444,81 +432,6 @@
   </table>
   
   
-  <a id="FellowOakDicom_Network_Client_DicomClient_LogManager_" data-uid="FellowOakDicom.Network.Client.DicomClient.LogManager*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient_LogManager" data-uid="FellowOakDicom.Network.Client.DicomClient.LogManager">LogManager</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ILogManager LogManager { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ILogManager</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_Client_DicomClient_MemoryProvider_" data-uid="FellowOakDicom.Network.Client.DicomClient.MemoryProvider*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient_MemoryProvider" data-uid="FellowOakDicom.Network.Client.DicomClient.MemoryProvider">MemoryProvider</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IMemoryProvider MemoryProvider { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_Client_DicomClient_NetworkManager_" data-uid="FellowOakDicom.Network.Client.DicomClient.NetworkManager*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient_NetworkManager" data-uid="FellowOakDicom.Network.Client.DicomClient.NetworkManager">NetworkManager</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public INetworkManager NetworkManager { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_DicomClient_OnCStoreRequest_" data-uid="FellowOakDicom.Network.Client.DicomClient.OnCStoreRequest*"></a>
   <h4 id="FellowOakDicom_Network_Client_DicomClient_OnCStoreRequest" data-uid="FellowOakDicom.Network.Client.DicomClient.OnCStoreRequest">OnCStoreRequest</h4>
   <div class="markdown level1 summary"></div>
@@ -619,31 +532,6 @@
   </table>
   
   
-  <a id="FellowOakDicom_Network_Client_DicomClient_TranscoderManager_" data-uid="FellowOakDicom.Network.Client.DicomClient.TranscoderManager*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient_TranscoderManager" data-uid="FellowOakDicom.Network.Client.DicomClient.TranscoderManager">TranscoderManager</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITranscoderManager TranscoderManager { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ITranscoderManager</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_DicomClient_UseTls_" data-uid="FellowOakDicom.Network.Client.DicomClient.UseTls*"></a>
   <h4 id="FellowOakDicom_Network_Client_DicomClient_UseTls" data-uid="FellowOakDicom.Network.Client.DicomClient.UseTls">UseTls</h4>
   <div class="markdown level1 summary"></div>
@@ -714,54 +602,12 @@
   
   
   <a id="FellowOakDicom_Network_Client_DicomClient_AddRequestsAsync_" data-uid="FellowOakDicom.Network.Client.DicomClient.AddRequestsAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient_AddRequestsAsync_FellowOakDicom_Network_DicomRequest___" data-uid="FellowOakDicom.Network.Client.DicomClient.AddRequestsAsync(FellowOakDicom.Network.DicomRequest[])">AddRequestsAsync(DicomRequest[])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task AddRequestsAsync(params DicomRequest[] requests)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a>[]</td>
-        <td><span class="parametername">requests</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_Client_DicomClient_AddRequestsAsync_" data-uid="FellowOakDicom.Network.Client.DicomClient.AddRequestsAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_DicomClient_AddRequestsAsync_IEnumerable_FellowOakDicom_Network_DicomRequest__" data-uid="FellowOakDicom.Network.Client.DicomClient.AddRequestsAsync(IEnumerable{FellowOakDicom.Network.DicomRequest})">AddRequestsAsync(IEnumerable&lt;DicomRequest&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task AddRequestsAsync(IEnumerable&lt;DicomRequest&gt; dicomRequests)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task AddRequestsAsync(IEnumerable&lt;DicomRequest&gt; dicomRequests)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

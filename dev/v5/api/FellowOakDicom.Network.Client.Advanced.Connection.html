@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace FellowOakDicom.Network.Client.Advanced.Connection
+   | Fellow Oak DICOM 5 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace FellowOakDicom.Network.Client.Advanced.Connection
+   | Fellow Oak DICOM 5 API ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Network.Client.Advanced.Connection">
+  
+  <h1 id="FellowOakDicom_Network_Client_Advanced_Connection" data-uid="FellowOakDicom.Network.Client.Advanced.Connection" class="text-break">Namespace FellowOakDicom.Network.Client.Advanced.Connection
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionFactory.html">AdvancedDicomClientConnectionFactory</a></h4>
+      <section></section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.html">AdvancedDicomClientConnectionRequest</a></h4>
+      <section><p>Contains all the knobs and bells needed to open a new connection to a DICOM AE</p>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequestHandlers.html">AdvancedDicomClientConnectionRequestHandlers</a></h4>
+      <section><p>Contains request handlers for requests that have been sent from a DICOM server to a DICOM client</p>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.ConnectionClosedEvent.html">ConnectionClosedEvent</a></h4>
+      <section><p>When the TCP connection with the SCP is closed</p>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DefaultAdvancedDicomClientConnectionFactory.html">DefaultAdvancedDicomClientConnectionFactory</a></h4>
+      <section><p>Represents an advanced DICOM client that exposes the highest amount of manual control over the underlying DICOM communication when sending DICOM requests<br>
+Using an advanced DICOM client, it is possible to manage the lifetime of a DICOM connection + association in a fine-grained manner and send any number of DICOM requests over it<br>
+<br>
+The regular DICOM client is completely built on top of this advanced DICOM client.<br>
+Be aware that consumers of the advanced DICOM client are left to their own devices to handle the fine details of interacting with other PACS software.<br>
+Here is an incomplete sample of the things the regular DICOM client will do for you:<br></p>
+<ul>
+<li>Enforce a maximum amount of requests per association<br></li>
+<li>Keep an association alive for a certain amount of time to allow more requests to be sent<br></li>
+<li>Automatically open more associations while more requests are enqueued<br></li>
+<li>Automatically negotiate presentation contexts based on the requests that are enqueued<br>
+<br>
+This advanced DICOM client is offered to expert users of the Fellow Oak DICOM library.<br>
+If you do not consider yourself such an expert, please reconsider the compatibility of the regular DicomClient with your use case.</li>
+</ul>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DicomAbortedEvent.html">DicomAbortedEvent</a></h4>
+      <section><p>When the DICOM association is suddenly aborted</p>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DicomAssociationAcceptedEvent.html">DicomAssociationAcceptedEvent</a></h4>
+      <section><p>When the DICOM association is accepted</p>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DicomAssociationRejectedEvent.html">DicomAssociationRejectedEvent</a></h4>
+      <section><p>When the DICOM association is rejected</p>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DicomAssociationReleasedEvent.html">DicomAssociationReleasedEvent</a></h4>
+      <section><p>When the association is released</p>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.RequestCompletedEvent.html">RequestCompletedEvent</a></h4>
+      <section><p>When a DICOM request is completed and no further responses are expected</p>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.RequestPendingEvent.html">RequestPendingEvent</a></h4>
+      <section><p>When a DICOM request has been sent to the SCP and is now pending one or more responses</p>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.RequestTimedOutEvent.html">RequestTimedOutEvent</a></h4>
+      <section><p>When a DICOM request times out</p>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.SendQueueEmptyEvent.html">SendQueueEmptyEvent</a></h4>
+      <section><p>When the internal DicomService queue is empty, and a call to SendNextMessage will be required to send more requests</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection.html">IAdvancedDicomClientConnection</a></h4>
+      <section><p>Represents an open DICOM connection, which contains two things:<br></p>
+<ol>
+<li>An open TCP socket to the port where the other AE is running<br></li>
+<li>A DICOM listener that collects incoming DICOM messages over this socket<br></li>
+</ol>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionEvent.html">IAdvancedDicomClientConnectionEvent</a></h4>
+      <section><p>This is an empty marker interface so it is possible to create collections of the various events that occur in our DICOM network communication</p>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionFactory.html">IAdvancedDicomClientConnectionFactory</a></h4>
+      <section><p>Represents an advanced DICOM client that exposes the highest amount of manual control over the underlying DICOM communication when sending DICOM requests<br>
+Using an advanced DICOM client, it is possible to manage the lifetime of a DICOM connection + association in a fine-grained manner and send any number of DICOM requests over it<br>
+<br>
+The regular DICOM client is completely built on top of this advanced DICOM client.<br>
+Be aware that consumers of the advanced DICOM client are left to their own devices to handle the fine details of interacting with other PACS software.<br>
+Here is an incomplete sample of the things the regular DICOM client will do for you:<br></p>
+<ul>
+<li>Enforce a maximum amount of requests per association<br></li>
+<li>Keep an association alive for a certain amount of time to allow more requests to be sent<br></li>
+<li>Automatically open more associations while more requests are enqueued<br></li>
+<li>Automatically negotiate presentation contexts based on the requests that are enqueued<br>
+<br>
+This advanced DICOM client is offered to expert users of the Fellow Oak DICOM library.<br>
+If you do not consider yourself such an expert, please reconsider the compatibility of the regular DicomClient with your use case.</li>
+</ul>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
