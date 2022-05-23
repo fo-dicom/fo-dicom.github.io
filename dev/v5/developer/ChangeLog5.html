@@ -78,11 +78,13 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 
-<h4 id="503-tbd">5.0.3 (TBD)</h4>
+<h4 id="504-tbd">5.0.4 (TBD)</h4>
+<h4 id="503-2022-05-23">5.0.3 (2022-05-23)</h4>
 <ul>
 <li><strong>Breaking change</strong>: subclasses of DicomService will have to pass an instance of DicomServiceDependencies along to the DicomService base constructor. This replaces the old LogManager / NetworkManager / TranscoderManager dependencies. (Implemented in the context of #1291)</li>
 <li><strong>Breaking change</strong>: subclasses of DicomServer will have to pass an instance of DicomServerDependencies along to the DicomServer base constructor. This replaces the old NetworkManager / LogManager dependencies. (Implemented in the context of #1291)</li>
 <li><strong>Breaking change</strong>: DicomClient no longer has a NetworkManager, LogManager or TranscoderManager, these are to be configured via dependency injection. (Implemented in the context of #1144)</li>
+<li>Update to DICOM Standard 2022b</li>
 <li>Added option <code>numberSerializationMode</code> to <code>JsonDicomConverter</code> that allows different modes for serializing DS/IS/UV/SV DICOM items, including handling of invalid values (#1354 &amp; #1362)</li>
 <li>Added an extension to get a DateTimeOffset respecting the timezone info in the dataset (#1310)</li>
 <li>Fixed bug where anonymization threw an exception if a DicomTag of VR UI contained no value (#1308)</li>
