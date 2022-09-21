@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PhotometricInterpretation
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.59.3.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,7 +88,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="FellowOakDicom.DicomParseable.html">DicomParseable</a></div>
     <div class="level2"><span class="xref">PhotometricInterpretation</span></div>
   </div>
@@ -98,16 +98,16 @@
       <a class="xref" href="FellowOakDicom.DicomParseable.html#FellowOakDicom_DicomParseable_Parse__1_System_String_">DicomParseable.Parse&lt;T&gt;(String)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.html">FellowOakDicom.Imaging</a></h6>
@@ -361,7 +361,7 @@ containing Cb and Cr samples (at the same locations than for the first Row) will
   
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_YbrPartial422" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.YbrPartial422">YbrPartial422</h4>
   <div class="markdown level1 summary"><p>The same as YBR_FULL_422 except that:</p>
-<ol><li></li><li></li><li></li><li></li><li></li></ol>
+<ol><li>black corresponds to Y = 16</li><li>Y is restricted to 220 levels (i.e. the maximum value is 235)</li><li>Cb and Cr each has a minimum value of 16</li><li>Cb and Cr are restricted to 225 levels (i.e. the maximum value is 240)</li><li>lack of color is represented by Cb and Cr equal to 128</li></ol>
 <p>In the case where Bits Allocated (0028,0100) has value of 8 then the following equations convert
 between RGB and YBR_PARTIAL_422 Photometric Interpretation:
 Y  = + .2568R + .5041G + .0979B + 16
@@ -474,7 +474,7 @@ B = Cb + G</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -500,7 +500,7 @@ B = Cb + G</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -526,7 +526,7 @@ B = Cb + G</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -552,7 +552,7 @@ B = Cb + G</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -578,7 +578,7 @@ B = Cb + G</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -606,7 +606,7 @@ B = Cb + G</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">obj</span></td>
         <td></td>
       </tr>
@@ -622,13 +622,13 @@ B = Cb + G</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a></div>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a></div>
   
   
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_GetHashCode_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.GetHashCode*"></a>
@@ -649,13 +649,13 @@ B = Cb + G</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a></div>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a></div>
   
   
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_Parse_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.Parse*"></a>
@@ -678,7 +678,7 @@ B = Cb + G</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">photometricInterpretation</span></td>
         <td><p>String to be parsed.</p>
 </td>
@@ -737,13 +737,13 @@ B = Cb + G</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a></div>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a></div>
   <h3 id="operators">Operators
   </h3>
   
@@ -791,7 +791,7 @@ B = Cb + G</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>True if both objects are <pre><code>null</code></pre> or <a class="xref" href="FellowOakDicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a> objects with the same <a class="xref" href="FellowOakDicom.Imaging.PhotometricInterpretation.html#FellowOakDicom_Imaging_PhotometricInterpretation_Value">Value</a>,
 false otherwise.</p>
 </td>
@@ -843,7 +843,7 @@ false otherwise.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>True if exactly one object is <pre><code>null</code></pre> or if both are <a class="xref" href="FellowOakDicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a> objects with different <a class="xref" href="FellowOakDicom.Imaging.PhotometricInterpretation.html#FellowOakDicom_Imaging_PhotometricInterpretation_Value">Value</a>,
 false otherwise.</p>
 </td>
