@@ -473,6 +473,58 @@
   
   
   <a id="FellowOakDicom_IO_StreamByteSource_GetBytes_" data-uid="FellowOakDicom.IO.StreamByteSource.GetBytes*"></a>
+  <h4 id="FellowOakDicom_IO_StreamByteSource_GetBytes_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.IO.StreamByteSource.GetBytes(System.Byte[],System.Int32,System.Int32)">GetBytes(Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetBytes(byte[] buffer, int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_IO_StreamByteSource_GetBytes_" data-uid="FellowOakDicom.IO.StreamByteSource.GetBytes*"></a>
   <h4 id="FellowOakDicom_IO_StreamByteSource_GetBytes_System_Int32_" data-uid="FellowOakDicom.IO.StreamByteSource.GetBytes(System.Int32)">GetBytes(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a specified number of bytes from the current position and moves to subsequent position.</p>
 </div>
@@ -858,45 +910,6 @@
         <td><span class="parametername">count</span></td>
         <td><p>Expected distance in bytes from the current position to the milestone.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_StreamByteSource_ReadBytes_" data-uid="FellowOakDicom.IO.StreamByteSource.ReadBytes*"></a>
-  <h4 id="FellowOakDicom_IO_StreamByteSource_ReadBytes_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.IO.StreamByteSource.ReadBytes(System.Byte[],System.Int32,System.Int32)">ReadBytes(Byte[], Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Reads the specified number of bytes from the stream, starting from a specified point
-in the byte array. <see cref="!:BinaryReader.Read()"></see> for more information.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ReadBytes(byte[] buffer, int index, int count)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
-        <td><span class="parametername">buffer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">index</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">count</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
