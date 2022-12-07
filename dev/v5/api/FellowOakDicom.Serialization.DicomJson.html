@@ -241,13 +241,13 @@
   
   
   <a id="FellowOakDicom_Serialization_DicomJson_ConvertJsonToDicom_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertJsonToDicom*"></a>
-  <h4 id="FellowOakDicom_Serialization_DicomJson_ConvertJsonToDicom_System_String_System_Boolean_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertJsonToDicom(System.String,System.Boolean)">ConvertJsonToDicom(String, Boolean)</h4>
+  <h4 id="FellowOakDicom_Serialization_DicomJson_ConvertJsonToDicom_System_String_System_Boolean_FellowOakDicom_Serialization_NumberSerializationMode_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertJsonToDicom(System.String,System.Boolean,FellowOakDicom.Serialization.NumberSerializationMode)">ConvertJsonToDicom(String, Boolean, NumberSerializationMode)</h4>
   <div class="markdown level1 summary"><p>Converts a Json-String to a <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DicomDataset ConvertJsonToDicom(string json, bool autoValidate = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DicomDataset ConvertJsonToDicom(string json, bool autoValidate = true, NumberSerializationMode numberSerializationMode = NumberSerializationMode.AsNumber)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -269,6 +269,11 @@
         <td><span class="parametername">autoValidate</span></td>
         <td><p>Whether the content of DicomItems shall be validated as soon as they are added to the DicomDataset.</p>
 </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Serialization.NumberSerializationMode.html">NumberSerializationMode</a></td>
+        <td><span class="parametername">numberSerializationMode</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

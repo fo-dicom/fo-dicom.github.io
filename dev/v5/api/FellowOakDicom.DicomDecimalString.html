@@ -93,7 +93,8 @@
     <div class="level2"><a class="xref" href="FellowOakDicom.DicomElement.html">DicomElement</a></div>
     <div class="level3"><a class="xref" href="FellowOakDicom.DicomStringElement.html">DicomStringElement</a></div>
     <div class="level4"><a class="xref" href="FellowOakDicom.DicomMultiStringElement.html">DicomMultiStringElement</a></div>
-    <div class="level5"><span class="xref">DicomDecimalString</span></div>
+    <div class="level5"><a class="xref" href="FellowOakDicom.DicomMultiStringOrNumberElement-1.html">DicomMultiStringOrNumberElement</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">Decimal</a>&gt;</div>
+    <div class="level6"><span class="xref">DicomDecimalString</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -101,6 +102,9 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomMultiStringOrNumberElement-1.html#FellowOakDicom_DicomMultiStringOrNumberElement_1_Get__1_System_Int32_">DicomMultiStringOrNumberElement&lt;Decimal&gt;.Get&lt;T&gt;(Int32)</a>
+    </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomMultiStringElement.html#FellowOakDicom_DicomMultiStringElement_Count">DicomMultiStringElement.Count</a>
     </div>
@@ -145,7 +149,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="FellowOakDicom_DicomDecimalString_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomDecimalString : DicomMultiStringElement</code></pre>
+    <pre><code class="lang-csharp hljs">public class DicomDecimalString : DicomMultiStringOrNumberElement&lt;decimal&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -276,65 +280,6 @@
   <div><a class="xref" href="FellowOakDicom.DicomItem.html#FellowOakDicom_DicomItem_ValueRepresentation">DicomItem.ValueRepresentation</a></div>
   <h3 id="methods">Methods
   </h3>
-  
-  
-  <a id="FellowOakDicom_DicomDecimalString_Get_" data-uid="FellowOakDicom.DicomDecimalString.Get*"></a>
-  <h4 id="FellowOakDicom_DicomDecimalString_Get__1_System_Int32_" data-uid="FellowOakDicom.DicomDecimalString.Get``1(System.Int32)">Get&lt;T&gt;(Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override T Get&lt;T&gt;(int item = -1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">item</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.DicomMultiStringElement.html#FellowOakDicom_DicomMultiStringElement_Get__1_System_Int32_">DicomMultiStringElement.Get&lt;T&gt;(Int32)</a></div>
   
   
   <a id="FellowOakDicom_DicomDecimalString_ToDecimalString_" data-uid="FellowOakDicom.DicomDecimalString.ToDecimalString*"></a>
