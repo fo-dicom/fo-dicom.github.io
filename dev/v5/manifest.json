@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "developer/ChangeLog.html",
-          "hash": "U1nVp2m40d5p5hBEp0DcShPduMrSKc9nu8b1SsoA2ck="
+          "hash": "lENL6aFT9Wvas/F6dk9hrVzEpD4/cqlbEcigMV+7eMc="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "developer/Contributors.html",
-          "hash": "0Nzu7/rCkaCT9XBfT1q6xrU52Wl+4db+vOa9LHzA/oQ="
+          "hash": "yILfoW1Ct+YDeXV8Tjt0MCWBK2ncq04N8gz01+eNV/8="
         }
       },
       "is_incremental": false,
@@ -375,7 +375,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.DicomDecimalString.html",
-          "hash": "kmdg6CgN8tAK82nfzk9PWseAeQUubXpeGHDw5l9r8/o="
+          "hash": "jgfRCjoFdMpcfVnAvkKyFnTzWSc9yEdpBBtsYpykYYE="
         }
       },
       "is_incremental": false,
@@ -591,7 +591,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.DicomIntegerString.html",
-          "hash": "xnoBUZKtVuTXKXaooYyw3n8PLoNzUN53qjQsurwKK/o="
+          "hash": "kaRTafnfe53wZ7o1Nb+T+YcPvIzUWFKfpFgWlGxcJQ0="
         }
       },
       "is_incremental": false,
@@ -675,19 +675,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.DicomMultiStringElement.html",
-          "hash": "MJhJ7zy/Y2q3aqGmyw/OjqtwuHKtwypsUkU0lU4V1Js="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.DicomMultiStringOrNumberElement-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.DicomMultiStringOrNumberElement-1.html",
-          "hash": "xbDDJUF58p7O5rOpdQ4BrLFzVNhHWZGUb8fvvDv5Ke8="
+          "hash": "h5KzhWv/WXyrZx4Cqod6C0oHjry9qOYcnGdBZktjXu8="
         }
       },
       "is_incremental": false,
@@ -915,7 +903,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.DicomSignedVeryLong.html",
-          "hash": "CDt0GpA12E60OUTwa9F5Vr7WPEwHFib0plp2mAaTzyA="
+          "hash": "61qzZ9Hi/HP5Qkag8czoExyEeAjJbqIpGQgfK2c5nRc="
         }
       },
       "is_incremental": false,
@@ -1143,7 +1131,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.DicomUnsignedVeryLong.html",
-          "hash": "JPek7MmpS9fsYD9GSj3Wwpvlse/FeMKu2eixT4mKWgQ="
+          "hash": "7e/R3v9jzXhVEEt/qncjmn/oPV6/0wecB/h+k/TI5MY="
         }
       },
       "is_incremental": false,
@@ -1239,7 +1227,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.DicomValueElement-1.html",
-          "hash": "2HMMs0G5OGvbj1SI9Z/IKKwSZ7+zRZhsS7UFYBO1rGQ="
+          "hash": "/mGu6eMn2p8Z+Y3RbDZil7pD5xJdO4Dvf06d4GBaf4w="
         }
       },
       "is_incremental": false,
@@ -6279,7 +6267,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Serialization.DicomJson.html",
-          "hash": "FnLLm7KLX/0Ps/o648taDx14PXCgUX99tqxnmSmDFIU="
+          "hash": "PHiWJFgijgprsFdpzrCFJzGLW5BiYRxvDYrRw5nM21c="
         }
       },
       "is_incremental": false,
@@ -6603,7 +6591,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.html",
-          "hash": "eSmI+ch6wIprHFOHS4gGhtIcvbucGl/r3ktR9rN96pk="
+          "hash": "CXlN0VfADtzu8RJcMxHGmTkPExA0gpBPtMj6lskZO9Y="
         }
       },
       "is_incremental": false,
@@ -6615,7 +6603,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "zsGfoxIGFlXNJRs6Ix2yx4IP3mFDzrovsyUz2AgsCAo="
+          "hash": "0njkd5/hdGjVrnlpNTPY9DEeBQnALfFHCK6pFAFItLw="
         }
       },
       "is_incremental": false,
@@ -6804,7 +6792,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 542,
+          "total_file_count": 541,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
