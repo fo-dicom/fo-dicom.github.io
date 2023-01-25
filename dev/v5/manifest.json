@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "developer/ChangeLog.html",
-          "hash": "le3DQQSOkIlsZC/ELFj7pj/UgIV2LnUZ5rClOBdqp8E="
+          "hash": "IS4yZTfHpyICr/aS9LsCBDc5sYK7HIPURsyMc/5/nGo="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "developer/Contributors.html",
-          "hash": "bAByAGFtg8lJ2J7+pbgYO5vRFdSbR1/IlNDKzPfKC6I="
+          "hash": "QGpAdEMOywLwJuJswolwaQmFlt4Nolvg9oSRQoJP8YM="
         }
       },
       "is_incremental": false,
@@ -2519,6 +2519,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.DicomIconImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Imaging.DicomIconImage.html",
+          "hash": "2krPitPby8iPi3a1vHQZcDcvd/KpPZbjHAfUdlS0m3s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/FellowOakDicom.Imaging.DicomImage.yml",
       "output": {
         ".html": {
@@ -3579,7 +3591,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Imaging.html",
-          "hash": "EGOS+ld0dilTRpAaSlA55TlZV+6QIGuemZWPQJG5zPw="
+          "hash": "qMd0o5EWjf+Mv+y/G8WKRh53dPeWP90ZiJVil+RjGqE="
         }
       },
       "is_incremental": false,
@@ -6603,7 +6615,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "0njkd5/hdGjVrnlpNTPY9DEeBQnALfFHCK6pFAFItLw="
+          "hash": "CTEdk2rmrU57927HiTkHlv88r7YDKZzp6z4xmMy4GG0="
         }
       },
       "is_incremental": false,
@@ -6792,7 +6804,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 541,
+          "total_file_count": 542,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
