@@ -80,6 +80,8 @@
 
 <h4 id="510-tbd">5.1.0 (TBD)</h4>
 <ul>
+<li><strong>Breaking change</strong>: Switch to Microsoft.Extensions.Logging, replacing FellowOakDicom.Log.ILogger and FellowOakDicom.Log.ILogManager. These are old interfaces are still supported, but they are now marked as obsolete</li>
+<li><strong>Breaking change</strong>: Updated DICOM Dictionary to 2022d. Several DicomTag constant names changed to singular name from plural form (#1469)</li>
 <li>Fix Truncating UIDs during Dimse and PDU logging (#1505)</li>
 <li>Cache file length in FileByteSource to improve parse speed (#1493)</li>
 <li>Fix reading of DICOM files with extra tags in File Meta Information (#1376)</li>
@@ -95,7 +97,6 @@
 <li>Fix incorrect conversion of some decimal strings (#1454)</li>
 <li>Disabled dataset validation on <code>DicomFile.Clone()</code> (#1465)</li>
 <li>Fix reading of Confidentiality Profile Attributes from standard (led to missing Clean Graphics option) (#1212)</li>
-<li><strong>Breaking change</strong>: Updated DICOM Dictionary to 2022d. Several DicomTag constant names changed to singular name from plural form (#1469)</li>
 <li>Added support for DICOM supplement 225, Multi-Fragment video transfer syntax (#1469)</li>
 <li>Added support for rendering native icon image stored within encapsulated sop instance (#1483)</li>
 <li>Added property to omit adding the default Implicit VR Little Endian transfer syntax for CStoreRequest (#1475)</li>

@@ -129,12 +129,12 @@
   
   
   <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_IOptions_FellowOakDicom_Network_Client_DicomClientOptions__IOptions_FellowOakDicom_Network_DicomServiceOptions__ILogManager_IAdvancedDicomClientConnectionFactory_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor(IOptions{FellowOakDicom.Network.Client.DicomClientOptions},IOptions{FellowOakDicom.Network.DicomServiceOptions},ILogManager,IAdvancedDicomClientConnectionFactory)">DefaultDicomClientFactory(IOptions&lt;DicomClientOptions&gt;, IOptions&lt;DicomServiceOptions&gt;, ILogManager, IAdvancedDicomClientConnectionFactory)</h4>
+  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_IOptions_FellowOakDicom_Network_Client_DicomClientOptions__IOptions_FellowOakDicom_Network_DicomServiceOptions__ILoggerFactory_IAdvancedDicomClientConnectionFactory_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor(IOptions{FellowOakDicom.Network.Client.DicomClientOptions},IOptions{FellowOakDicom.Network.DicomServiceOptions},ILoggerFactory,IAdvancedDicomClientConnectionFactory)">DefaultDicomClientFactory(IOptions&lt;DicomClientOptions&gt;, IOptions&lt;DicomServiceOptions&gt;, ILoggerFactory, IAdvancedDicomClientConnectionFactory)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DefaultDicomClientFactory(IOptions&lt;DicomClientOptions&gt; defaultClientOptions, IOptions&lt;DicomServiceOptions&gt; defaultServiceOptions, ILogManager logManager, IAdvancedDicomClientConnectionFactory advancedDicomClientConnectionFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public DefaultDicomClientFactory(IOptions&lt;DicomClientOptions&gt; defaultClientOptions, IOptions&lt;DicomServiceOptions&gt; defaultServiceOptions, ILoggerFactory loggerFactory, IAdvancedDicomClientConnectionFactory advancedDicomClientConnectionFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -157,8 +157,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ILogManager</span></td>
-        <td><span class="parametername">logManager</span></td>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
         <td></td>
       </tr>
       <tr>

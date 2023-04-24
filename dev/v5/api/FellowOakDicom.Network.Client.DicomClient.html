@@ -129,13 +129,13 @@
   
   
   <a id="FellowOakDicom_Network_Client_DicomClient__ctor_" data-uid="FellowOakDicom.Network.Client.DicomClient.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient__ctor_System_String_System_Int32_System_Boolean_System_String_System_String_FellowOakDicom_Network_Client_DicomClientOptions_FellowOakDicom_Network_DicomServiceOptions_ILogger_IAdvancedDicomClientConnectionFactory_" data-uid="FellowOakDicom.Network.Client.DicomClient.#ctor(System.String,System.Int32,System.Boolean,System.String,System.String,FellowOakDicom.Network.Client.DicomClientOptions,FellowOakDicom.Network.DicomServiceOptions,ILogger,IAdvancedDicomClientConnectionFactory)">DicomClient(String, Int32, Boolean, String, String, DicomClientOptions, DicomServiceOptions, ILogger, IAdvancedDicomClientConnectionFactory)</h4>
+  <h4 id="FellowOakDicom_Network_Client_DicomClient__ctor_System_String_System_Int32_System_Boolean_System_String_System_String_FellowOakDicom_Network_Client_DicomClientOptions_FellowOakDicom_Network_DicomServiceOptions_ILoggerFactory_IAdvancedDicomClientConnectionFactory_" data-uid="FellowOakDicom.Network.Client.DicomClient.#ctor(System.String,System.Int32,System.Boolean,System.String,System.String,FellowOakDicom.Network.Client.DicomClientOptions,FellowOakDicom.Network.DicomServiceOptions,ILoggerFactory,IAdvancedDicomClientConnectionFactory)">DicomClient(String, Int32, Boolean, String, String, DicomClientOptions, DicomServiceOptions, ILoggerFactory, IAdvancedDicomClientConnectionFactory)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of <a class="xref" href="FellowOakDicom.Network.Client.DicomClient.html">DicomClient</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DicomClient(string host, int port, bool useTls, string callingAe, string calledAe, DicomClientOptions clientOptions, DicomServiceOptions serviceOptions, ILogger logger, IAdvancedDicomClientConnectionFactory advancedDicomClientConnectionFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public DicomClient(string host, int port, bool useTls, string callingAe, string calledAe, DicomClientOptions clientOptions, DicomServiceOptions serviceOptions, ILoggerFactory loggerFactory, IAdvancedDicomClientConnectionFactory advancedDicomClientConnectionFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,9 +190,9 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ILogger</span></td>
-        <td><span class="parametername">logger</span></td>
-        <td><p>The logger</p>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td><p>The log manager that will be used to extract a default logger</p>
 </td>
       </tr>
       <tr>

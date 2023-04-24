@@ -79,23 +79,32 @@
             <article class="content wrap" id="_content" data-uid="">
 <h2 id="introduction">Introduction</h2>
 
-<p><em>fo-dicom</em> has its own logging abstraction through which it can log information and warning messages.  For example, when codecs are loaded, their names are written through the logger at a debug level.</p>
+<p><em>fo-dicom</em> relies on Microsoft.Extensions.Logging for its logging purposes.
+Any logging configuration that is configured there, will automatically be used.</p>
+<p>For example, when codecs are loaded, their names are written through the logger at a debug level.</p>
 <h2 id="default-configuration">Default configuration</h2>
-<p>By default, a <code>ConsoleLogManager</code> logger is selected to steer all logger output to the console.</p>
-<p><em>fo-dicom</em> also is shipped with a <code>NullLoggerManager</code>, that skips any log output, and a <code>TextWriterLogManager</code>, that redirects all log entries into a file.</p>
+<p>By default, <em>fo-dicom</em> will make use of <code>Microsoft.Extensions.Logging</code> for all of its logging.</p>
+<p>More specifically, <em>fo-dicom</em> injects loggers of type <code>Microsoft.Extensions.Logging.ILogger</code> where necessary.</p>
+<h2 id="default-logging-libraries">Default logging libraries</h2>
+<p>To use NLog, Serilog or other logging libraries, simply configure them as you would for <code>Microsoft.Extensions.Logging</code> and they will be used automatically by <em>fo-dicom</em>.</p>
+<h2 id="backwards-compatibility-configuration">Backwards compatibility configuration</h2>
+<p>In the past, <em>fo-dicom</em> used custom abstractions for logging called <code>FellowOakDicom.Log.ILogManager</code> and <code>FellowOakDicom.Log.ILogger</code>
+Using these historical abstractions is still supported, but they have moved to the <code>FellowOakDicom.Log.Obsolete</code> namespace and are marked obsolete.</p>
 <p>It is possible to change the log manager with the following code:</p>
 <pre><code>new DicomSetupBuilder()
-    .RegisterServices(s =&gt; s.AddLogManager&lt;NullLoggerManager&gt;())
+    .RegisterServices(s =&gt; s.AddLogManager&lt;MyLogManager&gt;())
     .Build();
 </code></pre>
-<h2 id="logging-libraries">Logging libraries</h2>
-<p>Currently there is one pre-built integration with third-party logging libraries available on nuget.</p>
-<h3 id="nlog">NLog</h3>
-<p>To configure <em>NLog</em> integration with <em>fo-dicom</em>, simply reference the nuget package fo-dicom.nlog, and insert the following code</p>
+<p><strong>Warning</strong>: internally, this <code>MyLogManager</code> will be registered as an <code>ILoggerProvider</code> (through an adapter) in <code>Microsoft.Extensions.Logging</code>
+If you use <code>Microsoft.Extensions.Logging</code> elsewhere in the same application, your <code>MyLogManager</code> will also appear there.</p>
+<h2 id="backwards-compatibility-logging-libraries">Backwards compatibility logging libraries</h2>
+<p>NLog is officially supported via a pre-built library available on nuget: <a href="https://www.nuget.org/packages/fo-dicom.NLog/">https://www.nuget.org/packages/fo-dicom.NLog/</a></p>
+<p>To configure <em>NLog</em> integration with <em>fo-dicom</em>, simply reference the nuget package, and insert the following code</p>
 <pre><code>new DicomSetupBuilder()
     .RegisterServices(s =&gt; s.AddLogManager&lt;NLogManager&gt;())
     .Build();
 </code></pre>
+<p>For all other logging libraries, you will have to provide your own implementation of <code>ILogManager</code> and <code>ILogger</code>.</p>
 </article>
           </div>
           
