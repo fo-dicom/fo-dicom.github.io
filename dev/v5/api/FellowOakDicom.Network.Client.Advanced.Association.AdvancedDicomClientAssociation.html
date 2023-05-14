@@ -268,6 +268,22 @@ Aborting an association may incur a loss of information, if for example it is pe
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>When the association is already disposed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_Dispose_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.Dispose*"></a>
@@ -339,6 +355,22 @@ Releasing an association is the proper way of cleaning it up after it is no long
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>When the association is already disposed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_SendRequestAsync_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.SendRequestAsync*"></a>
@@ -405,6 +437,11 @@ C-STORE and C-ECHO requests on the other hand typically only receives one respon
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>When the request is cancelled using the <code data-dev-comment-type="paramref" class="paramref">cancellationToken</code></p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></td>
         <td><p>When connection/socket issues occur</p>
 </td>
@@ -412,6 +449,11 @@ C-STORE and C-ECHO requests on the other hand typically only receives one respon
       <tr>
         <td><a class="xref" href="FellowOakDicom.Network.DicomNetworkException.html">DicomNetworkException</a></td>
         <td><p>When DICOM protocol issues occur</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>When the association is already disposed</p>
 </td>
       </tr>
     </tbody>

@@ -308,6 +308,22 @@ set to Explicit VR Little Endian (DICOM default transfer syntax).</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag of added item already exists in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="FellowOakDicom_DicomDataset_Add_" data-uid="FellowOakDicom.DicomDataset.Add*"></a>
@@ -349,6 +365,22 @@ set to Explicit VR Little Endian (DICOM default transfer syntax).</p>
       <tr>
         <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
         <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag of added item already exists in dataset.</p>
 </td>
       </tr>
     </tbody>
@@ -416,6 +448,22 @@ set to Explicit VR Little Endian (DICOM default transfer syntax).</p>
       <tr>
         <td><span class="parametername">T</span></td>
         <td><p>Type of added values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag already exists in dataset.</p>
 </td>
       </tr>
     </tbody>
@@ -497,6 +545,22 @@ set to Explicit VR Little Endian (DICOM default transfer syntax).</p>
   <div class="markdown level1 remarks"><p>No validation is performed on the <code data-dev-comment-type="paramref" class="paramref">vr</code> matching the element <code data-dev-comment-type="paramref" class="paramref">tag</code>
 This method is useful when adding a private tag and need to explicitly set the VR of the created element.</p>
 </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag already exists in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="FellowOakDicom_DicomDataset_AddOrUpdate_" data-uid="FellowOakDicom.DicomDataset.AddOrUpdate*"></a>

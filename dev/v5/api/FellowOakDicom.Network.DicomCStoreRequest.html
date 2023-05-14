@@ -181,28 +181,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class DicomCStoreRequest : DicomPriorityRequest</code></pre>
   </div>
-  <h5 id="FellowOakDicom_Network_DicomCStoreRequest_examples"><strong>Examples</strong></h5>
-  <p>The following example shows how to use the <see cref="!:DicomClient"></see> class to send DICOM C-Store requests to a DICOM C-Store SCP.</p>
-<pre><code>var client = new DicomClient();
-
-// queue C-Store request to send DICOM file
-client.Add(new DicomCStoreRequest(@&quot;test1.dcm&quot;) {
-	OnResponseReceived = (DicomCStoreRequest req, DicomCStoreResponse rsp) => {
-		Console.WriteLine(&quot;{0}: {1}&quot;, req.SOPInstanceUID, rsp.Status);
-	}
-});
-
-// queue C-Store request with additional proposed transfer syntaxes
-client.Add(new DicomCStoreRequest(@&quot;test2.dcm&quot;) {
-	AdditionalTransferSyntaxes = new DicomTransferSyntax[] {
-		DicomTransferSyntax.JPEGLSLossless,
-		DicomTransferSyntax.JPEG2000Lossless
-	}
-});
-
-// connect and send queued requests
-client.Send(&quot;127.0.0.1&quot;, 12345, false, &quot;SCU&quot;, &quot;ANY-SCP&quot;);</code></pre>
-
   <h3 id="constructors">Constructors
   </h3>
   
