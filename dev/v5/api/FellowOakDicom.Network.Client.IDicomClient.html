@@ -407,6 +407,32 @@
   </table>
   
   
+  <a id="FellowOakDicom_Network_Client_IDicomClient_RequireSuccessfulUserIdentityNegotiation_" data-uid="FellowOakDicom.Network.Client.IDicomClient.RequireSuccessfulUserIdentityNegotiation*"></a>
+  <h4 id="FellowOakDicom_Network_Client_IDicomClient_RequireSuccessfulUserIdentityNegotiation" data-uid="FellowOakDicom.Network.Client.IDicomClient.RequireSuccessfulUserIdentityNegotiation">RequireSuccessfulUserIdentityNegotiation</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether to require a successful user identity negotiation during association.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RequireSuccessfulUserIdentityNegotiation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="FellowOakDicom_Network_Client_IDicomClient_ServiceOptions_" data-uid="FellowOakDicom.Network.Client.IDicomClient.ServiceOptions*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_ServiceOptions" data-uid="FellowOakDicom.Network.Client.IDicomClient.ServiceOptions">ServiceOptions</h4>
   <div class="markdown level1 summary"><p>Gets or sets options to control behavior of <a class="xref" href="FellowOakDicom.Network.DicomService.html">DicomService</a> base class.</p>
@@ -453,6 +479,32 @@
     <tbody>
       <tr>
         <td><span class="xref">ITlsInitiator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_Client_IDicomClient_UserIdentityNegotiation_" data-uid="FellowOakDicom.Network.Client.IDicomClient.UserIdentityNegotiation*"></a>
+  <h4 id="FellowOakDicom_Network_Client_IDicomClient_UserIdentityNegotiation" data-uid="FellowOakDicom.Network.Client.IDicomClient.UserIdentityNegotiation">UserIdentityNegotiation</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the user identity to negotiate with association.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DicomUserIdentityNegotiation UserIdentityNegotiation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomUserIdentityNegotiation.html">DicomUserIdentityNegotiation</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -579,6 +631,35 @@ When you have many requests, this method is recommended over calling <a class="x
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">performed</span></td>
         <td><p>Asynchronous operations performed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_Client_IDicomClient_NegotiateUserIdentity_" data-uid="FellowOakDicom.Network.Client.IDicomClient.NegotiateUserIdentity*"></a>
+  <h4 id="FellowOakDicom_Network_Client_IDicomClient_NegotiateUserIdentity_FellowOakDicom_Network_DicomUserIdentityNegotiation_" data-uid="FellowOakDicom.Network.Client.IDicomClient.NegotiateUserIdentity(FellowOakDicom.Network.DicomUserIdentityNegotiation)">NegotiateUserIdentity(DicomUserIdentityNegotiation)</h4>
+  <div class="markdown level1 summary"><p>Set negotiation of user identity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NegotiateUserIdentity(DicomUserIdentityNegotiation userIdentityNegotiation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomUserIdentityNegotiation.html">DicomUserIdentityNegotiation</a></td>
+        <td><span class="parametername">userIdentityNegotiation</span></td>
+        <td><p>User identity negotiation information.</p>
 </td>
       </tr>
     </tbody>
