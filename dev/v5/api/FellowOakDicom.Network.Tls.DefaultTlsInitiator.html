@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DefaultDicomClientFactory
+    <title>Class DefaultTlsInitiator
    | Fellow Oak DICOM 5 API </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DefaultDicomClientFactory
+    <meta name="title" content="Class DefaultTlsInitiator
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,21 +78,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory">
+            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator">
   
   
-  <h1 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory" class="text-break">Class DefaultDicomClientFactory
+  <h1 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator" class="text-break">Class DefaultTlsInitiator
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Default implementation of ITlsInitiator.
+This implementation will use windows certificate store in order to validate the server certificate</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">DefaultDicomClientFactory</span></div>
+    <div class="level1"><span class="xref">DefaultTlsInitiator</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="FellowOakDicom.Network.Client.IDicomClientFactory.html">IDicomClientFactory</a></div>
+    <div><a class="xref" href="FellowOakDicom.Network.Tls.ITlsInitiator.html">ITlsInitiator</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -118,57 +120,178 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Client.html">FellowOakDicom.Network.Client</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Tls.html">FellowOakDicom.Network.Tls</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_syntax">Syntax</h5>
+  <h5 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DefaultDicomClientFactory : IDicomClientFactory</code></pre>
+    <pre><code class="lang-csharp hljs">public class DefaultTlsInitiator : ITlsInitiator</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_IOptions_FellowOakDicom_Network_Client_DicomClientOptions__IOptions_FellowOakDicom_Network_DicomServiceOptions__ILoggerFactory_IAdvancedDicomClientConnectionFactory_IServiceProvider_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor(IOptions{FellowOakDicom.Network.Client.DicomClientOptions},IOptions{FellowOakDicom.Network.DicomServiceOptions},ILoggerFactory,IAdvancedDicomClientConnectionFactory,IServiceProvider)">DefaultDicomClientFactory(IOptions&lt;DicomClientOptions&gt;, IOptions&lt;DicomServiceOptions&gt;, ILoggerFactory, IAdvancedDicomClientConnectionFactory, IServiceProvider)</h4>
+  <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator__ctor_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.#ctor*"></a>
+  <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator__ctor" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.#ctor">DefaultTlsInitiator()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DefaultDicomClientFactory(IOptions&lt;DicomClientOptions&gt; defaultClientOptions, IOptions&lt;DicomServiceOptions&gt; defaultServiceOptions, ILoggerFactory loggerFactory, IAdvancedDicomClientConnectionFactory advancedDicomClientConnectionFactory, IServiceProvider serviceProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public DefaultTlsInitiator()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_Certificates_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.Certificates*"></a>
+  <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_Certificates" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.Certificates">Certificates</h4>
+  <div class="markdown level1 summary"><p>The certificates that will be used to authenticate the client itself</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509CertificateCollection Certificates { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="FellowOakDicom.Network.Client.DicomClientOptions.html">DicomClientOptions</a>&gt;</td>
-        <td><span class="parametername">defaultClientOptions</span></td>
+        <td><span class="xref">X509CertificateCollection</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_CertificateValidationCallback_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.CertificateValidationCallback*"></a>
+  <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_CertificateValidationCallback" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.CertificateValidationCallback">CertificateValidationCallback</h4>
+  <div class="markdown level1 summary"><p>The callback that will be invoked after validating the certificate of the server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RemoteCertificateValidationCallback CertificateValidationCallback { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a>&gt;</td>
-        <td><span class="parametername">defaultServiceOptions</span></td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RemoteCertificateValidationCallback</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_CheckCertificateRevocation_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.CheckCertificateRevocation*"></a>
+  <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_CheckCertificateRevocation" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.CheckCertificateRevocation">CheckCertificateRevocation</h4>
+  <div class="markdown level1 summary"><p>Whether or not the certificate revocation list should be checked during authentication</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckCertificateRevocation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><span class="xref">ILoggerFactory</span></td>
-        <td><span class="parametername">loggerFactory</span></td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_IgnoreSslPolicyErrors_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.IgnoreSslPolicyErrors*"></a>
+  <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_IgnoreSslPolicyErrors" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.IgnoreSslPolicyErrors">IgnoreSslPolicyErrors</h4>
+  <div class="markdown level1 summary"><p>Whether or not to ignore any certificate validation errors that occur when authenticating as a client over SSL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IgnoreSslPolicyErrors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><span class="xref">IAdvancedDicomClientConnectionFactory</span></td>
-        <td><span class="parametername">advancedDicomClientConnectionFactory</span></td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_Protocols_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.Protocols*"></a>
+  <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_Protocols" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.Protocols">Protocols</h4>
+  <div class="markdown level1 summary"><p>The protocols that should be supported</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SslProtocols Protocols { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><span class="xref">IServiceProvider</span></td>
-        <td><span class="parametername">serviceProvider</span></td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SslProtocols</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_SslHandshakeTimeout_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.SslHandshakeTimeout*"></a>
+  <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_SslHandshakeTimeout" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.SslHandshakeTimeout">SslHandshakeTimeout</h4>
+  <div class="markdown level1 summary"><p>The timeout after which TLS authentication will be considered to have failed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan SslHandshakeTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -177,13 +300,13 @@
   </h3>
   
   
-  <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_System_String_System_Int32_ITlsInitiator_System_String_System_String_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create(System.String,System.Int32,ITlsInitiator,System.String,System.String)">Create(String, Int32, ITlsInitiator, String, String)</h4>
+  <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_InitiateTls_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.InitiateTls*"></a>
+  <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_InitiateTls_Stream_System_String_System_Int32_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.InitiateTls(Stream,System.String,System.Int32)">InitiateTls(Stream, String, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IDicomClient Create(string host, int port, ITlsInitiator tlsInitiator, string callingAe, string calledAe)</code></pre>
+    <pre><code class="lang-csharp hljs">public Stream InitiateTls(Stream plainStream, string remoteAddress, int remotePort)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -196,28 +319,18 @@
     </thead>
     <tbody>
       <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">plainStream</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">host</span></td>
+        <td><span class="parametername">remoteAddress</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">port</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">ITlsInitiator</span></td>
-        <td><span class="parametername">tlsInitiator</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">callingAe</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">calledAe</span></td>
+        <td><span class="parametername">remotePort</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -232,76 +345,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.Client.IDicomClient.html">IDicomClient</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_System_String_System_Int32_System_Boolean_System_String_System_String_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create(System.String,System.Int32,System.Boolean,System.String,System.String)">Create(String, Int32, Boolean, String, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IDicomClient Create(string host, int port, bool useTls, string callingAe, string calledAe)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">host</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">port</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">useTls</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">callingAe</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">calledAe</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.Client.IDicomClient.html">IDicomClient</a></td>
+        <td><span class="xref">Stream</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientFactory.html">IDicomClientFactory</a>
+      <a class="xref" href="FellowOakDicom.Network.Tls.ITlsInitiator.html">ITlsInitiator</a>
   </div>
 </article>
           </div>

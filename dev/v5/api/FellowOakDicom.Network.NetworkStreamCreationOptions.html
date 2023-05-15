@@ -151,32 +151,6 @@
   </table>
   
   
-  <a id="FellowOakDicom_Network_NetworkStreamCreationOptions_IgnoreSslPolicyErrors_" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.IgnoreSslPolicyErrors*"></a>
-  <h4 id="FellowOakDicom_Network_NetworkStreamCreationOptions_IgnoreSslPolicyErrors" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.IgnoreSslPolicyErrors">IgnoreSslPolicyErrors</h4>
-  <div class="markdown level1 summary"><p>Whether or not to ignore any certificate validation errors that occur when authenticating as a client over SSL</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IgnoreSslPolicyErrors { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="FellowOakDicom_Network_NetworkStreamCreationOptions_NoDelay_" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.NoDelay*"></a>
   <h4 id="FellowOakDicom_Network_NetworkStreamCreationOptions_NoDelay" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.NoDelay">NoDelay</h4>
   <div class="markdown level1 summary"><p>Whether or not to disable the delay when buffers are not full</p>
@@ -264,14 +238,14 @@
   </div>
   
   
-  <a id="FellowOakDicom_Network_NetworkStreamCreationOptions_UseTls_" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.UseTls*"></a>
-  <h4 id="FellowOakDicom_Network_NetworkStreamCreationOptions_UseTls" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.UseTls">UseTls</h4>
-  <div class="markdown level1 summary"><p>Whether or not to use TLS (SSLStream) when opening the TCP connection</p>
+  <a id="FellowOakDicom_Network_NetworkStreamCreationOptions_TlsInitiator_" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.TlsInitiator*"></a>
+  <h4 id="FellowOakDicom_Network_NetworkStreamCreationOptions_TlsInitiator" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.TlsInitiator">TlsInitiator</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the handler to use TLS (SSLStream) when opening the TCP connection. If this handler is null then no TLS will be used</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UseTls { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ITlsInitiator TlsInitiator { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -283,7 +257,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">ITlsInitiator</span></td>
         <td></td>
       </tr>
     </tbody>

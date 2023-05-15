@@ -433,14 +433,14 @@
   </table>
   
   
-  <a id="FellowOakDicom_Network_Client_IDicomClient_UseTls_" data-uid="FellowOakDicom.Network.Client.IDicomClient.UseTls*"></a>
-  <h4 id="FellowOakDicom_Network_Client_IDicomClient_UseTls" data-uid="FellowOakDicom.Network.Client.IDicomClient.UseTls">UseTls</h4>
-  <div class="markdown level1 summary"><p>True if TLS security should be enabled, false otherwise.</p>
+  <a id="FellowOakDicom_Network_Client_IDicomClient_TlsInitiator_" data-uid="FellowOakDicom.Network.Client.IDicomClient.TlsInitiator*"></a>
+  <h4 id="FellowOakDicom_Network_Client_IDicomClient_TlsInitiator" data-uid="FellowOakDicom.Network.Client.IDicomClient.TlsInitiator">TlsInitiator</h4>
+  <div class="markdown level1 summary"><p>A handler to initiate TLS security, if null then TLS is not enabled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool UseTls { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">ITlsInitiator TlsInitiator { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -452,7 +452,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">ITlsInitiator</span></td>
         <td></td>
       </tr>
     </tbody>

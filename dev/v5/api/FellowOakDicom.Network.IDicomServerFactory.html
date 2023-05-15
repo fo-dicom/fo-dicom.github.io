@@ -96,13 +96,13 @@
   
   
   <a id="FellowOakDicom_Network_IDicomServerFactory_Create_" data-uid="FellowOakDicom.Network.IDicomServerFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_IDicomServerFactory_Create__1_System_Int32_System_String_Encoding_ILogger_System_Object_" data-uid="FellowOakDicom.Network.IDicomServerFactory.Create``1(System.Int32,System.String,Encoding,ILogger,System.Object)">Create&lt;T&gt;(Int32, String, Encoding, ILogger, Object)</h4>
+  <h4 id="FellowOakDicom_Network_IDicomServerFactory_Create__1_System_Int32_ITlsAcceptor_Encoding_ILogger_System_Object_" data-uid="FellowOakDicom.Network.IDicomServerFactory.Create``1(System.Int32,ITlsAcceptor,Encoding,ILogger,System.Object)">Create&lt;T&gt;(Int32, ITlsAcceptor, Encoding, ILogger, Object)</h4>
   <div class="markdown level1 summary"><p>Creates a DICOM server object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDicomServer Create&lt;T&gt;(int port, string certificateName = null, Encoding fallbackEncoding = null, ILogger logger = null, object userState = null)
+    <pre><code class="lang-csharp hljs">IDicomServer Create&lt;T&gt;(int port, ITlsAcceptor tlsAcceptor = null, Encoding fallbackEncoding = null, ILogger logger = null, object userState = null)
     where T : DicomService, IDicomServiceProvider</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -122,9 +122,9 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">certificateName</span></td>
-        <td><p>Certificate name for authenticated connections.</p>
+        <td><span class="xref">ITlsAcceptor</span></td>
+        <td><span class="parametername">tlsAcceptor</span></td>
+        <td><p>Handler to accept authenticated connections.</p>
 </td>
       </tr>
       <tr>
@@ -181,13 +181,13 @@
   
   
   <a id="FellowOakDicom_Network_IDicomServerFactory_Create_" data-uid="FellowOakDicom.Network.IDicomServerFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_IDicomServerFactory_Create__1_System_String_System_Int32_System_String_Encoding_ILogger_System_Object_" data-uid="FellowOakDicom.Network.IDicomServerFactory.Create``1(System.String,System.Int32,System.String,Encoding,ILogger,System.Object)">Create&lt;T&gt;(String, Int32, String, Encoding, ILogger, Object)</h4>
+  <h4 id="FellowOakDicom_Network_IDicomServerFactory_Create__1_System_String_System_Int32_ITlsAcceptor_Encoding_ILogger_System_Object_" data-uid="FellowOakDicom.Network.IDicomServerFactory.Create``1(System.String,System.Int32,ITlsAcceptor,Encoding,ILogger,System.Object)">Create&lt;T&gt;(String, Int32, ITlsAcceptor, Encoding, ILogger, Object)</h4>
   <div class="markdown level1 summary"><p>Creates a DICOM server object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDicomServer Create&lt;T&gt;(string ipAddress, int port, string certificateName = null, Encoding fallbackEncoding = null, ILogger logger = null, object userState = null)
+    <pre><code class="lang-csharp hljs">IDicomServer Create&lt;T&gt;(string ipAddress, int port, ITlsAcceptor tlsAcceptor = null, Encoding fallbackEncoding = null, ILogger logger = null, object userState = null)
     where T : DicomService, IDicomServiceProvider</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -213,9 +213,9 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">certificateName</span></td>
-        <td><p>Certificate name for authenticated connections.</p>
+        <td><span class="xref">ITlsAcceptor</span></td>
+        <td><span class="parametername">tlsAcceptor</span></td>
+        <td><p>Handler to accept authenticated connections.</p>
 </td>
       </tr>
       <tr>
@@ -272,13 +272,13 @@
   
   
   <a id="FellowOakDicom_Network_IDicomServerFactory_Create_" data-uid="FellowOakDicom.Network.IDicomServerFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_IDicomServerFactory_Create__2_System_String_System_Int32_System_Object_System_String_Encoding_ILogger_" data-uid="FellowOakDicom.Network.IDicomServerFactory.Create``2(System.String,System.Int32,System.Object,System.String,Encoding,ILogger)">Create&lt;T, TServer&gt;(String, Int32, Object, String, Encoding, ILogger)</h4>
+  <h4 id="FellowOakDicom_Network_IDicomServerFactory_Create__2_System_String_System_Int32_System_Object_ITlsAcceptor_Encoding_ILogger_" data-uid="FellowOakDicom.Network.IDicomServerFactory.Create``2(System.String,System.Int32,System.Object,ITlsAcceptor,Encoding,ILogger)">Create&lt;T, TServer&gt;(String, Int32, Object, ITlsAcceptor, Encoding, ILogger)</h4>
   <div class="markdown level1 summary"><p>Creates a DICOM server object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDicomServer Create&lt;T, TServer&gt;(string ipAddress, int port, object userState = null, string certificateName = null, Encoding fallbackEncoding = null, ILogger logger = null)
+    <pre><code class="lang-csharp hljs">IDicomServer Create&lt;T, TServer&gt;(string ipAddress, int port, object userState = null, ITlsAcceptor tlsAcceptor = null, Encoding fallbackEncoding = null, ILogger logger = null)
     where T : DicomService, IDicomServiceProvider where TServer : IDicomServer&lt;T&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -310,9 +310,9 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">certificateName</span></td>
-        <td><p>Certificate name for authenticated connections.</p>
+        <td><span class="xref">ITlsAcceptor</span></td>
+        <td><span class="parametername">tlsAcceptor</span></td>
+        <td><p>Handler to accept authenticated connections.</p>
 </td>
       </tr>
       <tr>

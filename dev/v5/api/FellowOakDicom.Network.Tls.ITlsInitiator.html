@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IDicomServer&lt;TServiceProvider&gt;
+    <title>Interface ITlsInitiator
    | Fellow Oak DICOM 5 API </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IDicomServer&lt;TServiceProvider&gt;
+    <meta name="title" content="Interface ITlsInitiator
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,66 +78,75 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Network.IDicomServer`1">
+            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Network.Tls.ITlsInitiator">
   
   
-  <h1 id="FellowOakDicom_Network_IDicomServer_1" data-uid="FellowOakDicom.Network.IDicomServer`1" class="text-break">Interface IDicomServer&lt;TServiceProvider&gt;
+  <h1 id="FellowOakDicom_Network_Tls_ITlsInitiator" data-uid="FellowOakDicom.Network.Tls.ITlsInitiator" class="text-break">Interface ITlsInitiator
   </h1>
-  <div class="markdown level0 summary"><p>Helper interface to ensure type safety when creating DICOM server objects via <pre><code>DicomServer.Create</code></pre> overloads.</p>
+  <div class="markdown level0 summary"><p>An interface for all handlers that initiate tls connections</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="FellowOakDicom.Network.IDicomServer.html#FellowOakDicom_Network_IDicomServer_IPAddress">IDicomServer.IPAddress</a>
-    </div>
-    <div>
-      <a class="xref" href="FellowOakDicom.Network.IDicomServer.html#FellowOakDicom_Network_IDicomServer_Port">IDicomServer.Port</a>
-    </div>
-    <div>
-      <a class="xref" href="FellowOakDicom.Network.IDicomServer.html#FellowOakDicom_Network_IDicomServer_IsListening">IDicomServer.IsListening</a>
-    </div>
-    <div>
-      <a class="xref" href="FellowOakDicom.Network.IDicomServer.html#FellowOakDicom_Network_IDicomServer_Exception">IDicomServer.Exception</a>
-    </div>
-    <div>
-      <a class="xref" href="FellowOakDicom.Network.IDicomServer.html#FellowOakDicom_Network_IDicomServer_Options">IDicomServer.Options</a>
-    </div>
-    <div>
-      <a class="xref" href="FellowOakDicom.Network.IDicomServer.html#FellowOakDicom_Network_IDicomServer_Logger">IDicomServer.Logger</a>
-    </div>
-    <div>
-      <a class="xref" href="FellowOakDicom.Network.IDicomServer.html#FellowOakDicom_Network_IDicomServer_ServiceScope">IDicomServer.ServiceScope</a>
-    </div>
-    <div>
-      <a class="xref" href="FellowOakDicom.Network.IDicomServer.html#FellowOakDicom_Network_IDicomServer_Registration">IDicomServer.Registration</a>
-    </div>
-    <div>
-      <a class="xref" href="FellowOakDicom.Network.IDicomServer.html#FellowOakDicom_Network_IDicomServer_StartAsync_System_String_System_Int32_ITlsAcceptor_Encoding_FellowOakDicom_Network_DicomServiceOptions_System_Object_">IDicomServer.StartAsync(String, Int32, ITlsAcceptor, Encoding, DicomServiceOptions, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="FellowOakDicom.Network.IDicomServer.html#FellowOakDicom_Network_IDicomServer_Stop">IDicomServer.Stop()</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Tls.html">FellowOakDicom.Network.Tls</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="FellowOakDicom_Network_IDicomServer_1_syntax">Syntax</h5>
+  <h5 id="FellowOakDicom_Network_Tls_ITlsInitiator_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IDicomServer&lt;TServiceProvider&gt; : IDicomServer where TServiceProvider : DicomService, IDicomServiceProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ITlsInitiator</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FellowOakDicom_Network_Tls_ITlsInitiator_InitiateTls_" data-uid="FellowOakDicom.Network.Tls.ITlsInitiator.InitiateTls*"></a>
+  <h4 id="FellowOakDicom_Network_Tls_ITlsInitiator_InitiateTls_Stream_System_String_System_Int32_" data-uid="FellowOakDicom.Network.Tls.ITlsInitiator.InitiateTls(Stream,System.String,System.Int32)">InitiateTls(Stream, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initiate a tls connection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Stream InitiateTls(Stream plainStream, string remoteAddress, int remotePort)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
+        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TServiceProvider</span></td>
-        <td><p>DICOM service class consumed by the DICOM server object.</p>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">plainStream</span></td>
+        <td><p>The cleartext stream over which unencrypted data will be sent and received</p>
 </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">remoteAddress</span></td>
+        <td><p>Remote IP address or hostname</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">remotePort</span></td>
+        <td><p>Remote port</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
