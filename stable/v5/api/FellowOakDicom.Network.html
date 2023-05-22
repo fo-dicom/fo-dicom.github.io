@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace FellowOakDicom.Network
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -111,6 +111,8 @@
       <h4><a class="xref" href="FellowOakDicom.Network.AsyncManualResetEvent-1.html">AsyncManualResetEvent&lt;T&gt;</a></h4>
       <section><p>Asynchronous manual reset event class, enabling the possibility to set a return value of <code data-dev-comment-type="typeparamref" class="typeparamref">T</code>.</p>
 </section>
+      <h4><a class="xref" href="FellowOakDicom.Network.ConnectionClosedPrematurelyException.html">ConnectionClosedPrematurelyException</a></h4>
+      <section></section>
       <h4><a class="xref" href="FellowOakDicom.Network.DefaultDicomServerFactory.html">DefaultDicomServerFactory</a></h4>
       <section></section>
       <h4><a class="xref" href="FellowOakDicom.Network.DefaultDicomServerRegistry.html">DefaultDicomServerRegistry</a></h4>
@@ -130,6 +132,8 @@
       <h4><a class="xref" href="FellowOakDicom.Network.DicomAssociationAbortedException.html">DicomAssociationAbortedException</a></h4>
       <section></section>
       <h4><a class="xref" href="FellowOakDicom.Network.DicomAssociationRejectedException.html">DicomAssociationRejectedException</a></h4>
+      <section></section>
+      <h4><a class="xref" href="FellowOakDicom.Network.DicomAssociationRequestTimedOutException.html">DicomAssociationRequestTimedOutException</a></h4>
       <section></section>
       <h4><a class="xref" href="FellowOakDicom.Network.DicomCEchoProvider.html">DicomCEchoProvider</a></h4>
       <section><p>Implementation of a C-ECHO Service Class Provider.</p>
@@ -239,7 +243,11 @@ and sect_D.3.3.6 for details on the SOP Class (Common) Extended Negotiation Sub-
       <h4><a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a></h4>
       <section><p>Base class for DIMSE-C and DIMSE-N request items.</p>
 </section>
+      <h4><a class="xref" href="FellowOakDicom.Network.DicomRequest.OnRequestSentEventArgs.html">DicomRequest.OnRequestSentEventArgs</a></h4>
+      <section></section>
       <h4><a class="xref" href="FellowOakDicom.Network.DicomRequest.OnTimeoutEventArgs.html">DicomRequest.OnTimeoutEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="FellowOakDicom.Network.DicomRequestTimedOutException.html">DicomRequestTimedOutException</a></h4>
       <section></section>
       <h4><a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a></h4>
       <section><p>Base class for DIMSE-C and DIMSE-N response items.</p>
@@ -247,6 +255,8 @@ and sect_D.3.3.6 for details on the SOP Class (Common) Extended Negotiation Sub-
       <h4><a class="xref" href="FellowOakDicom.Network.DicomServer-1.html">DicomServer&lt;T&gt;</a></h4>
       <section><p>Representation of a DICOM server.</p>
 </section>
+      <h4><a class="xref" href="FellowOakDicom.Network.DicomServerDependencies.html">DicomServerDependencies</a></h4>
+      <section></section>
       <h4><a class="xref" href="FellowOakDicom.Network.DicomServerFactory.html">DicomServerFactory</a></h4>
       <section></section>
       <h4><a class="xref" href="FellowOakDicom.Network.DicomServerRegistration.html">DicomServerRegistration</a></h4>
@@ -264,13 +274,20 @@ information specific to the Service Class specification identified by the SOP Cl
 See: <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part07/sect_D.3.3.5.html">http://dicom.nema.org/medical/dicom/current/output/chtml/part07/sect_D.3.3.5.html</a> for
 details on the Service Class Application Information field.</p>
 </section>
+      <h4><a class="xref" href="FellowOakDicom.Network.DicomServiceDependencies.html">DicomServiceDependencies</a></h4>
+      <section></section>
       <h4><a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a></h4>
       <section></section>
       <h4><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></h4>
       <section><p>DICOM Status</p>
 </section>
+      <h4><a class="xref" href="FellowOakDicom.Network.DicomUserIdentityNegotiation.html">DicomUserIdentityNegotiation</a></h4>
+      <section></section>
       <h4><a class="xref" href="FellowOakDicom.Network.NetworkManager.html">NetworkManager</a></h4>
       <section><p>Abstract manager class for network operations.</p>
+</section>
+      <h4><a class="xref" href="FellowOakDicom.Network.NetworkStreamCreationOptions.html">NetworkStreamCreationOptions</a></h4>
+      <section><p>Contains the necessary parameters to open a new network stream to another DICOM SCP</p>
 </section>
       <h4><a class="xref" href="FellowOakDicom.Network.PDataTF.html">PDataTF</a></h4>
       <section><p>P-DATA-TF</p>
@@ -383,6 +400,9 @@ details on the Service Class Application Information field.</p>
 </section>
       <h4><a class="xref" href="FellowOakDicom.Network.DicomTimeout.html">DicomTimeout</a></h4>
       <section></section>
+      <h4><a class="xref" href="FellowOakDicom.Network.DicomUserIdentityType.html">DicomUserIdentityType</a></h4>
+      <section><p>User identity type</p>
+</section>
     <h3 id="delegates">Delegates
   </h3>
       <h4><a class="xref" href="FellowOakDicom.Network.DicomCEchoRequest.ResponseDelegate.html">DicomCEchoRequest.ResponseDelegate</a></h4>
@@ -447,7 +467,7 @@ details on the Service Class Application Information field.</p>
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

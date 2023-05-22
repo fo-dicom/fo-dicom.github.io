@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DicomCEchoProvider
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,11 +88,11 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="FellowOakDicom.Network.DicomService.html">DicomService</a></div>
     <div class="level2"><span class="xref">DicomCEchoProvider</span></div>
   </div>
-  <div classs="implements">
+  <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FellowOakDicom.Network.IDicomServiceRunner.html">IDicomServiceRunner</a></div>
     <div><span class="xref">IDisposable</span></div>
@@ -131,6 +131,9 @@
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.Network.DicomService.html#FellowOakDicom_Network_DicomService_IsSendNextMessageRequired">DicomService.IsSendNextMessageRequired</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.DicomService.html#FellowOakDicom_Network_DicomService_CanStillProcessPDataTF">DicomService.CanStillProcessPDataTF</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.Network.DicomService.html#FellowOakDicom_Network_DicomService_MaximumPDUsInQueue">DicomService.MaximumPDUsInQueue</a>
@@ -184,45 +187,45 @@
       <a class="xref" href="FellowOakDicom.Network.DicomService.html#FellowOakDicom_Network_DicomService_OnSendQueueEmptyAsync">DicomService.OnSendQueueEmptyAsync()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomCEchoProvider_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomCEchoProvider : DicomService, IDicomServiceRunner, IDisposable, IDicomServiceProvider, IDicomService, IDicomCEchoProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public class DicomCEchoProvider : DicomService, IDicomServiceRunner, IDicomServiceProvider, IDicomService, IDicomCEchoProvider</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="FellowOakDicom_Network_DicomCEchoProvider__ctor_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_DicomCEchoProvider__ctor_FellowOakDicom_Network_INetworkStream_Encoding_ILogger_ILogManager_FellowOakDicom_Network_INetworkManager_ITranscoderManager_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.#ctor(FellowOakDicom.Network.INetworkStream,Encoding,ILogger,ILogManager,FellowOakDicom.Network.INetworkManager,ITranscoderManager)">DicomCEchoProvider(INetworkStream, Encoding, ILogger, ILogManager, INetworkManager, ITranscoderManager)</h4>
+  <h4 id="FellowOakDicom_Network_DicomCEchoProvider__ctor_FellowOakDicom_Network_INetworkStream_Encoding_ILogger_FellowOakDicom_Network_DicomServiceDependencies_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.#ctor(FellowOakDicom.Network.INetworkStream,Encoding,ILogger,FellowOakDicom.Network.DicomServiceDependencies)">DicomCEchoProvider(INetworkStream, Encoding, ILogger, DicomServiceDependencies)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.Network.DicomCEchoProvider.html">DicomCEchoProvider</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DicomCEchoProvider(INetworkStream stream, Encoding fallbackEncoding, ILogger log, ILogManager logManager, INetworkManager networkManager, ITranscoderManager transcoderManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public DicomCEchoProvider(INetworkStream stream, Encoding fallbackEncoding, ILogger log, DicomServiceDependencies dependencies)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -253,22 +256,9 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ILogManager</span></td>
-        <td><span class="parametername">logManager</span></td>
-        <td><p>The log manager</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a></td>
-        <td><span class="parametername">networkManager</span></td>
-        <td><p>The network manager</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">ITranscoderManager</span></td>
-        <td><span class="parametername">transcoderManager</span></td>
-        <td><p>The transcoder manager</p>
-</td>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomServiceDependencies.html">DicomServiceDependencies</a></td>
+        <td><span class="parametername">dependencies</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -495,7 +485,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

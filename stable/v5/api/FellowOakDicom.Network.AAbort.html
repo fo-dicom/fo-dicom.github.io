@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AAbort
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,32 +88,32 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">AAbort</span></div>
   </div>
-  <div classs="implements">
+  <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FellowOakDicom.Network.PDU.html">PDU</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
@@ -127,24 +127,13 @@
   
   
   <a id="FellowOakDicom_Network_AAbort__ctor_" data-uid="FellowOakDicom.Network.AAbort.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_AAbort__ctor" data-uid="FellowOakDicom.Network.AAbort.#ctor">AAbort()</h4>
+  <h4 id="FellowOakDicom_Network_AAbort__ctor_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_IMemoryProvider_" data-uid="FellowOakDicom.Network.AAbort.#ctor(FellowOakDicom.Network.DicomAbortSource,FellowOakDicom.Network.DicomAbortReason,IMemoryProvider)">AAbort(DicomAbortSource, DicomAbortReason, IMemoryProvider)</h4>
   <div class="markdown level1 summary"><p>Initializes new A-ABORT</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AAbort()</code></pre>
-  </div>
-  
-  
-  <a id="FellowOakDicom_Network_AAbort__ctor_" data-uid="FellowOakDicom.Network.AAbort.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_AAbort__ctor_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_" data-uid="FellowOakDicom.Network.AAbort.#ctor(FellowOakDicom.Network.DicomAbortSource,FellowOakDicom.Network.DicomAbortReason)">AAbort(DicomAbortSource, DicomAbortReason)</h4>
-  <div class="markdown level1 summary"><p>Initializes new A-ABORT</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AAbort(DicomAbortSource source, DicomAbortReason reason)</code></pre>
+    <pre><code class="lang-csharp hljs">public AAbort(DicomAbortSource source, DicomAbortReason reason, IMemoryProvider memoryProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,6 +155,41 @@
         <td><a class="xref" href="FellowOakDicom.Network.DicomAbortReason.html">DicomAbortReason</a></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Abort reason</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td><p>The memory provider that will be used to allocate buffers</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_AAbort__ctor_" data-uid="FellowOakDicom.Network.AAbort.#ctor*"></a>
+  <h4 id="FellowOakDicom_Network_AAbort__ctor_IMemoryProvider_" data-uid="FellowOakDicom.Network.AAbort.#ctor(IMemoryProvider)">AAbort(IMemoryProvider)</h4>
+  <div class="markdown level1 summary"><p>Initializes new A-ABORT</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AAbort(IMemoryProvider memoryProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td><p>The memory provider that will be used to allocate buffers</p>
 </td>
       </tr>
     </tbody>
@@ -275,24 +299,48 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a></div>
   
   
-  <a id="FellowOakDicom_Network_AAbort_Write_" data-uid="FellowOakDicom.Network.AAbort.Write*"></a>
-  <h4 id="FellowOakDicom_Network_AAbort_Write" data-uid="FellowOakDicom.Network.AAbort.Write">Write()</h4>
-  <div class="markdown level1 summary"><p>Writes A-ABORT to PDU buffer</p>
+  <a id="FellowOakDicom_Network_AAbort_WriteAsync_" data-uid="FellowOakDicom.Network.AAbort.WriteAsync*"></a>
+  <h4 id="FellowOakDicom_Network_AAbort_WriteAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.Network.AAbort.WriteAsync(Stream,CancellationToken)">WriteAsync(Stream, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Writes A-ABORT to the provided stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RawPDU Write()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task WriteAsync(Stream stream, CancellationToken cancellationToken)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to write the PDU to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token that cancels the write operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -303,8 +351,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.RawPDU.html">RawPDU</a></td>
-        <td><p>PDU buffer</p>
+        <td><span class="xref">Task</span></td>
+        <td><p>A Task that represents the asynchronous operation</p>
 </td>
       </tr>
     </tbody>
@@ -339,7 +387,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

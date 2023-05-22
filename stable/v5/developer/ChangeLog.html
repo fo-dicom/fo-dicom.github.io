@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> | Fellow Oak DICOM 5 API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" | Fellow Oak DICOM 5 API ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<h4 id="511-tbd">5.1.1 (TBD)</h4>
+<h4 id="510-2023-05-21">5.1.0 (2023-05-21)</h4>
+<ul>
+<li><strong>Breaking change</strong>: Switch to Microsoft.Extensions.Logging, replacing FellowOakDicom.Log.ILogger and FellowOakDicom.Log.ILogManager. These are old interfaces are still supported, but they are now marked as obsolete</li>
+<li><strong>Breaking change</strong>: Updated DICOM Dictionary to 2023b. Several DicomTag constant names changed to singular name from plural form (#1469)</li>
+<li>Fix Truncating UIDs during Dimse and PDU logging (#1505)</li>
+<li><strong>Breaking change</strong>: DicomServer factories methods take an instance of ITlsAcceptor instead of a certificate name in case of Tls connection.</li>
+<li>Add the possibility to use some certain client certificate for Tls connections.</li>
+<li>New interfaces ITlsAcceptor and ITlsInitiator give more freedom in handling Tls connections.</li>
+<li>Cache file length in FileByteSource to improve parse speed (#1493)</li>
+<li>Fix reading of DICOM files with extra tags in File Meta Information (#1376)</li>
+<li>Allow accessing person name components for empty items (#1405)</li>
+<li>Fix sending more DICOM requests over an existing association where a request previously timed out (#1396)</li>
+<li>Improve throughput of DicomClient when more requests are added mid-flight (#1396)</li>
+<li>Fix race-condition where Dicom clients could be accepted for connection before the server was fully configured (#1398)</li>
+<li>Fix overwriting of Lossy Compression ratio tag (#1400)</li>
+<li>Fix DicomClientFactory logger name (#1429)</li>
+<li>Fix DicomJsonConverter deserialization to handle invalid private creator item (#1445)</li>
+<li>Improve performance and reduce memory usage when opening DICOM files (#1414)</li>
+<li>Fix rendering of XA/XRF images that include a modality LUT sequence (#1442)</li>
+<li>Fix incorrect conversion of some decimal strings (#1454)</li>
+<li>Disabled dataset validation on <code>DicomFile.Clone()</code> (#1465)</li>
+<li>Fix reading of Confidentiality Profile Attributes from standard (led to missing Clean Graphics option) (#1212)</li>
+<li>Added support for DICOM supplement 225, Multi-Fragment video transfer syntax (#1469)</li>
+<li>Added support for rendering native icon image stored within encapsulated sop instance (#1483)</li>
+<li>Added property to omit adding the default Implicit VR Little Endian transfer syntax for CStoreRequest (#1475)</li>
+<li>Fix blanking of ValueElements in the anonymizer (#1491)</li>
+<li>Throw error when adding private dicom tag without explicit VR (#1462)</li>
+<li>Fix incorrect JSON conversion of inline binaries (#1487)</li>
+<li>Update VR=UI validation to reject empty component (#1509)</li>
+<li>Fix GetDateTimeOffset with default offset from date/time (#1511)</li>
+<li>Fix even length in pixel data by adding payload (#1019)</li>
+<li>Use CommunityToolkit.HighPerformance (#1473)</li>
+<li>Fix JsonDicomConverter number serialization mode 'PreferablyAsNumber' to handle integers greater than int.MaxValue or lesser than int.MinValue (#1521)</li>
+<li>Fixed missing logging of RemoteHost and RemoteIP in SCU (#1518)</li>
+<li>Added null check for EscapeXml in DicomXML (#1392)</li>
+<li>Added private tags from Varian official DICOM Conformance Statements (#1556)</li>
+<li>Fix handling of negative overlay origin (#1559)</li>
+<li>Add better logging for inbound connections (#1561)</li>
+<li>Added User Identity Negotiation support (#1110)</li>
+</ul>
+<h4 id="503-2022-05-23">5.0.3 (2022-05-23)</h4>
+<ul>
+<li><strong>Breaking change</strong>: subclasses of DicomService will have to pass an instance of DicomServiceDependencies along to the DicomService base constructor. This replaces the old LogManager / NetworkManager / TranscoderManager dependencies. (Implemented in the context of #1291)</li>
+<li><strong>Breaking change</strong>: subclasses of DicomServer will have to pass an instance of DicomServerDependencies along to the DicomServer base constructor. This replaces the old NetworkManager / LogManager dependencies. (Implemented in the context of #1291)</li>
+<li><strong>Breaking change</strong>: DicomClient no longer has a NetworkManager, LogManager or TranscoderManager, these are to be configured via dependency injection. (Implemented in the context of #1144)</li>
+<li>Update to DICOM Standard 2022b</li>
+<li>Added option <code>numberSerializationMode</code> to <code>JsonDicomConverter</code> that allows different modes for serializing DS/IS/UV/SV DICOM items, including handling of invalid values (#1354 &amp; #1362)</li>
+<li>Added an extension to get a DateTimeOffset respecting the timezone info in the dataset (#1310)</li>
+<li>Fixed bug where anonymization threw an exception if a DicomTag of VR UI contained no value (#1308)</li>
+<li>Catch exception in logmessage, to avoid making the application crash because of logging (#1288)</li>
+<li>Fixed StreamByteBuffer to read an internally buffered stream completely (#1313)</li>
+<li>Optimize performance and reduce memory allocations in network layer (#1291)</li>
+<li>Fixed bug where disposal of DicomService could throw an exception if the buffered write stream still had content (#1319)</li>
+<li>Improve handling of dropped connections (#1332)</li>
+<li>Add new API for expert DICOM client connections/associations. This new API gives full control over the connection, association and requests when sending DICOM requests (#1144)</li>
+<li>Rewrite &quot;DicomClient&quot; based on the new advanced API. The state based implementation is gone. The public API has remained the same. (#1144)</li>
+<li>Ignore empty VOI LUT and Modality LUT Sequence (#1369)</li>
+<li>Validate calling AE and called AE length when creating a DicomClient (#1323)</li>
+<li>Improve handling of WSI creation: faster offset table calucation and a naming of temp files to allow more than 64.000.</li>
+<li>Change: DicomAnonymizer private fields and methods changed to protected so they can be used in subclasses, made instance methods virtual so they can be overridden in subclasses</li>
+<li>Fix VR's SV and UV VR Length field (#1386)</li>
+</ul>
+<h4 id="502-2022-01-11">5.0.2 (2022-01-11)</h4>
+<ul>
+<li>Update to DICOM Standard 2021e</li>
+<li>Fix issue where opening a DICOM file from a stream writes too much data when saving it again (#1264)</li>
+<li>Add possibility to read from streams without <code>Seek</code> like <code>BrowserFileStream</code> (#1218)</li>
+<li>Add method to convert an array of DicomDatasets into a json string (#1271)</li>
+<li>Improved bilinear interpolation</li>
+<li>Fix issue where sending a deflated DICOM file via C-STORE was sent inflated, causing errors (#1283)</li>
+<li>Optimize performance and reduce memory allocations in network layer (#1267 and #1273)</li>
+<li>Enhance Association Request Timeout (#1284)</li>
+<li>Do not change target encoding for strings that are not encoded (#1301)</li>
+</ul>
+<h4 id="501-2021-11-11">5.0.1 (2021-11-11)</h4>
+<ul>
+<li>Add generated API documentation for versions 4 and 5</li>
+<li>Fix IO Exception with &gt;2GB images (#1148)</li>
+<li>Bug fix: Correct Source PDU Field in Association Abort Request (#984)</li>
+<li>Bug fix: Correct Person Name VR Json model (#1235)</li>
+<li>Vulnerability fix: Use secure version of <code>System.Text.Encodings.Web</code> package (#1223)</li>
+<li>Change: <code>DicomFile.Open</code> now throws a <code>DicomFileException</code> if the file size is less than 132 bytes (#641)</li>
+<li>Add XML documentation to nuget package</li>
+<li>Change: Trying to add a DICOM element with invalid group ID to DICOM meta information now throws <code>DicomDataException</code> (#750)</li>
+<li>Bug fix: Prevent DicomJsonConverter from consuming root end object token (#1251)</li>
+<li>Add missing handling of UV, SV and OV in DicomDatasetReaderObserver.OnElement</li>
+<li>Drastically reduce memory consumption when saving a DICOM file</li>
+<li>Fix rendering of single color image</li>
+</ul>
+<h4 id="500-2021-09-13">5.0.0 (2021-09-13)</h4>
+<ul>
+<li>Update to DICOM Standard 2021b (#1189)</li>
+<li>New helper classes to build up a volume from a stack and calculate stacks/slices out of this volume in arbitrary orientation</li>
+<li>Optional parameter in DicomFile.Open methods to define the limit of large object size (#958)</li>
+<li>Add initial support for code extensions (#43)</li>
+<li>Add possibility to register additional encodings via <code>DicomEncoding.RegisterEncoding()</code></li>
+<li>Do not validate VM for VRs OF, OL and OV (#1186)</li>
+<li>Add possibility to add values for the VRs UV, SV and OV</li>
+<li>Log warning messages on decoding errors (#1200)</li>
+<li>Bug fix: Anonymizer not parsing items in sequences (#1202)</li>
+<li>Fix anonymization of string values in private tags with VR UN</li>
+</ul>
+<h4 id="500-alpha5-2021-05-25">5.0.0-alpha5 (2021-05-25)</h4>
+<ul>
+<li>Add missing properties to IDicomClient interface (#1171)</li>
+<li>Fix unintended breaking change, where StringValue of tags with length 0 returned null, but should return string.empty.</li>
+<li>Be more tolerant to recognize Encoding by ignoring the difference of underscore and space.</li>
+<li>JsonDicom supports some VRs as number as well as as string. (#1161)</li>
+<li>Fix anonymizing private tags with explicit transfer syntax (#1181)</li>
+<li>Internal calculation of pixel values are done as double instead of int to avoid consequential errors when calculating (#1153)</li>
+<li>Fix: DicomDirectory did throw exception on calling constructor with no parameters (#1176)</li>
+</ul>
+<h4 id="500-alpha4-2021-03-01">5.0.0-alpha4 (2021-03-01)</h4>
+<ul>
+<li>Bug fix: No DICOM charset found for GB18030 in .NET Core (#1125)</li>
+<li>NLogManager constructor should be public (#1136)</li>
+<li>Update to DICOM Standard 2020e (#1132)</li>
+<li>Use Color32 instead of System.Drawing.Color (#1140)</li>
+<li>FrameGeometry is enhanced so that it also works for DX, CR or MG images. (#1138)</li>
+<li>DicomServerFactory missed the method overload to pass the userState object</li>
+<li>Private Creator UN tags are converted to LO (#1146)</li>
+<li>Bug fix: Ensure timeout detection can never stop prematurely</li>
+<li>Fix parsing of datasets with a final SequenceDelimiterItem at the end. (#1157)</li>
+</ul>
+<h4 id="500-alpha3-and-prior-2020-11-01">5.0.0-alpha3 and prior (2020-11-01)</h4>
+<h5 id="changes">Changes:</h5>
+<ul>
+<li>There is only one library built in NetStandard 2.0 <em>fo-dicom.core</em>.*</li>
+<li>Use <code>Microsoft.Extensions.DependencyInjection</code>. There is an extension method to <code>IServiceCollection.AddDefaultDicomServices()</code> to add all default implementations for the required interfaces.
+<ul>
+<li><em>IFileReferenceFactory:</em> creates a <code>IFileReference</code> instance. Is used internally whenever a Reference to a file is created.</li>
+<li><em>IImageManager:</em> creates a <code>IImage</code> instance. Default is <code>RawImageManager</code>, that returns a byte array. call  <code>IServiceCollection.UseImageManager&lt;MyImageManager&gt;()</code> to register an other implementation.</li>
+<li><em>ITranscoderManager:</em> manages the codecs, used by <code>DicomTranscoder</code>. Call <code>IServiceCollection.useTranscoderManager&lt;MyTranscoderManager&gt;()</code> to register an other implementation.</li>
+<li><em>ILogManager:</em> creates a concrete implementation of <code>ILogger</code>.</li>
+<li><em>INetworkManager:</em> creates a listner, opens streams or checks connection status.</li>
+<li><em>IDicomClientFactory:</em> is responsible to return an <code>IDicomClient</code> instance. This may be a new instance everytime or a reused instance per host or whateever.</li>
+<li><em>IDicomServerFactory:</em> creates server instances, manages available ports, etc.</li>
+</ul>
+</li>
+<li>If there is no DI container provided, fo-dicom creates its own internally. To configure it, call <code>new DicomSetupBuilder().RegisterServices(s =&gt; ...).Build();</code>
+There are extension methods for this DicomSetupBuilder like <code>.SkipValidation()</code> or <code>SetDicomServiceLogging(logDataPdus, log DimseDataset)</code>.
+The new interface <code>IServiceProviderHost</code> manages, if there is an internal ServiceProvider or if to use a given Asp.Net Service Provider.</li>
+<li>DicomServer uses DI to create the instances of your <code>DicomService</code>. You can use constructor injection there.</li>
+<li>Make server providers asynchronous</li>
+<li>A new class <code>DicomClientOptions</code> holds all the options of a DicomClient to be passed instead of the huge list of parameters.</li>
+<li><code>DicomServerRegistration</code> manages the started servers per IP/Port.</li>
+<li>Some little memory consumption emprovements in IByteBuffer classes.</li>
+<li>new methods in <code>IByteBuffer</code> to directly manipulate/use the data instead of copying it around multiple times.</li>
+<li>Include Json serialization/deserialization directly into <em>fo-dicom.core</em> based on <code>System.Text.Json</code>.</li>
+<li>Text encoding is now handled when a string is written into a network- or file-stream.</li>
+<li>Switch to IAsyncEnumerator using Microsoft.Bcl.AsyncInterfaces. LanguageVersion is set to 8.0.</li>
+<li>internal: SCU now sends two presentation context per CStoreRequest: one with the original TS and one with the additional and the mandatory ImplicitLittleEndian. So the chance is higher to send the file without conversion. (#1048)</li>
+<li>Optimize DicomTag.GetHashCode()</li>
+<li>Bug fix: Prevent special characters in association requests from crashing Fellow Oak DICOM (#1104)</li>
+<li>Make DicomService more memory efficient. Use existing streams in PDU and do not create new Memorystreams for every PDU. (#1091)</li>
+</ul>
+<h5 id="breaking-changes">Breaking changes:</h5>
+<ul>
+<li>namespace changed from <code>Dicom</code> to <code>FellowOakDicom</code></li>
+<li><code>IOManager</code> is removed. Instead of calling <code>IOManager.CreateFileReference(path)</code> now directly create a new instance <code>new Filereference(path)</code>. The same is true for <code>DirecotryReference</code>.</li>
+<li>In general: all *Manager classes with their static <code>.SetImplementation</code> initializers have been replaced by Dependency Injection.</li>
+<li>By default there is only <code>RawImageManager</code> implementation for <code>IImageManager</code>. To have <code>WinFormsImageManager</code> or <code>WPFImageManager</code> you have to reference the package <em>fo-dicom.Imaging.Desktop</em>. To use <code>ImageSharpImageManager</code> you have to reference <em>fo-dicom.Imaging.ImageSharp</em>.</li>
+<li>There are only asynchronous server provider interfaces. All synchronous methods have been replaced by asynchronous.</li>
+<li>Instances of <code>DicomClient</code> and <code>DicomServer</code> are not created directly, but via a <code>DicomClientFactory</code> or a <code>DicomServerFactory</code>.
+If you are in a &quot;DI-Environment&quot; like Asp.Net, then inject a <code>IDicomClientFactory</code> instance and use this to create a DicomClient. otherwise call <code>DicomClientFactory.CreateDicomClient(...)</code>.  This is a wrapper around accessing the internal DI container , getting the registered IDicomClientFactory and then calling this. So this is more overhead.</li>
+<li>DicomServiceOptions cannot be passed as parameter to DicomServer constructor/factory any more, but the values of options have to be set to the created instance of DicomServer.</li>
+<li>Classes <code>DicomFileReader</code>, <code>DicomReader</code>, <code>DicomReaderCallbackObserver</code> etc are now internal instead of public, because the resulting Datasets are wrong/inconsistent and need further changes. Therefore its usage is dangerous for users. (#823)</li>
+<li>Removed obsolete methods/classes/properties
+<ul>
+<li><code>DicomValidation.AutoValidation</code>: Call <code>DicomSetupBuilder.SkipValidation()</code> instead.</li>
+<li><code>Dicom.Network.DicomClient</code>: use <code>FellowOakDicom.Network.Client.DicomClient</code> instead.</li>
+<li><code>Dicom.Network.IDicomServiceUser</code>: use <code>IDicomClientConnection</code> instead.</li>
+<li><code>ChangeTransferSyntax(..)</code> extension methods for <code>DicomFile</code> and <code>DicomDataset</code>: use the method <code>Clone(..)</code> instead.</li>
+<li><code>DicomDataset.Get&lt;T&gt;</code>: use <code>GetValue</code>, <code>GetValues</code>, <code>GetSingleValue</code> or <code>GetSequence</code> instead.</li>
+<li><code>DicomDataset.AddOrUpdatePixelData</code>:  use <code>DicomPixelData.AddFrame(IByteBuffer)</code> to add pixel data to underlying dataset.</li>
+<li><code>DicomUID.Generate(name)</code>: use <code>DicomUID.Generate()</code> instead.</li>
+<li><code>DicomUID.IsValid(uid)</code>: use <code>DicomUID.IsValidUid(uid)</code> instead.</li>
+<li><code>DicomUIDGenerator.Generate()</code> and <code>DicomUIDGenerator.GenerateNew()</code>: use <code>DicomUIDGenerator.GenerateDerivedFromUUID()</code></li>
+<li><code>DicomImage.Dataset</code>, <code>DicomImage.PixelData</code> and <code>DicomImage.PhotometricInterpretation</code>: do not load the DicomImage directly from filename if you also need access to the dataset, but load the DicomDataset from file first and then construct the DicomImage from this loaded DicomDataset. Then you can access both.</li>
+</ul>
+</li>
+<li>DicomStringElement and derived classes do not have the &quot;encoding&quot; parameter in constructor, that takes a string-value</li>
+<li>DicomDataset.Add(OrUpdate) does not take an &quot;encoding&quot; parameter any more, instead the DicomDataset has a property <code>TextEncodings</code>, that is applied to all string-based tags.</li>
+<li>in update to DICOM2020e the keywords, that are provided by Nema, are used. therefore some DicomUID-Names changed.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fo-dicom/fo-dicom/blob/development/ChangeLog.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

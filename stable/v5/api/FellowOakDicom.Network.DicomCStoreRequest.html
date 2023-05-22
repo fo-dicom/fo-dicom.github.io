@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DicomCStoreRequest
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,7 +88,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="FellowOakDicom.Network.DicomMessage.html">DicomMessage</a></div>
     <div class="level2"><a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a></div>
     <div class="level3"><a class="xref" href="FellowOakDicom.Network.DicomPriorityRequest.html">DicomPriorityRequest</a></div>
@@ -104,6 +104,9 @@
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.Network.DicomRequest.html#FellowOakDicom_Network_DicomRequest_OnTimeout">DicomRequest.OnTimeout</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Network.DicomRequest.html#FellowOakDicom_Network_DicomRequest_OnRequestSent">DicomRequest.OnRequestSent</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.Network.DicomRequest.html#FellowOakDicom_Network_DicomRequest_CreatePresentationContext_FellowOakDicom_DicomTransferSyntax___">DicomRequest.CreatePresentationContext(DicomTransferSyntax[])</a>
@@ -136,9 +139,6 @@
       <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_PendingSince">DicomMessage.PendingSince</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_LastPDUSent">DicomMessage.LastPDUSent</a>
-    </div>
-    <div>
       <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_LastPendingResponseReceived">DicomMessage.LastPendingResponseReceived</a>
     </div>
     <div>
@@ -157,22 +157,22 @@
       <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_IsRequest_FellowOakDicom_Network_DicomCommandField_">DicomMessage.IsRequest(DicomCommandField)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
@@ -181,28 +181,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class DicomCStoreRequest : DicomPriorityRequest</code></pre>
   </div>
-  <h5 id="FellowOakDicom_Network_DicomCStoreRequest_examples"><strong>Examples</strong></h5>
-  <p>The following example shows how to use the <see cref="!:DicomClient"></see> class to send DICOM C-Store requests to a DICOM C-Store SCP.</p>
-<pre><code>var client = new DicomClient();
-
-// queue C-Store request to send DICOM file
-client.Add(new DicomCStoreRequest(@&quot;test1.dcm&quot;) {
-	OnResponseReceived = (DicomCStoreRequest req, DicomCStoreResponse rsp) => {
-		Console.WriteLine(&quot;{0}: {1}&quot;, req.SOPInstanceUID, rsp.Status);
-	}
-});
-
-// queue C-Store request with additional proposed transfer syntaxes
-client.Add(new DicomCStoreRequest(@&quot;test2.dcm&quot;) {
-	AdditionalTransferSyntaxes = new DicomTransferSyntax[] {
-		DicomTransferSyntax.JPEGLSLossless,
-		DicomTransferSyntax.JPEG2000Lossless
-	}
-});
-
-// connect and send queued requests
-client.Send(&quot;127.0.0.1&quot;, 12345, false, &quot;SCU&quot;, &quot;ANY-SCP&quot;);</code></pre>
-
   <h3 id="constructors">Constructors
   </h3>
   
@@ -294,7 +272,7 @@ client.Send(&quot;127.0.0.1&quot;, 12345, false, &quot;SCU&quot;, &quot;ANY-SCP&
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fileName</span></td>
         <td><p>DICOM file to be sent</p>
 </td>
@@ -411,6 +389,34 @@ client.Send(&quot;127.0.0.1&quot;, 12345, false, &quot;SCU&quot;, &quot;ANY-SCP&
     <tbody>
       <tr>
         <td><a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_DicomCStoreRequest_OmitImplicitVrTransferSyntaxInAssociationRequest_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.OmitImplicitVrTransferSyntaxInAssociationRequest*"></a>
+  <h4 id="FellowOakDicom_Network_DicomCStoreRequest_OmitImplicitVrTransferSyntaxInAssociationRequest" data-uid="FellowOakDicom.Network.DicomCStoreRequest.OmitImplicitVrTransferSyntaxInAssociationRequest">OmitImplicitVrTransferSyntaxInAssociationRequest</h4>
+  <div class="markdown level1 summary"><p>If set, the default transfer syntax (Implicit VR Little Endian) will
+not be automatically proposed when associating with remote system.
+This should only be used in exception cases (See PS3.5 section 10.1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OmitImplicitVrTransferSyntaxInAssociationRequest { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -558,7 +564,7 @@ client.Send(&quot;127.0.0.1&quot;, 12345, false, &quot;SCU&quot;, &quot;ANY-SCP&
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

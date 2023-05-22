@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IDicomServer
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -90,7 +90,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="FellowOakDicom_Network_IDicomServer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IDicomServer : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IDicomServer</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -141,7 +141,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -167,7 +167,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -246,7 +246,7 @@ Gets the port to which the server is listening.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -310,13 +310,13 @@ This registration must be disposed alongside the DICOM server itself.</p>
   
   
   <a id="FellowOakDicom_Network_IDicomServer_StartAsync_" data-uid="FellowOakDicom.Network.IDicomServer.StartAsync*"></a>
-  <h4 id="FellowOakDicom_Network_IDicomServer_StartAsync_System_String_System_Int32_System_String_Encoding_FellowOakDicom_Network_DicomServiceOptions_System_Object_" data-uid="FellowOakDicom.Network.IDicomServer.StartAsync(System.String,System.Int32,System.String,Encoding,FellowOakDicom.Network.DicomServiceOptions,System.Object)">StartAsync(String, Int32, String, Encoding, DicomServiceOptions, Object)</h4>
+  <h4 id="FellowOakDicom_Network_IDicomServer_StartAsync_System_String_System_Int32_ITlsAcceptor_Encoding_FellowOakDicom_Network_DicomServiceOptions_System_Object_" data-uid="FellowOakDicom.Network.IDicomServer.StartAsync(System.String,System.Int32,ITlsAcceptor,Encoding,FellowOakDicom.Network.DicomServiceOptions,System.Object)">StartAsync(String, Int32, ITlsAcceptor, Encoding, DicomServiceOptions, Object)</h4>
   <div class="markdown level1 summary"><p>Starts the DICOM server listening for connections on the specified IP address(es) and port.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task StartAsync(string ipAddress, int port, string certificateName, Encoding fallbackEncoding, DicomServiceOptions options, object userState)</code></pre>
+    <pre><code class="lang-csharp hljs">Task StartAsync(string ipAddress, int port, ITlsAcceptor tlsAcceptor, Encoding fallbackEncoding, DicomServiceOptions options, object userState)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -329,21 +329,21 @@ This registration must be disposed alongside the DICOM server itself.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">ipAddress</span></td>
         <td><p>IP address(es) for the server to listen to.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">port</span></td>
         <td><p>Port to which the server should be listening.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">certificateName</span></td>
-        <td><p>Certificate name for secure connections.</p>
+        <td><span class="xref">ITlsAcceptor</span></td>
+        <td><span class="parametername">tlsAcceptor</span></td>
+        <td><p>Handler to accept secure connections.</p>
 </td>
       </tr>
       <tr>
@@ -359,7 +359,7 @@ This registration must be disposed alongside the DICOM server itself.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">userState</span></td>
         <td><p>User state to be shared with the connected services.</p>
 </td>
@@ -377,7 +377,7 @@ This registration must be disposed alongside the DICOM server itself.</p>
     <tbody>
       <tr>
         <td><span class="xref">Task</span></td>
-        <td><p>Awaitable <see cref="!:Task"></see>.</p>
+        <td><p>Awaitable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -419,7 +419,7 @@ This registration must be disposed alongside the DICOM server itself.</p>
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

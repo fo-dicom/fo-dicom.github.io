@@ -8,7 +8,7 @@
     <title>Introduction | Fellow Oak DICOM 5 API </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Introduction | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -79,34 +79,32 @@
             <article class="content wrap" id="_content" data-uid="">
 <h2 id="introduction">Introduction</h2>
 
-<p><em>fo-dicom</em> has its own logging abstraction through which it can log information and warning messages.  For example, when codecs are loaded, their names are written through the logger at a debug level.</p>
+<p><em>fo-dicom</em> relies on Microsoft.Extensions.Logging for its logging purposes.
+Any logging configuration that is configured there, will automatically be used.</p>
+<p>For example, when codecs are loaded, their names are written through the logger at a debug level.</p>
 <h2 id="default-configuration">Default configuration</h2>
-<p>By default, a null logger is selected, preventing all logger output. On all platforms except <em>Universal Windows Platform</em>, it is possible to steer logger output to a console window with the following code:</p>
-<pre><code>LogManager.SetImplementation(ConsoleLogManager.Instance);
+<p>By default, <em>fo-dicom</em> will make use of <code>Microsoft.Extensions.Logging</code> for all of its logging.</p>
+<p>More specifically, <em>fo-dicom</em> injects loggers of type <code>Microsoft.Extensions.Logging.ILogger</code> where necessary.</p>
+<h2 id="default-logging-libraries">Default logging libraries</h2>
+<p>To use NLog, Serilog or other logging libraries, simply configure them as you would for <code>Microsoft.Extensions.Logging</code> and they will be used automatically by <em>fo-dicom</em>.</p>
+<h2 id="backwards-compatibility-configuration">Backwards compatibility configuration</h2>
+<p>In the past, <em>fo-dicom</em> used custom abstractions for logging called <code>FellowOakDicom.Log.ILogManager</code> and <code>FellowOakDicom.Log.ILogger</code>
+Using these historical abstractions is still supported, but they have moved to the <code>FellowOakDicom.Log.Obsolete</code> namespace and are marked obsolete.</p>
+<p>It is possible to change the log manager with the following code:</p>
+<pre><code>new DicomSetupBuilder()
+    .RegisterServices(s =&gt; s.AddLogManager&lt;MyLogManager&gt;())
+    .Build();
 </code></pre>
-<p>The log manager can at any time be reset to the null logger using the following call:</p>
-<pre><code>LogManager.SetImplementation(null);
+<p><strong>Warning</strong>: internally, this <code>MyLogManager</code> will be registered as an <code>ILoggerProvider</code> (through an adapter) in <code>Microsoft.Extensions.Logging</code>
+If you use <code>Microsoft.Extensions.Logging</code> elsewhere in the same application, your <code>MyLogManager</code> will also appear there.</p>
+<h2 id="backwards-compatibility-logging-libraries">Backwards compatibility logging libraries</h2>
+<p>NLog is officially supported via a pre-built library available on nuget: <a href="https://www.nuget.org/packages/fo-dicom.NLog/">https://www.nuget.org/packages/fo-dicom.NLog/</a></p>
+<p>To configure <em>NLog</em> integration with <em>fo-dicom</em>, simply reference the nuget package, and insert the following code</p>
+<pre><code>new DicomSetupBuilder()
+    .RegisterServices(s =&gt; s.AddLogManager&lt;NLogManager&gt;())
+    .Build();
 </code></pre>
-<h2 id="logging-libraries">Logging libraries</h2>
-<p>Currently there are four pre-built integrations with third-party logging libraries.</p>
-<h3 id="nlog">NLog</h3>
-<p>To configure <em>NLog</em> integration with <em>fo-dicom</em>, simply insert the following code</p>
-<pre><code>LogManager.SetImplementation(NLogManager.Instance);
-</code></pre>
-<h3 id="serilog">Serilog</h3>
-<p>To configure <em>Serilog</em> integration with <em>fo-dicom</em>, simply insert the following code</p>
-<pre><code>LogManager.SetImplementation(new SerilogManager());
-</code></pre>
-<p>This will use the global <code>Serilog.Log</code> logger instance.  Alternatively, the <code>SerilogManager</code> class' constructor has an override that takes an instance of a <em>Serilog</em> <code>ILogger</code>.</p>
-<p>An example project providing a sample <em>Serilog</em> configuration, demonstrating integration with <em>Seq</em>, writing to the console and some rolling output files is included in the source.</p>
-<h3 id="log4net">log4net</h3>
-<p>To configure <em>log4net</em> integration with <em>fo-dicom</em>, simply insert the following code</p>
-<pre><code>LogManager.SetImplementation(Log4NetManager.Instance);
-</code></pre>
-<h3 id="metrolog">MetroLog</h3>
-<p>To configure <em>MetroLog</em> integration with <em>fo-dicom</em>, simply insert the following code</p>
-<pre><code>LogManager.SetImplementation(MetroLogManager.Instance);
-</code></pre>
+<p>For all other logging libraries, you will have to provide your own implementation of <code>ILogManager</code> and <code>ILogger</code>.</p>
 </article>
           </div>
           
@@ -136,7 +134,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

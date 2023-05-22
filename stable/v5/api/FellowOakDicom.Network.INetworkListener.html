@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface INetworkListener
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -97,13 +97,13 @@
   
   
   <a id="FellowOakDicom_Network_INetworkListener_AcceptNetworkStreamAsync_" data-uid="FellowOakDicom.Network.INetworkListener.AcceptNetworkStreamAsync*"></a>
-  <h4 id="FellowOakDicom_Network_INetworkListener_AcceptNetworkStreamAsync_System_String_System_Boolean_CancellationToken_" data-uid="FellowOakDicom.Network.INetworkListener.AcceptNetworkStreamAsync(System.String,System.Boolean,CancellationToken)">AcceptNetworkStreamAsync(String, Boolean, CancellationToken)</h4>
+  <h4 id="FellowOakDicom_Network_INetworkListener_AcceptNetworkStreamAsync_ITlsAcceptor_System_Boolean_ILogger_CancellationToken_" data-uid="FellowOakDicom.Network.INetworkListener.AcceptNetworkStreamAsync(ITlsAcceptor,System.Boolean,ILogger,CancellationToken)">AcceptNetworkStreamAsync(ITlsAcceptor, Boolean, ILogger, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Wait until a network stream is trying to connect, and return the accepted stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;INetworkStream&gt; AcceptNetworkStreamAsync(string certificateName, bool noDelay, CancellationToken token)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;INetworkStream&gt; AcceptNetworkStreamAsync(ITlsAcceptor tlsAcceptor, bool noDelay, ILogger logger, CancellationToken token)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -116,15 +116,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">certificateName</span></td>
-        <td><p>Certificate name of authenticated connections.</p>
+        <td><span class="xref">ITlsAcceptor</span></td>
+        <td><span class="parametername">tlsAcceptor</span></td>
+        <td><p>Handler to accept authenticated connections.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">noDelay</span></td>
         <td><p>No delay?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The logger</p>
 </td>
       </tr>
       <tr>
@@ -173,7 +179,7 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span></td>
-        <td><p>An await:able <see cref="!:Task"></see>.</p>
+        <td><p>An awaitable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -215,7 +221,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

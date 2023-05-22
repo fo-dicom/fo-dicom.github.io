@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RawPDU
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,8 +88,12 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">RawPDU</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IAsyncDisposable</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
@@ -102,13 +106,13 @@
   
   
   <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU__ctor_MemoryStream_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(MemoryStream,Encoding)">RawPDU(MemoryStream, Encoding)</h4>
+  <h4 id="FellowOakDicom_Network_RawPDU__ctor_MemoryStream_IMemoryProvider_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(MemoryStream,IMemoryProvider,Encoding)">RawPDU(MemoryStream, IMemoryProvider, Encoding)</h4>
   <div class="markdown level1 summary"><p>Initializes new PDU reader from a stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RawPDU(MemoryStream stream, Encoding encoding = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public RawPDU(MemoryStream stream, IMemoryProvider memoryProvider, Encoding encoding = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -127,25 +131,32 @@
 </td>
       </tr>
       <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td><p>The memory provider that will be used to allocate buffers</p>
+</td>
+      </tr>
+      <tr>
         <td><span class="xref">Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
-        <td></td>
+        <td><p>The encoding to use for decoding text</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <h5 id="FellowOakDicom_Network_RawPDU__ctor_MemoryStream_Encoding__remarks">Remarks</h5>
+  <h5 id="FellowOakDicom_Network_RawPDU__ctor_MemoryStream_IMemoryProvider_Encoding__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The created object takes ownership of the stream</p>
 </div>
   
   
   <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU__ctor_System_Byte_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(System.Byte,Encoding)">RawPDU(Byte, Encoding)</h4>
+  <h4 id="FellowOakDicom_Network_RawPDU__ctor_System_Byte_IMemoryProvider_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(System.Byte,IMemoryProvider,Encoding)">RawPDU(Byte, IMemoryProvider, Encoding)</h4>
   <div class="markdown level1 summary"><p>Initializes new PDU for writing</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RawPDU(byte type, Encoding encoding = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public RawPDU(byte type, IMemoryProvider memoryProvider, Encoding encoding = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -158,9 +169,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a></td>
         <td><span class="parametername">type</span></td>
         <td><p>Type of PDU</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td><p>The memory provider that will be used to allocate buffers</p>
 </td>
       </tr>
       <tr>
@@ -174,13 +191,13 @@
   
   
   <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU__ctor_System_Byte___Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(System.Byte[],Encoding)">RawPDU(Byte[], Encoding)</h4>
-  <div class="markdown level1 summary"><p>Initializes new PDU reader from buffer</p>
+  <h4 id="FellowOakDicom_Network_RawPDU__ctor_System_Byte_IMemoryProvider_Encoding_Stream_System_Boolean_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(System.Byte,IMemoryProvider,Encoding,Stream,System.Boolean)">RawPDU(Byte, IMemoryProvider, Encoding, Stream, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes new PDU for writing to a stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RawPDU(byte[] buffer, Encoding encoding = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public RawPDU(byte type, IMemoryProvider memoryProvider, Encoding encoding, Stream stream, bool leaveOpen)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -193,9 +210,68 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type of PDU</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td><p>The memory provider that will be used to allocate buffers</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>The encoding to use for encoding text</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to write to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p>Whether the stream should be disposed or not when this RawPDU is disposed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
+  <h4 id="FellowOakDicom_Network_RawPDU__ctor_System_Byte___IMemoryProvider_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(System.Byte[],IMemoryProvider,Encoding)">RawPDU(Byte[], IMemoryProvider, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Initializes new PDU reader from buffer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RawPDU(byte[] buffer, IMemoryProvider memoryProvider, Encoding encoding = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
         <td><span class="parametername">buffer</span></td>
         <td><p>Buffer</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMemoryProvider</span></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td><p>The memory provider that will be used to allocate buffers</p>
 </td>
       </tr>
       <tr>
@@ -229,7 +305,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -255,7 +331,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -272,6 +348,31 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
+  
+  
+  <a id="FellowOakDicom_Network_RawPDU_DisposeAsync_" data-uid="FellowOakDicom.Network.RawPDU.DisposeAsync*"></a>
+  <h4 id="FellowOakDicom_Network_RawPDU_DisposeAsync" data-uid="FellowOakDicom.Network.RawPDU.DisposeAsync">DisposeAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueTask DisposeAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ValueTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="FellowOakDicom_Network_RawPDU_MarkLength16_" data-uid="FellowOakDicom.Network.RawPDU.MarkLength16*"></a>
@@ -294,36 +395,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Field name</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_RawPDU_MarkLength32_" data-uid="FellowOakDicom.Network.RawPDU.MarkLength32*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_MarkLength32_System_String_" data-uid="FellowOakDicom.Network.RawPDU.MarkLength32(System.String)">MarkLength32(String)</h4>
-  <div class="markdown level1 summary"><p>Marks position to write 32-bit length value</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void MarkLength32(string name)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Field name</p>
 </td>
@@ -352,7 +424,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Name of field</p>
 </td>
@@ -369,8 +441,55 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a></td>
         <td><p>Field value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_RawPDU_ReadBytes_" data-uid="FellowOakDicom.Network.RawPDU.ReadBytes*"></a>
+  <h4 id="FellowOakDicom_Network_RawPDU_ReadBytes_System_String_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.ReadBytes(System.String,System.Byte[],System.Int32,System.Int32)">ReadBytes(String, Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Read bytes from PDU</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadBytes(string name, byte[] buffer, int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of field</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>The buffer to read data into</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The starting point in the buffer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of bytes to read</p>
 </td>
       </tr>
     </tbody>
@@ -397,13 +516,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Name of field</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of bytes to read</p>
 </td>
@@ -420,7 +539,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
         <td><p>Field value</p>
 </td>
       </tr>
@@ -448,13 +567,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Name of field</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">numberOfBytes</span></td>
         <td><p>Number of bytes to read</p>
 </td>
@@ -471,7 +590,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><p>Field value</p>
 </td>
       </tr>
@@ -499,7 +618,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Name of field</p>
 </td>
@@ -516,7 +635,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
         <td><p>Field value</p>
 </td>
       </tr>
@@ -544,7 +663,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Name of field</p>
 </td>
@@ -561,7 +680,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td><p>Field value</p>
 </td>
       </tr>
@@ -629,13 +748,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Name of field</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of bytes to skip</p>
 </td>
@@ -663,7 +782,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><p>PDU description</p>
 </td>
       </tr>
@@ -691,13 +810,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Field name</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Field value</p>
 </td>
@@ -726,19 +845,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Field name</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Field value</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of times to write PDU value</p>
 </td>
@@ -767,15 +886,62 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Field name</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
         <td><span class="parametername">value</span></td>
         <td><p>Field value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
+  <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte[],System.Int32,System.Int32)">Write(String, Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes byte[] to PDU</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string name, byte[] value, int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Field name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Field value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero based index at which to start reading from the <code data-dev-comment-type="paramref" class="paramref">value</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>How mant bytes from <code data-dev-comment-type="paramref" class="paramref">value</code> to write</p>
 </td>
       </tr>
     </tbody>
@@ -802,13 +968,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Field name</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Field value</p>
 </td>
@@ -837,25 +1003,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Field name</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Field value</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of characters to write</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">Char</a></td>
         <td><span class="parametername">pad</span></td>
         <td><p>Padding character</p>
 </td>
@@ -884,13 +1050,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Field name</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Field value</p>
 </td>
@@ -919,13 +1085,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Field name</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Field value</p>
 </td>
@@ -942,17 +1108,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void WriteLength16()</code></pre>
-  </div>
-  
-  
-  <a id="FellowOakDicom_Network_RawPDU_WriteLength32_" data-uid="FellowOakDicom.Network.RawPDU.WriteLength32*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_WriteLength32" data-uid="FellowOakDicom.Network.RawPDU.WriteLength32">WriteLength32()</h4>
-  <div class="markdown level1 summary"><p>Writes 32-bit length to top length marker</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteLength32()</code></pre>
   </div>
   
   
@@ -986,13 +1141,13 @@
   
   
   <a id="FellowOakDicom_Network_RawPDU_WritePDUAsync_" data-uid="FellowOakDicom.Network.RawPDU.WritePDUAsync*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_WritePDUAsync_Stream_" data-uid="FellowOakDicom.Network.RawPDU.WritePDUAsync(Stream)">WritePDUAsync(Stream)</h4>
+  <h4 id="FellowOakDicom_Network_RawPDU_WritePDUAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.Network.RawPDU.WritePDUAsync(Stream,CancellationToken)">WritePDUAsync(Stream, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Writes PDU to stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task WritePDUAsync(Stream s)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task WritePDUAsync(Stream s, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1008,6 +1163,12 @@
         <td><span class="xref">Stream</span></td>
         <td><span class="parametername">s</span></td>
         <td><p>Output stream</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token that cancels the asynchronous write operation</p>
 </td>
       </tr>
     </tbody>
@@ -1027,6 +1188,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IAsyncDisposable</span>
+  </div>
 </article>
           </div>
           
@@ -1053,7 +1218,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

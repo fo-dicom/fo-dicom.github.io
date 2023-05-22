@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DicomDataset
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -83,12 +83,12 @@
   
   <h1 id="FellowOakDicom_DicomDataset" data-uid="FellowOakDicom.DicomDataset" class="text-break">Class DicomDataset
   </h1>
-  <div class="markdown level0 summary"><p>A collection of <a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>.</p>
+  <div class="markdown level0 summary"><p>A collection of <a class="xref" href="FellowOakDicom.DicomItem.html">DICOM items</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">DicomDataset</span></div>
       <div class="level2"><a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html">DicomFileMetaInformation</a></div>
       <div class="level2"><a class="xref" href="FellowOakDicom.Media.DicomDirectoryRecord.html">DicomDirectoryRecord</a></div>
@@ -230,7 +230,7 @@ set to Explicit VR Little Endian (DICOM default transfer syntax).</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -308,6 +308,22 @@ set to Explicit VR Little Endian (DICOM default transfer syntax).</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag of added item already exists in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="FellowOakDicom_DicomDataset_Add_" data-uid="FellowOakDicom.DicomDataset.Add*"></a>
@@ -349,6 +365,22 @@ set to Explicit VR Little Endian (DICOM default transfer syntax).</p>
       <tr>
         <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
         <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag of added item already exists in dataset.</p>
 </td>
       </tr>
     </tbody>
@@ -416,6 +448,22 @@ set to Explicit VR Little Endian (DICOM default transfer syntax).</p>
       <tr>
         <td><span class="parametername">T</span></td>
         <td><p>Type of added values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag already exists in dataset.</p>
 </td>
       </tr>
     </tbody>
@@ -497,6 +545,67 @@ set to Explicit VR Little Endian (DICOM default transfer syntax).</p>
   <div class="markdown level1 remarks"><p>No validation is performed on the <code data-dev-comment-type="paramref" class="paramref">vr</code> matching the element <code data-dev-comment-type="paramref" class="paramref">tag</code>
 This method is useful when adding a private tag and need to explicitly set the VR of the created element.</p>
 </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag already exists in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomDataset_AddOrUpdate_" data-uid="FellowOakDicom.DicomDataset.AddOrUpdate*"></a>
+  <h4 id="FellowOakDicom_DicomDataset_AddOrUpdate_FellowOakDicom_DicomItem_" data-uid="FellowOakDicom.DicomDataset.AddOrUpdate(FellowOakDicom.DicomItem)">AddOrUpdate(DicomItem)</h4>
+  <div class="markdown level1 summary"><p>Add a DICOM item to the dataset. Update existing items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset AddOrUpdate(DicomItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>DICOM item to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="FellowOakDicom_DicomDataset_AddOrUpdate_" data-uid="FellowOakDicom.DicomDataset.AddOrUpdate*"></a>
@@ -797,7 +906,7 @@ This method is useful when adding a private tag and need to explicitly set the V
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p><code>True</code> if a DICOM item with the specified tag already exists.</p>
 </td>
       </tr>
@@ -1453,7 +1562,7 @@ This method is useful when adding a private tag and need to explicitly set the V
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><p>String representing the element value corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
 </td>
       </tr>
@@ -1503,7 +1612,7 @@ This method is useful when adding a private tag and need to explicitly set the V
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">index</span></td>
         <td><p>Item index (for multi-valued elements).</p>
 </td>
@@ -1598,7 +1707,7 @@ This method is useful when adding a private tag and need to explicitly set the V
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1647,7 +1756,7 @@ This method is useful when adding a private tag and need to explicitly set the V
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">index</span></td>
         <td><p>Item index (for multi-valued elements).</p>
 </td>
@@ -1835,7 +1944,7 @@ This method is useful when adding a private tag and need to explicitly set the V
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">selector</span></td>
         <td><p>Selector function</p>
 </td>
@@ -1879,8 +1988,59 @@ This method is useful when adding a private tag and need to explicitly set the V
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><p>A string that represents the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomDataset_TryGetNonEmptySequence_" data-uid="FellowOakDicom.DicomDataset.TryGetNonEmptySequence*"></a>
+  <h4 id="FellowOakDicom_DicomDataset_TryGetNonEmptySequence_FellowOakDicom_DicomTag_FellowOakDicom_DicomSequence__" data-uid="FellowOakDicom.DicomDataset.TryGetNonEmptySequence(FellowOakDicom.DicomTag,FellowOakDicom.DicomSequence@)">TryGetNonEmptySequence(DicomTag, out DicomSequence)</h4>
+  <div class="markdown level1 summary"><p>Gets the sequence of the specified <code data-dev-comment-type="paramref" class="paramref">tag</code> if it exists and is not empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetNonEmptySequence(DicomTag tag, out DicomSequence sequence)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Requested DICOM tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomSequence.html">DicomSequence</a></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>Sequence of datasets corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns <pre><code>true</code></pre> if the <code data-dev-comment-type="paramref" class="paramref">tag</code> exists and is not empty, <pre><code>false</code></pre> otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -1930,7 +2090,7 @@ This method is useful when adding a private tag and need to explicitly set the V
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Returns <pre><code>true</code></pre> if the <code data-dev-comment-type="paramref" class="paramref">tag</code> could be returned as sequence, <pre><code>false</code></pre> otherwise.</p>
 </td>
       </tr>
@@ -1980,7 +2140,7 @@ This method is useful when adding a private tag and need to explicitly set the V
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Returns <pre><code>true</code></pre> if the element values could be exctracted, otherwise <pre><code>false</code></pre>.</p>
 </td>
       </tr>
@@ -2030,7 +2190,7 @@ This method is useful when adding a private tag and need to explicitly set the V
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">stringValue</span></td>
         <td><p>String representing the element value corresponding to <code data-dev-comment-type="paramref" class="paramref">tag</code>.</p>
 </td>
@@ -2047,7 +2207,7 @@ This method is useful when adding a private tag and need to explicitly set the V
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Returns <pre><code>false</code></pre> if the dataset does not contain the tag.</p>
 </td>
       </tr>
@@ -2081,7 +2241,7 @@ This method is useful when adding a private tag and need to explicitly set the V
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">index</span></td>
         <td><p>Item index (for multi-valued elements).</p>
 </td>
@@ -2104,7 +2264,7 @@ This method is useful when adding a private tag and need to explicitly set the V
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Returns <pre><code>true</code></pre> if the element value could be exctracted, otherwise <pre><code>false</code></pre>.</p>
 </td>
       </tr>
@@ -2171,7 +2331,7 @@ This method is useful when adding a private tag and need to explicitly set the V
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>Returns <pre><code>true</code></pre> if the element values could be extracted, otherwise <pre><code>false</code></pre>.</p>
 </td>
       </tr>
@@ -2221,6 +2381,34 @@ gobal DicomValidation.AutoValidate and DicomDataset.AutoValidate property.</p>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="FellowOakDicom_DicomDataset_ValidateTag_" data-uid="FellowOakDicom.DicomDataset.ValidateTag*"></a>
+  <h4 id="FellowOakDicom_DicomDataset_ValidateTag_FellowOakDicom_DicomTag_" data-uid="FellowOakDicom.DicomDataset.ValidateTag(FellowOakDicom.DicomTag)">ValidateTag(DicomTag)</h4>
+  <div class="markdown level1 summary"><p>Does nothing. Can be overwritten in derived classes to check if the tag is allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ValidateTag(DicomTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
   
@@ -2244,7 +2432,7 @@ gobal DicomValidation.AutoValidate and DicomDataset.AutoValidate property.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
         <td><p>Enumeration of DICOM items</p>
 </td>
       </tr>
@@ -2276,7 +2464,7 @@ gobal DicomValidation.AutoValidate and DicomDataset.AutoValidate property.</p>
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

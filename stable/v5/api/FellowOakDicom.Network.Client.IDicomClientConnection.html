@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IDicomClientConnection
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -89,10 +89,38 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="FellowOakDicom_Network_Client_IDicomClientConnection_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IDicomClientConnection : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IDicomClientConnection</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
+  
+  
+  <a id="FellowOakDicom_Network_Client_IDicomClientConnection_CanStillProcessPDataTF_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.CanStillProcessPDataTF*"></a>
+  <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_CanStillProcessPDataTF" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.CanStillProcessPDataTF">CanStillProcessPDataTF</h4>
+  <div class="markdown level1 summary"><p>Gets whether or not the connection can still process P-DATA-TF
+This can be false when a previous P-DATA-TF timed out before it was sent completely
+In this scenario, the connection can only be used for control PDUs anymore</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanStillProcessPDataTF { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_IsSendNextMessageRequired_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.IsSendNextMessageRequired*"></a>
@@ -114,7 +142,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -140,7 +168,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -513,7 +541,8 @@
   
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestCompletedAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnRequestCompletedAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestCompletedAsync_FellowOakDicom_Network_DicomRequest_FellowOakDicom_Network_DicomResponse_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnRequestCompletedAsync(FellowOakDicom.Network.DicomRequest,FellowOakDicom.Network.DicomResponse)">OnRequestCompletedAsync(DicomRequest, DicomResponse)</h4>
-  <div class="markdown level1 summary"><p>Callback when a request has been completed (a final response was received, causing it to be removed from the pending queue)</p>
+  <div class="markdown level1 summary"><p>Callback when a request has been completed (a final response was received, causing it to be removed from the pending queue)
+One request can only receive one completed response</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -540,6 +569,57 @@
         <td><a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a></td>
         <td><span class="parametername">response</span></td>
         <td><p>The final response from the DICOM server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestPendingAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnRequestPendingAsync*"></a>
+  <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestPendingAsync_FellowOakDicom_Network_DicomRequest_FellowOakDicom_Network_DicomResponse_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnRequestPendingAsync(FellowOakDicom.Network.DicomRequest,FellowOakDicom.Network.DicomResponse)">OnRequestPendingAsync(DicomRequest, DicomResponse)</h4>
+  <div class="markdown level1 summary"><p>Callback when a request has received a pending response (this is not the final response, the request is still in the pending queue)
+One request can receive multiple pending responses</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnRequestPendingAsync(DicomRequest request, DicomResponse response)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The original request that was sent</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a></td>
+        <td><span class="parametername">response</span></td>
+        <td><p>A pending response from the DICOM server</p>
 </td>
       </tr>
     </tbody>
@@ -838,7 +918,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

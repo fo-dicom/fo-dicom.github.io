@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IByteBuffer
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -115,7 +115,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -141,7 +141,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -167,7 +167,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -177,12 +177,13 @@
   
   
   <a id="FellowOakDicom_IO_Buffer_IByteBuffer_CopyToStream_" data-uid="FellowOakDicom.IO.Buffer.IByteBuffer.CopyToStream*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_IByteBuffer_CopyToStream_Stream_System_Int64_System_Int32_" data-uid="FellowOakDicom.IO.Buffer.IByteBuffer.CopyToStream(Stream,System.Int64,System.Int32)">CopyToStream(Stream, Int64, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="FellowOakDicom_IO_Buffer_IByteBuffer_CopyToStream_Stream_" data-uid="FellowOakDicom.IO.Buffer.IByteBuffer.CopyToStream(Stream)">CopyToStream(Stream)</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of this buffer to the provided <code data-dev-comment-type="paramref" class="paramref">stream</code></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void CopyToStream(Stream s, long offset, int count)</code></pre>
+    <pre><code class="lang-csharp hljs">void CopyToStream(Stream stream)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -196,30 +197,22 @@
     <tbody>
       <tr>
         <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">s</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><span class="parametername">offset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">count</span></td>
-        <td></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A stream that will receive the contents of this buffer</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
   <a id="FellowOakDicom_IO_Buffer_IByteBuffer_CopyToStreamAsync_" data-uid="FellowOakDicom.IO.Buffer.IByteBuffer.CopyToStreamAsync*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_IByteBuffer_CopyToStreamAsync_Stream_System_Int64_System_Int32_" data-uid="FellowOakDicom.IO.Buffer.IByteBuffer.CopyToStreamAsync(Stream,System.Int64,System.Int32)">CopyToStreamAsync(Stream, Int64, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="FellowOakDicom_IO_Buffer_IByteBuffer_CopyToStreamAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.IO.Buffer.IByteBuffer.CopyToStreamAsync(Stream,CancellationToken)">CopyToStreamAsync(Stream, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of this buffer to the provided <code data-dev-comment-type="paramref" class="paramref">stream</code></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task CopyToStreamAsync(Stream s, long offset, int count)</code></pre>
+    <pre><code class="lang-csharp hljs">Task CopyToStreamAsync(Stream stream, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -233,18 +226,15 @@
     <tbody>
       <tr>
         <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">s</span></td>
-        <td></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A stream that will receive the contents of this buffer</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><span class="parametername">offset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">count</span></td>
-        <td></td>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token that halts the execution of the copy operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -266,13 +256,13 @@
   
   
   <a id="FellowOakDicom_IO_Buffer_IByteBuffer_GetByteRange_" data-uid="FellowOakDicom.IO.Buffer.IByteBuffer.GetByteRange*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_IByteBuffer_GetByteRange_System_Int64_System_Int32_" data-uid="FellowOakDicom.IO.Buffer.IByteBuffer.GetByteRange(System.Int64,System.Int32)">GetByteRange(Int64, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets a subset of the data.</p>
+  <h4 id="FellowOakDicom_IO_Buffer_IByteBuffer_GetByteRange_System_Int64_System_Int32_System_Byte___" data-uid="FellowOakDicom.IO.Buffer.IByteBuffer.GetByteRange(System.Int64,System.Int32,System.Byte[])">GetByteRange(Int64, Int32, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Gets a subset of the data and fills it in the provided output buffer</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">byte[] GetByteRange(long offset, int count)</code></pre>
+    <pre><code class="lang-csharp hljs">void GetByteRange(long offset, int count, byte[] output)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,31 +275,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Offset from beginning of data array.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of bytes to return.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
-        <td><p>Requested sub-range of the <see name="Data"></see> array.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">output</span></td>
+        <td><p>The array where the data will be written to</p>
 </td>
       </tr>
     </tbody>
@@ -340,7 +320,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

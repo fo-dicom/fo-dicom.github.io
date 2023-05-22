@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DicomFile
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,29 +88,29 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">DicomFile</span></div>
       <div class="level2"><a class="xref" href="FellowOakDicom.Media.DicomDirectory.html">DicomDirectory</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.html">FellowOakDicom</a></h6>
@@ -285,13 +285,62 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="FellowOakDicom_DicomFile_HandleOpenError_" data-uid="FellowOakDicom.DicomFile.HandleOpenError*"></a>
+  <h4 id="FellowOakDicom_DicomFile_HandleOpenError_FellowOakDicom_DicomFile_DicomReaderResult_" data-uid="FellowOakDicom.DicomFile.HandleOpenError(FellowOakDicom.DicomFile,DicomReaderResult)">HandleOpenError(DicomFile, DicomReaderResult)</h4>
+  <div class="markdown level1 summary"><p>Throw if reading the file resulted in an error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void HandleOpenError(DicomFile dicomFile, DicomReaderResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a></td>
+        <td><span class="parametername">dicomFile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DicomReaderResult</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomFileException.html">DicomFileException</a></td>
+        <td><p>If the file could not be read properly.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="FellowOakDicom_DicomFile_HasValidHeader_" data-uid="FellowOakDicom.DicomFile.HasValidHeader*"></a>
@@ -314,7 +363,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">path</span></td>
         <td><p>Path to file</p>
 </td>
@@ -331,7 +380,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>True if valid DICOM 3.0 file header is detected.</p>
 </td>
       </tr>
@@ -382,7 +431,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">stop</span></td>
         <td><p>Stop criterion in dataset.</p>
 </td>
@@ -394,7 +443,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">largeObjectSize</span></td>
         <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
 </td>
@@ -451,7 +500,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">largeObjectSize</span></td>
         <td><p>Custom limit of what are large values and what are not. If 0 is passed, then the default of 64k is used.</p>
 </td>
@@ -498,7 +547,7 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fileName</span></td>
         <td><p>The filename of the DICOM file</p>
 </td>
@@ -510,7 +559,7 @@ are determined by their size in bytes - see the default value for this in the Fi
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">stop</span></td>
         <td><p>Stop criterion in dataset.</p>
 </td>
@@ -522,7 +571,7 @@ are determined by their size in bytes - see the default value for this in the Fi
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">largeObjectSize</span></td>
         <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
 </td>
@@ -569,7 +618,7 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fileName</span></td>
         <td><p>The filename of the DICOM file</p>
 </td>
@@ -581,7 +630,7 @@ are determined by their size in bytes - see the default value for this in the Fi
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">largeObjectSize</span></td>
         <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
 </td>
@@ -638,7 +687,7 @@ are determined by their size in bytes - see the default value for this in the Fi
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">stop</span></td>
         <td><p>Stop criterion in dataset.</p>
 </td>
@@ -650,7 +699,7 @@ are determined by their size in bytes - see the default value for this in the Fi
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">largeObjectSize</span></td>
         <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
 </td>
@@ -707,7 +756,7 @@ are determined by their size in bytes - see the default value for this in the Fi
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">largeObjectSize</span></td>
         <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
 </td>
@@ -754,7 +803,7 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fileName</span></td>
         <td><p>The filename of the DICOM file</p>
 </td>
@@ -766,7 +815,7 @@ are determined by their size in bytes - see the default value for this in the Fi
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">stop</span></td>
         <td><p>Stop criterion in dataset.</p>
 </td>
@@ -778,7 +827,7 @@ are determined by their size in bytes - see the default value for this in the Fi
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">largeObjectSize</span></td>
         <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
 </td>
@@ -825,7 +874,7 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fileName</span></td>
         <td><p>The filename of the DICOM file</p>
 </td>
@@ -837,7 +886,7 @@ are determined by their size in bytes - see the default value for this in the Fi
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">largeObjectSize</span></td>
         <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
 </td>
@@ -917,7 +966,7 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fileName</span></td>
         <td><p>File name.</p>
 </td>
@@ -1003,7 +1052,7 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fileName</span></td>
         <td><p>Name of file.</p>
 </td>
@@ -1027,7 +1076,7 @@ are determined by their size in bytes - see the default value for this in the Fi
     <tbody>
       <tr>
         <td><span class="xref">Task</span></td>
-        <td><p>Awaitable <see cref="!:Task"></see>.</p>
+        <td><p>Awaitable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1053,14 +1102,14 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><p>A string that represents the current object.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a></div>
 </article>
           </div>
           
@@ -1087,7 +1136,7 @@ are determined by their size in bytes - see the default value for this in the Fi
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

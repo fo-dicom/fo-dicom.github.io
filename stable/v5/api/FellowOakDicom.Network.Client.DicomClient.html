@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DicomClient
    | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -87,35 +87,35 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">DicomClient</span></div>
   </div>
-  <div classs="implements">
+  <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FellowOakDicom.Network.Client.IDicomClient.html">IDicomClient</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Client.html">FellowOakDicom.Network.Client</a></h6>
@@ -129,13 +129,13 @@
   
   
   <a id="FellowOakDicom_Network_Client_DicomClient__ctor_" data-uid="FellowOakDicom.Network.Client.DicomClient.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient__ctor_System_String_System_Int32_System_Boolean_System_String_System_String_FellowOakDicom_Network_Client_DicomClientOptions_FellowOakDicom_Network_DicomServiceOptions_FellowOakDicom_Network_INetworkManager_ILogManager_ITranscoderManager_" data-uid="FellowOakDicom.Network.Client.DicomClient.#ctor(System.String,System.Int32,System.Boolean,System.String,System.String,FellowOakDicom.Network.Client.DicomClientOptions,FellowOakDicom.Network.DicomServiceOptions,FellowOakDicom.Network.INetworkManager,ILogManager,ITranscoderManager)">DicomClient(String, Int32, Boolean, String, String, DicomClientOptions, DicomServiceOptions, INetworkManager, ILogManager, ITranscoderManager)</h4>
+  <h4 id="FellowOakDicom_Network_Client_DicomClient__ctor_System_String_System_Int32_ITlsInitiator_System_String_System_String_FellowOakDicom_Network_Client_DicomClientOptions_FellowOakDicom_Network_DicomServiceOptions_ILoggerFactory_IAdvancedDicomClientConnectionFactory_" data-uid="FellowOakDicom.Network.Client.DicomClient.#ctor(System.String,System.Int32,ITlsInitiator,System.String,System.String,FellowOakDicom.Network.Client.DicomClientOptions,FellowOakDicom.Network.DicomServiceOptions,ILoggerFactory,IAdvancedDicomClientConnectionFactory)">DicomClient(String, Int32, ITlsInitiator, String, String, DicomClientOptions, DicomServiceOptions, ILoggerFactory, IAdvancedDicomClientConnectionFactory)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of <a class="xref" href="FellowOakDicom.Network.Client.DicomClient.html">DicomClient</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DicomClient(string host, int port, bool useTls, string callingAe, string calledAe, DicomClientOptions clientOptions, DicomServiceOptions serviceOptions, INetworkManager networkManager, ILogManager logManager, ITranscoderManager transcoderManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public DicomClient(string host, int port, ITlsInitiator tlsInitiator, string callingAe, string calledAe, DicomClientOptions clientOptions, DicomServiceOptions serviceOptions, ILoggerFactory loggerFactory, IAdvancedDicomClientConnectionFactory advancedDicomClientConnectionFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -148,31 +148,31 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">host</span></td>
         <td><p>DICOM host.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">port</span></td>
         <td><p>Port.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">useTls</span></td>
-        <td><p>True if TLS security should be enabled, false otherwise.</p>
+        <td><span class="xref">ITlsInitiator</span></td>
+        <td><span class="parametername">tlsInitiator</span></td>
+        <td><p>if null then no TLS is enabled, otherwise the handler to initiate TLS security.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">callingAe</span></td>
         <td><p>Calling Application Entity Title.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">calledAe</span></td>
         <td><p>Called Application Entity Title.</p>
 </td>
@@ -190,21 +190,15 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a></td>
-        <td><span class="parametername">networkManager</span></td>
-        <td><p>The network manager that will be used to connect to the DICOM server</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">ILogManager</span></td>
-        <td><span class="parametername">logManager</span></td>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
         <td><p>The log manager that will be used to extract a default logger</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ITranscoderManager</span></td>
-        <td><span class="parametername">transcoderManager</span></td>
-        <td><p>The transcoder manager that will be used to transcode incoming or outgoing DICOM files</p>
+        <td><span class="xref">IAdvancedDicomClientConnectionFactory</span></td>
+        <td><span class="parametername">advancedDicomClientConnectionFactory</span></td>
+        <td><p>The advanced DICOM client factory that will be used to actually send the requests</p>
 </td>
       </tr>
     </tbody>
@@ -281,7 +275,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -306,7 +300,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -381,7 +375,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -406,7 +400,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -432,56 +426,6 @@
     <tbody>
       <tr>
         <td><span class="xref">ILogger</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_Client_DicomClient_LogManager_" data-uid="FellowOakDicom.Network.Client.DicomClient.LogManager*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient_LogManager" data-uid="FellowOakDicom.Network.Client.DicomClient.LogManager">LogManager</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ILogManager LogManager { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ILogManager</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_Client_DicomClient_NetworkManager_" data-uid="FellowOakDicom.Network.Client.DicomClient.NetworkManager*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient_NetworkManager" data-uid="FellowOakDicom.Network.Client.DicomClient.NetworkManager">NetworkManager</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public INetworkManager NetworkManager { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -556,7 +500,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_Client_DicomClient_RequireSuccessfulUserIdentityNegotiation_" data-uid="FellowOakDicom.Network.Client.DicomClient.RequireSuccessfulUserIdentityNegotiation*"></a>
+  <h4 id="FellowOakDicom_Network_Client_DicomClient_RequireSuccessfulUserIdentityNegotiation" data-uid="FellowOakDicom.Network.Client.DicomClient.RequireSuccessfulUserIdentityNegotiation">RequireSuccessfulUserIdentityNegotiation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequireSuccessfulUserIdentityNegotiation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -588,13 +557,13 @@
   </table>
   
   
-  <a id="FellowOakDicom_Network_Client_DicomClient_TranscoderManager_" data-uid="FellowOakDicom.Network.Client.DicomClient.TranscoderManager*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient_TranscoderManager" data-uid="FellowOakDicom.Network.Client.DicomClient.TranscoderManager">TranscoderManager</h4>
+  <a id="FellowOakDicom_Network_Client_DicomClient_TlsInitiator_" data-uid="FellowOakDicom.Network.Client.DicomClient.TlsInitiator*"></a>
+  <h4 id="FellowOakDicom_Network_Client_DicomClient_TlsInitiator" data-uid="FellowOakDicom.Network.Client.DicomClient.TlsInitiator">TlsInitiator</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITranscoderManager TranscoderManager { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ITlsInitiator TlsInitiator { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -606,20 +575,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ITranscoderManager</span></td>
+        <td><span class="xref">ITlsInitiator</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="FellowOakDicom_Network_Client_DicomClient_UseTls_" data-uid="FellowOakDicom.Network.Client.DicomClient.UseTls*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient_UseTls" data-uid="FellowOakDicom.Network.Client.DicomClient.UseTls">UseTls</h4>
+  <a id="FellowOakDicom_Network_Client_DicomClient_UserIdentityNegotiation_" data-uid="FellowOakDicom.Network.Client.DicomClient.UserIdentityNegotiation*"></a>
+  <h4 id="FellowOakDicom_Network_Client_DicomClient_UserIdentityNegotiation" data-uid="FellowOakDicom.Network.Client.DicomClient.UserIdentityNegotiation">UserIdentityNegotiation</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UseTls { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DicomUserIdentityNegotiation UserIdentityNegotiation { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -631,7 +600,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomUserIdentityNegotiation.html">DicomUserIdentityNegotiation</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -683,54 +652,12 @@
   
   
   <a id="FellowOakDicom_Network_Client_DicomClient_AddRequestsAsync_" data-uid="FellowOakDicom.Network.Client.DicomClient.AddRequestsAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DicomClient_AddRequestsAsync_FellowOakDicom_Network_DicomRequest___" data-uid="FellowOakDicom.Network.Client.DicomClient.AddRequestsAsync(FellowOakDicom.Network.DicomRequest[])">AddRequestsAsync(DicomRequest[])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task AddRequestsAsync(params DicomRequest[] requests)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a>[]</td>
-        <td><span class="parametername">requests</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_Client_DicomClient_AddRequestsAsync_" data-uid="FellowOakDicom.Network.Client.DicomClient.AddRequestsAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_DicomClient_AddRequestsAsync_IEnumerable_FellowOakDicom_Network_DicomRequest__" data-uid="FellowOakDicom.Network.Client.DicomClient.AddRequestsAsync(IEnumerable{FellowOakDicom.Network.DicomRequest})">AddRequestsAsync(IEnumerable&lt;DicomRequest&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task AddRequestsAsync(IEnumerable&lt;DicomRequest&gt; dicomRequests)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task AddRequestsAsync(IEnumerable&lt;DicomRequest&gt; dicomRequests)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -785,13 +712,40 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">invoked</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">performed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Network_Client_DicomClient_NegotiateUserIdentity_" data-uid="FellowOakDicom.Network.Client.DicomClient.NegotiateUserIdentity*"></a>
+  <h4 id="FellowOakDicom_Network_Client_DicomClient_NegotiateUserIdentity_FellowOakDicom_Network_DicomUserIdentityNegotiation_" data-uid="FellowOakDicom.Network.Client.DicomClient.NegotiateUserIdentity(FellowOakDicom.Network.DicomUserIdentityNegotiation)">NegotiateUserIdentity(DicomUserIdentityNegotiation)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NegotiateUserIdentity(DicomUserIdentityNegotiation userIdentity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomUserIdentityNegotiation.html">DicomUserIdentityNegotiation</a></td>
+        <td><span class="parametername">userIdentity</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -919,6 +873,30 @@
   </table>
   
   
+  <h4 id="FellowOakDicom_Network_Client_DicomClient_AssociationRequestTimedOut" data-uid="FellowOakDicom.Network.Client.DicomClient.AssociationRequestTimedOut">AssociationRequestTimedOut</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;AssociationRequestTimedOutEventArgs&gt; AssociationRequestTimedOut</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<span class="xref">AssociationRequestTimedOutEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="FellowOakDicom_Network_Client_DicomClient_RequestTimedOut" data-uid="FellowOakDicom.Network.Client.DicomClient.RequestTimedOut">RequestTimedOut</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -995,7 +973,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>
