@@ -266,6 +266,67 @@ set to Explicit VR Little Endian (DICOM default transfer syntax).</p>
   
   
   <a id="FellowOakDicom_DicomDataset_Add_" data-uid="FellowOakDicom.DicomDataset.Add*"></a>
+  <h4 id="FellowOakDicom_DicomDataset_Add_FellowOakDicom_DicomItem_" data-uid="FellowOakDicom.DicomDataset.Add(FellowOakDicom.DicomItem)">Add(DicomItem)</h4>
+  <div class="markdown level1 summary"><p>Adds a DICOM item to the dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomDataset Add(DicomItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>DICOM item to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
+        <td><p>The dataset instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>If tag of added item already exists in dataset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_DicomDataset_Add_" data-uid="FellowOakDicom.DicomDataset.Add*"></a>
   <h4 id="FellowOakDicom_DicomDataset_Add_FellowOakDicom_DicomItem___" data-uid="FellowOakDicom.DicomDataset.Add(FellowOakDicom.DicomItem[])">Add(DicomItem[])</h4>
   <div class="markdown level1 summary"><p>Add a collection of DICOM items to the dataset.</p>
 </div>
