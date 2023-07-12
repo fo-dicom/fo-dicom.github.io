@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "developer/ChangeLog.html",
-          "hash": "78Y1WspJ5GgAS6ZBt/lPjVu0zQX8HxVXkPzG+cIrXc8="
+          "hash": "PPxyq7y9gETp7b+kId4EQaPGok+Tn1B9ri0Ad0QEO1c="
         }
       },
       "is_incremental": true,
@@ -3639,7 +3639,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Log.DicomDatasetLogger.html",
-          "hash": "nuIVlInRa2SxSQryCQykf/juDYEV3ilcHjRQmZ1/Q3k="
+          "hash": "VWOITuDUTtbrKzdFHGMqFAu8EYskaIgOsSm/+9CRxr0="
         }
       },
       "is_incremental": false,
@@ -3651,7 +3651,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Log.DicomParserLogger.html",
-          "hash": "fCruJaaOc5tmJQ9UgH8t12L7vB2qSSapYD31sdNj5LM="
+          "hash": "aPX4l0/v1TdkXN9flAj9xHU37OJ3M5xRkgVQ7ijIXFI="
         }
       },
       "is_incremental": false,
@@ -3663,7 +3663,19 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Log.Extensions.html",
-          "hash": "DX8CMpIBXAl7ZQ6drv+UveuhdZIsA8DTIfbStJ72oqA="
+          "hash": "NAb3jKdOL86dmiCH/Gd9Uw/1VXr+vOqaQDfoh53ns9o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Log.ExtensionsForLogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Log.ExtensionsForLogLevel.html",
+          "hash": "f044dbXzbR+7nSW6cfCQrGSffVax3UArgLz85TJambA="
         }
       },
       "is_incremental": false,
@@ -3783,7 +3795,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Log.html",
-          "hash": "7jL+XsgLOEs+zWB0s3cF4TlAhjO4A6hNVoGcGYm6URk="
+          "hash": "IHV0MQfzouo4+9DD4t2rKupdmWXtXSXsnMRvQNaw/sE="
         }
       },
       "is_incremental": false,
@@ -6651,7 +6663,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "AxyqUDe/mJLumoF00B9648EYYy8GYg9oNKQJKJlJSUs="
+          "hash": "+ec32/VIUqLOCVO6ShPIiIqTalJYyvbRmQ15St71bFU="
         }
       },
       "is_incremental": false,
@@ -6851,7 +6863,7 @@
           "can_incremental": false,
           "details": "Processor ManagedReferenceDocumentProcessor disable incremental build because last build doesn't contain version .",
           "incrementalPhase": "build",
-          "total_file_count": 545,
+          "total_file_count": 546,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

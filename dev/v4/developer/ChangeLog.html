@@ -84,6 +84,7 @@
 <li>FO-DICOM.Tests target net6.0-windows and net7.0-windows and test WPF/WinForms images.</li>
 <li>Added private tags mentioned in RayStation 11A DICOM Conformance Statement (#1612)</li>
 <li>Fix issue where extracting a string from a DICOM dataset could return null if the tag was present but empty</li>
+<li>Extension methods <code>DicomDataset.WriteToLog</code> and <code>DicomFile.WriteToLog</code> now also accept a <code>Microsoft.Extensions.Logging.ILogger</code></li>
 <li>Optimize the common case of adding a single <code>DicomItem</code> to a <code>DicomDataset</code> by adding an overload <code>DicomDataset.Add(DicomItem item)</code> (#1604)</li>
 <li>Immediately throw an exception if DICOM server synchronously fails to start (#1562)</li>
 <li>Fix issue where stopping a DICOM server left the unused services cleanup task running (#1562)</li>
