@@ -81,6 +81,8 @@
 
 <ul>
 <li>Fix issue where extracting a string from a DICOM dataset could return null if the tag was present but empty</li>
+<li>Immediately throw an exception if DICOM server synchronously fails to start (#1562)</li>
+<li>Fix issue where stopping a DICOM server left the unused services cleanup task running (#1562)</li>
 </ul>
 <h4 id="511-2023-05-29">5.1.1 (2023-05-29)</h4>
 <ul>
