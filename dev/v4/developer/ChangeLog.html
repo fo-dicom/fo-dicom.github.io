@@ -89,6 +89,8 @@
 <li>Immediately throw an exception if DICOM server synchronously fails to start (#1562)</li>
 <li>Fix issue where stopping a DICOM server left the unused services cleanup task running (#1562)</li>
 <li>Add the possibility to configure TCP buffer sizes (#1564)</li>
+<li>Fix incorrect values returned from <code>DicomEncoding.GetCharset()</code> (#1624)</li>
+<li>Tolerate <code>Specific Character Set</code> values misspelled as &quot;ISO-IR ###&quot; additionally to &quot;ISO IR ###&quot;</li>
 </ul>
 <h4 id="511-2023-05-29">5.1.1 (2023-05-29)</h4>
 <ul>
@@ -155,6 +157,7 @@
 <li>Improve handling of WSI creation: faster offset table calucation and a naming of temp files to allow more than 64.000.</li>
 <li>Change: DicomAnonymizer private fields and methods changed to protected so they can be used in subclasses, made instance methods virtual so they can be overridden in subclasses</li>
 <li>Fix VR's SV and UV VR Length field (#1386)</li>
+<li>Add support for rendering multiframe DICOM files where last fragment is 0 bytes (#1586)</li>
 </ul>
 <h4 id="502-2022-01-11">5.0.2 (2022-01-11)</h4>
 <ul>
