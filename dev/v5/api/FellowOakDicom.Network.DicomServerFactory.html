@@ -125,13 +125,13 @@
   
   
   <a id="FellowOakDicom_Network_DicomServerFactory_Create_" data-uid="FellowOakDicom.Network.DicomServerFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_DicomServerFactory_Create__1_System_Int32_ITlsAcceptor_Encoding_ILogger_System_Object_" data-uid="FellowOakDicom.Network.DicomServerFactory.Create``1(System.Int32,ITlsAcceptor,Encoding,ILogger,System.Object)">Create&lt;T&gt;(Int32, ITlsAcceptor, Encoding, ILogger, Object)</h4>
+  <h4 id="FellowOakDicom_Network_DicomServerFactory_Create__1_System_Int32_ITlsAcceptor_Encoding_ILogger_System_Object_Action_FellowOakDicom_Network_DicomServerOptions__" data-uid="FellowOakDicom.Network.DicomServerFactory.Create``1(System.Int32,ITlsAcceptor,Encoding,ILogger,System.Object,Action{FellowOakDicom.Network.DicomServerOptions})">Create&lt;T&gt;(Int32, ITlsAcceptor, Encoding, ILogger, Object, Action&lt;DicomServerOptions&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a DICOM server object out of DI-container.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IDicomServer Create&lt;T&gt;(int port, ITlsAcceptor tlsAcceptor = null, Encoding fallbackEncoding = null, ILogger logger = null, object userState = null)
+    <pre><code class="lang-csharp hljs">public static IDicomServer Create&lt;T&gt;(int port, ITlsAcceptor tlsAcceptor = null, Encoding fallbackEncoding = null, ILogger logger = null, object userState = null, Action&lt;DicomServerOptions&gt; configure = null)
     where T : DicomService, IDicomServiceProvider</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -171,7 +171,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">userState</span></td>
-        <td></td>
+        <td><p>Optional parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a>&gt;</td>
+        <td><span class="parametername">configure</span></td>
+        <td><p>Configures the service options of the newly created DICOM server</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -210,13 +217,13 @@
   
   
   <a id="FellowOakDicom_Network_DicomServerFactory_Create_" data-uid="FellowOakDicom.Network.DicomServerFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_DicomServerFactory_Create__1_System_String_System_Int32_ITlsAcceptor_Encoding_ILogger_System_Object_" data-uid="FellowOakDicom.Network.DicomServerFactory.Create``1(System.String,System.Int32,ITlsAcceptor,Encoding,ILogger,System.Object)">Create&lt;T&gt;(String, Int32, ITlsAcceptor, Encoding, ILogger, Object)</h4>
+  <h4 id="FellowOakDicom_Network_DicomServerFactory_Create__1_System_String_System_Int32_ITlsAcceptor_Encoding_ILogger_System_Object_Action_FellowOakDicom_Network_DicomServerOptions__" data-uid="FellowOakDicom.Network.DicomServerFactory.Create``1(System.String,System.Int32,ITlsAcceptor,Encoding,ILogger,System.Object,Action{FellowOakDicom.Network.DicomServerOptions})">Create&lt;T&gt;(String, Int32, ITlsAcceptor, Encoding, ILogger, Object, Action&lt;DicomServerOptions&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a DICOM server object out of DI-container.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IDicomServer Create&lt;T&gt;(string ipAddress, int port, ITlsAcceptor tlsAcceptor = null, Encoding fallbackEncoding = null, ILogger logger = null, object userState = null)
+    <pre><code class="lang-csharp hljs">public static IDicomServer Create&lt;T&gt;(string ipAddress, int port, ITlsAcceptor tlsAcceptor = null, Encoding fallbackEncoding = null, ILogger logger = null, object userState = null, Action&lt;DicomServerOptions&gt; configure = null)
     where T : DicomService, IDicomServiceProvider</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -262,7 +269,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">userState</span></td>
-        <td></td>
+        <td><p>Optional parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a>&gt;</td>
+        <td><span class="parametername">configure</span></td>
+        <td><p>Configures the service options of the newly created DICOM server</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -301,13 +315,13 @@
   
   
   <a id="FellowOakDicom_Network_DicomServerFactory_Create_" data-uid="FellowOakDicom.Network.DicomServerFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_DicomServerFactory_Create__2_System_String_System_Int32_System_Object_ITlsAcceptor_Encoding_ILogger_" data-uid="FellowOakDicom.Network.DicomServerFactory.Create``2(System.String,System.Int32,System.Object,ITlsAcceptor,Encoding,ILogger)">Create&lt;T, TServer&gt;(String, Int32, Object, ITlsAcceptor, Encoding, ILogger)</h4>
+  <h4 id="FellowOakDicom_Network_DicomServerFactory_Create__2_System_String_System_Int32_System_Object_ITlsAcceptor_Encoding_ILogger_Action_FellowOakDicom_Network_DicomServerOptions__" data-uid="FellowOakDicom.Network.DicomServerFactory.Create``2(System.String,System.Int32,System.Object,ITlsAcceptor,Encoding,ILogger,Action{FellowOakDicom.Network.DicomServerOptions})">Create&lt;T, TServer&gt;(String, Int32, Object, ITlsAcceptor, Encoding, ILogger, Action&lt;DicomServerOptions&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a DICOM server object out of DI-container.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IDicomServer Create&lt;T, TServer&gt;(string ipAddress, int port, object userState = null, ITlsAcceptor tlsAcceptor = null, Encoding fallbackEncoding = null, ILogger logger = null)
+    <pre><code class="lang-csharp hljs">public static IDicomServer Create&lt;T, TServer&gt;(string ipAddress, int port, object userState = null, ITlsAcceptor tlsAcceptor = null, Encoding fallbackEncoding = null, ILogger logger = null, Action&lt;DicomServerOptions&gt; configure = null)
     where T : DicomService, IDicomServiceProvider where TServer : IDicomServer&lt;T&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -354,6 +368,12 @@
         <td><span class="xref">ILogger</span></td>
         <td><span class="parametername">logger</span></td>
         <td><p>Logger, if null default logger will be applied.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a>&gt;</td>
+        <td><span class="parametername">configure</span></td>
+        <td><p>Configures the service options of the newly created DICOM server</p>
 </td>
       </tr>
     </tbody>

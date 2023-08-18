@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "developer/ChangeLog.html",
-          "hash": "uQ0IZAXHO2cE2PhWJL/DQixvBdXym3u05BBURet+ARg="
+          "hash": "a6iSXGoubQYyreydU5xLiSd+5IW4GAGcaS2gCK8mW7c="
         }
       },
       "is_incremental": true,
@@ -2127,7 +2127,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.IServiceCollectionExtension.html",
-          "hash": "LMoT30uavy1Q+ECDBROCHwl+RyM0zc1jUQ1BBuaqQc4="
+          "hash": "dJcgeCMnMifQ6DJvjU/ebDDKqB2mCV60KY0/BROcnXk="
         }
       },
       "is_incremental": false,
@@ -4103,30 +4103,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Network.AsyncManualResetEvent-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Network.AsyncManualResetEvent-1.html",
-          "hash": "T5cmulLroMZQ04mnCYKSZUGAmhJ9th9n+LEUoSvYL40="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Network.AsyncManualResetEvent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Network.AsyncManualResetEvent.html",
-          "hash": "NEoxLacrewF76xZgrwubP9u/q7Q7xgEZijwfPhix0dc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "obj/api/FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.yml",
       "output": {
         ".html": {
@@ -4743,7 +4719,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.DefaultDicomServerFactory.html",
-          "hash": "ZwBN5iJO545PxozgnOzdToX452nWnbDQGFZYRfI12Ds="
+          "hash": "7+ZCAuwuKBYOYT8QiMiYe0Vao8fRNkdFbzvgVTiFLw4="
         }
       },
       "is_incremental": false,
@@ -5631,7 +5607,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.DicomServer-1.html",
-          "hash": "L5mJ+z7RG143BaRJQjiJzbwDngJr3gKFwg9zsFcgmRY="
+          "hash": "9jHSXuCzercHaxRVGmXqclexR7nfcvyqg2Zx4iKkHUw="
         }
       },
       "is_incremental": false,
@@ -5655,7 +5631,19 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.DicomServerFactory.html",
-          "hash": "4Fo06J5Th6Q45ylr0znh56aVR7+lO/9Z+CT/A9mvUuU="
+          "hash": "E1ykWS6zMWsTH+Iz3VXDicyxrY48m7d+Fs1Z00BxkvA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Network.DicomServerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Network.DicomServerOptions.html",
+          "hash": "oGrdARKJjZWljh1EtMKlF7aONB0HKCJSb7itgOSJUNQ="
         }
       },
       "is_incremental": false,
@@ -5691,7 +5679,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.DicomService.html",
-          "hash": "nESp8TN8mRoX/tZiCjUS/fa6BselH/xyYYb3HCq7oDM="
+          "hash": "9M3uAogzhBSFs0BUkAC8eSoRyGzZxc2uJvHD5p8/Su0="
         }
       },
       "is_incremental": false,
@@ -5739,7 +5727,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.DicomServiceOptions.html",
-          "hash": "GjhrhcXsEB6/Qt9r6/1JzbgzQYYUGg1WeDiPgzk61BE="
+          "hash": "qVRZ8Cbw7ptvJ4K41x2jXZNMnaAHnqcIQhuU9g2uBXc="
         }
       },
       "is_incremental": false,
@@ -5895,7 +5883,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.IDicomServer-1.html",
-          "hash": "tskdX5OC5NjofglkxJ0I0IeChglLLZ3GzsIVOQSAk2o="
+          "hash": "sdgCUzTPBMUGRHqg3gDpexQscYM6SfGPva62Csr4FpI="
         }
       },
       "is_incremental": false,
@@ -5907,7 +5895,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.IDicomServer.html",
-          "hash": "PfhDbAHHExCpg+V8jXaOy6K8YT/xPGpY3H8ygfqg0Ro="
+          "hash": "kTQc+aiUXALaPqd2Lgbw62z0nzwaSLuWPA7WTIYCv3s="
         }
       },
       "is_incremental": false,
@@ -5919,7 +5907,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.IDicomServerFactory.html",
-          "hash": "GqkLNSUH3QEj/iBYKpVzIp9nrDUBPAnhLtv2n45vWJc="
+          "hash": "pWwUHTYKQHMtpoK5r2fUOAqfCH2A1agOpcq0HI7vFI8="
         }
       },
       "is_incremental": false,
@@ -6159,7 +6147,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.html",
-          "hash": "a7LCQt1cVZm2sEruGrRVjblKISa9bLwIFNwim4/zif0="
+          "hash": "cXJYgwfkNGD5aseLvfwZ2sRGQ18lF71pGDnAxHgJsxI="
         }
       },
       "is_incremental": false,
@@ -6663,7 +6651,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "+ec32/VIUqLOCVO6ShPIiIqTalJYyvbRmQ15St71bFU="
+          "hash": "QmugUC7nW8xaPEhQmBnn5ThTFiR98P5Tx9KZ2Xcldpk="
         }
       },
       "is_incremental": false,
@@ -6863,7 +6851,7 @@
           "can_incremental": false,
           "details": "Processor ManagedReferenceDocumentProcessor disable incremental build because last build doesn't contain version .",
           "incrementalPhase": "build",
-          "total_file_count": 546,
+          "total_file_count": 545,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
