@@ -96,6 +96,7 @@
 <li>Fix issue where reading a DICOM file with large pixel data (&gt; 2 GB) did not work (#1453)</li>
 <li>Fix issue where a DICOM server could stop accepting incoming connections if MaxClientsAllowed is configured and one or more connections never close (#1468)</li>
 <li>Fix issue where a DICOM server could leak memory when one or more connections never close (#1594)</li>
+<li>Fix the issue of 'DicomAttribute not generated in XML when element is of type DicomFragmentSequence'</li>
 <li>Prevent adding duplicate presentation contexts to an association request (#1596)</li>
 <li>Fix issue with missing known DicomTransferSyntax from static DicomTransferSyntax.Entries dictionary (#1644)</li>
 </ul>
