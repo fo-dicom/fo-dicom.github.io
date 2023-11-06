@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "developer/ChangeLog.html",
-          "hash": "zXgdFkCVeMpw9y8jp4TNWt+2hndQOTo9eoUHt6pSmi8="
+          "hash": "JahzUrFUqO+iBFeYxT+FJkp4mAcLL7vv3lt31yr8dxc="
         }
       },
       "is_incremental": true,
@@ -6075,7 +6075,19 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.RawPDU.html",
-          "hash": "dkJXQZjEosZSHyZC3NM6i4Bsii5qlI6xhkS8EP3ATNo="
+          "hash": "t1vvDc/lJb3ZBY3nke/pwnikEAXqOVYaPv4aRDcaw0Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Network.RawPduType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Network.RawPduType.html",
+          "hash": "c9H3mWNmUMIJLdsEk1L2laqrkBqX9Iey4N6+ahtgo7s="
         }
       },
       "is_incremental": false,
@@ -6147,7 +6159,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FellowOakDicom.Network.html",
-          "hash": "cXJYgwfkNGD5aseLvfwZ2sRGQ18lF71pGDnAxHgJsxI="
+          "hash": "IOjEZqnXuLPGe2xhzU6RJx0IAw9UFJfQnymrw9Vl9Xw="
         }
       },
       "is_incremental": false,
@@ -6651,7 +6663,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "QmugUC7nW8xaPEhQmBnn5ThTFiR98P5Tx9KZ2Xcldpk="
+          "hash": "2ZIwcsQkEXc29AnZdT8TFGA6xs2ByYy4gAeyvEqEgNo="
         }
       },
       "is_incremental": false,
@@ -6851,7 +6863,7 @@
           "can_incremental": false,
           "details": "Processor ManagedReferenceDocumentProcessor disable incremental build because last build doesn't contain version .",
           "incrementalPhase": "build",
-          "total_file_count": 545,
+          "total_file_count": 546,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
