@@ -100,6 +100,7 @@
 <li>Prevent adding duplicate presentation contexts to an association request (#1596)</li>
 <li>Fix issue with missing known DicomTransferSyntax from static DicomTransferSyntax.Entries dictionary (#1644)</li>
 <li>Improve robustness of DicomService when presented with HTTP requests. Bail early if the PDU type is not recognized (#1678)</li>
+<li>Enhancement: Added IEquatable implementation and equality operators for DicomDataset class</li>
 </ul>
 <h4 id="511-2023-05-29">5.1.1 (2023-05-29)</h4>
 <ul>
@@ -237,7 +238,7 @@
 <li>Use <code>Microsoft.Extensions.DependencyInjection</code>. There is an extension method to <code>IServiceCollection.AddDefaultDicomServices()</code> to add all default implementations for the required interfaces.
 <ul>
 <li><em>IFileReferenceFactory:</em> creates a <code>IFileReference</code> instance. Is used internally whenever a Reference to a file is created.</li>
-<li><em>IImageManager:</em> creates a <code>IImage</code> instance. Default is <code>RawImageManager</code>, that returns a byte array. call  <code>IServiceCollection.UseImageManager&lt;MyImageManager&gt;()</code> to register an other implementation.</li>
+<li><em>IImageManager:</em> creates a <code>IImage</code> instance. Default is <code>RawImageManager</code>, that returns a byte array. call <code>IServiceCollection.UseImageManager&lt;MyImageManager&gt;()</code> to register an other implementation.</li>
 <li><em>ITranscoderManager:</em> manages the codecs, used by <code>DicomTranscoder</code>. Call <code>IServiceCollection.useTranscoderManager&lt;MyTranscoderManager&gt;()</code> to register an other implementation.</li>
 <li><em>ILogManager:</em> creates a concrete implementation of <code>ILogger</code>.</li>
 <li><em>INetworkManager:</em> creates a listner, opens streams or checks connection status.</li>
@@ -270,7 +271,7 @@ The new interface <code>IServiceProviderHost</code> manages, if there is an inte
 <li>By default there is only <code>RawImageManager</code> implementation for <code>IImageManager</code>. To have <code>WinFormsImageManager</code> or <code>WPFImageManager</code> you have to reference the package <em>fo-dicom.Imaging.Desktop</em>. To use <code>ImageSharpImageManager</code> you have to reference <em>fo-dicom.Imaging.ImageSharp</em>.</li>
 <li>There are only asynchronous server provider interfaces. All synchronous methods have been replaced by asynchronous.</li>
 <li>Instances of <code>DicomClient</code> and <code>DicomServer</code> are not created directly, but via a <code>DicomClientFactory</code> or a <code>DicomServerFactory</code>.
-If you are in a &quot;DI-Environment&quot; like Asp.Net, then inject a <code>IDicomClientFactory</code> instance and use this to create a DicomClient. otherwise call <code>DicomClientFactory.CreateDicomClient(...)</code>.  This is a wrapper around accessing the internal DI container , getting the registered IDicomClientFactory and then calling this. So this is more overhead.</li>
+If you are in a &quot;DI-Environment&quot; like Asp.Net, then inject a <code>IDicomClientFactory</code> instance and use this to create a DicomClient. otherwise call <code>DicomClientFactory.CreateDicomClient(...)</code>. This is a wrapper around accessing the internal DI container , getting the registered IDicomClientFactory and then calling this. So this is more overhead.</li>
 <li>DicomServiceOptions cannot be passed as parameter to DicomServer constructor/factory any more, but the values of options have to be set to the created instance of DicomServer.</li>
 <li>Classes <code>DicomFileReader</code>, <code>DicomReader</code>, <code>DicomReaderCallbackObserver</code> etc are now internal instead of public, because the resulting Datasets are wrong/inconsistent and need further changes. Therefore its usage is dangerous for users. (#823)</li>
 <li>Removed obsolete methods/classes/properties
@@ -280,7 +281,7 @@ If you are in a &quot;DI-Environment&quot; like Asp.Net, then inject a <code>IDi
 <li><code>Dicom.Network.IDicomServiceUser</code>: use <code>IDicomClientConnection</code> instead.</li>
 <li><code>ChangeTransferSyntax(..)</code> extension methods for <code>DicomFile</code> and <code>DicomDataset</code>: use the method <code>Clone(..)</code> instead.</li>
 <li><code>DicomDataset.Get&lt;T&gt;</code>: use <code>GetValue</code>, <code>GetValues</code>, <code>GetSingleValue</code> or <code>GetSequence</code> instead.</li>
-<li><code>DicomDataset.AddOrUpdatePixelData</code>:  use <code>DicomPixelData.AddFrame(IByteBuffer)</code> to add pixel data to underlying dataset.</li>
+<li><code>DicomDataset.AddOrUpdatePixelData</code>: use <code>DicomPixelData.AddFrame(IByteBuffer)</code> to add pixel data to underlying dataset.</li>
 <li><code>DicomUID.Generate(name)</code>: use <code>DicomUID.Generate()</code> instead.</li>
 <li><code>DicomUID.IsValid(uid)</code>: use <code>DicomUID.IsValidUid(uid)</code> instead.</li>
 <li><code>DicomUIDGenerator.Generate()</code> and <code>DicomUIDGenerator.GenerateNew()</code>: use <code>DicomUIDGenerator.GenerateDerivedFromUUID()</code></li>
