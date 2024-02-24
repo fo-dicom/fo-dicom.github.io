@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RgbColorPipeline
+    <title>Enum CacheType
    | Fellow Oak DICOM 5 API </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RgbColorPipeline
+    <meta name="title" content="Enum CacheType
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,98 +78,56 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Imaging.Render.RgbColorPipeline">
+            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Imaging.CacheType">
   
   
-  <h1 id="FellowOakDicom_Imaging_Render_RgbColorPipeline" data-uid="FellowOakDicom.Imaging.Render.RgbColorPipeline" class="text-break">Class RgbColorPipeline
+  <h1 id="FellowOakDicom_Imaging_CacheType" data-uid="FellowOakDicom.Imaging.CacheType" class="text-break">Enum CacheType
   </h1>
-  <div class="markdown level0 summary"><p>RGB color pipeline implementation of <a class="xref" href="FellowOakDicom.Imaging.Render.IPipeline.html">IPipeline</a> interface</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">RgbColorPipeline</span></div>
-  </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="FellowOakDicom.Imaging.Render.IPipeline.html">IPipeline</a></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.Render.html">FellowOakDicom.Imaging.Render</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.html">FellowOakDicom.Imaging</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="FellowOakDicom_Imaging_Render_RgbColorPipeline_syntax">Syntax</h5>
+  <h5 id="FellowOakDicom_Imaging_CacheType_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RgbColorPipeline : IPipeline</code></pre>
+    <pre><code class="lang-csharp hljs">public enum CacheType</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="fields">Fields
   </h3>
-  
-  
-  <a id="FellowOakDicom_Imaging_Render_RgbColorPipeline_LUT_" data-uid="FellowOakDicom.Imaging.Render.RgbColorPipeline.LUT*"></a>
-  <h4 id="FellowOakDicom_Imaging_Render_RgbColorPipeline_LUT" data-uid="FellowOakDicom.Imaging.Render.RgbColorPipeline.LUT">LUT</h4>
-  <div class="markdown level1 summary"><p>Get the LUT of the pipeline</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ILUT LUT { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
-    </thead>
+    <thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILUT</span></td>
-        <td></td>
+        <td id="FellowOakDicom_Imaging_CacheType_All">All</td>
+        <td><p>All caches</p>
+</td>
+      </tr>
+      <tr>
+        <td id="FellowOakDicom_Imaging_CacheType_Display">Display</td>
+        <td><p>Caches the cached copy of the rendered display data</p>
+</td>
+      </tr>
+      <tr>
+        <td id="FellowOakDicom_Imaging_CacheType_LookupTables">LookupTables</td>
+        <td><p>Caches the lookup tables and pipelines generated as a result of windowing etc.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="FellowOakDicom_Imaging_CacheType_None">None</td>
+        <td><p>No caching at all</p>
+</td>
+      </tr>
+      <tr>
+        <td id="FellowOakDicom_Imaging_CacheType_PixelData">PixelData</td>
+        <td><p>Caches the raw uncompressed pixel data (where it needs to be decompressed or read from disk)</p>
+</td>
       </tr>
     </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="FellowOakDicom_Imaging_Render_RgbColorPipeline_ClearCache_" data-uid="FellowOakDicom.Imaging.Render.RgbColorPipeline.ClearCache*"></a>
-  <h4 id="FellowOakDicom_Imaging_Render_RgbColorPipeline_ClearCache" data-uid="FellowOakDicom.Imaging.Render.RgbColorPipeline.ClearCache">ClearCache()</h4>
-  <div class="markdown level1 summary"><p>Remove all cached data and only keep configuration data, to reduce memory consumption</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ClearCache()</code></pre>
-  </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="FellowOakDicom.Imaging.Render.IPipeline.html">IPipeline</a>
-  </div>
+  </thead></thead></table>
 </article>
           </div>
           

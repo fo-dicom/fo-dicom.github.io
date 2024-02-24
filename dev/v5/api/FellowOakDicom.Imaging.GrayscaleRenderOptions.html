@@ -184,7 +184,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Invert { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Invert { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -203,14 +203,14 @@
   </table>
   
   
-  <a id="FellowOakDicom_Imaging_GrayscaleRenderOptions_ModalityLUTSequence_" data-uid="FellowOakDicom.Imaging.GrayscaleRenderOptions.ModalityLUTSequence*"></a>
-  <h4 id="FellowOakDicom_Imaging_GrayscaleRenderOptions_ModalityLUTSequence" data-uid="FellowOakDicom.Imaging.GrayscaleRenderOptions.ModalityLUTSequence">ModalityLUTSequence</h4>
+  <a id="FellowOakDicom_Imaging_GrayscaleRenderOptions_ModalityLUT_" data-uid="FellowOakDicom.Imaging.GrayscaleRenderOptions.ModalityLUT*"></a>
+  <h4 id="FellowOakDicom_Imaging_GrayscaleRenderOptions_ModalityLUT" data-uid="FellowOakDicom.Imaging.GrayscaleRenderOptions.ModalityLUT">ModalityLUT</h4>
   <div class="markdown level1 summary"><p>Modality LUT Sequence</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DicomSequence ModalityLUTSequence { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IModalityLUT ModalityLUT { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -222,7 +222,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.DicomSequence.html">DicomSequence</a></td>
+        <td><span class="xref">IModalityLUT</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -511,8 +511,8 @@
   
   
   <a id="FellowOakDicom_Imaging_GrayscaleRenderOptions_FromDataset_" data-uid="FellowOakDicom.Imaging.GrayscaleRenderOptions.FromDataset*"></a>
-  <h4 id="FellowOakDicom_Imaging_GrayscaleRenderOptions_FromDataset_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.Imaging.GrayscaleRenderOptions.FromDataset(FellowOakDicom.DicomDataset)">FromDataset(DicomDataset)</h4>
-  <div class="markdown level1 summary"><p>Create <a class="xref" href="FellowOakDicom.Imaging.GrayscaleRenderOptions.html">GrayscaleRenderOptions</a>  from <code data-dev-comment-type="paramref" class="paramref">dataset</code> and populate the options properties with values:
+  <h4 id="FellowOakDicom_Imaging_GrayscaleRenderOptions_FromDataset_FellowOakDicom_DicomDataset_System_Int32_" data-uid="FellowOakDicom.Imaging.GrayscaleRenderOptions.FromDataset(FellowOakDicom.DicomDataset,System.Int32)">FromDataset(DicomDataset, Int32)</h4>
+  <div class="markdown level1 summary"><p>Create <a class="xref" href="FellowOakDicom.Imaging.GrayscaleRenderOptions.html">GrayscaleRenderOptions</a> from <code data-dev-comment-type="paramref" class="paramref">dataset</code> and populate the options properties with values:
 Bit Depth
 Rescale Slope
 Rescale Intercept
@@ -522,7 +522,7 @@ Window Center</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GrayscaleRenderOptions FromDataset(DicomDataset dataset)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GrayscaleRenderOptions FromDataset(DicomDataset dataset, int frame)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -540,6 +540,12 @@ Window Center</p>
         <td><p>Dataset to extract <a class="xref" href="FellowOakDicom.Imaging.GrayscaleRenderOptions.html">GrayscaleRenderOptions</a> from</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td><p>The 0-based framenumber for which the grayscale options should be extracted.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -554,6 +560,57 @@ Window Center</p>
       <tr>
         <td><a class="xref" href="FellowOakDicom.Imaging.GrayscaleRenderOptions.html">GrayscaleRenderOptions</a></td>
         <td><p>New grayscale render options instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FellowOakDicom_Imaging_GrayscaleRenderOptions_FromFunctionalWindowLevel_" data-uid="FellowOakDicom.Imaging.GrayscaleRenderOptions.FromFunctionalWindowLevel*"></a>
+  <h4 id="FellowOakDicom_Imaging_GrayscaleRenderOptions_FromFunctionalWindowLevel_FellowOakDicom_DicomDataset_System_Int32_" data-uid="FellowOakDicom.Imaging.GrayscaleRenderOptions.FromFunctionalWindowLevel(FellowOakDicom.DicomDataset,System.Int32)">FromFunctionalWindowLevel(DicomDataset, Int32)</h4>
+  <div class="markdown level1 summary"><p>Create grayscale render options based on window level data stored in functional groups in enhanced multiframe images</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GrayscaleRenderOptions FromFunctionalWindowLevel(DicomDataset dataset, int frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">dataset</span></td>
+        <td><p>DICOM dataset from which render options should be obtained.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td><p>0-based Frame number</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Imaging.GrayscaleRenderOptions.html">GrayscaleRenderOptions</a></td>
+        <td><p>Grayscale render options based on window level data.</p>
 </td>
       </tr>
     </tbody>
@@ -702,13 +759,13 @@ Window Center</p>
   
   
   <a id="FellowOakDicom_Imaging_GrayscaleRenderOptions_FromWindowLevel_" data-uid="FellowOakDicom.Imaging.GrayscaleRenderOptions.FromWindowLevel*"></a>
-  <h4 id="FellowOakDicom_Imaging_GrayscaleRenderOptions_FromWindowLevel_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.Imaging.GrayscaleRenderOptions.FromWindowLevel(FellowOakDicom.DicomDataset)">FromWindowLevel(DicomDataset)</h4>
+  <h4 id="FellowOakDicom_Imaging_GrayscaleRenderOptions_FromWindowLevel_FellowOakDicom_DicomDataset_System_Int32_" data-uid="FellowOakDicom.Imaging.GrayscaleRenderOptions.FromWindowLevel(FellowOakDicom.DicomDataset,System.Int32)">FromWindowLevel(DicomDataset, Int32)</h4>
   <div class="markdown level1 summary"><p>Create grayscale render options based on window level data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GrayscaleRenderOptions FromWindowLevel(DicomDataset dataset)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GrayscaleRenderOptions FromWindowLevel(DicomDataset dataset, int frame = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -725,6 +782,11 @@ Window Center</p>
         <td><span class="parametername">dataset</span></td>
         <td><p>DICOM dataset from which render options should be obtained.</p>
 </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

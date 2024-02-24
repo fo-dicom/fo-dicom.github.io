@@ -131,13 +131,13 @@
   
   
   <a id="FellowOakDicom_Imaging_LUT_ModalitySequenceLUT__ctor_" data-uid="FellowOakDicom.Imaging.LUT.ModalitySequenceLUT.#ctor*"></a>
-  <h4 id="FellowOakDicom_Imaging_LUT_ModalitySequenceLUT__ctor_FellowOakDicom_Imaging_GrayscaleRenderOptions_" data-uid="FellowOakDicom.Imaging.LUT.ModalitySequenceLUT.#ctor(FellowOakDicom.Imaging.GrayscaleRenderOptions)">ModalitySequenceLUT(GrayscaleRenderOptions)</h4>
+  <h4 id="FellowOakDicom_Imaging_LUT_ModalitySequenceLUT__ctor_FellowOakDicom_DicomDataset_System_Boolean_" data-uid="FellowOakDicom.Imaging.LUT.ModalitySequenceLUT.#ctor(FellowOakDicom.DicomDataset,System.Boolean)">ModalitySequenceLUT(DicomDataset, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initialize new instance of <a class="xref" href="FellowOakDicom.Imaging.LUT.ModalitySequenceLUT.html">ModalitySequenceLUT</a> using the specified Modality LUT Descriptor and Data</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ModalitySequenceLUT(GrayscaleRenderOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public ModalitySequenceLUT(DicomDataset modalityLUTSequenceItem, bool signed)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -150,10 +150,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.GrayscaleRenderOptions.html">GrayscaleRenderOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td><p>Render options</p>
+        <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">modalityLUTSequenceItem</span></td>
+        <td><p>One item of the ModalityLUTSequence</p>
 </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">signed</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

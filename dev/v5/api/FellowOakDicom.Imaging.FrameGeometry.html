@@ -125,12 +125,13 @@
   
   
   <a id="FellowOakDicom_Imaging_FrameGeometry__ctor_" data-uid="FellowOakDicom.Imaging.FrameGeometry.#ctor*"></a>
-  <h4 id="FellowOakDicom_Imaging_FrameGeometry__ctor_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.Imaging.FrameGeometry.#ctor(FellowOakDicom.DicomDataset)">FrameGeometry(DicomDataset)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="FellowOakDicom_Imaging_FrameGeometry__ctor_FellowOakDicom_DicomDataset_System_Int32_" data-uid="FellowOakDicom.Imaging.FrameGeometry.#ctor(FellowOakDicom.DicomDataset,System.Int32)">FrameGeometry(DicomDataset, Int32)</h4>
+  <div class="markdown level1 summary"><p>A convenience class that extracts all data from a DicomDataset, that is relevant for geometry calculations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FrameGeometry(DicomDataset image)</code></pre>
+    <pre><code class="lang-csharp hljs">public FrameGeometry(DicomDataset image, int frame = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,7 +146,14 @@
       <tr>
         <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
         <td><span class="parametername">image</span></td>
-        <td></td>
+        <td><p>The DicomDataset where the information is extracted from</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td><p>An optional frame number. if not provided, then frame 0 is taken. I case of EnhancedCT or EnhancedMR the geometrydata will be different for each frame</p>
+</td>
       </tr>
     </tbody>
   </table>
