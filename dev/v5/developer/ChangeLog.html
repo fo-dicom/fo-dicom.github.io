@@ -82,6 +82,7 @@
 <ul>
 <li><strong>Breaking change</strong>: Calculation of VOI LUT function LINEAR_EXACT changed as defined since DICOM Standard 2019d</li>
 <li>Added core support for HTJ2K-based transfer syntaxes (not actual codec) (#1687)</li>
+<li>Reduce the memory impact of the DicomDatasetComparer. By a static property DicomDataset.CompareInstancesByContent the usage of DicomDatasetComparer in DicomDataset.Equals can be disabled globally. (#1807)</li>
 <li>Add support for parsing DICOM files where the pixel data is not properly closed with a SequenceDelimitationItem (#1339)</li>
 <li>Update Dicom json converter to handle Infinity values for FL and FD VRs (#1725)</li>
 <li>Fix rendering of files with photometric interpretation YBR_RCT or YBR_ICT (#1734)</li>
