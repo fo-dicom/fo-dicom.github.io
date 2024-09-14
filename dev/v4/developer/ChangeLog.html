@@ -79,11 +79,14 @@
             <article class="content wrap" id="_content" data-uid="">
 <h3 id="514-tbd">5.1.4 (TBD)</h3>
 
+<ul>
+<li>Add support for saving new strings with multi-valued Specific Character Set (#1789)</li>
+</ul>
 <h3 id="513-2024-06-27">5.1.3 (2024-06-27)</h3>
 <ul>
 <li>Update to DICOM Standard 2024c</li>
 <li><strong>Breaking change</strong>: Calculation of VOI LUT function LINEAR_EXACT changed as defined since DICOM Standard 2019d</li>
-<li>Added core support for HTJ2K-based transfer syntaxes (not actual codec) (#1687)</li>
+<li>Add core support for HTJ2K-based transfer syntaxes (not actual codec) (#1687)</li>
 <li>Reduce the memory impact of the DicomDatasetComparer. By a static property DicomDataset.CompareInstancesByContent the usage of DicomDatasetComparer in DicomDataset.Equals can be disabled globally. (#1807)</li>
 <li>Add support for parsing DICOM files where the pixel data is not properly closed with a SequenceDelimitationItem (#1339)</li>
 <li>Update Dicom json converter to handle Infinity values for FL and FD VRs (#1725)</li>
