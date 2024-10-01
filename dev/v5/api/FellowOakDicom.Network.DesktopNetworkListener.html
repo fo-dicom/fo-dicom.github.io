@@ -129,14 +129,14 @@
   </h3>
   
   
-  <a id="FellowOakDicom_Network_DesktopNetworkListener_AcceptNetworkStreamAsync_" data-uid="FellowOakDicom.Network.DesktopNetworkListener.AcceptNetworkStreamAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DesktopNetworkListener_AcceptNetworkStreamAsync_ITlsAcceptor_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__ILogger_CancellationToken_" data-uid="FellowOakDicom.Network.DesktopNetworkListener.AcceptNetworkStreamAsync(ITlsAcceptor,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},ILogger,CancellationToken)">AcceptNetworkStreamAsync(ITlsAcceptor, Boolean, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, ILogger, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Wait until a network stream is trying to connect, and return the accepted stream.</p>
+  <a id="FellowOakDicom_Network_DesktopNetworkListener_AcceptTcpClientAsync_" data-uid="FellowOakDicom.Network.DesktopNetworkListener.AcceptTcpClientAsync*"></a>
+  <h4 id="FellowOakDicom_Network_DesktopNetworkListener_AcceptTcpClientAsync_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__ILogger_CancellationToken_" data-uid="FellowOakDicom.Network.DesktopNetworkListener.AcceptTcpClientAsync(System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},ILogger,CancellationToken)">AcceptTcpClientAsync(Boolean, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, ILogger, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Wait until a TCP client is trying to connect, and return the accepted TCP client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;INetworkStream&gt; AcceptNetworkStreamAsync(ITlsAcceptor tlsAcceptor, bool noDelay, int? receiveBufferSize, int? sendBufferSize, ILogger logger, CancellationToken token)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;TcpClient&gt; AcceptTcpClientAsync(bool noDelay, int? receiveBufferSize, int? sendBufferSize, ILogger logger, CancellationToken token)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -148,12 +148,6 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><span class="xref">ITlsAcceptor</span></td>
-        <td><span class="parametername">tlsAcceptor</span></td>
-        <td><p>Handler to accept authenticated connections.</p>
-</td>
-      </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">noDelay</span></td>
@@ -196,7 +190,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="FellowOakDicom.Network.INetworkStream.html">INetworkStream</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">TcpClient</span>&gt;</td>
         <td><p>Connected network stream.</p>
 </td>
       </tr>
