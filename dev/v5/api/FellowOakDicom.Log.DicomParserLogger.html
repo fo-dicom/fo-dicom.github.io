@@ -135,12 +135,12 @@
   
   
   <a id="FellowOakDicom_Log_DicomParserLogger_OnBeginFragmentSequence_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginFragmentSequence*"></a>
-  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnBeginFragmentSequence_IByteSource_FellowOakDicom_DicomTag_FellowOakDicom_DicomVR_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginFragmentSequence(IByteSource,FellowOakDicom.DicomTag,FellowOakDicom.DicomVR)">OnBeginFragmentSequence(IByteSource, DicomTag, DicomVR)</h4>
+  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnBeginFragmentSequence_IByteSource_System_Int64_FellowOakDicom_DicomTag_FellowOakDicom_DicomVR_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginFragmentSequence(IByteSource,System.Int64,FellowOakDicom.DicomTag,FellowOakDicom.DicomVR)">OnBeginFragmentSequence(IByteSource, Int64, DicomTag, DicomVR)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnBeginFragmentSequence(IByteSource source, DicomTag tag, DicomVR vr)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnBeginFragmentSequence(IByteSource source, long position, DicomTag tag, DicomVR vr)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,6 +155,11 @@
       <tr>
         <td><span class="xref">IByteSource</span></td>
         <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
         <td></td>
       </tr>
       <tr>
@@ -172,12 +177,12 @@
   
   
   <a id="FellowOakDicom_Log_DicomParserLogger_OnBeginSequence_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginSequence*"></a>
-  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnBeginSequence_IByteSource_FellowOakDicom_DicomTag_System_UInt32_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginSequence(IByteSource,FellowOakDicom.DicomTag,System.UInt32)">OnBeginSequence(IByteSource, DicomTag, UInt32)</h4>
+  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnBeginSequence_IByteSource_System_Int64_FellowOakDicom_DicomTag_System_UInt32_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginSequence(IByteSource,System.Int64,FellowOakDicom.DicomTag,System.UInt32)">OnBeginSequence(IByteSource, Int64, DicomTag, UInt32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnBeginSequence(IByteSource source, DicomTag tag, uint length)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnBeginSequence(IByteSource source, long position, DicomTag tag, uint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -192,6 +197,11 @@
       <tr>
         <td><span class="xref">IByteSource</span></td>
         <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
         <td></td>
       </tr>
       <tr>
@@ -209,12 +219,12 @@
   
   
   <a id="FellowOakDicom_Log_DicomParserLogger_OnBeginSequenceItem_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginSequenceItem*"></a>
-  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnBeginSequenceItem_IByteSource_System_UInt32_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginSequenceItem(IByteSource,System.UInt32)">OnBeginSequenceItem(IByteSource, UInt32)</h4>
+  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnBeginSequenceItem_IByteSource_System_Int64_System_UInt32_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginSequenceItem(IByteSource,System.Int64,System.UInt32)">OnBeginSequenceItem(IByteSource, Int64, UInt32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnBeginSequenceItem(IByteSource source, uint length)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnBeginSequenceItem(IByteSource source, long position, uint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -229,6 +239,11 @@
       <tr>
         <td><span class="xref">IByteSource</span></td>
         <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
         <td></td>
       </tr>
       <tr>
@@ -241,12 +256,12 @@
   
   
   <a id="FellowOakDicom_Log_DicomParserLogger_OnElement_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnElement*"></a>
-  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnElement_IByteSource_FellowOakDicom_DicomTag_FellowOakDicom_DicomVR_IByteBuffer_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnElement(IByteSource,FellowOakDicom.DicomTag,FellowOakDicom.DicomVR,IByteBuffer)">OnElement(IByteSource, DicomTag, DicomVR, IByteBuffer)</h4>
+  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnElement_IByteSource_System_Int64_FellowOakDicom_DicomTag_FellowOakDicom_DicomVR_IByteBuffer_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnElement(IByteSource,System.Int64,FellowOakDicom.DicomTag,FellowOakDicom.DicomVR,IByteBuffer)">OnElement(IByteSource, Int64, DicomTag, DicomVR, IByteBuffer)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnElement(IByteSource source, DicomTag tag, DicomVR vr, IByteBuffer data)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnElement(IByteSource source, long position, DicomTag tag, DicomVR vr, IByteBuffer data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -261,6 +276,11 @@
       <tr>
         <td><span class="xref">IByteSource</span></td>
         <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
         <td></td>
       </tr>
       <tr>
@@ -313,12 +333,12 @@
   
   
   <a id="FellowOakDicom_Log_DicomParserLogger_OnFragmentSequenceItem_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnFragmentSequenceItem*"></a>
-  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnFragmentSequenceItem_IByteSource_IByteBuffer_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnFragmentSequenceItem(IByteSource,IByteBuffer)">OnFragmentSequenceItem(IByteSource, IByteBuffer)</h4>
+  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnFragmentSequenceItem_IByteSource_System_Int64_IByteBuffer_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnFragmentSequenceItem(IByteSource,System.Int64,IByteBuffer)">OnFragmentSequenceItem(IByteSource, Int64, IByteBuffer)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnFragmentSequenceItem(IByteSource source, IByteBuffer data)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnFragmentSequenceItem(IByteSource source, long position, IByteBuffer data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -333,6 +353,11 @@
       <tr>
         <td><span class="xref">IByteSource</span></td>
         <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
         <td></td>
       </tr>
       <tr>

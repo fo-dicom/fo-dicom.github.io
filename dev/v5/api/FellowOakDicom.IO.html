@@ -119,6 +119,11 @@
       <section></section>
       <h4><a class="xref" href="FellowOakDicom.IO.PinnedIntArray.html">PinnedIntArray</a></h4>
       <section></section>
+      <h4><a class="xref" href="FellowOakDicom.IO.ReadBufferedStream.html">ReadBufferedStream</a></h4>
+      <section><p>This class is a buffered read-only wrapper around another stream.
+The parser requires to seek within the stream, so when reading from an unseekable stream, such a buffer is necessary.
+Because the parser does not jump very wide, a small buffer is just fine.</p>
+</section>
       <h4><a class="xref" href="FellowOakDicom.IO.StreamByteSource.html">StreamByteSource</a></h4>
       <section><p>Stream byte source for reading.</p>
 </section>
@@ -133,9 +138,6 @@
 </section>
       <h4><a class="xref" href="FellowOakDicom.IO.TemporaryFileRemover.html">TemporaryFileRemover</a></h4>
       <section><p>Support class for removing temporary files, with repeated attempts if required.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.UnseekableStreamByteSource.html">UnseekableStreamByteSource</a></h4>
-      <section><p>Stream byte source for reading streams without seek capability.</p>
 </section>
     <h3 id="structs">Structs
   </h3>

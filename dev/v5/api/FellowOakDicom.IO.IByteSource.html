@@ -96,32 +96,6 @@
   </h3>
   
   
-  <a id="FellowOakDicom_IO_IByteSource_CanRewind_" data-uid="FellowOakDicom.IO.IByteSource.CanRewind*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_CanRewind" data-uid="FellowOakDicom.IO.IByteSource.CanRewind">CanRewind</h4>
-  <div class="markdown level1 summary"><p>Gets whether its possible to rewind the source.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool CanRewind { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_Endian_" data-uid="FellowOakDicom.IO.IByteSource.Endian*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_Endian" data-uid="FellowOakDicom.IO.IByteSource.Endian">Endian</h4>
   <div class="markdown level1 summary"><p>Gets or sets the endianness.</p>
@@ -168,58 +142,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_Marker_" data-uid="FellowOakDicom.IO.IByteSource.Marker*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_Marker" data-uid="FellowOakDicom.IO.IByteSource.Marker">Marker</h4>
-  <div class="markdown level1 summary"><p>Gets the position of the current marker.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">long Marker { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_MilestonesCount_" data-uid="FellowOakDicom.IO.IByteSource.MilestonesCount*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_MilestonesCount" data-uid="FellowOakDicom.IO.IByteSource.MilestonesCount">MilestonesCount</h4>
-  <div class="markdown level1 summary"><p>Gets the milestone levels count.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int MilestonesCount { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -717,63 +639,14 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
   </table>
   
   
-  <a id="FellowOakDicom_IO_IByteSource_HasReachedMilestone_" data-uid="FellowOakDicom.IO.IByteSource.HasReachedMilestone*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_HasReachedMilestone" data-uid="FellowOakDicom.IO.IByteSource.HasReachedMilestone">HasReachedMilestone()</h4>
-  <div class="markdown level1 summary"><p>Checks whether the byte source position is at the uppermost milestone position.</p>
+  <a id="FellowOakDicom_IO_IByteSource_GoTo_" data-uid="FellowOakDicom.IO.IByteSource.GoTo*"></a>
+  <h4 id="FellowOakDicom_IO_IByteSource_GoTo_System_Int64_" data-uid="FellowOakDicom.IO.IByteSource.GoTo(System.Int64)">GoTo(Int64)</h4>
+  <div class="markdown level1 summary"><p>Sets the current read position to the position <code data-dev-comment-type="paramref" class="paramref">position</code></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool HasReachedMilestone()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if uppermost milestone is reached, false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_Mark_" data-uid="FellowOakDicom.IO.IByteSource.Mark*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_Mark" data-uid="FellowOakDicom.IO.IByteSource.Mark">Mark()</h4>
-  <div class="markdown level1 summary"><p>Set a mark at the current position.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Mark()</code></pre>
-  </div>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_PopMilestone_" data-uid="FellowOakDicom.IO.IByteSource.PopMilestone*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_PopMilestone" data-uid="FellowOakDicom.IO.IByteSource.PopMilestone">PopMilestone()</h4>
-  <div class="markdown level1 summary"><p>Pop the uppermost level of milestone.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void PopMilestone()</code></pre>
-  </div>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_PushMilestone_" data-uid="FellowOakDicom.IO.IByteSource.PushMilestone*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_PushMilestone_System_UInt32_" data-uid="FellowOakDicom.IO.IByteSource.PushMilestone(System.UInt32)">PushMilestone(UInt32)</h4>
-  <div class="markdown level1 summary"><p>Mark the position of a new level of milestone.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void PushMilestone(uint count)</code></pre>
+    <pre><code class="lang-csharp hljs">void GoTo(long position)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -786,9 +659,9 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Expected distance in bytes from the current position to the milestone.</p>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>the position to seek to</p>
 </td>
       </tr>
     </tbody>
@@ -895,17 +768,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_Rewind_" data-uid="FellowOakDicom.IO.IByteSource.Rewind*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_Rewind" data-uid="FellowOakDicom.IO.IByteSource.Rewind">Rewind()</h4>
-  <div class="markdown level1 summary"><p>Rewind byte source to latest <a class="xref" href="FellowOakDicom.IO.IByteSource.html#FellowOakDicom_IO_IByteSource_Marker">Marker</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Rewind()</code></pre>
-  </div>
   
   
   <a id="FellowOakDicom_IO_IByteSource_Skip_" data-uid="FellowOakDicom.IO.IByteSource.Skip*"></a>
