@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -101,25 +101,23 @@
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
       <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.html">FellowOakDicom.Imaging</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Imaging_PhotometricInterpretation_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PhotometricInterpretation : DicomParseable</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
-  
-  
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_Monochrome1" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.Monochrome1">Monochrome1</h4>
   <div class="markdown level1 summary"><p>Pixel data represent a single monochrome image plane. The minimum sample value is intended
 to be displayed as white after any VOI gray scale transformations have been performed. See
@@ -145,8 +143,6 @@ PS 3.4. This value may be used only when Samples per Pixel (0028,0002) has a val
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_Monochrome2" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.Monochrome2">Monochrome2</h4>
   <div class="markdown level1 summary"><p>Pixel data represent a single monochrome image plane. The minimum sample value is intended
 to be displayed as black after any VOI gray scale transformations have been performed. See
@@ -172,8 +168,6 @@ PS 3.4. This value may be used only when Samples per Pixel (0028,0002) has a val
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_PaletteColor" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.PaletteColor">PaletteColor</h4>
   <div class="markdown level1 summary"><p>Pixel data describe a color image with a single sample per pixel (single image plane). The
 pixel value is used as an index into each of the Red, Blue, and Green Palette Color Lookup
@@ -201,8 +195,6 @@ Palette Color Lookup Tables shall be present.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_Rgb" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.Rgb">Rgb</h4>
   <div class="markdown level1 summary"><p>Pixel data represent a color image described by red, green, and blue image planes. The minimum
 sample value for each color plane represents minimum intensity of the color. This value may be
@@ -228,8 +220,6 @@ used only when Samples per Pixel (0028,0002) has a value of 3.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_YbrFull" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.YbrFull">YbrFull</h4>
   <div class="markdown level1 summary"><p>Pixel data represent a color image described by one luminance (Y) and two chrominance planes
 (Cb and Cr). This photometric interpretation may be used only when Samples per Pixel (0028,0002)
@@ -261,8 +251,6 @@ Cr = + .5000R - .4187G - .0813B + 128</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_YbrFull422" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.YbrFull422">YbrFull422</h4>
   <div class="markdown level1 summary"><p>The same as YBR_FULL except that the Cb and Cr values are sampled horizontally at half the Y rate
 and as a result there are half as many Cb and Cr values as Y values.</p>
@@ -292,8 +280,6 @@ at the location of the third Y sample etc.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_YbrIct" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.YbrIct">YbrIct</h4>
   <div class="markdown level1 summary"><p>Pixel data represent a color image described by one luminance (Y) and two chrominance planes
 (Cb and Cr). This photometric interpretation may be used only when Samples per Pixel (0028,0002) has
@@ -325,8 +311,6 @@ Cr = + .50000R - .41869G - .08131B</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_YbrPartial420" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.YbrPartial420">YbrPartial420</h4>
   <div class="markdown level1 summary"><p>The same as YBR_PARTIAL_422 except that the Cb and Cr values are sampled horizontally and vertically
 at half the Y rate and as a result there are four times less Cb and Cr values than Y values, versus
@@ -357,8 +341,6 @@ containing Cb and Cr samples (at the same locations than for the first Row) will
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_YbrPartial422" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.YbrPartial422">YbrPartial422</h4>
   <div class="markdown level1 summary"><p>The same as YBR_FULL_422 except that:</p>
 <ol><li>black corresponds to Y = 16</li><li>Y is restricted to 220 levels (i.e. the maximum value is 235)</li><li>Cb and Cr each has a minimum value of 16</li><li>Cb and Cr are restricted to 225 levels (i.e. the maximum value is 240)</li><li>lack of color is represented by Cb and Cr equal to 128</li></ol>
@@ -388,8 +370,6 @@ Cr = + .4392R - .3678G - .0714B + 128</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_YbrRct" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.YbrRct">YbrRct</h4>
   <div class="markdown level1 summary"><p>Pixel data represent a color image described by one luminance (Y) and two chrominance planes
 (Cb and Cr). This photometric interpretation may be used only when Samples per Pixel (0028,0002)
@@ -427,8 +407,6 @@ B = Cb + G</p>
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_ColorSpace_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.ColorSpace*"></a>
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_ColorSpace" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.ColorSpace">ColorSpace</h4>
   <div class="markdown level1 summary"><p>Gets the color space of the photometric interpretation, or <pre><code>null</code></pre> if <a class="xref" href="FellowOakDicom.Imaging.PhotometricInterpretation.html#FellowOakDicom_Imaging_PhotometricInterpretation_IsPalette">IsPalette</a> is <pre><code>false</code></pre>.</p>
@@ -453,8 +431,6 @@ B = Cb + G</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_Description_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.Description*"></a>
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_Description" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.Description">Description</h4>
   <div class="markdown level1 summary"><p>Gets the description of the photometric interpretation.</p>
@@ -479,8 +455,6 @@ B = Cb + G</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_IsColor_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.IsColor*"></a>
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_IsColor" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.IsColor">IsColor</h4>
   <div class="markdown level1 summary"><p>Gets whether or not the photometric interpretation represents color (true) or grayscale (false).</p>
@@ -505,8 +479,6 @@ B = Cb + G</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_IsPalette_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.IsPalette*"></a>
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_IsPalette" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.IsPalette">IsPalette</h4>
   <div class="markdown level1 summary"><p>Gets whether or not the photometric interpretation is represented by a palette of colors.</p>
@@ -531,8 +503,6 @@ B = Cb + G</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_IsYBR_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.IsYBR*"></a>
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_IsYBR" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.IsYBR">IsYBR</h4>
   <div class="markdown level1 summary"><p>Gets whether or not the photometric interpretation represents an YBR color scheme.</p>
@@ -557,8 +527,6 @@ B = Cb + G</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_Value_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.Value*"></a>
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_Value" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.Value">Value</h4>
   <div class="markdown level1 summary"><p>Gets the identifier value, corresponding with a DICOM defined term for tag (0028, 0004).</p>
@@ -585,8 +553,6 @@ B = Cb + G</p>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_Equals_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.Equals*"></a>
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_Equals_System_Object_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.Equals(System.Object)">Equals(Object)</h4>
   <div class="markdown level1 summary"></div>
@@ -629,8 +595,6 @@ B = Cb + G</p>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.Equals(System.Object)</span></div>
-  
-  
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_GetHashCode_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.GetHashCode*"></a>
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_GetHashCode" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"></div>
@@ -656,8 +620,6 @@ B = Cb + G</p>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.GetHashCode()</span></div>
-  
-  
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_Parse_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.Parse*"></a>
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_Parse_System_String_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.Parse(System.String)">Parse(String)</h4>
   <div class="markdown level1 summary"><p>Parse the photometric interpretation based on a string, typically obtained by reading DICOM tag (0028,0004).</p>
@@ -717,8 +679,6 @@ B = Cb + G</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_ToString_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.ToString*"></a>
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_ToString" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
@@ -746,8 +706,6 @@ B = Cb + G</p>
   <div><span class="xref">System.Object.ToString()</span></div>
   <h3 id="operators">Operators
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_op_Equality_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.op_Equality*"></a>
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_op_Equality_FellowOakDicom_Imaging_PhotometricInterpretation_FellowOakDicom_Imaging_PhotometricInterpretation_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.op_Equality(FellowOakDicom.Imaging.PhotometricInterpretation,FellowOakDicom.Imaging.PhotometricInterpretation)">Equality(PhotometricInterpretation, PhotometricInterpretation)</h4>
   <div class="markdown level1 summary"><p>Equivalence operator for <a class="xref" href="FellowOakDicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a> class.</p>
@@ -798,8 +756,6 @@ false otherwise.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_PhotometricInterpretation_op_Inequality_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.op_Inequality*"></a>
   <h4 id="FellowOakDicom_Imaging_PhotometricInterpretation_op_Inequality_FellowOakDicom_Imaging_PhotometricInterpretation_FellowOakDicom_Imaging_PhotometricInterpretation_" data-uid="FellowOakDicom.Imaging.PhotometricInterpretation.op_Inequality(FellowOakDicom.Imaging.PhotometricInterpretation,FellowOakDicom.Imaging.PhotometricInterpretation)">Inequality(PhotometricInterpretation, PhotometricInterpretation)</h4>
   <div class="markdown level1 summary"><p>Non-equivalence operator for <a class="xref" href="FellowOakDicom.Imaging.PhotometricInterpretation.html">PhotometricInterpretation</a> class.</p>
@@ -850,15 +806,15 @@ false otherwise.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -875,8 +831,8 @@ false otherwise.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

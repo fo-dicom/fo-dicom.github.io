@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -104,9 +104,6 @@
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
       <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
@@ -115,19 +112,47 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_AAssociateRJ_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AAssociateRJ : PDU</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_AAssociateRJ__ctor_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_AAssociateRJ__ctor_FellowOakDicom_Network_DicomRejectResult_FellowOakDicom_Network_DicomRejectSource_FellowOakDicom_Network_DicomRejectReason_IMemoryProvider_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor(FellowOakDicom.Network.DicomRejectResult,FellowOakDicom.Network.DicomRejectSource,FellowOakDicom.Network.DicomRejectReason,IMemoryProvider)">AAssociateRJ(DicomRejectResult, DicomRejectSource, DicomRejectReason, IMemoryProvider)</h4>
+  <h4 id="FellowOakDicom_Network_AAssociateRJ__ctor_FellowOakDicom_Memory_IMemoryProvider_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor(FellowOakDicom.Memory.IMemoryProvider)">AAssociateRJ(IMemoryProvider)</h4>
+  <div class="markdown level1 summary"><p>Initializes new A-ASSOCIATE-RJ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AAssociateRJ(IMemoryProvider memoryProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td><p>The memory provider that will be used to allocate buffers</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="FellowOakDicom_Network_AAssociateRJ__ctor_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor*"></a>
+  <h4 id="FellowOakDicom_Network_AAssociateRJ__ctor_FellowOakDicom_Network_DicomRejectResult_FellowOakDicom_Network_DicomRejectSource_FellowOakDicom_Network_DicomRejectReason_FellowOakDicom_Memory_IMemoryProvider_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor(FellowOakDicom.Network.DicomRejectResult,FellowOakDicom.Network.DicomRejectSource,FellowOakDicom.Network.DicomRejectReason,FellowOakDicom.Memory.IMemoryProvider)">AAssociateRJ(DicomRejectResult, DicomRejectSource, DicomRejectReason, IMemoryProvider)</h4>
   <div class="markdown level1 summary"><p>Initializes new A-ASSOCIATE-RJ</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -164,36 +189,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
-        <td><span class="parametername">memoryProvider</span></td>
-        <td><p>The memory provider that will be used to allocate buffers</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Network_AAssociateRJ__ctor_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_AAssociateRJ__ctor_IMemoryProvider_" data-uid="FellowOakDicom.Network.AAssociateRJ.#ctor(IMemoryProvider)">AAssociateRJ(IMemoryProvider)</h4>
-  <div class="markdown level1 summary"><p>Initializes new A-ASSOCIATE-RJ</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AAssociateRJ(IMemoryProvider memoryProvider)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
+        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
         <td><span class="parametername">memoryProvider</span></td>
         <td><p>The memory provider that will be used to allocate buffers</p>
 </td>
@@ -202,8 +198,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_AAssociateRJ_Reason_" data-uid="FellowOakDicom.Network.AAssociateRJ.Reason*"></a>
   <h4 id="FellowOakDicom_Network_AAssociateRJ_Reason" data-uid="FellowOakDicom.Network.AAssociateRJ.Reason">Reason</h4>
   <div class="markdown level1 summary"><p>Rejection reason</p>
@@ -228,8 +222,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_AAssociateRJ_Result_" data-uid="FellowOakDicom.Network.AAssociateRJ.Result*"></a>
   <h4 id="FellowOakDicom_Network_AAssociateRJ_Result" data-uid="FellowOakDicom.Network.AAssociateRJ.Result">Result</h4>
   <div class="markdown level1 summary"><p>Rejection result</p>
@@ -254,8 +246,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_AAssociateRJ_Source_" data-uid="FellowOakDicom.Network.AAssociateRJ.Source*"></a>
   <h4 id="FellowOakDicom_Network_AAssociateRJ_Source" data-uid="FellowOakDicom.Network.AAssociateRJ.Source">Source</h4>
   <div class="markdown level1 summary"><p>Rejection source</p>
@@ -282,8 +272,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_AAssociateRJ_Read_" data-uid="FellowOakDicom.Network.AAssociateRJ.Read*"></a>
   <h4 id="FellowOakDicom_Network_AAssociateRJ_Read_FellowOakDicom_Network_RawPDU_" data-uid="FellowOakDicom.Network.AAssociateRJ.Read(FellowOakDicom.Network.RawPDU)">Read(RawPDU)</h4>
   <div class="markdown level1 summary"><p>Reads A-ASSOCIATE-RJ from PDU buffer</p>
@@ -316,8 +304,6 @@
 combined with the numerical reject reason from the <a class="xref" href="FellowOakDicom.Network.RawPDU.html">RawPDU</a> object to yield numerical
 values that matches the members of the <a class="xref" href="FellowOakDicom.Network.DicomRejectReason.html">DicomRejectReason</a> enumeration.</p>
 </div>
-  
-  
   <a id="FellowOakDicom_Network_AAssociateRJ_ToString_" data-uid="FellowOakDicom.Network.AAssociateRJ.ToString*"></a>
   <h4 id="FellowOakDicom_Network_AAssociateRJ_ToString" data-uid="FellowOakDicom.Network.AAssociateRJ.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
@@ -343,10 +329,8 @@ values that matches the members of the <a class="xref" href="FellowOakDicom.Netw
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
-  
-  
   <a id="FellowOakDicom_Network_AAssociateRJ_WriteAsync_" data-uid="FellowOakDicom.Network.AAssociateRJ.WriteAsync*"></a>
-  <h4 id="FellowOakDicom_Network_AAssociateRJ_WriteAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.Network.AAssociateRJ.WriteAsync(Stream,CancellationToken)">WriteAsync(Stream, CancellationToken)</h4>
+  <h4 id="FellowOakDicom_Network_AAssociateRJ_WriteAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.AAssociateRJ.WriteAsync(System.IO.Stream,System.Threading.CancellationToken)">WriteAsync(Stream, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Writes A-ASSOCIATE-RJ to PDU buffer</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -365,13 +349,13 @@ values that matches the members of the <a class="xref" href="FellowOakDicom.Netw
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>The stream to write the PDU to</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The token that cancels the write operation</p>
 </td>
@@ -388,13 +372,13 @@ values that matches the members of the <a class="xref" href="FellowOakDicom.Netw
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>A Task that represents the asynchronous operation</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="FellowOakDicom_Network_AAssociateRJ_WriteAsync_Stream_CancellationToken__remarks">Remarks</h5>
+  <h5 id="FellowOakDicom_Network_AAssociateRJ_WriteAsync_System_IO_Stream_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When writing the rejection reason to the <a class="xref" href="FellowOakDicom.Network.RawPDU.html">RawPDU</a> object, the <a class="xref" href="FellowOakDicom.Network.DicomRejectSource.html">DicomRejectSource</a>
 specification in the underlying value is masked out, to ensure that the reason code matches the codes specified
 in Table 9-21 of DICOM Standard PS 3.8.</p>
@@ -403,15 +387,15 @@ in Table 9-21 of DICOM Standard PS 3.8.</p>
   <div>
       <a class="xref" href="FellowOakDicom.Network.PDU.html">PDU</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -428,8 +412,8 @@ in Table 9-21 of DICOM Standard PS 3.8.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

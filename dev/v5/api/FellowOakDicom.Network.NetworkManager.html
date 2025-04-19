@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -99,16 +99,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -119,17 +113,21 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_NetworkManager_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class NetworkManager : INetworkManager</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
-  
-  
   <h4 id="FellowOakDicom_Network_NetworkManager_IPv4Any" data-uid="FellowOakDicom.Network.NetworkManager.IPv4Any">IPv4Any</h4>
   <div class="markdown level1 summary"><p>String representation of the &quot;Any&quot; IPv4 address, i.e. specifying the listener to listen to all applicable IPv4 addresses.</p>
 </div>
@@ -153,8 +151,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Network_NetworkManager_IPv4Loopback" data-uid="FellowOakDicom.Network.NetworkManager.IPv4Loopback">IPv4Loopback</h4>
   <div class="markdown level1 summary"><p>String representation of the &quot;Loopback&quot; IPv4 address, i.e. specifying the listener to listen to the local IPv4 host.</p>
 </div>
@@ -178,8 +174,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Network_NetworkManager_IPv6Any" data-uid="FellowOakDicom.Network.NetworkManager.IPv6Any">IPv6Any</h4>
   <div class="markdown level1 summary"><p>String representation of the &quot;Any&quot; IPv6 address, i.e. specifying the listener to listen to all applicable IPv6 addresses.</p>
 </div>
@@ -203,8 +197,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Network_NetworkManager_IPv6Loopback" data-uid="FellowOakDicom.Network.NetworkManager.IPv6Loopback">IPv6Loopback</h4>
   <div class="markdown level1 summary"><p>String representation of the &quot;Loopback&quot; IPv6 address, i.e. specifying the listener to listen to the local IPv6 host.</p>
 </div>
@@ -230,8 +222,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_NetworkManager_MachineNameImpl_" data-uid="FellowOakDicom.Network.NetworkManager.MachineNameImpl*"></a>
   <h4 id="FellowOakDicom_Network_NetworkManager_MachineNameImpl" data-uid="FellowOakDicom.Network.NetworkManager.MachineNameImpl">MachineNameImpl</h4>
   <div class="markdown level1 summary"><p>Implementation of the machine name getter.</p>
@@ -258,8 +248,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_NetworkManager_CreateNetworkListenerImpl_" data-uid="FellowOakDicom.Network.NetworkManager.CreateNetworkListenerImpl*"></a>
   <h4 id="FellowOakDicom_Network_NetworkManager_CreateNetworkListenerImpl_System_String_System_Int32_" data-uid="FellowOakDicom.Network.NetworkManager.CreateNetworkListenerImpl(System.String,System.Int32)">CreateNetworkListenerImpl(String, Int32)</h4>
   <div class="markdown level1 summary"><p>Platform-specific implementation to create a network listener object.</p>
@@ -309,10 +297,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_NetworkManager_CreateNetworkStream_" data-uid="FellowOakDicom.Network.NetworkManager.CreateNetworkStream*"></a>
-  <h4 id="FellowOakDicom_Network_NetworkManager_CreateNetworkStream_TcpClient_ITlsAcceptor_System_Boolean_" data-uid="FellowOakDicom.Network.NetworkManager.CreateNetworkStream(TcpClient,ITlsAcceptor,System.Boolean)">CreateNetworkStream(TcpClient, ITlsAcceptor, Boolean)</h4>
+  <h4 id="FellowOakDicom_Network_NetworkManager_CreateNetworkStream_System_Net_Sockets_TcpClient_FellowOakDicom_Network_Tls_ITlsAcceptor_System_Boolean_" data-uid="FellowOakDicom.Network.NetworkManager.CreateNetworkStream(System.Net.Sockets.TcpClient,FellowOakDicom.Network.Tls.ITlsAcceptor,System.Boolean)">CreateNetworkStream(TcpClient, ITlsAcceptor, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -330,12 +316,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TcpClient</span></td>
+        <td><span class="xref">System.Net.Sockets.TcpClient</span></td>
         <td><span class="parametername">tcpClient</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ITlsAcceptor</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Tls.ITlsAcceptor.html">ITlsAcceptor</a></td>
         <td><span class="parametername">tlsAcceptor</span></td>
         <td></td>
       </tr>
@@ -361,8 +347,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_NetworkManager_CreateNetworkStreamImpl_" data-uid="FellowOakDicom.Network.NetworkManager.CreateNetworkStreamImpl*"></a>
   <h4 id="FellowOakDicom_Network_NetworkManager_CreateNetworkStreamImpl_FellowOakDicom_Network_NetworkStreamCreationOptions_" data-uid="FellowOakDicom.Network.NetworkManager.CreateNetworkStreamImpl(FellowOakDicom.Network.NetworkStreamCreationOptions)">CreateNetworkStreamImpl(NetworkStreamCreationOptions)</h4>
   <div class="markdown level1 summary"><p>Platform-specific implementation to create a network stream object.</p>
@@ -405,11 +389,10 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_NetworkManager_CreateNetworkStreamImpl_" data-uid="FellowOakDicom.Network.NetworkManager.CreateNetworkStreamImpl*"></a>
-  <h4 id="FellowOakDicom_Network_NetworkManager_CreateNetworkStreamImpl_TcpClient_ITlsAcceptor_System_Boolean_" data-uid="FellowOakDicom.Network.NetworkManager.CreateNetworkStreamImpl(TcpClient,ITlsAcceptor,System.Boolean)">CreateNetworkStreamImpl(TcpClient, ITlsAcceptor, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="FellowOakDicom_Network_NetworkManager_CreateNetworkStreamImpl_System_Net_Sockets_TcpClient_FellowOakDicom_Network_Tls_ITlsAcceptor_System_Boolean_" data-uid="FellowOakDicom.Network.NetworkManager.CreateNetworkStreamImpl(System.Net.Sockets.TcpClient,FellowOakDicom.Network.Tls.ITlsAcceptor,System.Boolean)">CreateNetworkStreamImpl(TcpClient, ITlsAcceptor, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Platform-specific implementation to create a network stream object from an existing <span class="xref">System.Net.Sockets.TcpClient</span></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -426,19 +409,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TcpClient</span></td>
+        <td><span class="xref">System.Net.Sockets.TcpClient</span></td>
         <td><span class="parametername">tcpClient</span></td>
-        <td></td>
+        <td><p>The inbound, connected TCP client</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">ITlsAcceptor</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Tls.ITlsAcceptor.html">ITlsAcceptor</a></td>
         <td><span class="parametername">tlsAcceptor</span></td>
-        <td></td>
+        <td><p>The TLS acceptor responsible for setting up TLS</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">ownsTcpClient</span></td>
-        <td></td>
+        <td><p>Whether or not the network stream owns the TCP client (i.e. the TCP client be disposed when the network stream is disposed)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -453,14 +439,13 @@
     <tbody>
       <tr>
         <td><a class="xref" href="FellowOakDicom.Network.INetworkStream.html">INetworkStream</a></td>
-        <td></td>
+        <td><p>Network stream implementation.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_NetworkManager_IsSocketExceptionImpl_" data-uid="FellowOakDicom.Network.NetworkManager.IsSocketExceptionImpl*"></a>
-  <h4 id="FellowOakDicom_Network_NetworkManager_IsSocketExceptionImpl_Exception_System_Int32__System_String__" data-uid="FellowOakDicom.Network.NetworkManager.IsSocketExceptionImpl(Exception,System.Int32@,System.String@)">IsSocketExceptionImpl(Exception, out Int32, out String)</h4>
+  <h4 id="FellowOakDicom_Network_NetworkManager_IsSocketExceptionImpl_System_Exception_System_Int32__System_String__" data-uid="FellowOakDicom.Network.NetworkManager.IsSocketExceptionImpl(System.Exception,System.Int32@,System.String@)">IsSocketExceptionImpl(Exception, out Int32, out String)</h4>
   <div class="markdown level1 summary"><p>Platform-specific implementation to check whether specified <code data-dev-comment-type="paramref" class="paramref">exception</code> represents a socket exception.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -479,7 +464,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Exception</span></td>
+        <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">exception</span></td>
         <td><p>Exception to validate.</p>
 </td>
@@ -514,8 +499,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_NetworkManager_TryGetNetworkIdentifierImpl_" data-uid="FellowOakDicom.Network.NetworkManager.TryGetNetworkIdentifierImpl*"></a>
   <h4 id="FellowOakDicom_Network_NetworkManager_TryGetNetworkIdentifierImpl_FellowOakDicom_DicomUID__" data-uid="FellowOakDicom.Network.NetworkManager.TryGetNetworkIdentifierImpl(FellowOakDicom.DicomUID@)">TryGetNetworkIdentifierImpl(out DicomUID)</h4>
   <div class="markdown level1 summary"><p>Platform-specific implementation to attempt to obtain a unique network identifier, e.g. based on a MAC address.</p>
@@ -561,8 +544,6 @@
   </table>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_NetworkManager_FellowOakDicom_Network_INetworkManager_CreateNetworkListener_" data-uid="FellowOakDicom.Network.NetworkManager.FellowOakDicom#Network#INetworkManager#CreateNetworkListener*"></a>
   <h4 id="FellowOakDicom_Network_NetworkManager_FellowOakDicom_Network_INetworkManager_CreateNetworkListener_System_String_System_Int32_" data-uid="FellowOakDicom.Network.NetworkManager.FellowOakDicom#Network#INetworkManager#CreateNetworkListener(System.String,System.Int32)">INetworkManager.CreateNetworkListener(String, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -608,8 +589,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_NetworkManager_FellowOakDicom_Network_INetworkManager_CreateNetworkStream_" data-uid="FellowOakDicom.Network.NetworkManager.FellowOakDicom#Network#INetworkManager#CreateNetworkStream*"></a>
   <h4 id="FellowOakDicom_Network_NetworkManager_FellowOakDicom_Network_INetworkManager_CreateNetworkStream_FellowOakDicom_Network_NetworkStreamCreationOptions_" data-uid="FellowOakDicom.Network.NetworkManager.FellowOakDicom#Network#INetworkManager#CreateNetworkStream(FellowOakDicom.Network.NetworkStreamCreationOptions)">INetworkManager.CreateNetworkStream(NetworkStreamCreationOptions)</h4>
   <div class="markdown level1 summary"></div>
@@ -650,10 +629,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_NetworkManager_FellowOakDicom_Network_INetworkManager_IsSocketException_" data-uid="FellowOakDicom.Network.NetworkManager.FellowOakDicom#Network#INetworkManager#IsSocketException*"></a>
-  <h4 id="FellowOakDicom_Network_NetworkManager_FellowOakDicom_Network_INetworkManager_IsSocketException_Exception_System_Int32__System_String__" data-uid="FellowOakDicom.Network.NetworkManager.FellowOakDicom#Network#INetworkManager#IsSocketException(Exception,System.Int32@,System.String@)">INetworkManager.IsSocketException(Exception, out Int32, out String)</h4>
+  <h4 id="FellowOakDicom_Network_NetworkManager_FellowOakDicom_Network_INetworkManager_IsSocketException_System_Exception_System_Int32__System_String__" data-uid="FellowOakDicom.Network.NetworkManager.FellowOakDicom#Network#INetworkManager#IsSocketException(System.Exception,System.Int32@,System.String@)">INetworkManager.IsSocketException(Exception, out Int32, out String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -671,7 +648,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Exception</span></td>
+        <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">exception</span></td>
         <td></td>
       </tr>
@@ -702,8 +679,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_NetworkManager_FellowOakDicom_Network_INetworkManager_MachineName_" data-uid="FellowOakDicom.Network.NetworkManager.FellowOakDicom#Network#INetworkManager#MachineName*"></a>
   <h4 id="FellowOakDicom_Network_NetworkManager_FellowOakDicom_Network_INetworkManager_MachineName" data-uid="FellowOakDicom.Network.NetworkManager.FellowOakDicom#Network#INetworkManager#MachineName">INetworkManager.MachineName</h4>
   <div class="markdown level1 summary"></div>
@@ -727,8 +702,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_NetworkManager_FellowOakDicom_Network_INetworkManager_TryGetNetworkIdentifier_" data-uid="FellowOakDicom.Network.NetworkManager.FellowOakDicom#Network#INetworkManager#TryGetNetworkIdentifier*"></a>
   <h4 id="FellowOakDicom_Network_NetworkManager_FellowOakDicom_Network_INetworkManager_TryGetNetworkIdentifier_FellowOakDicom_DicomUID__" data-uid="FellowOakDicom.Network.NetworkManager.FellowOakDicom#Network#INetworkManager#TryGetNetworkIdentifier(FellowOakDicom.DicomUID@)">INetworkManager.TryGetNetworkIdentifier(out DicomUID)</h4>
   <div class="markdown level1 summary"></div>
@@ -773,15 +746,15 @@
   <div>
       <a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -798,8 +771,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

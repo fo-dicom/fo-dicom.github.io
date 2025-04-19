@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,15 +87,13 @@
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.html">FellowOakDicom.IO</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IO_IByteSource_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IByteSource</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_Endian_" data-uid="FellowOakDicom.IO.IByteSource.Endian*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_Endian" data-uid="FellowOakDicom.IO.IByteSource.Endian">Endian</h4>
   <div class="markdown level1 summary"><p>Gets or sets the endianness.</p>
@@ -120,8 +118,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_IsEOF_" data-uid="FellowOakDicom.IO.IByteSource.IsEOF*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_IsEOF" data-uid="FellowOakDicom.IO.IByteSource.IsEOF">IsEOF</h4>
   <div class="markdown level1 summary"><p>Gets whether end-of-source is reached.</p>
@@ -146,8 +142,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_Position_" data-uid="FellowOakDicom.IO.IByteSource.Position*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_Position" data-uid="FellowOakDicom.IO.IByteSource.Position">Position</h4>
   <div class="markdown level1 summary"><p>Gets the current read position.</p>
@@ -174,8 +168,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetBuffer_" data-uid="FellowOakDicom.IO.IByteSource.GetBuffer*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetBuffer_System_UInt32_" data-uid="FellowOakDicom.IO.IByteSource.GetBuffer(System.UInt32)">GetBuffer(UInt32)</h4>
   <div class="markdown level1 summary"><p>Gets a byte buffer of specified length from the current position and moves to subsequent position.</p>
@@ -213,14 +205,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IByteBuffer</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a></td>
         <td><p>Byte buffer containing the read bytes.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetBufferAsync_" data-uid="FellowOakDicom.IO.IByteSource.GetBufferAsync*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetBufferAsync_System_UInt32_" data-uid="FellowOakDicom.IO.IByteSource.GetBufferAsync(System.UInt32)">GetBufferAsync(UInt32)</h4>
   <div class="markdown level1 summary"><p>Asynchronously gets a byte buffer of specified length from the current position and moves to subsequent position.</p>
@@ -258,14 +248,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">IByteBuffer</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
         <td><p>Awaitable byte buffer containing the read bytes.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetBytes_" data-uid="FellowOakDicom.IO.IByteSource.GetBytes*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetBytes_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.IO.IByteSource.GetBytes(System.Byte[],System.Int32,System.Int32)">GetBytes(Byte[], Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a specified number of bytes from the current position and moves to subsequent position.
@@ -322,8 +310,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetBytes_" data-uid="FellowOakDicom.IO.IByteSource.GetBytes*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetBytes_System_Int32_" data-uid="FellowOakDicom.IO.IByteSource.GetBytes(System.Int32)">GetBytes(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a specified number of bytes from the current position and moves to subsequent position.</p>
@@ -367,8 +353,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetDouble_" data-uid="FellowOakDicom.IO.IByteSource.GetDouble*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetDouble" data-uid="FellowOakDicom.IO.IByteSource.GetDouble">GetDouble()</h4>
   <div class="markdown level1 summary"><p>Gets a double precision floating point value (64 bits) from the current position and moves to subsequent position.</p>
@@ -394,8 +378,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetInt16_" data-uid="FellowOakDicom.IO.IByteSource.GetInt16*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetInt16" data-uid="FellowOakDicom.IO.IByteSource.GetInt16">GetInt16()</h4>
   <div class="markdown level1 summary"><p>Gets a signed short (16 bits) from the current position and moves to subsequent position.</p>
@@ -421,8 +403,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetInt32_" data-uid="FellowOakDicom.IO.IByteSource.GetInt32*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetInt32" data-uid="FellowOakDicom.IO.IByteSource.GetInt32">GetInt32()</h4>
   <div class="markdown level1 summary"><p>Gets a signed integer (32 bits) from the current position and moves to subsequent position.</p>
@@ -448,8 +428,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetInt64_" data-uid="FellowOakDicom.IO.IByteSource.GetInt64*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetInt64" data-uid="FellowOakDicom.IO.IByteSource.GetInt64">GetInt64()</h4>
   <div class="markdown level1 summary"><p>Gets a signed long (64 bits) from the current position and moves to subsequent position.</p>
@@ -475,8 +453,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetSingle_" data-uid="FellowOakDicom.IO.IByteSource.GetSingle*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetSingle" data-uid="FellowOakDicom.IO.IByteSource.GetSingle">GetSingle()</h4>
   <div class="markdown level1 summary"><p>Gets a single precision floating point value (32 bits) from the current position and moves to subsequent position.</p>
@@ -502,8 +478,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetStream_" data-uid="FellowOakDicom.IO.IByteSource.GetStream*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetStream" data-uid="FellowOakDicom.IO.IByteSource.GetStream">GetStream()</h4>
   <div class="markdown level1 summary"><p>Get stream of this byte source.</p>
@@ -523,14 +497,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><p>The stream.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetUInt16_" data-uid="FellowOakDicom.IO.IByteSource.GetUInt16*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetUInt16" data-uid="FellowOakDicom.IO.IByteSource.GetUInt16">GetUInt16()</h4>
   <div class="markdown level1 summary"><p>Gets an unsigned short (16 bits) from the current position and moves to subsequent position.</p>
@@ -556,8 +528,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetUInt32_" data-uid="FellowOakDicom.IO.IByteSource.GetUInt32*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetUInt32" data-uid="FellowOakDicom.IO.IByteSource.GetUInt32">GetUInt32()</h4>
   <div class="markdown level1 summary"><p>Gets an unsigned integer (32 bits) from the current position and moves to subsequent position.</p>
@@ -583,8 +553,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetUInt64_" data-uid="FellowOakDicom.IO.IByteSource.GetUInt64*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetUInt64" data-uid="FellowOakDicom.IO.IByteSource.GetUInt64">GetUInt64()</h4>
   <div class="markdown level1 summary"><p>Gets an unsigned long (64 bits) from the current position and moves to subsequent position.</p>
@@ -610,8 +578,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetUInt8_" data-uid="FellowOakDicom.IO.IByteSource.GetUInt8*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetUInt8" data-uid="FellowOakDicom.IO.IByteSource.GetUInt8">GetUInt8()</h4>
   <div class="markdown level1 summary"><p>Gets one byte from the current position and moves to subsequent position.</p>
@@ -637,8 +603,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GoTo_" data-uid="FellowOakDicom.IO.IByteSource.GoTo*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GoTo_System_Int64_" data-uid="FellowOakDicom.IO.IByteSource.GoTo(System.Int64)">GoTo(Int64)</h4>
   <div class="markdown level1 summary"><p>Sets the current read position to the position <code data-dev-comment-type="paramref" class="paramref">position</code></p>
@@ -666,8 +630,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_Require_" data-uid="FellowOakDicom.IO.IByteSource.Require*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_Require_System_UInt32_" data-uid="FellowOakDicom.IO.IByteSource.Require(System.UInt32)">Require(UInt32)</h4>
   <div class="markdown level1 summary"><p>Verifies that there is a sufficient number of bytes to read.</p>
@@ -711,8 +673,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_Require_" data-uid="FellowOakDicom.IO.IByteSource.Require*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_Require_System_UInt32_FellowOakDicom_IO_ByteSourceCallback_System_Object_" data-uid="FellowOakDicom.IO.IByteSource.Require(System.UInt32,FellowOakDicom.IO.ByteSourceCallback,System.Object)">Require(UInt32, ByteSourceCallback, Object)</h4>
   <div class="markdown level1 summary"><p>Verifies that there is a sufficient number of bytes to read.</p>
@@ -768,8 +728,6 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_Skip_" data-uid="FellowOakDicom.IO.IByteSource.Skip*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_Skip_System_UInt32_" data-uid="FellowOakDicom.IO.IByteSource.Skip(System.UInt32)">Skip(UInt32)</h4>
   <div class="markdown level1 summary"><p>Skip position <code data-dev-comment-type="paramref" class="paramref">count</code> number of bytes.</p>
@@ -797,15 +755,15 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -822,8 +780,8 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

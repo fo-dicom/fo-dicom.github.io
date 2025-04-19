@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -89,108 +89,101 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">EndianBinaryReader</span></div>
+    <div class="level1"><span class="xref">System.IO.BinaryReader</span></div>
+    <div class="level2"><span class="xref">EndianBinaryReader</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IO.BinaryReader.Close()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.FillBuffer(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.PeekChar()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.Read()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.Read(System.Byte[], System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.Read(System.Char[], System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.Read7BitEncodedInt()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.ReadBoolean()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.ReadByte()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.ReadBytes(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.ReadChar()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.ReadChars(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.ReadDecimal()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.ReadSByte()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.ReadString()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryReader.BaseStream</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.html">FellowOakDicom.IO</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IO_EndianBinaryReader_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EndianBinaryReader : BinaryReader</code></pre>
+    <pre><code class="lang-csharp hljs">public class EndianBinaryReader : BinaryReader, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_EndianBinaryReader__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryReader__ctor_Stream_Encoding_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor(Stream,Encoding,FellowOakDicom.IO.Endian,System.Boolean)">EndianBinaryReader(Stream, Encoding, Endian, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryReader.html">EndianBinaryReader</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EndianBinaryReader(Stream input, Encoding encoding, Endian endian, bool leaveOpen)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">input</span></td>
-        <td><p>Stream from which to read.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Encoding</span></td>
-        <td><span class="parametername">encoding</span></td>
-        <td><p>Encoding of the <code data-dev-comment-type="paramref" class="paramref">input</code>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.IO.Endian.html">Endian</a></td>
-        <td><span class="parametername">endian</span></td>
-        <td><p>Endianness of the <code data-dev-comment-type="paramref" class="paramref">input</code>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">leaveOpen</span></td>
-        <td><p><span class="xref">true</span> to leave the stream open after the <span class="xref">EndianBinaryReaderr</span> object is disposed; otherwise, <span class="xref">false</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_EndianBinaryReader__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryReader__ctor_Stream_Encoding_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor(Stream,Encoding,System.Boolean)">EndianBinaryReader(Stream, Encoding, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryReader.html">EndianBinaryReader</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EndianBinaryReader(Stream input, Encoding encoding, bool leaveOpen)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">input</span></td>
-        <td><p>Stream from which to read.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Encoding</span></td>
-        <td><span class="parametername">encoding</span></td>
-        <td><p>Encoding of the <code data-dev-comment-type="paramref" class="paramref">input</code>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">leaveOpen</span></td>
-        <td><p><span class="xref">true</span> to leave the stream open after the <span class="xref">EndianBinaryReaderr</span> object is disposed; otherwise, <span class="xref">false</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_EndianBinaryReader__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryReader__ctor_Stream_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor(Stream,FellowOakDicom.IO.Endian,System.Boolean)">EndianBinaryReader(Stream, Endian, Boolean)</h4>
+  <h4 id="FellowOakDicom_IO_EndianBinaryReader__ctor_System_IO_Stream_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor(System.IO.Stream,FellowOakDicom.IO.Endian,System.Boolean)">EndianBinaryReader(Stream, Endian, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryReader.html">EndianBinaryReader</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -209,7 +202,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">input</span></td>
         <td><p>Stream from which to read.</p>
 </td>
@@ -228,10 +221,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_EndianBinaryReader__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryReader__ctor_Stream_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor(Stream,System.Boolean)">EndianBinaryReader(Stream, Boolean)</h4>
+  <h4 id="FellowOakDicom_IO_EndianBinaryReader__ctor_System_IO_Stream_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor(System.IO.Stream,System.Boolean)">EndianBinaryReader(Stream, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryReader.html">EndianBinaryReader</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -250,7 +241,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">input</span></td>
         <td><p>Stream from which to read.</p>
 </td>
@@ -263,10 +254,92 @@
       </tr>
     </tbody>
   </table>
+  <a id="FellowOakDicom_IO_EndianBinaryReader__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor*"></a>
+  <h4 id="FellowOakDicom_IO_EndianBinaryReader__ctor_System_IO_Stream_System_Text_Encoding_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor(System.IO.Stream,System.Text.Encoding,FellowOakDicom.IO.Endian,System.Boolean)">EndianBinaryReader(Stream, Encoding, Endian, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryReader.html">EndianBinaryReader</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EndianBinaryReader(Stream input, Encoding encoding, Endian endian, bool leaveOpen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>Stream from which to read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Encoding of the <code data-dev-comment-type="paramref" class="paramref">input</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.IO.Endian.html">Endian</a></td>
+        <td><span class="parametername">endian</span></td>
+        <td><p>Endianness of the <code data-dev-comment-type="paramref" class="paramref">input</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p><span class="xref">true</span> to leave the stream open after the <span class="xref">EndianBinaryReaderr</span> object is disposed; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="FellowOakDicom_IO_EndianBinaryReader__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor*"></a>
+  <h4 id="FellowOakDicom_IO_EndianBinaryReader__ctor_System_IO_Stream_System_Text_Encoding_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)">EndianBinaryReader(Stream, Encoding, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryReader.html">EndianBinaryReader</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EndianBinaryReader(Stream input, Encoding encoding, bool leaveOpen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>Stream from which to read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Encoding of the <code data-dev-comment-type="paramref" class="paramref">input</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p><span class="xref">true</span> to leave the stream open after the <span class="xref">EndianBinaryReaderr</span> object is disposed; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_EndianBinaryReader_Endian_" data-uid="FellowOakDicom.IO.EndianBinaryReader.Endian*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryReader_Endian" data-uid="FellowOakDicom.IO.EndianBinaryReader.Endian">Endian</h4>
   <div class="markdown level1 summary"><p>Gets or sets the endianness of the binary reader.</p>
@@ -291,8 +364,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_EndianBinaryReader_UseInternalBuffer_" data-uid="FellowOakDicom.IO.EndianBinaryReader.UseInternalBuffer*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryReader_UseInternalBuffer" data-uid="FellowOakDicom.IO.EndianBinaryReader.UseInternalBuffer">UseInternalBuffer</h4>
   <div class="markdown level1 summary"></div>
@@ -318,10 +389,63 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_EndianBinaryReader_Create_" data-uid="FellowOakDicom.IO.EndianBinaryReader.Create*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryReader_Create_Stream_Encoding_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryReader.Create(Stream,Encoding,FellowOakDicom.IO.Endian,System.Boolean)">Create(Stream, Encoding, Endian, Boolean)</h4>
+  <h4 id="FellowOakDicom_IO_EndianBinaryReader_Create_System_IO_Stream_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryReader.Create(System.IO.Stream,FellowOakDicom.IO.Endian,System.Boolean)">Create(Stream, Endian, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Convenience method for creating a binary reader with requested <code data-dev-comment-type="paramref" class="paramref">endian</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BinaryReader Create(Stream input, Endian endian, bool leaveOpen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>Stream from which to read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.IO.Endian.html">Endian</a></td>
+        <td><span class="parametername">endian</span></td>
+        <td><p>Endianness of the <code data-dev-comment-type="paramref" class="paramref">input</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p><span class="xref">true</span> to leave the stream open after the <span class="xref">EndianBinaryReaderr</span> object is disposed; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><p>Binary reader with requested <code data-dev-comment-type="paramref" class="paramref">endian</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="FellowOakDicom_IO_EndianBinaryReader_Create_" data-uid="FellowOakDicom.IO.EndianBinaryReader.Create*"></a>
+  <h4 id="FellowOakDicom_IO_EndianBinaryReader_Create_System_IO_Stream_System_Text_Encoding_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryReader.Create(System.IO.Stream,System.Text.Encoding,FellowOakDicom.IO.Endian,System.Boolean)">Create(Stream, Encoding, Endian, Boolean)</h4>
   <div class="markdown level1 summary"><p>Convenience method for creating a binary reader with requested <code data-dev-comment-type="paramref" class="paramref">endian</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -340,13 +464,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">input</span></td>
         <td><p>Stream from which to read.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>Encoding of the <code data-dev-comment-type="paramref" class="paramref">input</code>.</p>
 </td>
@@ -375,71 +499,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BinaryReader</span></td>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
         <td><p>Binary reader with requested <code data-dev-comment-type="paramref" class="paramref">endian</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="FellowOakDicom_IO_EndianBinaryReader_Create_" data-uid="FellowOakDicom.IO.EndianBinaryReader.Create*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryReader_Create_Stream_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryReader.Create(Stream,FellowOakDicom.IO.Endian,System.Boolean)">Create(Stream, Endian, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Convenience method for creating a binary reader with requested <code data-dev-comment-type="paramref" class="paramref">endian</code>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BinaryReader Create(Stream input, Endian endian, bool leaveOpen)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">input</span></td>
-        <td><p>Stream from which to read.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.IO.Endian.html">Endian</a></td>
-        <td><span class="parametername">endian</span></td>
-        <td><p>Endianness of the <code data-dev-comment-type="paramref" class="paramref">input</code>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">leaveOpen</span></td>
-        <td><p><span class="xref">true</span> to leave the stream open after the <span class="xref">EndianBinaryReaderr</span> object is disposed; otherwise, <span class="xref">false</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">BinaryReader</span></td>
-        <td><p>Binary reader with requested <code data-dev-comment-type="paramref" class="paramref">endian</code>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="FellowOakDicom_IO_EndianBinaryReader_ReadDouble_" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadDouble*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryReader_ReadDouble" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadDouble">ReadDouble()</h4>
   <div class="markdown level1 summary"></div>
@@ -463,8 +528,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryReader.ReadDouble()</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryReader_ReadInt16_" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadInt16*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryReader_ReadInt16" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadInt16">ReadInt16()</h4>
   <div class="markdown level1 summary"></div>
@@ -488,8 +553,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryReader.ReadInt16()</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryReader_ReadInt32_" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadInt32*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryReader_ReadInt32" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadInt32">ReadInt32()</h4>
   <div class="markdown level1 summary"></div>
@@ -513,8 +578,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryReader.ReadInt32()</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryReader_ReadInt64_" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadInt64*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryReader_ReadInt64" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadInt64">ReadInt64()</h4>
   <div class="markdown level1 summary"></div>
@@ -538,8 +603,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryReader.ReadInt64()</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryReader_ReadSingle_" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadSingle*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryReader_ReadSingle" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadSingle">ReadSingle()</h4>
   <div class="markdown level1 summary"></div>
@@ -563,8 +628,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryReader.ReadSingle()</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryReader_ReadUInt16_" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadUInt16*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryReader_ReadUInt16" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadUInt16">ReadUInt16()</h4>
   <div class="markdown level1 summary"></div>
@@ -588,8 +653,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryReader.ReadUInt16()</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryReader_ReadUInt32_" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadUInt32*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryReader_ReadUInt32" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadUInt32">ReadUInt32()</h4>
   <div class="markdown level1 summary"></div>
@@ -613,8 +678,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryReader.ReadUInt32()</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryReader_ReadUInt64_" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadUInt64*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryReader_ReadUInt64" data-uid="FellowOakDicom.IO.EndianBinaryReader.ReadUInt64">ReadUInt64()</h4>
   <div class="markdown level1 summary"></div>
@@ -638,15 +703,21 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryReader.ReadUInt64()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -663,8 +734,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

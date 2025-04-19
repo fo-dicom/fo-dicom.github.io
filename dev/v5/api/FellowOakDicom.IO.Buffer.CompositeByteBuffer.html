@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -98,16 +98,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -118,17 +112,21 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.Buffer.html">FellowOakDicom.IO.Buffer</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class CompositeByteBuffer : IByteBuffer</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_CompositeByteBuffer__ctor_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.#ctor*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer__ctor_FellowOakDicom_IO_Buffer_IByteBuffer___" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.#ctor(FellowOakDicom.IO.Buffer.IByteBuffer[])">CompositeByteBuffer(IByteBuffer[])</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.Buffer.CompositeByteBuffer.html">CompositeByteBuffer</a> class.</p>
@@ -156,39 +154,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_CompositeByteBuffer__ctor_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer__ctor_IEnumerable_FellowOakDicom_IO_Buffer_IByteBuffer__" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.#ctor(IEnumerable{FellowOakDicom.IO.Buffer.IByteBuffer})">CompositeByteBuffer(IEnumerable&lt;IByteBuffer&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.Buffer.CompositeByteBuffer.html">CompositeByteBuffer</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CompositeByteBuffer(IEnumerable&lt;IByteBuffer&gt; buffers)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
-        <td><span class="parametername">buffers</span></td>
-        <td><p>Collection of buffers to initially constitute the <a class="xref" href="FellowOakDicom.IO.Buffer.CompositeByteBuffer.html">CompositeByteBuffer</a> instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_Buffer_CompositeByteBuffer__ctor_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer__ctor_IMemoryProvider_FellowOakDicom_IO_Buffer_IByteBuffer___" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.#ctor(IMemoryProvider,FellowOakDicom.IO.Buffer.IByteBuffer[])">CompositeByteBuffer(IMemoryProvider, IByteBuffer[])</h4>
+  <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer__ctor_FellowOakDicom_Memory_IMemoryProvider_FellowOakDicom_IO_Buffer_IByteBuffer___" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.#ctor(FellowOakDicom.Memory.IMemoryProvider,FellowOakDicom.IO.Buffer.IByteBuffer[])">CompositeByteBuffer(IMemoryProvider, IByteBuffer[])</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.Buffer.CompositeByteBuffer.html">CompositeByteBuffer</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -207,7 +174,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
+        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
         <td><span class="parametername">memoryProvider</span></td>
         <td><p>The memory provider that will be used to allocate buffers</p>
 </td>
@@ -220,10 +187,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_CompositeByteBuffer__ctor_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer__ctor_IMemoryProvider_IEnumerable_FellowOakDicom_IO_Buffer_IByteBuffer__" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.#ctor(IMemoryProvider,IEnumerable{FellowOakDicom.IO.Buffer.IByteBuffer})">CompositeByteBuffer(IMemoryProvider, IEnumerable&lt;IByteBuffer&gt;)</h4>
+  <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer__ctor_FellowOakDicom_Memory_IMemoryProvider_System_Collections_Generic_IEnumerable_FellowOakDicom_IO_Buffer_IByteBuffer__" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.#ctor(FellowOakDicom.Memory.IMemoryProvider,System.Collections.Generic.IEnumerable{FellowOakDicom.IO.Buffer.IByteBuffer})">CompositeByteBuffer(IMemoryProvider, IEnumerable&lt;IByteBuffer&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.Buffer.CompositeByteBuffer.html">CompositeByteBuffer</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -242,13 +207,40 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
+        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
         <td><span class="parametername">memoryProvider</span></td>
         <td><p>The memory provider that will be used to allocate buffers</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
+        <td><span class="parametername">buffers</span></td>
+        <td><p>Collection of buffers to initially constitute the <a class="xref" href="FellowOakDicom.IO.Buffer.CompositeByteBuffer.html">CompositeByteBuffer</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="FellowOakDicom_IO_Buffer_CompositeByteBuffer__ctor_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.#ctor*"></a>
+  <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer__ctor_System_Collections_Generic_IEnumerable_FellowOakDicom_IO_Buffer_IByteBuffer__" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.#ctor(System.Collections.Generic.IEnumerable{FellowOakDicom.IO.Buffer.IByteBuffer})">CompositeByteBuffer(IEnumerable&lt;IByteBuffer&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.Buffer.CompositeByteBuffer.html">CompositeByteBuffer</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompositeByteBuffer(IEnumerable&lt;IByteBuffer&gt; buffers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
         <td><span class="parametername">buffers</span></td>
         <td><p>Collection of buffers to initially constitute the <a class="xref" href="FellowOakDicom.IO.Buffer.CompositeByteBuffer.html">CompositeByteBuffer</a> instance.</p>
 </td>
@@ -257,8 +249,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_Buffers_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.Buffers*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_Buffers" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.Buffers">Buffers</h4>
   <div class="markdown level1 summary"><p>Gets the collection of <a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a> constituting the <a class="xref" href="FellowOakDicom.IO.Buffer.CompositeByteBuffer.html">CompositeByteBuffer</a>.</p>
@@ -278,13 +268,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IList</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_Data_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.Data*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_Data" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.Data">Data</h4>
   <div class="markdown level1 summary"><p>Gets the data.</p>
@@ -309,8 +297,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_IsMemory_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.IsMemory*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_IsMemory" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.IsMemory">IsMemory</h4>
   <div class="markdown level1 summary"><p>Gets whether data is buffered in memory or not.</p>
@@ -335,8 +321,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_Size_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.Size*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_Size" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.Size">Size</h4>
   <div class="markdown level1 summary"><p>Gets the size of the buffered data.</p>
@@ -363,10 +347,8 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_CopyToStream_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.CopyToStream*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_CopyToStream_Stream_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.CopyToStream(Stream)">CopyToStream(Stream)</h4>
+  <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_CopyToStream_System_IO_Stream_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.CopyToStream(System.IO.Stream)">CopyToStream(Stream)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -384,16 +366,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_CopyToStreamAsync_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.CopyToStreamAsync*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_CopyToStreamAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.CopyToStreamAsync(Stream,CancellationToken)">CopyToStreamAsync(Stream, CancellationToken)</h4>
+  <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_CopyToStreamAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.CopyToStreamAsync(System.IO.Stream,System.Threading.CancellationToken)">CopyToStreamAsync(Stream, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -411,12 +391,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td></td>
       </tr>
@@ -432,13 +412,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_GetByteRange_" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.GetByteRange*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_CompositeByteBuffer_GetByteRange_System_Int64_System_Int32_System_Byte___" data-uid="FellowOakDicom.IO.Buffer.CompositeByteBuffer.GetByteRange(System.Int64,System.Int32,System.Byte[])">GetByteRange(Int64, Int32, Byte[])</h4>
   <div class="markdown level1 summary"><p>Gets a subset of the data and fills it in the provided output buffer</p>
@@ -482,15 +460,18 @@
   <div>
       <a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.IO.Buffer.ByteBufferExtensions.html#FellowOakDicom_IO_Buffer_ByteBufferExtensions_Enumerate__1_FellowOakDicom_IO_Buffer_IByteBuffer_">ByteBufferExtensions.Enumerate&lt;T&gt;(IByteBuffer)</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -507,8 +488,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

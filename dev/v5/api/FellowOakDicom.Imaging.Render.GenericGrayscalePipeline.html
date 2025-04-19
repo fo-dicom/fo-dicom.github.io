@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -98,16 +98,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -118,17 +112,21 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.Render.html">FellowOakDicom.Imaging.Render</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class GenericGrayscalePipeline : IPipeline</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline__ctor_" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.#ctor*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline__ctor_FellowOakDicom_Imaging_GrayscaleRenderOptions_" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.#ctor(FellowOakDicom.Imaging.GrayscaleRenderOptions)">GenericGrayscalePipeline(GrayscaleRenderOptions)</h4>
   <div class="markdown level1 summary"><p>Initialize new instance of <a class="xref" href="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.html">GenericGrayscalePipeline</a> which consist of the following sequence
@@ -159,8 +157,6 @@ Rescale (Modality) LUT -&gt; VOI LUT -&gt; Output LUT and optionally Invert LUT 
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_GrayscaleColorMap_" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.GrayscaleColorMap*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_GrayscaleColorMap" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.GrayscaleColorMap">GrayscaleColorMap</h4>
   <div class="markdown level1 summary"></div>
@@ -184,8 +180,6 @@ Rescale (Modality) LUT -&gt; VOI LUT -&gt; Output LUT and optionally Invert LUT 
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_Invert_" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.Invert*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_Invert" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.Invert">Invert</h4>
   <div class="markdown level1 summary"></div>
@@ -209,8 +203,6 @@ Rescale (Modality) LUT -&gt; VOI LUT -&gt; Output LUT and optionally Invert LUT 
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_LUT_" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.LUT*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_LUT" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.LUT">LUT</h4>
   <div class="markdown level1 summary"><p>Get <a class="xref" href="FellowOakDicom.Imaging.LUT.CompositeLUT.html">CompositeLUT</a> of LUTs available in this pipeline instance</p>
@@ -230,13 +222,11 @@ Rescale (Modality) LUT -&gt; VOI LUT -&gt; Output LUT and optionally Invert LUT 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILUT</span></td>
+        <td><a class="xref" href="FellowOakDicom.Imaging.LUT.ILUT.html">ILUT</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_UseVOILUT_" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.UseVOILUT*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_UseVOILUT" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.UseVOILUT">UseVOILUT</h4>
   <div class="markdown level1 summary"></div>
@@ -260,8 +250,6 @@ Rescale (Modality) LUT -&gt; VOI LUT -&gt; Output LUT and optionally Invert LUT 
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_WindowCenter_" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.WindowCenter*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_WindowCenter" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.WindowCenter">WindowCenter</h4>
   <div class="markdown level1 summary"></div>
@@ -285,8 +273,6 @@ Rescale (Modality) LUT -&gt; VOI LUT -&gt; Output LUT and optionally Invert LUT 
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_WindowWidth_" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.WindowWidth*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_WindowWidth" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.WindowWidth">WindowWidth</h4>
   <div class="markdown level1 summary"></div>
@@ -312,8 +298,6 @@ Rescale (Modality) LUT -&gt; VOI LUT -&gt; Output LUT and optionally Invert LUT 
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_ClearCache_" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.ClearCache*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GenericGrayscalePipeline_ClearCache" data-uid="FellowOakDicom.Imaging.Render.GenericGrayscalePipeline.ClearCache">ClearCache()</h4>
   <div class="markdown level1 summary"><p>Remove all cached data and only keep configuration data, to reduce memory consumption</p>
@@ -327,15 +311,15 @@ Rescale (Modality) LUT -&gt; VOI LUT -&gt; Output LUT and optionally Invert LUT 
   <div>
       <a class="xref" href="FellowOakDicom.Imaging.Render.IPipeline.html">IPipeline</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -352,8 +336,8 @@ Rescale (Modality) LUT -&gt; VOI LUT -&gt; Output LUT and optionally Invert LUT 
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

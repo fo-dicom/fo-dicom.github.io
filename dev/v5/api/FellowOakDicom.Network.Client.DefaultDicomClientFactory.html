@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -97,16 +97,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -117,19 +111,23 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Client.html">FellowOakDicom.Network.Client</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class DefaultDicomClientFactory : IDicomClientFactory</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_IOptions_FellowOakDicom_Network_Client_DicomClientOptions__IOptions_FellowOakDicom_Network_DicomServiceOptions__ILoggerFactory_IAdvancedDicomClientConnectionFactory_IServiceProvider_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor(IOptions{FellowOakDicom.Network.Client.DicomClientOptions},IOptions{FellowOakDicom.Network.DicomServiceOptions},ILoggerFactory,IAdvancedDicomClientConnectionFactory,IServiceProvider)">DefaultDicomClientFactory(IOptions&lt;DicomClientOptions&gt;, IOptions&lt;DicomServiceOptions&gt;, ILoggerFactory, IAdvancedDicomClientConnectionFactory, IServiceProvider)</h4>
+  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_Microsoft_Extensions_Options_IOptions_FellowOakDicom_Network_Client_DicomClientOptions__Microsoft_Extensions_Options_IOptions_FellowOakDicom_Network_DicomServiceOptions__Microsoft_Extensions_Logging_ILoggerFactory_FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnectionFactory_System_IServiceProvider_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor(Microsoft.Extensions.Options.IOptions{FellowOakDicom.Network.Client.DicomClientOptions},Microsoft.Extensions.Options.IOptions{FellowOakDicom.Network.DicomServiceOptions},Microsoft.Extensions.Logging.ILoggerFactory,FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionFactory,System.IServiceProvider)">DefaultDicomClientFactory(IOptions&lt;DicomClientOptions&gt;, IOptions&lt;DicomServiceOptions&gt;, ILoggerFactory, IAdvancedDicomClientConnectionFactory, IServiceProvider)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -147,27 +145,27 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="FellowOakDicom.Network.Client.DicomClientOptions.html">DicomClientOptions</a>&gt;</td>
+        <td><span class="xref">Microsoft.Extensions.Options.IOptions</span>&lt;<a class="xref" href="FellowOakDicom.Network.Client.DicomClientOptions.html">DicomClientOptions</a>&gt;</td>
         <td><span class="parametername">defaultClientOptions</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a>&gt;</td>
+        <td><span class="xref">Microsoft.Extensions.Options.IOptions</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a>&gt;</td>
         <td><span class="parametername">defaultServiceOptions</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILoggerFactory</span></td>
         <td><span class="parametername">loggerFactory</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IAdvancedDicomClientConnectionFactory</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionFactory.html">IAdvancedDicomClientConnectionFactory</a></td>
         <td><span class="parametername">advancedDicomClientConnectionFactory</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IServiceProvider</span></td>
+        <td><span class="xref">System.IServiceProvider</span></td>
         <td><span class="parametername">serviceProvider</span></td>
         <td></td>
       </tr>
@@ -175,10 +173,8 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_System_String_System_Int32_ITlsInitiator_System_String_System_String_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create(System.String,System.Int32,ITlsInitiator,System.String,System.String)">Create(String, Int32, ITlsInitiator, String, String)</h4>
+  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_System_String_System_Int32_FellowOakDicom_Network_Tls_ITlsInitiator_System_String_System_String_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create(System.String,System.Int32,FellowOakDicom.Network.Tls.ITlsInitiator,System.String,System.String)">Create(String, Int32, ITlsInitiator, String, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -206,7 +202,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ITlsInitiator</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Tls.ITlsInitiator.html">ITlsInitiator</a></td>
         <td><span class="parametername">tlsInitiator</span></td>
         <td></td>
       </tr>
@@ -237,8 +233,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create*"></a>
   <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_System_String_System_Int32_System_Boolean_System_String_System_String_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create(System.String,System.Int32,System.Boolean,System.String,System.String)">Create(String, Int32, Boolean, String, String)</h4>
   <div class="markdown level1 summary"></div>
@@ -303,15 +297,15 @@
   <div>
       <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientFactory.html">IDicomClientFactory</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -328,8 +322,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

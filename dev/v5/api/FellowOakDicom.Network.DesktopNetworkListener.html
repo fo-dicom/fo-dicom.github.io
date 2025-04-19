@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -98,16 +98,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -118,19 +112,23 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DesktopNetworkListener_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class DesktopNetworkListener : INetworkListener</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DesktopNetworkListener_AcceptTcpClientAsync_" data-uid="FellowOakDicom.Network.DesktopNetworkListener.AcceptTcpClientAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DesktopNetworkListener_AcceptTcpClientAsync_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__ILogger_CancellationToken_" data-uid="FellowOakDicom.Network.DesktopNetworkListener.AcceptTcpClientAsync(System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},ILogger,CancellationToken)">AcceptTcpClientAsync(Boolean, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, ILogger, CancellationToken)</h4>
+  <h4 id="FellowOakDicom_Network_DesktopNetworkListener_AcceptTcpClientAsync_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__Microsoft_Extensions_Logging_ILogger_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.DesktopNetworkListener.AcceptTcpClientAsync(System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},Microsoft.Extensions.Logging.ILogger,System.Threading.CancellationToken)">AcceptTcpClientAsync(Boolean, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, ILogger, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Wait until a TCP client is trying to connect, and return the accepted TCP client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -167,13 +165,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td><span class="parametername">logger</span></td>
         <td><p>The logger</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">token</span></td>
         <td><p>Cancellation token.</p>
 </td>
@@ -190,14 +188,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">TcpClient</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Sockets.TcpClient</span>&gt;</td>
         <td><p>Connected network stream.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DesktopNetworkListener_StartAsync_" data-uid="FellowOakDicom.Network.DesktopNetworkListener.StartAsync*"></a>
   <h4 id="FellowOakDicom_Network_DesktopNetworkListener_StartAsync" data-uid="FellowOakDicom.Network.DesktopNetworkListener.StartAsync">StartAsync()</h4>
   <div class="markdown level1 summary"><p>Start listening.</p>
@@ -217,14 +213,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>An awaitable <span class="xref">System.Threading.Tasks.Task</span>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DesktopNetworkListener_Stop_" data-uid="FellowOakDicom.Network.DesktopNetworkListener.Stop*"></a>
   <h4 id="FellowOakDicom_Network_DesktopNetworkListener_Stop" data-uid="FellowOakDicom.Network.DesktopNetworkListener.Stop">Stop()</h4>
   <div class="markdown level1 summary"><p>Stop listening.</p>
@@ -238,15 +232,15 @@
   <div>
       <a class="xref" href="FellowOakDicom.Network.INetworkListener.html">INetworkListener</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -263,8 +257,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

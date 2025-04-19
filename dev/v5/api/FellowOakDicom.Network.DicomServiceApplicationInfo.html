@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -99,16 +99,40 @@ details on the Service Class Application Information field.</p>
       <div class="level2"><a class="xref" href="FellowOakDicom.Network.DicomCMoveApplicationInfo.html">DicomCMoveApplicationInfo</a></div>
       <div class="level2"><a class="xref" href="FellowOakDicom.Network.DicomCStoreApplicationInfo.html">DicomCStoreApplicationInfo</a></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<span class="xref">System.Byte</span>, <span class="xref">System.Byte</span>&gt;&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomServiceApplicationInfo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomServiceApplicationInfo : IEnumerable&lt;KeyValuePair&lt;byte, byte&gt;&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class DicomServiceApplicationInfo : IEnumerable&lt;KeyValuePair&lt;byte, byte&gt;&gt;, IEnumerable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo__ctor_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo__ctor" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.#ctor">DicomServiceApplicationInfo()</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.Network.DicomServiceApplicationInfo.html">DicomServiceApplicationInfo</a> class.</p>
@@ -118,8 +142,6 @@ details on the Service Class Application Information field.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DicomServiceApplicationInfo()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo__ctor_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo__ctor_System_Byte___" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.#ctor(System.Byte[])">DicomServiceApplicationInfo(Byte[])</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.Network.DicomServiceApplicationInfo.html">DicomServiceApplicationInfo</a> class.</p>
@@ -149,8 +171,6 @@ details on the Service Class Application Information field.</p>
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_Count_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.Count*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_Count" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.Count">Count</h4>
   <div class="markdown level1 summary"><p>Gets the number of fields contained in the <a class="xref" href="FellowOakDicom.Network.DicomServiceApplicationInfo.html">DicomServiceApplicationInfo</a>.</p>
@@ -175,8 +195,6 @@ details on the Service Class Application Information field.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_Item_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.Item*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_Item_System_Byte_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.Item(System.Byte)">Item[Byte]</h4>
   <div class="markdown level1 summary"><p>Gets the byte value for given <code data-dev-comment-type="paramref" class="paramref">index</code>.</p>
@@ -236,8 +254,6 @@ details on the Service Class Application Information field.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_OnCreateApplicationInfo_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.OnCreateApplicationInfo*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_OnCreateApplicationInfo" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.OnCreateApplicationInfo">OnCreateApplicationInfo</h4>
   <div class="markdown level1 summary"><p>A delegate to be executed when the application info is created.</p>
@@ -264,8 +280,6 @@ details on the Service Class Application Information field.</p>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_Add_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.Add*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_Add_System_Byte_System_Byte_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.Add(System.Byte,System.Byte)">Add(Byte, Byte)</h4>
   <div class="markdown level1 summary"><p>Add a single application info field value given by index and value.</p>
@@ -315,8 +329,6 @@ details on the Service Class Application Information field.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_AddOrUpdate_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.AddOrUpdate*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_AddOrUpdate_System_Byte_System_Boolean_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.AddOrUpdate(System.Byte,System.Boolean)">AddOrUpdate(Byte, Boolean)</h4>
   <div class="markdown level1 summary"><p>Add or update a single application info field value given by index and value.</p>
@@ -366,8 +378,6 @@ details on the Service Class Application Information field.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_AddOrUpdate_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.AddOrUpdate*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_AddOrUpdate_System_Byte_System_Byte_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.AddOrUpdate(System.Byte,System.Byte)">AddOrUpdate(Byte, Byte)</h4>
   <div class="markdown level1 summary"><p>Add or update a single application info field value given by index and value.</p>
@@ -417,8 +427,6 @@ details on the Service Class Application Information field.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_Contains_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.Contains*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_Contains_System_Byte_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.Contains(System.Byte)">Contains(Byte)</h4>
   <div class="markdown level1 summary"><p>Determines whether the Service Class Application Info
@@ -463,8 +471,6 @@ contains a field with the specified index.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_Create_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.Create*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_Create_FellowOakDicom_DicomUID_System_Byte___" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.Create(FellowOakDicom.DicomUID,System.Byte[])">Create(DicomUID, Byte[])</h4>
   <div class="markdown level1 summary"><p>A factory method to initialize a new application information class based on the provided sop class.</p>
@@ -514,8 +520,6 @@ contains a field with the specified index.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_GetEnumerator_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.GetEnumerator*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_GetEnumerator" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.GetEnumerator">GetEnumerator()</h4>
   <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the Application Info fields.</p>
@@ -535,14 +539,12 @@ contains a field with the specified index.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerator</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.Byte</span>, <span class="xref">System.Byte</span>&gt;&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<span class="xref">System.Byte</span>, <span class="xref">System.Byte</span>&gt;&gt;</td>
         <td><p>Enumerator for the Application Info fields.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_GetValue_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.GetValue*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_GetValue_System_Byte_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.GetValue(System.Byte)">GetValue(Byte)</h4>
   <div class="markdown level1 summary"><p>Get the application info field value.</p>
@@ -586,8 +588,6 @@ contains a field with the specified index.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_GetValueAsBoolean_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.GetValueAsBoolean*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_GetValueAsBoolean_System_Byte_System_Boolean_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.GetValueAsBoolean(System.Byte,System.Boolean)">GetValueAsBoolean(Byte, Boolean)</h4>
   <div class="markdown level1 summary"><p>Get the application info field value as <pre><code>bool</code></pre>.</p>
@@ -637,8 +637,6 @@ contains a field with the specified index.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_GetValueForEnum_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.GetValueForEnum*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_GetValueForEnum__1_System_Byte_System_Byte_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.GetValueForEnum``1(System.Byte,System.Byte)">GetValueForEnum&lt;T&gt;(Byte, Byte)</h4>
   <div class="markdown level1 summary"><p>Get the application info field value for <code>enum</code> of type T.</p>
@@ -720,8 +718,6 @@ contains a field with the specified index.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_GetValues_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.GetValues*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_GetValues" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.GetValues">GetValues()</h4>
   <div class="markdown level1 summary"><p>Get the raw Service Class Application Information field.</p>
@@ -747,8 +743,6 @@ contains a field with the specified index.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_Remove_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.Remove*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_Remove_System_Byte_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.Remove(System.Byte)">Remove(Byte)</h4>
   <div class="markdown level1 summary"><p>Removes the field with the specified index from the Service Class Application Info.</p>
@@ -792,8 +786,6 @@ contains a field with the specified index.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_ToString_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.ToString*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_ToString" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
@@ -819,15 +811,57 @@ contains a field with the specified index.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <a id="FellowOakDicom_Network_DicomServiceApplicationInfo_System_Collections_IEnumerable_GetEnumerator_" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="FellowOakDicom_Network_DicomServiceApplicationInfo_System_Collections_IEnumerable_GetEnumerator" data-uid="FellowOakDicom.Network.DicomServiceApplicationInfo.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the Application Info fields.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><p>Enumerator for the Application Info fields.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.EnumerableExtensions.html#FellowOakDicom_EnumerableExtensions_Each__1_System_Collections_Generic_IEnumerable___0__System_Action___0__">EnumerableExtensions.Each&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_Diff__2_System_Collections_Generic_IEnumerable___0__System_Func___0___0___1__">LinqExtensions.Diff&lt;S, T&gt;(IEnumerable&lt;S&gt;, Func&lt;S, S, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -844,8 +878,8 @@ contains a field with the specified index.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

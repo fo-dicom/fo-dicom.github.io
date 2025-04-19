@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -93,16 +93,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -113,19 +107,23 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomServerFactory_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class DicomServerFactory</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomServerFactory_Create_" data-uid="FellowOakDicom.Network.DicomServerFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_DicomServerFactory_Create__1_System_Int32_ITlsAcceptor_Encoding_ILogger_System_Object_Action_FellowOakDicom_Network_DicomServerOptions__" data-uid="FellowOakDicom.Network.DicomServerFactory.Create``1(System.Int32,ITlsAcceptor,Encoding,ILogger,System.Object,Action{FellowOakDicom.Network.DicomServerOptions})">Create&lt;T&gt;(Int32, ITlsAcceptor, Encoding, ILogger, Object, Action&lt;DicomServerOptions&gt;)</h4>
+  <h4 id="FellowOakDicom_Network_DicomServerFactory_Create__1_System_Int32_FellowOakDicom_Network_Tls_ITlsAcceptor_System_Text_Encoding_Microsoft_Extensions_Logging_ILogger_System_Object_System_Action_FellowOakDicom_Network_DicomServerOptions__" data-uid="FellowOakDicom.Network.DicomServerFactory.Create``1(System.Int32,FellowOakDicom.Network.Tls.ITlsAcceptor,System.Text.Encoding,Microsoft.Extensions.Logging.ILogger,System.Object,System.Action{FellowOakDicom.Network.DicomServerOptions})">Create&lt;T&gt;(Int32, ITlsAcceptor, Encoding, ILogger, Object, Action&lt;DicomServerOptions&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a DICOM server object out of DI-container.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -151,19 +149,19 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ITlsAcceptor</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Tls.ITlsAcceptor.html">ITlsAcceptor</a></td>
         <td><span class="parametername">tlsAcceptor</span></td>
         <td><p>Handler to accept authenticated connections.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">fallbackEncoding</span></td>
         <td><p>Fallback encoding.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td><span class="parametername">logger</span></td>
         <td><p>Logger, if null default logger will be applied.</p>
 </td>
@@ -175,7 +173,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a>&gt;</td>
         <td><span class="parametername">configure</span></td>
         <td><p>Configures the service options of the newly created DICOM server</p>
 </td>
@@ -214,10 +212,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServerFactory_Create_" data-uid="FellowOakDicom.Network.DicomServerFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_DicomServerFactory_Create__1_System_String_System_Int32_ITlsAcceptor_Encoding_ILogger_System_Object_Action_FellowOakDicom_Network_DicomServerOptions__" data-uid="FellowOakDicom.Network.DicomServerFactory.Create``1(System.String,System.Int32,ITlsAcceptor,Encoding,ILogger,System.Object,Action{FellowOakDicom.Network.DicomServerOptions})">Create&lt;T&gt;(String, Int32, ITlsAcceptor, Encoding, ILogger, Object, Action&lt;DicomServerOptions&gt;)</h4>
+  <h4 id="FellowOakDicom_Network_DicomServerFactory_Create__1_System_String_System_Int32_FellowOakDicom_Network_Tls_ITlsAcceptor_System_Text_Encoding_Microsoft_Extensions_Logging_ILogger_System_Object_System_Action_FellowOakDicom_Network_DicomServerOptions__" data-uid="FellowOakDicom.Network.DicomServerFactory.Create``1(System.String,System.Int32,FellowOakDicom.Network.Tls.ITlsAcceptor,System.Text.Encoding,Microsoft.Extensions.Logging.ILogger,System.Object,System.Action{FellowOakDicom.Network.DicomServerOptions})">Create&lt;T&gt;(String, Int32, ITlsAcceptor, Encoding, ILogger, Object, Action&lt;DicomServerOptions&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a DICOM server object out of DI-container.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -249,19 +245,19 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ITlsAcceptor</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Tls.ITlsAcceptor.html">ITlsAcceptor</a></td>
         <td><span class="parametername">tlsAcceptor</span></td>
         <td><p>Handler to accept authenticated connections.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">fallbackEncoding</span></td>
         <td><p>Fallback encoding.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td><span class="parametername">logger</span></td>
         <td><p>Logger, if null default logger will be applied.</p>
 </td>
@@ -273,7 +269,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a>&gt;</td>
         <td><span class="parametername">configure</span></td>
         <td><p>Configures the service options of the newly created DICOM server</p>
 </td>
@@ -312,10 +308,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServerFactory_Create_" data-uid="FellowOakDicom.Network.DicomServerFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_DicomServerFactory_Create__2_System_String_System_Int32_System_Object_ITlsAcceptor_Encoding_ILogger_Action_FellowOakDicom_Network_DicomServerOptions__" data-uid="FellowOakDicom.Network.DicomServerFactory.Create``2(System.String,System.Int32,System.Object,ITlsAcceptor,Encoding,ILogger,Action{FellowOakDicom.Network.DicomServerOptions})">Create&lt;T, TServer&gt;(String, Int32, Object, ITlsAcceptor, Encoding, ILogger, Action&lt;DicomServerOptions&gt;)</h4>
+  <h4 id="FellowOakDicom_Network_DicomServerFactory_Create__2_System_String_System_Int32_System_Object_FellowOakDicom_Network_Tls_ITlsAcceptor_System_Text_Encoding_Microsoft_Extensions_Logging_ILogger_System_Action_FellowOakDicom_Network_DicomServerOptions__" data-uid="FellowOakDicom.Network.DicomServerFactory.Create``2(System.String,System.Int32,System.Object,FellowOakDicom.Network.Tls.ITlsAcceptor,System.Text.Encoding,Microsoft.Extensions.Logging.ILogger,System.Action{FellowOakDicom.Network.DicomServerOptions})">Create&lt;T, TServer&gt;(String, Int32, Object, ITlsAcceptor, Encoding, ILogger, Action&lt;DicomServerOptions&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a DICOM server object out of DI-container.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -353,25 +347,25 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ITlsAcceptor</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Tls.ITlsAcceptor.html">ITlsAcceptor</a></td>
         <td><span class="parametername">tlsAcceptor</span></td>
         <td><p>Handler to accept authenticated connections.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">fallbackEncoding</span></td>
         <td><p>Fallback encoding.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td><span class="parametername">logger</span></td>
         <td><p>Logger, if null default logger will be applied.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a>&gt;</td>
         <td><span class="parametername">configure</span></td>
         <td><p>Configures the service options of the newly created DICOM server</p>
 </td>
@@ -420,10 +414,6 @@
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -440,8 +430,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

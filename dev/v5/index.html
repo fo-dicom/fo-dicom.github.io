@@ -10,7 +10,7 @@
     <meta name="title" content="Documentation for fo-dicom version 5 | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
     <link rel="stylesheet" href="styles/docfx.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="index.html">
-                <img id="logo" class="svg" src="logo.svg" alt="">
+                <img id="logo" class="svg" src="images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,15 +73,17 @@
 <h1 id="documentation-for-fo-dicom-version-5">Documentation for fo-dicom version 5</h1>
 
 <p>Fellow Oak DICOM, a DICOM toolkit in C# for all .NET Standard 2.0 compatible frameworks.</p>
-<p><em>Note</em>:
-<code>fo-dicom 5</code> is the first version based on .NET Standard 2.0, earlier versions are available targeting Portable Class Library (PCL), NetFramework, Xamarin, Mono, Unity or NetCore instead.
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>fo-dicom 5</code> is the first version based on .NET Standard 2.0, earlier versions are available targeting Portable Class Library (PCL), NetFramework, Xamarin, Mono, Unity or NetCore instead.
 If you still need to rely on PCL or on one of the other listed frameworks, check the latest <code>fo-dicom 4.x</code> release and the respective documentation.</p>
+</div>
 <h2 id="main-features">Main features</h2>
 <ul>
 <li>Targets .NET Standard 2.0 and will work on all platform supporting that standard</li>
-<li>DICOM dictionary version 2021b</li>
+<li>DICOM dictionary version 2025a</li>
 <li>High-performance, fully asynchronous async/await API</li>
-<li>JPEG (including lossless), JPEG-LS, JPEG2000, and RLE image compression (via additional package)</li>
+<li>JPEG (including lossless), JPEG-LS, JPEG2000, HTJPEG2000, and RLE image compression (via additional package)</li>
 <li>Supports very large datasets with content loading on demand</li>
 <li>Image rendering to <code>System.Drawing.Bitmap</code> or <code>SixLabors.ImageSharp</code></li>
 <li>JSON and XML import and export</li>
@@ -93,7 +95,7 @@ If you still need to rely on PCL or on one of the other listed frameworks, check
 <p>The newest <code>fo-dicom</code> release binaries can be obtained from <a href="https://www.nuget.org/packages/fo-dicom">NuGet</a>.
 This package references the core <em>fo-dicom</em> assemblies for all Microsoft and Xamarin platforms.</p>
 <h2 id="nuget-packages">NuGet Packages</h2>
-<table>
+<table class="table">
 <thead>
 <tr>
 <th>Package</th>
@@ -111,11 +113,11 @@ This package references the core <em>fo-dicom</em> assemblies for all Microsoft 
 </tr>
 <tr>
 <td><a href="https://www.nuget.org/packages/fo-dicom.Imaging.ImageSharp/">fo-dicom.Imaging.ImageSharp</a></td>
-<td>Library with reference to ImageSharp, can be used for platform independent rendering</td>
+<td>Library with reference to ImageSharp 3, can be used for platform independent rendering</td>
 </tr>
 <tr>
-<td><a href="https://www.nuget.org/packages/fo-dicom.NLog/">fo-dicom.NLog</a></td>
-<td>.NET connector to enable <code>fo-dicom</code> logging with NLog</td>
+<td><a href="https://www.nuget.org/packages/fo-dicom.Imaging.ImageSharp.Netstandard/">fo-dicom.Imaging.ImageSharp.Netstandard</a></td>
+<td>Library with reference to ImageSharp 2, can be used for platform independent rendering</td>
 </tr>
 <tr>
 <td><a href="https://www.nuget.org/packages/fo-dicom.Codecs/">fo-dicom.Codecs</a></td>
@@ -128,13 +130,6 @@ This package references the core <em>fo-dicom</em> assemblies for all Microsoft 
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/fo-dicom/fo-dicom/blob/development/Documentation/v5/index.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -151,8 +146,8 @@ This package references the core <em>fo-dicom</em> assemblies for all Microsoft 
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

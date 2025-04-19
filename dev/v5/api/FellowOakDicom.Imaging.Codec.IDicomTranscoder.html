@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,15 +87,13 @@
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.Codec.html">FellowOakDicom.Imaging.Codec</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IDicomTranscoder</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_InputCodecParams_" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.InputCodecParams*"></a>
   <h4 id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_InputCodecParams" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.InputCodecParams">InputCodecParams</h4>
   <div class="markdown level1 summary"><p>Gets the parameters associated with the input codec.</p>
@@ -120,8 +118,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_InputSyntax_" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.InputSyntax*"></a>
   <h4 id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_InputSyntax" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.InputSyntax">InputSyntax</h4>
   <div class="markdown level1 summary"><p>Gets the transfer syntax of the input codec.</p>
@@ -146,8 +142,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_OutputCodecParams_" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.OutputCodecParams*"></a>
   <h4 id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_OutputCodecParams" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.OutputCodecParams">OutputCodecParams</h4>
   <div class="markdown level1 summary"><p>Gets the parameters associated with the output codec.</p>
@@ -172,8 +166,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_OutputSyntax_" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.OutputSyntax*"></a>
   <h4 id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_OutputSyntax" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.OutputSyntax">OutputSyntax</h4>
   <div class="markdown level1 summary"><p>Gets the transfer syntax of the output codec.</p>
@@ -200,8 +192,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_DecodeFrame_" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.DecodeFrame*"></a>
   <h4 id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_DecodeFrame_FellowOakDicom_DicomDataset_System_Int32_" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.DecodeFrame(FellowOakDicom.DicomDataset,System.Int32)">DecodeFrame(DicomDataset, Int32)</h4>
   <div class="markdown level1 summary"><p>Decompress single frame from DICOM dataset and return uncompressed frame buffer.</p>
@@ -245,14 +235,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IByteBuffer</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a></td>
         <td><p>Uncompressed frame buffer.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_DecodePixelData_" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.DecodePixelData*"></a>
   <h4 id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_DecodePixelData_FellowOakDicom_DicomDataset_System_Int32_" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.DecodePixelData(FellowOakDicom.DicomDataset,System.Int32)">DecodePixelData(DicomDataset, Int32)</h4>
   <div class="markdown level1 summary"><p>Decompress pixel data from DICOM dataset and return uncompressed pixel data.</p>
@@ -296,14 +284,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IPixelData</span></td>
+        <td><a class="xref" href="FellowOakDicom.Imaging.Render.IPixelData.html">IPixelData</a></td>
         <td><p>Uncompressed pixel data.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_Transcode_" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.Transcode*"></a>
   <h4 id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_Transcode_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.Transcode(FellowOakDicom.DicomDataset)">Transcode(DicomDataset)</h4>
   <div class="markdown level1 summary"><p>Transcode a <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a> from <a class="xref" href="FellowOakDicom.Imaging.Codec.IDicomTranscoder.html#FellowOakDicom_Imaging_Codec_IDicomTranscoder_InputSyntax">InputSyntax</a> to <a class="xref" href="FellowOakDicom.Imaging.Codec.IDicomTranscoder.html#FellowOakDicom_Imaging_Codec_IDicomTranscoder_OutputSyntax">OutputSyntax</a>.</p>
@@ -347,8 +333,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_Transcode_" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.Transcode*"></a>
   <h4 id="FellowOakDicom_Imaging_Codec_IDicomTranscoder_Transcode_FellowOakDicom_DicomFile_" data-uid="FellowOakDicom.Imaging.Codec.IDicomTranscoder.Transcode(FellowOakDicom.DicomFile)">Transcode(DicomFile)</h4>
   <div class="markdown level1 summary"><p>Transcode a <a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a> from <a class="xref" href="FellowOakDicom.Imaging.Codec.IDicomTranscoder.html#FellowOakDicom_Imaging_Codec_IDicomTranscoder_InputSyntax">InputSyntax</a> to <a class="xref" href="FellowOakDicom.Imaging.Codec.IDicomTranscoder.html#FellowOakDicom_Imaging_Codec_IDicomTranscoder_OutputSyntax">OutputSyntax</a>.</p>
@@ -392,15 +376,15 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -417,8 +401,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -104,9 +104,6 @@
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
       <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
@@ -115,19 +112,20 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_AReleaseRP_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AReleaseRP : PDU</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_AReleaseRP__ctor_" data-uid="FellowOakDicom.Network.AReleaseRP.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_AReleaseRP__ctor_IMemoryProvider_" data-uid="FellowOakDicom.Network.AReleaseRP.#ctor(IMemoryProvider)">AReleaseRP(IMemoryProvider)</h4>
+  <h4 id="FellowOakDicom_Network_AReleaseRP__ctor_FellowOakDicom_Memory_IMemoryProvider_" data-uid="FellowOakDicom.Network.AReleaseRP.#ctor(FellowOakDicom.Memory.IMemoryProvider)">AReleaseRP(IMemoryProvider)</h4>
   <div class="markdown level1 summary"><p>Initializes a new A-RELEASE-RP</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -146,7 +144,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
+        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
         <td><span class="parametername">memoryProvider</span></td>
         <td><p>The memory provider that will be used to allocate buffers</p>
 </td>
@@ -155,8 +153,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_AReleaseRP_Read_" data-uid="FellowOakDicom.Network.AReleaseRP.Read*"></a>
   <h4 id="FellowOakDicom_Network_AReleaseRP_Read_FellowOakDicom_Network_RawPDU_" data-uid="FellowOakDicom.Network.AReleaseRP.Read(FellowOakDicom.Network.RawPDU)">Read(RawPDU)</h4>
   <div class="markdown level1 summary"><p>Reads A-RELEASE-RP from PDU buffer</p>
@@ -184,8 +180,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_AReleaseRP_ToString_" data-uid="FellowOakDicom.Network.AReleaseRP.ToString*"></a>
   <h4 id="FellowOakDicom_Network_AReleaseRP_ToString" data-uid="FellowOakDicom.Network.AReleaseRP.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
@@ -211,10 +205,8 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
-  
-  
   <a id="FellowOakDicom_Network_AReleaseRP_WriteAsync_" data-uid="FellowOakDicom.Network.AReleaseRP.WriteAsync*"></a>
-  <h4 id="FellowOakDicom_Network_AReleaseRP_WriteAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.Network.AReleaseRP.WriteAsync(Stream,CancellationToken)">WriteAsync(Stream, CancellationToken)</h4>
+  <h4 id="FellowOakDicom_Network_AReleaseRP_WriteAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.AReleaseRP.WriteAsync(System.IO.Stream,System.Threading.CancellationToken)">WriteAsync(Stream, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Writes A-RELEASE-RP to the provided stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -233,13 +225,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>The stream to write the PDU to</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The token that cancels the write operation</p>
 </td>
@@ -256,7 +248,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>A Task that represents the asynchronous operation</p>
 </td>
       </tr>
@@ -266,15 +258,15 @@
   <div>
       <a class="xref" href="FellowOakDicom.Network.PDU.html">PDU</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -291,8 +283,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

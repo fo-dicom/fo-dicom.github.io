@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -93,16 +93,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -113,19 +107,23 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.html">FellowOakDicom.Imaging</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Imaging_ImageLocalizer_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class ImageLocalizer</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageLocalizer_CalcualteIntersectionLocalizer_" data-uid="FellowOakDicom.Imaging.ImageLocalizer.CalcualteIntersectionLocalizer*"></a>
-  <h4 id="FellowOakDicom_Imaging_ImageLocalizer_CalcualteIntersectionLocalizer_FellowOakDicom_Imaging_FrameGeometry_FellowOakDicom_Imaging_FrameGeometry_Point2__Point2__" data-uid="FellowOakDicom.Imaging.ImageLocalizer.CalcualteIntersectionLocalizer(FellowOakDicom.Imaging.FrameGeometry,FellowOakDicom.Imaging.FrameGeometry,Point2@,Point2@)">CalcualteIntersectionLocalizer(FrameGeometry, FrameGeometry, out Point2, out Point2)</h4>
+  <h4 id="FellowOakDicom_Imaging_ImageLocalizer_CalcualteIntersectionLocalizer_FellowOakDicom_Imaging_FrameGeometry_FellowOakDicom_Imaging_FrameGeometry_FellowOakDicom_Imaging_Mathematics_Point2__FellowOakDicom_Imaging_Mathematics_Point2__" data-uid="FellowOakDicom.Imaging.ImageLocalizer.CalcualteIntersectionLocalizer(FellowOakDicom.Imaging.FrameGeometry,FellowOakDicom.Imaging.FrameGeometry,FellowOakDicom.Imaging.Mathematics.Point2@,FellowOakDicom.Imaging.Mathematics.Point2@)">CalcualteIntersectionLocalizer(FrameGeometry, FrameGeometry, out Point2, out Point2)</h4>
   <div class="markdown level1 summary"><p>This method calculates the localizer line of the sourceFrame that can be drawn on the destinationFrame.
 You should call the method CanDrawLocalizer prior to check if localizer calculation is valid on the two frames.</p>
 <p>This method returns the line of common pixels where the two images intersect.
@@ -159,13 +157,13 @@ If the two images intersect, then it returns <pre><code>true</code></pre> and th
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Point2</span></td>
+        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point2.html">Point2</a></td>
         <td><span class="parametername">startPoint</span></td>
         <td><p>If the frames intersect, then this contains the start point of the localizer line in terms of pixels on destinationFrame</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Point2</span></td>
+        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point2.html">Point2</a></td>
         <td><span class="parametername">endPoint</span></td>
         <td><p>If the frames intersect, then this contains the end point of the localizer lin in terms of pixels on destinationFrame</p>
 </td>
@@ -187,10 +185,8 @@ If the two images intersect, then it returns <pre><code>true</code></pre> and th
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageLocalizer_CalcualteProjectionLocalizer_" data-uid="FellowOakDicom.Imaging.ImageLocalizer.CalcualteProjectionLocalizer*"></a>
-  <h4 id="FellowOakDicom_Imaging_ImageLocalizer_CalcualteProjectionLocalizer_FellowOakDicom_DicomDataset_FellowOakDicom_DicomDataset_List_Point2___" data-uid="FellowOakDicom.Imaging.ImageLocalizer.CalcualteProjectionLocalizer(FellowOakDicom.DicomDataset,FellowOakDicom.DicomDataset,List{Point2}@)">CalcualteProjectionLocalizer(DicomDataset, DicomDataset, out List&lt;Point2&gt;)</h4>
+  <h4 id="FellowOakDicom_Imaging_ImageLocalizer_CalcualteProjectionLocalizer_FellowOakDicom_DicomDataset_FellowOakDicom_DicomDataset_System_Collections_Generic_List_FellowOakDicom_Imaging_Mathematics_Point2___" data-uid="FellowOakDicom.Imaging.ImageLocalizer.CalcualteProjectionLocalizer(FellowOakDicom.DicomDataset,FellowOakDicom.DicomDataset,System.Collections.Generic.List{FellowOakDicom.Imaging.Mathematics.Point2}@)">CalcualteProjectionLocalizer(DicomDataset, DicomDataset, out List&lt;Point2&gt;)</h4>
   <div class="markdown level1 summary"><p>This method calculates the localizer rectangle of the sourceFrame that can be drawn on the destinationFrame.
 You should call the method CanDrawLocalizer prior to check if localizer calculation is valid on the two frames.
 This method will return the 4 points of a rectangle, although most image sets are orthogonal, resulting in the rectangle
@@ -225,15 +221,13 @@ there might me a result even if the two images do not intersect</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">Point2</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point2.html">Point2</a>&gt;</td>
         <td><span class="parametername">localizerPoints</span></td>
         <td><p>This contains the points of the localizer rectangle in terms of pixels on destinationFrame</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageLocalizer_CanDrawLocalizer_" data-uid="FellowOakDicom.Imaging.ImageLocalizer.CanDrawLocalizer*"></a>
   <h4 id="FellowOakDicom_Imaging_ImageLocalizer_CanDrawLocalizer_FellowOakDicom_Imaging_FrameGeometry_FellowOakDicom_Imaging_FrameGeometry_" data-uid="FellowOakDicom.Imaging.ImageLocalizer.CanDrawLocalizer(FellowOakDicom.Imaging.FrameGeometry,FellowOakDicom.Imaging.FrameGeometry)">CanDrawLocalizer(FrameGeometry, FrameGeometry)</h4>
   <div class="markdown level1 summary"><p>This method performes some checks, if it is valid or allowed that the location of the sourceFrame
@@ -288,10 +282,6 @@ is called.</p>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -308,8 +298,8 @@ is called.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

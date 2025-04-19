@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -96,16 +96,10 @@ minimum to maximum value. Bins are accessed via their absolute position, regardl
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -116,17 +110,21 @@ minimum to maximum value. Bins are accessed via their absolute position, regardl
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.Mathematics.html">FellowOakDicom.Imaging.Mathematics</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Imaging_Mathematics_Histogram_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class Histogram</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_Mathematics_Histogram__ctor_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.#ctor*"></a>
   <h4 id="FellowOakDicom_Imaging_Mathematics_Histogram__ctor_System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.#ctor(System.Int32,System.Int32)">Histogram(Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Initializes an intstance of the <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Histogram.html">Histogram</a> class.</p>
@@ -162,8 +160,6 @@ minimum to maximum value. Bins are accessed via their absolute position, regardl
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_Mathematics_Histogram_Item_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.Item*"></a>
   <h4 id="FellowOakDicom_Imaging_Mathematics_Histogram_Item_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.Item(System.Int32)">Item[Int32]</h4>
   <div class="markdown level1 summary"><p>Gets the value count at histogram bin <code data-dev-comment-type="paramref" class="paramref">value</code>.</p>
@@ -207,8 +203,6 @@ minimum to maximum value. Bins are accessed via their absolute position, regardl
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Mathematics_Histogram_WindowEnd_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.WindowEnd*"></a>
   <h4 id="FellowOakDicom_Imaging_Mathematics_Histogram_WindowEnd" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.WindowEnd">WindowEnd</h4>
   <div class="markdown level1 summary"><p>Gets the end bin of the histogram window.</p>
@@ -233,8 +227,6 @@ minimum to maximum value. Bins are accessed via their absolute position, regardl
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Mathematics_Histogram_WindowStart_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.WindowStart*"></a>
   <h4 id="FellowOakDicom_Imaging_Mathematics_Histogram_WindowStart" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.WindowStart">WindowStart</h4>
   <div class="markdown level1 summary"><p>Gets the start bin of the histogram window.</p>
@@ -259,8 +251,6 @@ minimum to maximum value. Bins are accessed via their absolute position, regardl
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Mathematics_Histogram_WindowTotal_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.WindowTotal*"></a>
   <h4 id="FellowOakDicom_Imaging_Mathematics_Histogram_WindowTotal" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.WindowTotal">WindowTotal</h4>
   <div class="markdown level1 summary"><p>Gets the total sum inside the window given by <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Histogram.html#FellowOakDicom_Imaging_Mathematics_Histogram_WindowStart">WindowStart</a> and <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Histogram.html#FellowOakDicom_Imaging_Mathematics_Histogram_WindowEnd">WindowEnd</a>.</p>
@@ -287,8 +277,6 @@ minimum to maximum value. Bins are accessed via their absolute position, regardl
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_Mathematics_Histogram_Add_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.Add*"></a>
   <h4 id="FellowOakDicom_Imaging_Mathematics_Histogram_Add_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.Add(System.Int32)">Add(Int32)</h4>
   <div class="markdown level1 summary"><p>Increment histogram at bin position <code data-dev-comment-type="paramref" class="paramref">value</code>.</p>
@@ -316,8 +304,6 @@ minimum to maximum value. Bins are accessed via their absolute position, regardl
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Mathematics_Histogram_ApplyWindow_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.ApplyWindow*"></a>
   <h4 id="FellowOakDicom_Imaging_Mathematics_Histogram_ApplyWindow_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.ApplyWindow(System.Int32)">ApplyWindow(Int32)</h4>
   <div class="markdown level1 summary"><p>Define <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Histogram.html#FellowOakDicom_Imaging_Mathematics_Histogram_WindowStart">WindowStart</a> and <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Histogram.html#FellowOakDicom_Imaging_Mathematics_Histogram_WindowEnd">WindowEnd</a> properties by gradually shrinking the
@@ -347,8 +333,6 @@ of the total value count.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Mathematics_Histogram_ApplyWindow_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.ApplyWindow*"></a>
   <h4 id="FellowOakDicom_Imaging_Mathematics_Histogram_ApplyWindow_System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.ApplyWindow(System.Int32,System.Int32)">ApplyWindow(Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Apply an active histogram window at the specified <code data-dev-comment-type="paramref" class="paramref">start</code> and <code data-dev-comment-type="paramref" class="paramref">end</code> bins.</p>
@@ -382,8 +366,6 @@ of the total value count.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Mathematics_Histogram_Clear_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.Clear*"></a>
   <h4 id="FellowOakDicom_Imaging_Mathematics_Histogram_Clear_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.Histogram.Clear(System.Int32)">Clear(Int32)</h4>
   <div class="markdown level1 summary"><p>Reset histogram at bin position <code data-dev-comment-type="paramref" class="paramref">value</code> to 0.</p>
@@ -411,15 +393,15 @@ of the total value count.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -436,8 +418,8 @@ of the total value count.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

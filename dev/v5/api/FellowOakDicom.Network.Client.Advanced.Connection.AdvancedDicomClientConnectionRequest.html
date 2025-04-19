@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -94,16 +94,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -114,17 +108,21 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.html">FellowOakDicom.Network.Client.Advanced.Connection</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_Client_Advanced_Connection_AdvancedDicomClientConnectionRequest_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AdvancedDicomClientConnectionRequest</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Connection_AdvancedDicomClientConnectionRequest_DicomServiceOptions_" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.DicomServiceOptions*"></a>
   <h4 id="FellowOakDicom_Network_Client_Advanced_Connection_AdvancedDicomClientConnectionRequest_DicomServiceOptions" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.DicomServiceOptions">DicomServiceOptions</h4>
   <div class="markdown level1 summary"><p>Configures the DICOM listener</p>
@@ -149,8 +147,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Connection_AdvancedDicomClientConnectionRequest_FallbackEncoding_" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.FallbackEncoding*"></a>
   <h4 id="FellowOakDicom_Network_Client_Advanced_Connection_AdvancedDicomClientConnectionRequest_FallbackEncoding" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.FallbackEncoding">FallbackEncoding</h4>
   <div class="markdown level1 summary"><p>The encoding that will be used as a fallback if no encoding can be derived from the DICOM dataset</p>
@@ -170,13 +166,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Connection_AdvancedDicomClientConnectionRequest_Logger_" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.Logger*"></a>
   <h4 id="FellowOakDicom_Network_Client_Advanced_Connection_AdvancedDicomClientConnectionRequest_Logger" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.Logger">Logger</h4>
   <div class="markdown level1 summary"><p>The logger that will be used by the DICOM listener</p>
@@ -196,13 +190,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Connection_AdvancedDicomClientConnectionRequest_NetworkStreamCreationOptions_" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.NetworkStreamCreationOptions*"></a>
   <h4 id="FellowOakDicom_Network_Client_Advanced_Connection_AdvancedDicomClientConnectionRequest_NetworkStreamCreationOptions" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.NetworkStreamCreationOptions">NetworkStreamCreationOptions</h4>
   <div class="markdown level1 summary"><p>Configures how to open the TCP connection</p>
@@ -227,8 +219,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Connection_AdvancedDicomClientConnectionRequest_RequestHandlers_" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.RequestHandlers*"></a>
   <h4 id="FellowOakDicom_Network_Client_Advanced_Connection_AdvancedDicomClientConnectionRequest_RequestHandlers" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.RequestHandlers">RequestHandlers</h4>
   <div class="markdown level1 summary"><p>The request handlers that will handle reverse requests.
@@ -255,15 +245,15 @@ The C-STORE request handler configured here will be responsible for producing a 
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -280,8 +270,8 @@ The C-STORE request handler configured here will be responsible for producing a 
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

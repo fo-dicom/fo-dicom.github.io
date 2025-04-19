@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -99,16 +99,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -119,19 +113,23 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.Render.html">FellowOakDicom.Imaging.Render</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class GrayscalePixelDataU8 : IPixelData</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8__ctor_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.#ctor*"></a>
-  <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8__ctor_System_Int32_System_Int32_IByteBuffer_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.#ctor(System.Int32,System.Int32,IByteBuffer)">GrayscalePixelDataU8(Int32, Int32, IByteBuffer)</h4>
+  <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8__ctor_System_Int32_System_Int32_FellowOakDicom_IO_Buffer_IByteBuffer_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.#ctor(System.Int32,System.Int32,FellowOakDicom.IO.Buffer.IByteBuffer)">GrayscalePixelDataU8(Int32, Int32, IByteBuffer)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.html">GrayscalePixelDataU8</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -162,15 +160,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IByteBuffer</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Byte buffer of data.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8__ctor_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.#ctor*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8__ctor_System_Int32_System_Int32_System_Byte___" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.#ctor(System.Int32,System.Int32,System.Byte[])">GrayscalePixelDataU8(Int32, Int32, Byte[])</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.html">GrayscalePixelDataU8</a> class.</p>
@@ -212,8 +208,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Components_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Components*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Components" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Components">Components</h4>
   <div class="markdown level1 summary"><p>Gets number of pixel components (normally 1 for grayscale, 1 for palette, and 3 for RGB and YBR).</p>
@@ -238,8 +232,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Data_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Data*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Data" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Data">Data</h4>
   <div class="markdown level1 summary"><p>Gets pixel data in internal format.</p>
@@ -264,8 +256,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Height_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Height*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Height" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Height">Height</h4>
   <div class="markdown level1 summary"><p>Gets image height (rows) in pixels.</p>
@@ -290,8 +280,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Width_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Width*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Width" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Width">Width</h4>
   <div class="markdown level1 summary"><p>Gets image width (columns) in pixels.</p>
@@ -318,8 +306,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_GetHistogram_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.GetHistogram*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_GetHistogram_System_Int32_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.GetHistogram(System.Int32)">GetHistogram(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a histogram of the pixel data for a given <code data-dev-comment-type="paramref" class="paramref">channel</code>.</p>
@@ -357,14 +343,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Histogram</span></td>
+        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Histogram.html">Histogram</a></td>
         <td><p>Histogram of the pixel data for the given <code data-dev-comment-type="paramref" class="paramref">channel</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_GetMinMax_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.GetMinMax*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_GetMinMax" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.GetMinMax">GetMinMax()</h4>
   <div class="markdown level1 summary"><p>Return the minimum and maximum pixel values from pixel data.</p>
@@ -390,8 +374,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_GetMinMax_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.GetMinMax*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_GetMinMax_System_Int32_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.GetMinMax(System.Int32)">GetMinMax(Int32)</h4>
   <div class="markdown level1 summary"><p>Return the minimum and maximum pixel values from pixel data.
@@ -436,8 +418,6 @@ The padding value is taken into account.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_GetPixel_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.GetPixel*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_GetPixel_System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.GetPixel(System.Int32,System.Int32)">GetPixel(Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets the value of the pixel at the specified coordinates.</p>
@@ -487,10 +467,8 @@ The padding value is taken into account.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Render_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Render*"></a>
-  <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Render_ILUT_System_Int32___" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Render(ILUT,System.Int32[])">Render(ILUT, Int32[])</h4>
+  <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Render_FellowOakDicom_Imaging_LUT_ILUT_System_Int32___" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Render(FellowOakDicom.Imaging.LUT.ILUT,System.Int32[])">Render(ILUT, Int32[])</h4>
   <div class="markdown level1 summary"><p>Render the pixel data after applying <code data-dev-comment-type="paramref" class="paramref">lut</code> to the output array (allocated by user)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -509,7 +487,7 @@ The padding value is taken into account.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILUT</span></td>
+        <td><a class="xref" href="FellowOakDicom.Imaging.LUT.ILUT.html">ILUT</a></td>
         <td><span class="parametername">lut</span></td>
         <td><p>Lookup table to render the pixels into output pixels</p>
 </td>
@@ -522,8 +500,6 @@ The padding value is taken into account.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Rescale_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Rescale*"></a>
   <h4 id="FellowOakDicom_Imaging_Render_GrayscalePixelDataU8_Rescale_System_Double_" data-uid="FellowOakDicom.Imaging.Render.GrayscalePixelDataU8.Rescale(System.Double)">Rescale(Double)</h4>
   <div class="markdown level1 summary"><p>Gets a rescaled copy of the pixel data.</p>
@@ -571,15 +547,15 @@ The padding value is taken into account.</p>
   <div>
       <a class="xref" href="FellowOakDicom.Imaging.Render.IPixelData.html">IPixelData</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -596,8 +572,8 @@ The padding value is taken into account.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

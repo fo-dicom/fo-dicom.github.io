@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -95,21 +95,15 @@ Once disposed, the array is returned to the pool</p>
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FellowOakDicom.Memory.IMemory.html">IMemory</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -120,19 +114,23 @@ Once disposed, the array is returned to the pool</p>
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Memory.html">FellowOakDicom.Memory</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Memory_ArrayPoolMemory_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ArrayPoolMemory : IMemory</code></pre>
+    <pre><code class="lang-csharp hljs">public class ArrayPoolMemory : IMemory, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Memory_ArrayPoolMemory__ctor_" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.#ctor*"></a>
-  <h4 id="FellowOakDicom_Memory_ArrayPoolMemory__ctor_MemoryOwner_System_Byte__" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.#ctor(MemoryOwner{System.Byte})">ArrayPoolMemory(MemoryOwner&lt;Byte&gt;)</h4>
+  <h4 id="FellowOakDicom_Memory_ArrayPoolMemory__ctor_CommunityToolkit_HighPerformance_Buffers_MemoryOwner_System_Byte__" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.#ctor(CommunityToolkit.HighPerformance.Buffers.MemoryOwner{System.Byte})">ArrayPoolMemory(MemoryOwner&lt;Byte&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -150,7 +148,7 @@ Once disposed, the array is returned to the pool</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MemoryOwner</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="xref">CommunityToolkit.HighPerformance.Buffers.MemoryOwner</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
         <td><span class="parametername">memoryOwner</span></td>
         <td></td>
       </tr>
@@ -158,8 +156,6 @@ Once disposed, the array is returned to the pool</p>
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Memory_ArrayPoolMemory_Bytes_" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.Bytes*"></a>
   <h4 id="FellowOakDicom_Memory_ArrayPoolMemory_Bytes" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.Bytes">Bytes</h4>
   <div class="markdown level1 summary"></div>
@@ -183,8 +179,6 @@ Once disposed, the array is returned to the pool</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Memory_ArrayPoolMemory_Length_" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.Length*"></a>
   <h4 id="FellowOakDicom_Memory_ArrayPoolMemory_Length" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.Length">Length</h4>
   <div class="markdown level1 summary"></div>
@@ -208,8 +202,6 @@ Once disposed, the array is returned to the pool</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Memory_ArrayPoolMemory_Memory_" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.Memory*"></a>
   <h4 id="FellowOakDicom_Memory_ArrayPoolMemory_Memory" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.Memory">Memory</h4>
   <div class="markdown level1 summary"></div>
@@ -228,13 +220,11 @@ Once disposed, the array is returned to the pool</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">FellowOakDicom.Memory</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="xref">System.Memory</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Memory_ArrayPoolMemory_Span_" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.Span*"></a>
   <h4 id="FellowOakDicom_Memory_ArrayPoolMemory_Span" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.Span">Span</h4>
   <div class="markdown level1 summary"></div>
@@ -253,15 +243,13 @@ Once disposed, the array is returned to the pool</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Span</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="xref">System.Span</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Memory_ArrayPoolMemory_Dispose_" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.Dispose*"></a>
   <h4 id="FellowOakDicom_Memory_ArrayPoolMemory_Dispose" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"></div>
@@ -270,8 +258,6 @@ Once disposed, the array is returned to the pool</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Memory_ArrayPoolMemory_Finalize_" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.Finalize*"></a>
   <h4 id="FellowOakDicom_Memory_ArrayPoolMemory_Finalize" data-uid="FellowOakDicom.Memory.ArrayPoolMemory.Finalize">Finalize()</h4>
   <div class="markdown level1 summary"></div>
@@ -285,17 +271,17 @@ Once disposed, the array is returned to the pool</p>
       <a class="xref" href="FellowOakDicom.Memory.IMemory.html">IMemory</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
   </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -312,8 +298,8 @@ Once disposed, the array is returned to the pool</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

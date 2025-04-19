@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -93,16 +93,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -113,19 +107,23 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomServiceDependencies_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class DicomServiceDependencies</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceDependencies__ctor_" data-uid="FellowOakDicom.Network.DicomServiceDependencies.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_DicomServiceDependencies__ctor_ILoggerFactory_FellowOakDicom_Network_INetworkManager_ITranscoderManager_IMemoryProvider_" data-uid="FellowOakDicom.Network.DicomServiceDependencies.#ctor(ILoggerFactory,FellowOakDicom.Network.INetworkManager,ITranscoderManager,IMemoryProvider)">DicomServiceDependencies(ILoggerFactory, INetworkManager, ITranscoderManager, IMemoryProvider)</h4>
+  <h4 id="FellowOakDicom_Network_DicomServiceDependencies__ctor_Microsoft_Extensions_Logging_ILoggerFactory_FellowOakDicom_Network_INetworkManager_FellowOakDicom_Imaging_Codec_ITranscoderManager_FellowOakDicom_Memory_IMemoryProvider_" data-uid="FellowOakDicom.Network.DicomServiceDependencies.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,FellowOakDicom.Network.INetworkManager,FellowOakDicom.Imaging.Codec.ITranscoderManager,FellowOakDicom.Memory.IMemoryProvider)">DicomServiceDependencies(ILoggerFactory, INetworkManager, ITranscoderManager, IMemoryProvider)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -143,7 +141,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILoggerFactory</span></td>
         <td><span class="parametername">loggerFactory</span></td>
         <td></td>
       </tr>
@@ -153,12 +151,12 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ITranscoderManager</span></td>
+        <td><a class="xref" href="FellowOakDicom.Imaging.Codec.ITranscoderManager.html">ITranscoderManager</a></td>
         <td><span class="parametername">transcoderManager</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
+        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
         <td><span class="parametername">memoryProvider</span></td>
         <td></td>
       </tr>
@@ -166,8 +164,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceDependencies_LoggerFactory_" data-uid="FellowOakDicom.Network.DicomServiceDependencies.LoggerFactory*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceDependencies_LoggerFactory" data-uid="FellowOakDicom.Network.DicomServiceDependencies.LoggerFactory">LoggerFactory</h4>
   <div class="markdown level1 summary"></div>
@@ -186,13 +182,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILoggerFactory</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceDependencies_MemoryProvider_" data-uid="FellowOakDicom.Network.DicomServiceDependencies.MemoryProvider*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceDependencies_MemoryProvider" data-uid="FellowOakDicom.Network.DicomServiceDependencies.MemoryProvider">MemoryProvider</h4>
   <div class="markdown level1 summary"></div>
@@ -211,13 +205,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
+        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceDependencies_NetworkManager_" data-uid="FellowOakDicom.Network.DicomServiceDependencies.NetworkManager*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceDependencies_NetworkManager" data-uid="FellowOakDicom.Network.DicomServiceDependencies.NetworkManager">NetworkManager</h4>
   <div class="markdown level1 summary"></div>
@@ -241,8 +233,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceDependencies_TranscoderManager_" data-uid="FellowOakDicom.Network.DicomServiceDependencies.TranscoderManager*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceDependencies_TranscoderManager" data-uid="FellowOakDicom.Network.DicomServiceDependencies.TranscoderManager">TranscoderManager</h4>
   <div class="markdown level1 summary"></div>
@@ -261,20 +251,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ITranscoderManager</span></td>
+        <td><a class="xref" href="FellowOakDicom.Imaging.Codec.ITranscoderManager.html">ITranscoderManager</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -291,8 +281,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

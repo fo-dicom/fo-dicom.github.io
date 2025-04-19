@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -104,9 +104,6 @@
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
       <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
@@ -115,17 +112,18 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.html">FellowOakDicom.IO</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IO_FileReference_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class FileReference : IFileReference</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_FileReference__ctor_" data-uid="FellowOakDicom.IO.FileReference.#ctor*"></a>
   <h4 id="FellowOakDicom_IO_FileReference__ctor_System_String_" data-uid="FellowOakDicom.IO.FileReference.#ctor(System.String)">FileReference(String)</h4>
   <div class="markdown level1 summary"><p>Initializes a <a class="xref" href="FellowOakDicom.IO.FileReference.html">FileReference</a> object.</p>
@@ -155,8 +153,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_Directory_" data-uid="FellowOakDicom.IO.FileReference.Directory*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_Directory" data-uid="FellowOakDicom.IO.FileReference.Directory">Directory</h4>
   <div class="markdown level1 summary"><p>Gets the directory reference of the file.</p>
@@ -181,8 +177,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_Exists_" data-uid="FellowOakDicom.IO.FileReference.Exists*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_Exists" data-uid="FellowOakDicom.IO.FileReference.Exists">Exists</h4>
   <div class="markdown level1 summary"><p>Gets whether the file exist or not.</p>
@@ -207,8 +201,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_IsTempFile_" data-uid="FellowOakDicom.IO.FileReference.IsTempFile*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_IsTempFile" data-uid="FellowOakDicom.IO.FileReference.IsTempFile">IsTempFile</h4>
   <div class="markdown level1 summary"><p>Gets and sets whether the file is temporary or not.</p>
@@ -236,8 +228,6 @@
   <h5 id="FellowOakDicom_IO_FileReference_IsTempFile_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Temporary file will be deleted when object is <code>Disposed</code>.</p>
 </div>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_Name_" data-uid="FellowOakDicom.IO.FileReference.Name*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_Name" data-uid="FellowOakDicom.IO.FileReference.Name">Name</h4>
   <div class="markdown level1 summary"><p>Gets the file name.</p>
@@ -264,8 +254,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_Create_" data-uid="FellowOakDicom.IO.FileReference.Create*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_Create" data-uid="FellowOakDicom.IO.FileReference.Create">Create()</h4>
   <div class="markdown level1 summary"><p>Creates a new file for reading and writing. Overwrites existing file.</p>
@@ -285,14 +273,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><p>Stream to the created file.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_Delete_" data-uid="FellowOakDicom.IO.FileReference.Delete*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_Delete" data-uid="FellowOakDicom.IO.FileReference.Delete">Delete()</h4>
   <div class="markdown level1 summary"><p>Delete the file.</p>
@@ -302,8 +288,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Delete()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_Finalize_" data-uid="FellowOakDicom.IO.FileReference.Finalize*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_Finalize" data-uid="FellowOakDicom.IO.FileReference.Finalize">Finalize()</h4>
   <div class="markdown level1 summary"><p>Destructor.</p>
@@ -313,8 +297,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_GetByteRange_" data-uid="FellowOakDicom.IO.FileReference.GetByteRange*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_GetByteRange_System_Int64_System_Int32_" data-uid="FellowOakDicom.IO.FileReference.GetByteRange(System.Int64,System.Int32)">GetByteRange(Int64, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a sub-range of the bytes in the file.</p>
@@ -364,8 +346,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_GetByteRange_" data-uid="FellowOakDicom.IO.FileReference.GetByteRange*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_GetByteRange_System_Int64_System_Int32_System_Byte___" data-uid="FellowOakDicom.IO.FileReference.GetByteRange(System.Int64,System.Int32,System.Byte[])">GetByteRange(Int64, Int32, Byte[])</h4>
   <div class="markdown level1 summary"></div>
@@ -401,8 +381,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_Move_" data-uid="FellowOakDicom.IO.FileReference.Move*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_Move_System_String_System_Boolean_" data-uid="FellowOakDicom.IO.FileReference.Move(System.String,System.Boolean)">Move(String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Moves file and updates internal reference.</p>
@@ -437,8 +415,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_Open_" data-uid="FellowOakDicom.IO.FileReference.Open*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_Open" data-uid="FellowOakDicom.IO.FileReference.Open">Open()</h4>
   <div class="markdown level1 summary"><p>Open an existing file stream for reading and writing.</p>
@@ -458,13 +434,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_OpenRead_" data-uid="FellowOakDicom.IO.FileReference.OpenRead*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_OpenRead" data-uid="FellowOakDicom.IO.FileReference.OpenRead">OpenRead()</h4>
   <div class="markdown level1 summary"><p>Open a file stream for reading.</p>
@@ -484,14 +458,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><p>Stream to the opened file.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_OpenWrite_" data-uid="FellowOakDicom.IO.FileReference.OpenWrite*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_OpenWrite" data-uid="FellowOakDicom.IO.FileReference.OpenWrite">OpenWrite()</h4>
   <div class="markdown level1 summary"><p>Open a file stream for writing, creates the file if not existing.</p>
@@ -511,14 +483,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><p>Stream to the opened file.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_FileReference_ToString_" data-uid="FellowOakDicom.IO.FileReference.ToString*"></a>
   <h4 id="FellowOakDicom_IO_FileReference_ToString" data-uid="FellowOakDicom.IO.FileReference.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
@@ -550,15 +520,15 @@
   <div>
       <a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -575,8 +545,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -93,20 +93,40 @@
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IAsyncDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.IAsyncDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_RawPDU_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RawPDU : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class RawPDU : IDisposable, IAsyncDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU__ctor_FellowOakDicom_Network_RawPduType_IMemoryProvider_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(FellowOakDicom.Network.RawPduType,IMemoryProvider,Encoding)">RawPDU(RawPduType, IMemoryProvider, Encoding)</h4>
+  <h4 id="FellowOakDicom_Network_RawPDU__ctor_FellowOakDicom_Network_RawPduType_FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(FellowOakDicom.Network.RawPduType,FellowOakDicom.Memory.IMemoryProvider,System.Text.Encoding)">RawPDU(RawPduType, IMemoryProvider, Encoding)</h4>
   <div class="markdown level1 summary"><p>Initializes new PDU for writing</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -131,23 +151,21 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
+        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
         <td><span class="parametername">memoryProvider</span></td>
         <td><p>The memory provider that will be used to allocate buffers</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>The encoding to use for encoding text</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU__ctor_FellowOakDicom_Network_RawPduType_IMemoryProvider_Encoding_Stream_System_Boolean_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(FellowOakDicom.Network.RawPduType,IMemoryProvider,Encoding,Stream,System.Boolean)">RawPDU(RawPduType, IMemoryProvider, Encoding, Stream, Boolean)</h4>
+  <h4 id="FellowOakDicom_Network_RawPDU__ctor_FellowOakDicom_Network_RawPduType_FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding_System_IO_Stream_System_Boolean_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(FellowOakDicom.Network.RawPduType,FellowOakDicom.Memory.IMemoryProvider,System.Text.Encoding,System.IO.Stream,System.Boolean)">RawPDU(RawPduType, IMemoryProvider, Encoding, Stream, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes new PDU for writing to a stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -172,19 +190,19 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
+        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
         <td><span class="parametername">memoryProvider</span></td>
         <td><p>The memory provider that will be used to allocate buffers</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>The encoding to use for encoding text</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>The stream to write to</p>
 </td>
@@ -197,54 +215,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU__ctor_MemoryStream_IMemoryProvider_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(MemoryStream,IMemoryProvider,Encoding)">RawPDU(MemoryStream, IMemoryProvider, Encoding)</h4>
-  <div class="markdown level1 summary"><p>Initializes new PDU reader from a stream</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RawPDU(MemoryStream stream, IMemoryProvider memoryProvider, Encoding encoding = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">MemoryStream</span></td>
-        <td><span class="parametername">stream</span></td>
-        <td><p>Stream</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
-        <td><span class="parametername">memoryProvider</span></td>
-        <td><p>The memory provider that will be used to allocate buffers</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Encoding</span></td>
-        <td><span class="parametername">encoding</span></td>
-        <td><p>The encoding to use for decoding text</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="FellowOakDicom_Network_RawPDU__ctor_MemoryStream_IMemoryProvider_Encoding__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The created object takes ownership of the stream</p>
-</div>
-  
-  
-  <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU__ctor_System_Byte___IMemoryProvider_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(System.Byte[],IMemoryProvider,Encoding)">RawPDU(Byte[], IMemoryProvider, Encoding)</h4>
+  <h4 id="FellowOakDicom_Network_RawPDU__ctor_System_Byte___FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(System.Byte[],FellowOakDicom.Memory.IMemoryProvider,System.Text.Encoding)">RawPDU(Byte[], IMemoryProvider, Encoding)</h4>
   <div class="markdown level1 summary"><p>Initializes new PDU reader from buffer</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -269,23 +241,63 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
+        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
         <td><span class="parametername">memoryProvider</span></td>
         <td><p>The memory provider that will be used to allocate buffers</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>The encoding to use for decoding text</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
+  <h4 id="FellowOakDicom_Network_RawPDU__ctor_System_IO_MemoryStream_FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(System.IO.MemoryStream,FellowOakDicom.Memory.IMemoryProvider,System.Text.Encoding)">RawPDU(MemoryStream, IMemoryProvider, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Initializes new PDU reader from a stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RawPDU(MemoryStream stream, IMemoryProvider memoryProvider, Encoding encoding = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.MemoryStream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Stream</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
+        <td><span class="parametername">memoryProvider</span></td>
+        <td><p>The memory provider that will be used to allocate buffers</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>The encoding to use for decoding text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_Network_RawPDU__ctor_System_IO_MemoryStream_FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The created object takes ownership of the stream</p>
+</div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_Length_" data-uid="FellowOakDicom.Network.RawPDU.Length*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_Length" data-uid="FellowOakDicom.Network.RawPDU.Length">Length</h4>
   <div class="markdown level1 summary"><p>PDU length</p>
@@ -310,8 +322,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_Type_" data-uid="FellowOakDicom.Network.RawPDU.Type*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_Type" data-uid="FellowOakDicom.Network.RawPDU.Type">Type</h4>
   <div class="markdown level1 summary"><p>PDU type</p>
@@ -338,8 +348,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_Dispose_" data-uid="FellowOakDicom.Network.RawPDU.Dispose*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_Dispose" data-uid="FellowOakDicom.Network.RawPDU.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"></div>
@@ -348,8 +356,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_DisposeAsync_" data-uid="FellowOakDicom.Network.RawPDU.DisposeAsync*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_DisposeAsync" data-uid="FellowOakDicom.Network.RawPDU.DisposeAsync">DisposeAsync()</h4>
   <div class="markdown level1 summary"></div>
@@ -368,13 +374,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ValueTask</span></td>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_MarkLength16_" data-uid="FellowOakDicom.Network.RawPDU.MarkLength16*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_MarkLength16_System_String_" data-uid="FellowOakDicom.Network.RawPDU.MarkLength16(System.String)">MarkLength16(String)</h4>
   <div class="markdown level1 summary"><p>Marks position to write 16-bit length value</p>
@@ -402,8 +406,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_ReadByte_" data-uid="FellowOakDicom.Network.RawPDU.ReadByte*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_ReadByte_System_String_" data-uid="FellowOakDicom.Network.RawPDU.ReadByte(System.String)">ReadByte(String)</h4>
   <div class="markdown level1 summary"><p>Read byte from PDU</p>
@@ -447,8 +449,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_ReadBytes_" data-uid="FellowOakDicom.Network.RawPDU.ReadBytes*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_ReadBytes_System_String_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.ReadBytes(System.String,System.Byte[],System.Int32,System.Int32)">ReadBytes(String, Byte[], Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Read bytes from PDU</p>
@@ -494,8 +494,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_ReadBytes_" data-uid="FellowOakDicom.Network.RawPDU.ReadBytes*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_ReadBytes_System_String_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.ReadBytes(System.String,System.Int32)">ReadBytes(String, Int32)</h4>
   <div class="markdown level1 summary"><p>Read bytes from PDU</p>
@@ -545,8 +543,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_ReadString_" data-uid="FellowOakDicom.Network.RawPDU.ReadString*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_ReadString_System_String_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.ReadString(System.String,System.Int32)">ReadString(String, Int32)</h4>
   <div class="markdown level1 summary"><p>Reads string from PDU</p>
@@ -596,8 +592,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_ReadUInt16_" data-uid="FellowOakDicom.Network.RawPDU.ReadUInt16*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_ReadUInt16_System_String_" data-uid="FellowOakDicom.Network.RawPDU.ReadUInt16(System.String)">ReadUInt16(String)</h4>
   <div class="markdown level1 summary"><p>Read ushort from PDU</p>
@@ -641,8 +635,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_ReadUInt32_" data-uid="FellowOakDicom.Network.RawPDU.ReadUInt32*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_ReadUInt32_System_String_" data-uid="FellowOakDicom.Network.RawPDU.ReadUInt32(System.String)">ReadUInt32(String)</h4>
   <div class="markdown level1 summary"><p>Reads uint from PDU</p>
@@ -686,8 +678,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_Reset_" data-uid="FellowOakDicom.Network.RawPDU.Reset*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_Reset" data-uid="FellowOakDicom.Network.RawPDU.Reset">Reset()</h4>
   <div class="markdown level1 summary"><p>Reset PDU read stream</p>
@@ -697,10 +687,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_Save_" data-uid="FellowOakDicom.Network.RawPDU.Save*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Save_IFileReference_" data-uid="FellowOakDicom.Network.RawPDU.Save(IFileReference)">Save(IFileReference)</h4>
+  <h4 id="FellowOakDicom_Network_RawPDU_Save_FellowOakDicom_IO_IFileReference_" data-uid="FellowOakDicom.Network.RawPDU.Save(FellowOakDicom.IO.IFileReference)">Save(IFileReference)</h4>
   <div class="markdown level1 summary"><p>Saves PDU to file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -719,15 +707,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IFileReference</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a></td>
         <td><span class="parametername">file</span></td>
         <td><p>file</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_SkipBytes_" data-uid="FellowOakDicom.Network.RawPDU.SkipBytes*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_SkipBytes_System_String_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.SkipBytes(System.String,System.Int32)">SkipBytes(String, Int32)</h4>
   <div class="markdown level1 summary"><p>Skips ahead in PDU</p>
@@ -761,8 +747,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_ToString_" data-uid="FellowOakDicom.Network.RawPDU.ToString*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_ToString" data-uid="FellowOakDicom.Network.RawPDU.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>Gets string describing this PDU</p>
@@ -788,8 +772,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte)">Write(String, Byte)</h4>
   <div class="markdown level1 summary"><p>Writes byte to PDU</p>
@@ -823,8 +807,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte,System.Int32)">Write(String, Byte, Int32)</h4>
   <div class="markdown level1 summary"><p>Writes byte to PDU multiple times</p>
@@ -864,8 +846,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte___" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte[])">Write(String, Byte[])</h4>
   <div class="markdown level1 summary"><p>Writes byte[] to PDU</p>
@@ -899,8 +879,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte[],System.Int32,System.Int32)">Write(String, Byte[], Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Writes byte[] to PDU</p>
@@ -946,8 +924,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_String_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.String)">Write(String, String)</h4>
   <div class="markdown level1 summary"><p>Writes string to PDU</p>
@@ -981,8 +957,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_String_System_Int32_System_Char_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.String,System.Int32,System.Char)">Write(String, String, Int32, Char)</h4>
   <div class="markdown level1 summary"><p>Writes string to PDU</p>
@@ -1028,8 +1002,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_UInt16_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.UInt16)">Write(String, UInt16)</h4>
   <div class="markdown level1 summary"><p>Writes ushort to PDU</p>
@@ -1063,8 +1035,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_UInt32_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.UInt32)">Write(String, UInt32)</h4>
   <div class="markdown level1 summary"><p>Writes uint to PDU</p>
@@ -1098,8 +1068,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_WriteLength16_" data-uid="FellowOakDicom.Network.RawPDU.WriteLength16*"></a>
   <h4 id="FellowOakDicom_Network_RawPDU_WriteLength16" data-uid="FellowOakDicom.Network.RawPDU.WriteLength16">WriteLength16()</h4>
   <div class="markdown level1 summary"><p>Writes 16-bit length to top length marker</p>
@@ -1109,10 +1077,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void WriteLength16()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_WritePDU_" data-uid="FellowOakDicom.Network.RawPDU.WritePDU*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_WritePDU_Stream_" data-uid="FellowOakDicom.Network.RawPDU.WritePDU(Stream)">WritePDU(Stream)</h4>
+  <h4 id="FellowOakDicom_Network_RawPDU_WritePDU_System_IO_Stream_" data-uid="FellowOakDicom.Network.RawPDU.WritePDU(System.IO.Stream)">WritePDU(Stream)</h4>
   <div class="markdown level1 summary"><p>Writes PDU to stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1131,17 +1097,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">s</span></td>
         <td><p>Output stream</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_RawPDU_WritePDUAsync_" data-uid="FellowOakDicom.Network.RawPDU.WritePDUAsync*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_WritePDUAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.Network.RawPDU.WritePDUAsync(Stream,CancellationToken)">WritePDUAsync(Stream, CancellationToken)</h4>
+  <h4 id="FellowOakDicom_Network_RawPDU_WritePDUAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.RawPDU.WritePDUAsync(System.IO.Stream,System.Threading.CancellationToken)">WritePDUAsync(Stream, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Writes PDU to stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1160,13 +1124,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">s</span></td>
         <td><p>Output stream</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The token that cancels the asynchronous write operation</p>
 </td>
@@ -1183,24 +1147,27 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IAsyncDisposable</span>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.IAsyncDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
   </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -1217,8 +1184,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -92,19 +92,34 @@
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IComparable</span>&lt;<a class="xref" href="FellowOakDicom.DicomPrivateCreator.html">DicomPrivateCreator</a>&gt;</div>
-    <div><span class="xref">IComparable</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="FellowOakDicom.DicomPrivateCreator.html">DicomPrivateCreator</a>&gt;</div>
+    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="FellowOakDicom.DicomPrivateCreator.html">DicomPrivateCreator</a>&gt;</div>
+    <div><span class="xref">System.IComparable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.html">FellowOakDicom</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_DicomPrivateCreator_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DicomPrivateCreator : IEquatable&lt;DicomPrivateCreator&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[DataContract]
+public sealed class DicomPrivateCreator : IEquatable&lt;DicomPrivateCreator&gt;, IComparable&lt;DicomPrivateCreator&gt;, IComparable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomPrivateCreator__ctor_" data-uid="FellowOakDicom.DicomPrivateCreator.#ctor*"></a>
   <h4 id="FellowOakDicom_DicomPrivateCreator__ctor_System_String_" data-uid="FellowOakDicom.DicomPrivateCreator.#ctor(System.String)">DicomPrivateCreator(String)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.DicomPrivateCreator.html">DicomPrivateCreator</a> class.</p>
@@ -134,15 +149,14 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomPrivateCreator_Creator_" data-uid="FellowOakDicom.DicomPrivateCreator.Creator*"></a>
   <h4 id="FellowOakDicom_DicomPrivateCreator_Creator" data-uid="FellowOakDicom.DicomPrivateCreator.Creator">Creator</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Creator { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[DataMember]
+public string Creator { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,8 +175,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomPrivateCreator_CompareTo_" data-uid="FellowOakDicom.DicomPrivateCreator.CompareTo*"></a>
   <h4 id="FellowOakDicom_DicomPrivateCreator_CompareTo_FellowOakDicom_DicomPrivateCreator_" data-uid="FellowOakDicom.DicomPrivateCreator.CompareTo(FellowOakDicom.DicomPrivateCreator)">CompareTo(DicomPrivateCreator)</h4>
   <div class="markdown level1 summary"></div>
@@ -203,8 +215,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomPrivateCreator_CompareTo_" data-uid="FellowOakDicom.DicomPrivateCreator.CompareTo*"></a>
   <h4 id="FellowOakDicom_DicomPrivateCreator_CompareTo_System_Object_" data-uid="FellowOakDicom.DicomPrivateCreator.CompareTo(System.Object)">CompareTo(Object)</h4>
   <div class="markdown level1 summary"></div>
@@ -245,8 +255,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomPrivateCreator_Equals_" data-uid="FellowOakDicom.DicomPrivateCreator.Equals*"></a>
   <h4 id="FellowOakDicom_DicomPrivateCreator_Equals_FellowOakDicom_DicomPrivateCreator_" data-uid="FellowOakDicom.DicomPrivateCreator.Equals(FellowOakDicom.DicomPrivateCreator)">Equals(DicomPrivateCreator)</h4>
   <div class="markdown level1 summary"></div>
@@ -287,8 +295,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomPrivateCreator_Equals_" data-uid="FellowOakDicom.DicomPrivateCreator.Equals*"></a>
   <h4 id="FellowOakDicom_DicomPrivateCreator_Equals_System_Object_" data-uid="FellowOakDicom.DicomPrivateCreator.Equals(System.Object)">Equals(Object)</h4>
   <div class="markdown level1 summary"></div>
@@ -329,8 +335,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
   <a id="FellowOakDicom_DicomPrivateCreator_GetHashCode_" data-uid="FellowOakDicom.DicomPrivateCreator.GetHashCode*"></a>
   <h4 id="FellowOakDicom_DicomPrivateCreator_GetHashCode" data-uid="FellowOakDicom.DicomPrivateCreator.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"></div>
@@ -354,8 +360,8 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
   <a id="FellowOakDicom_DicomPrivateCreator_ToString_" data-uid="FellowOakDicom.DicomPrivateCreator.ToString*"></a>
   <h4 id="FellowOakDicom_DicomPrivateCreator_ToString" data-uid="FellowOakDicom.DicomPrivateCreator.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
@@ -379,22 +385,27 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IComparable&lt;&gt;</span>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
   </div>
   <div>
-      <span class="xref">IComparable</span>
+      <span class="xref">System.IComparable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
   </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -411,8 +422,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

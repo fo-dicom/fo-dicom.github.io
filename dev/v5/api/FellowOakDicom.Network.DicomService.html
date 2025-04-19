@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -95,21 +95,15 @@
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FellowOakDicom.Network.IDicomServiceRunner.html">IDicomServiceRunner</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -120,19 +114,23 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomService_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class DicomService : IDicomServiceRunner</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class DicomService : IDicomServiceRunner, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomService__ctor_" data-uid="FellowOakDicom.Network.DicomService.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService__ctor_FellowOakDicom_Network_INetworkStream_Encoding_ILogger_FellowOakDicom_Network_DicomServiceDependencies_" data-uid="FellowOakDicom.Network.DicomService.#ctor(FellowOakDicom.Network.INetworkStream,Encoding,ILogger,FellowOakDicom.Network.DicomServiceDependencies)">DicomService(INetworkStream, Encoding, ILogger, DicomServiceDependencies)</h4>
+  <h4 id="FellowOakDicom_Network_DicomService__ctor_FellowOakDicom_Network_INetworkStream_System_Text_Encoding_Microsoft_Extensions_Logging_ILogger_FellowOakDicom_Network_DicomServiceDependencies_" data-uid="FellowOakDicom.Network.DicomService.#ctor(FellowOakDicom.Network.INetworkStream,System.Text.Encoding,Microsoft.Extensions.Logging.ILogger,FellowOakDicom.Network.DicomServiceDependencies)">DicomService(INetworkStream, Encoding, ILogger, DicomServiceDependencies)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.Network.DicomService.html">DicomService</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -157,13 +155,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">fallbackEncoding</span></td>
         <td><p>Fallback encoding.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td><span class="parametername">logger</span></td>
         <td><p>Logger</p>
 </td>
@@ -178,8 +176,6 @@
   </table>
   <h3 id="fields">Fields
   </h3>
-  
-  
   <h4 id="FellowOakDicom_Network_DicomService__dimseStream" data-uid="FellowOakDicom.Network.DicomService._dimseStream">_dimseStream</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -197,13 +193,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Network_DicomService__dimseStreamFile" data-uid="FellowOakDicom.Network.DicomService._dimseStreamFile">_dimseStreamFile</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -221,13 +215,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IFileReference</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Network_DicomService__isDisconnectedFlag" data-uid="FellowOakDicom.Network.DicomService._isDisconnectedFlag">_isDisconnectedFlag</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -245,15 +237,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TaskCompletionSource</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.TaskCompletionSource</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_Association_" data-uid="FellowOakDicom.Network.DicomService.Association*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_Association" data-uid="FellowOakDicom.Network.DicomService.Association">Association</h4>
   <div class="markdown level1 summary"><p>Gets the DICOM association.</p>
@@ -278,8 +268,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_CanStillProcessPDataTF_" data-uid="FellowOakDicom.Network.DicomService.CanStillProcessPDataTF*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_CanStillProcessPDataTF" data-uid="FellowOakDicom.Network.DicomService.CanStillProcessPDataTF">CanStillProcessPDataTF</h4>
   <div class="markdown level1 summary"><p>Gets whether or not the connection can still process P-DATA-TF</p>
@@ -304,8 +292,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_DoHandlePDUBytes_" data-uid="FellowOakDicom.Network.DicomService.DoHandlePDUBytes*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_DoHandlePDUBytes" data-uid="FellowOakDicom.Network.DicomService.DoHandlePDUBytes">DoHandlePDUBytes</h4>
   <div class="markdown level1 summary"><p>Gets or sets an event handler to handle unsupported PDU bytes.</p>
@@ -330,8 +316,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_IsConnected_" data-uid="FellowOakDicom.Network.DicomService.IsConnected*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_IsConnected" data-uid="FellowOakDicom.Network.DicomService.IsConnected">IsConnected</h4>
   <div class="markdown level1 summary"><p>Gets whether or not the service is connected.</p>
@@ -356,8 +340,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_IsSendNextMessageRequired_" data-uid="FellowOakDicom.Network.DicomService.IsSendNextMessageRequired*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_IsSendNextMessageRequired" data-uid="FellowOakDicom.Network.DicomService.IsSendNextMessageRequired">IsSendNextMessageRequired</h4>
   <div class="markdown level1 summary"><p>Gets whether or not SendNextMessage is required, i.e. if any requests still have to be sent and there is no send loop currently running.</p>
@@ -382,8 +364,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_IsSendQueueEmpty_" data-uid="FellowOakDicom.Network.DicomService.IsSendQueueEmpty*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_IsSendQueueEmpty" data-uid="FellowOakDicom.Network.DicomService.IsSendQueueEmpty">IsSendQueueEmpty</h4>
   <div class="markdown level1 summary"><p>Gets whether or not both the message queue and the pending queue is empty.</p>
@@ -408,8 +388,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_Logger_" data-uid="FellowOakDicom.Network.DicomService.Logger*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_Logger" data-uid="FellowOakDicom.Network.DicomService.Logger">Logger</h4>
   <div class="markdown level1 summary"><p>Gets or sets the logger.</p>
@@ -429,13 +407,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_MaximumPDUsInQueue_" data-uid="FellowOakDicom.Network.DicomService.MaximumPDUsInQueue*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_MaximumPDUsInQueue" data-uid="FellowOakDicom.Network.DicomService.MaximumPDUsInQueue">MaximumPDUsInQueue</h4>
   <div class="markdown level1 summary"><p>Gets or sets the maximum number of PDUs in queue.</p>
@@ -460,8 +436,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_Options_" data-uid="FellowOakDicom.Network.DicomService.Options*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_Options" data-uid="FellowOakDicom.Network.DicomService.Options">Options</h4>
   <div class="markdown level1 summary"><p>Gets or sets the DICOM service options.</p>
@@ -486,8 +460,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_UserState_" data-uid="FellowOakDicom.Network.DicomService.UserState*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_UserState" data-uid="FellowOakDicom.Network.DicomService.UserState">UserState</h4>
   <div class="markdown level1 summary"><p>Gets or sets a user state associated with the service.</p>
@@ -514,8 +486,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_CreateCStoreReceiveStream_" data-uid="FellowOakDicom.Network.DicomService.CreateCStoreReceiveStream*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_CreateCStoreReceiveStream_FellowOakDicom_DicomFile_" data-uid="FellowOakDicom.Network.DicomService.CreateCStoreReceiveStream(FellowOakDicom.DicomFile)">CreateCStoreReceiveStream(DicomFile)</h4>
   <div class="markdown level1 summary"><p>The purpose of this method is to return the Stream that a SopInstance received
@@ -548,8 +518,6 @@ out of memory situations.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_Dispose_" data-uid="FellowOakDicom.Network.DicomService.Dispose*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_Dispose" data-uid="FellowOakDicom.Network.DicomService.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
@@ -559,8 +527,6 @@ out of memory situations.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_Dispose_" data-uid="FellowOakDicom.Network.DicomService.Dispose*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_Dispose_System_Boolean_" data-uid="FellowOakDicom.Network.DicomService.Dispose(System.Boolean)">Dispose(Boolean)</h4>
   <div class="markdown level1 summary"></div>
@@ -586,8 +552,6 @@ out of memory situations.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_Finalize_" data-uid="FellowOakDicom.Network.DicomService.Finalize*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_Finalize" data-uid="FellowOakDicom.Network.DicomService.Finalize">Finalize()</h4>
   <div class="markdown level1 summary"><p>The finalizer will be called when this instance is not disposed properly.</p>
@@ -600,8 +564,6 @@ out of memory situations.</p>
   <h5 id="FellowOakDicom_Network_DicomService_Finalize_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Failing to dispose indicates wrong usage</p>
 </div>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_GetCStoreDicomFile_" data-uid="FellowOakDicom.Network.DicomService.GetCStoreDicomFile*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_GetCStoreDicomFile" data-uid="FellowOakDicom.Network.DicomService.GetCStoreDicomFile">GetCStoreDicomFile()</h4>
   <div class="markdown level1 summary"><p>The purpose of this method is to create a DicomFile for the SopInstance received via
@@ -632,8 +594,6 @@ for unseekable streams or to do cleanup related to receiving that specific insta
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_OnSendQueueEmptyAsync_" data-uid="FellowOakDicom.Network.DicomService.OnSendQueueEmptyAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_OnSendQueueEmptyAsync" data-uid="FellowOakDicom.Network.DicomService.OnSendQueueEmptyAsync">OnSendQueueEmptyAsync()</h4>
   <div class="markdown level1 summary"><p>Action to perform when send queue is empty.</p>
@@ -653,13 +613,11 @@ for unseekable streams or to do cleanup related to receiving that specific insta
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_RunAsync_" data-uid="FellowOakDicom.Network.DicomService.RunAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_RunAsync" data-uid="FellowOakDicom.Network.DicomService.RunAsync">RunAsync()</h4>
   <div class="markdown level1 summary"><p>Setup long-running operations that the DICOM service manages.</p>
@@ -679,14 +637,12 @@ for unseekable streams or to do cleanup related to receiving that specific insta
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>Awaitable task maintaining the long-running operation(s).</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_SendAbortAsync_" data-uid="FellowOakDicom.Network.DicomService.SendAbortAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_SendAbortAsync_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_" data-uid="FellowOakDicom.Network.DicomService.SendAbortAsync(FellowOakDicom.Network.DicomAbortSource,FellowOakDicom.Network.DicomAbortReason)">SendAbortAsync(DicomAbortSource, DicomAbortReason)</h4>
   <div class="markdown level1 summary"><p>Send abort request.</p>
@@ -730,13 +686,11 @@ for unseekable streams or to do cleanup related to receiving that specific insta
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_SendAssociationAcceptAsync_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationAcceptAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_SendAssociationAcceptAsync_FellowOakDicom_Network_DicomAssociation_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationAcceptAsync(FellowOakDicom.Network.DicomAssociation)">SendAssociationAcceptAsync(DicomAssociation)</h4>
   <div class="markdown level1 summary"><p>Send association accept response.</p>
@@ -774,13 +728,11 @@ for unseekable streams or to do cleanup related to receiving that specific insta
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_SendAssociationRejectAsync_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationRejectAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_SendAssociationRejectAsync_FellowOakDicom_Network_DicomRejectResult_FellowOakDicom_Network_DicomRejectSource_FellowOakDicom_Network_DicomRejectReason_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationRejectAsync(FellowOakDicom.Network.DicomRejectResult,FellowOakDicom.Network.DicomRejectSource,FellowOakDicom.Network.DicomRejectReason)">SendAssociationRejectAsync(DicomRejectResult, DicomRejectSource, DicomRejectReason)</h4>
   <div class="markdown level1 summary"><p>Send association reject response.</p>
@@ -830,13 +782,11 @@ for unseekable streams or to do cleanup related to receiving that specific insta
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_SendAssociationReleaseRequestAsync_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationReleaseRequestAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_SendAssociationReleaseRequestAsync" data-uid="FellowOakDicom.Network.DicomService.SendAssociationReleaseRequestAsync">SendAssociationReleaseRequestAsync()</h4>
   <div class="markdown level1 summary"><p>Send association release request.</p>
@@ -856,13 +806,11 @@ for unseekable streams or to do cleanup related to receiving that specific insta
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_SendAssociationReleaseResponseAsync_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationReleaseResponseAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_SendAssociationReleaseResponseAsync" data-uid="FellowOakDicom.Network.DicomService.SendAssociationReleaseResponseAsync">SendAssociationReleaseResponseAsync()</h4>
   <div class="markdown level1 summary"><p>Send association release response.</p>
@@ -882,13 +830,11 @@ for unseekable streams or to do cleanup related to receiving that specific insta
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_SendAssociationRequestAsync_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationRequestAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_SendAssociationRequestAsync_FellowOakDicom_Network_DicomAssociation_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationRequestAsync(FellowOakDicom.Network.DicomAssociation)">SendAssociationRequestAsync(DicomAssociation)</h4>
   <div class="markdown level1 summary"><p>Send association request.</p>
@@ -926,13 +872,11 @@ for unseekable streams or to do cleanup related to receiving that specific insta
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_SendPDUAsync_" data-uid="FellowOakDicom.Network.DicomService.SendPDUAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_SendPDUAsync_FellowOakDicom_Network_PDU_" data-uid="FellowOakDicom.Network.DicomService.SendPDUAsync(FellowOakDicom.Network.PDU)">SendPDUAsync(PDU)</h4>
   <div class="markdown level1 summary"><p>Asynchronously send single PDU.</p>
@@ -970,14 +914,12 @@ for unseekable streams or to do cleanup related to receiving that specific insta
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>Awaitable task.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_SendRequestAsync_" data-uid="FellowOakDicom.Network.DicomService.SendRequestAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_SendRequestAsync_FellowOakDicom_Network_DicomRequest_" data-uid="FellowOakDicom.Network.DicomService.SendRequestAsync(FellowOakDicom.Network.DicomRequest)">SendRequestAsync(DicomRequest)</h4>
   <div class="markdown level1 summary"><p>Send request from service.</p>
@@ -1015,13 +957,11 @@ for unseekable streams or to do cleanup related to receiving that specific insta
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomService_SendResponseAsync_" data-uid="FellowOakDicom.Network.DicomService.SendResponseAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomService_SendResponseAsync_FellowOakDicom_Network_DicomResponse_" data-uid="FellowOakDicom.Network.DicomService.SendResponseAsync(FellowOakDicom.Network.DicomResponse)">SendResponseAsync(DicomResponse)</h4>
   <div class="markdown level1 summary"><p>Send response from service.</p>
@@ -1059,7 +999,7 @@ for unseekable streams or to do cleanup related to receiving that specific insta
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1069,17 +1009,17 @@ for unseekable streams or to do cleanup related to receiving that specific insta
       <a class="xref" href="FellowOakDicom.Network.IDicomServiceRunner.html">IDicomServiceRunner</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
   </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -1096,8 +1036,8 @@ for unseekable streams or to do cleanup related to receiving that specific insta
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

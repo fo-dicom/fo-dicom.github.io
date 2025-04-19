@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -86,15 +86,13 @@
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Client.html">FellowOakDicom.Network.Client</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_Client_IDicomClient_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IDicomClient</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_AdditionalExtendedNegotiations_" data-uid="FellowOakDicom.Network.Client.IDicomClient.AdditionalExtendedNegotiations*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_AdditionalExtendedNegotiations" data-uid="FellowOakDicom.Network.Client.IDicomClient.AdditionalExtendedNegotiations">AdditionalExtendedNegotiations</h4>
   <div class="markdown level1 summary"><p>Gets or sets extended negotiation items to negotiate with association.</p>
@@ -114,13 +112,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomExtendedNegotiation.html">DicomExtendedNegotiation</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomExtendedNegotiation.html">DicomExtendedNegotiation</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_AdditionalPresentationContexts_" data-uid="FellowOakDicom.Network.Client.IDicomClient.AdditionalPresentationContexts*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_AdditionalPresentationContexts" data-uid="FellowOakDicom.Network.Client.IDicomClient.AdditionalPresentationContexts">AdditionalPresentationContexts</h4>
   <div class="markdown level1 summary"><p>Gets or sets additional presentation contexts to negotiate with association.</p>
@@ -140,13 +136,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomPresentationContext.html">DicomPresentationContext</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomPresentationContext.html">DicomPresentationContext</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_CalledAe_" data-uid="FellowOakDicom.Network.Client.IDicomClient.CalledAe*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_CalledAe" data-uid="FellowOakDicom.Network.Client.IDicomClient.CalledAe">CalledAe</h4>
   <div class="markdown level1 summary"><p>Called Application Entity Title.</p>
@@ -171,8 +165,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_CallingAe_" data-uid="FellowOakDicom.Network.Client.IDicomClient.CallingAe*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_CallingAe" data-uid="FellowOakDicom.Network.Client.IDicomClient.CallingAe">CallingAe</h4>
   <div class="markdown level1 summary"><p>Calling Application Entity Title.</p>
@@ -197,8 +189,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_ClientOptions_" data-uid="FellowOakDicom.Network.Client.IDicomClient.ClientOptions*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_ClientOptions" data-uid="FellowOakDicom.Network.Client.IDicomClient.ClientOptions">ClientOptions</h4>
   <div class="markdown level1 summary"><p>Gets or sets options to control behavior of this DICOM client.</p>
@@ -223,8 +213,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_FallbackEncoding_" data-uid="FellowOakDicom.Network.Client.IDicomClient.FallbackEncoding*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_FallbackEncoding" data-uid="FellowOakDicom.Network.Client.IDicomClient.FallbackEncoding">FallbackEncoding</h4>
   <div class="markdown level1 summary"><p>Gets or sets the fallback encoding.</p>
@@ -244,13 +232,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_Host_" data-uid="FellowOakDicom.Network.Client.IDicomClient.Host*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_Host" data-uid="FellowOakDicom.Network.Client.IDicomClient.Host">Host</h4>
   <div class="markdown level1 summary"><p>DICOM host.</p>
@@ -275,8 +261,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_IsSendRequired_" data-uid="FellowOakDicom.Network.Client.IDicomClient.IsSendRequired*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_IsSendRequired" data-uid="FellowOakDicom.Network.Client.IDicomClient.IsSendRequired">IsSendRequired</h4>
   <div class="markdown level1 summary"><p>Gets whether a new send invocation is required. Send needs to be called if there are requests in queue and client is not connected.</p>
@@ -301,8 +285,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_Logger_" data-uid="FellowOakDicom.Network.Client.IDicomClient.Logger*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_Logger" data-uid="FellowOakDicom.Network.Client.IDicomClient.Logger">Logger</h4>
   <div class="markdown level1 summary"><p>Gets or sets the logger that will be used by this DicomClient</p>
@@ -322,13 +304,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_OnCStoreRequest_" data-uid="FellowOakDicom.Network.Client.IDicomClient.OnCStoreRequest*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_OnCStoreRequest" data-uid="FellowOakDicom.Network.Client.IDicomClient.OnCStoreRequest">OnCStoreRequest</h4>
   <div class="markdown level1 summary"><p>Gets or sets the handler of a client C-STORE request.</p>
@@ -353,8 +333,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_OnNEventReportRequest_" data-uid="FellowOakDicom.Network.Client.IDicomClient.OnNEventReportRequest*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_OnNEventReportRequest" data-uid="FellowOakDicom.Network.Client.IDicomClient.OnNEventReportRequest">OnNEventReportRequest</h4>
   <div class="markdown level1 summary"><p>Gets or sets the handler of  client N-EVENT-REPORT-RQ</p>
@@ -379,8 +357,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_Port_" data-uid="FellowOakDicom.Network.Client.IDicomClient.Port*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_Port" data-uid="FellowOakDicom.Network.Client.IDicomClient.Port">Port</h4>
   <div class="markdown level1 summary"><p>Port.</p>
@@ -405,8 +381,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_RequireSuccessfulUserIdentityNegotiation_" data-uid="FellowOakDicom.Network.Client.IDicomClient.RequireSuccessfulUserIdentityNegotiation*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_RequireSuccessfulUserIdentityNegotiation" data-uid="FellowOakDicom.Network.Client.IDicomClient.RequireSuccessfulUserIdentityNegotiation">RequireSuccessfulUserIdentityNegotiation</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether to require a successful user identity negotiation during association.</p>
@@ -431,8 +405,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_ServiceOptions_" data-uid="FellowOakDicom.Network.Client.IDicomClient.ServiceOptions*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_ServiceOptions" data-uid="FellowOakDicom.Network.Client.IDicomClient.ServiceOptions">ServiceOptions</h4>
   <div class="markdown level1 summary"><p>Gets or sets options to control behavior of <a class="xref" href="FellowOakDicom.Network.DicomService.html">DicomService</a> base class.</p>
@@ -457,8 +429,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_TlsInitiator_" data-uid="FellowOakDicom.Network.Client.IDicomClient.TlsInitiator*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_TlsInitiator" data-uid="FellowOakDicom.Network.Client.IDicomClient.TlsInitiator">TlsInitiator</h4>
   <div class="markdown level1 summary"><p>A handler to initiate TLS security, if null then TLS is not enabled.</p>
@@ -478,13 +448,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ITlsInitiator</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Tls.ITlsInitiator.html">ITlsInitiator</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_UserIdentityNegotiation_" data-uid="FellowOakDicom.Network.Client.IDicomClient.UserIdentityNegotiation*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_UserIdentityNegotiation" data-uid="FellowOakDicom.Network.Client.IDicomClient.UserIdentityNegotiation">UserIdentityNegotiation</h4>
   <div class="markdown level1 summary"><p>Gets or sets the user identity to negotiate with association.</p>
@@ -511,8 +479,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_AddRequestAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClient.AddRequestAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_AddRequestAsync_FellowOakDicom_Network_DicomRequest_" data-uid="FellowOakDicom.Network.Client.IDicomClient.AddRequestAsync(FellowOakDicom.Network.DicomRequest)">AddRequestAsync(DicomRequest)</h4>
   <div class="markdown level1 summary"><p>Enqueues a new DICOM request for execution.</p>
@@ -550,15 +516,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_AddRequestsAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClient.AddRequestsAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_IDicomClient_AddRequestsAsync_IEnumerable_FellowOakDicom_Network_DicomRequest__" data-uid="FellowOakDicom.Network.Client.IDicomClient.AddRequestsAsync(IEnumerable{FellowOakDicom.Network.DicomRequest})">AddRequestsAsync(IEnumerable&lt;DicomRequest&gt;)</h4>
+  <h4 id="FellowOakDicom_Network_Client_IDicomClient_AddRequestsAsync_System_Collections_Generic_IEnumerable_FellowOakDicom_Network_DicomRequest__" data-uid="FellowOakDicom.Network.Client.IDicomClient.AddRequestsAsync(System.Collections.Generic.IEnumerable{FellowOakDicom.Network.DicomRequest})">AddRequestsAsync(IEnumerable&lt;DicomRequest&gt;)</h4>
   <div class="markdown level1 summary"><p>Enqueues new DICOM requests for execution.
 When you have many requests, this method is recommended over calling <a class="xref" href="FellowOakDicom.Network.Client.IDicomClient.html#FellowOakDicom_Network_Client_IDicomClient_AddRequestAsync_FellowOakDicom_Network_DicomRequest_">AddRequestAsync(DicomRequest)</a> multiple times.</p>
 </div>
@@ -578,7 +542,7 @@ When you have many requests, this method is recommended over calling <a class="x
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a>&gt;</td>
         <td><span class="parametername">dicomRequests</span></td>
         <td><p>The DICOM requests to send</p>
 </td>
@@ -595,13 +559,11 @@ When you have many requests, this method is recommended over calling <a class="x
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_NegotiateAsyncOps_" data-uid="FellowOakDicom.Network.Client.IDicomClient.NegotiateAsyncOps*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_NegotiateAsyncOps_System_Int32_System_Int32_" data-uid="FellowOakDicom.Network.Client.IDicomClient.NegotiateAsyncOps(System.Int32,System.Int32)">NegotiateAsyncOps(Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Set negotiation asynchronous operations.</p>
@@ -635,8 +597,6 @@ When you have many requests, this method is recommended over calling <a class="x
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_NegotiateUserIdentity_" data-uid="FellowOakDicom.Network.Client.IDicomClient.NegotiateUserIdentity*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_NegotiateUserIdentity_FellowOakDicom_Network_DicomUserIdentityNegotiation_" data-uid="FellowOakDicom.Network.Client.IDicomClient.NegotiateUserIdentity(FellowOakDicom.Network.DicomUserIdentityNegotiation)">NegotiateUserIdentity(DicomUserIdentityNegotiation)</h4>
   <div class="markdown level1 summary"><p>Set negotiation of user identity.</p>
@@ -664,17 +624,15 @@ When you have many requests, this method is recommended over calling <a class="x
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClient_SendAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClient.SendAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_IDicomClient_SendAsync_CancellationToken_FellowOakDicom_Network_Client_DicomClientCancellationMode_" data-uid="FellowOakDicom.Network.Client.IDicomClient.SendAsync(CancellationToken,FellowOakDicom.Network.Client.DicomClientCancellationMode)">SendAsync(CancellationToken, DicomClientCancellationMode)</h4>
+  <h4 id="FellowOakDicom_Network_Client_IDicomClient_SendAsync_System_Threading_CancellationToken_FellowOakDicom_Network_Client_DicomClientCancellationMode_" data-uid="FellowOakDicom.Network.Client.IDicomClient.SendAsync(System.Threading.CancellationToken,FellowOakDicom.Network.Client.DicomClientCancellationMode)">SendAsync(CancellationToken, DicomClientCancellationMode)</h4>
   <div class="markdown level1 summary"><p>Sends existing requests to DICOM service. Note that subsequent calls, when the DICOM client is already sending its requests, will be completely ignored.
 If you want to cancel the process, be sure to cancel the cancellation token that was passed into the first call.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task SendAsync(CancellationToken cancellationToken = null, DicomClientCancellationMode cancellationMode = DicomClientCancellationMode.ImmediatelyReleaseAssociation)</code></pre>
+    <pre><code class="lang-csharp hljs">Task SendAsync(CancellationToken cancellationToken = default(CancellationToken), DicomClientCancellationMode cancellationMode = DicomClientCancellationMode.ImmediatelyReleaseAssociation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -687,7 +645,7 @@ If you want to cancel the process, be sure to cancel the cancellation token that
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token that can abort the send process if necessary</p>
 </td>
@@ -710,15 +668,13 @@ If you want to cancel the process, be sure to cancel the cancellation token that
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="events">Events
   </h3>
-  
-  
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_AssociationAccepted" data-uid="FellowOakDicom.Network.Client.IDicomClient.AssociationAccepted">AssociationAccepted</h4>
   <div class="markdown level1 summary"><p>Triggers when an association is accepted</p>
 </div>
@@ -737,13 +693,11 @@ If you want to cancel the process, be sure to cancel the cancellation token that
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">AssociationAcceptedEventArgs</span>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="FellowOakDicom.Network.Client.EventArguments.AssociationAcceptedEventArgs.html">AssociationAcceptedEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_AssociationRejected" data-uid="FellowOakDicom.Network.Client.IDicomClient.AssociationRejected">AssociationRejected</h4>
   <div class="markdown level1 summary"><p>Triggers when an association is rejected.</p>
 </div>
@@ -762,13 +716,11 @@ If you want to cancel the process, be sure to cancel the cancellation token that
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">AssociationRejectedEventArgs</span>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="FellowOakDicom.Network.Client.EventArguments.AssociationRejectedEventArgs.html">AssociationRejectedEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_AssociationReleased" data-uid="FellowOakDicom.Network.Client.IDicomClient.AssociationReleased">AssociationReleased</h4>
   <div class="markdown level1 summary"><p>Representation of the DICOM association released event.</p>
 </div>
@@ -787,13 +739,11 @@ If you want to cancel the process, be sure to cancel the cancellation token that
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_AssociationRequestTimedOut" data-uid="FellowOakDicom.Network.Client.IDicomClient.AssociationRequestTimedOut">AssociationRequestTimedOut</h4>
   <div class="markdown level1 summary"><p>Representation of the DICOM association request timed out event.</p>
 </div>
@@ -812,13 +762,11 @@ If you want to cancel the process, be sure to cancel the cancellation token that
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">AssociationRequestTimedOutEventArgs</span>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="FellowOakDicom.Network.Client.EventArguments.AssociationRequestTimedOutEventArgs.html">AssociationRequestTimedOutEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_RequestTimedOut" data-uid="FellowOakDicom.Network.Client.IDicomClient.RequestTimedOut">RequestTimedOut</h4>
   <div class="markdown level1 summary"><p>Triggered when a DICOM request times out.</p>
 </div>
@@ -837,13 +785,11 @@ If you want to cancel the process, be sure to cancel the cancellation token that
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">RequestTimedOutEventArgs</span>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="FellowOakDicom.Network.Client.EventArguments.RequestTimedOutEventArgs.html">RequestTimedOutEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Network_Client_IDicomClient_StateChanged" data-uid="FellowOakDicom.Network.Client.IDicomClient.StateChanged">StateChanged</h4>
   <div class="markdown level1 summary"><p>Whenever the DICOM client changes state, an event will be emitted containing the old state and the new state.
 The current DICOM client implementation is no longer state based, and has been rewritten as a wrapper around the new <a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection.html">IAdvancedDicomClientConnection</a>
@@ -852,7 +798,8 @@ This event handler is still supported for backwards compatibility reasons, but m
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event EventHandler&lt;StateChangedEventArgs&gt; StateChanged</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;StateChanged is an artifact of an older state-based implementation of the DicomClient and will be deleted in the future. It only exists today for backwards compatibility purposes&quot;)]
+event EventHandler&lt;StateChangedEventArgs&gt; StateChanged</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -864,20 +811,20 @@ This event handler is still supported for backwards compatibility reasons, but m
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">StateChangedEventArgs</span>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="FellowOakDicom.Network.Client.EventArguments.StateChangedEventArgs.html">StateChangedEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -894,8 +841,8 @@ This event handler is still supported for backwards compatibility reasons, but m
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

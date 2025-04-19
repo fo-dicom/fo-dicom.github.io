@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -98,16 +98,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -118,17 +112,21 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.Buffer.html">FellowOakDicom.IO.Buffer</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ByteBufferByteSource : IByteSource</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource__ctor_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.#ctor*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource__ctor" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.#ctor">ByteBufferByteSource()</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="FellowOakDicom.IO.Buffer.ByteBufferByteSource.html">ByteBufferByteSource</a>.
@@ -139,8 +137,6 @@ Internal list of buffers is empty.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ByteBufferByteSource()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource__ctor_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.#ctor*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource__ctor_FellowOakDicom_IO_Buffer_IByteBuffer___" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.#ctor(FellowOakDicom.IO.Buffer.IByteBuffer[])">ByteBufferByteSource(IByteBuffer[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="FellowOakDicom.IO.Buffer.ByteBufferByteSource.html">ByteBufferByteSource</a>.</p>
@@ -170,8 +166,6 @@ Internal list of buffers is empty.</p>
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Endian_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Endian*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Endian" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Endian">Endian</h4>
   <div class="markdown level1 summary"><p>Gets or sets the endianness.</p>
@@ -196,8 +190,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_IsEOF_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.IsEOF*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_IsEOF" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.IsEOF">IsEOF</h4>
   <div class="markdown level1 summary"><p>Gets whether end-of-source is reached.</p>
@@ -222,8 +214,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Position_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Position*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Position" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Position">Position</h4>
   <div class="markdown level1 summary"><p>Gets the current read position.</p>
@@ -250,8 +240,6 @@ Internal list of buffers is empty.</p>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Add_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Add*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Add_FellowOakDicom_IO_Buffer_IByteBuffer_System_Boolean_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Add(FellowOakDicom.IO.Buffer.IByteBuffer,System.Boolean)">Add(IByteBuffer, Boolean)</h4>
   <div class="markdown level1 summary"><p>Add byte buffer to byte source.</p>
@@ -285,11 +273,10 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBuffer_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBuffer*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBuffer_System_UInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBuffer(System.UInt32)">GetBuffer(UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a byte buffer of specified length from the current position and moves to subsequent position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -308,7 +295,8 @@ Internal list of buffers is empty.</p>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
-        <td></td>
+        <td><p>Number of bytes to read.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -323,15 +311,15 @@ Internal list of buffers is empty.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a></td>
-        <td></td>
+        <td><p>Byte buffer containing the read bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBufferAsync_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBufferAsync*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBufferAsync_System_UInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBufferAsync(System.UInt32)">GetBufferAsync(UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Asynchronously gets a byte buffer of specified length from the current position and moves to subsequent position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -350,7 +338,8 @@ Internal list of buffers is empty.</p>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
-        <td></td>
+        <td><p>Number of bytes to read.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -364,13 +353,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
+        <td><p>Awaitable byte buffer containing the read bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBytes_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBytes*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBytes_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBytes(System.Byte[],System.Int32,System.Int32)">GetBytes(Byte[], Int32, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -421,8 +409,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBytes_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBytes*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBytes_System_Int32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBytes(System.Int32)">GetBytes(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a specified number of bytes from the current position and moves to subsequent position.</p>
@@ -466,8 +452,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetDouble_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetDouble*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetDouble" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetDouble">GetDouble()</h4>
   <div class="markdown level1 summary"><p>Gets a double precision floating point value (64 bits) from the current position and moves to subsequent position.</p>
@@ -493,8 +477,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetInt16_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetInt16*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetInt16" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetInt16">GetInt16()</h4>
   <div class="markdown level1 summary"><p>Gets a signed short (16 bits) from the current position and moves to subsequent position.</p>
@@ -520,8 +502,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetInt32*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetInt32" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetInt32">GetInt32()</h4>
   <div class="markdown level1 summary"><p>Gets a signed integer (32 bits) from the current position and moves to subsequent position.</p>
@@ -547,8 +527,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetInt64_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetInt64*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetInt64" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetInt64">GetInt64()</h4>
   <div class="markdown level1 summary"><p>Gets a signed long (64 bits) from the current position and moves to subsequent position.</p>
@@ -574,8 +552,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetSingle_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetSingle*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetSingle" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetSingle">GetSingle()</h4>
   <div class="markdown level1 summary"><p>Gets a single precision floating point value (32 bits) from the current position and moves to subsequent position.</p>
@@ -601,8 +577,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetStream_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetStream*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetStream" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetStream">GetStream()</h4>
   <div class="markdown level1 summary"></div>
@@ -621,13 +595,11 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt16_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt16*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt16" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt16">GetUInt16()</h4>
   <div class="markdown level1 summary"><p>Gets an unsigned short (16 bits) from the current position and moves to subsequent position.</p>
@@ -653,8 +625,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt32*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt32" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt32">GetUInt32()</h4>
   <div class="markdown level1 summary"><p>Gets an unsigned integer (32 bits) from the current position and moves to subsequent position.</p>
@@ -680,8 +650,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt64_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt64*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt64" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt64">GetUInt64()</h4>
   <div class="markdown level1 summary"><p>Gets an unsigned long (64 bits) from the current position and moves to subsequent position.</p>
@@ -707,8 +675,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt8_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt8*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt8" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt8">GetUInt8()</h4>
   <div class="markdown level1 summary"><p>Gets one byte from the current position and moves to subsequent position.</p>
@@ -734,8 +700,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GoTo_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GoTo*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GoTo_System_Int64_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GoTo(System.Int64)">GoTo(Int64)</h4>
   <div class="markdown level1 summary"></div>
@@ -761,8 +725,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Require_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Require*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Require_System_UInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Require(System.UInt32)">Require(UInt32)</h4>
   <div class="markdown level1 summary"><p>Verifies that there is a sufficient number of bytes to read.</p>
@@ -806,8 +768,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Require_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Require*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Require_System_UInt32_FellowOakDicom_IO_ByteSourceCallback_System_Object_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Require(System.UInt32,FellowOakDicom.IO.ByteSourceCallback,System.Object)">Require(UInt32, ByteSourceCallback, Object)</h4>
   <div class="markdown level1 summary"><p>Verifies that there is a sufficient number of bytes to read.</p>
@@ -863,8 +823,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Skip_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Skip*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Skip_System_UInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Skip(System.UInt32)">Skip(UInt32)</h4>
   <div class="markdown level1 summary"><p>Skip position <code data-dev-comment-type="paramref" class="paramref">count</code> number of bytes.</p>
@@ -896,15 +854,15 @@ Internal list of buffers is empty.</p>
   <div>
       <a class="xref" href="FellowOakDicom.IO.IByteSource.html">IByteSource</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -921,8 +879,8 @@ Internal list of buffers is empty.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -133,7 +133,7 @@
       <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_LastPendingResponseReceived">DicomMessage.LastPendingResponseReceived</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_IsTimedOut_TimeSpan_">DicomMessage.IsTimedOut(TimeSpan)</a>
+      <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_IsTimedOut_System_TimeSpan_">DicomMessage.IsTimedOut(TimeSpan)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_ToString">DicomMessage.ToString()</a>
@@ -154,9 +154,6 @@
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
       <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
@@ -165,17 +162,18 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomRequest_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class DicomRequest : DicomMessage</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomRequest__ctor_" data-uid="FellowOakDicom.Network.DicomRequest.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomRequest__ctor_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.Network.DicomRequest.#ctor(FellowOakDicom.DicomDataset)">DicomRequest(DicomDataset)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a> class.</p>
@@ -203,8 +201,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomRequest__ctor_" data-uid="FellowOakDicom.Network.DicomRequest.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomRequest__ctor_FellowOakDicom_Network_DicomCommandField_FellowOakDicom_DicomUID_" data-uid="FellowOakDicom.Network.DicomRequest.#ctor(FellowOakDicom.Network.DicomCommandField,FellowOakDicom.DicomUID)">DicomRequest(DicomCommandField, DicomUID)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a> class.</p>
@@ -240,8 +236,6 @@
   </table>
   <h3 id="fields">Fields
   </h3>
-  
-  
   <h4 id="FellowOakDicom_Network_DicomRequest_OnRequestSent" data-uid="FellowOakDicom.Network.DicomRequest.OnRequestSent">OnRequestSent</h4>
   <div class="markdown level1 summary"><p>Event handler for when DICOM requests are sent
 This will be triggered when the request is fully sent over the wire to the SCP</p>
@@ -261,13 +255,11 @@ This will be triggered when the request is fully sent over the wire to the SCP</
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomRequest.OnRequestSentEventArgs.html">DicomRequest.OnRequestSentEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomRequest.OnRequestSentEventArgs.html">DicomRequest.OnRequestSentEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Network_DicomRequest_OnTimeout" data-uid="FellowOakDicom.Network.DicomRequest.OnTimeout">OnTimeout</h4>
   <div class="markdown level1 summary"><p>Event handler for when this DICOM request times out.
 This will be triggered when the server takes too long to respond, or when it takes us too long to send the request in the first place.</p>
@@ -287,15 +279,13 @@ This will be triggered when the server takes too long to respond, or when it tak
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomRequest.OnTimeoutEventArgs.html">DicomRequest.OnTimeoutEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomRequest.OnTimeoutEventArgs.html">DicomRequest.OnTimeoutEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomRequest_MessageID_" data-uid="FellowOakDicom.Network.DicomRequest.MessageID*"></a>
   <h4 id="FellowOakDicom_Network_DicomRequest_MessageID" data-uid="FellowOakDicom.Network.DicomRequest.MessageID">MessageID</h4>
   <div class="markdown level1 summary"><p>Gets or sets the request message ID.</p>
@@ -322,8 +312,6 @@ This will be triggered when the server takes too long to respond, or when it tak
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomRequest_CreatePresentationContext_" data-uid="FellowOakDicom.Network.DicomRequest.CreatePresentationContext*"></a>
   <h4 id="FellowOakDicom_Network_DicomRequest_CreatePresentationContext_FellowOakDicom_DicomTransferSyntax___" data-uid="FellowOakDicom.Network.DicomRequest.CreatePresentationContext(FellowOakDicom.DicomTransferSyntax[])">CreatePresentationContext(DicomTransferSyntax[])</h4>
   <div class="markdown level1 summary"><p>Create presentation of the request using specific transfer syntax instead of relying on the default offered Explicit Little Endian, Implicit Littile Endian sequeunce</p>
@@ -351,8 +339,6 @@ This will be triggered when the server takes too long to respond, or when it tak
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomRequest_PostResponse_" data-uid="FellowOakDicom.Network.DicomRequest.PostResponse*"></a>
   <h4 id="FellowOakDicom_Network_DicomRequest_PostResponse_FellowOakDicom_Network_DicomService_FellowOakDicom_Network_DicomResponse_" data-uid="FellowOakDicom.Network.DicomRequest.PostResponse(FellowOakDicom.Network.DicomService,FellowOakDicom.Network.DicomResponse)">PostResponse(DicomService, DicomResponse)</h4>
   <div class="markdown level1 summary"><p>Operation to perform after response has been made.</p>
@@ -386,15 +372,15 @@ This will be triggered when the server takes too long to respond, or when it tak
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -411,8 +397,8 @@ This will be triggered when the server takes too long to respond, or when it tak
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

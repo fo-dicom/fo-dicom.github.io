@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -132,7 +132,7 @@
       <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAbortAsync_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_">IDicomClientConnection.OnReceiveAbortAsync(DicomAbortSource, DicomAbortReason)</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnConnectionClosedAsync_Exception_">IDicomClientConnection.OnConnectionClosedAsync(Exception)</a>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnConnectionClosedAsync_System_Exception_">IDicomClientConnection.OnConnectionClosedAsync(Exception)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_SendRequestAsync_FellowOakDicom_Network_DicomRequest_">IDicomClientConnection.SendRequestAsync(DicomRequest)</a>
@@ -147,7 +147,7 @@
       <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestPendingAsync_FellowOakDicom_Network_DicomRequest_FellowOakDicom_Network_DicomResponse_">IDicomClientConnection.OnRequestPendingAsync(DicomRequest, DicomResponse)</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestTimedOutAsync_FellowOakDicom_Network_DicomRequest_TimeSpan_">IDicomClientConnection.OnRequestTimedOutAsync(DicomRequest, TimeSpan)</a>
+      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestTimedOutAsync_FellowOakDicom_Network_DicomRequest_System_TimeSpan_">IDicomClientConnection.OnRequestTimedOutAsync(DicomRequest, TimeSpan)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnCStoreRequestAsync_FellowOakDicom_Network_DicomCStoreRequest_">IDicomClientConnection.OnCStoreRequestAsync(DicomCStoreRequest)</a>
@@ -155,19 +155,20 @@
     <div>
       <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientConnection.html#FellowOakDicom_Network_Client_IDicomClientConnection_OnNEventReportRequestAsync_FellowOakDicom_Network_DicomNEventReportRequest_">IDicomClientConnection.OnNEventReportRequestAsync(DicomNEventReportRequest)</a>
     </div>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.html">FellowOakDicom.Network.Client.Advanced.Connection</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnection_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IAdvancedDicomClientConnection : IDicomClientConnection</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IAdvancedDicomClientConnection : IDicomClientConnection, IDisposable</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnection_OpenAssociationAsync_" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection.OpenAssociationAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnection_OpenAssociationAsync_AdvancedDicomClientAssociationRequest_CancellationToken_" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection.OpenAssociationAsync(AdvancedDicomClientAssociationRequest,CancellationToken)">OpenAssociationAsync(AdvancedDicomClientAssociationRequest, CancellationToken)</h4>
+  <h4 id="FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnection_OpenAssociationAsync_FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociationRequest_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection.OpenAssociationAsync(FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociationRequest,System.Threading.CancellationToken)">OpenAssociationAsync(AdvancedDicomClientAssociationRequest, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Opens a new DICOM association over an existing TCP connection</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -186,13 +187,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">AdvancedDicomClientAssociationRequest</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociationRequest.html">AdvancedDicomClientAssociationRequest</a></td>
         <td><span class="parametername">request</span></td>
         <td><p>The request that specifies how the association should be opened</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The token that will cancel the opening of the association.
 Depending on the timing, this may leave the connection unusable, it is safest to always reopen a new connection if cancellation occurred.</p>
@@ -210,7 +211,7 @@ Depending on the timing, this may leave the connection unusable, it is safest to
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">IAdvancedDicomClientAssociation</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FellowOakDicom.Network.Client.Advanced.Association.IAdvancedDicomClientAssociation.html">IAdvancedDicomClientAssociation</a>&gt;</td>
         <td><p>The opened association if the other AE accepted the association request</p>
 </td>
       </tr>
@@ -247,15 +248,15 @@ Depending on the timing, this may leave the connection unusable, it is safest to
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -272,8 +273,8 @@ Depending on the timing, this may leave the connection unusable, it is safest to
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

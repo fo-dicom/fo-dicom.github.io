@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -94,16 +94,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -114,17 +108,21 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.Writer.html">FellowOakDicom.IO.Writer</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IO_Writer_DicomFileWriter_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class DicomFileWriter</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Writer_DicomFileWriter__ctor_" data-uid="FellowOakDicom.IO.Writer.DicomFileWriter.#ctor*"></a>
   <h4 id="FellowOakDicom_IO_Writer_DicomFileWriter__ctor_FellowOakDicom_IO_Writer_DicomWriteOptions_" data-uid="FellowOakDicom.IO.Writer.DicomFileWriter.#ctor(FellowOakDicom.IO.Writer.DicomWriteOptions)">DicomFileWriter(DicomWriteOptions)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of a <a class="xref" href="FellowOakDicom.IO.Writer.DicomFileWriter.html">DicomFileWriter</a>.</p>
@@ -154,8 +152,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Writer_DicomFileWriter_Write_" data-uid="FellowOakDicom.IO.Writer.DicomFileWriter.Write*"></a>
   <h4 id="FellowOakDicom_IO_Writer_DicomFileWriter_Write_FellowOakDicom_IO_IByteTarget_FellowOakDicom_DicomFileMetaInformation_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.IO.Writer.DicomFileWriter.Write(FellowOakDicom.IO.IByteTarget,FellowOakDicom.DicomFileMetaInformation,FellowOakDicom.DicomDataset)">Write(IByteTarget, DicomFileMetaInformation, DicomDataset)</h4>
   <div class="markdown level1 summary"><p>Write DICOM Part 10 object to <code data-dev-comment-type="paramref" class="paramref">target</code>.</p>
@@ -195,8 +191,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Writer_DicomFileWriter_WriteAsync_" data-uid="FellowOakDicom.IO.Writer.DicomFileWriter.WriteAsync*"></a>
   <h4 id="FellowOakDicom_IO_Writer_DicomFileWriter_WriteAsync_FellowOakDicom_IO_IByteTarget_FellowOakDicom_DicomFileMetaInformation_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.IO.Writer.DicomFileWriter.WriteAsync(FellowOakDicom.IO.IByteTarget,FellowOakDicom.DicomFileMetaInformation,FellowOakDicom.DicomDataset)">WriteAsync(IByteTarget, DicomFileMetaInformation, DicomDataset)</h4>
   <div class="markdown level1 summary"><p>Write DICOM Part 10 object to <code data-dev-comment-type="paramref" class="paramref">target</code> asynchronously.</p>
@@ -246,21 +240,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>Awaitable <span class="xref">System.Threading.Tasks.Task</span>.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -277,8 +271,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -101,9 +101,6 @@
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
       <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
@@ -112,17 +109,18 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.html">FellowOakDicom</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_DicomFile_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class DicomFile</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomFile__ctor_" data-uid="FellowOakDicom.DicomFile.#ctor*"></a>
   <h4 id="FellowOakDicom_DicomFile__ctor" data-uid="FellowOakDicom.DicomFile.#ctor">DicomFile()</h4>
   <div class="markdown level1 summary"></div>
@@ -131,8 +129,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DicomFile()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_DicomFile__ctor_" data-uid="FellowOakDicom.DicomFile.#ctor*"></a>
   <h4 id="FellowOakDicom_DicomFile__ctor_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.DicomFile.#ctor(FellowOakDicom.DicomDataset)">DicomFile(DicomDataset)</h4>
   <div class="markdown level1 summary"></div>
@@ -160,8 +156,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomFile_Dataset_" data-uid="FellowOakDicom.DicomFile.Dataset*"></a>
   <h4 id="FellowOakDicom_DicomFile_Dataset" data-uid="FellowOakDicom.DicomFile.Dataset">Dataset</h4>
   <div class="markdown level1 summary"><p>Gets the DICOM dataset of the file.</p>
@@ -186,8 +180,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFile_File_" data-uid="FellowOakDicom.DicomFile.File*"></a>
   <h4 id="FellowOakDicom_DicomFile_File" data-uid="FellowOakDicom.DicomFile.File">File</h4>
   <div class="markdown level1 summary"><p>Gets the file reference of the DICOM file.</p>
@@ -207,13 +199,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IFileReference</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFile_FileMetaInfo_" data-uid="FellowOakDicom.DicomFile.FileMetaInfo*"></a>
   <h4 id="FellowOakDicom_DicomFile_FileMetaInfo" data-uid="FellowOakDicom.DicomFile.FileMetaInfo">FileMetaInfo</h4>
   <div class="markdown level1 summary"><p>Gets the DICOM file meta information of the file.</p>
@@ -238,8 +228,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFile_Format_" data-uid="FellowOakDicom.DicomFile.Format*"></a>
   <h4 id="FellowOakDicom_DicomFile_Format" data-uid="FellowOakDicom.DicomFile.Format">Format</h4>
   <div class="markdown level1 summary"><p>Gets the DICOM file format.</p>
@@ -264,8 +252,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFile_IsPartial_" data-uid="FellowOakDicom.DicomFile.IsPartial*"></a>
   <h4 id="FellowOakDicom_DicomFile_IsPartial" data-uid="FellowOakDicom.DicomFile.IsPartial">IsPartial</h4>
   <div class="markdown level1 summary"><p>Gets whether the parsing of the file ended prematurely.</p>
@@ -292,10 +278,8 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomFile_HandleOpenError_" data-uid="FellowOakDicom.DicomFile.HandleOpenError*"></a>
-  <h4 id="FellowOakDicom_DicomFile_HandleOpenError_FellowOakDicom_DicomFile_DicomReaderResult_" data-uid="FellowOakDicom.DicomFile.HandleOpenError(FellowOakDicom.DicomFile,DicomReaderResult)">HandleOpenError(DicomFile, DicomReaderResult)</h4>
+  <h4 id="FellowOakDicom_DicomFile_HandleOpenError_FellowOakDicom_DicomFile_FellowOakDicom_IO_Reader_DicomReaderResult_" data-uid="FellowOakDicom.DicomFile.HandleOpenError(FellowOakDicom.DicomFile,FellowOakDicom.IO.Reader.DicomReaderResult)">HandleOpenError(DicomFile, DicomReaderResult)</h4>
   <div class="markdown level1 summary"><p>Throw if reading the file resulted in an error.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -319,7 +303,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">DicomReaderResult</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.Reader.DicomReaderResult.html">DicomReaderResult</a></td>
         <td><span class="parametername">result</span></td>
         <td></td>
       </tr>
@@ -341,8 +325,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFile_HasValidHeader_" data-uid="FellowOakDicom.DicomFile.HasValidHeader*"></a>
   <h4 id="FellowOakDicom_DicomFile_HasValidHeader_System_String_" data-uid="FellowOakDicom.DicomFile.HasValidHeader(System.String)">HasValidHeader(String)</h4>
   <div class="markdown level1 summary"><p>Test if file has a valid preamble and DICOM 3.0 header.</p>
@@ -386,8 +368,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFile_OnSave_" data-uid="FellowOakDicom.DicomFile.OnSave*"></a>
   <h4 id="FellowOakDicom_DicomFile_OnSave" data-uid="FellowOakDicom.DicomFile.OnSave">OnSave()</h4>
   <div class="markdown level1 summary"><p>Method to call before performing the actual saving.</p>
@@ -397,79 +377,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnSave()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_DicomFile_Open_" data-uid="FellowOakDicom.DicomFile.Open*"></a>
-  <h4 id="FellowOakDicom_DicomFile_Open_Stream_Encoding_Func_FellowOakDicom_ParseState_System_Boolean__FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.Open(Stream,Encoding,Func{FellowOakDicom.ParseState,System.Boolean},FellowOakDicom.FileReadOption,System.Int32)">Open(Stream, Encoding, Func&lt;ParseState, Boolean&gt;, FileReadOption, Int32)</h4>
-  <div class="markdown level1 summary"><p>Read a DICOM file from stream.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DicomFile Open(Stream stream, Encoding fallbackEncoding, Func&lt;ParseState, bool&gt; stop = null, FileReadOption readOption = FileReadOption.Default, int largeObjectSize = 0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">stream</span></td>
-        <td><p>Stream to read.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Encoding</span></td>
-        <td><span class="parametername">fallbackEncoding</span></td>
-        <td><p>Encoding to use if encoding cannot be obtained from DICOM file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <span class="xref">System.Boolean</span>&gt;</td>
-        <td><span class="parametername">stop</span></td>
-        <td><p>Stop criterion in dataset.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.FileReadOption.html">FileReadOption</a></td>
-        <td><span class="parametername">readOption</span></td>
-        <td><p>The option how to deal with large DICOM tag like pixel data</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">largeObjectSize</span></td>
-        <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a></td>
-        <td><p>Read <a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_DicomFile_Open_" data-uid="FellowOakDicom.DicomFile.Open*"></a>
-  <h4 id="FellowOakDicom_DicomFile_Open_Stream_FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.Open(Stream,FellowOakDicom.FileReadOption,System.Int32)">Open(Stream, FileReadOption, Int32)</h4>
+  <h4 id="FellowOakDicom_DicomFile_Open_System_IO_Stream_FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.Open(System.IO.Stream,FellowOakDicom.FileReadOption,System.Int32)">Open(Stream, FileReadOption, Int32)</h4>
   <div class="markdown level1 summary"><p>Read a DICOM file from stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -488,7 +397,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>Stream to read.</p>
 </td>
@@ -523,18 +432,14 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFile_Open_" data-uid="FellowOakDicom.DicomFile.Open*"></a>
-  <h4 id="FellowOakDicom_DicomFile_Open_System_String_Encoding_Func_FellowOakDicom_ParseState_System_Boolean__FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.Open(System.String,Encoding,Func{FellowOakDicom.ParseState,System.Boolean},FellowOakDicom.FileReadOption,System.Int32)">Open(String, Encoding, Func&lt;ParseState, Boolean&gt;, FileReadOption, Int32)</h4>
-  <div class="markdown level1 summary"><p>Reads the specified filename and returns a DicomFile object.  Note that the values for large
-DICOM elements (e.g. PixelData) are read in &quot;on demand&quot; to conserve memory.  Large DICOM elements
-are determined by their size in bytes - see the default value for this in the FileByteSource._largeObjectSize</p>
+  <h4 id="FellowOakDicom_DicomFile_Open_System_IO_Stream_System_Text_Encoding_System_Func_FellowOakDicom_ParseState_System_Boolean__FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.Open(System.IO.Stream,System.Text.Encoding,System.Func{FellowOakDicom.ParseState,System.Boolean},FellowOakDicom.FileReadOption,System.Int32)">Open(Stream, Encoding, Func&lt;ParseState, Boolean&gt;, FileReadOption, Int32)</h4>
+  <div class="markdown level1 summary"><p>Read a DICOM file from stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DicomFile Open(string fileName, Encoding fallbackEncoding, Func&lt;ParseState, bool&gt; stop = null, FileReadOption readOption = FileReadOption.Default, int largeObjectSize = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DicomFile Open(Stream stream, Encoding fallbackEncoding, Func&lt;ParseState, bool&gt; stop = null, FileReadOption readOption = FileReadOption.Default, int largeObjectSize = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -547,19 +452,19 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">fileName</span></td>
-        <td><p>The filename of the DICOM file</p>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Stream to read.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">fallbackEncoding</span></td>
-        <td><p>Encoding to apply when attribute Specific Character Set is not available.</p>
+        <td><p>Encoding to use if encoding cannot be obtained from DICOM file.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">stop</span></td>
         <td><p>Stop criterion in dataset.</p>
 </td>
@@ -567,7 +472,7 @@ are determined by their size in bytes - see the default value for this in the Fi
       <tr>
         <td><a class="xref" href="FellowOakDicom.FileReadOption.html">FileReadOption</a></td>
         <td><span class="parametername">readOption</span></td>
-        <td><p>Option how to deal with large values, if they should be loaded directly into memory or lazy loaded on demand</p>
+        <td><p>The option how to deal with large DICOM tag like pixel data</p>
 </td>
       </tr>
       <tr>
@@ -589,13 +494,11 @@ are determined by their size in bytes - see the default value for this in the Fi
     <tbody>
       <tr>
         <td><a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a></td>
-        <td><p>DicomFile instance</p>
+        <td><p>Read <a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFile_Open_" data-uid="FellowOakDicom.DicomFile.Open*"></a>
   <h4 id="FellowOakDicom_DicomFile_Open_System_String_FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.Open(System.String,FellowOakDicom.FileReadOption,System.Int32)">Open(String, FileReadOption, Int32)</h4>
   <div class="markdown level1 summary"><p>Reads the specified filename and returns a DicomFile object.  Note that the values for large
@@ -653,144 +556,16 @@ are determined by their size in bytes - see the default value for this in the Fi
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="FellowOakDicom_DicomFile_OpenAsync_" data-uid="FellowOakDicom.DicomFile.OpenAsync*"></a>
-  <h4 id="FellowOakDicom_DicomFile_OpenAsync_Stream_Encoding_Func_FellowOakDicom_ParseState_System_Boolean__FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.OpenAsync(Stream,Encoding,Func{FellowOakDicom.ParseState,System.Boolean},FellowOakDicom.FileReadOption,System.Int32)">OpenAsync(Stream, Encoding, Func&lt;ParseState, Boolean&gt;, FileReadOption, Int32)</h4>
-  <div class="markdown level1 summary"><p>Asynchronously read a DICOM file from stream.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static async Task&lt;DicomFile&gt; OpenAsync(Stream stream, Encoding fallbackEncoding, Func&lt;ParseState, bool&gt; stop = null, FileReadOption readOption = FileReadOption.Default, int largeObjectSize = 0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">stream</span></td>
-        <td><p>Stream to read.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Encoding</span></td>
-        <td><span class="parametername">fallbackEncoding</span></td>
-        <td><p>Encoding to use if encoding cannot be obtained from DICOM file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <span class="xref">System.Boolean</span>&gt;</td>
-        <td><span class="parametername">stop</span></td>
-        <td><p>Stop criterion in dataset.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.FileReadOption.html">FileReadOption</a></td>
-        <td><span class="parametername">readOption</span></td>
-        <td><p>The option how to deal with large DICOM tags like pixel data.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">largeObjectSize</span></td>
-        <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a>&gt;</td>
-        <td><p>Awaitable <a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a> instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_DicomFile_OpenAsync_" data-uid="FellowOakDicom.DicomFile.OpenAsync*"></a>
-  <h4 id="FellowOakDicom_DicomFile_OpenAsync_Stream_FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.OpenAsync(Stream,FellowOakDicom.FileReadOption,System.Int32)">OpenAsync(Stream, FileReadOption, Int32)</h4>
-  <div class="markdown level1 summary"><p>Asynchronously read a DICOM file from stream.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;DicomFile&gt; OpenAsync(Stream stream, FileReadOption readOption = FileReadOption.Default, int largeObjectSize = 0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">stream</span></td>
-        <td><p>Stream to read.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.FileReadOption.html">FileReadOption</a></td>
-        <td><span class="parametername">readOption</span></td>
-        <td><p>The option how to deal with large DICOM tags like pixel data.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">largeObjectSize</span></td>
-        <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a>&gt;</td>
-        <td><p>Awaitable <a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a> instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_DicomFile_OpenAsync_" data-uid="FellowOakDicom.DicomFile.OpenAsync*"></a>
-  <h4 id="FellowOakDicom_DicomFile_OpenAsync_System_String_Encoding_Func_FellowOakDicom_ParseState_System_Boolean__FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.OpenAsync(System.String,Encoding,Func{FellowOakDicom.ParseState,System.Boolean},FellowOakDicom.FileReadOption,System.Int32)">OpenAsync(String, Encoding, Func&lt;ParseState, Boolean&gt;, FileReadOption, Int32)</h4>
-  <div class="markdown level1 summary"><p>Asynchronously reads the specified filename and returns a DicomFile object.  Note that the values for large
+  <a id="FellowOakDicom_DicomFile_Open_" data-uid="FellowOakDicom.DicomFile.Open*"></a>
+  <h4 id="FellowOakDicom_DicomFile_Open_System_String_System_Text_Encoding_System_Func_FellowOakDicom_ParseState_System_Boolean__FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.Open(System.String,System.Text.Encoding,System.Func{FellowOakDicom.ParseState,System.Boolean},FellowOakDicom.FileReadOption,System.Int32)">Open(String, Encoding, Func&lt;ParseState, Boolean&gt;, FileReadOption, Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads the specified filename and returns a DicomFile object.  Note that the values for large
 DICOM elements (e.g. PixelData) are read in &quot;on demand&quot; to conserve memory.  Large DICOM elements
 are determined by their size in bytes - see the default value for this in the FileByteSource._largeObjectSize</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static async Task&lt;DicomFile&gt; OpenAsync(string fileName, Encoding fallbackEncoding, Func&lt;ParseState, bool&gt; stop = null, FileReadOption readOption = FileReadOption.Default, int largeObjectSize = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DicomFile Open(string fileName, Encoding fallbackEncoding, Func&lt;ParseState, bool&gt; stop = null, FileReadOption readOption = FileReadOption.Default, int largeObjectSize = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -809,13 +584,13 @@ are determined by their size in bytes - see the default value for this in the Fi
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">fallbackEncoding</span></td>
         <td><p>Encoding to apply when attribute Specific Character Set is not available.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">stop</span></td>
         <td><p>Stop criterion in dataset.</p>
 </td>
@@ -844,14 +619,134 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a>&gt;</td>
+        <td><a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a></td>
+        <td><p>DicomFile instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="FellowOakDicom_DicomFile_OpenAsync_" data-uid="FellowOakDicom.DicomFile.OpenAsync*"></a>
+  <h4 id="FellowOakDicom_DicomFile_OpenAsync_System_IO_Stream_FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.OpenAsync(System.IO.Stream,FellowOakDicom.FileReadOption,System.Int32)">OpenAsync(Stream, FileReadOption, Int32)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously read a DICOM file from stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DicomFile&gt; OpenAsync(Stream stream, FileReadOption readOption = FileReadOption.Default, int largeObjectSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Stream to read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.FileReadOption.html">FileReadOption</a></td>
+        <td><span class="parametername">readOption</span></td>
+        <td><p>The option how to deal with large DICOM tags like pixel data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">largeObjectSize</span></td>
+        <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a>&gt;</td>
         <td><p>Awaitable <a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a> instance.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <a id="FellowOakDicom_DicomFile_OpenAsync_" data-uid="FellowOakDicom.DicomFile.OpenAsync*"></a>
+  <h4 id="FellowOakDicom_DicomFile_OpenAsync_System_IO_Stream_System_Text_Encoding_System_Func_FellowOakDicom_ParseState_System_Boolean__FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.OpenAsync(System.IO.Stream,System.Text.Encoding,System.Func{FellowOakDicom.ParseState,System.Boolean},FellowOakDicom.FileReadOption,System.Int32)">OpenAsync(Stream, Encoding, Func&lt;ParseState, Boolean&gt;, FileReadOption, Int32)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously read a DICOM file from stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;DicomFile&gt; OpenAsync(Stream stream, Encoding fallbackEncoding, Func&lt;ParseState, bool&gt; stop = null, FileReadOption readOption = FileReadOption.Default, int largeObjectSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Stream to read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">fallbackEncoding</span></td>
+        <td><p>Encoding to use if encoding cannot be obtained from DICOM file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">stop</span></td>
+        <td><p>Stop criterion in dataset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.FileReadOption.html">FileReadOption</a></td>
+        <td><span class="parametername">readOption</span></td>
+        <td><p>The option how to deal with large DICOM tags like pixel data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">largeObjectSize</span></td>
+        <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a>&gt;</td>
+        <td><p>Awaitable <a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="FellowOakDicom_DicomFile_OpenAsync_" data-uid="FellowOakDicom.DicomFile.OpenAsync*"></a>
   <h4 id="FellowOakDicom_DicomFile_OpenAsync_System_String_FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.OpenAsync(System.String,FellowOakDicom.FileReadOption,System.Int32)">OpenAsync(String, FileReadOption, Int32)</h4>
   <div class="markdown level1 summary"><p>Asynchronously reads the specified filename and returns a DicomFile object.  Note that the values for large
@@ -903,16 +798,83 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a>&gt;</td>
         <td><p>Awaitable <a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a> instance.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <a id="FellowOakDicom_DicomFile_OpenAsync_" data-uid="FellowOakDicom.DicomFile.OpenAsync*"></a>
+  <h4 id="FellowOakDicom_DicomFile_OpenAsync_System_String_System_Text_Encoding_System_Func_FellowOakDicom_ParseState_System_Boolean__FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.DicomFile.OpenAsync(System.String,System.Text.Encoding,System.Func{FellowOakDicom.ParseState,System.Boolean},FellowOakDicom.FileReadOption,System.Int32)">OpenAsync(String, Encoding, Func&lt;ParseState, Boolean&gt;, FileReadOption, Int32)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously reads the specified filename and returns a DicomFile object.  Note that the values for large
+DICOM elements (e.g. PixelData) are read in &quot;on demand&quot; to conserve memory.  Large DICOM elements
+are determined by their size in bytes - see the default value for this in the FileByteSource._largeObjectSize</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;DicomFile&gt; OpenAsync(string fileName, Encoding fallbackEncoding, Func&lt;ParseState, bool&gt; stop = null, FileReadOption readOption = FileReadOption.Default, int largeObjectSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The filename of the DICOM file</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">fallbackEncoding</span></td>
+        <td><p>Encoding to apply when attribute Specific Character Set is not available.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="FellowOakDicom.ParseState.html">ParseState</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">stop</span></td>
+        <td><p>Stop criterion in dataset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.FileReadOption.html">FileReadOption</a></td>
+        <td><span class="parametername">readOption</span></td>
+        <td><p>Option how to deal with large values, if they should be loaded directly into memory or lazy loaded on demand</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">largeObjectSize</span></td>
+        <td><p>Custom limit of what are large values and what are not. If 0 is passend, then the default of 64k is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a>&gt;</td>
+        <td><p>Awaitable <a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="FellowOakDicom_DicomFile_Save_" data-uid="FellowOakDicom.DicomFile.Save*"></a>
-  <h4 id="FellowOakDicom_DicomFile_Save_Stream_DicomWriteOptions_" data-uid="FellowOakDicom.DicomFile.Save(Stream,DicomWriteOptions)">Save(Stream, DicomWriteOptions)</h4>
+  <h4 id="FellowOakDicom_DicomFile_Save_System_IO_Stream_FellowOakDicom_IO_Writer_DicomWriteOptions_" data-uid="FellowOakDicom.DicomFile.Save(System.IO.Stream,FellowOakDicom.IO.Writer.DicomWriteOptions)">Save(Stream, DicomWriteOptions)</h4>
   <div class="markdown level1 summary"><p>Save DICOM file to stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -931,23 +893,21 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>Stream on which to save DICOM file.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DicomWriteOptions</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.Writer.DicomWriteOptions.html">DicomWriteOptions</a></td>
         <td><span class="parametername">options</span></td>
         <td><p>Options to apply during writing.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFile_Save_" data-uid="FellowOakDicom.DicomFile.Save*"></a>
-  <h4 id="FellowOakDicom_DicomFile_Save_System_String_DicomWriteOptions_" data-uid="FellowOakDicom.DicomFile.Save(System.String,DicomWriteOptions)">Save(String, DicomWriteOptions)</h4>
+  <h4 id="FellowOakDicom_DicomFile_Save_System_String_FellowOakDicom_IO_Writer_DicomWriteOptions_" data-uid="FellowOakDicom.DicomFile.Save(System.String,FellowOakDicom.IO.Writer.DicomWriteOptions)">Save(String, DicomWriteOptions)</h4>
   <div class="markdown level1 summary"><p>Save DICOM file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -972,17 +932,15 @@ are determined by their size in bytes - see the default value for this in the Fi
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DicomWriteOptions</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.Writer.DicomWriteOptions.html">DicomWriteOptions</a></td>
         <td><span class="parametername">options</span></td>
         <td><p>Options to apply during writing.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFile_SaveAsync_" data-uid="FellowOakDicom.DicomFile.SaveAsync*"></a>
-  <h4 id="FellowOakDicom_DicomFile_SaveAsync_Stream_DicomWriteOptions_" data-uid="FellowOakDicom.DicomFile.SaveAsync(Stream,DicomWriteOptions)">SaveAsync(Stream, DicomWriteOptions)</h4>
+  <h4 id="FellowOakDicom_DicomFile_SaveAsync_System_IO_Stream_FellowOakDicom_IO_Writer_DicomWriteOptions_" data-uid="FellowOakDicom.DicomFile.SaveAsync(System.IO.Stream,FellowOakDicom.IO.Writer.DicomWriteOptions)">SaveAsync(Stream, DicomWriteOptions)</h4>
   <div class="markdown level1 summary"><p>Asynchronously save DICOM file to stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1001,13 +959,13 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>Stream on which to save DICOM file.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DicomWriteOptions</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.Writer.DicomWriteOptions.html">DicomWriteOptions</a></td>
         <td><span class="parametername">options</span></td>
         <td><p>Options to apply during writing.</p>
 </td>
@@ -1024,16 +982,14 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>Awaitable task.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFile_SaveAsync_" data-uid="FellowOakDicom.DicomFile.SaveAsync*"></a>
-  <h4 id="FellowOakDicom_DicomFile_SaveAsync_System_String_DicomWriteOptions_" data-uid="FellowOakDicom.DicomFile.SaveAsync(System.String,DicomWriteOptions)">SaveAsync(String, DicomWriteOptions)</h4>
+  <h4 id="FellowOakDicom_DicomFile_SaveAsync_System_String_FellowOakDicom_IO_Writer_DicomWriteOptions_" data-uid="FellowOakDicom.DicomFile.SaveAsync(System.String,FellowOakDicom.IO.Writer.DicomWriteOptions)">SaveAsync(String, DicomWriteOptions)</h4>
   <div class="markdown level1 summary"><p>Save to file asynchronously.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1058,7 +1014,7 @@ are determined by their size in bytes - see the default value for this in the Fi
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DicomWriteOptions</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.Writer.DicomWriteOptions.html">DicomWriteOptions</a></td>
         <td><span class="parametername">options</span></td>
         <td><p>Options to apply during writing.</p>
 </td>
@@ -1075,14 +1031,12 @@ are determined by their size in bytes - see the default value for this in the Fi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>Awaitable <span class="xref">System.Threading.Tasks.Task</span>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFile_ToString_" data-uid="FellowOakDicom.DicomFile.ToString*"></a>
   <h4 id="FellowOakDicom_DicomFile_ToString" data-uid="FellowOakDicom.DicomFile.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
@@ -1110,15 +1064,36 @@ are determined by their size in bytes - see the default value for this in the Fi
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomFileExtensions.html#FellowOakDicom_DicomFileExtensions_Clone_FellowOakDicom_DicomFile_">DicomFileExtensions.Clone(DicomFile)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.ConsoleExtensions.html#FellowOakDicom_Log_ConsoleExtensions_WriteToConsole_FellowOakDicom_DicomFile_">ConsoleExtensions.WriteToConsole(DicomFile)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.Extensions.html#FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomFile_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel_">Extensions.WriteToLog(DicomFile, ILogger, LogLevel)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.Extensions.html#FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomFile_FellowOakDicom_Log_ILogger_FellowOakDicom_Log_LogLevel_">Extensions.WriteToLog(DicomFile, ILogger, LogLevel)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.Extensions.html#FellowOakDicom_Log_Extensions_WriteToString_FellowOakDicom_DicomFile_">Extensions.WriteToString(DicomFile)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Serialization.DicomXML.html#FellowOakDicom_Serialization_DicomXML_WriteToXml_FellowOakDicom_DicomFile_">DicomXML.WriteToXml(DicomFile)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Imaging.Codec.DicomCodecExtensions.html#FellowOakDicom_Imaging_Codec_DicomCodecExtensions_Clone_FellowOakDicom_DicomFile_FellowOakDicom_DicomTransferSyntax_FellowOakDicom_Imaging_Codec_DicomCodecParams_">DicomCodecExtensions.Clone(DicomFile, DicomTransferSyntax, DicomCodecParams)</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -1135,8 +1110,8 @@ are determined by their size in bytes - see the default value for this in the Fi
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

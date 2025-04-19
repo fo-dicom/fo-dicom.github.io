@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -132,7 +132,7 @@
       <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_LastPendingResponseReceived">DicomMessage.LastPendingResponseReceived</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_IsTimedOut_TimeSpan_">DicomMessage.IsTimedOut(TimeSpan)</a>
+      <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_IsTimedOut_System_TimeSpan_">DicomMessage.IsTimedOut(TimeSpan)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_ToString_System_Boolean_">DicomMessage.ToString(Boolean)</a>
@@ -150,9 +150,6 @@
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
       <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
@@ -161,17 +158,18 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomCGetResponse_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class DicomCGetResponse : DicomResponse</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomCGetResponse__ctor_" data-uid="FellowOakDicom.Network.DicomCGetResponse.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomCGetResponse__ctor_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.Network.DicomCGetResponse.#ctor(FellowOakDicom.DicomDataset)">DicomCGetResponse(DicomDataset)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.Network.DicomCGetResponse.html">DicomCGetResponse</a> class.</p>
@@ -199,8 +197,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCGetResponse__ctor_" data-uid="FellowOakDicom.Network.DicomCGetResponse.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomCGetResponse__ctor_FellowOakDicom_Network_DicomCGetRequest_FellowOakDicom_Network_DicomStatus_" data-uid="FellowOakDicom.Network.DicomCGetResponse.#ctor(FellowOakDicom.Network.DicomCGetRequest,FellowOakDicom.Network.DicomStatus)">DicomCGetResponse(DicomCGetRequest, DicomStatus)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.Network.DicomCGetResponse.html">DicomCGetResponse</a> class.</p>
@@ -236,8 +232,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomCGetResponse_Completed_" data-uid="FellowOakDicom.Network.DicomCGetResponse.Completed*"></a>
   <h4 id="FellowOakDicom_Network_DicomCGetResponse_Completed" data-uid="FellowOakDicom.Network.DicomCGetResponse.Completed">Completed</h4>
   <div class="markdown level1 summary"><p>Gets or sets the number of completed sub-operations.</p>
@@ -262,8 +256,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCGetResponse_Failures_" data-uid="FellowOakDicom.Network.DicomCGetResponse.Failures*"></a>
   <h4 id="FellowOakDicom_Network_DicomCGetResponse_Failures" data-uid="FellowOakDicom.Network.DicomCGetResponse.Failures">Failures</h4>
   <div class="markdown level1 summary"><p>Gets or sets the number of failed sub-operations.</p>
@@ -288,8 +280,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCGetResponse_Remaining_" data-uid="FellowOakDicom.Network.DicomCGetResponse.Remaining*"></a>
   <h4 id="FellowOakDicom_Network_DicomCGetResponse_Remaining" data-uid="FellowOakDicom.Network.DicomCGetResponse.Remaining">Remaining</h4>
   <div class="markdown level1 summary"><p>Gets or sets the number of remaining sub-operations.</p>
@@ -314,8 +304,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCGetResponse_Warnings_" data-uid="FellowOakDicom.Network.DicomCGetResponse.Warnings*"></a>
   <h4 id="FellowOakDicom_Network_DicomCGetResponse_Warnings" data-uid="FellowOakDicom.Network.DicomCGetResponse.Warnings">Warnings</h4>
   <div class="markdown level1 summary"><p>Gets or sets the number of warning sub-operations.</p>
@@ -342,8 +330,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomCGetResponse_ToString_" data-uid="FellowOakDicom.Network.DicomCGetResponse.ToString*"></a>
   <h4 id="FellowOakDicom_Network_DicomCGetResponse_ToString" data-uid="FellowOakDicom.Network.DicomCGetResponse.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>Formatted output of the <a class="xref" href="FellowOakDicom.Network.DicomCGetResponse.html">DicomCGetResponse</a> item.</p>
@@ -371,15 +357,15 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FellowOakDicom.Network.DicomResponse.html#FellowOakDicom_Network_DicomResponse_ToString">DicomResponse.ToString()</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -396,8 +382,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

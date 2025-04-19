@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -93,16 +93,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -113,19 +107,59 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Log.html">FellowOakDicom.Log</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Log_Extensions_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class Extensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Log_Extensions_WriteToLog_" data-uid="FellowOakDicom.Log.Extensions.WriteToLog*"></a>
   <h4 id="FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomDataset_FellowOakDicom_Log_ILogger_FellowOakDicom_Log_LogLevel_" data-uid="FellowOakDicom.Log.Extensions.WriteToLog(FellowOakDicom.DicomDataset,FellowOakDicom.Log.ILogger,FellowOakDicom.Log.LogLevel)">WriteToLog(DicomDataset, ILogger, LogLevel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the overload that accepts a Microsoft.Extensions.Logging.ILogger&quot;)]
+public static void WriteToLog(this DicomDataset dataset, ILogger log, LogLevel level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
+        <td><span class="parametername">dataset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Log.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">log</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Log.LogLevel.html">LogLevel</a></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="FellowOakDicom_Log_Extensions_WriteToLog_" data-uid="FellowOakDicom.Log.Extensions.WriteToLog*"></a>
+  <h4 id="FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomDataset_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel_" data-uid="FellowOakDicom.Log.Extensions.WriteToLog(FellowOakDicom.DicomDataset,Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel)">WriteToLog(DicomDataset, ILogger, LogLevel)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -148,26 +182,25 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Log.ILogger.html">ILogger</a></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td><span class="parametername">log</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Log.LogLevel.html">LogLevel</a></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.LogLevel</span></td>
         <td><span class="parametername">level</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_Extensions_WriteToLog_" data-uid="FellowOakDicom.Log.Extensions.WriteToLog*"></a>
-  <h4 id="FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomDataset_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel_" data-uid="FellowOakDicom.Log.Extensions.WriteToLog(FellowOakDicom.DicomDataset,Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel)">WriteToLog(DicomDataset, Extensions.Logging.ILogger, Extensions.Logging.LogLevel)</h4>
+  <h4 id="FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomFile_FellowOakDicom_Log_ILogger_FellowOakDicom_Log_LogLevel_" data-uid="FellowOakDicom.Log.Extensions.WriteToLog(FellowOakDicom.DicomFile,FellowOakDicom.Log.ILogger,FellowOakDicom.Log.LogLevel)">WriteToLog(DicomFile, ILogger, LogLevel)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteToLog(this DicomDataset dataset, Extensions.Logging.ILogger log, Extensions.Logging.LogLevel level)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the overload that accepts a Microsoft.Extensions.Logging.ILogger&quot;)]
+public static void WriteToLog(this DicomFile file, ILogger log, LogLevel level)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -180,26 +213,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
-        <td><span class="parametername">dataset</span></td>
+        <td><a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a></td>
+        <td><span class="parametername">file</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td><a class="xref" href="FellowOakDicom.Log.ILogger.html">ILogger</a></td>
         <td><span class="parametername">log</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Microsoft.Extensions.Logging.LogLevel</span></td>
+        <td><a class="xref" href="FellowOakDicom.Log.LogLevel.html">LogLevel</a></td>
         <td><span class="parametername">level</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_Extensions_WriteToLog_" data-uid="FellowOakDicom.Log.Extensions.WriteToLog*"></a>
-  <h4 id="FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomFile_FellowOakDicom_Log_ILogger_FellowOakDicom_Log_LogLevel_" data-uid="FellowOakDicom.Log.Extensions.WriteToLog(FellowOakDicom.DicomFile,FellowOakDicom.Log.ILogger,FellowOakDicom.Log.LogLevel)">WriteToLog(DicomFile, ILogger, LogLevel)</h4>
+  <h4 id="FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomFile_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel_" data-uid="FellowOakDicom.Log.Extensions.WriteToLog(FellowOakDicom.DicomFile,Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel)">WriteToLog(DicomFile, ILogger, LogLevel)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -222,43 +253,6 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Log.ILogger.html">ILogger</a></td>
-        <td><span class="parametername">log</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Log.LogLevel.html">LogLevel</a></td>
-        <td><span class="parametername">level</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_Log_Extensions_WriteToLog_" data-uid="FellowOakDicom.Log.Extensions.WriteToLog*"></a>
-  <h4 id="FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomFile_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel_" data-uid="FellowOakDicom.Log.Extensions.WriteToLog(FellowOakDicom.DicomFile,Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel)">WriteToLog(DicomFile, Extensions.Logging.ILogger, Extensions.Logging.LogLevel)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteToLog(this DicomFile file, Extensions.Logging.ILogger log, Extensions.Logging.LogLevel level)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a></td>
-        <td><span class="parametername">file</span></td>
-        <td></td>
-      </tr>
-      <tr>
         <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td><span class="parametername">log</span></td>
         <td></td>
@@ -270,8 +264,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_Extensions_WriteToString_" data-uid="FellowOakDicom.Log.Extensions.WriteToString*"></a>
   <h4 id="FellowOakDicom_Log_Extensions_WriteToString_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.Log.Extensions.WriteToString(FellowOakDicom.DicomDataset)">WriteToString(DicomDataset)</h4>
   <div class="markdown level1 summary"></div>
@@ -312,8 +304,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_Extensions_WriteToString_" data-uid="FellowOakDicom.Log.Extensions.WriteToString*"></a>
   <h4 id="FellowOakDicom_Log_Extensions_WriteToString_FellowOakDicom_DicomFile_" data-uid="FellowOakDicom.Log.Extensions.WriteToString(FellowOakDicom.DicomFile)">WriteToString(DicomFile)</h4>
   <div class="markdown level1 summary"></div>
@@ -359,10 +349,6 @@
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -379,8 +365,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

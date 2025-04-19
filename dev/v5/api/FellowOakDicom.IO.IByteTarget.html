@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,15 +87,13 @@
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.html">FellowOakDicom.IO</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IO_IByteTarget_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IByteTarget</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_Endian_" data-uid="FellowOakDicom.IO.IByteTarget.Endian*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_Endian" data-uid="FellowOakDicom.IO.IByteTarget.Endian">Endian</h4>
   <div class="markdown level1 summary"><p>Gets or sets the endianness of the byte target.</p>
@@ -120,8 +118,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_Position_" data-uid="FellowOakDicom.IO.IByteTarget.Position*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_Position" data-uid="FellowOakDicom.IO.IByteTarget.Position">Position</h4>
   <div class="markdown level1 summary"><p>Gets the current write position.</p>
@@ -148,8 +144,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_AsWritableStream_" data-uid="FellowOakDicom.IO.IByteTarget.AsWritableStream*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_AsWritableStream" data-uid="FellowOakDicom.IO.IByteTarget.AsWritableStream">AsWritableStream()</h4>
   <div class="markdown level1 summary"><p>Exposes the current byte target as a writable stream
@@ -170,14 +164,12 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><p>A stream that, when written to, will write to the underlying byte target</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_Write_" data-uid="FellowOakDicom.IO.IByteTarget.Write*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_Write_System_Byte_" data-uid="FellowOakDicom.IO.IByteTarget.Write(System.Byte)">Write(Byte)</h4>
   <div class="markdown level1 summary"><p>Write one <span class="xref">System.Byte</span> to target.</p>
@@ -205,8 +197,6 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_Write_" data-uid="FellowOakDicom.IO.IByteTarget.Write*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_Write_System_Byte___System_UInt32_System_UInt32_" data-uid="FellowOakDicom.IO.IByteTarget.Write(System.Byte[],System.UInt32,System.UInt32)">Write(Byte[], UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Write array of <span class="xref">System.Byte</span>s to target.</p>
@@ -246,8 +236,6 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_Write_" data-uid="FellowOakDicom.IO.IByteTarget.Write*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_Write_System_Double_" data-uid="FellowOakDicom.IO.IByteTarget.Write(System.Double)">Write(Double)</h4>
   <div class="markdown level1 summary"><p>Write one <span class="xref">System.Double</span> to target.</p>
@@ -275,8 +263,6 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_Write_" data-uid="FellowOakDicom.IO.IByteTarget.Write*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_Write_System_Int16_" data-uid="FellowOakDicom.IO.IByteTarget.Write(System.Int16)">Write(Int16)</h4>
   <div class="markdown level1 summary"><p>Write one <span class="xref">System.Int16</span> to target.</p>
@@ -304,8 +290,6 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_Write_" data-uid="FellowOakDicom.IO.IByteTarget.Write*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_Write_System_Int32_" data-uid="FellowOakDicom.IO.IByteTarget.Write(System.Int32)">Write(Int32)</h4>
   <div class="markdown level1 summary"><p>Write one <span class="xref">System.Int32</span> to target.</p>
@@ -333,8 +317,6 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_Write_" data-uid="FellowOakDicom.IO.IByteTarget.Write*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_Write_System_Int64_" data-uid="FellowOakDicom.IO.IByteTarget.Write(System.Int64)">Write(Int64)</h4>
   <div class="markdown level1 summary"><p>Write one <span class="xref">System.Int64</span> to target.</p>
@@ -362,8 +344,6 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_Write_" data-uid="FellowOakDicom.IO.IByteTarget.Write*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_Write_System_Single_" data-uid="FellowOakDicom.IO.IByteTarget.Write(System.Single)">Write(Single)</h4>
   <div class="markdown level1 summary"><p>Write one <span class="xref">System.Single</span> to target.</p>
@@ -391,8 +371,6 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_Write_" data-uid="FellowOakDicom.IO.IByteTarget.Write*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_Write_System_UInt16_" data-uid="FellowOakDicom.IO.IByteTarget.Write(System.UInt16)">Write(UInt16)</h4>
   <div class="markdown level1 summary"><p>Write one <span class="xref">System.UInt16</span> to target.</p>
@@ -420,8 +398,6 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_Write_" data-uid="FellowOakDicom.IO.IByteTarget.Write*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_Write_System_UInt32_" data-uid="FellowOakDicom.IO.IByteTarget.Write(System.UInt32)">Write(UInt32)</h4>
   <div class="markdown level1 summary"><p>Write one <span class="xref">System.UInt32</span> to target.</p>
@@ -449,8 +425,6 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_Write_" data-uid="FellowOakDicom.IO.IByteTarget.Write*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_Write_System_UInt64_" data-uid="FellowOakDicom.IO.IByteTarget.Write(System.UInt64)">Write(UInt64)</h4>
   <div class="markdown level1 summary"><p>Write one <span class="xref">System.UInt64</span> to target.</p>
@@ -478,8 +452,6 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteTarget_WriteAsync_" data-uid="FellowOakDicom.IO.IByteTarget.WriteAsync*"></a>
   <h4 id="FellowOakDicom_IO_IByteTarget_WriteAsync_System_Byte___System_UInt32_System_UInt32_" data-uid="FellowOakDicom.IO.IByteTarget.WriteAsync(System.Byte[],System.UInt32,System.UInt32)">WriteAsync(Byte[], UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Asynchronously write array of <span class="xref">System.Byte</span>s to target.</p>
@@ -529,21 +501,21 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>Avaitable <span class="xref">System.Threading.Tasks.Task</span>.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -560,8 +532,8 @@ Do not dispose of this stream! It will be disposed when the byte target is dispo
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

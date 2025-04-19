@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,18 +88,58 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">JpegLosslessDecoderWrapperProcess14SV1</span></div>
+    <div class="level1"><a class="xref" href="FellowOakDicom.Imaging.Codec.DicomJpegCodec.html">DicomJpegCodec</a></div>
+    <div class="level2"><a class="xref" href="FellowOakDicom.Imaging.Codec.JpegLossless.DicomJpegLosslessDecoder.html">DicomJpegLosslessDecoder</a></div>
+    <div class="level3"><span class="xref">JpegLosslessDecoderWrapperProcess14SV1</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FellowOakDicom.Imaging.Codec.IDicomCodec.html">IDicomCodec</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FellowOakDicom.Imaging.Codec.JpegLossless.DicomJpegLosslessDecoder.html#FellowOakDicom_Imaging_Codec_JpegLossless_DicomJpegLosslessDecoder_Encode_FellowOakDicom_Imaging_DicomPixelData_FellowOakDicom_Imaging_DicomPixelData_FellowOakDicom_Imaging_Codec_DicomCodecParams_">DicomJpegLosslessDecoder.Encode(DicomPixelData, DicomPixelData, DicomCodecParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Imaging.Codec.JpegLossless.DicomJpegLosslessDecoder.html#FellowOakDicom_Imaging_Codec_JpegLossless_DicomJpegLosslessDecoder_Decode_FellowOakDicom_Imaging_DicomPixelData_FellowOakDicom_Imaging_DicomPixelData_FellowOakDicom_Imaging_Codec_DicomCodecParams_">DicomJpegLosslessDecoder.Decode(DicomPixelData, DicomPixelData, DicomCodecParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Imaging.Codec.DicomJpegCodec.html#FellowOakDicom_Imaging_Codec_DicomJpegCodec_Name">DicomJpegCodec.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.Imaging.Codec.DicomJpegCodec.html#FellowOakDicom_Imaging_Codec_DicomJpegCodec_GetDefaultParameters">DicomJpegCodec.GetDefaultParameters()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.Codec.html">FellowOakDicom.Imaging.Codec</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Imaging_Codec_JpegLosslessDecoderWrapperProcess14SV1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class JpegLosslessDecoderWrapperProcess14SV1 : DicomJpegLosslessDecoder</code></pre>
+    <pre><code class="lang-csharp hljs">public class JpegLosslessDecoderWrapperProcess14SV1 : DicomJpegLosslessDecoder, IDicomCodec</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_Codec_JpegLosslessDecoderWrapperProcess14SV1_TransferSyntax_" data-uid="FellowOakDicom.Imaging.Codec.JpegLosslessDecoderWrapperProcess14SV1.TransferSyntax*"></a>
   <h4 id="FellowOakDicom_Imaging_Codec_JpegLosslessDecoderWrapperProcess14SV1_TransferSyntax" data-uid="FellowOakDicom.Imaging.Codec.JpegLosslessDecoderWrapperProcess14SV1.TransferSyntax">TransferSyntax</h4>
   <div class="markdown level1 summary"></div>
@@ -123,15 +163,21 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FellowOakDicom.Imaging.Codec.DicomJpegCodec.html#FellowOakDicom_Imaging_Codec_DicomJpegCodec_TransferSyntax">DicomJpegCodec.TransferSyntax</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Imaging.Codec.IDicomCodec.html">IDicomCodec</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -148,8 +194,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

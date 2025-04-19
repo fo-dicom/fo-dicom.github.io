@@ -10,7 +10,7 @@
     <meta name="title" content="Prerequisites for development branch | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -79,9 +79,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h3 id="prerequisites-for-development-branch">Prerequisites for <em>development</em> branch</h3>
 
-<p>Fellow Oak Dicom is developed with Visual Studio 2017 or later.</p>
-<p><em>fo-dicom.core</em> targets .Net Standard 2.0 and uses C# 8 as language version. This requires NetCore3 SDK to be installed on the machine.</p>
-<p><em>fo-dicom.Tests</em> are targeting .Net Framework 4.6.2, .Net Core 2.1 and .Net Core 3.1. In order to run the unittests you need to have those SDKs installed.</p>
+<p>Fellow Oak Dicom is developed with Visual Studio 2022 or later.</p>
+<p><em>fo-dicom.core</em> targets .Net Standard 2.0 and uses C# 8 as language version. This requires at least NetCore3 SDK to be installed on the machine.</p>
+<p><em>fo-dicom.Tests</em> are targeting .Net Framework 4.6.2, .Net 6 and .Net 8. In order to run the unittests you need to have those SDKs installed.</p>
 <h3 id="getting-the-source-code">Getting the source code</h3>
 <ul>
 <li>Fork the repository <a href="https://github.com/fo-dicom/fo-dicom">fo-dicom/fo-dicom</a> into your repository and clone it to your workstation using your favorite git client. This is the prefered way if you plan to contribute.</li>
@@ -89,7 +89,7 @@
 </ul>
 <p>The repository contains several project and solution files. The current solution is <strong>FO-DICOM.Full.sln</strong>, so open this solution file. <em>Dicom.Full.sln</em> should be opened if you need to open the old version for bugfixing.</p>
 <p>After opening the solution file you will find several projects:</p>
-<table>
+<table class="table">
 <thead>
 <tr>
 <th>Project</th>
@@ -122,10 +122,6 @@
 <td>Within this folder there are several projects, that contain some platform specific code and can be then registered in DI container.</td>
 </tr>
 <tr>
-<td>Logging/*</td>
-<td>Projects integrating logging frameworks</td>
-</tr>
-<tr>
 <td>Serialization/*</td>
 <td>Projects integrationg serialization into Json, Xml or any other format</td>
 </tr>
@@ -136,13 +132,6 @@
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/fo-dicom/fo-dicom/blob/development/Documentation/v5/developer/buildnotes.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -159,8 +148,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

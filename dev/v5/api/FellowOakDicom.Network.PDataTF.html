@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -94,7 +94,7 @@
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FellowOakDicom.Network.PDU.html">PDU</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -105,9 +105,6 @@
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
       <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
@@ -116,19 +113,20 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_PDataTF_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PDataTF : PDU</code></pre>
+    <pre><code class="lang-csharp hljs">public class PDataTF : PDU, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_PDataTF__ctor_" data-uid="FellowOakDicom.Network.PDataTF.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_PDataTF__ctor_IMemoryProvider_" data-uid="FellowOakDicom.Network.PDataTF.#ctor(IMemoryProvider)">PDataTF(IMemoryProvider)</h4>
+  <h4 id="FellowOakDicom_Network_PDataTF__ctor_FellowOakDicom_Memory_IMemoryProvider_" data-uid="FellowOakDicom.Network.PDataTF.#ctor(FellowOakDicom.Memory.IMemoryProvider)">PDataTF(IMemoryProvider)</h4>
   <div class="markdown level1 summary"><p>Initializes new P-DATA-TF</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -147,7 +145,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IMemoryProvider</span></td>
+        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
         <td><span class="parametername">memoryProvider</span></td>
         <td></td>
       </tr>
@@ -155,8 +153,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_PDataTF_PDVs_" data-uid="FellowOakDicom.Network.PDataTF.PDVs*"></a>
   <h4 id="FellowOakDicom_Network_PDataTF_PDVs" data-uid="FellowOakDicom.Network.PDataTF.PDVs">PDVs</h4>
   <div class="markdown level1 summary"><p>PDVs in this P-DATA-TF</p>
@@ -176,15 +172,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="FellowOakDicom.Network.PDV.html">PDV</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="FellowOakDicom.Network.PDV.html">PDV</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_PDataTF_Dispose_" data-uid="FellowOakDicom.Network.PDataTF.Dispose*"></a>
   <h4 id="FellowOakDicom_Network_PDataTF_Dispose" data-uid="FellowOakDicom.Network.PDataTF.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"><p>Disposes and clears the PDVs</p>
@@ -194,8 +188,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_PDataTF_Finalize_" data-uid="FellowOakDicom.Network.PDataTF.Finalize*"></a>
   <h4 id="FellowOakDicom_Network_PDataTF_Finalize" data-uid="FellowOakDicom.Network.PDataTF.Finalize">Finalize()</h4>
   <div class="markdown level1 summary"><p>Finalizes P-DATA-TF to avoid issues with improper disposal</p>
@@ -205,8 +197,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_PDataTF_GetLengthOfPDVs_" data-uid="FellowOakDicom.Network.PDataTF.GetLengthOfPDVs*"></a>
   <h4 id="FellowOakDicom_Network_PDataTF_GetLengthOfPDVs" data-uid="FellowOakDicom.Network.PDataTF.GetLengthOfPDVs">GetLengthOfPDVs()</h4>
   <div class="markdown level1 summary"><p>Calculates the total length of the PDVs in this P-DATA-TF</p>
@@ -232,8 +222,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_PDataTF_Read_" data-uid="FellowOakDicom.Network.PDataTF.Read*"></a>
   <h4 id="FellowOakDicom_Network_PDataTF_Read_FellowOakDicom_Network_RawPDU_" data-uid="FellowOakDicom.Network.PDataTF.Read(FellowOakDicom.Network.RawPDU)">Read(RawPDU)</h4>
   <div class="markdown level1 summary"><p>Reads P-DATA-TF from PDU buffer</p>
@@ -261,8 +249,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_PDataTF_ToString_" data-uid="FellowOakDicom.Network.PDataTF.ToString*"></a>
   <h4 id="FellowOakDicom_Network_PDataTF_ToString" data-uid="FellowOakDicom.Network.PDataTF.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
@@ -288,10 +274,8 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
-  
-  
   <a id="FellowOakDicom_Network_PDataTF_WriteAsync_" data-uid="FellowOakDicom.Network.PDataTF.WriteAsync*"></a>
-  <h4 id="FellowOakDicom_Network_PDataTF_WriteAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.Network.PDataTF.WriteAsync(Stream,CancellationToken)">WriteAsync(Stream, CancellationToken)</h4>
+  <h4 id="FellowOakDicom_Network_PDataTF_WriteAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.PDataTF.WriteAsync(System.IO.Stream,System.Threading.CancellationToken)">WriteAsync(Stream, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Writes P-DATA-TF to the provided stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -310,13 +294,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>The stream to write the PDU to</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The token that cancels the write operation</p>
 </td>
@@ -333,7 +317,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>A Task that represents the asynchronous operation</p>
 </td>
       </tr>
@@ -344,17 +328,17 @@
       <a class="xref" href="FellowOakDicom.Network.PDU.html">PDU</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
   </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -371,8 +355,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

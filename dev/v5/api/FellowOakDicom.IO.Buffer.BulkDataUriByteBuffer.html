@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -99,16 +99,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -119,17 +113,21 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.Buffer.html">FellowOakDicom.IO.Buffer</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class BulkDataUriByteBuffer : IBulkDataUriByteBuffer, IByteBuffer</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer__ctor_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.#ctor*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer__ctor_System_String_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.#ctor(System.String)">BulkDataUriByteBuffer(String)</h4>
   <div class="markdown level1 summary"><p>Initialize the BulkData URI Byte Buffer</p>
@@ -159,8 +157,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_BulkDataUri_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.BulkDataUri*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_BulkDataUri" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.BulkDataUri">BulkDataUri</h4>
   <div class="markdown level1 summary"><p>The URI for retrieving the referenced bulk data.</p>
@@ -185,8 +181,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_Data_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.Data*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_Data" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.Data">Data</h4>
   <div class="markdown level1 summary"><p>Gets or sets the bulk data. Throws an InvalidOperationException if the Data has not been set.</p>
@@ -211,8 +205,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_IsMemory_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.IsMemory*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_IsMemory" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.IsMemory">IsMemory</h4>
   <div class="markdown level1 summary"><p>Gets whether data is buffered in memory or not.</p>
@@ -237,8 +229,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_Size_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.Size*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_Size" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.Size">Size</h4>
   <div class="markdown level1 summary"><p>Gets the size of the buffered data. Throws an InvalidOperationException if the Data has not been set.</p>
@@ -265,10 +255,8 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_CopyToStream_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.CopyToStream*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_CopyToStream_Stream_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.CopyToStream(Stream)">CopyToStream(Stream)</h4>
+  <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_CopyToStream_System_IO_Stream_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.CopyToStream(System.IO.Stream)">CopyToStream(Stream)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -286,16 +274,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_CopyToStreamAsync_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.CopyToStreamAsync*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_CopyToStreamAsync_Stream_CancellationToken_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.CopyToStreamAsync(Stream,CancellationToken)">CopyToStreamAsync(Stream, CancellationToken)</h4>
+  <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_CopyToStreamAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.CopyToStreamAsync(System.IO.Stream,System.Threading.CancellationToken)">CopyToStreamAsync(Stream, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -313,12 +299,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td></td>
       </tr>
@@ -334,13 +320,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_GetByteRange_" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.GetByteRange*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_BulkDataUriByteBuffer_GetByteRange_System_Int64_System_Int32_System_Byte___" data-uid="FellowOakDicom.IO.Buffer.BulkDataUriByteBuffer.GetByteRange(System.Int64,System.Int32,System.Byte[])">GetByteRange(Int64, Int32, Byte[])</h4>
   <div class="markdown level1 summary"><p>Gets a subset of the data and fills it in the provided output buffer</p>
@@ -387,15 +371,18 @@
   <div>
       <a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.IO.Buffer.ByteBufferExtensions.html#FellowOakDicom_IO_Buffer_ByteBufferExtensions_Enumerate__1_FellowOakDicom_IO_Buffer_IByteBuffer_">ByteBufferExtensions.Enumerate&lt;T&gt;(IByteBuffer)</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -412,8 +399,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>
