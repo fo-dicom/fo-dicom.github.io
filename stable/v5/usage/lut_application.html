@@ -10,7 +10,7 @@
     <meta name="title" content=" | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -79,18 +79,19 @@
             <article class="content wrap" id="_content" data-uid="">
 
 <p>For grayscale images, <em>fo-dicom</em> by default applies the rendering options available in the DICOM dataset when rendering the actual image with <code>DicomImage.RenderImage</code>. By default, the rendering options identifies whether the colors should be displayed using the <code>Monochrome1</code> or <code>Monochrome2</code> color tables. To override this color scheme, the following workarounds are available.</p>
-<p>The <code>Color32[]</code> property <code>GrayscaleColorMap</code> has been added to the <code>DicomImage</code> class in <em>fo-dicom</em> version 2.0. By default, the color map is selected based on the Photometric Interpretation of the associated dataset (Monochrome 1 or 2), but it can be set to any 256 item <code>Color32</code> array prior to rendering the image.</p>
+<p>The <code>Color32[]</code> property <code>GrayscaleColorMap</code> has been added to the <code>DicomImage</code> class. By default, the color map is selected based on the Photometric Interpretation of the associated dataset (Monochrome 1 or 2), but it can be set to any 256 item <code>Color32</code> array prior to rendering the image.</p>
 <p>Example of applying arbitrary color map and then render image:</p>
 <pre><code class="lang-csharp">    var di = new DicomImage(dicomFileName);
     di.GrayscaleColorMap = ColorTable.LoadLUT(lutFileName);
     var image = di.RenderImage();
 </code></pre>
+<p>The <code>lutFileName</code> has to reference a binary file, with 768 bytes length. It has to contain the 3 bytes (red, green blue) for all 256 possible values.</p>
 <p>By default, grayscale images are rendered via the <code>Monochrome1</code> or <code>Monochrome2</code> color tables:</p>
-<p><img src="https://cloud.githubusercontent.com/assets/6515030/9720999/a3172874-5594-11e5-8c06-5b7ae246ff8c.png" alt="monochrome"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/6515030/9720999/a3172874-5594-11e5-8c06-5b7ae246ff8c.png" class="img-fluid" alt="monochrome"></p>
 <p>To override this selection upon rendering, for example using a color table loaded from file via <code>ColorTable.LoadLUT</code> or by composing a 256 item <code>Color32</code> array, the following helper method can be applied to create an LUT that simultaneously accounts for the image properties specified in the dataset:</p>
 <pre><code class="lang-csharp">    public static ILUT CreateFromDataset(DicomDataset dataset, Color32[] colorTable)
     {
-      var options = GrayscaleRenderOptions.FromDataset(dataset);
+      var options = GrayscaleRenderOptions.FromDataset(dataset, 0);
 
       var composite = new CompositeLUT();
       OutputLUT output;
@@ -114,19 +115,12 @@
     }
 </code></pre>
 <p>Creating a composite LUT using a non-monochrome color table such as the &quot;green-fire-blue&quot; color scheme and rendering the same image via the <code>ImageGraphic.RenderImage(ILUT)</code> method would then yield the following result:</p>
-<p><img src="https://cloud.githubusercontent.com/assets/6515030/9714016/7e9a4ae2-5555-11e5-9b46-7fcf75c315c1.jpg" alt="greenfireblue"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/6515030/9714016/7e9a4ae2-5555-11e5-9b46-7fcf75c315c1.jpg" class="img-fluid" alt="greenfireblue"></p>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/fo-dicom/fo-dicom/blob/development/Documentation/v5/usage/lut_application.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -143,8 +137,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

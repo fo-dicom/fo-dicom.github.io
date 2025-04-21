@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,7 +88,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ByteBufferByteSource</span></div>
   </div>
   <div class="implements">
@@ -98,37 +98,35 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.Buffer.html">FellowOakDicom.IO.Buffer</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ByteBufferByteSource : IByteSource</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource__ctor_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.#ctor*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource__ctor" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.#ctor">ByteBufferByteSource()</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="FellowOakDicom.IO.Buffer.ByteBufferByteSource.html">ByteBufferByteSource</a>.
@@ -139,8 +137,6 @@ Internal list of buffers is empty.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ByteBufferByteSource()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource__ctor_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.#ctor*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource__ctor_FellowOakDicom_IO_Buffer_IByteBuffer___" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.#ctor(FellowOakDicom.IO.Buffer.IByteBuffer[])">ByteBufferByteSource(IByteBuffer[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="FellowOakDicom.IO.Buffer.ByteBufferByteSource.html">ByteBufferByteSource</a>.</p>
@@ -170,34 +166,6 @@ Internal list of buffers is empty.</p>
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
-  <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_CanRewind_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.CanRewind*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_CanRewind" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.CanRewind">CanRewind</h4>
-  <div class="markdown level1 summary"><p>Gets whether its possible to rewind the source.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanRewind { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Endian_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Endian*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Endian" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Endian">Endian</h4>
   <div class="markdown level1 summary"><p>Gets or sets the endianness.</p>
@@ -222,8 +190,6 @@ Internal list of buffers is empty.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_IsEOF_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.IsEOF*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_IsEOF" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.IsEOF">IsEOF</h4>
   <div class="markdown level1 summary"><p>Gets whether end-of-source is reached.</p>
@@ -243,65 +209,11 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Marker_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Marker*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Marker" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Marker">Marker</h4>
-  <div class="markdown level1 summary"><p>Gets the position of the current marker.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long Marker { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_MilestonesCount_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.MilestonesCount*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_MilestonesCount" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.MilestonesCount">MilestonesCount</h4>
-  <div class="markdown level1 summary"><p>Gets the milestone levels count.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MilestonesCount { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Position_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Position*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Position" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Position">Position</h4>
   <div class="markdown level1 summary"><p>Gets the current read position.</p>
@@ -321,15 +233,13 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="xref">System.Int64</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Add_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Add*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Add_FellowOakDicom_IO_Buffer_IByteBuffer_System_Boolean_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Add(FellowOakDicom.IO.Buffer.IByteBuffer,System.Boolean)">Add(IByteBuffer, Boolean)</h4>
   <div class="markdown level1 summary"><p>Add byte buffer to byte source.</p>
@@ -356,18 +266,17 @@ Internal list of buffers is empty.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">last</span></td>
         <td><p>true if added buffer is the last to add, false otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBuffer_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBuffer*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBuffer_System_UInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBuffer(System.UInt32)">GetBuffer(UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a byte buffer of specified length from the current position and moves to subsequent position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -384,9 +293,10 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
-        <td></td>
+        <td><p>Number of bytes to read.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -401,15 +311,15 @@ Internal list of buffers is empty.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a></td>
-        <td></td>
+        <td><p>Byte buffer containing the read bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBufferAsync_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBufferAsync*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBufferAsync_System_UInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBufferAsync(System.UInt32)">GetBufferAsync(UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Asynchronously gets a byte buffer of specified length from the current position and moves to subsequent position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -426,9 +336,10 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
-        <td></td>
+        <td><p>Number of bytes to read.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -442,13 +353,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
+        <td><p>Awaitable byte buffer containing the read bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBytes_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBytes*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBytes_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBytes(System.Byte[],System.Int32,System.Int32)">GetBytes(Byte[], Int32, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -468,17 +378,17 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">buffer</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">index</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
         <td></td>
       </tr>
@@ -494,13 +404,11 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBytes_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBytes*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetBytes_System_Int32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetBytes(System.Int32)">GetBytes(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a specified number of bytes from the current position and moves to subsequent position.</p>
@@ -521,7 +429,7 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of bytes to read.</p>
 </td>
@@ -538,14 +446,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td><p>Array of bytes.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetDouble_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetDouble*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetDouble" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetDouble">GetDouble()</h4>
   <div class="markdown level1 summary"><p>Gets a double precision floating point value (64 bits) from the current position and moves to subsequent position.</p>
@@ -565,14 +471,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="xref">System.Double</span></td>
         <td><p>Double precision floating point value.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetInt16_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetInt16*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetInt16" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetInt16">GetInt16()</h4>
   <div class="markdown level1 summary"><p>Gets a signed short (16 bits) from the current position and moves to subsequent position.</p>
@@ -592,14 +496,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">Int16</a></td>
+        <td><span class="xref">System.Int16</span></td>
         <td><p>Signed short.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetInt32*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetInt32" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetInt32">GetInt32()</h4>
   <div class="markdown level1 summary"><p>Gets a signed integer (32 bits) from the current position and moves to subsequent position.</p>
@@ -619,14 +521,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><p>Signed integer.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetInt64_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetInt64*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetInt64" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetInt64">GetInt64()</h4>
   <div class="markdown level1 summary"><p>Gets a signed long (64 bits) from the current position and moves to subsequent position.</p>
@@ -646,14 +546,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="xref">System.Int64</span></td>
         <td><p>Signed long.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetSingle_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetSingle*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetSingle" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetSingle">GetSingle()</h4>
   <div class="markdown level1 summary"><p>Gets a single precision floating point value (32 bits) from the current position and moves to subsequent position.</p>
@@ -673,14 +571,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="xref">System.Single</span></td>
         <td><p>Single precision floating point value.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetStream_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetStream*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetStream" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetStream">GetStream()</h4>
   <div class="markdown level1 summary"></div>
@@ -699,13 +595,11 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt16_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt16*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt16" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt16">GetUInt16()</h4>
   <div class="markdown level1 summary"><p>Gets an unsigned short (16 bits) from the current position and moves to subsequent position.</p>
@@ -725,14 +619,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="xref">System.UInt16</span></td>
         <td><p>Unsigned short.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt32*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt32" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt32">GetUInt32()</h4>
   <div class="markdown level1 summary"><p>Gets an unsigned integer (32 bits) from the current position and moves to subsequent position.</p>
@@ -752,14 +644,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><p>Unsigned integer.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt64_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt64*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt64" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt64">GetUInt64()</h4>
   <div class="markdown level1 summary"><p>Gets an unsigned long (64 bits) from the current position and moves to subsequent position.</p>
@@ -779,14 +669,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="xref">System.UInt64</span></td>
         <td><p>Unsigned long.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt8_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt8*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GetUInt8" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GetUInt8">GetUInt8()</h4>
   <div class="markdown level1 summary"><p>Gets one byte from the current position and moves to subsequent position.</p>
@@ -806,71 +694,19 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="xref">System.Byte</span></td>
         <td><p>Single byte.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_HasReachedMilestone_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.HasReachedMilestone*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_HasReachedMilestone" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.HasReachedMilestone">HasReachedMilestone()</h4>
-  <div class="markdown level1 summary"><p>Checks whether the byte source position is at the uppermost milestone position.</p>
-</div>
+  <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GoTo_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GoTo*"></a>
+  <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_GoTo_System_Int64_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.GoTo(System.Int64)">GoTo(Int64)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool HasReachedMilestone()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>true if uppermost milestone is reached, false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Mark_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Mark*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Mark" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Mark">Mark()</h4>
-  <div class="markdown level1 summary"><p>Set a mark at the current position.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Mark()</code></pre>
-  </div>
-  
-  
-  <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_PopMilestone_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.PopMilestone*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_PopMilestone" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.PopMilestone">PopMilestone()</h4>
-  <div class="markdown level1 summary"><p>Pop the uppermost level of milestone.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PopMilestone()</code></pre>
-  </div>
-  
-  
-  <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_PushMilestone_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.PushMilestone*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_PushMilestone_System_UInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.PushMilestone(System.UInt32)">PushMilestone(UInt32)</h4>
-  <div class="markdown level1 summary"><p>Mark the position of a new level of milestone.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PushMilestone(uint count)</code></pre>
+    <pre><code class="lang-csharp hljs">public void GoTo(long position)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -883,15 +719,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Expected distance in bytes from the current position to the milestone.</p>
-</td>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Require_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Require*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Require_System_UInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Require(System.UInt32)">Require(UInt32)</h4>
   <div class="markdown level1 summary"><p>Verifies that there is a sufficient number of bytes to read.</p>
@@ -912,7 +745,7 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Required number of bytes.</p>
 </td>
@@ -929,14 +762,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><p>true if source contains sufficient number of remaining bytes, false otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Require_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Require*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Require_System_UInt32_FellowOakDicom_IO_ByteSourceCallback_System_Object_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Require(System.UInt32,FellowOakDicom.IO.ByteSourceCallback,System.Object)">Require(UInt32, ByteSourceCallback, Object)</h4>
   <div class="markdown level1 summary"><p>Verifies that there is a sufficient number of bytes to read.</p>
@@ -957,7 +788,7 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Required number of bytes.</p>
 </td>
@@ -969,7 +800,7 @@ Internal list of buffers is empty.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">state</span></td>
         <td><p>Callback state.</p>
 </td>
@@ -986,25 +817,12 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><p>true if source contains sufficient number of remaining bytes, false otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Rewind_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Rewind*"></a>
-  <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Rewind" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Rewind">Rewind()</h4>
-  <div class="markdown level1 summary"><p>Rewind byte source to latest <a class="xref" href="FellowOakDicom.IO.IByteSource.html#FellowOakDicom_IO_IByteSource_Marker">Marker</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Rewind()</code></pre>
-  </div>
-  
-  
   <a id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Skip_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Skip*"></a>
   <h4 id="FellowOakDicom_IO_Buffer_ByteBufferByteSource_Skip_System_UInt32_" data-uid="FellowOakDicom.IO.Buffer.ByteBufferByteSource.Skip(System.UInt32)">Skip(UInt32)</h4>
   <div class="markdown level1 summary"><p>Skip position <code data-dev-comment-type="paramref" class="paramref">count</code> number of bytes.</p>
@@ -1025,7 +843,7 @@ Internal list of buffers is empty.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of bytes to skip.</p>
 </td>
@@ -1036,15 +854,15 @@ Internal list of buffers is empty.</p>
   <div>
       <a class="xref" href="FellowOakDicom.IO.IByteSource.html">IByteSource</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -1061,8 +879,8 @@ Internal list of buffers is empty.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

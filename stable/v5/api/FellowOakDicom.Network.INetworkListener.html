@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,23 +87,21 @@
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_INetworkListener_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface INetworkListener</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
-  <a id="FellowOakDicom_Network_INetworkListener_AcceptNetworkStreamAsync_" data-uid="FellowOakDicom.Network.INetworkListener.AcceptNetworkStreamAsync*"></a>
-  <h4 id="FellowOakDicom_Network_INetworkListener_AcceptNetworkStreamAsync_ITlsAcceptor_System_Boolean_ILogger_CancellationToken_" data-uid="FellowOakDicom.Network.INetworkListener.AcceptNetworkStreamAsync(ITlsAcceptor,System.Boolean,ILogger,CancellationToken)">AcceptNetworkStreamAsync(ITlsAcceptor, Boolean, ILogger, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Wait until a network stream is trying to connect, and return the accepted stream.</p>
+  <a id="FellowOakDicom_Network_INetworkListener_AcceptTcpClientAsync_" data-uid="FellowOakDicom.Network.INetworkListener.AcceptTcpClientAsync*"></a>
+  <h4 id="FellowOakDicom_Network_INetworkListener_AcceptTcpClientAsync_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__Microsoft_Extensions_Logging_ILogger_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.INetworkListener.AcceptTcpClientAsync(System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},Microsoft.Extensions.Logging.ILogger,System.Threading.CancellationToken)">AcceptTcpClientAsync(Boolean, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, ILogger, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Wait until a TCP client is trying to connect, and return the accepted TCP client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;INetworkStream&gt; AcceptNetworkStreamAsync(ITlsAcceptor tlsAcceptor, bool noDelay, ILogger logger, CancellationToken token)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;TcpClient&gt; AcceptTcpClientAsync(bool noDelay, int? receiveBufferSize, int? sendBufferSize, ILogger logger, CancellationToken token)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -116,25 +114,31 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ITlsAcceptor</span></td>
-        <td><span class="parametername">tlsAcceptor</span></td>
-        <td><p>Handler to accept authenticated connections.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">noDelay</span></td>
         <td><p>No delay?</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">receiveBufferSize</span></td>
+        <td><p>The size of the receive buffer of the underlying TCP connection</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">sendBufferSize</span></td>
+        <td><p>The size of the send buffer of the underlying TCP connection</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td><span class="parametername">logger</span></td>
         <td><p>The logger</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">token</span></td>
         <td><p>Cancellation token.</p>
 </td>
@@ -151,14 +155,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="FellowOakDicom.Network.INetworkStream.html">INetworkStream</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Sockets.TcpClient</span>&gt;</td>
         <td><p>Connected network stream.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_INetworkListener_StartAsync_" data-uid="FellowOakDicom.Network.INetworkListener.StartAsync*"></a>
   <h4 id="FellowOakDicom_Network_INetworkListener_StartAsync" data-uid="FellowOakDicom.Network.INetworkListener.StartAsync">StartAsync()</h4>
   <div class="markdown level1 summary"><p>Start listening.</p>
@@ -178,14 +180,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>An awaitable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>An awaitable <span class="xref">System.Threading.Tasks.Task</span>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_INetworkListener_Stop_" data-uid="FellowOakDicom.Network.INetworkListener.Stop*"></a>
   <h4 id="FellowOakDicom_Network_INetworkListener_Stop" data-uid="FellowOakDicom.Network.INetworkListener.Stop">Stop()</h4>
   <div class="markdown level1 summary"><p>Stop listening.</p>
@@ -195,15 +195,15 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void Stop()</code></pre>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -220,8 +220,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

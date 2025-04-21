@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,7 +88,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Logger</span></div>
   </div>
   <div class="implements">
@@ -98,37 +98,36 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Log.html">FellowOakDicom.Log</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Log_Logger_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Logger : ILogger</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Fellow Oak DICOM now supports Microsoft.Extensions.Logging&quot;)]
+public abstract class Logger : ILogger</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Log_Logger_Debug_" data-uid="FellowOakDicom.Log.Logger.Debug*"></a>
   <h4 id="FellowOakDicom_Log_Logger_Debug_System_String_System_Object___" data-uid="FellowOakDicom.Log.Logger.Debug(System.String,System.Object[])">Debug(String, Object[])</h4>
   <div class="markdown level1 summary"><p>Log a debug message to the logger.</p>
@@ -149,21 +148,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">msg</span></td>
         <td><p>Log message (format string).</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
         <td><p>Log message arguments.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_Logger_Error_" data-uid="FellowOakDicom.Log.Logger.Error*"></a>
   <h4 id="FellowOakDicom_Log_Logger_Error_System_String_System_Object___" data-uid="FellowOakDicom.Log.Logger.Error(System.String,System.Object[])">Error(String, Object[])</h4>
   <div class="markdown level1 summary"><p>Log an error message to the logger.</p>
@@ -184,21 +181,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">msg</span></td>
         <td><p>Log message (format string).</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
         <td><p>Log message arguments.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_Logger_Fatal_" data-uid="FellowOakDicom.Log.Logger.Fatal*"></a>
   <h4 id="FellowOakDicom_Log_Logger_Fatal_System_String_System_Object___" data-uid="FellowOakDicom.Log.Logger.Fatal(System.String,System.Object[])">Fatal(String, Object[])</h4>
   <div class="markdown level1 summary"><p>Log a fatal error message to the logger.</p>
@@ -219,21 +214,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">msg</span></td>
         <td><p>Log message (format string).</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
         <td><p>Log message arguments.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_Logger_Info_" data-uid="FellowOakDicom.Log.Logger.Info*"></a>
   <h4 id="FellowOakDicom_Log_Logger_Info_System_String_System_Object___" data-uid="FellowOakDicom.Log.Logger.Info(System.String,System.Object[])">Info(String, Object[])</h4>
   <div class="markdown level1 summary"><p>Log an informational message to the logger.</p>
@@ -254,21 +247,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">msg</span></td>
         <td><p>Log message (format string).</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
         <td><p>Log message arguments.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_Logger_Log_" data-uid="FellowOakDicom.Log.Logger.Log*"></a>
   <h4 id="FellowOakDicom_Log_Logger_Log_FellowOakDicom_Log_LogLevel_System_String_System_Object___" data-uid="FellowOakDicom.Log.Logger.Log(FellowOakDicom.Log.LogLevel,System.String,System.Object[])">Log(LogLevel, String, Object[])</h4>
   <div class="markdown level1 summary"><p>Log a message to the logger.</p>
@@ -295,21 +286,19 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">msg</span></td>
         <td><p>Log message (format string).</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
         <td><p>Log message arguments.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_Logger_Warn_" data-uid="FellowOakDicom.Log.Logger.Warn*"></a>
   <h4 id="FellowOakDicom_Log_Logger_Warn_System_String_System_Object___" data-uid="FellowOakDicom.Log.Logger.Warn(System.String,System.Object[])">Warn(String, Object[])</h4>
   <div class="markdown level1 summary"><p>Log a warning message to the logger.</p>
@@ -330,13 +319,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">msg</span></td>
         <td><p>Log message (format string).</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
         <td><p>Log message arguments.</p>
 </td>
@@ -347,15 +336,15 @@
   <div>
       <a class="xref" href="FellowOakDicom.Log.ILogger.html">ILogger</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -372,8 +361,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

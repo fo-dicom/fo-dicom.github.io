@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,43 +87,41 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DicomJson</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Serialization.html">FellowOakDicom.Serialization</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Serialization_DicomJson_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class DicomJson</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Serialization_DicomJson_ConvertDicomToJson_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertDicomToJson*"></a>
   <h4 id="FellowOakDicom_Serialization_DicomJson_ConvertDicomToJson_FellowOakDicom_DicomDataset_System_Boolean_System_Boolean_FellowOakDicom_Serialization_NumberSerializationMode_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertDicomToJson(FellowOakDicom.DicomDataset,System.Boolean,System.Boolean,FellowOakDicom.Serialization.NumberSerializationMode)">ConvertDicomToJson(DicomDataset, Boolean, Boolean, NumberSerializationMode)</h4>
   <div class="markdown level1 summary"><p>Converts a <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a> to a Json-String.</p>
@@ -149,13 +147,13 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">writeTagsAsKeywords</span></td>
         <td><p>Whether to write the json keys as DICOM keywords instead of tags. This makes the json non-compliant to DICOM JSON.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">formatIndented</span></td>
         <td><p>Gets or sets a value that defines whether JSON should use pretty printing. By default, JSON is serialized without any extra white space.</p>
 </td>
@@ -178,15 +176,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Serialization_DicomJson_ConvertDicomToJson_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertDicomToJson*"></a>
-  <h4 id="FellowOakDicom_Serialization_DicomJson_ConvertDicomToJson_IEnumerable_FellowOakDicom_DicomDataset__System_Boolean_System_Boolean_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertDicomToJson(IEnumerable{FellowOakDicom.DicomDataset},System.Boolean,System.Boolean)">ConvertDicomToJson(IEnumerable&lt;DicomDataset&gt;, Boolean, Boolean)</h4>
+  <h4 id="FellowOakDicom_Serialization_DicomJson_ConvertDicomToJson_System_Collections_Generic_IEnumerable_FellowOakDicom_DicomDataset__System_Boolean_System_Boolean_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertDicomToJson(System.Collections.Generic.IEnumerable{FellowOakDicom.DicomDataset},System.Boolean,System.Boolean)">ConvertDicomToJson(IEnumerable&lt;DicomDataset&gt;, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Converts an array or list of <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a> to a Json-String.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -205,18 +201,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a>&gt;</td>
         <td><span class="parametername">dataset</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">writeTagsAsKeywords</span></td>
         <td><p>Whether to write the json keys as DICOM keywords instead of tags. This makes the json non-compliant to DICOM JSON.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">formatIndented</span></td>
         <td><p>Gets or sets a value that defines whether JSON should use pretty printing. By default, JSON is serialized without any extra white space.</p>
 </td>
@@ -233,13 +229,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Serialization_DicomJson_ConvertJsonToDicom_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertJsonToDicom*"></a>
   <h4 id="FellowOakDicom_Serialization_DicomJson_ConvertJsonToDicom_System_String_System_Boolean_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertJsonToDicom(System.String,System.Boolean)">ConvertJsonToDicom(String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Converts a Json-String to a <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a>.</p>
@@ -260,12 +254,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">json</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">autoValidate</span></td>
         <td><p>Whether the content of DicomItems shall be validated as soon as they are added to the DicomDataset.</p>
 </td>
@@ -287,8 +281,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Serialization_DicomJson_ConvertJsonToDicomArray_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertJsonToDicomArray*"></a>
   <h4 id="FellowOakDicom_Serialization_DicomJson_ConvertJsonToDicomArray_System_String_" data-uid="FellowOakDicom.Serialization.DicomJson.ConvertJsonToDicomArray(System.String)">ConvertJsonToDicomArray(String)</h4>
   <div class="markdown level1 summary"></div>
@@ -308,7 +300,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">json</span></td>
         <td></td>
       </tr>
@@ -334,10 +326,6 @@
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -354,8 +342,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,43 +88,65 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">NetworkStreamCreationOptions</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_NetworkStreamCreationOptions_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class NetworkStreamCreationOptions</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
+  <a id="FellowOakDicom_Network_NetworkStreamCreationOptions_ConnectionTimeout_" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.ConnectionTimeout*"></a>
+  <h4 id="FellowOakDicom_Network_NetworkStreamCreationOptions_ConnectionTimeout" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.ConnectionTimeout">ConnectionTimeout</h4>
+  <div class="markdown level1 summary"><p>Geets or sets the timeout when the TCP connection is established</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan ConnectionTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="FellowOakDicom_Network_NetworkStreamCreationOptions_Host_" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.Host*"></a>
   <h4 id="FellowOakDicom_Network_NetworkStreamCreationOptions_Host" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.Host">Host</h4>
   <div class="markdown level1 summary"><p>The IP address or host name of the SCP</p>
@@ -144,13 +166,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_NetworkStreamCreationOptions_NoDelay_" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.NoDelay*"></a>
   <h4 id="FellowOakDicom_Network_NetworkStreamCreationOptions_NoDelay" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.NoDelay">NoDelay</h4>
   <div class="markdown level1 summary"><p>Whether or not to disable the delay when buffers are not full</p>
@@ -170,17 +190,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 id="FellowOakDicom_Network_NetworkStreamCreationOptions_NoDelay_seealso">See Also</h5>
   <div class="seealso">
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.sockets.tcpclient.nodelay#system-net-sockets-tcpclient-nodelay">NoDelay</a></div>
+      <div><span class="xref">System.Net.Sockets.TcpClient.NoDelay</span></div>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_NetworkStreamCreationOptions_Port_" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.Port*"></a>
   <h4 id="FellowOakDicom_Network_NetworkStreamCreationOptions_Port" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.Port">Port</h4>
   <div class="markdown level1 summary"><p>The port on which the SCP is listening</p>
@@ -200,13 +218,69 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <a id="FellowOakDicom_Network_NetworkStreamCreationOptions_ReceiveBufferSize_" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.ReceiveBufferSize*"></a>
+  <h4 id="FellowOakDicom_Network_NetworkStreamCreationOptions_ReceiveBufferSize" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.ReceiveBufferSize">ReceiveBufferSize</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the size of the receive buffer of the underlying TCP connection
+If not configured, the default value of 8192 bytes will be used</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ReceiveBufferSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_Network_NetworkStreamCreationOptions_ReceiveBufferSize_seealso">See Also</h5>
+  <div class="seealso">
+      <div><span class="xref">System.Net.Sockets.TcpClient.ReceiveBufferSize</span></div>
+  </div>
+  <a id="FellowOakDicom_Network_NetworkStreamCreationOptions_SendBufferSize_" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.SendBufferSize*"></a>
+  <h4 id="FellowOakDicom_Network_NetworkStreamCreationOptions_SendBufferSize" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.SendBufferSize">SendBufferSize</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the size of the send buffer of the underlying TCP connection
+If not configured, the default value of 8192 bytes will be used</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? SendBufferSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_Network_NetworkStreamCreationOptions_SendBufferSize_seealso">See Also</h5>
+  <div class="seealso">
+      <div><span class="xref">System.Net.Sockets.TcpClient.SendBufferSize</span></div>
+  </div>
   <a id="FellowOakDicom_Network_NetworkStreamCreationOptions_Timeout_" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.Timeout*"></a>
   <h4 id="FellowOakDicom_Network_NetworkStreamCreationOptions_Timeout" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.Timeout">Timeout</h4>
   <div class="markdown level1 summary"><p>After how much time a write or read operation over the TCP connection must time out</p>
@@ -226,18 +300,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 id="FellowOakDicom_Network_NetworkStreamCreationOptions_Timeout_seealso">See Also</h5>
   <div class="seealso">
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.security.sslstream.readtimeout#system-net-security-sslstream-readtimeout">ReadTimeout</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.security.sslstream.writetimeout#system-net-security-sslstream-writetimeout">WriteTimeout</a></div>
+      <div><span class="xref">System.Net.Security.SslStream.ReadTimeout</span></div>
+      <div><span class="xref">System.Net.Security.SslStream.WriteTimeout</span></div>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_NetworkStreamCreationOptions_TlsInitiator_" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.TlsInitiator*"></a>
   <h4 id="FellowOakDicom_Network_NetworkStreamCreationOptions_TlsInitiator" data-uid="FellowOakDicom.Network.NetworkStreamCreationOptions.TlsInitiator">TlsInitiator</h4>
   <div class="markdown level1 summary"><p>Gets or sets the handler to use TLS (SSLStream) when opening the TCP connection. If this handler is null then no TLS will be used</p>
@@ -257,20 +329,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ITlsInitiator</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Tls.ITlsInitiator.html">ITlsInitiator</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -287,8 +359,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

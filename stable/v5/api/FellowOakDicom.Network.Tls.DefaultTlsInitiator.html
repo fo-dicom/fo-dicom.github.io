@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -89,7 +89,7 @@ This implementation will use windows certificate store in order to validate the 
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DefaultTlsInitiator</span></div>
   </div>
   <div class="implements">
@@ -99,37 +99,35 @@ This implementation will use windows certificate store in order to validate the 
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Tls.html">FellowOakDicom.Network.Tls</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class DefaultTlsInitiator : ITlsInitiator</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator__ctor_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator__ctor" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.#ctor">DefaultTlsInitiator()</h4>
   <div class="markdown level1 summary"></div>
@@ -140,8 +138,6 @@ This implementation will use windows certificate store in order to validate the 
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_Certificates_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.Certificates*"></a>
   <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_Certificates" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.Certificates">Certificates</h4>
   <div class="markdown level1 summary"><p>The certificates that will be used to authenticate the client itself</p>
@@ -161,13 +157,11 @@ This implementation will use windows certificate store in order to validate the 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">X509CertificateCollection</span></td>
+        <td><span class="xref">System.Security.Cryptography.X509Certificates.X509CertificateCollection</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_CertificateValidationCallback_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.CertificateValidationCallback*"></a>
   <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_CertificateValidationCallback" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.CertificateValidationCallback">CertificateValidationCallback</h4>
   <div class="markdown level1 summary"><p>The callback that will be invoked after validating the certificate of the server</p>
@@ -187,13 +181,11 @@ This implementation will use windows certificate store in order to validate the 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RemoteCertificateValidationCallback</span></td>
+        <td><span class="xref">System.Net.Security.RemoteCertificateValidationCallback</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_CheckCertificateRevocation_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.CheckCertificateRevocation*"></a>
   <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_CheckCertificateRevocation" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.CheckCertificateRevocation">CheckCertificateRevocation</h4>
   <div class="markdown level1 summary"><p>Whether or not the certificate revocation list should be checked during authentication</p>
@@ -213,13 +205,11 @@ This implementation will use windows certificate store in order to validate the 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_IgnoreSslPolicyErrors_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.IgnoreSslPolicyErrors*"></a>
   <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_IgnoreSslPolicyErrors" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.IgnoreSslPolicyErrors">IgnoreSslPolicyErrors</h4>
   <div class="markdown level1 summary"><p>Whether or not to ignore any certificate validation errors that occur when authenticating as a client over SSL</p>
@@ -239,13 +229,11 @@ This implementation will use windows certificate store in order to validate the 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_Protocols_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.Protocols*"></a>
   <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_Protocols" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.Protocols">Protocols</h4>
   <div class="markdown level1 summary"><p>The protocols that should be supported</p>
@@ -265,13 +253,11 @@ This implementation will use windows certificate store in order to validate the 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">SslProtocols</span></td>
+        <td><span class="xref">System.Security.Authentication.SslProtocols</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_SslHandshakeTimeout_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.SslHandshakeTimeout*"></a>
   <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_SslHandshakeTimeout" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.SslHandshakeTimeout">SslHandshakeTimeout</h4>
   <div class="markdown level1 summary"><p>The timeout after which TLS authentication will be considered to have failed</p>
@@ -291,17 +277,15 @@ This implementation will use windows certificate store in order to validate the 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_InitiateTls_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.InitiateTls*"></a>
-  <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_InitiateTls_Stream_System_String_System_Int32_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.InitiateTls(Stream,System.String,System.Int32)">InitiateTls(Stream, String, Int32)</h4>
+  <h4 id="FellowOakDicom_Network_Tls_DefaultTlsInitiator_InitiateTls_System_IO_Stream_System_String_System_Int32_" data-uid="FellowOakDicom.Network.Tls.DefaultTlsInitiator.InitiateTls(System.IO.Stream,System.String,System.Int32)">InitiateTls(Stream, String, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -319,17 +303,17 @@ This implementation will use windows certificate store in order to validate the 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">plainStream</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">remoteAddress</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">remotePort</span></td>
         <td></td>
       </tr>
@@ -345,7 +329,7 @@ This implementation will use windows certificate store in order to validate the 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -354,15 +338,15 @@ This implementation will use windows certificate store in order to validate the 
   <div>
       <a class="xref" href="FellowOakDicom.Network.Tls.ITlsInitiator.html">ITlsInitiator</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -379,8 +363,8 @@ This implementation will use windows certificate store in order to validate the 
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

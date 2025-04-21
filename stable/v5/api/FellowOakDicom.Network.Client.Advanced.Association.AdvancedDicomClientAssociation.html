@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,50 +88,48 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">AdvancedDicomClientAssociation</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Association.IAdvancedDicomClientAssociation.html">IAdvancedDicomClientAssociation</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Client.Advanced.Association.html">FellowOakDicom.Network.Client.Advanced.Association</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AdvancedDicomClientAssociation : IAdvancedDicomClientAssociation</code></pre>
+    <pre><code class="lang-csharp hljs">public class AdvancedDicomClientAssociation : IAdvancedDicomClientAssociation, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation__ctor_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation__ctor_IAdvancedDicomClientConnection_FellowOakDicom_Network_DicomAssociation_ILogger_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.#ctor(IAdvancedDicomClientConnection,FellowOakDicom.Network.DicomAssociation,ILogger)">AdvancedDicomClientAssociation(IAdvancedDicomClientConnection, DicomAssociation, ILogger)</h4>
+  <h4 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation__ctor_FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnection_FellowOakDicom_Network_DicomAssociation_Microsoft_Extensions_Logging_ILogger_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.#ctor(FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection,FellowOakDicom.Network.DicomAssociation,Microsoft.Extensions.Logging.ILogger)">AdvancedDicomClientAssociation(IAdvancedDicomClientConnection, DicomAssociation, ILogger)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -150,7 +148,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IAdvancedDicomClientConnection</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection.html">IAdvancedDicomClientConnection</a></td>
         <td><span class="parametername">connection</span></td>
         <td></td>
       </tr>
@@ -160,7 +158,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td><span class="parametername">logger</span></td>
         <td></td>
       </tr>
@@ -168,8 +166,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_Association_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.Association*"></a>
   <h4 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_Association" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.Association">Association</h4>
   <div class="markdown level1 summary"><p>Contains information about the DICOM association that was opened</p>
@@ -194,8 +190,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_IsDisposed_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.IsDisposed*"></a>
   <h4 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_IsDisposed" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.IsDisposed">IsDisposed</h4>
   <div class="markdown level1 summary"></div>
@@ -214,17 +208,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_AbortAsync_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.AbortAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_AbortAsync_CancellationToken_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.AbortAsync(CancellationToken)">AbortAsync(CancellationToken)</h4>
+  <h4 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_AbortAsync_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.AbortAsync(System.Threading.CancellationToken)">AbortAsync(CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Sends a notification to the other AE that this association will be aborted
 Unlike an association release, an abort is not acknowledged by the other AE and can be performed at any time.
 Aborting an association may incur a loss of information, if for example it is performed while sending C-STORE requests.</p>
@@ -245,7 +237,7 @@ Aborting an association may incur a loss of information, if for example it is pe
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The token that immediately cancels the abort notification. Note that the association will be left in an unusable state regardless.</p>
 </td>
@@ -262,7 +254,7 @@ Aborting an association may incur a loss of information, if for example it is pe
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ValueTask</span></td>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span></td>
         <td><p>A task that will complete when the association is aborted or the connection is closed by the other AE</p>
 </td>
       </tr>
@@ -278,14 +270,12 @@ Aborting an association may incur a loss of information, if for example it is pe
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
         <td><p>When the association is already disposed</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_Dispose_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.Dispose*"></a>
   <h4 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_Dispose" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"></div>
@@ -294,8 +284,6 @@ Aborting an association may incur a loss of information, if for example it is pe
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_Finalize_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.Finalize*"></a>
   <h4 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_Finalize" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.Finalize">Finalize()</h4>
   <div class="markdown level1 summary"><p>The finalizer will be called when this instance is not disposed properly.</p>
@@ -308,10 +296,8 @@ Aborting an association may incur a loss of information, if for example it is pe
   <h5 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_Finalize_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Failing to dispose indicates wrong usage</p>
 </div>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_ReleaseAsync_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.ReleaseAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_ReleaseAsync_CancellationToken_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.ReleaseAsync(CancellationToken)">ReleaseAsync(CancellationToken)</h4>
+  <h4 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_ReleaseAsync_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.ReleaseAsync(System.Threading.CancellationToken)">ReleaseAsync(CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Sends a request to the other AE to release this association.
 Note that most PACS software close the open TCP connection immediately after an association release.
 Releasing an association is the proper way of cleaning it up after it is no longer necessary.</p>
@@ -332,7 +318,7 @@ Releasing an association is the proper way of cleaning it up after it is no long
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The token that immediately cancels the request. Note that the association will be left in an unusable state regardless.</p>
 </td>
@@ -349,7 +335,7 @@ Releasing an association is the proper way of cleaning it up after it is no long
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ValueTask</span></td>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span></td>
         <td><p>A task that will complete when the association release has been acknowledged, the association is aborted or the connection is closed by the other AE.</p>
 </td>
       </tr>
@@ -365,16 +351,14 @@ Releasing an association is the proper way of cleaning it up after it is no long
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
         <td><p>When the association is already disposed</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_SendRequestAsync_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.SendRequestAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_SendRequestAsync_FellowOakDicom_Network_DicomRequest_CancellationToken_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.SendRequestAsync(FellowOakDicom.Network.DicomRequest,CancellationToken)">SendRequestAsync(DicomRequest, CancellationToken)</h4>
+  <h4 id="FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociation_SendRequestAsync_FellowOakDicom_Network_DicomRequest_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociation.SendRequestAsync(FellowOakDicom.Network.DicomRequest,System.Threading.CancellationToken)">SendRequestAsync(DicomRequest, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Sends a request over this association and returns the received responses from the other AE
 There is no guarantee that the message will be sent immediately.
 As part of the association handshake, a maximum number of asynchronously invoked DICOM requests is agreed upon.
@@ -402,7 +386,7 @@ If the maximum number of pending DICOM requests has already been reached, this r
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The token that immediately cancels the request</p>
 </td>
@@ -419,7 +403,7 @@ If the maximum number of pending DICOM requests has already been reached, this r
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IAsyncEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IAsyncEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a>&gt;</td>
         <td><p>An asynchronous enumerable of responses.
 C-FIND or C-MOVE requests will typically receive back a pending response per SOP instance, and finally one last success response
 C-STORE and C-ECHO requests on the other hand typically only receives one response</p>
@@ -437,12 +421,12 @@ C-STORE and C-ECHO requests on the other hand typically only receives one respon
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><span class="xref">System.OperationCanceledException</span></td>
         <td><p>When the request is cancelled using the <code data-dev-comment-type="paramref" class="paramref">cancellationToken</code></p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></td>
+        <td><span class="xref">System.IO.IOException</span></td>
         <td><p>When connection/socket issues occur</p>
 </td>
       </tr>
@@ -452,7 +436,7 @@ C-STORE and C-ECHO requests on the other hand typically only receives one respon
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
         <td><p>When the association is already disposed</p>
 </td>
       </tr>
@@ -463,17 +447,29 @@ C-STORE and C-ECHO requests on the other hand typically only receives one respon
       <a class="xref" href="FellowOakDicom.Network.Client.Advanced.Association.IAdvancedDicomClientAssociation.html">IAdvancedDicomClientAssociation</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociationExtensions.html#FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociationExtensions_SendCEchoRequestAsync_FellowOakDicom_Network_Client_Advanced_Association_IAdvancedDicomClientAssociation_FellowOakDicom_Network_DicomCEchoRequest_System_Threading_CancellationToken_">AdvancedDicomClientAssociationExtensions.SendCEchoRequestAsync(IAdvancedDicomClientAssociation, DicomCEchoRequest, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociationExtensions.html#FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociationExtensions_SendCStoreRequestAsync_FellowOakDicom_Network_Client_Advanced_Association_IAdvancedDicomClientAssociation_FellowOakDicom_Network_DicomCStoreRequest_System_Threading_CancellationToken_">AdvancedDicomClientAssociationExtensions.SendCStoreRequestAsync(IAdvancedDicomClientAssociation, DicomCStoreRequest, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociationExtensions.html#FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociationExtensions_SendCFindRequestAsync_FellowOakDicom_Network_Client_Advanced_Association_IAdvancedDicomClientAssociation_FellowOakDicom_Network_DicomCFindRequest_System_Threading_CancellationToken_">AdvancedDicomClientAssociationExtensions.SendCFindRequestAsync(IAdvancedDicomClientAssociation, DicomCFindRequest, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Network.Client.Advanced.Association.AdvancedDicomClientAssociationExtensions.html#FellowOakDicom_Network_Client_Advanced_Association_AdvancedDicomClientAssociationExtensions_SendCMoveRequestAsync_FellowOakDicom_Network_Client_Advanced_Association_IAdvancedDicomClientAssociation_FellowOakDicom_Network_DicomCMoveRequest_System_Threading_CancellationToken_">AdvancedDicomClientAssociationExtensions.SendCMoveRequestAsync(IAdvancedDicomClientAssociation, DicomCMoveRequest, CancellationToken)</a>
   </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -490,8 +486,8 @@ C-STORE and C-ECHO requests on the other hand typically only receives one respon
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

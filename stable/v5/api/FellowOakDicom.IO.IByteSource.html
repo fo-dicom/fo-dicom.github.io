@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,41 +87,13 @@
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.html">FellowOakDicom.IO</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IO_IByteSource_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IByteSource</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_CanRewind_" data-uid="FellowOakDicom.IO.IByteSource.CanRewind*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_CanRewind" data-uid="FellowOakDicom.IO.IByteSource.CanRewind">CanRewind</h4>
-  <div class="markdown level1 summary"><p>Gets whether its possible to rewind the source.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool CanRewind { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_Endian_" data-uid="FellowOakDicom.IO.IByteSource.Endian*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_Endian" data-uid="FellowOakDicom.IO.IByteSource.Endian">Endian</h4>
   <div class="markdown level1 summary"><p>Gets or sets the endianness.</p>
@@ -146,8 +118,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_IsEOF_" data-uid="FellowOakDicom.IO.IByteSource.IsEOF*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_IsEOF" data-uid="FellowOakDicom.IO.IByteSource.IsEOF">IsEOF</h4>
   <div class="markdown level1 summary"><p>Gets whether end-of-source is reached.</p>
@@ -167,65 +137,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_Marker_" data-uid="FellowOakDicom.IO.IByteSource.Marker*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_Marker" data-uid="FellowOakDicom.IO.IByteSource.Marker">Marker</h4>
-  <div class="markdown level1 summary"><p>Gets the position of the current marker.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">long Marker { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_MilestonesCount_" data-uid="FellowOakDicom.IO.IByteSource.MilestonesCount*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_MilestonesCount" data-uid="FellowOakDicom.IO.IByteSource.MilestonesCount">MilestonesCount</h4>
-  <div class="markdown level1 summary"><p>Gets the milestone levels count.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int MilestonesCount { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_Position_" data-uid="FellowOakDicom.IO.IByteSource.Position*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_Position" data-uid="FellowOakDicom.IO.IByteSource.Position">Position</h4>
   <div class="markdown level1 summary"><p>Gets the current read position.</p>
@@ -245,15 +161,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="xref">System.Int64</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetBuffer_" data-uid="FellowOakDicom.IO.IByteSource.GetBuffer*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetBuffer_System_UInt32_" data-uid="FellowOakDicom.IO.IByteSource.GetBuffer(System.UInt32)">GetBuffer(UInt32)</h4>
   <div class="markdown level1 summary"><p>Gets a byte buffer of specified length from the current position and moves to subsequent position.</p>
@@ -274,7 +188,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of bytes to read.</p>
 </td>
@@ -291,14 +205,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IByteBuffer</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a></td>
         <td><p>Byte buffer containing the read bytes.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetBufferAsync_" data-uid="FellowOakDicom.IO.IByteSource.GetBufferAsync*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetBufferAsync_System_UInt32_" data-uid="FellowOakDicom.IO.IByteSource.GetBufferAsync(System.UInt32)">GetBufferAsync(UInt32)</h4>
   <div class="markdown level1 summary"><p>Asynchronously gets a byte buffer of specified length from the current position and moves to subsequent position.</p>
@@ -319,7 +231,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of bytes to read.</p>
 </td>
@@ -336,14 +248,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">IByteBuffer</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
         <td><p>Awaitable byte buffer containing the read bytes.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetBytes_" data-uid="FellowOakDicom.IO.IByteSource.GetBytes*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetBytes_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.IO.IByteSource.GetBytes(System.Byte[],System.Int32,System.Int32)">GetBytes(Byte[], Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a specified number of bytes from the current position and moves to subsequent position.
@@ -365,19 +275,19 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">buffer</span></td>
         <td><p>The buffer to write the bytes to</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">index</span></td>
         <td><p>The index in the buffer at which to start writing</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of bytes to read.</p>
 </td>
@@ -394,14 +304,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><p>The number of bytes that were filled in the buffer</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetBytes_" data-uid="FellowOakDicom.IO.IByteSource.GetBytes*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetBytes_System_Int32_" data-uid="FellowOakDicom.IO.IByteSource.GetBytes(System.Int32)">GetBytes(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a specified number of bytes from the current position and moves to subsequent position.</p>
@@ -422,7 +330,7 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of bytes to read.</p>
 </td>
@@ -439,14 +347,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td><p>Array of bytes.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetDouble_" data-uid="FellowOakDicom.IO.IByteSource.GetDouble*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetDouble" data-uid="FellowOakDicom.IO.IByteSource.GetDouble">GetDouble()</h4>
   <div class="markdown level1 summary"><p>Gets a double precision floating point value (64 bits) from the current position and moves to subsequent position.</p>
@@ -466,14 +372,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="xref">System.Double</span></td>
         <td><p>Double precision floating point value.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetInt16_" data-uid="FellowOakDicom.IO.IByteSource.GetInt16*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetInt16" data-uid="FellowOakDicom.IO.IByteSource.GetInt16">GetInt16()</h4>
   <div class="markdown level1 summary"><p>Gets a signed short (16 bits) from the current position and moves to subsequent position.</p>
@@ -493,14 +397,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">Int16</a></td>
+        <td><span class="xref">System.Int16</span></td>
         <td><p>Signed short.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetInt32_" data-uid="FellowOakDicom.IO.IByteSource.GetInt32*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetInt32" data-uid="FellowOakDicom.IO.IByteSource.GetInt32">GetInt32()</h4>
   <div class="markdown level1 summary"><p>Gets a signed integer (32 bits) from the current position and moves to subsequent position.</p>
@@ -520,14 +422,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><p>Signed integer.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetInt64_" data-uid="FellowOakDicom.IO.IByteSource.GetInt64*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetInt64" data-uid="FellowOakDicom.IO.IByteSource.GetInt64">GetInt64()</h4>
   <div class="markdown level1 summary"><p>Gets a signed long (64 bits) from the current position and moves to subsequent position.</p>
@@ -547,14 +447,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="xref">System.Int64</span></td>
         <td><p>Signed long.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetSingle_" data-uid="FellowOakDicom.IO.IByteSource.GetSingle*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetSingle" data-uid="FellowOakDicom.IO.IByteSource.GetSingle">GetSingle()</h4>
   <div class="markdown level1 summary"><p>Gets a single precision floating point value (32 bits) from the current position and moves to subsequent position.</p>
@@ -574,14 +472,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="xref">System.Single</span></td>
         <td><p>Single precision floating point value.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetStream_" data-uid="FellowOakDicom.IO.IByteSource.GetStream*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetStream" data-uid="FellowOakDicom.IO.IByteSource.GetStream">GetStream()</h4>
   <div class="markdown level1 summary"><p>Get stream of this byte source.</p>
@@ -601,14 +497,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><p>The stream.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetUInt16_" data-uid="FellowOakDicom.IO.IByteSource.GetUInt16*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetUInt16" data-uid="FellowOakDicom.IO.IByteSource.GetUInt16">GetUInt16()</h4>
   <div class="markdown level1 summary"><p>Gets an unsigned short (16 bits) from the current position and moves to subsequent position.</p>
@@ -628,14 +522,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="xref">System.UInt16</span></td>
         <td><p>Unsigned short.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetUInt32_" data-uid="FellowOakDicom.IO.IByteSource.GetUInt32*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetUInt32" data-uid="FellowOakDicom.IO.IByteSource.GetUInt32">GetUInt32()</h4>
   <div class="markdown level1 summary"><p>Gets an unsigned integer (32 bits) from the current position and moves to subsequent position.</p>
@@ -655,14 +547,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><p>Unsigned integer.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetUInt64_" data-uid="FellowOakDicom.IO.IByteSource.GetUInt64*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetUInt64" data-uid="FellowOakDicom.IO.IByteSource.GetUInt64">GetUInt64()</h4>
   <div class="markdown level1 summary"><p>Gets an unsigned long (64 bits) from the current position and moves to subsequent position.</p>
@@ -682,14 +572,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="xref">System.UInt64</span></td>
         <td><p>Unsigned long.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_GetUInt8_" data-uid="FellowOakDicom.IO.IByteSource.GetUInt8*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_GetUInt8" data-uid="FellowOakDicom.IO.IByteSource.GetUInt8">GetUInt8()</h4>
   <div class="markdown level1 summary"><p>Gets one byte from the current position and moves to subsequent position.</p>
@@ -709,71 +597,20 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="xref">System.Byte</span></td>
         <td><p>Single byte.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_HasReachedMilestone_" data-uid="FellowOakDicom.IO.IByteSource.HasReachedMilestone*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_HasReachedMilestone" data-uid="FellowOakDicom.IO.IByteSource.HasReachedMilestone">HasReachedMilestone()</h4>
-  <div class="markdown level1 summary"><p>Checks whether the byte source position is at the uppermost milestone position.</p>
+  <a id="FellowOakDicom_IO_IByteSource_GoTo_" data-uid="FellowOakDicom.IO.IByteSource.GoTo*"></a>
+  <h4 id="FellowOakDicom_IO_IByteSource_GoTo_System_Int64_" data-uid="FellowOakDicom.IO.IByteSource.GoTo(System.Int64)">GoTo(Int64)</h4>
+  <div class="markdown level1 summary"><p>Sets the current read position to the position <code data-dev-comment-type="paramref" class="paramref">position</code></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool HasReachedMilestone()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>true if uppermost milestone is reached, false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_Mark_" data-uid="FellowOakDicom.IO.IByteSource.Mark*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_Mark" data-uid="FellowOakDicom.IO.IByteSource.Mark">Mark()</h4>
-  <div class="markdown level1 summary"><p>Set a mark at the current position.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Mark()</code></pre>
-  </div>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_PopMilestone_" data-uid="FellowOakDicom.IO.IByteSource.PopMilestone*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_PopMilestone" data-uid="FellowOakDicom.IO.IByteSource.PopMilestone">PopMilestone()</h4>
-  <div class="markdown level1 summary"><p>Pop the uppermost level of milestone.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void PopMilestone()</code></pre>
-  </div>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_PushMilestone_" data-uid="FellowOakDicom.IO.IByteSource.PushMilestone*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_PushMilestone_System_UInt32_" data-uid="FellowOakDicom.IO.IByteSource.PushMilestone(System.UInt32)">PushMilestone(UInt32)</h4>
-  <div class="markdown level1 summary"><p>Mark the position of a new level of milestone.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void PushMilestone(uint count)</code></pre>
+    <pre><code class="lang-csharp hljs">void GoTo(long position)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -786,15 +623,13 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Expected distance in bytes from the current position to the milestone.</p>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>the position to seek to</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_Require_" data-uid="FellowOakDicom.IO.IByteSource.Require*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_Require_System_UInt32_" data-uid="FellowOakDicom.IO.IByteSource.Require(System.UInt32)">Require(UInt32)</h4>
   <div class="markdown level1 summary"><p>Verifies that there is a sufficient number of bytes to read.</p>
@@ -815,7 +650,7 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Required number of bytes.</p>
 </td>
@@ -832,14 +667,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><p>true if source contains sufficient number of remaining bytes, false otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_Require_" data-uid="FellowOakDicom.IO.IByteSource.Require*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_Require_System_UInt32_FellowOakDicom_IO_ByteSourceCallback_System_Object_" data-uid="FellowOakDicom.IO.IByteSource.Require(System.UInt32,FellowOakDicom.IO.ByteSourceCallback,System.Object)">Require(UInt32, ByteSourceCallback, Object)</h4>
   <div class="markdown level1 summary"><p>Verifies that there is a sufficient number of bytes to read.</p>
@@ -860,7 +693,7 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Required number of bytes.</p>
 </td>
@@ -872,7 +705,7 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">state</span></td>
         <td><p>Callback state.</p>
 </td>
@@ -889,25 +722,12 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><p>true if source contains sufficient number of remaining bytes, false otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="FellowOakDicom_IO_IByteSource_Rewind_" data-uid="FellowOakDicom.IO.IByteSource.Rewind*"></a>
-  <h4 id="FellowOakDicom_IO_IByteSource_Rewind" data-uid="FellowOakDicom.IO.IByteSource.Rewind">Rewind()</h4>
-  <div class="markdown level1 summary"><p>Rewind byte source to latest <a class="xref" href="FellowOakDicom.IO.IByteSource.html#FellowOakDicom_IO_IByteSource_Marker">Marker</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Rewind()</code></pre>
-  </div>
-  
-  
   <a id="FellowOakDicom_IO_IByteSource_Skip_" data-uid="FellowOakDicom.IO.IByteSource.Skip*"></a>
   <h4 id="FellowOakDicom_IO_IByteSource_Skip_System_UInt32_" data-uid="FellowOakDicom.IO.IByteSource.Skip(System.UInt32)">Skip(UInt32)</h4>
   <div class="markdown level1 summary"><p>Skip position <code data-dev-comment-type="paramref" class="paramref">count</code> number of bytes.</p>
@@ -928,22 +748,22 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of bytes to skip.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -960,8 +780,8 @@ The bytes will be written to <code data-dev-comment-type="paramref" class="param
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

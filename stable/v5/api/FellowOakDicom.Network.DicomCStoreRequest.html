@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,7 +88,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="FellowOakDicom.Network.DicomMessage.html">DicomMessage</a></div>
     <div class="level2"><a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a></div>
     <div class="level3"><a class="xref" href="FellowOakDicom.Network.DicomPriorityRequest.html">DicomPriorityRequest</a></div>
@@ -142,7 +142,7 @@
       <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_LastPendingResponseReceived">DicomMessage.LastPendingResponseReceived</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_IsTimedOut_TimeSpan_">DicomMessage.IsTimedOut(TimeSpan)</a>
+      <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_IsTimedOut_System_TimeSpan_">DicomMessage.IsTimedOut(TimeSpan)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_ToString">DicomMessage.ToString()</a>
@@ -157,34 +157,32 @@
       <a class="xref" href="FellowOakDicom.Network.DicomMessage.html#FellowOakDicom_Network_DicomMessage_IsRequest_FellowOakDicom_Network_DicomCommandField_">DicomMessage.IsRequest(DicomCommandField)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomCStoreRequest_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class DicomCStoreRequest : DicomPriorityRequest</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomCStoreRequest__ctor_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomCStoreRequest__ctor_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.#ctor(FellowOakDicom.DicomDataset)">DicomCStoreRequest(DicomDataset)</h4>
   <div class="markdown level1 summary"><p>Constructor for DICOM C-Store request received from SCU.</p>
@@ -215,8 +213,6 @@
   <h5 id="FellowOakDicom_Network_DicomCStoreRequest__ctor_FellowOakDicom_DicomDataset__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>In most use cases this constructor will only be called by the library.</p>
 </div>
-  
-  
   <a id="FellowOakDicom_Network_DicomCStoreRequest__ctor_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomCStoreRequest__ctor_FellowOakDicom_DicomFile_FellowOakDicom_Network_DicomPriority_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.#ctor(FellowOakDicom.DicomFile,FellowOakDicom.Network.DicomPriority)">DicomCStoreRequest(DicomFile, DicomPriority)</h4>
   <div class="markdown level1 summary"><p>Initializes DICOM C-Store request to be sent to SCP.</p>
@@ -250,8 +246,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCStoreRequest__ctor_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomCStoreRequest__ctor_System_String_FellowOakDicom_Network_DicomPriority_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.#ctor(System.String,FellowOakDicom.Network.DicomPriority)">DicomCStoreRequest(String, DicomPriority)</h4>
   <div class="markdown level1 summary"><p>Initializes DICOM C-Store request to be sent to SCP.</p>
@@ -272,7 +266,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">fileName</span></td>
         <td><p>DICOM file to be sent</p>
 </td>
@@ -287,8 +281,6 @@
   </table>
   <h3 id="fields">Fields
   </h3>
-  
-  
   <h4 id="FellowOakDicom_Network_DicomCStoreRequest_OnResponseReceived" data-uid="FellowOakDicom.Network.DicomCStoreRequest.OnResponseReceived">OnResponseReceived</h4>
   <div class="markdown level1 summary"><p>Delegate to be executed when the response for the DICOM C-Store request is received.</p>
 </div>
@@ -314,8 +306,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomCStoreRequest_AdditionalTransferSyntaxes_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.AdditionalTransferSyntaxes*"></a>
   <h4 id="FellowOakDicom_Network_DicomCStoreRequest_AdditionalTransferSyntaxes" data-uid="FellowOakDicom.Network.DicomCStoreRequest.AdditionalTransferSyntaxes">AdditionalTransferSyntaxes</h4>
   <div class="markdown level1 summary"><p>Additional transfer syntaxes to propose in the association request.</p>
@@ -341,8 +331,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCStoreRequest_CommonServiceClassUid_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.CommonServiceClassUid*"></a>
   <h4 id="FellowOakDicom_Network_DicomCStoreRequest_CommonServiceClassUid" data-uid="FellowOakDicom.Network.DicomCStoreRequest.CommonServiceClassUid">CommonServiceClassUid</h4>
   <div class="markdown level1 summary"><p>Gets or sets the (optional) Common Extended Negotiation Service Class UID.</p>
@@ -367,8 +355,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCStoreRequest_File_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.File*"></a>
   <h4 id="FellowOakDicom_Network_DicomCStoreRequest_File" data-uid="FellowOakDicom.Network.DicomCStoreRequest.File">File</h4>
   <div class="markdown level1 summary"><p>Gets the DICOM file associated with this DICOM C-Store request.</p>
@@ -393,8 +379,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCStoreRequest_OmitImplicitVrTransferSyntaxInAssociationRequest_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.OmitImplicitVrTransferSyntaxInAssociationRequest*"></a>
   <h4 id="FellowOakDicom_Network_DicomCStoreRequest_OmitImplicitVrTransferSyntaxInAssociationRequest" data-uid="FellowOakDicom.Network.DicomCStoreRequest.OmitImplicitVrTransferSyntaxInAssociationRequest">OmitImplicitVrTransferSyntaxInAssociationRequest</h4>
   <div class="markdown level1 summary"><p>If set, the default transfer syntax (Implicit VR Little Endian) will
@@ -416,13 +400,11 @@ This should only be used in exception cases (See PS3.5 section 10.1).</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCStoreRequest_RelatedGeneralSopClasses_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.RelatedGeneralSopClasses*"></a>
   <h4 id="FellowOakDicom_Network_DicomCStoreRequest_RelatedGeneralSopClasses" data-uid="FellowOakDicom.Network.DicomCStoreRequest.RelatedGeneralSopClasses">RelatedGeneralSopClasses</h4>
   <div class="markdown level1 summary"><p>Gets or sets the (optional) Common Extended Negotiation Related General SOP Class Identification</p>
@@ -442,13 +424,11 @@ This should only be used in exception cases (See PS3.5 section 10.1).</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="FellowOakDicom.DicomUID.html">DicomUID</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="FellowOakDicom.DicomUID.html">DicomUID</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCStoreRequest_SOPInstanceUID_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.SOPInstanceUID*"></a>
   <h4 id="FellowOakDicom_Network_DicomCStoreRequest_SOPInstanceUID" data-uid="FellowOakDicom.Network.DicomCStoreRequest.SOPInstanceUID">SOPInstanceUID</h4>
   <div class="markdown level1 summary"><p>Gets the SOP Instance UID of the DICOM file associated with this DICOM C-Store request.</p>
@@ -473,8 +453,6 @@ This should only be used in exception cases (See PS3.5 section 10.1).</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCStoreRequest_TransferSyntax_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.TransferSyntax*"></a>
   <h4 id="FellowOakDicom_Network_DicomCStoreRequest_TransferSyntax" data-uid="FellowOakDicom.Network.DicomCStoreRequest.TransferSyntax">TransferSyntax</h4>
   <div class="markdown level1 summary"><p>Gets the transfer syntax of the DICOM file associated with this DICOM C-Store request.</p>
@@ -501,8 +479,6 @@ This should only be used in exception cases (See PS3.5 section 10.1).</p>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomCStoreRequest_PostResponse_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.PostResponse*"></a>
   <h4 id="FellowOakDicom_Network_DicomCStoreRequest_PostResponse_FellowOakDicom_Network_DicomService_FellowOakDicom_Network_DicomResponse_" data-uid="FellowOakDicom.Network.DicomCStoreRequest.PostResponse(FellowOakDicom.Network.DicomService,FellowOakDicom.Network.DicomResponse)">PostResponse(DicomService, DicomResponse)</h4>
   <div class="markdown level1 summary"><p>Internal. Executes the DICOM C-Store response callback.</p>
@@ -538,15 +514,15 @@ This should only be used in exception cases (See PS3.5 section 10.1).</p>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FellowOakDicom.Network.DicomRequest.html#FellowOakDicom_Network_DicomRequest_PostResponse_FellowOakDicom_Network_DicomService_FellowOakDicom_Network_DicomResponse_">DicomRequest.PostResponse(DicomService, DicomResponse)</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -563,8 +539,8 @@ This should only be used in exception cases (See PS3.5 section 10.1).</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

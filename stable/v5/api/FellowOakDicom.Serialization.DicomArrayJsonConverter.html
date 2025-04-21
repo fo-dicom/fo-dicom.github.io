@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,19 +87,71 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">DicomArrayJsonConverter</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Text.Json.Serialization.JsonConverter</span></div>
+    <div class="level2"><span class="xref">System.Text.Json.Serialization.JsonConverter</span>&lt;<a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a>[]&gt;</div>
+    <div class="level3"><span class="xref">DicomArrayJsonConverter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Text.Json.Serialization.JsonConverter&lt;FellowOakDicom.DicomDataset[]&gt;.CanConvert(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Text.Json.Serialization.JsonConverter&lt;FellowOakDicom.DicomDataset[]&gt;.Read(System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)</span>
+    </div>
+    <div>
+      <span class="xref">System.Text.Json.Serialization.JsonConverter&lt;FellowOakDicom.DicomDataset[]&gt;.Write(System.Text.Json.Utf8JsonWriter, FellowOakDicom.DicomDataset[], System.Text.Json.JsonSerializerOptions)</span>
+    </div>
+    <div>
+      <span class="xref">System.Text.Json.Serialization.JsonConverter&lt;FellowOakDicom.DicomDataset[]&gt;.ReadAsPropertyName(System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)</span>
+    </div>
+    <div>
+      <span class="xref">System.Text.Json.Serialization.JsonConverter&lt;FellowOakDicom.DicomDataset[]&gt;.WriteAsPropertyName(System.Text.Json.Utf8JsonWriter, FellowOakDicom.DicomDataset[], System.Text.Json.JsonSerializerOptions)</span>
+    </div>
+    <div>
+      <span class="xref">System.Text.Json.Serialization.JsonConverter&lt;FellowOakDicom.DicomDataset[]&gt;.HandleNull</span>
+    </div>
+    <div>
+      <span class="xref">System.Text.Json.Serialization.JsonConverter&lt;FellowOakDicom.DicomDataset[]&gt;.Type</span>
+    </div>
+    <div>
+      <span class="xref">System.Text.Json.Serialization.JsonConverter.CanConvert(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Text.Json.Serialization.JsonConverter.Type</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Serialization.html">FellowOakDicom.Serialization</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Serialization_DicomArrayJsonConverter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomArrayJsonConverter : JsonConverter&lt;DicomDataset[]&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please use DicomJsonConverter instead.&quot;)]
+public class DicomArrayJsonConverter : JsonConverter&lt;DicomDataset[]&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Serialization_DicomArrayJsonConverter__ctor_" data-uid="FellowOakDicom.Serialization.DicomArrayJsonConverter.#ctor*"></a>
   <h4 id="FellowOakDicom_Serialization_DicomArrayJsonConverter__ctor" data-uid="FellowOakDicom.Serialization.DicomArrayJsonConverter.#ctor">DicomArrayJsonConverter()</h4>
   <div class="markdown level1 summary"><p>Initialize the JsonDicomConverter.</p>
@@ -109,8 +161,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DicomArrayJsonConverter()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Serialization_DicomArrayJsonConverter__ctor_" data-uid="FellowOakDicom.Serialization.DicomArrayJsonConverter.#ctor*"></a>
   <h4 id="FellowOakDicom_Serialization_DicomArrayJsonConverter__ctor_System_Boolean_" data-uid="FellowOakDicom.Serialization.DicomArrayJsonConverter.#ctor(System.Boolean)">DicomArrayJsonConverter(Boolean)</h4>
   <div class="markdown level1 summary"><p>Initialize the JsonDicomConverter.</p>
@@ -131,7 +181,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">writeTagsAsKeywords</span></td>
         <td><p>Whether to write the json keys as DICOM keywords instead of tags. This makes the json non-compliant to DICOM JSON.</p>
 </td>
@@ -140,10 +190,8 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Serialization_DicomArrayJsonConverter_Read_" data-uid="FellowOakDicom.Serialization.DicomArrayJsonConverter.Read*"></a>
-  <h4 id="FellowOakDicom_Serialization_DicomArrayJsonConverter_Read_Utf8JsonReader__Type_JsonSerializerOptions_" data-uid="FellowOakDicom.Serialization.DicomArrayJsonConverter.Read(Utf8JsonReader@,Type,JsonSerializerOptions)">Read(ref Utf8JsonReader, Type, JsonSerializerOptions)</h4>
+  <h4 id="FellowOakDicom_Serialization_DicomArrayJsonConverter_Read_System_Text_Json_Utf8JsonReader__System_Type_System_Text_Json_JsonSerializerOptions_" data-uid="FellowOakDicom.Serialization.DicomArrayJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">Read(ref Utf8JsonReader, Type, JsonSerializerOptions)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -161,17 +209,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Utf8JsonReader</span></td>
+        <td><span class="xref">System.Text.Json.Utf8JsonReader</span></td>
         <td><span class="parametername">reader</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">typeToConvert</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">JsonSerializerOptions</span></td>
+        <td><span class="xref">System.Text.Json.JsonSerializerOptions</span></td>
         <td><span class="parametername">options</span></td>
         <td></td>
       </tr>
@@ -192,10 +240,10 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Text.Json.Serialization.JsonConverter&lt;FellowOakDicom.DicomDataset[]&gt;.Read(System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)</span></div>
   <a id="FellowOakDicom_Serialization_DicomArrayJsonConverter_Write_" data-uid="FellowOakDicom.Serialization.DicomArrayJsonConverter.Write*"></a>
-  <h4 id="FellowOakDicom_Serialization_DicomArrayJsonConverter_Write_Utf8JsonWriter_FellowOakDicom_DicomDataset___JsonSerializerOptions_" data-uid="FellowOakDicom.Serialization.DicomArrayJsonConverter.Write(Utf8JsonWriter,FellowOakDicom.DicomDataset[],JsonSerializerOptions)">Write(Utf8JsonWriter, DicomDataset[], JsonSerializerOptions)</h4>
+  <h4 id="FellowOakDicom_Serialization_DicomArrayJsonConverter_Write_System_Text_Json_Utf8JsonWriter_FellowOakDicom_DicomDataset___System_Text_Json_JsonSerializerOptions_" data-uid="FellowOakDicom.Serialization.DicomArrayJsonConverter.Write(System.Text.Json.Utf8JsonWriter,FellowOakDicom.DicomDataset[],System.Text.Json.JsonSerializerOptions)">Write(Utf8JsonWriter, DicomDataset[], JsonSerializerOptions)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -213,7 +261,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Utf8JsonWriter</span></td>
+        <td><span class="xref">System.Text.Json.Utf8JsonWriter</span></td>
         <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
@@ -223,21 +271,23 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">JsonSerializerOptions</span></td>
+        <td><span class="xref">System.Text.Json.JsonSerializerOptions</span></td>
         <td><span class="parametername">options</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Text.Json.Serialization.JsonConverter&lt;FellowOakDicom.DicomDataset[]&gt;.Write(System.Text.Json.Utf8JsonWriter, FellowOakDicom.DicomDataset[], System.Text.Json.JsonSerializerOptions)</span></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -254,8 +304,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

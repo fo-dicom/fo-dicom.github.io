@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,12 +88,21 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></div>
     <div class="level2"><span class="xref">ImageBox</span></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_CompareInstancesByContent">DicomDataset.CompareInstancesByContent</a>
+    </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_InternalTransferSyntax">DicomDataset.InternalTransferSyntax</a>
     </div>
@@ -155,16 +164,25 @@
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_TryGetString_FellowOakDicom_DicomTag_System_String__">DicomDataset.TryGetString(DicomTag, String)</a>
     </div>
     <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_GetPrivateTag_FellowOakDicom_DicomTag_">DicomDataset.GetPrivateTag(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Contains_FellowOakDicom_DicomTag_">DicomDataset.Contains(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_FunctionalGroupValues_System_Int32_">DicomDataset.FunctionalGroupValues(Int32)</a>
+    </div>
+    <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Validate">DicomDataset.Validate()</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_GetPrivateTag_FellowOakDicom_DicomTag_">DicomDataset.GetPrivateTag(DicomTag)</a>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add_FellowOakDicom_DicomItem_">DicomDataset.Add(DicomItem)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add_FellowOakDicom_DicomItem___">DicomDataset.Add(DicomItem[])</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add_IEnumerable_FellowOakDicom_DicomItem__">DicomDataset.Add(IEnumerable&lt;DicomItem&gt;)</a>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add_System_Collections_Generic_IEnumerable_FellowOakDicom_DicomItem__">DicomDataset.Add(IEnumerable&lt;DicomItem&gt;)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add__1_FellowOakDicom_DicomTag___0___">DicomDataset.Add&lt;T&gt;(DicomTag, T[])</a>
@@ -179,7 +197,7 @@
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate_FellowOakDicom_DicomItem_">DicomDataset.AddOrUpdate(DicomItem)</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate_IEnumerable_FellowOakDicom_DicomItem__">DicomDataset.AddOrUpdate(IEnumerable&lt;DicomItem&gt;)</a>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate_System_Collections_Generic_IEnumerable_FellowOakDicom_DicomItem__">DicomDataset.AddOrUpdate(IEnumerable&lt;DicomItem&gt;)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate__1_FellowOakDicom_DicomTag___0___">DicomDataset.AddOrUpdate&lt;T&gt;(DicomTag, T[])</a>
@@ -188,13 +206,10 @@
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate__1_FellowOakDicom_DicomVR_FellowOakDicom_DicomTag___0___">DicomDataset.AddOrUpdate&lt;T&gt;(DicomVR, DicomTag, T[])</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Contains_FellowOakDicom_DicomTag_">DicomDataset.Contains(DicomTag)</a>
-    </div>
-    <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Remove_FellowOakDicom_DicomTag___">DicomDataset.Remove(DicomTag[])</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Remove_Func_FellowOakDicom_DicomItem_System_Boolean__">DicomDataset.Remove(Func&lt;DicomItem, Boolean&gt;)</a>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Remove_System_Func_FellowOakDicom_DicomItem_System_Boolean__">DicomDataset.Remove(Func&lt;DicomItem, Boolean&gt;)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Clear">DicomDataset.Clear()</a>
@@ -220,17 +235,36 @@
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_ValidateTag_FellowOakDicom_DicomTag_">DicomDataset.ValidateTag(DicomTag)</a>
     </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Equals_System_Object_">DicomDataset.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Equals_FellowOakDicom_DicomDataset_">DicomDataset.Equals(DicomDataset)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_GetHashCode">DicomDataset.GetHashCode()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Printing.html">FellowOakDicom.Printing</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Printing_ImageBox_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ImageBox : DicomDataset</code></pre>
+    <pre><code class="lang-csharp hljs">public class ImageBox : DicomDataset, IEnumerable&lt;DicomItem&gt;, IEnumerable, IEquatable&lt;DicomDataset&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox__ctor_" data-uid="FellowOakDicom.Printing.ImageBox.#ctor*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox__ctor_FellowOakDicom_Printing_FilmBox_FellowOakDicom_DicomUID_FellowOakDicom_DicomUID_" data-uid="FellowOakDicom.Printing.ImageBox.#ctor(FellowOakDicom.Printing.FilmBox,FellowOakDicom.DicomUID,FellowOakDicom.DicomUID)">ImageBox(FilmBox, DicomUID, DicomUID)</h4>
   <div class="markdown level1 summary"><p>Construct new ImageBox for specified filmBox using specified SOP class UID and SOP instance UID</p>
@@ -272,8 +306,6 @@
   </table>
   <h3 id="fields">Fields
   </h3>
-  
-  
   <h4 id="FellowOakDicom_Printing_ImageBox_BORDER" data-uid="FellowOakDicom.Printing.ImageBox.BORDER">BORDER</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -291,13 +323,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="xref">System.Single</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Printing_ImageBox_ColorSOPClassUID" data-uid="FellowOakDicom.Printing.ImageBox.ColorSOPClassUID">ColorSOPClassUID</h4>
   <div class="markdown level1 summary"><p>Basic color image box SOP</p>
 </div>
@@ -321,8 +351,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_Printing_ImageBox_GraySOPClassUID" data-uid="FellowOakDicom.Printing.ImageBox.GraySOPClassUID">GraySOPClassUID</h4>
   <div class="markdown level1 summary"><p>Basic gray scale image box SOP</p>
 </div>
@@ -348,8 +376,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_ConfigurationInformation_" data-uid="FellowOakDicom.Printing.ImageBox.ConfigurationInformation*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_ConfigurationInformation" data-uid="FellowOakDicom.Printing.ImageBox.ConfigurationInformation">ConfigurationInformation</h4>
   <div class="markdown level1 summary"><p>Character string that contains either the ID of the printer configuration table that contains a set of values for
@@ -372,7 +398,7 @@ separated by backslashes. The definition of values shall be contained in the SCP
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -382,8 +408,6 @@ separated by backslashes. The definition of values shall be contained in the SCP
 <p>Note: It is recommended that for SCPs, CS000 represent the lowest contrast and CS999
 the highest contrast levels available.</p>
 </div>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_FilmBox_" data-uid="FellowOakDicom.Printing.ImageBox.FilmBox*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_FilmBox" data-uid="FellowOakDicom.Printing.ImageBox.FilmBox">FilmBox</h4>
   <div class="markdown level1 summary"></div>
@@ -407,8 +431,6 @@ the highest contrast levels available.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_ImageBoxPosition_" data-uid="FellowOakDicom.Printing.ImageBox.ImageBoxPosition*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_ImageBoxPosition" data-uid="FellowOakDicom.Printing.ImageBox.ImageBoxPosition">ImageBoxPosition</h4>
   <div class="markdown level1 summary"><p>Gets or sets the position of the image on the film, based on image display format. See C.13.5.1 for specification.</p>
@@ -428,13 +450,11 @@ the highest contrast levels available.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="xref">System.UInt16</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_ImageSequence_" data-uid="FellowOakDicom.Printing.ImageBox.ImageSequence*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_ImageSequence" data-uid="FellowOakDicom.Printing.ImageBox.ImageSequence">ImageSequence</h4>
   <div class="markdown level1 summary"><p>Gets or sets the color or grayscale basic image sequence</p>
@@ -459,8 +479,6 @@ the highest contrast levels available.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_MagnificationType_" data-uid="FellowOakDicom.Printing.ImageBox.MagnificationType*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_MagnificationType" data-uid="FellowOakDicom.Printing.ImageBox.MagnificationType">MagnificationType</h4>
   <div class="markdown level1 summary"><p>Interpolation type by which the printer magnifies or decimates the image in order to fit the image
@@ -481,7 +499,7 @@ in the image box on film</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -490,8 +508,6 @@ in the image box on film</p>
   <div class="markdown level1 remarks"><p>Defined Terms:</p>
 <ul><li>REPLICATE</li><li>BILINEAR</li><li>CUBIC</li><li>NONE</li></ul>
 </div>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_MaxDensity_" data-uid="FellowOakDicom.Printing.ImageBox.MaxDensity*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_MaxDensity" data-uid="FellowOakDicom.Printing.ImageBox.MaxDensity">MaxDensity</h4>
   <div class="markdown level1 summary"><p>Maximum density of the images on the film, expressed in hundredths of OD.
@@ -512,13 +528,11 @@ If Max Density is higher than maximum printer density than Max Density is set to
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="xref">System.UInt16</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_MinDensity_" data-uid="FellowOakDicom.Printing.ImageBox.MinDensity*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_MinDensity" data-uid="FellowOakDicom.Printing.ImageBox.MinDensity">MinDensity</h4>
   <div class="markdown level1 summary"><p>Minimum density of the images on the film, expressed in hundredths of OD.
@@ -539,13 +553,11 @@ If Min Density is lower than minimum printer density than Min Density is set to 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="xref">System.UInt16</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_Polarity_" data-uid="FellowOakDicom.Printing.ImageBox.Polarity*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_Polarity" data-uid="FellowOakDicom.Printing.ImageBox.Polarity">Polarity</h4>
   <div class="markdown level1 summary"><p>Specifies whether minimum pixel values (after VOI LUT transformation) are to printed black or white.</p>
@@ -565,7 +577,7 @@ If Min Density is lower than minimum printer density than Min Density is set to 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -584,8 +596,6 @@ If Min Density is lower than minimum printer density than Min Density is set to 
 </item>
 <p>If Polarity (2020,0020) is not specified by the SCU, the SCP shall print with NORMAL polarity.</p>
 </div>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_RequestedDecimateCropBehavior_" data-uid="FellowOakDicom.Printing.ImageBox.RequestedDecimateCropBehavior*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_RequestedDecimateCropBehavior" data-uid="FellowOakDicom.Printing.ImageBox.RequestedDecimateCropBehavior">RequestedDecimateCropBehavior</h4>
   <div class="markdown level1 summary"><p>Specifies whether image pixels are to be decimated or cropped if the image
@@ -606,7 +616,7 @@ rows or columns is greater than the available printable pixels in an Image Box.<
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -620,8 +630,6 @@ default if not specified.</p>
 <ul><li>DECIMATEa magnification factor &lt;1 to be applied to the image.</li><li>CROPsome image rows and/or columns are to be deleted before printing. The 
   specific algorithm for cropping shall be described in the SCP Conformance Statement.</li><li>FAILthe SCP shall not crop or decimate</li></ul>
 </div>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_RequestedImageSize_" data-uid="FellowOakDicom.Printing.ImageBox.RequestedImageSize*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_RequestedImageSize" data-uid="FellowOakDicom.Printing.ImageBox.RequestedImageSize">RequestedImageSize</h4>
   <div class="markdown level1 summary"><p>Width (x-dimension) in mm of the image to be printed. This value overrides the size that corresponds with
@@ -642,13 +650,11 @@ optimal filling of the Image Box.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="xref">System.Double</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_SmoothingType_" data-uid="FellowOakDicom.Printing.ImageBox.SmoothingType*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_SmoothingType" data-uid="FellowOakDicom.Printing.ImageBox.SmoothingType">SmoothingType</h4>
   <div class="markdown level1 summary"><p>Further specifies the type of the interpolation function. Values are defined in Conformance Statement.
@@ -669,13 +675,11 @@ Only valid for Magnification Type (2010,0060) = CUBIC</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_SOPClassUID_" data-uid="FellowOakDicom.Printing.ImageBox.SOPClassUID*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_SOPClassUID" data-uid="FellowOakDicom.Printing.ImageBox.SOPClassUID">SOPClassUID</h4>
   <div class="markdown level1 summary"><p>Image box SOP class UID</p>
@@ -700,8 +704,6 @@ Only valid for Magnification Type (2010,0060) = CUBIC</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_SOPInstanceUID_" data-uid="FellowOakDicom.Printing.ImageBox.SOPInstanceUID*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_SOPInstanceUID" data-uid="FellowOakDicom.Printing.ImageBox.SOPInstanceUID">SOPInstanceUID</h4>
   <div class="markdown level1 summary"><p>Image box SOP instance UID</p>
@@ -728,8 +730,6 @@ Only valid for Magnification Type (2010,0060) = CUBIC</p>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_Clone_" data-uid="FellowOakDicom.Printing.ImageBox.Clone*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_Clone_FellowOakDicom_Printing_FilmBox_" data-uid="FellowOakDicom.Printing.ImageBox.Clone(FellowOakDicom.Printing.FilmBox)">Clone(FilmBox)</h4>
   <div class="markdown level1 summary"><p>Clone the current IamgeBox and return new object</p>
@@ -772,8 +772,6 @@ Only valid for Magnification Type (2010,0060) = CUBIC</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_Load_" data-uid="FellowOakDicom.Printing.ImageBox.Load*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_Load_FellowOakDicom_Printing_FilmBox_System_String_" data-uid="FellowOakDicom.Printing.ImageBox.Load(FellowOakDicom.Printing.FilmBox,System.String)">Load(FilmBox, String)</h4>
   <div class="markdown level1 summary"><p>Load image box for a specified <code data-dev-comment-type="paramref" class="paramref">filmBox</code> from a specified file.</p>
@@ -800,7 +798,7 @@ Only valid for Magnification Type (2010,0060) = CUBIC</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">imageBoxFile</span></td>
         <td><p>Name of the image box file.</p>
 </td>
@@ -823,8 +821,6 @@ Only valid for Magnification Type (2010,0060) = CUBIC</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Printing_ImageBox_Save_" data-uid="FellowOakDicom.Printing.ImageBox.Save*"></a>
   <h4 id="FellowOakDicom_Printing_ImageBox_Save_System_String_" data-uid="FellowOakDicom.Printing.ImageBox.Save(System.String)">Save(String)</h4>
   <div class="markdown level1 summary"><p>Save the image box contents to file.</p>
@@ -845,22 +841,89 @@ Only valid for Magnification Type (2010,0060) = CUBIC</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">imageBoxFile</span></td>
         <td><p>Name of the image box file.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_Clone_FellowOakDicom_DicomDataset_">DicomDatasetExtensions.Clone(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_GetDateTime_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTag_FellowOakDicom_DicomTag_">DicomDatasetExtensions.GetDateTime(DicomDataset, DicomTag, DicomTag)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_GetDateTimeOffset_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTag_FellowOakDicom_DicomTag_FellowOakDicom_DicomDataset_">DicomDatasetExtensions.GetDateTimeOffset(DicomDataset, DicomTag, DicomTag, DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_EnumerateMasked_FellowOakDicom_DicomDataset_FellowOakDicom_DicomMaskedTag_">DicomDatasetExtensions.EnumerateMasked(DicomDataset, DicomMaskedTag)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_EnumerateGroup_FellowOakDicom_DicomDataset_System_UInt16_">DicomDatasetExtensions.EnumerateGroup(DicomDataset, UInt16)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_NotValidated_FellowOakDicom_DicomDataset_">DicomDatasetExtensions.NotValidated(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_Validated_FellowOakDicom_DicomDataset_">DicomDatasetExtensions.Validated(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.EnumerableExtensions.html#FellowOakDicom_EnumerableExtensions_Each__1_System_Collections_Generic_IEnumerable___0__System_Action___0__">EnumerableExtensions.Each&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.ConsoleExtensions.html#FellowOakDicom_Log_ConsoleExtensions_WriteToConsole_FellowOakDicom_DicomDataset_">ConsoleExtensions.WriteToConsole(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.Extensions.html#FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomDataset_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel_">Extensions.WriteToLog(DicomDataset, ILogger, LogLevel)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.Extensions.html#FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomDataset_FellowOakDicom_Log_ILogger_FellowOakDicom_Log_LogLevel_">Extensions.WriteToLog(DicomDataset, ILogger, LogLevel)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.Extensions.html#FellowOakDicom_Log_Extensions_WriteToString_FellowOakDicom_DicomDataset_">Extensions.WriteToString(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Serialization.DicomXML.html#FellowOakDicom_Serialization_DicomXML_WriteToXml_FellowOakDicom_DicomDataset_">DicomXML.WriteToXml(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_Diff__2_System_Collections_Generic_IEnumerable___0__System_Func___0___0___1__">LinqExtensions.Diff&lt;S, T&gt;(IEnumerable&lt;S&gt;, Func&lt;S, S, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_FilterByType__1_System_Collections_Generic_IEnumerable_System_Object__">LinqExtensions.FilterByType&lt;T&gt;(IEnumerable&lt;Object&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Imaging.Codec.DicomCodecExtensions.html#FellowOakDicom_Imaging_Codec_DicomCodecExtensions_Clone_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTransferSyntax_FellowOakDicom_Imaging_Codec_DicomCodecParams_">DicomCodecExtensions.Clone(DicomDataset, DicomTransferSyntax, DicomCodecParams)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.IO.Writer.DicomDatasetExtensions.html#FellowOakDicom_IO_Writer_DicomDatasetExtensions_RecalculateGroupLength_FellowOakDicom_DicomDataset_System_UInt16_System_Boolean_">DicomDatasetExtensions.RecalculateGroupLength(DicomDataset, UInt16, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.IO.Writer.DicomDatasetExtensions.html#FellowOakDicom_IO_Writer_DicomDatasetExtensions_RecalculateGroupLengths_FellowOakDicom_DicomDataset_System_Boolean_">DicomDatasetExtensions.RecalculateGroupLengths(DicomDataset, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.IO.Writer.DicomDatasetExtensions.html#FellowOakDicom_IO_Writer_DicomDatasetExtensions_RemoveGroupLengths_FellowOakDicom_DicomDataset_System_Boolean_">DicomDatasetExtensions.RemoveGroupLengths(DicomDataset, Boolean)</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -877,8 +940,8 @@ Only valid for Magnification Type (2010,0060) = CUBIC</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

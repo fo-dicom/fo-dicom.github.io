@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -83,47 +83,46 @@
   
   <h1 id="FellowOakDicom_Network_DicomServiceOptions" data-uid="FellowOakDicom.Network.DicomServiceOptions" class="text-break">Class DicomServiceOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Configures a DICOM service (an instance of an active DICOM connection)</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DicomServiceOptions</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomServiceOptions_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class DicomServiceOptions</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceOptions_IgnoreUnsupportedTransferSyntaxChange_" data-uid="FellowOakDicom.Network.DicomServiceOptions.IgnoreUnsupportedTransferSyntaxChange*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceOptions_IgnoreUnsupportedTransferSyntaxChange" data-uid="FellowOakDicom.Network.DicomServiceOptions.IgnoreUnsupportedTransferSyntaxChange">IgnoreUnsupportedTransferSyntaxChange</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether to ignore transfer syntax change when DICOM dataset cannot be transcoded from
@@ -146,13 +145,11 @@ then the pixeldata is removed from the DICOM dataset.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceOptions_LogDataPDUs_" data-uid="FellowOakDicom.Network.DicomServiceOptions.LogDataPDUs*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceOptions_LogDataPDUs" data-uid="FellowOakDicom.Network.DicomServiceOptions.LogDataPDUs">LogDataPDUs</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether or not to write message to log for each P-Data-TF PDU sent or received.</p>
@@ -172,13 +169,11 @@ then the pixeldata is removed from the DICOM dataset.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceOptions_LogDimseDatasets_" data-uid="FellowOakDicom.Network.DicomServiceOptions.LogDimseDatasets*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceOptions_LogDimseDatasets" data-uid="FellowOakDicom.Network.DicomServiceOptions.LogDimseDatasets">LogDimseDatasets</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether or not to write command and data datasets to log.</p>
@@ -198,39 +193,11 @@ then the pixeldata is removed from the DICOM dataset.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="FellowOakDicom_Network_DicomServiceOptions_MaxClientsAllowed_" data-uid="FellowOakDicom.Network.DicomServiceOptions.MaxClientsAllowed*"></a>
-  <h4 id="FellowOakDicom_Network_DicomServiceOptions_MaxClientsAllowed" data-uid="FellowOakDicom.Network.DicomServiceOptions.MaxClientsAllowed">MaxClientsAllowed</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the maximum number of clients allowed for a specific server. Unlimited if set to zero.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MaxClientsAllowed { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceOptions_MaxCommandBuffer_" data-uid="FellowOakDicom.Network.DicomServiceOptions.MaxCommandBuffer*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceOptions_MaxCommandBuffer" data-uid="FellowOakDicom.Network.DicomServiceOptions.MaxCommandBuffer">MaxCommandBuffer</h4>
   <div class="markdown level1 summary"><p>Gets or sets maximum buffer length for command PDVs when generating P-Data-TF PDUs.</p>
@@ -250,13 +217,11 @@ then the pixeldata is removed from the DICOM dataset.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceOptions_MaxDataBuffer_" data-uid="FellowOakDicom.Network.DicomServiceOptions.MaxDataBuffer*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceOptions_MaxDataBuffer" data-uid="FellowOakDicom.Network.DicomServiceOptions.MaxDataBuffer">MaxDataBuffer</h4>
   <div class="markdown level1 summary"><p>Gets or sets maximum buffer length for data PDVs when generating P-Data-TF PDUs.</p>
@@ -276,13 +241,11 @@ then the pixeldata is removed from the DICOM dataset.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceOptions_MaxPDULength_" data-uid="FellowOakDicom.Network.DicomServiceOptions.MaxPDULength*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceOptions_MaxPDULength" data-uid="FellowOakDicom.Network.DicomServiceOptions.MaxPDULength">MaxPDULength</h4>
   <div class="markdown level1 summary"><p>Gets the maximum PDU length, increasing this may speed up the sending of C-Store requests, but beware too high values in spotty networks.</p>
@@ -302,13 +265,11 @@ then the pixeldata is removed from the DICOM dataset.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceOptions_MaxPDVsPerPDU_" data-uid="FellowOakDicom.Network.DicomServiceOptions.MaxPDVsPerPDU*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceOptions_MaxPDVsPerPDU" data-uid="FellowOakDicom.Network.DicomServiceOptions.MaxPDVsPerPDU">MaxPDVsPerPDU</h4>
   <div class="markdown level1 summary"><p>Gets or sets the maximum number of PDVs per PDU, or unlimited if set to zero.
@@ -329,13 +290,11 @@ Setting this to 1 can work around common bugs in other implementations.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceOptions_RequestTimeout_" data-uid="FellowOakDicom.Network.DicomServiceOptions.RequestTimeout*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceOptions_RequestTimeout" data-uid="FellowOakDicom.Network.DicomServiceOptions.RequestTimeout">RequestTimeout</h4>
   <div class="markdown level1 summary"><p>Gets or sets the amount of time the client will wait for responses from the PACS</p>
@@ -355,16 +314,14 @@ Setting this to 1 can work around common bugs in other implementations.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceOptions_TcpNoDelay_" data-uid="FellowOakDicom.Network.DicomServiceOptions.TcpNoDelay*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceOptions_TcpNoDelay" data-uid="FellowOakDicom.Network.DicomServiceOptions.TcpNoDelay">TcpNoDelay</h4>
-  <div class="markdown level1 summary"><p>Gets or sets whether to enable (true) or disable (false) TCP Nagle algorithm.</p>
+  <div class="markdown level1 summary"><p>Gets or sets whether to enable (true) or disable (false) TCP Nagle algorithm on incoming TCP connections</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -381,13 +338,69 @@ Setting this to 1 can work around common bugs in other implementations.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <a id="FellowOakDicom_Network_DicomServiceOptions_TcpReceiveBufferSize_" data-uid="FellowOakDicom.Network.DicomServiceOptions.TcpReceiveBufferSize*"></a>
+  <h4 id="FellowOakDicom_Network_DicomServiceOptions_TcpReceiveBufferSize" data-uid="FellowOakDicom.Network.DicomServiceOptions.TcpReceiveBufferSize">TcpReceiveBufferSize</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the size of the receive buffer of the underlying TCP connection
+If not configured, the default value of 8192 bytes will be used</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? TcpReceiveBufferSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_Network_DicomServiceOptions_TcpReceiveBufferSize_seealso">See Also</h5>
+  <div class="seealso">
+      <div><span class="xref">System.Net.Sockets.TcpClient.ReceiveBufferSize</span></div>
+  </div>
+  <a id="FellowOakDicom_Network_DicomServiceOptions_TcpSendBufferSize_" data-uid="FellowOakDicom.Network.DicomServiceOptions.TcpSendBufferSize*"></a>
+  <h4 id="FellowOakDicom_Network_DicomServiceOptions_TcpSendBufferSize" data-uid="FellowOakDicom.Network.DicomServiceOptions.TcpSendBufferSize">TcpSendBufferSize</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the size of the send buffer of the underlying TCP connection
+If not configured, the default value of 8192 bytes will be used</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? TcpSendBufferSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_Network_DicomServiceOptions_TcpSendBufferSize_seealso">See Also</h5>
+  <div class="seealso">
+      <div><span class="xref">System.Net.Sockets.TcpClient.SendBufferSize</span></div>
+  </div>
   <a id="FellowOakDicom_Network_DicomServiceOptions_UseRemoteAEForLogName_" data-uid="FellowOakDicom.Network.DicomServiceOptions.UseRemoteAEForLogName*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceOptions_UseRemoteAEForLogName" data-uid="FellowOakDicom.Network.DicomServiceOptions.UseRemoteAEForLogName">UseRemoteAEForLogName</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether or not to use the AE Title of the remote host as the log name.</p>
@@ -407,15 +420,13 @@ Setting this to 1 can work around common bugs in other implementations.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomServiceOptions_Clone_" data-uid="FellowOakDicom.Network.DicomServiceOptions.Clone*"></a>
   <h4 id="FellowOakDicom_Network_DicomServiceOptions_Clone" data-uid="FellowOakDicom.Network.DicomServiceOptions.Clone">Clone()</h4>
   <div class="markdown level1 summary"></div>
@@ -439,15 +450,15 @@ Setting this to 1 can work around common bugs in other implementations.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -464,8 +475,8 @@ Setting this to 1 can work around common bugs in other implementations.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

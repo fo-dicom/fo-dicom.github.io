@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,19 +87,47 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DicomExtendedNegotiationCollection</span></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomExtendedNegotiation.html">DicomExtendedNegotiation</a>&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomExtendedNegotiation.html">DicomExtendedNegotiation</a>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomExtendedNegotiationCollection : ICollection&lt;DicomExtendedNegotiation&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class DicomExtendedNegotiationCollection : ICollection&lt;DicomExtendedNegotiation&gt;, IEnumerable&lt;DicomExtendedNegotiation&gt;, IEnumerable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection__ctor_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection__ctor" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.#ctor">DicomExtendedNegotiationCollection()</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="FellowOakDicom.Network.DicomExtendedNegotiationCollection.html">DicomExtendedNegotiationCollection</a>.</p>
@@ -111,8 +139,6 @@
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Count_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Count*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Count" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Count">Count</h4>
   <div class="markdown level1 summary"><p>Gets the number of extended negotiations in collection.</p>
@@ -132,13 +158,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_IsReadOnly_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.IsReadOnly*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_IsReadOnly" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.IsReadOnly">IsReadOnly</h4>
   <div class="markdown level1 summary"><p>Gets whether collection is read-only. Is always <pre><code>false</code></pre>.</p>
@@ -158,13 +182,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Item_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Item*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Item_FellowOakDicom_DicomUID_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Item(FellowOakDicom.DicomUID)">Item[DicomUID]</h4>
   <div class="markdown level1 summary"><p>Gets the Extended negotiation associated with <code data-dev-comment-type="paramref" class="paramref">id</code>.</p>
@@ -210,8 +232,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_AcceptApplicationInfo_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.AcceptApplicationInfo*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_AcceptApplicationInfo_FellowOakDicom_DicomUID_FellowOakDicom_Network_DicomServiceApplicationInfo_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.AcceptApplicationInfo(FellowOakDicom.DicomUID,FellowOakDicom.Network.DicomServiceApplicationInfo)">AcceptApplicationInfo(DicomUID, DicomServiceApplicationInfo)</h4>
   <div class="markdown level1 summary"><p>Accept Extended Negotiation with Service Class Application Info from the SCP.</p>
@@ -245,8 +265,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Add_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Add*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Add_FellowOakDicom_DicomUID_FellowOakDicom_DicomUID_FellowOakDicom_DicomUID___" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Add(FellowOakDicom.DicomUID,FellowOakDicom.DicomUID,FellowOakDicom.DicomUID[])">Add(DicomUID, DicomUID, DicomUID[])</h4>
   <div class="markdown level1 summary"><p>Add Common Extended Negotiation with Service Class UID and Related General SOP Class UIDs</p>
@@ -286,8 +304,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Add_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Add*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Add_FellowOakDicom_DicomUID_FellowOakDicom_Network_DicomServiceApplicationInfo_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Add(FellowOakDicom.DicomUID,FellowOakDicom.Network.DicomServiceApplicationInfo)">Add(DicomUID, DicomServiceApplicationInfo)</h4>
   <div class="markdown level1 summary"><p>Add Extended Negotiation with Service Class Application Info</p>
@@ -321,8 +337,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Add_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Add*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Add_FellowOakDicom_DicomUID_FellowOakDicom_Network_DicomServiceApplicationInfo_FellowOakDicom_DicomUID_FellowOakDicom_DicomUID___" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Add(FellowOakDicom.DicomUID,FellowOakDicom.Network.DicomServiceApplicationInfo,FellowOakDicom.DicomUID,FellowOakDicom.DicomUID[])">Add(DicomUID, DicomServiceApplicationInfo, DicomUID, DicomUID[])</h4>
   <div class="markdown level1 summary"><p>Add (Common) Extended Negotiation with Application Info, Service Class UID and Related General SOP Class UIDs</p>
@@ -368,8 +382,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Add_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Add*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Add_FellowOakDicom_Network_DicomExtendedNegotiation_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Add(FellowOakDicom.Network.DicomExtendedNegotiation)">Add(DicomExtendedNegotiation)</h4>
   <div class="markdown level1 summary"><p>Add new extended negotiation object.</p>
@@ -397,8 +409,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_AddFromRequest_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.AddFromRequest*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_AddFromRequest_FellowOakDicom_Network_DicomRequest_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.AddFromRequest(FellowOakDicom.Network.DicomRequest)">AddFromRequest(DicomRequest)</h4>
   <div class="markdown level1 summary"><p>Add Extended Negotiation obtained from DICOM request.
@@ -427,8 +437,6 @@ Note: The extended negotiation will affect all requests that share the same SOP 
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_AddOrUpdate_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.AddOrUpdate*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_AddOrUpdate_FellowOakDicom_DicomUID_FellowOakDicom_DicomUID_FellowOakDicom_DicomUID___" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.AddOrUpdate(FellowOakDicom.DicomUID,FellowOakDicom.DicomUID,FellowOakDicom.DicomUID[])">AddOrUpdate(DicomUID, DicomUID, DicomUID[])</h4>
   <div class="markdown level1 summary"><p>Add or update Common Extended Negotiation with Service Class UID and Related General SOP Class UIDs.</p>
@@ -468,8 +476,6 @@ Note: The extended negotiation will affect all requests that share the same SOP 
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_AddOrUpdate_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.AddOrUpdate*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_AddOrUpdate_FellowOakDicom_DicomUID_FellowOakDicom_Network_DicomServiceApplicationInfo_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.AddOrUpdate(FellowOakDicom.DicomUID,FellowOakDicom.Network.DicomServiceApplicationInfo)">AddOrUpdate(DicomUID, DicomServiceApplicationInfo)</h4>
   <div class="markdown level1 summary"><p>Add or update Extended Negotiation with Service Class Application Info.</p>
@@ -503,8 +509,6 @@ Note: The extended negotiation will affect all requests that share the same SOP 
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_AddOrUpdate_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.AddOrUpdate*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_AddOrUpdate_FellowOakDicom_DicomUID_FellowOakDicom_Network_DicomServiceApplicationInfo_FellowOakDicom_DicomUID_FellowOakDicom_DicomUID___" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.AddOrUpdate(FellowOakDicom.DicomUID,FellowOakDicom.Network.DicomServiceApplicationInfo,FellowOakDicom.DicomUID,FellowOakDicom.DicomUID[])">AddOrUpdate(DicomUID, DicomServiceApplicationInfo, DicomUID, DicomUID[])</h4>
   <div class="markdown level1 summary"><p>Add or update (Common) Extended Negotiation with Application Info, Service Class UID and Related General SOP Class UIDs</p>
@@ -550,8 +554,6 @@ Note: The extended negotiation will affect all requests that share the same SOP 
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Clear_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Clear*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Clear" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Clear">Clear()</h4>
   <div class="markdown level1 summary"><p>Clear all extended negotiations in collection.</p>
@@ -561,8 +563,6 @@ Note: The extended negotiation will affect all requests that share the same SOP 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Contains_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Contains*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Contains_FellowOakDicom_DicomUID_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Contains(FellowOakDicom.DicomUID)">Contains(DicomUID)</h4>
   <div class="markdown level1 summary"><p>Indicates if specified uid is contained in collection</p>
@@ -600,14 +600,12 @@ Note: The extended negotiation will affect all requests that share the same SOP 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><pre><code>true</code></pre> if <code data-dev-comment-type="paramref" class="paramref">item</code> is contained in collection, <pre><code>false</code></pre> otherwise.
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Contains_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Contains*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Contains_FellowOakDicom_Network_DicomExtendedNegotiation_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Contains(FellowOakDicom.Network.DicomExtendedNegotiation)">Contains(DicomExtendedNegotiation)</h4>
   <div class="markdown level1 summary"><p>Indicates if specified extended negotiation is contained in collection.</p>
@@ -645,14 +643,12 @@ Note: The extended negotiation will affect all requests that share the same SOP 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><pre><code>true</code></pre> if <code data-dev-comment-type="paramref" class="paramref">item</code> is contained in collection, <pre><code>false</code></pre> otherwise.
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_CopyTo_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.CopyTo*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_CopyTo_FellowOakDicom_Network_DicomExtendedNegotiation___System_Int32_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.CopyTo(FellowOakDicom.Network.DicomExtendedNegotiation[],System.Int32)">CopyTo(DicomExtendedNegotiation[], Int32)</h4>
   <div class="markdown level1 summary"><p>Not implemented.</p>
@@ -679,7 +675,7 @@ Note: The extended negotiation will affect all requests that share the same SOP 
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">arrayIndex</span></td>
         <td><p>The zero-based index in <code data-dev-comment-type="paramref" class="paramref">array</code> at which copying begins.</p>
 </td>
@@ -696,13 +692,11 @@ Note: The extended negotiation will affect all requests that share the same SOP 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><span class="xref">System.NotSupportedException</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_GetEnumerator_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.GetEnumerator*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_GetEnumerator" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.GetEnumerator">GetEnumerator()</h4>
   <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
@@ -722,14 +716,12 @@ Note: The extended negotiation will affect all requests that share the same SOP 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerator</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomExtendedNegotiation.html">DicomExtendedNegotiation</a>&gt;</td>
-        <td><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator&lt;T&gt;</a> that can be used to iterate through the collection.</p>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomExtendedNegotiation.html">DicomExtendedNegotiation</a>&gt;</td>
+        <td><p>A <span class="xref">System.Collections.Generic.IEnumerator&lt;T&gt;</span> that can be used to iterate through the collection.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Remove_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Remove*"></a>
   <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_Remove_FellowOakDicom_Network_DicomExtendedNegotiation_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.Remove(FellowOakDicom.Network.DicomExtendedNegotiation)">Remove(DicomExtendedNegotiation)</h4>
   <div class="markdown level1 summary"><p>Removes the Extended Negotiation with same SOP Class if it exists.</p>
@@ -767,21 +759,67 @@ Note: The extended negotiation will affect all requests that share the same SOP 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><pre><code>true</code></pre> when <code data-dev-comment-type="paramref" class="paramref">item</code> is removed from collection, <pre><code>false</code></pre> otherwise.
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <a id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_System_Collections_IEnumerable_GetEnumerator_" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="FellowOakDicom_Network_DicomExtendedNegotiationCollection_System_Collections_IEnumerable_GetEnumerator" data-uid="FellowOakDicom.Network.DicomExtendedNegotiationCollection.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><p>An <span class="xref">System.Collections.IEnumerator</span> object that can be used to iterate through the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.EnumerableExtensions.html#FellowOakDicom_EnumerableExtensions_Each__1_System_Collections_Generic_IEnumerable___0__System_Action___0__">EnumerableExtensions.Each&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_Diff__2_System_Collections_Generic_IEnumerable___0__System_Func___0___0___1__">LinqExtensions.Diff&lt;S, T&gt;(IEnumerable&lt;S&gt;, Func&lt;S, S, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_FilterByType__1_System_Collections_Generic_IEnumerable_System_Object__">LinqExtensions.FilterByType&lt;T&gt;(IEnumerable&lt;Object&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -798,8 +836,8 @@ Note: The extended negotiation will affect all requests that share the same SOP 
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

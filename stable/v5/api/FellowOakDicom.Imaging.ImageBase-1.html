@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,7 +88,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ImageBase&lt;TImage&gt;</span></div>
       <div class="level2"><a class="xref" href="FellowOakDicom.Imaging.ImageDisposableBase-1.html">ImageDisposableBase&lt;TImage&gt;</a></div>
       <div class="level2"><a class="xref" href="FellowOakDicom.Imaging.RawImage.html">RawImage</a></div>
@@ -96,37 +96,37 @@
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FellowOakDicom.Imaging.IImage.html">IImage</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.html">FellowOakDicom.Imaging</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Imaging_ImageBase_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ImageBase&lt;TImage&gt; : IImage where TImage : class</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ImageBase&lt;TImage&gt; : IImage, IDisposable where TImage : class</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -146,10 +146,8 @@
   </table>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1__ctor_" data-uid="FellowOakDicom.Imaging.ImageBase`1.#ctor*"></a>
-  <h4 id="FellowOakDicom_Imaging_ImageBase_1__ctor_System_Int32_System_Int32_PinnedIntArray__0_" data-uid="FellowOakDicom.Imaging.ImageBase`1.#ctor(System.Int32,System.Int32,PinnedIntArray,`0)">ImageBase(Int32, Int32, PinnedIntArray, TImage)</h4>
+  <h4 id="FellowOakDicom_Imaging_ImageBase_1__ctor_System_Int32_System_Int32_FellowOakDicom_IO_PinnedIntArray__0_" data-uid="FellowOakDicom.Imaging.ImageBase`1.#ctor(System.Int32,System.Int32,FellowOakDicom.IO.PinnedIntArray,`0)">ImageBase(Int32, Int32, PinnedIntArray, TImage)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.Imaging.ImageBase-1.html">ImageBase&lt;TImage&gt;</a> object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -168,19 +166,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">width</span></td>
         <td><p>Image width.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">height</span></td>
         <td><p>Image height.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">PinnedIntArray</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.PinnedIntArray.html">PinnedIntArray</a></td>
         <td><span class="parametername">pixels</span></td>
         <td><p>Array of pixels.</p>
 </td>
@@ -195,14 +193,12 @@
   </table>
   <h3 id="fields">Fields
   </h3>
-  
-  
-  <h4 id="FellowOakDicom_Imaging_ImageBase_1_disposed" data-uid="FellowOakDicom.Imaging.ImageBase`1.disposed">disposed</h4>
+  <h4 id="FellowOakDicom_Imaging_ImageBase_1__disposed" data-uid="FellowOakDicom.Imaging.ImageBase`1._disposed">_disposed</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool disposed</code></pre>
+    <pre><code class="lang-csharp hljs">protected bool _disposed</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -214,19 +210,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <h4 id="FellowOakDicom_Imaging_ImageBase_1_height" data-uid="FellowOakDicom.Imaging.ImageBase`1.height">height</h4>
+  <h4 id="FellowOakDicom_Imaging_ImageBase_1__height" data-uid="FellowOakDicom.Imaging.ImageBase`1._height">_height</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly int height</code></pre>
+    <pre><code class="lang-csharp hljs">protected readonly int _height</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -238,19 +232,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <h4 id="FellowOakDicom_Imaging_ImageBase_1_image" data-uid="FellowOakDicom.Imaging.ImageBase`1.image">image</h4>
+  <h4 id="FellowOakDicom_Imaging_ImageBase_1__image" data-uid="FellowOakDicom.Imaging.ImageBase`1._image">_image</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected TImage image</code></pre>
+    <pre><code class="lang-csharp hljs">protected TImage _image</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -267,14 +259,12 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <h4 id="FellowOakDicom_Imaging_ImageBase_1_pixels" data-uid="FellowOakDicom.Imaging.ImageBase`1.pixels">pixels</h4>
+  <h4 id="FellowOakDicom_Imaging_ImageBase_1__pixels" data-uid="FellowOakDicom.Imaging.ImageBase`1._pixels">_pixels</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected PinnedIntArray pixels</code></pre>
+    <pre><code class="lang-csharp hljs">protected PinnedIntArray _pixels</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -286,19 +276,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PinnedIntArray</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.PinnedIntArray.html">PinnedIntArray</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <h4 id="FellowOakDicom_Imaging_ImageBase_1_width" data-uid="FellowOakDicom.Imaging.ImageBase`1.width">width</h4>
+  <h4 id="FellowOakDicom_Imaging_ImageBase_1__width" data-uid="FellowOakDicom.Imaging.ImageBase`1._width">_width</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly int width</code></pre>
+    <pre><code class="lang-csharp hljs">protected readonly int _width</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -310,15 +298,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1_Height_" data-uid="FellowOakDicom.Imaging.ImageBase`1.Height*"></a>
   <h4 id="FellowOakDicom_Imaging_ImageBase_1_Height" data-uid="FellowOakDicom.Imaging.ImageBase`1.Height">Height</h4>
   <div class="markdown level1 summary"></div>
@@ -337,13 +323,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1_Pixels_" data-uid="FellowOakDicom.Imaging.ImageBase`1.Pixels*"></a>
   <h4 id="FellowOakDicom_Imaging_ImageBase_1_Pixels" data-uid="FellowOakDicom.Imaging.ImageBase`1.Pixels">Pixels</h4>
   <div class="markdown level1 summary"><p>Gets the array of pixels associated with the image.</p>
@@ -363,13 +347,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PinnedIntArray</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.PinnedIntArray.html">PinnedIntArray</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1_Width_" data-uid="FellowOakDicom.Imaging.ImageBase`1.Width*"></a>
   <h4 id="FellowOakDicom_Imaging_ImageBase_1_Width" data-uid="FellowOakDicom.Imaging.ImageBase`1.Width">Width</h4>
   <div class="markdown level1 summary"></div>
@@ -388,15 +370,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1_As_" data-uid="FellowOakDicom.Imaging.ImageBase`1.As*"></a>
   <h4 id="FellowOakDicom_Imaging_ImageBase_1_As__1" data-uid="FellowOakDicom.Imaging.ImageBase`1.As``1">As&lt;T&gt;()</h4>
   <div class="markdown level1 summary"><p>Cast <a class="xref" href="FellowOakDicom.Imaging.IImage.html">IImage</a> object to specific (real image) type.</p>
@@ -438,8 +418,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1_Clone_" data-uid="FellowOakDicom.Imaging.ImageBase`1.Clone*"></a>
   <h4 id="FellowOakDicom_Imaging_ImageBase_1_Clone" data-uid="FellowOakDicom.Imaging.ImageBase`1.Clone">Clone()</h4>
   <div class="markdown level1 summary"><p>Creates a deep copy of the image.</p>
@@ -465,8 +443,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1_Dispose_" data-uid="FellowOakDicom.Imaging.ImageBase`1.Dispose*"></a>
   <h4 id="FellowOakDicom_Imaging_ImageBase_1_Dispose" data-uid="FellowOakDicom.Imaging.ImageBase`1.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
@@ -476,8 +452,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1_Dispose_" data-uid="FellowOakDicom.Imaging.ImageBase`1.Dispose*"></a>
   <h4 id="FellowOakDicom_Imaging_ImageBase_1_Dispose_System_Boolean_" data-uid="FellowOakDicom.Imaging.ImageBase`1.Dispose(System.Boolean)">Dispose(Boolean)</h4>
   <div class="markdown level1 summary"><p>Dispose resources.</p>
@@ -498,17 +472,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">disposing</span></td>
         <td><p>Dispose mode?</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1_DrawGraphics_" data-uid="FellowOakDicom.Imaging.ImageBase`1.DrawGraphics*"></a>
-  <h4 id="FellowOakDicom_Imaging_ImageBase_1_DrawGraphics_IEnumerable_IGraphic__" data-uid="FellowOakDicom.Imaging.ImageBase`1.DrawGraphics(IEnumerable{IGraphic})">DrawGraphics(IEnumerable&lt;IGraphic&gt;)</h4>
+  <h4 id="FellowOakDicom_Imaging_ImageBase_1_DrawGraphics_System_Collections_Generic_IEnumerable_FellowOakDicom_Imaging_Render_IGraphic__" data-uid="FellowOakDicom.Imaging.ImageBase`1.DrawGraphics(System.Collections.Generic.IEnumerable{FellowOakDicom.Imaging.Render.IGraphic})">DrawGraphics(IEnumerable&lt;IGraphic&gt;)</h4>
   <div class="markdown level1 summary"><p>Draw graphics onto existing image.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -527,15 +499,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IGraphic</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.Imaging.Render.IGraphic.html">IGraphic</a>&gt;</td>
         <td><span class="parametername">graphics</span></td>
         <td><p>Graphics to draw.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1_Finalize_" data-uid="FellowOakDicom.Imaging.ImageBase`1.Finalize*"></a>
   <h4 id="FellowOakDicom_Imaging_ImageBase_1_Finalize" data-uid="FellowOakDicom.Imaging.ImageBase`1.Finalize">Finalize()</h4>
   <div class="markdown level1 summary"><p>Destructor to free up the image resources.</p>
@@ -545,8 +515,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1_GetPixel_" data-uid="FellowOakDicom.Imaging.ImageBase`1.GetPixel*"></a>
   <h4 id="FellowOakDicom_Imaging_ImageBase_1_GetPixel_System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.ImageBase`1.GetPixel(System.Int32,System.Int32)">GetPixel(Int32, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -566,12 +534,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">x</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">y</span></td>
         <td></td>
       </tr>
@@ -592,8 +560,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1_Render_" data-uid="FellowOakDicom.Imaging.ImageBase`1.Render*"></a>
   <h4 id="FellowOakDicom_Imaging_ImageBase_1_Render_System_Int32_System_Boolean_System_Boolean_System_Int32_" data-uid="FellowOakDicom.Imaging.ImageBase`1.Render(System.Int32,System.Boolean,System.Boolean,System.Int32)">Render(Int32, Boolean, Boolean, Int32)</h4>
   <div class="markdown level1 summary"><p>Renders the image given the specified parameters.</p>
@@ -614,33 +580,31 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">components</span></td>
         <td><p>Number of components.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">flipX</span></td>
         <td><p>Flip image in X direction?</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">flipY</span></td>
         <td><p>Flip image in Y direction?</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">rotation</span></td>
         <td><p>Image rotation.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Imaging_ImageBase_1_ToBytes_" data-uid="FellowOakDicom.Imaging.ImageBase`1.ToBytes*"></a>
   <h4 id="FellowOakDicom_Imaging_ImageBase_1_ToBytes_System_Int32__System_Int32__System_Int32_System_Boolean_System_Boolean_System_Int32_System_Int32___" data-uid="FellowOakDicom.Imaging.ImageBase`1.ToBytes(System.Int32@,System.Int32@,System.Int32,System.Boolean,System.Boolean,System.Int32,System.Int32[])">ToBytes(ref Int32, ref Int32, Int32, Boolean, Boolean, Int32, Int32[])</h4>
   <div class="markdown level1 summary"></div>
@@ -660,37 +624,37 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">width</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">height</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">components</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">flipX</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">flipY</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">rotation</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>[]</td>
+        <td><span class="xref">System.Int32</span>[]</td>
         <td><span class="parametername">data</span></td>
         <td></td>
       </tr>
@@ -706,7 +670,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -716,17 +680,20 @@
       <a class="xref" href="FellowOakDicom.Imaging.IImage.html">IImage</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Imaging.RawImageExtensions.html#FellowOakDicom_Imaging_RawImageExtensions_AsBytes_FellowOakDicom_Imaging_IImage_">RawImageExtensions.AsBytes(IImage)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
   </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -743,8 +710,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

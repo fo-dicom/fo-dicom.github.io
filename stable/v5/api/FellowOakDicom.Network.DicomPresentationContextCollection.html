@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,19 +88,47 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DicomPresentationContextCollection</span></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomPresentationContext.html">DicomPresentationContext</a>&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomPresentationContext.html">DicomPresentationContext</a>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomPresentationContextCollection_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomPresentationContextCollection : ICollection&lt;DicomPresentationContext&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class DicomPresentationContextCollection : ICollection&lt;DicomPresentationContext&gt;, IEnumerable&lt;DicomPresentationContext&gt;, IEnumerable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomPresentationContextCollection__ctor_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection__ctor" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.#ctor">DicomPresentationContextCollection()</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="FellowOakDicom.Network.DicomPresentationContextCollection.html">DicomPresentationContextCollection</a>.</p>
@@ -112,8 +140,6 @@
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomPresentationContextCollection_Count_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Count*"></a>
   <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_Count" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Count">Count</h4>
   <div class="markdown level1 summary"><p>Gets the number of presentation contexts in collection.</p>
@@ -133,13 +159,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomPresentationContextCollection_IsReadOnly_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.IsReadOnly*"></a>
   <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_IsReadOnly" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.IsReadOnly">IsReadOnly</h4>
   <div class="markdown level1 summary"><p>Gets whether collection is read-only. Is always <pre><code>false</code></pre>.</p>
@@ -159,13 +183,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomPresentationContextCollection_Item_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Item*"></a>
   <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_Item_System_Byte_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Item(System.Byte)">Item[Byte]</h4>
   <div class="markdown level1 summary"><p>Gets the presentation context associated with <code data-dev-comment-type="paramref" class="paramref">id</code>.</p>
@@ -186,7 +208,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="xref">System.Byte</span></td>
         <td><span class="parametername">id</span></td>
         <td><p>Presentation context ID.</p>
 </td>
@@ -211,8 +233,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomPresentationContextCollection_Add_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Add*"></a>
   <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_Add_FellowOakDicom_DicomUID_FellowOakDicom_DicomTransferSyntax___" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Add(FellowOakDicom.DicomUID,FellowOakDicom.DicomTransferSyntax[])">Add(DicomUID, DicomTransferSyntax[])</h4>
   <div class="markdown level1 summary"><p>Initialize and add new presentation context.</p>
@@ -246,8 +266,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomPresentationContextCollection_Add_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Add*"></a>
   <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_Add_FellowOakDicom_DicomUID_System_Nullable_System_Boolean__System_Nullable_System_Boolean__FellowOakDicom_DicomTransferSyntax___" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Add(FellowOakDicom.DicomUID,System.Nullable{System.Boolean},System.Nullable{System.Boolean},FellowOakDicom.DicomTransferSyntax[])">Add(DicomUID, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;, DicomTransferSyntax[])</h4>
   <div class="markdown level1 summary"><p>Initialize and add new presentation context.</p>
@@ -274,13 +292,13 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">userRole</span></td>
         <td><p>Supports SCU role?</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">providerRole</span></td>
         <td><p>Supports SCP role?</p>
 </td>
@@ -293,11 +311,9 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomPresentationContextCollection_Add_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Add*"></a>
   <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_Add_FellowOakDicom_Network_DicomPresentationContext_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Add(FellowOakDicom.Network.DicomPresentationContext)">Add(DicomPresentationContext)</h4>
-  <div class="markdown level1 summary"><p>Adds an item to the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>.</p>
+  <div class="markdown level1 summary"><p>Adds an item to the <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -317,7 +333,7 @@
       <tr>
         <td><a class="xref" href="FellowOakDicom.Network.DicomPresentationContext.html">DicomPresentationContext</a></td>
         <td><span class="parametername">item</span></td>
-        <td><p>The object to add to the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>.</p>
+        <td><p>The object to add to the <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -332,14 +348,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
-        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> is read-only.</p>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>The <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span> is read-only.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomPresentationContextCollection_AddFromRequest_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.AddFromRequest*"></a>
   <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_AddFromRequest_FellowOakDicom_Network_DicomRequest_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.AddFromRequest(FellowOakDicom.Network.DicomRequest)">AddFromRequest(DicomRequest)</h4>
   <div class="markdown level1 summary"><p>Add presentation contexts obtained from DICOM request.</p>
@@ -367,8 +381,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomPresentationContextCollection_Clear_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Clear*"></a>
   <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_Clear" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Clear">Clear()</h4>
   <div class="markdown level1 summary"><p>Clear all presentation contexts in collection.</p>
@@ -378,8 +390,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_DicomPresentationContextCollection_Contains_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Contains*"></a>
   <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_Contains_FellowOakDicom_Network_DicomPresentationContext_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Contains(FellowOakDicom.Network.DicomPresentationContext)">Contains(DicomPresentationContext)</h4>
   <div class="markdown level1 summary"><p>Indicates if specified presentation context is contained in collection.</p>
@@ -417,14 +427,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><pre><code>true</code></pre> if <code data-dev-comment-type="paramref" class="paramref">item</code> is contained in collection, <pre><code>false</code></pre> otherwise.
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomPresentationContextCollection_GetEnumerator_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.GetEnumerator*"></a>
   <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_GetEnumerator" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.GetEnumerator">GetEnumerator()</h4>
   <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
@@ -444,17 +452,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerator</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomPresentationContext.html">DicomPresentationContext</a>&gt;</td>
-        <td><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator&lt;T&gt;</a> that can be used to iterate through the collection.</p>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomPresentationContext.html">DicomPresentationContext</a>&gt;</td>
+        <td><p>A <span class="xref">System.Collections.Generic.IEnumerator&lt;T&gt;</span> that can be used to iterate through the collection.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomPresentationContextCollection_Remove_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Remove*"></a>
   <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_Remove_FellowOakDicom_Network_DicomPresentationContext_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.Remove(FellowOakDicom.Network.DicomPresentationContext)">Remove(DicomPresentationContext)</h4>
-  <div class="markdown level1 summary"><p>Removes the first occurrence of a specific object from the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>.</p>
+  <div class="markdown level1 summary"><p>Removes the first occurrence of a specific object from the <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -474,7 +480,7 @@
       <tr>
         <td><a class="xref" href="FellowOakDicom.Network.DicomPresentationContext.html">DicomPresentationContext</a></td>
         <td><span class="parametername">item</span></td>
-        <td><p>The object to remove from the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>.</p>
+        <td><p>The object to remove from the <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -489,8 +495,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>true if <code data-dev-comment-type="paramref" class="paramref">item</code> was successfully removed from the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>; otherwise, false. This method also returns false if <code data-dev-comment-type="paramref" class="paramref">item</code> is not found in the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>.</p>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if <code data-dev-comment-type="paramref" class="paramref">item</code> was successfully removed from the <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>; otherwise, false. This method also returns false if <code data-dev-comment-type="paramref" class="paramref">item</code> is not found in the original <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -505,21 +511,126 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
-        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> is read-only.</p>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>The <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span> is read-only.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <a id="FellowOakDicom_Network_DicomPresentationContextCollection_System_Collections_Generic_ICollection_FellowOakDicom_Network_DicomPresentationContext__CopyTo_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.System#Collections#Generic#ICollection{FellowOakDicom#Network#DicomPresentationContext}#CopyTo*"></a>
+  <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_System_Collections_Generic_ICollection_FellowOakDicom_Network_DicomPresentationContext__CopyTo_FellowOakDicom_Network_DicomPresentationContext___System_Int32_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.System#Collections#Generic#ICollection{FellowOakDicom#Network#DicomPresentationContext}#CopyTo(FellowOakDicom.Network.DicomPresentationContext[],System.Int32)">ICollection&lt;DicomPresentationContext&gt;.CopyTo(DicomPresentationContext[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Copies the elements of the <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span> to an <span class="xref">System.Array</span>, starting at a particular <span class="xref">System.Array</span> index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ICollection&lt;DicomPresentationContext&gt;.CopyTo(DicomPresentationContext[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomPresentationContext.html">DicomPresentationContext</a>[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>The one-dimensional <span class="xref">System.Array</span> that is the destination of the elements copied from <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>. The <span class="xref">System.Array</span> must have zero-based indexing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td><p>The zero-based index in <code data-dev-comment-type="paramref" class="paramref">array</code> at which copying begins.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">array</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">arrayIndex</code> is less than 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>The number of elements in the source <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span> is greater than the available space from <code data-dev-comment-type="paramref" class="paramref">arrayIndex</code> to the end of the destination <code data-dev-comment-type="paramref" class="paramref">array</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="FellowOakDicom_Network_DicomPresentationContextCollection_System_Collections_IEnumerable_GetEnumerator_" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="FellowOakDicom_Network_DicomPresentationContextCollection_System_Collections_IEnumerable_GetEnumerator" data-uid="FellowOakDicom.Network.DicomPresentationContextCollection.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through a collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><p>An <span class="xref">System.Collections.IEnumerator</span> object that can be used to iterate through the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.EnumerableExtensions.html#FellowOakDicom_EnumerableExtensions_Each__1_System_Collections_Generic_IEnumerable___0__System_Action___0__">EnumerableExtensions.Each&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_Diff__2_System_Collections_Generic_IEnumerable___0__System_Func___0___0___1__">LinqExtensions.Diff&lt;S, T&gt;(IEnumerable&lt;S&gt;, Func&lt;S, S, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_FilterByType__1_System_Collections_Generic_IEnumerable_System_Object__">LinqExtensions.FilterByType&lt;T&gt;(IEnumerable&lt;Object&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -536,8 +647,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

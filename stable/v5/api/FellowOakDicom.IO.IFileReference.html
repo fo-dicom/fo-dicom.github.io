@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,15 +87,13 @@
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.html">FellowOakDicom.IO</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IO_IFileReference_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IFileReference</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_IFileReference_Directory_" data-uid="FellowOakDicom.IO.IFileReference.Directory*"></a>
   <h4 id="FellowOakDicom_IO_IFileReference_Directory" data-uid="FellowOakDicom.IO.IFileReference.Directory">Directory</h4>
   <div class="markdown level1 summary"><p>Gets the directory reference of the file.</p>
@@ -120,8 +118,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IFileReference_Exists_" data-uid="FellowOakDicom.IO.IFileReference.Exists*"></a>
   <h4 id="FellowOakDicom_IO_IFileReference_Exists" data-uid="FellowOakDicom.IO.IFileReference.Exists">Exists</h4>
   <div class="markdown level1 summary"><p>Gets whether the file exist or not.</p>
@@ -141,13 +137,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IFileReference_IsTempFile_" data-uid="FellowOakDicom.IO.IFileReference.IsTempFile*"></a>
   <h4 id="FellowOakDicom_IO_IFileReference_IsTempFile" data-uid="FellowOakDicom.IO.IFileReference.IsTempFile">IsTempFile</h4>
   <div class="markdown level1 summary"><p>Gets and sets whether the file is temporary or not.</p>
@@ -167,13 +161,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IFileReference_Name_" data-uid="FellowOakDicom.IO.IFileReference.Name*"></a>
   <h4 id="FellowOakDicom_IO_IFileReference_Name" data-uid="FellowOakDicom.IO.IFileReference.Name">Name</h4>
   <div class="markdown level1 summary"><p>Gets the file name.</p>
@@ -193,15 +185,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_IFileReference_Create_" data-uid="FellowOakDicom.IO.IFileReference.Create*"></a>
   <h4 id="FellowOakDicom_IO_IFileReference_Create" data-uid="FellowOakDicom.IO.IFileReference.Create">Create()</h4>
   <div class="markdown level1 summary"><p>Creates a new file for reading and writing. Overwrites existing file.</p>
@@ -221,14 +211,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><p>Stream to the created file.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IFileReference_Delete_" data-uid="FellowOakDicom.IO.IFileReference.Delete*"></a>
   <h4 id="FellowOakDicom_IO_IFileReference_Delete" data-uid="FellowOakDicom.IO.IFileReference.Delete">Delete()</h4>
   <div class="markdown level1 summary"><p>Delete the file.</p>
@@ -238,8 +226,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void Delete()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_IO_IFileReference_GetByteRange_" data-uid="FellowOakDicom.IO.IFileReference.GetByteRange*"></a>
   <h4 id="FellowOakDicom_IO_IFileReference_GetByteRange_System_Int64_System_Int32_" data-uid="FellowOakDicom.IO.IFileReference.GetByteRange(System.Int64,System.Int32)">GetByteRange(Int64, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a sub-range of the bytes in the file.</p>
@@ -260,13 +246,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Offset from the start position of the file.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of bytes to select.</p>
 </td>
@@ -283,14 +269,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td><p>The specified sub-range of bytes in the file.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IFileReference_GetByteRange_" data-uid="FellowOakDicom.IO.IFileReference.GetByteRange*"></a>
   <h4 id="FellowOakDicom_IO_IFileReference_GetByteRange_System_Int64_System_Int32_System_Byte___" data-uid="FellowOakDicom.IO.IFileReference.GetByteRange(System.Int64,System.Int32,System.Byte[])">GetByteRange(Int64, Int32, Byte[])</h4>
   <div class="markdown level1 summary"><p>Gets a sub-range of the bytes in the file.</p>
@@ -311,27 +295,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Offset from the start position of the file.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
         <td><p>Number of bytes to select.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">output</span></td>
         <td><p>The output array where the contents will be written</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IFileReference_Move_" data-uid="FellowOakDicom.IO.IFileReference.Move*"></a>
   <h4 id="FellowOakDicom_IO_IFileReference_Move_System_String_System_Boolean_" data-uid="FellowOakDicom.IO.IFileReference.Move(System.String,System.Boolean)">Move(String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Moves file and updates internal reference.
@@ -353,21 +335,19 @@ Calling this method will also set the <a class="xref" href="FellowOakDicom.IO.IF
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">dstFileName</span></td>
         <td><p>Full name of the moved file.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">overwrite</span></td>
         <td><p>True if already existing file should be overwritten, false otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IFileReference_Open_" data-uid="FellowOakDicom.IO.IFileReference.Open*"></a>
   <h4 id="FellowOakDicom_IO_IFileReference_Open" data-uid="FellowOakDicom.IO.IFileReference.Open">Open()</h4>
   <div class="markdown level1 summary"><p>Open an existing file stream for reading and writing.</p>
@@ -387,13 +367,11 @@ Calling this method will also set the <a class="xref" href="FellowOakDicom.IO.IF
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IFileReference_OpenRead_" data-uid="FellowOakDicom.IO.IFileReference.OpenRead*"></a>
   <h4 id="FellowOakDicom_IO_IFileReference_OpenRead" data-uid="FellowOakDicom.IO.IFileReference.OpenRead">OpenRead()</h4>
   <div class="markdown level1 summary"><p>Open a file stream for reading.</p>
@@ -413,14 +391,12 @@ Calling this method will also set the <a class="xref" href="FellowOakDicom.IO.IF
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><p>Stream to the opened file.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_IFileReference_OpenWrite_" data-uid="FellowOakDicom.IO.IFileReference.OpenWrite*"></a>
   <h4 id="FellowOakDicom_IO_IFileReference_OpenWrite" data-uid="FellowOakDicom.IO.IFileReference.OpenWrite">OpenWrite()</h4>
   <div class="markdown level1 summary"><p>Open a file stream for writing, creates the file if not existing.</p>
@@ -440,21 +416,21 @@ Calling this method will also set the <a class="xref" href="FellowOakDicom.IO.IF
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><p>Stream to the opened file.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -471,8 +447,8 @@ Calling this method will also set the <a class="xref" href="FellowOakDicom.IO.IF
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

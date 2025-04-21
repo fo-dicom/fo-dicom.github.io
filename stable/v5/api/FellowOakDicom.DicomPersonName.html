@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,7 +88,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a></div>
     <div class="level2"><a class="xref" href="FellowOakDicom.DicomElement.html">DicomElement</a></div>
     <div class="level3"><a class="xref" href="FellowOakDicom.DicomStringElement.html">DicomStringElement</a></div>
@@ -97,7 +97,8 @@
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IComparable</span></div>
+    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>&gt;</div>
+    <div><span class="xref">System.IComparable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -109,6 +110,9 @@
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomMultiStringElement.html#FellowOakDicom_DicomMultiStringElement_Get__1_System_Int32_">DicomMultiStringElement.Get&lt;T&gt;(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomMultiStringElement.html#FellowOakDicom_DicomMultiStringElement_Equals_FellowOakDicom_DicomElement_">DicomMultiStringElement.Equals(DicomElement)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomStringElement.html#FellowOakDicom_DicomStringElement_TargetEncodings">DicomStringElement.TargetEncodings</a>
@@ -129,6 +133,9 @@
       <a class="xref" href="FellowOakDicom.DicomElement.html#FellowOakDicom_DicomElement_Validate">DicomElement.Validate()</a>
     </div>
     <div>
+      <a class="xref" href="FellowOakDicom.DicomElement.html#FellowOakDicom_DicomElement_ValidateVM">DicomElement.ValidateVM()</a>
+    </div>
+    <div>
       <a class="xref" href="FellowOakDicom.DicomItem.html#FellowOakDicom_DicomItem_Tag">DicomItem.Tag</a>
     </div>
     <div>
@@ -140,54 +147,33 @@
     <div>
       <a class="xref" href="FellowOakDicom.DicomItem.html#FellowOakDicom_DicomItem_ToString">DicomItem.ToString()</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.html">FellowOakDicom</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_DicomPersonName_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DicomPersonName : DicomMultiStringElement</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DicomPersonName : DicomMultiStringElement, IComparable&lt;DicomItem&gt;, IComparable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
-  <a id="FellowOakDicom_DicomPersonName__ctor_" data-uid="FellowOakDicom.DicomPersonName.#ctor*"></a>
-  <h4 id="FellowOakDicom_DicomPersonName__ctor_FellowOakDicom_DicomTag_Encoding___IByteBuffer_" data-uid="FellowOakDicom.DicomPersonName.#ctor(FellowOakDicom.DicomTag,Encoding[],IByteBuffer)">DicomPersonName(DicomTag, Encoding[], IByteBuffer)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DicomPersonName(DicomTag tag, Encoding[] encodings, IByteBuffer data)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.DicomTag.html">DicomTag</a></td>
-        <td><span class="parametername">tag</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Encoding</span>[]</td>
-        <td><span class="parametername">encodings</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">IByteBuffer</span></td>
-        <td><span class="parametername">data</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="FellowOakDicom_DicomPersonName__ctor_" data-uid="FellowOakDicom.DicomPersonName.#ctor*"></a>
   <h4 id="FellowOakDicom_DicomPersonName__ctor_FellowOakDicom_DicomTag_System_String_System_String_System_String_System_String_System_String_" data-uid="FellowOakDicom.DicomPersonName.#ctor(FellowOakDicom.DicomTag,System.String,System.String,System.String,System.String,System.String)">DicomPersonName(DicomTag, String, String, String, String, String)</h4>
   <div class="markdown level1 summary"></div>
@@ -212,34 +198,32 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Last</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">First</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Middle</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Prefix</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Suffix</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomPersonName__ctor_" data-uid="FellowOakDicom.DicomPersonName.#ctor*"></a>
   <h4 id="FellowOakDicom_DicomPersonName__ctor_FellowOakDicom_DicomTag_System_String___" data-uid="FellowOakDicom.DicomPersonName.#ctor(FellowOakDicom.DicomTag,System.String[])">DicomPersonName(DicomTag, String[])</h4>
   <div class="markdown level1 summary"></div>
@@ -264,16 +248,49 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="xref">System.String</span>[]</td>
         <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="FellowOakDicom_DicomPersonName__ctor_" data-uid="FellowOakDicom.DicomPersonName.#ctor*"></a>
+  <h4 id="FellowOakDicom_DicomPersonName__ctor_FellowOakDicom_DicomTag_System_Text_Encoding___FellowOakDicom_IO_Buffer_IByteBuffer_" data-uid="FellowOakDicom.DicomPersonName.#ctor(FellowOakDicom.DicomTag,System.Text.Encoding[],FellowOakDicom.IO.Buffer.IByteBuffer)">DicomPersonName(DicomTag, Encoding[], IByteBuffer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DicomPersonName(DicomTag tag, Encoding[] encodings, IByteBuffer data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.DicomTag.html">DicomTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span>[]</td>
+        <td><span class="parametername">encodings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a></td>
+        <td><span class="parametername">data</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomPersonName_First_" data-uid="FellowOakDicom.DicomPersonName.First*"></a>
   <h4 id="FellowOakDicom_DicomPersonName_First" data-uid="FellowOakDicom.DicomPersonName.First">First</h4>
   <div class="markdown level1 summary"><p>Given name or empty string.</p>
@@ -293,13 +310,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomPersonName_Last_" data-uid="FellowOakDicom.DicomPersonName.Last*"></a>
   <h4 id="FellowOakDicom_DicomPersonName_Last" data-uid="FellowOakDicom.DicomPersonName.Last">Last</h4>
   <div class="markdown level1 summary"><p>Family name or empty string.</p>
@@ -319,13 +334,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomPersonName_Middle_" data-uid="FellowOakDicom.DicomPersonName.Middle*"></a>
   <h4 id="FellowOakDicom_DicomPersonName_Middle" data-uid="FellowOakDicom.DicomPersonName.Middle">Middle</h4>
   <div class="markdown level1 summary"><p>Middle name or empty string.</p>
@@ -345,13 +358,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomPersonName_Prefix_" data-uid="FellowOakDicom.DicomPersonName.Prefix*"></a>
   <h4 id="FellowOakDicom_DicomPersonName_Prefix" data-uid="FellowOakDicom.DicomPersonName.Prefix">Prefix</h4>
   <div class="markdown level1 summary"><p>Name prefix or empty string.</p>
@@ -371,13 +382,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomPersonName_Suffix_" data-uid="FellowOakDicom.DicomPersonName.Suffix*"></a>
   <h4 id="FellowOakDicom_DicomPersonName_Suffix" data-uid="FellowOakDicom.DicomPersonName.Suffix">Suffix</h4>
   <div class="markdown level1 summary"><p>Name suffix or empty string.</p>
@@ -397,13 +406,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomPersonName_ValueRepresentation_" data-uid="FellowOakDicom.DicomPersonName.ValueRepresentation*"></a>
   <h4 id="FellowOakDicom_DicomPersonName_ValueRepresentation" data-uid="FellowOakDicom.DicomPersonName.ValueRepresentation">ValueRepresentation</h4>
   <div class="markdown level1 summary"></div>
@@ -431,8 +438,6 @@
   <div><a class="xref" href="FellowOakDicom.DicomItem.html#FellowOakDicom_DicomItem_ValueRepresentation">DicomItem.ValueRepresentation</a></div>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomPersonName_HaveSameContent_" data-uid="FellowOakDicom.DicomPersonName.HaveSameContent*"></a>
   <h4 id="FellowOakDicom_DicomPersonName_HaveSameContent_FellowOakDicom_DicomPersonName_FellowOakDicom_DicomPersonName_" data-uid="FellowOakDicom.DicomPersonName.HaveSameContent(FellowOakDicom.DicomPersonName,FellowOakDicom.DicomPersonName)">HaveSameContent(DicomPersonName, DicomPersonName)</h4>
   <div class="markdown level1 summary"></div>
@@ -473,36 +478,27 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="FellowOakDicom_DicomPersonName_ValidateVM_" data-uid="FellowOakDicom.DicomPersonName.ValidateVM*"></a>
-  <h4 id="FellowOakDicom_DicomPersonName_ValidateVM" data-uid="FellowOakDicom.DicomPersonName.ValidateVM">ValidateVM()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void ValidateVM()</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FellowOakDicom.DicomElement.html#FellowOakDicom_DicomElement_ValidateVM">DicomElement.ValidateVM()</a></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IComparable</span>
+      <span class="xref">System.IComparable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
   </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -519,8 +515,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

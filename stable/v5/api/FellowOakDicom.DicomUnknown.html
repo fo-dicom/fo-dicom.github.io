@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,21 +88,25 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a></div>
     <div class="level2"><a class="xref" href="FellowOakDicom.DicomElement.html">DicomElement</a></div>
-    <div class="level3"><a class="xref" href="FellowOakDicom.DicomValueElement-1.html">DicomValueElement</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</div>
+    <div class="level3"><a class="xref" href="FellowOakDicom.DicomValueElement-1.html">DicomValueElement</a>&lt;<span class="xref">System.Byte</span>&gt;</div>
     <div class="level4"><a class="xref" href="FellowOakDicom.DicomOtherByte.html">DicomOtherByte</a></div>
     <div class="level5"><span class="xref">DicomUnknown</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IComparable</span></div>
+    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>&gt;</div>
+    <div><span class="xref">System.IComparable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="FellowOakDicom.DicomOtherByte.html#FellowOakDicom_DicomOtherByte_Get__1_System_Int32_">DicomOtherByte.Get&lt;T&gt;(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomOtherByte.html#FellowOakDicom_DicomOtherByte_Equals_FellowOakDicom_DicomElement_">DicomOtherByte.Equals(DicomElement)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomValueElement-1.html#FellowOakDicom_DicomValueElement_1_Count">DicomValueElement&lt;Byte&gt;.Count</a>
@@ -131,19 +135,35 @@
     <div>
       <a class="xref" href="FellowOakDicom.DicomItem.html#FellowOakDicom_DicomItem_ToString">DicomItem.ToString()</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.html">FellowOakDicom</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_DicomUnknown_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomUnknown : DicomOtherByte</code></pre>
+    <pre><code class="lang-csharp hljs">public class DicomUnknown : DicomOtherByte, IComparable&lt;DicomItem&gt;, IComparable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomUnknown__ctor_" data-uid="FellowOakDicom.DicomUnknown.#ctor*"></a>
-  <h4 id="FellowOakDicom_DicomUnknown__ctor_FellowOakDicom_DicomTag_IByteBuffer_" data-uid="FellowOakDicom.DicomUnknown.#ctor(FellowOakDicom.DicomTag,IByteBuffer)">DicomUnknown(DicomTag, IByteBuffer)</h4>
+  <h4 id="FellowOakDicom_DicomUnknown__ctor_FellowOakDicom_DicomTag_FellowOakDicom_IO_Buffer_IByteBuffer_" data-uid="FellowOakDicom.DicomUnknown.#ctor(FellowOakDicom.DicomTag,FellowOakDicom.IO.Buffer.IByteBuffer)">DicomUnknown(DicomTag, IByteBuffer)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -166,14 +186,12 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IByteBuffer</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a></td>
         <td><span class="parametername">data</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomUnknown__ctor_" data-uid="FellowOakDicom.DicomUnknown.#ctor*"></a>
   <h4 id="FellowOakDicom_DicomUnknown__ctor_FellowOakDicom_DicomTag_System_Byte___" data-uid="FellowOakDicom.DicomUnknown.#ctor(FellowOakDicom.DicomTag,System.Byte[])">DicomUnknown(DicomTag, Byte[])</h4>
   <div class="markdown level1 summary"></div>
@@ -198,7 +216,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">values</span></td>
         <td></td>
       </tr>
@@ -206,8 +224,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomUnknown_ValueRepresentation_" data-uid="FellowOakDicom.DicomUnknown.ValueRepresentation*"></a>
   <h4 id="FellowOakDicom_DicomUnknown_ValueRepresentation" data-uid="FellowOakDicom.DicomUnknown.ValueRepresentation">ValueRepresentation</h4>
   <div class="markdown level1 summary"></div>
@@ -235,8 +251,6 @@
   <div><a class="xref" href="FellowOakDicom.DicomOtherByte.html#FellowOakDicom_DicomOtherByte_ValueRepresentation">DicomOtherByte.ValueRepresentation</a></div>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomUnknown_ValidateVM_" data-uid="FellowOakDicom.DicomUnknown.ValidateVM*"></a>
   <h4 id="FellowOakDicom_DicomUnknown_ValidateVM" data-uid="FellowOakDicom.DicomUnknown.ValidateVM">ValidateVM()</h4>
   <div class="markdown level1 summary"></div>
@@ -249,17 +263,20 @@
   <div><a class="xref" href="FellowOakDicom.DicomOtherByte.html#FellowOakDicom_DicomOtherByte_ValidateVM">DicomOtherByte.ValidateVM()</a></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IComparable</span>
+      <span class="xref">System.IComparable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
   </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -276,8 +293,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

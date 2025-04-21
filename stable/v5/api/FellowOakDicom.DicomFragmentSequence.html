@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,7 +88,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a></div>
     <div class="level2"><span class="xref">DicomFragmentSequence</span></div>
       <div class="level3"><a class="xref" href="FellowOakDicom.DicomOtherByteFragment.html">DicomOtherByteFragment</a></div>
@@ -96,8 +96,10 @@
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IComparable</span></div>
-    <div><span class="xref">IEnumerable</span>&lt;<span class="xref">IByteBuffer</span>&gt;</div>
+    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>&gt;</div>
+    <div><span class="xref">System.IComparable</span></div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -119,17 +121,33 @@
     <div>
       <a class="xref" href="FellowOakDicom.DicomItem.html#FellowOakDicom_DicomItem_Validate">DicomItem.Validate()</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.html">FellowOakDicom</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_DicomFragmentSequence_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class DicomFragmentSequence : DicomItem</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class DicomFragmentSequence : DicomItem, IComparable&lt;DicomItem&gt;, IComparable, IEnumerable&lt;IByteBuffer&gt;, IEnumerable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomFragmentSequence__ctor_" data-uid="FellowOakDicom.DicomFragmentSequence.#ctor*"></a>
   <h4 id="FellowOakDicom_DicomFragmentSequence__ctor_FellowOakDicom_DicomTag_" data-uid="FellowOakDicom.DicomFragmentSequence.#ctor(FellowOakDicom.DicomTag)">DicomFragmentSequence(DicomTag)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.DicomFragmentSequence.html">DicomFragmentSequence</a> abstract class.</p>
@@ -158,8 +176,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomFragmentSequence_Fragments_" data-uid="FellowOakDicom.DicomFragmentSequence.Fragments*"></a>
   <h4 id="FellowOakDicom_DicomFragmentSequence_Fragments" data-uid="FellowOakDicom.DicomFragmentSequence.Fragments">Fragments</h4>
   <div class="markdown level1 summary"><p>Gets the collection of fragments.</p>
@@ -179,13 +195,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IList</span>&lt;<span class="xref">IByteBuffer</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFragmentSequence_OffsetTable_" data-uid="FellowOakDicom.DicomFragmentSequence.OffsetTable*"></a>
   <h4 id="FellowOakDicom_DicomFragmentSequence_OffsetTable" data-uid="FellowOakDicom.DicomFragmentSequence.OffsetTable">OffsetTable</h4>
   <div class="markdown level1 summary"><p>Gets the fragment offset table.</p>
@@ -205,15 +219,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IList</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.UInt32</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomFragmentSequence_GetEnumerator_" data-uid="FellowOakDicom.DicomFragmentSequence.GetEnumerator*"></a>
   <h4 id="FellowOakDicom_DicomFragmentSequence_GetEnumerator" data-uid="FellowOakDicom.DicomFragmentSequence.GetEnumerator">GetEnumerator()</h4>
   <div class="markdown level1 summary"></div>
@@ -232,15 +244,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerator</span>&lt;<span class="xref">IByteBuffer</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomFragmentSequence_System_Collections_IEnumerable_GetEnumerator_" data-uid="FellowOakDicom.DicomFragmentSequence.System#Collections#IEnumerable#GetEnumerator*"></a>
   <h4 id="FellowOakDicom_DicomFragmentSequence_System_Collections_IEnumerable_GetEnumerator" data-uid="FellowOakDicom.DicomFragmentSequence.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
   <div class="markdown level1 summary"></div>
@@ -259,27 +269,42 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IComparable</span>
+      <span class="xref">System.IComparable&lt;T&gt;</span>
   </div>
   <div>
-      <span class="xref">IEnumerable&lt;&gt;</span>
+      <span class="xref">System.IComparable</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.EnumerableExtensions.html#FellowOakDicom_EnumerableExtensions_Each__1_System_Collections_Generic_IEnumerable___0__System_Action___0__">EnumerableExtensions.Each&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_Diff__2_System_Collections_Generic_IEnumerable___0__System_Func___0___0___1__">LinqExtensions.Diff&lt;S, T&gt;(IEnumerable&lt;S&gt;, Func&lt;S, S, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_FilterByType__1_System_Collections_Generic_IEnumerable_System_Object__">LinqExtensions.FilterByType&lt;T&gt;(IEnumerable&lt;Object&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
   </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -296,8 +321,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Custom Transfer Syntaxes | Fellow Oak DICOM 5 API </title>
+    <title>Transfer Syntaxes for images | Fellow Oak DICOM 5 API </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Custom Transfer Syntaxes | Fellow Oak DICOM 5 API ">
+    <meta name="title" content="Transfer Syntaxes for images | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -77,190 +77,38 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="transfer-syntaxes-for-images">Transfer Syntaxes for images</h1>
 
-<p><em>This documentation may be outdated and shall be reworked for fo-dicom 5</em></p>
-<table>
+<p>Only for images with transfer syntaxes contained in the following list, extracting the pixel data is supported in fo-dicom.core.</p>
+<table class="table">
 <thead>
 <tr>
-<th>Name</th>
-<th>UID</th>
-<th style="text-align: center;">Desktop<sup>1</sup></th>
-<th style="text-align: center;">Universal<sup>2</sup></th>
-<th style="text-align: center;">.NET Core</th>
-<th style="text-align: center;">Android</th>
-<th style="text-align: center;"> iOS </th>
-<th style="text-align: center;">Mono</th>
-<th style="text-align: center;">Unity</th>
-<th>Name</th>
+<th>Transfer Syntax UID</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Implicit VR Little Endian<sup>3</sup></td>
 <td>1.2.840.10008.1.2</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
 <td>Implicit VR Little Endian</td>
 </tr>
 <tr>
-<td>Explicit VR Little Endian</td>
 <td>1.2.840.10008.1.2.1</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td>Explicit VR Little Endian</td>
+<td>Explicit VR Little EndianExplicit VR Little Endian</td>
 </tr>
 <tr>
-<td>Deflated Explicit VR Little Endian</td>
 <td>1.2.840.10008.1.2.1.99</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;"></td>
 <td>Deflated Explicit VR Little Endian</td>
 </tr>
 <tr>
-<td>Explicit VR Big Endian</td>
 <td>1.2.840.10008.1.2.2</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
 <td>Explicit VR Big Endian</td>
-</tr>
-<tr>
-<td>JPEG Baseline (Process 1)<sup>4</sup></td>
-<td>1.2.840.10008.1.2.4.50</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;"></td>
-<td>JPEG Baseline (Process 1)</td>
-</tr>
-<tr>
-<td>JPEG Baseline (Processes 2 &amp; 4)<sup>5</sup></td>
-<td>1.2.840.10008.1.2.4.51</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">8‑bit</td>
-<td style="text-align: center;">8‑bit</td>
-<td style="text-align: center;">8‑bit</td>
-<td style="text-align: center;">8‑bit</td>
-<td style="text-align: center;"></td>
-<td>JPEG Baseline (Processes 2 &amp; 4)</td>
-</tr>
-<tr>
-<td>JPEG Lossless, Nonhierarchical (Process 14)</td>
-<td>1.2.840.10008.1.2.4.57</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td>JPEG Lossless, Nonhierarchical (Process 14)</td>
-</tr>
-<tr>
-<td>JPEG Lossless, Nonhierarchical, First-Order Prediction (Process 14 [SV1])<sup>6</sup></td>
-<td>1.2.840.10008.1.2.4.70</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td>JPEG Lossless, Nonhierarchical, First-Order Prediction (Process 14 [SV1])</td>
-</tr>
-<tr>
-<td>JPEG-LS Lossless Image Compression</td>
-<td>1.2.840.10008.1.2.4.80</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td>JPEG-LS Lossless Image Compression</td>
-</tr>
-<tr>
-<td>JPEG-LS Lossy (Near-Lossless) Image Compression</td>
-<td>1.2.840.10008.1.2.4.81</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td>JPEG-LS Lossy (Near-Lossless) Image Compression</td>
-</tr>
-<tr>
-<td>JPEG 2000 Image Compression (Lossless Only)</td>
-<td>1.2.840.10008.1.2.4.90</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">8‑bit</td>
-<td style="text-align: center;">8‑bit</td>
-<td style="text-align: center;">8‑bit</td>
-<td style="text-align: center;">8‑bit</td>
-<td style="text-align: center;"></td>
-<td>JPEG 2000 Image Compression (Lossless Only)</td>
-</tr>
-<tr>
-<td>JPEG 2000 Image Compression</td>
-<td>1.2.840.10008.1.2.4.91</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">8‑bit</td>
-<td style="text-align: center;">8‑bit</td>
-<td style="text-align: center;">8‑bit</td>
-<td style="text-align: center;">8‑bit</td>
-<td style="text-align: center;"></td>
-<td>JPEG 2000 Image Compression</td>
-</tr>
-<tr>
-<td>RLE Lossless</td>
-<td>1.2.840.10008.1.2.5</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td style="text-align: center;">✔️</td>
-<td>RLE Lossless</td>
 </tr>
 </tbody>
 </table>
-<p><sup>1</sup><em>.NET Framework</em> package<br>
-<sup>2</sup><em>Universal Windows Platform</em> (UWP), Windows 10 package<br>
-<sup>3</sup>Default Transfer Syntax for DICOM<br>
-<sup>4</sup>Default Transfer Syntax for Lossy JPEG 8-bit Image Compression<br>
-<sup>5</sup>Default Transfer Syntax for Lossy JPEG 12-bit Image Compression (Process 4 only)<br>
-<sup>6</sup>SV1 = Selection Value 1; Default Transfer Syntax for Lossless JPEG Image Compression</p>
+<p>For other Transfer Syntaxes, an additional package is required. Efferent Health is maintaining a cross-platform codec package for fo-dicom. See <a href="https://github.com/Efferent-Health/fo-dicom.Codecs">Fo-Dicom.Codec</a> to see details about supported Transfer Syntaxes.</p>
 <h1 id="custom-transfer-syntaxes">Custom Transfer Syntaxes</h1>
-<p>Since <strong>version 4.0.1</strong> and highter fo-dicom supports custom Transfer Syntaxes. If a DICOM image with a custom / unknown Transfer Syntax is received or opened then fo-dicom assumes that it is</p>
+<p>fo-dicom supports custom Transfer Syntaxes. If a DICOM image with a custom / unknown Transfer Syntax is received or opened then fo-dicom assumes that it is</p>
 <ul>
 <li>Little Endian</li>
 <li>Explicit VR</li>
@@ -273,13 +121,6 @@ If there is a custom Transfer Syntax that does not fit the default parameters, t
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/fo-dicom/fo-dicom/blob/development/Documentation/v5/usage/xfer_syntaxes.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -296,8 +137,8 @@ If there is a custom Transfer Syntax that does not fit the default parameters, t
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

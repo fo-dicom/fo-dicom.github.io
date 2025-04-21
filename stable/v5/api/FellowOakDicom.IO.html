@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -119,6 +119,11 @@
       <section></section>
       <h4><a class="xref" href="FellowOakDicom.IO.PinnedIntArray.html">PinnedIntArray</a></h4>
       <section></section>
+      <h4><a class="xref" href="FellowOakDicom.IO.ReadBufferedStream.html">ReadBufferedStream</a></h4>
+      <section><p>This class is a buffered read-only wrapper around another stream.
+The parser requires to seek within the stream, so when reading from an unseekable stream, such a buffer is necessary.
+Because the parser does not jump very wide, a small buffer is just fine.</p>
+</section>
       <h4><a class="xref" href="FellowOakDicom.IO.StreamByteSource.html">StreamByteSource</a></h4>
       <section><p>Stream byte source for reading.</p>
 </section>
@@ -133,9 +138,6 @@
 </section>
       <h4><a class="xref" href="FellowOakDicom.IO.TemporaryFileRemover.html">TemporaryFileRemover</a></h4>
       <section><p>Support class for removing temporary files, with repeated attempts if required.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.UnseekableStreamByteSource.html">UnseekableStreamByteSource</a></h4>
-      <section><p>Stream byte source for reading streams without seek capability.</p>
 </section>
     <h3 id="structs">Structs
   </h3>
@@ -172,10 +174,6 @@
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -192,8 +190,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

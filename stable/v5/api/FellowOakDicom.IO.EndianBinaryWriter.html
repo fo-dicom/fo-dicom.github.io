@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,112 +88,105 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">EndianBinaryWriter</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.IO.BinaryWriter</span></div>
+    <div class="level2"><span class="xref">EndianBinaryWriter</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Null</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.OutStream</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Close()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Flush()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Seek(System.Int32, System.IO.SeekOrigin)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Write(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Write(System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Write(System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Write(System.Byte[], System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Write(System.Char)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Write(System.Char[])</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Write(System.Char[], System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Write(System.Decimal)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Write(System.SByte)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Write(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.Write7BitEncodedInt(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.BinaryWriter.BaseStream</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.IO.html">FellowOakDicom.IO</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IO_EndianBinaryWriter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EndianBinaryWriter : BinaryWriter</code></pre>
+    <pre><code class="lang-csharp hljs">public class EndianBinaryWriter : BinaryWriter, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_EndianBinaryWriter__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_Encoding_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(Stream,Encoding,FellowOakDicom.IO.Endian,System.Boolean)">EndianBinaryWriter(Stream, Encoding, Endian, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EndianBinaryWriter(Stream output, Encoding encoding, Endian endian, bool leaveOpen)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">output</span></td>
-        <td><p>Stream to which output should be written.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Encoding</span></td>
-        <td><span class="parametername">encoding</span></td>
-        <td><p>Output encoding.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.IO.Endian.html">Endian</a></td>
-        <td><span class="parametername">endian</span></td>
-        <td><p>Endianness of the output.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">leaveOpen</span></td>
-        <td><p><span class="xref">true</span> to leave the stream open after the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> object is disposed; otherwise, <span class="xref">false</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_EndianBinaryWriter__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_Encoding_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(Stream,Encoding,System.Boolean)">EndianBinaryWriter(Stream, Encoding, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EndianBinaryWriter(Stream output, Encoding encoding, bool leaveOpen)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">output</span></td>
-        <td><p>Stream to which output should be written.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Encoding</span></td>
-        <td><span class="parametername">encoding</span></td>
-        <td><p>Output encoding.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">leaveOpen</span></td>
-        <td><p><span class="xref">true</span> to leave the stream open after the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> object is disposed; otherwise, <span class="xref">false</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_Encoding_System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Uses the endianness of the system.</p>
-</div>
-  
-  
-  <a id="FellowOakDicom_IO_EndianBinaryWriter__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(Stream,FellowOakDicom.IO.Endian,System.Boolean)">EndianBinaryWriter(Stream, Endian, Boolean)</h4>
+  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_System_IO_Stream_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(System.IO.Stream,FellowOakDicom.IO.Endian,System.Boolean)">EndianBinaryWriter(Stream, Endian, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -212,7 +205,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">output</span></td>
         <td><p>Stream to which output should be written.</p>
 </td>
@@ -224,17 +217,15 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">leaveOpen</span></td>
-        <td><p><span class="xref">true</span> to leave the stream open after the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> object is disposed; otherwise, <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> to leave the stream open after the <span class="xref">System.IO.BinaryWriter</span> object is disposed; otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IO_EndianBinaryWriter__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(Stream,System.Boolean)">EndianBinaryWriter(Stream, Boolean)</h4>
+  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_System_IO_Stream_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(System.IO.Stream,System.Boolean)">EndianBinaryWriter(Stream, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -253,26 +244,111 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">output</span></td>
         <td><p>Stream to which output should be written.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">leaveOpen</span></td>
-        <td><p><span class="xref">true</span> to leave the stream open after the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> object is disposed; otherwise, <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> to leave the stream open after the <span class="xref">System.IO.BinaryWriter</span> object is disposed; otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_Stream_System_Boolean__remarks">Remarks</h5>
+  <h5 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_System_IO_Stream_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Uses the endianness of the system.</p>
+</div>
+  <a id="FellowOakDicom_IO_EndianBinaryWriter__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor*"></a>
+  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_System_IO_Stream_System_Text_Encoding_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(System.IO.Stream,System.Text.Encoding,FellowOakDicom.IO.Endian,System.Boolean)">EndianBinaryWriter(Stream, Encoding, Endian, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EndianBinaryWriter(Stream output, Encoding encoding, Endian endian, bool leaveOpen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>Stream to which output should be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Output encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.IO.Endian.html">Endian</a></td>
+        <td><span class="parametername">endian</span></td>
+        <td><p>Endianness of the output.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p><span class="xref">true</span> to leave the stream open after the <span class="xref">System.IO.BinaryWriter</span> object is disposed; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="FellowOakDicom_IO_EndianBinaryWriter__ctor_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor*"></a>
+  <h4 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_System_IO_Stream_System_Text_Encoding_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)">EndianBinaryWriter(Stream, Encoding, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EndianBinaryWriter(Stream output, Encoding encoding, bool leaveOpen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>Stream to which output should be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Output encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p><span class="xref">true</span> to leave the stream open after the <span class="xref">System.IO.BinaryWriter</span> object is disposed; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FellowOakDicom_IO_EndianBinaryWriter__ctor_System_IO_Stream_System_Text_Encoding_System_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Uses the endianness of the system.</p>
 </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_EndianBinaryWriter_Endian_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Endian*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Endian" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Endian">Endian</h4>
   <div class="markdown level1 summary"><p>Gets or sets the endianness of the binary writer.</p>
@@ -299,73 +375,8 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IO_EndianBinaryWriter_Create_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Create_Stream_Encoding_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create(Stream,Encoding,FellowOakDicom.IO.Endian,System.Boolean)">Create(Stream, Encoding, Endian, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Convenience method for creating a sufficient binary writer based on specified <code data-dev-comment-type="paramref" class="paramref">endian</code>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BinaryWriter Create(Stream output, Encoding encoding, Endian endian, bool leaveOpen)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">output</span></td>
-        <td><p>Stream to which output should be written.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Encoding</span></td>
-        <td><span class="parametername">encoding</span></td>
-        <td><p>Output encoding.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.IO.Endian.html">Endian</a></td>
-        <td><span class="parametername">endian</span></td>
-        <td><p>Endianness of the output.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">leaveOpen</span></td>
-        <td><p><span class="xref">true</span> to leave the stream open after the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> object is disposed; otherwise, <span class="xref">false</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">BinaryWriter</span></td>
-        <td><p>Binary writer with desired <code data-dev-comment-type="paramref" class="paramref">endian</code>-</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FellowOakDicom_IO_EndianBinaryWriter_Create_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create*"></a>
-  <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Create_Stream_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create(Stream,FellowOakDicom.IO.Endian,System.Boolean)">Create(Stream, Endian, Boolean)</h4>
+  <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Create_System_IO_Stream_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create(System.IO.Stream,FellowOakDicom.IO.Endian,System.Boolean)">Create(Stream, Endian, Boolean)</h4>
   <div class="markdown level1 summary"><p>Convenience method for creating a sufficient binary writer based on specified <code data-dev-comment-type="paramref" class="paramref">endian</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -384,7 +395,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">output</span></td>
         <td><p>Stream to which output should be written.</p>
 </td>
@@ -396,9 +407,9 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">leaveOpen</span></td>
-        <td><p><span class="xref">true</span> to leave the stream open after the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> object is disposed; otherwise, <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> to leave the stream open after the <span class="xref">System.IO.BinaryWriter</span> object is disposed; otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -413,14 +424,73 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
         <td><p>Binary writer with desired <code data-dev-comment-type="paramref" class="paramref">endian</code>-</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <a id="FellowOakDicom_IO_EndianBinaryWriter_Create_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create*"></a>
+  <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Create_System_IO_Stream_System_Text_Encoding_FellowOakDicom_IO_Endian_System_Boolean_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Create(System.IO.Stream,System.Text.Encoding,FellowOakDicom.IO.Endian,System.Boolean)">Create(Stream, Encoding, Endian, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Convenience method for creating a sufficient binary writer based on specified <code data-dev-comment-type="paramref" class="paramref">endian</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BinaryWriter Create(Stream output, Encoding encoding, Endian endian, bool leaveOpen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>Stream to which output should be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Output encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.IO.Endian.html">Endian</a></td>
+        <td><span class="parametername">endian</span></td>
+        <td><p>Endianness of the output.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p><span class="xref">true</span> to leave the stream open after the <span class="xref">System.IO.BinaryWriter</span> object is disposed; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><p>Binary writer with desired <code data-dev-comment-type="paramref" class="paramref">endian</code>-</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="FellowOakDicom_IO_EndianBinaryWriter_Write_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Write_System_Double_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write(System.Double)">Write(Double)</h4>
   <div class="markdown level1 summary"></div>
@@ -440,14 +510,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryWriter.Write(System.Double)</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryWriter_Write_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Write_System_Int16_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write(System.Int16)">Write(Int16)</h4>
   <div class="markdown level1 summary"></div>
@@ -467,14 +537,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">Int16</a></td>
+        <td><span class="xref">System.Int16</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryWriter.Write(System.Int16)</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryWriter_Write_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Write_System_Int32_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write(System.Int32)">Write(Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -494,14 +564,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryWriter.Write(System.Int32)</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryWriter_Write_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Write_System_Int64_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write(System.Int64)">Write(Int64)</h4>
   <div class="markdown level1 summary"></div>
@@ -521,14 +591,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryWriter.Write(System.Int64)</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryWriter_Write_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Write_System_Single_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write(System.Single)">Write(Single)</h4>
   <div class="markdown level1 summary"></div>
@@ -548,14 +618,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryWriter.Write(System.Single)</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryWriter_Write_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Write_System_UInt16_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write(System.UInt16)">Write(UInt16)</h4>
   <div class="markdown level1 summary"></div>
@@ -575,14 +645,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="xref">System.UInt16</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryWriter.Write(System.UInt16)</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryWriter_Write_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Write_System_UInt32_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write(System.UInt32)">Write(UInt32)</h4>
   <div class="markdown level1 summary"></div>
@@ -602,14 +672,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryWriter.Write(System.UInt32)</span></div>
   <a id="FellowOakDicom_IO_EndianBinaryWriter_Write_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write*"></a>
   <h4 id="FellowOakDicom_IO_EndianBinaryWriter_Write_System_UInt64_" data-uid="FellowOakDicom.IO.EndianBinaryWriter.Write(System.UInt64)">Write(UInt64)</h4>
   <div class="markdown level1 summary"></div>
@@ -629,21 +699,27 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.BinaryWriter.Write(System.UInt64)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -660,8 +736,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

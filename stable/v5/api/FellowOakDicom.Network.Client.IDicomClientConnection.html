@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -85,16 +85,20 @@
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Client.html">FellowOakDicom.Network.Client</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_Client_IDicomClientConnection_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IDicomClientConnection</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IDicomClientConnection : IDisposable</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_CanStillProcessPDataTF_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.CanStillProcessPDataTF*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_CanStillProcessPDataTF" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.CanStillProcessPDataTF">CanStillProcessPDataTF</h4>
   <div class="markdown level1 summary"><p>Gets whether or not the connection can still process P-DATA-TF
@@ -116,13 +120,11 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_IsSendNextMessageRequired_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.IsSendNextMessageRequired*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_IsSendNextMessageRequired" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.IsSendNextMessageRequired">IsSendNextMessageRequired</h4>
   <div class="markdown level1 summary"><p>Gets whether or not SendNextMessage is required, i.e. if any requests still have to be sent and there is no send loop currently running.</p>
@@ -142,13 +144,11 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_IsSendQueueEmpty_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.IsSendQueueEmpty*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_IsSendQueueEmpty" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.IsSendQueueEmpty">IsSendQueueEmpty</h4>
   <div class="markdown level1 summary"><p>Gets whether or not the send queue is empty, i.e. if all requests are sent <em>and</em> handled</p>
@@ -168,13 +168,11 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_Listener_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.Listener*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_Listener" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.Listener">Listener</h4>
   <div class="markdown level1 summary"><p>Gets the long running listener task that waits for incoming DICOM communication from the server.</p>
@@ -194,13 +192,11 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_NetworkStream_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.NetworkStream*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_NetworkStream" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.NetworkStream">NetworkStream</h4>
   <div class="markdown level1 summary"><p>Gets the network stream of this connection</p>
@@ -227,10 +223,8 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_OnConnectionClosedAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnConnectionClosedAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnConnectionClosedAsync_Exception_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnConnectionClosedAsync(Exception)">OnConnectionClosedAsync(Exception)</h4>
+  <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnConnectionClosedAsync_System_Exception_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnConnectionClosedAsync(System.Exception)">OnConnectionClosedAsync(Exception)</h4>
   <div class="markdown level1 summary"><p>Callback when connection is closed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -249,7 +243,7 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Exception</span></td>
+        <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">exception</span></td>
         <td><p>Exception, if any, that forced connection to close.</p>
 </td>
@@ -266,13 +260,11 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_OnCStoreRequestAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnCStoreRequestAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnCStoreRequestAsync_FellowOakDicom_Network_DicomCStoreRequest_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnCStoreRequestAsync(FellowOakDicom.Network.DicomCStoreRequest)">OnCStoreRequestAsync(DicomCStoreRequest)</h4>
   <div class="markdown level1 summary"><p>Callback for handling a client related C-STORE request, typically emanating from the client's C-GET request.</p>
@@ -310,14 +302,12 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a>&gt;</td>
         <td><p>The <a class="xref" href="FellowOakDicom.Network.DicomCStoreResponse.html">DicomCStoreResponse</a> related to the C-STORE <code data-dev-comment-type="paramref" class="paramref">request</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_OnNEventReportRequestAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnNEventReportRequestAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnNEventReportRequestAsync_FellowOakDicom_Network_DicomNEventReportRequest_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnNEventReportRequestAsync(FellowOakDicom.Network.DicomNEventReportRequest)">OnNEventReportRequestAsync(DicomNEventReportRequest)</h4>
   <div class="markdown level1 summary"><p>Callback for handling a client related N-EVENT-REPORT-RQ request, typically emanating from the client's N-ACTION request.</p>
@@ -355,14 +345,12 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a>&gt;</td>
         <td><p>The <a class="xref" href="FellowOakDicom.Network.DicomNEventReportResponse.html">DicomNEventReportResponse</a> related to the N-EVENT-REPORT-RQ <code data-dev-comment-type="paramref" class="paramref">request</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAbortAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnReceiveAbortAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAbortAsync_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnReceiveAbortAsync(FellowOakDicom.Network.DicomAbortSource,FellowOakDicom.Network.DicomAbortReason)">OnReceiveAbortAsync(DicomAbortSource, DicomAbortReason)</h4>
   <div class="markdown level1 summary"><p>Callback on receiving an abort message.</p>
@@ -406,13 +394,11 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAssociationAcceptAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnReceiveAssociationAcceptAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAssociationAcceptAsync_FellowOakDicom_Network_DicomAssociation_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnReceiveAssociationAcceptAsync(FellowOakDicom.Network.DicomAssociation)">OnReceiveAssociationAcceptAsync(DicomAssociation)</h4>
   <div class="markdown level1 summary"><p>Callback for handling association accept scenarios.</p>
@@ -450,13 +436,11 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAssociationRejectAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnReceiveAssociationRejectAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAssociationRejectAsync_FellowOakDicom_Network_DicomRejectResult_FellowOakDicom_Network_DicomRejectSource_FellowOakDicom_Network_DicomRejectReason_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnReceiveAssociationRejectAsync(FellowOakDicom.Network.DicomRejectResult,FellowOakDicom.Network.DicomRejectSource,FellowOakDicom.Network.DicomRejectReason)">OnReceiveAssociationRejectAsync(DicomRejectResult, DicomRejectSource, DicomRejectReason)</h4>
   <div class="markdown level1 summary"><p>Callback for handling association reject scenarios.</p>
@@ -506,13 +490,11 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAssociationReleaseResponseAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnReceiveAssociationReleaseResponseAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnReceiveAssociationReleaseResponseAsync" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnReceiveAssociationReleaseResponseAsync">OnReceiveAssociationReleaseResponseAsync()</h4>
   <div class="markdown level1 summary"><p>Callback on response from an association release.</p>
@@ -532,13 +514,11 @@ In this scenario, the connection can only be used for control PDUs anymore</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestCompletedAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnRequestCompletedAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestCompletedAsync_FellowOakDicom_Network_DicomRequest_FellowOakDicom_Network_DicomResponse_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnRequestCompletedAsync(FellowOakDicom.Network.DicomRequest,FellowOakDicom.Network.DicomResponse)">OnRequestCompletedAsync(DicomRequest, DicomResponse)</h4>
   <div class="markdown level1 summary"><p>Callback when a request has been completed (a final response was received, causing it to be removed from the pending queue)
@@ -583,13 +563,11 @@ One request can only receive one completed response</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestPendingAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnRequestPendingAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestPendingAsync_FellowOakDicom_Network_DicomRequest_FellowOakDicom_Network_DicomResponse_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnRequestPendingAsync(FellowOakDicom.Network.DicomRequest,FellowOakDicom.Network.DicomResponse)">OnRequestPendingAsync(DicomRequest, DicomResponse)</h4>
   <div class="markdown level1 summary"><p>Callback when a request has received a pending response (this is not the final response, the request is still in the pending queue)
@@ -634,15 +612,13 @@ One request can receive multiple pending responses</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestTimedOutAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnRequestTimedOutAsync*"></a>
-  <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestTimedOutAsync_FellowOakDicom_Network_DicomRequest_TimeSpan_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnRequestTimedOutAsync(FellowOakDicom.Network.DicomRequest,TimeSpan)">OnRequestTimedOutAsync(DicomRequest, TimeSpan)</h4>
+  <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_OnRequestTimedOutAsync_FellowOakDicom_Network_DicomRequest_System_TimeSpan_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.OnRequestTimedOutAsync(FellowOakDicom.Network.DicomRequest,System.TimeSpan)">OnRequestTimedOutAsync(DicomRequest, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Callback when a request has timed out (no final response was received, but the timeout was exceeded and the request has been removed from the pending queue)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -667,7 +643,7 @@ One request can receive multiple pending responses</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">timeout</span></td>
         <td><p>The timeout duration that has been exceeded</p>
 </td>
@@ -684,13 +660,11 @@ One request can receive multiple pending responses</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_SendAbortAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.SendAbortAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_SendAbortAsync_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.SendAbortAsync(FellowOakDicom.Network.DicomAbortSource,FellowOakDicom.Network.DicomAbortReason)">SendAbortAsync(DicomAbortSource, DicomAbortReason)</h4>
   <div class="markdown level1 summary"><p>Send abort request.</p>
@@ -734,13 +708,11 @@ One request can receive multiple pending responses</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_SendAssociationReleaseRequestAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.SendAssociationReleaseRequestAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_SendAssociationReleaseRequestAsync" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.SendAssociationReleaseRequestAsync">SendAssociationReleaseRequestAsync()</h4>
   <div class="markdown level1 summary"><p>Send association release request.</p>
@@ -760,13 +732,11 @@ One request can receive multiple pending responses</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_SendAssociationRequestAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.SendAssociationRequestAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_SendAssociationRequestAsync_FellowOakDicom_Network_DicomAssociation_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.SendAssociationRequestAsync(FellowOakDicom.Network.DicomAssociation)">SendAssociationRequestAsync(DicomAssociation)</h4>
   <div class="markdown level1 summary"><p>Send association request.</p>
@@ -804,13 +774,11 @@ One request can receive multiple pending responses</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_SendNextMessageAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.SendNextMessageAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_SendNextMessageAsync" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.SendNextMessageAsync">SendNextMessageAsync()</h4>
   <div class="markdown level1 summary"><p>Sometimes, DICOM requests can be enqueued but not immediately sent. This can happen for the following reasons:
@@ -832,13 +800,11 @@ One request can receive multiple pending responses</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_SendRequestAsync_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.SendRequestAsync*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_SendRequestAsync_FellowOakDicom_Network_DicomRequest_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.SendRequestAsync(FellowOakDicom.Network.DicomRequest)">SendRequestAsync(DicomRequest)</h4>
   <div class="markdown level1 summary"><p>Send request from service.</p>
@@ -876,13 +842,11 @@ One request can receive multiple pending responses</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_Client_IDicomClientConnection_StartListener_" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.StartListener*"></a>
   <h4 id="FellowOakDicom_Network_Client_IDicomClientConnection_StartListener" data-uid="FellowOakDicom.Network.Client.IDicomClientConnection.StartListener">StartListener()</h4>
   <div class="markdown level1 summary"><p>Opens a long running listener task that waits for incoming DICOM communication</p>
@@ -892,15 +856,15 @@ One request can receive multiple pending responses</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void StartListener()</code></pre>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -917,8 +881,8 @@ One request can receive multiple pending responses</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

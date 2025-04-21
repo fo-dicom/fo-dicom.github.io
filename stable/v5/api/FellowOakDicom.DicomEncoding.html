@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,45 +88,43 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DicomEncoding</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.html">FellowOakDicom</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_DicomEncoding_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class DicomEncoding</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
-  
-  
   <h4 id="FellowOakDicom_DicomEncoding_Default" data-uid="FellowOakDicom.DicomEncoding.Default">Default</h4>
-  <div class="markdown level1 summary"><p>Default DICOM encoding.</p>
+  <div class="markdown level1 summary"><p>Default encoding used in DICOM.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -143,13 +141,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <h4 id="FellowOakDicom_DicomEncoding_DefaultArray" data-uid="FellowOakDicom.DicomEncoding.DefaultArray">DefaultArray</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -167,17 +163,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Encoding</span>[]</td>
+        <td><span class="xref">System.Text.Encoding</span>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomEncoding_GetCharset_" data-uid="FellowOakDicom.DicomEncoding.GetCharset*"></a>
-  <h4 id="FellowOakDicom_DicomEncoding_GetCharset_Encoding_System_Boolean_" data-uid="FellowOakDicom.DicomEncoding.GetCharset(Encoding,System.Boolean)">GetCharset(Encoding, Boolean)</h4>
+  <h4 id="FellowOakDicom_DicomEncoding_GetCharset_System_Text_Encoding_System_Boolean_" data-uid="FellowOakDicom.DicomEncoding.GetCharset(System.Text.Encoding,System.Boolean)">GetCharset(Encoding, Boolean)</h4>
   <div class="markdown level1 summary"><p>Get DICOM character set from encoding.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -196,13 +190,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>Encoding.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">extended</span></td>
         <td><p>If true, the extended version of the character set is returned.</p>
 </td>
@@ -219,7 +213,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><p>The Specific Character Set as defined in DICOM.</p>
 </td>
       </tr>
@@ -235,17 +229,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><span class="xref">System.ArgumentException</span></td>
         <td><p>No character set found for the encoding.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomEncoding_GetEncoding_" data-uid="FellowOakDicom.DicomEncoding.GetEncoding*"></a>
   <h4 id="FellowOakDicom_DicomEncoding_GetEncoding_System_String_" data-uid="FellowOakDicom.DicomEncoding.GetEncoding(System.String)">GetEncoding(String)</h4>
-  <div class="markdown level1 summary"><p>Get encoding from charset.</p>
+  <div class="markdown level1 summary"><p>Get encoding from Specific Character Set attribute value.
+Tolerates some common misspellings.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -263,9 +256,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">charset</span></td>
-        <td><p>Charset.</p>
+        <td><p>DICOM character set.</p>
 </td>
       </tr>
     </tbody>
@@ -280,17 +273,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Encoding</span></td>
-        <td><p>DICOM encoding.</p>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><p>String encoding.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomEncoding_GetEncodings_" data-uid="FellowOakDicom.DicomEncoding.GetEncodings*"></a>
   <h4 id="FellowOakDicom_DicomEncoding_GetEncodings_System_String___" data-uid="FellowOakDicom.DicomEncoding.GetEncodings(System.String[])">GetEncodings(String[])</h4>
-  <div class="markdown level1 summary"><p>Get multiple encodings from charsets.</p>
+  <div class="markdown level1 summary"><p>Get multiple encodings from Specific Character Set attribute values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -308,7 +299,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="xref">System.String</span>[]</td>
         <td><span class="parametername">charsets</span></td>
         <td><p>List of character sets.</p>
 </td>
@@ -325,14 +316,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Encoding</span>[]</td>
-        <td><p>DICOM encodings.</p>
+        <td><span class="xref">System.Text.Encoding</span>[]</td>
+        <td><p>String encodings.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomEncoding_RegisterEncoding_" data-uid="FellowOakDicom.DicomEncoding.RegisterEncoding*"></a>
   <h4 id="FellowOakDicom_DicomEncoding_RegisterEncoding_System_String_System_String_" data-uid="FellowOakDicom.DicomEncoding.RegisterEncoding(System.String,System.String)">RegisterEncoding(String, String)</h4>
   <div class="markdown level1 summary"><p>Register an encoding for a specific character set value.
@@ -355,14 +344,14 @@ Can also be used to map an existing character set to another encoding.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">charset</span></td>
         <td><p>The name of the character set as given
 in the Specific Character Set DICOM attribute.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>The name of the character encoding used to decode the DICOM tag values
 as defined in the .NET framework.</p>
@@ -375,10 +364,6 @@ as defined in the .NET framework.</p>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -395,8 +380,8 @@ as defined in the .NET framework.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,12 +87,21 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></div>
     <div class="level2"><span class="xref">DicomCodeItem</span></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_CompareInstancesByContent">DicomDataset.CompareInstancesByContent</a>
+    </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_InternalTransferSyntax">DicomDataset.InternalTransferSyntax</a>
     </div>
@@ -154,16 +163,25 @@
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_TryGetString_FellowOakDicom_DicomTag_System_String__">DicomDataset.TryGetString(DicomTag, String)</a>
     </div>
     <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_GetPrivateTag_FellowOakDicom_DicomTag_">DicomDataset.GetPrivateTag(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Contains_FellowOakDicom_DicomTag_">DicomDataset.Contains(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_FunctionalGroupValues_System_Int32_">DicomDataset.FunctionalGroupValues(Int32)</a>
+    </div>
+    <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Validate">DicomDataset.Validate()</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_GetPrivateTag_FellowOakDicom_DicomTag_">DicomDataset.GetPrivateTag(DicomTag)</a>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add_FellowOakDicom_DicomItem_">DicomDataset.Add(DicomItem)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add_FellowOakDicom_DicomItem___">DicomDataset.Add(DicomItem[])</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add_IEnumerable_FellowOakDicom_DicomItem__">DicomDataset.Add(IEnumerable&lt;DicomItem&gt;)</a>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add_System_Collections_Generic_IEnumerable_FellowOakDicom_DicomItem__">DicomDataset.Add(IEnumerable&lt;DicomItem&gt;)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add__1_FellowOakDicom_DicomTag___0___">DicomDataset.Add&lt;T&gt;(DicomTag, T[])</a>
@@ -178,7 +196,7 @@
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate_FellowOakDicom_DicomItem_">DicomDataset.AddOrUpdate(DicomItem)</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate_IEnumerable_FellowOakDicom_DicomItem__">DicomDataset.AddOrUpdate(IEnumerable&lt;DicomItem&gt;)</a>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate_System_Collections_Generic_IEnumerable_FellowOakDicom_DicomItem__">DicomDataset.AddOrUpdate(IEnumerable&lt;DicomItem&gt;)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate__1_FellowOakDicom_DicomTag___0___">DicomDataset.AddOrUpdate&lt;T&gt;(DicomTag, T[])</a>
@@ -187,13 +205,10 @@
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate__1_FellowOakDicom_DicomVR_FellowOakDicom_DicomTag___0___">DicomDataset.AddOrUpdate&lt;T&gt;(DicomVR, DicomTag, T[])</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Contains_FellowOakDicom_DicomTag_">DicomDataset.Contains(DicomTag)</a>
-    </div>
-    <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Remove_FellowOakDicom_DicomTag___">DicomDataset.Remove(DicomTag[])</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Remove_Func_FellowOakDicom_DicomItem_System_Boolean__">DicomDataset.Remove(Func&lt;DicomItem, Boolean&gt;)</a>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Remove_System_Func_FellowOakDicom_DicomItem_System_Boolean__">DicomDataset.Remove(Func&lt;DicomItem, Boolean&gt;)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Clear">DicomDataset.Clear()</a>
@@ -216,17 +231,30 @@
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_ValidateTag_FellowOakDicom_DicomTag_">DicomDataset.ValidateTag(DicomTag)</a>
     </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Equals_FellowOakDicom_DicomDataset_">DicomDataset.Equals(DicomDataset)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.StructuredReport.html">FellowOakDicom.StructuredReport</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_StructuredReport_DicomCodeItem_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomCodeItem : DicomDataset</code></pre>
+    <pre><code class="lang-csharp hljs">public class DicomCodeItem : DicomDataset, IEnumerable&lt;DicomItem&gt;, IEnumerable, IEquatable&lt;DicomDataset&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_StructuredReport_DicomCodeItem__ctor_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.#ctor*"></a>
   <h4 id="FellowOakDicom_StructuredReport_DicomCodeItem__ctor_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.#ctor(FellowOakDicom.DicomDataset)">DicomCodeItem(DicomDataset)</h4>
   <div class="markdown level1 summary"></div>
@@ -252,8 +280,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_StructuredReport_DicomCodeItem__ctor_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.#ctor*"></a>
   <h4 id="FellowOakDicom_StructuredReport_DicomCodeItem__ctor_FellowOakDicom_DicomSequence_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.#ctor(FellowOakDicom.DicomSequence)">DicomCodeItem(DicomSequence)</h4>
   <div class="markdown level1 summary"></div>
@@ -279,8 +305,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_StructuredReport_DicomCodeItem__ctor_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.#ctor*"></a>
   <h4 id="FellowOakDicom_StructuredReport_DicomCodeItem__ctor_System_String_System_String_System_String_System_String_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.#ctor(System.String,System.String,System.String,System.String)">DicomCodeItem(String, String, String, String)</h4>
   <div class="markdown level1 summary"></div>
@@ -300,22 +324,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">scheme</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">meaning</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">version</span></td>
         <td></td>
       </tr>
@@ -323,8 +347,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_StructuredReport_DicomCodeItem_Meaning_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.Meaning*"></a>
   <h4 id="FellowOakDicom_StructuredReport_DicomCodeItem_Meaning" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.Meaning">Meaning</h4>
   <div class="markdown level1 summary"></div>
@@ -343,13 +365,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_StructuredReport_DicomCodeItem_Scheme_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.Scheme*"></a>
   <h4 id="FellowOakDicom_StructuredReport_DicomCodeItem_Scheme" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.Scheme">Scheme</h4>
   <div class="markdown level1 summary"></div>
@@ -368,13 +388,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_StructuredReport_DicomCodeItem_Value_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.Value*"></a>
   <h4 id="FellowOakDicom_StructuredReport_DicomCodeItem_Value" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.Value">Value</h4>
   <div class="markdown level1 summary"></div>
@@ -393,13 +411,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_StructuredReport_DicomCodeItem_Version_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.Version*"></a>
   <h4 id="FellowOakDicom_StructuredReport_DicomCodeItem_Version" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.Version">Version</h4>
   <div class="markdown level1 summary"></div>
@@ -418,15 +434,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_StructuredReport_DicomCodeItem_Equals_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.Equals*"></a>
   <h4 id="FellowOakDicom_StructuredReport_DicomCodeItem_Equals_System_Object_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.Equals(System.Object)">Equals(Object)</h4>
   <div class="markdown level1 summary"></div>
@@ -446,7 +460,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
         <td></td>
       </tr>
@@ -462,13 +476,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Equals_System_Object_">DicomDataset.Equals(Object)</a></div>
   <a id="FellowOakDicom_StructuredReport_DicomCodeItem_GetHashCode_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.GetHashCode*"></a>
   <h4 id="FellowOakDicom_StructuredReport_DicomCodeItem_GetHashCode" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"></div>
@@ -487,13 +501,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_GetHashCode">DicomDataset.GetHashCode()</a></div>
   <a id="FellowOakDicom_StructuredReport_DicomCodeItem_ToString_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.ToString*"></a>
   <h4 id="FellowOakDicom_StructuredReport_DicomCodeItem_ToString" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
@@ -512,7 +526,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -521,8 +535,6 @@
   <div><a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_ToString">DicomDataset.ToString()</a></div>
   <h3 id="operators">Operators
   </h3>
-  
-  
   <a id="FellowOakDicom_StructuredReport_DicomCodeItem_op_Equality_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.op_Equality*"></a>
   <h4 id="FellowOakDicom_StructuredReport_DicomCodeItem_op_Equality_FellowOakDicom_StructuredReport_DicomCodeItem_FellowOakDicom_StructuredReport_DicomCodeItem_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.op_Equality(FellowOakDicom.StructuredReport.DicomCodeItem,FellowOakDicom.StructuredReport.DicomCodeItem)">Equality(DicomCodeItem, DicomCodeItem)</h4>
   <div class="markdown level1 summary"></div>
@@ -563,13 +575,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_StructuredReport_DicomCodeItem_op_Inequality_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.op_Inequality*"></a>
   <h4 id="FellowOakDicom_StructuredReport_DicomCodeItem_op_Inequality_FellowOakDicom_StructuredReport_DicomCodeItem_FellowOakDicom_StructuredReport_DicomCodeItem_" data-uid="FellowOakDicom.StructuredReport.DicomCodeItem.op_Inequality(FellowOakDicom.StructuredReport.DicomCodeItem,FellowOakDicom.StructuredReport.DicomCodeItem)">Inequality(DicomCodeItem, DicomCodeItem)</h4>
   <div class="markdown level1 summary"></div>
@@ -610,20 +620,87 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_Clone_FellowOakDicom_DicomDataset_">DicomDatasetExtensions.Clone(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_GetDateTime_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTag_FellowOakDicom_DicomTag_">DicomDatasetExtensions.GetDateTime(DicomDataset, DicomTag, DicomTag)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_GetDateTimeOffset_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTag_FellowOakDicom_DicomTag_FellowOakDicom_DicomDataset_">DicomDatasetExtensions.GetDateTimeOffset(DicomDataset, DicomTag, DicomTag, DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_EnumerateMasked_FellowOakDicom_DicomDataset_FellowOakDicom_DicomMaskedTag_">DicomDatasetExtensions.EnumerateMasked(DicomDataset, DicomMaskedTag)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_EnumerateGroup_FellowOakDicom_DicomDataset_System_UInt16_">DicomDatasetExtensions.EnumerateGroup(DicomDataset, UInt16)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_NotValidated_FellowOakDicom_DicomDataset_">DicomDatasetExtensions.NotValidated(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_Validated_FellowOakDicom_DicomDataset_">DicomDatasetExtensions.Validated(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.EnumerableExtensions.html#FellowOakDicom_EnumerableExtensions_Each__1_System_Collections_Generic_IEnumerable___0__System_Action___0__">EnumerableExtensions.Each&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.ConsoleExtensions.html#FellowOakDicom_Log_ConsoleExtensions_WriteToConsole_FellowOakDicom_DicomDataset_">ConsoleExtensions.WriteToConsole(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.Extensions.html#FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomDataset_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel_">Extensions.WriteToLog(DicomDataset, ILogger, LogLevel)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.Extensions.html#FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomDataset_FellowOakDicom_Log_ILogger_FellowOakDicom_Log_LogLevel_">Extensions.WriteToLog(DicomDataset, ILogger, LogLevel)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.Extensions.html#FellowOakDicom_Log_Extensions_WriteToString_FellowOakDicom_DicomDataset_">Extensions.WriteToString(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Serialization.DicomXML.html#FellowOakDicom_Serialization_DicomXML_WriteToXml_FellowOakDicom_DicomDataset_">DicomXML.WriteToXml(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_Diff__2_System_Collections_Generic_IEnumerable___0__System_Func___0___0___1__">LinqExtensions.Diff&lt;S, T&gt;(IEnumerable&lt;S&gt;, Func&lt;S, S, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_FilterByType__1_System_Collections_Generic_IEnumerable_System_Object__">LinqExtensions.FilterByType&lt;T&gt;(IEnumerable&lt;Object&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Imaging.Codec.DicomCodecExtensions.html#FellowOakDicom_Imaging_Codec_DicomCodecExtensions_Clone_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTransferSyntax_FellowOakDicom_Imaging_Codec_DicomCodecParams_">DicomCodecExtensions.Clone(DicomDataset, DicomTransferSyntax, DicomCodecParams)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.IO.Writer.DicomDatasetExtensions.html#FellowOakDicom_IO_Writer_DicomDatasetExtensions_RecalculateGroupLength_FellowOakDicom_DicomDataset_System_UInt16_System_Boolean_">DicomDatasetExtensions.RecalculateGroupLength(DicomDataset, UInt16, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.IO.Writer.DicomDatasetExtensions.html#FellowOakDicom_IO_Writer_DicomDatasetExtensions_RecalculateGroupLengths_FellowOakDicom_DicomDataset_System_Boolean_">DicomDatasetExtensions.RecalculateGroupLengths(DicomDataset, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.IO.Writer.DicomDatasetExtensions.html#FellowOakDicom_IO_Writer_DicomDatasetExtensions_RemoveGroupLengths_FellowOakDicom_DicomDataset_System_Boolean_">DicomDatasetExtensions.RemoveGroupLengths(DicomDataset, Boolean)</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -640,8 +717,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

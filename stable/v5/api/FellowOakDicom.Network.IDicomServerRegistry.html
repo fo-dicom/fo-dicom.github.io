@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,15 +87,13 @@
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_IDicomServerRegistry_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IDicomServerRegistry</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServerRegistry_Get_" data-uid="FellowOakDicom.Network.IDicomServerRegistry.Get*"></a>
   <h4 id="FellowOakDicom_Network_IDicomServerRegistry_Get_System_Int32_System_String_" data-uid="FellowOakDicom.Network.IDicomServerRegistry.Get(System.Int32,System.String)">Get(Int32, String)</h4>
   <div class="markdown level1 summary"><p>Gets a running DICOM server listening on the provided port, or NULL if no such DICOM server exists.</p>
@@ -116,13 +114,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">port</span></td>
         <td><p>The port</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">ipAddress</span></td>
         <td><p>The IP address</p>
 </td>
@@ -145,8 +143,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServerRegistry_IsAvailable_" data-uid="FellowOakDicom.Network.IDicomServerRegistry.IsAvailable*"></a>
   <h4 id="FellowOakDicom_Network_IDicomServerRegistry_IsAvailable_System_Int32_System_String_" data-uid="FellowOakDicom.Network.IDicomServerRegistry.IsAvailable(System.Int32,System.String)">IsAvailable(Int32, String)</h4>
   <div class="markdown level1 summary"><p>Checks whether listening to the provided port at the provided IP address is still possible</p>
@@ -167,13 +163,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">port</span></td>
         <td><p>The port</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">ipAddress</span></td>
         <td><p>The IP address</p>
 </td>
@@ -190,16 +186,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><p>True when a new DICOM server can be set up for that IP address and port</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServerRegistry_Register_" data-uid="FellowOakDicom.Network.IDicomServerRegistry.Register*"></a>
-  <h4 id="FellowOakDicom_Network_IDicomServerRegistry_Register_FellowOakDicom_Network_IDicomServer_Task_" data-uid="FellowOakDicom.Network.IDicomServerRegistry.Register(FellowOakDicom.Network.IDicomServer,Task)">Register(IDicomServer, Task)</h4>
+  <h4 id="FellowOakDicom_Network_IDicomServerRegistry_Register_FellowOakDicom_Network_IDicomServer_System_Threading_Tasks_Task_" data-uid="FellowOakDicom.Network.IDicomServerRegistry.Register(FellowOakDicom.Network.IDicomServer,System.Threading.Tasks.Task)">Register(IDicomServer, Task)</h4>
   <div class="markdown level1 summary"><p>Register a new DICOM server</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -224,7 +218,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><span class="parametername">task</span></td>
         <td><p>The task that represents the running of the DICOM server</p>
 </td>
@@ -246,8 +240,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServerRegistry_Unregister_" data-uid="FellowOakDicom.Network.IDicomServerRegistry.Unregister*"></a>
   <h4 id="FellowOakDicom_Network_IDicomServerRegistry_Unregister_FellowOakDicom_Network_DicomServerRegistration_" data-uid="FellowOakDicom.Network.IDicomServerRegistry.Unregister(FellowOakDicom.Network.DicomServerRegistration)">Unregister(DicomServerRegistration)</h4>
   <div class="markdown level1 summary"><p>Unregisters a DICOM server. This needs to happen when the DICOM server is stopped.</p>
@@ -274,15 +266,15 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -299,8 +291,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

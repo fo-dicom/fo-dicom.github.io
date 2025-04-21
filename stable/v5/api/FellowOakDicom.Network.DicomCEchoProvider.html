@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,14 +88,14 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="FellowOakDicom.Network.DicomService.html">DicomService</a></div>
     <div class="level2"><span class="xref">DicomCEchoProvider</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FellowOakDicom.Network.IDicomServiceRunner.html">IDicomServiceRunner</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
     <div><a class="xref" href="FellowOakDicom.Network.IDicomServiceProvider.html">IDicomServiceProvider</a></div>
     <div><a class="xref" href="FellowOakDicom.Network.IDicomService.html">IDicomService</a></div>
     <div><a class="xref" href="FellowOakDicom.Network.IDicomCEchoProvider.html">IDicomCEchoProvider</a></div>
@@ -187,39 +187,37 @@
       <a class="xref" href="FellowOakDicom.Network.DicomService.html#FellowOakDicom_Network_DicomService_OnSendQueueEmptyAsync">DicomService.OnSendQueueEmptyAsync()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomCEchoProvider_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomCEchoProvider : DicomService, IDicomServiceRunner, IDicomServiceProvider, IDicomService, IDicomCEchoProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public class DicomCEchoProvider : DicomService, IDicomServiceRunner, IDisposable, IDicomServiceProvider, IDicomService, IDicomCEchoProvider</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomCEchoProvider__ctor_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_DicomCEchoProvider__ctor_FellowOakDicom_Network_INetworkStream_Encoding_ILogger_FellowOakDicom_Network_DicomServiceDependencies_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.#ctor(FellowOakDicom.Network.INetworkStream,Encoding,ILogger,FellowOakDicom.Network.DicomServiceDependencies)">DicomCEchoProvider(INetworkStream, Encoding, ILogger, DicomServiceDependencies)</h4>
+  <h4 id="FellowOakDicom_Network_DicomCEchoProvider__ctor_FellowOakDicom_Network_INetworkStream_System_Text_Encoding_Microsoft_Extensions_Logging_ILogger_FellowOakDicom_Network_DicomServiceDependencies_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.#ctor(FellowOakDicom.Network.INetworkStream,System.Text.Encoding,Microsoft.Extensions.Logging.ILogger,FellowOakDicom.Network.DicomServiceDependencies)">DicomCEchoProvider(INetworkStream, Encoding, ILogger, DicomServiceDependencies)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.Network.DicomCEchoProvider.html">DicomCEchoProvider</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -244,13 +242,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">fallbackEncoding</span></td>
         <td><p>Text encoding if not specified within messaging.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td><span class="parametername">log</span></td>
         <td><p>DICOM logger.</p>
 </td>
@@ -264,8 +262,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomCEchoProvider_OnCEchoRequestAsync_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.OnCEchoRequestAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomCEchoProvider_OnCEchoRequestAsync_FellowOakDicom_Network_DicomCEchoRequest_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.OnCEchoRequestAsync(FellowOakDicom.Network.DicomCEchoRequest)">OnCEchoRequestAsync(DicomCEchoRequest)</h4>
   <div class="markdown level1 summary"><p>Event handler for C-ECHO request.</p>
@@ -303,16 +299,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomCEchoResponse.html">DicomCEchoResponse</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomCEchoResponse.html">DicomCEchoResponse</a>&gt;</td>
         <td><p>C-ECHO response with Success status.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCEchoProvider_OnConnectionClosed_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.OnConnectionClosed*"></a>
-  <h4 id="FellowOakDicom_Network_DicomCEchoProvider_OnConnectionClosed_Exception_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.OnConnectionClosed(Exception)">OnConnectionClosed(Exception)</h4>
+  <h4 id="FellowOakDicom_Network_DicomCEchoProvider_OnConnectionClosed_System_Exception_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.OnConnectionClosed(System.Exception)">OnConnectionClosed(Exception)</h4>
   <div class="markdown level1 summary"><p>Callback when connection is closed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -331,15 +325,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Exception</span></td>
+        <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">exception</span></td>
         <td><p>Exception, if any, that forced connection to close.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCEchoProvider_OnReceiveAbort_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.OnReceiveAbort*"></a>
   <h4 id="FellowOakDicom_Network_DicomCEchoProvider_OnReceiveAbort_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.OnReceiveAbort(FellowOakDicom.Network.DicomAbortSource,FellowOakDicom.Network.DicomAbortReason)">OnReceiveAbort(DicomAbortSource, DicomAbortReason)</h4>
   <div class="markdown level1 summary"><p>Callback on recieving an abort message.</p>
@@ -373,8 +365,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCEchoProvider_OnReceiveAssociationReleaseRequestAsync_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.OnReceiveAssociationReleaseRequestAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomCEchoProvider_OnReceiveAssociationReleaseRequestAsync" data-uid="FellowOakDicom.Network.DicomCEchoProvider.OnReceiveAssociationReleaseRequestAsync">OnReceiveAssociationReleaseRequestAsync()</h4>
   <div class="markdown level1 summary"><p>Callback to invoke when receiving an association release request.</p>
@@ -394,13 +384,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCEchoProvider_OnReceiveAssociationRequestAsync_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.OnReceiveAssociationRequestAsync*"></a>
   <h4 id="FellowOakDicom_Network_DicomCEchoProvider_OnReceiveAssociationRequestAsync_FellowOakDicom_Network_DicomAssociation_" data-uid="FellowOakDicom.Network.DicomCEchoProvider.OnReceiveAssociationRequestAsync(FellowOakDicom.Network.DicomAssociation)">OnReceiveAssociationRequestAsync(DicomAssociation)</h4>
   <div class="markdown level1 summary"><p>Callback to invoke when receiving an association request.</p>
@@ -438,7 +426,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -448,7 +436,7 @@
       <a class="xref" href="FellowOakDicom.Network.IDicomServiceRunner.html">IDicomServiceRunner</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <div>
       <a class="xref" href="FellowOakDicom.Network.IDicomServiceProvider.html">IDicomServiceProvider</a>
@@ -459,15 +447,15 @@
   <div>
       <a class="xref" href="FellowOakDicom.Network.IDicomCEchoProvider.html">IDicomCEchoProvider</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -484,8 +472,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

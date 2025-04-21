@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -90,9 +90,14 @@ for details on the Service Class Application Information field for C-FIND SOP Cl
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="FellowOakDicom.Network.DicomServiceApplicationInfo.html">DicomServiceApplicationInfo</a></div>
     <div class="level2"><span class="xref">DicomCFindApplicationInfo</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<span class="xref">System.Byte</span>, <span class="xref">System.Byte</span>&gt;&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -139,19 +144,38 @@ for details on the Service Class Application Information field for C-FIND SOP Cl
       <a class="xref" href="FellowOakDicom.Network.DicomServiceApplicationInfo.html#FellowOakDicom_Network_DicomServiceApplicationInfo_GetEnumerator">DicomServiceApplicationInfo.GetEnumerator()</a>
     </div>
     <div>
+      <a class="xref" href="FellowOakDicom.Network.DicomServiceApplicationInfo.html#FellowOakDicom_Network_DicomServiceApplicationInfo_System_Collections_IEnumerable_GetEnumerator">DicomServiceApplicationInfo.IEnumerable.GetEnumerator()</a>
+    </div>
+    <div>
       <a class="xref" href="FellowOakDicom.Network.DicomServiceApplicationInfo.html#FellowOakDicom_Network_DicomServiceApplicationInfo_ToString">DicomServiceApplicationInfo.ToString()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_DicomCFindApplicationInfo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomCFindApplicationInfo : DicomServiceApplicationInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public class DicomCFindApplicationInfo : DicomServiceApplicationInfo, IEnumerable&lt;KeyValuePair&lt;byte, byte&gt;&gt;, IEnumerable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomCFindApplicationInfo__ctor_" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomCFindApplicationInfo__ctor" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.#ctor">DicomCFindApplicationInfo()</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.Network.DicomCFindApplicationInfo.html">DicomCFindApplicationInfo</a> class.</p>
@@ -161,8 +185,6 @@ for details on the Service Class Application Information field for C-FIND SOP Cl
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DicomCFindApplicationInfo()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Network_DicomCFindApplicationInfo__ctor_" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomCFindApplicationInfo__ctor_FellowOakDicom_Network_DicomCFindOption_" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.#ctor(FellowOakDicom.Network.DicomCFindOption)">DicomCFindApplicationInfo(DicomCFindOption)</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.Network.DicomCFindApplicationInfo.html">DicomCFindApplicationInfo</a> class.</p>
@@ -190,8 +212,6 @@ for details on the Service Class Application Information field for C-FIND SOP Cl
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCFindApplicationInfo__ctor_" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.#ctor*"></a>
   <h4 id="FellowOakDicom_Network_DicomCFindApplicationInfo__ctor_System_Byte___" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.#ctor(System.Byte[])">DicomCFindApplicationInfo(Byte[])</h4>
   <div class="markdown level1 summary"><p>Initializes an instance of the <a class="xref" href="FellowOakDicom.Network.DicomCFindApplicationInfo.html">DicomCFindApplicationInfo</a> class.</p>
@@ -212,7 +232,7 @@ for details on the Service Class Application Information field for C-FIND SOP Cl
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">rawApplicationInfo</span></td>
         <td><p>The raw application info byte array.</p>
 </td>
@@ -221,8 +241,6 @@ for details on the Service Class Application Information field for C-FIND SOP Cl
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomCFindApplicationInfo_DateTimeMatching_" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.DateTimeMatching*"></a>
   <h4 id="FellowOakDicom_Network_DicomCFindApplicationInfo_DateTimeMatching" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.DateTimeMatching">DateTimeMatching</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Date-time Matching flag.
@@ -244,13 +262,11 @@ false - combined matching not supported/requested</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCFindApplicationInfo_EnhancedMultiFrameImageConversion_" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.EnhancedMultiFrameImageConversion*"></a>
   <h4 id="FellowOakDicom_Network_DicomCFindApplicationInfo_EnhancedMultiFrameImageConversion" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.EnhancedMultiFrameImageConversion">EnhancedMultiFrameImageConversion</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Enhanced Multi-Frame Image Conversion flag.
@@ -272,13 +288,11 @@ false - Query/Retrieve View not supported/requested</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCFindApplicationInfo_FuzzySemanticMatching_" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.FuzzySemanticMatching*"></a>
   <h4 id="FellowOakDicom_Network_DicomCFindApplicationInfo_FuzzySemanticMatching" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.FuzzySemanticMatching">FuzzySemanticMatching</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Fuzzy Semantic Matching Of Person Names flag.
@@ -300,13 +314,11 @@ false - fuzzy semantic matching not supported/requested</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCFindApplicationInfo_RelationalQueries_" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.RelationalQueries*"></a>
   <h4 id="FellowOakDicom_Network_DicomCFindApplicationInfo_RelationalQueries" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.RelationalQueries">RelationalQueries</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Relational-Queries flag.
@@ -328,13 +340,11 @@ false - relational queries not supported/requested</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_DicomCFindApplicationInfo_TimezoneQueryAdjustment_" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.TimezoneQueryAdjustment*"></a>
   <h4 id="FellowOakDicom_Network_DicomCFindApplicationInfo_TimezoneQueryAdjustment" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.TimezoneQueryAdjustment">TimezoneQueryAdjustment</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Timezone Query Adjustment flag.
@@ -356,15 +366,13 @@ false - Timezone query adjustment not supported/requested</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_DicomCFindApplicationInfo_CreateForWorklistQuery_" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.CreateForWorklistQuery*"></a>
   <h4 id="FellowOakDicom_Network_DicomCFindApplicationInfo_CreateForWorklistQuery_System_Boolean_System_Boolean_" data-uid="FellowOakDicom.Network.DicomCFindApplicationInfo.CreateForWorklistQuery(System.Boolean,System.Boolean)">CreateForWorklistQuery(Boolean, Boolean)</h4>
   <div class="markdown level1 summary"></div>
@@ -384,12 +392,12 @@ false - Timezone query adjustment not supported/requested</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">fuzzySemanticMatching</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">timezoneQueryAdjustment</span></td>
         <td></td>
       </tr>
@@ -410,15 +418,28 @@ false - Timezone query adjustment not supported/requested</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.EnumerableExtensions.html#FellowOakDicom_EnumerableExtensions_Each__1_System_Collections_Generic_IEnumerable___0__System_Action___0__">EnumerableExtensions.Each&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_Diff__2_System_Collections_Generic_IEnumerable___0__System_Func___0___0___1__">LinqExtensions.Diff&lt;S, T&gt;(IEnumerable&lt;S&gt;, Func&lt;S, S, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -435,8 +456,8 @@ false - Timezone query adjustment not supported/requested</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

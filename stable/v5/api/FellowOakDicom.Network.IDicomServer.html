@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -86,16 +86,20 @@
   <div class="markdown level0 summary"><p>Interface representing a DICOM server instance.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_IDicomServer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IDicomServer</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IDicomServer : IDisposable</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServer_Exception_" data-uid="FellowOakDicom.Network.IDicomServer.Exception*"></a>
   <h4 id="FellowOakDicom_Network_IDicomServer_Exception" data-uid="FellowOakDicom.Network.IDicomServer.Exception">Exception</h4>
   <div class="markdown level1 summary"><p>Gets the exception that was thrown if the server failed to listen.</p>
@@ -115,13 +119,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Exception</span></td>
+        <td><span class="xref">System.Exception</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServer_IPAddress_" data-uid="FellowOakDicom.Network.IDicomServer.IPAddress*"></a>
   <h4 id="FellowOakDicom_Network_IDicomServer_IPAddress" data-uid="FellowOakDicom.Network.IDicomServer.IPAddress">IPAddress</h4>
   <div class="markdown level1 summary"><p>Gets the IP address(es) the server listens to.</p>
@@ -141,13 +143,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServer_IsListening_" data-uid="FellowOakDicom.Network.IDicomServer.IsListening*"></a>
   <h4 id="FellowOakDicom_Network_IDicomServer_IsListening" data-uid="FellowOakDicom.Network.IDicomServer.IsListening">IsListening</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether the server is actively listening for client connections.</p>
@@ -167,13 +167,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServer_Logger_" data-uid="FellowOakDicom.Network.IDicomServer.Logger*"></a>
   <h4 id="FellowOakDicom_Network_IDicomServer_Logger" data-uid="FellowOakDicom.Network.IDicomServer.Logger">Logger</h4>
   <div class="markdown level1 summary"><p>Gets the logger used by <a class="xref" href="FellowOakDicom.Network.DicomServer-1.html">DicomServer&lt;T&gt;</a></p>
@@ -193,13 +191,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServer_Options_" data-uid="FellowOakDicom.Network.IDicomServer.Options*"></a>
   <h4 id="FellowOakDicom_Network_IDicomServer_Options" data-uid="FellowOakDicom.Network.IDicomServer.Options">Options</h4>
   <div class="markdown level1 summary"><p>Gets the options to control behavior of <a class="xref" href="FellowOakDicom.Network.DicomService.html">DicomService</a> base class.
@@ -225,8 +221,6 @@ Gets the port to which the server is listening.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServer_Port_" data-uid="FellowOakDicom.Network.IDicomServer.Port*"></a>
   <h4 id="FellowOakDicom_Network_IDicomServer_Port" data-uid="FellowOakDicom.Network.IDicomServer.Port">Port</h4>
   <div class="markdown level1 summary"><p>Gets the port to which the server is listening.</p>
@@ -246,13 +240,11 @@ Gets the port to which the server is listening.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServer_Registration_" data-uid="FellowOakDicom.Network.IDicomServer.Registration*"></a>
   <h4 id="FellowOakDicom_Network_IDicomServer_Registration" data-uid="FellowOakDicom.Network.IDicomServer.Registration">Registration</h4>
   <div class="markdown level1 summary"><p>Gets the DICOM server registration ticket with the central registry.
@@ -279,8 +271,6 @@ This registration must be disposed alongside the DICOM server itself.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServer_ServiceScope_" data-uid="FellowOakDicom.Network.IDicomServer.ServiceScope*"></a>
   <h4 id="FellowOakDicom_Network_IDicomServer_ServiceScope" data-uid="FellowOakDicom.Network.IDicomServer.ServiceScope">ServiceScope</h4>
   <div class="markdown level1 summary"><p>Gets the service scope that will live as long as the DICOM server lives. Must be disposed alongside the DicomServer instance.</p>
@@ -300,23 +290,21 @@ This registration must be disposed alongside the DICOM server itself.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceScope</span></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceScope</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServer_StartAsync_" data-uid="FellowOakDicom.Network.IDicomServer.StartAsync*"></a>
-  <h4 id="FellowOakDicom_Network_IDicomServer_StartAsync_System_String_System_Int32_ITlsAcceptor_Encoding_FellowOakDicom_Network_DicomServiceOptions_System_Object_" data-uid="FellowOakDicom.Network.IDicomServer.StartAsync(System.String,System.Int32,ITlsAcceptor,Encoding,FellowOakDicom.Network.DicomServiceOptions,System.Object)">StartAsync(String, Int32, ITlsAcceptor, Encoding, DicomServiceOptions, Object)</h4>
+  <h4 id="FellowOakDicom_Network_IDicomServer_StartAsync_System_String_System_Int32_FellowOakDicom_Network_Tls_ITlsAcceptor_System_Text_Encoding_FellowOakDicom_Network_DicomServiceOptions_System_Object_FellowOakDicom_Network_DicomServerOptions_" data-uid="FellowOakDicom.Network.IDicomServer.StartAsync(System.String,System.Int32,FellowOakDicom.Network.Tls.ITlsAcceptor,System.Text.Encoding,FellowOakDicom.Network.DicomServiceOptions,System.Object,FellowOakDicom.Network.DicomServerOptions)">StartAsync(String, Int32, ITlsAcceptor, Encoding, DicomServiceOptions, Object, DicomServerOptions)</h4>
   <div class="markdown level1 summary"><p>Starts the DICOM server listening for connections on the specified IP address(es) and port.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task StartAsync(string ipAddress, int port, ITlsAcceptor tlsAcceptor, Encoding fallbackEncoding, DicomServiceOptions options, object userState)</code></pre>
+    <pre><code class="lang-csharp hljs">Task StartAsync(string ipAddress, int port, ITlsAcceptor tlsAcceptor, Encoding fallbackEncoding, DicomServiceOptions serviceOptions, object userState, DicomServerOptions serverOptions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -329,39 +317,45 @@ This registration must be disposed alongside the DICOM server itself.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">ipAddress</span></td>
         <td><p>IP address(es) for the server to listen to.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">port</span></td>
         <td><p>Port to which the server should be listening.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ITlsAcceptor</span></td>
+        <td><a class="xref" href="FellowOakDicom.Network.Tls.ITlsAcceptor.html">ITlsAcceptor</a></td>
         <td><span class="parametername">tlsAcceptor</span></td>
         <td><p>Handler to accept secure connections.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">fallbackEncoding</span></td>
         <td><p>Encoding to apply if no encoding is identified.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td><p>Service options.</p>
+        <td><span class="parametername">serviceOptions</span></td>
+        <td><p>Service options</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">userState</span></td>
         <td><p>User state to be shared with the connected services.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a></td>
+        <td><span class="parametername">serverOptions</span></td>
+        <td><p>Server options</p>
 </td>
       </tr>
     </tbody>
@@ -376,14 +370,12 @@ This registration must be disposed alongside the DICOM server itself.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>Awaitable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>Awaitable <span class="xref">System.Threading.Tasks.Task</span>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_IDicomServer_Stop_" data-uid="FellowOakDicom.Network.IDicomServer.Stop*"></a>
   <h4 id="FellowOakDicom_Network_IDicomServer_Stop" data-uid="FellowOakDicom.Network.IDicomServer.Stop">Stop()</h4>
   <div class="markdown level1 summary"><p>Stop server from further listening.</p>
@@ -393,15 +385,15 @@ This registration must be disposed alongside the DICOM server itself.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void Stop()</code></pre>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -418,8 +410,8 @@ This registration must be disposed alongside the DICOM server itself.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

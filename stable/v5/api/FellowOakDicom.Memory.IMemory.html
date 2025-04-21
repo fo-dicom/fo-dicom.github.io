@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -86,16 +86,20 @@
   <div class="markdown level0 summary"><p>Represents a (possibly rented) chunk of memory that is temporarily available to use</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Memory.html">FellowOakDicom.Memory</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Memory_IMemory_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IMemory</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IMemory : IDisposable</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Memory_IMemory_Bytes_" data-uid="FellowOakDicom.Memory.IMemory.Bytes*"></a>
   <h4 id="FellowOakDicom_Memory_IMemory_Bytes" data-uid="FellowOakDicom.Memory.IMemory.Bytes">Bytes</h4>
   <div class="markdown level1 summary"><p>The underlying byte array. Note that this will probably be longer than the requested length.
@@ -117,13 +121,11 @@ Prefer to use <a class="xref" href="FellowOakDicom.Memory.IMemory.html#FellowOak
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Memory_IMemory_Length_" data-uid="FellowOakDicom.Memory.IMemory.Length*"></a>
   <h4 id="FellowOakDicom_Memory_IMemory_Length" data-uid="FellowOakDicom.Memory.IMemory.Length">Length</h4>
   <div class="markdown level1 summary"><p>The originally requested length of the memory</p>
@@ -143,13 +145,11 @@ Prefer to use <a class="xref" href="FellowOakDicom.Memory.IMemory.html#FellowOak
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Memory_IMemory_Memory_" data-uid="FellowOakDicom.Memory.IMemory.Memory*"></a>
   <h4 id="FellowOakDicom_Memory_IMemory_Memory" data-uid="FellowOakDicom.Memory.IMemory.Memory">Memory</h4>
   <div class="markdown level1 summary"><p>An instance of memory wrapping the memory (for use in asynchronous methods)</p>
@@ -169,13 +169,11 @@ Prefer to use <a class="xref" href="FellowOakDicom.Memory.IMemory.html#FellowOak
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">FellowOakDicom.Memory</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="xref">System.Memory</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Memory_IMemory_Span_" data-uid="FellowOakDicom.Memory.IMemory.Span*"></a>
   <h4 id="FellowOakDicom_Memory_IMemory_Span" data-uid="FellowOakDicom.Memory.IMemory.Span">Span</h4>
   <div class="markdown level1 summary"><p>An instance of span wrapping the memory (for use in synchronous methods)</p>
@@ -195,20 +193,20 @@ Prefer to use <a class="xref" href="FellowOakDicom.Memory.IMemory.html#FellowOak
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Span</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="xref">System.Span</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -225,8 +223,8 @@ Prefer to use <a class="xref" href="FellowOakDicom.Memory.IMemory.html#FellowOak
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

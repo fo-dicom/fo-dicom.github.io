@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,21 +87,43 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DicomParserLogger</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Log.html">FellowOakDicom.Log</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Log_DicomParserLogger_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomParserLogger : IDicomReaderObserver</code></pre>
+    <pre><code class="lang-csharp hljs">public class DicomParserLogger</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Log_DicomParserLogger__ctor_" data-uid="FellowOakDicom.Log.DicomParserLogger.#ctor*"></a>
-  <h4 id="FellowOakDicom_Log_DicomParserLogger__ctor_FellowOakDicom_Log_ILogger_FellowOakDicom_Log_LogLevel_" data-uid="FellowOakDicom.Log.DicomParserLogger.#ctor(FellowOakDicom.Log.ILogger,FellowOakDicom.Log.LogLevel)">DicomParserLogger(ILogger, LogLevel)</h4>
+  <h4 id="FellowOakDicom_Log_DicomParserLogger__ctor_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel_" data-uid="FellowOakDicom.Log.DicomParserLogger.#ctor(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel)">DicomParserLogger(ILogger, LogLevel)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -119,12 +141,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Log.ILogger.html">ILogger</a></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td><span class="parametername">log</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="FellowOakDicom.Log.LogLevel.html">LogLevel</a></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.LogLevel</span></td>
         <td><span class="parametername">level</span></td>
         <td></td>
       </tr>
@@ -132,15 +154,13 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Log_DicomParserLogger_OnBeginFragmentSequence_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginFragmentSequence*"></a>
-  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnBeginFragmentSequence_IByteSource_FellowOakDicom_DicomTag_FellowOakDicom_DicomVR_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginFragmentSequence(IByteSource,FellowOakDicom.DicomTag,FellowOakDicom.DicomVR)">OnBeginFragmentSequence(IByteSource, DicomTag, DicomVR)</h4>
+  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnBeginFragmentSequence_FellowOakDicom_IO_IByteSource_System_Int64_FellowOakDicom_DicomTag_FellowOakDicom_DicomVR_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginFragmentSequence(FellowOakDicom.IO.IByteSource,System.Int64,FellowOakDicom.DicomTag,FellowOakDicom.DicomVR)">OnBeginFragmentSequence(IByteSource, Int64, DicomTag, DicomVR)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnBeginFragmentSequence(IByteSource source, DicomTag tag, DicomVR vr)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnBeginFragmentSequence(IByteSource source, long position, DicomTag tag, DicomVR vr)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -153,8 +173,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IByteSource</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.IByteSource.html">IByteSource</a></td>
         <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
         <td></td>
       </tr>
       <tr>
@@ -169,15 +194,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_DicomParserLogger_OnBeginSequence_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginSequence*"></a>
-  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnBeginSequence_IByteSource_FellowOakDicom_DicomTag_System_UInt32_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginSequence(IByteSource,FellowOakDicom.DicomTag,System.UInt32)">OnBeginSequence(IByteSource, DicomTag, UInt32)</h4>
+  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnBeginSequence_FellowOakDicom_IO_IByteSource_System_Int64_FellowOakDicom_DicomTag_System_UInt32_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginSequence(FellowOakDicom.IO.IByteSource,System.Int64,FellowOakDicom.DicomTag,System.UInt32)">OnBeginSequence(IByteSource, Int64, DicomTag, UInt32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnBeginSequence(IByteSource source, DicomTag tag, uint length)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnBeginSequence(IByteSource source, long position, DicomTag tag, uint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,8 +213,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IByteSource</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.IByteSource.html">IByteSource</a></td>
         <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
         <td></td>
       </tr>
       <tr>
@@ -200,21 +228,19 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">length</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_DicomParserLogger_OnBeginSequenceItem_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginSequenceItem*"></a>
-  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnBeginSequenceItem_IByteSource_System_UInt32_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginSequenceItem(IByteSource,System.UInt32)">OnBeginSequenceItem(IByteSource, UInt32)</h4>
+  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnBeginSequenceItem_FellowOakDicom_IO_IByteSource_System_Int64_System_UInt32_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnBeginSequenceItem(FellowOakDicom.IO.IByteSource,System.Int64,System.UInt32)">OnBeginSequenceItem(IByteSource, Int64, UInt32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnBeginSequenceItem(IByteSource source, uint length)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnBeginSequenceItem(IByteSource source, long position, uint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -227,26 +253,29 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IByteSource</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.IByteSource.html">IByteSource</a></td>
         <td><span class="parametername">source</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">length</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_DicomParserLogger_OnElement_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnElement*"></a>
-  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnElement_IByteSource_FellowOakDicom_DicomTag_FellowOakDicom_DicomVR_IByteBuffer_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnElement(IByteSource,FellowOakDicom.DicomTag,FellowOakDicom.DicomVR,IByteBuffer)">OnElement(IByteSource, DicomTag, DicomVR, IByteBuffer)</h4>
+  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnElement_FellowOakDicom_IO_IByteSource_System_Int64_FellowOakDicom_DicomTag_FellowOakDicom_DicomVR_FellowOakDicom_IO_Buffer_IByteBuffer_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnElement(FellowOakDicom.IO.IByteSource,System.Int64,FellowOakDicom.DicomTag,FellowOakDicom.DicomVR,FellowOakDicom.IO.Buffer.IByteBuffer)">OnElement(IByteSource, Int64, DicomTag, DicomVR, IByteBuffer)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnElement(IByteSource source, DicomTag tag, DicomVR vr, IByteBuffer data)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnElement(IByteSource source, long position, DicomTag tag, DicomVR vr, IByteBuffer data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -259,8 +288,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IByteSource</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.IByteSource.html">IByteSource</a></td>
         <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
         <td></td>
       </tr>
       <tr>
@@ -274,14 +308,12 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IByteBuffer</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a></td>
         <td><span class="parametername">data</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_DicomParserLogger_OnEndFragmentSequence_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnEndFragmentSequence*"></a>
   <h4 id="FellowOakDicom_Log_DicomParserLogger_OnEndFragmentSequence" data-uid="FellowOakDicom.Log.DicomParserLogger.OnEndFragmentSequence">OnEndFragmentSequence()</h4>
   <div class="markdown level1 summary"></div>
@@ -290,8 +322,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnEndFragmentSequence()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Log_DicomParserLogger_OnEndSequence_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnEndSequence*"></a>
   <h4 id="FellowOakDicom_Log_DicomParserLogger_OnEndSequence" data-uid="FellowOakDicom.Log.DicomParserLogger.OnEndSequence">OnEndSequence()</h4>
   <div class="markdown level1 summary"></div>
@@ -300,8 +330,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnEndSequence()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Log_DicomParserLogger_OnEndSequenceItem_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnEndSequenceItem*"></a>
   <h4 id="FellowOakDicom_Log_DicomParserLogger_OnEndSequenceItem" data-uid="FellowOakDicom.Log.DicomParserLogger.OnEndSequenceItem">OnEndSequenceItem()</h4>
   <div class="markdown level1 summary"></div>
@@ -310,15 +338,13 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnEndSequenceItem()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_Log_DicomParserLogger_OnFragmentSequenceItem_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnFragmentSequenceItem*"></a>
-  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnFragmentSequenceItem_IByteSource_IByteBuffer_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnFragmentSequenceItem(IByteSource,IByteBuffer)">OnFragmentSequenceItem(IByteSource, IByteBuffer)</h4>
+  <h4 id="FellowOakDicom_Log_DicomParserLogger_OnFragmentSequenceItem_FellowOakDicom_IO_IByteSource_System_Int64_FellowOakDicom_IO_Buffer_IByteBuffer_" data-uid="FellowOakDicom.Log.DicomParserLogger.OnFragmentSequenceItem(FellowOakDicom.IO.IByteSource,System.Int64,FellowOakDicom.IO.Buffer.IByteBuffer)">OnFragmentSequenceItem(IByteSource, Int64, IByteBuffer)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnFragmentSequenceItem(IByteSource source, IByteBuffer data)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnFragmentSequenceItem(IByteSource source, long position, IByteBuffer data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -331,26 +357,31 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IByteSource</span></td>
+        <td><a class="xref" href="FellowOakDicom.IO.IByteSource.html">IByteSource</a></td>
         <td><span class="parametername">source</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IByteBuffer</span></td>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.IO.Buffer.IByteBuffer.html">IByteBuffer</a></td>
         <td><span class="parametername">data</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -367,8 +398,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

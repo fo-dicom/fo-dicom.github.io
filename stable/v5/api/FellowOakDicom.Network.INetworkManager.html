@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -86,15 +86,13 @@
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Network_INetworkManager_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface INetworkManager</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_INetworkManager_MachineName_" data-uid="FellowOakDicom.Network.INetworkManager.MachineName*"></a>
   <h4 id="FellowOakDicom_Network_INetworkManager_MachineName" data-uid="FellowOakDicom.Network.INetworkManager.MachineName">MachineName</h4>
   <div class="markdown level1 summary"><p>Gets the machine name</p>
@@ -114,15 +112,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Network_INetworkManager_CreateNetworkListener_" data-uid="FellowOakDicom.Network.INetworkManager.CreateNetworkListener*"></a>
   <h4 id="FellowOakDicom_Network_INetworkManager_CreateNetworkListener_System_String_System_Int32_" data-uid="FellowOakDicom.Network.INetworkManager.CreateNetworkListener(System.String,System.Int32)">CreateNetworkListener(String, Int32)</h4>
   <div class="markdown level1 summary"><p>Platform-specific implementation to create a network listener object.</p>
@@ -143,13 +139,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">ipAddress</span></td>
         <td><p>IP address(es) to listen to.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">port</span></td>
         <td><p>Network port to listen to.</p>
 </td>
@@ -172,8 +168,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_INetworkManager_CreateNetworkStream_" data-uid="FellowOakDicom.Network.INetworkManager.CreateNetworkStream*"></a>
   <h4 id="FellowOakDicom_Network_INetworkManager_CreateNetworkStream_FellowOakDicom_Network_NetworkStreamCreationOptions_" data-uid="FellowOakDicom.Network.INetworkManager.CreateNetworkStream(FellowOakDicom.Network.NetworkStreamCreationOptions)">CreateNetworkStream(NetworkStreamCreationOptions)</h4>
   <div class="markdown level1 summary"><p>Platform-specific implementation to create a network stream object.</p>
@@ -217,10 +211,63 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <a id="FellowOakDicom_Network_INetworkManager_CreateNetworkStream_" data-uid="FellowOakDicom.Network.INetworkManager.CreateNetworkStream*"></a>
+  <h4 id="FellowOakDicom_Network_INetworkManager_CreateNetworkStream_System_Net_Sockets_TcpClient_FellowOakDicom_Network_Tls_ITlsAcceptor_System_Boolean_" data-uid="FellowOakDicom.Network.INetworkManager.CreateNetworkStream(System.Net.Sockets.TcpClient,FellowOakDicom.Network.Tls.ITlsAcceptor,System.Boolean)">CreateNetworkStream(TcpClient, ITlsAcceptor, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Platform-specific implementation to create a network stream object from an existing <span class="xref">System.Net.Sockets.TcpClient</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INetworkStream CreateNetworkStream(TcpClient tcpClient, ITlsAcceptor tlsAcceptor, bool ownsTcpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Sockets.TcpClient</span></td>
+        <td><span class="parametername">tcpClient</span></td>
+        <td><p>The inbound, connected TCP client</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Network.Tls.ITlsAcceptor.html">ITlsAcceptor</a></td>
+        <td><span class="parametername">tlsAcceptor</span></td>
+        <td><p>The TLS acceptor responsible for setting up TLS</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ownsTcpClient</span></td>
+        <td><p>Whether or not the network stream owns the TCP client (i.e. the TCP client be disposed when the network stream is disposed)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FellowOakDicom.Network.INetworkStream.html">INetworkStream</a></td>
+        <td><p>Network stream implementation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="FellowOakDicom_Network_INetworkManager_IsSocketException_" data-uid="FellowOakDicom.Network.INetworkManager.IsSocketException*"></a>
-  <h4 id="FellowOakDicom_Network_INetworkManager_IsSocketException_Exception_System_Int32__System_String__" data-uid="FellowOakDicom.Network.INetworkManager.IsSocketException(Exception,System.Int32@,System.String@)">IsSocketException(Exception, out Int32, out String)</h4>
+  <h4 id="FellowOakDicom_Network_INetworkManager_IsSocketException_System_Exception_System_Int32__System_String__" data-uid="FellowOakDicom.Network.INetworkManager.IsSocketException(System.Exception,System.Int32@,System.String@)">IsSocketException(Exception, out Int32, out String)</h4>
   <div class="markdown level1 summary"><p>Platform-specific implementation to check whether specified <code data-dev-comment-type="paramref" class="paramref">exception</code> represents a socket exception.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -239,19 +286,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Exception</span></td>
+        <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">exception</span></td>
         <td><p>Exception to validate.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">errorCode</span></td>
         <td><p>Error code, valid if <code data-dev-comment-type="paramref" class="paramref">exception</code> is socket exception.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">errorDescriptor</span></td>
         <td><p>Error descriptor, valid if <code data-dev-comment-type="paramref" class="paramref">exception</code> is socket exception.</p>
 </td>
@@ -268,14 +315,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><p>True if <code data-dev-comment-type="paramref" class="paramref">exception</code> is socket exception, false otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Network_INetworkManager_TryGetNetworkIdentifier_" data-uid="FellowOakDicom.Network.INetworkManager.TryGetNetworkIdentifier*"></a>
   <h4 id="FellowOakDicom_Network_INetworkManager_TryGetNetworkIdentifier_FellowOakDicom_DicomUID__" data-uid="FellowOakDicom.Network.INetworkManager.TryGetNetworkIdentifier(FellowOakDicom.DicomUID@)">TryGetNetworkIdentifier(out DicomUID)</h4>
   <div class="markdown level1 summary"><p>Platform-specific implementation to attempt to obtain a unique network identifier, e.g. based on a MAC address.</p>
@@ -313,21 +358,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><p>True if network identifier could be obtained, false otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -344,8 +389,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

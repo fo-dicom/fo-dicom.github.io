@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,43 +88,41 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DicomDatasetExtensions</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.html">FellowOakDicom</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_DicomDatasetExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class DicomDatasetExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomDatasetExtensions_Clone_" data-uid="FellowOakDicom.DicomDatasetExtensions.Clone*"></a>
   <h4 id="FellowOakDicom_DicomDatasetExtensions_Clone_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.DicomDatasetExtensions.Clone(FellowOakDicom.DicomDataset)">Clone(DicomDataset)</h4>
   <div class="markdown level1 summary"><p>Clone a dataset.</p>
@@ -168,8 +166,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomDatasetExtensions_EnumerateGroup_" data-uid="FellowOakDicom.DicomDatasetExtensions.EnumerateGroup*"></a>
   <h4 id="FellowOakDicom_DicomDatasetExtensions_EnumerateGroup_FellowOakDicom_DicomDataset_System_UInt16_" data-uid="FellowOakDicom.DicomDatasetExtensions.EnumerateGroup(FellowOakDicom.DicomDataset,System.UInt16)">EnumerateGroup(DicomDataset, UInt16)</h4>
   <div class="markdown level1 summary"><p>Enumerates DICOM items for specified group.</p>
@@ -196,7 +192,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="xref">System.UInt16</span></td>
         <td><span class="parametername">group</span></td>
         <td><p>Requested group.</p>
 </td>
@@ -213,14 +209,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>&gt;</td>
         <td><p>Enumeration of DICOM items for specified <code data-dev-comment-type="paramref" class="paramref">group</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomDatasetExtensions_EnumerateMasked_" data-uid="FellowOakDicom.DicomDatasetExtensions.EnumerateMasked*"></a>
   <h4 id="FellowOakDicom_DicomDatasetExtensions_EnumerateMasked_FellowOakDicom_DicomDataset_FellowOakDicom_DicomMaskedTag_" data-uid="FellowOakDicom.DicomDatasetExtensions.EnumerateMasked(FellowOakDicom.DicomDataset,FellowOakDicom.DicomMaskedTag)">EnumerateMasked(DicomDataset, DicomMaskedTag)</h4>
   <div class="markdown level1 summary"><p>Enumerates DICOM items matching mask.</p>
@@ -264,17 +258,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>&gt;</td>
         <td><p>Enumeration of masked DICOM items.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomDatasetExtensions_GetDateTime_" data-uid="FellowOakDicom.DicomDatasetExtensions.GetDateTime*"></a>
   <h4 id="FellowOakDicom_DicomDatasetExtensions_GetDateTime_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTag_FellowOakDicom_DicomTag_" data-uid="FellowOakDicom.DicomDatasetExtensions.GetDateTime(FellowOakDicom.DicomDataset,FellowOakDicom.DicomTag,FellowOakDicom.DicomTag)">GetDateTime(DicomDataset, DicomTag, DicomTag)</h4>
-  <div class="markdown level1 summary"><p>Get a composite <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> instance based on <code data-dev-comment-type="paramref" class="paramref">date</code> and <code data-dev-comment-type="paramref" class="paramref">time</code> values.</p>
+  <div class="markdown level1 summary"><p>Get a composite <span class="xref">System.DateTime</span> instance based on <code data-dev-comment-type="paramref" class="paramref">date</code> and <code data-dev-comment-type="paramref" class="paramref">time</code> values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -321,17 +313,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><p>Composite <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>.</p>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><p>Composite <span class="xref">System.DateTime</span>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomDatasetExtensions_GetDateTimeOffset_" data-uid="FellowOakDicom.DicomDatasetExtensions.GetDateTimeOffset*"></a>
   <h4 id="FellowOakDicom_DicomDatasetExtensions_GetDateTimeOffset_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTag_FellowOakDicom_DicomTag_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.DicomDatasetExtensions.GetDateTimeOffset(FellowOakDicom.DicomDataset,FellowOakDicom.DicomTag,FellowOakDicom.DicomTag,FellowOakDicom.DicomDataset)">GetDateTimeOffset(DicomDataset, DicomTag, DicomTag, DicomDataset)</h4>
-  <div class="markdown level1 summary"><p>Get a composite <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a> instance based on <code data-dev-comment-type="paramref" class="paramref">date</code> and <code data-dev-comment-type="paramref" class="paramref">time</code> values.
+  <div class="markdown level1 summary"><p>Get a composite <span class="xref">System.DateTimeOffset</span> instance based on <code data-dev-comment-type="paramref" class="paramref">date</code> and <code data-dev-comment-type="paramref" class="paramref">time</code> values.
 This will take any time zone information specified in the dataset into account.
 If the dataset is a child sequence item, the <code data-dev-comment-type="paramref" class="paramref">topLevelDataset</code> must be specified to find time zone information.</p>
 </div>
@@ -386,14 +376,12 @@ If the dataset is a child sequence item, the <code data-dev-comment-type="paramr
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTimeOffset</span></td>
-        <td><p>Composite <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>.</p>
+        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><p>Composite <span class="xref">System.DateTimeOffset</span>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomDatasetExtensions_NotValidated_" data-uid="FellowOakDicom.DicomDatasetExtensions.NotValidated*"></a>
   <h4 id="FellowOakDicom_DicomDatasetExtensions_NotValidated_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.DicomDatasetExtensions.NotValidated(FellowOakDicom.DicomDataset)">NotValidated(DicomDataset)</h4>
   <div class="markdown level1 summary"><p>Turns off validation on the passed DicomDataset and returns this Dataset</p>
@@ -435,8 +423,6 @@ If the dataset is a child sequence item, the <code data-dev-comment-type="paramr
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomDatasetExtensions_Validated_" data-uid="FellowOakDicom.DicomDatasetExtensions.Validated*"></a>
   <h4 id="FellowOakDicom_DicomDatasetExtensions_Validated_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.DicomDatasetExtensions.Validated(FellowOakDicom.DicomDataset)">Validated(DicomDataset)</h4>
   <div class="markdown level1 summary"><p>Turns on validation on the passed DicomDataset and returns this Dataset</p>
@@ -483,10 +469,6 @@ If the dataset is a child sequence item, the <code data-dev-comment-type="paramr
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -503,8 +485,8 @@ If the dataset is a child sequence item, the <code data-dev-comment-type="paramr
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

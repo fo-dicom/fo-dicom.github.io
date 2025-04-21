@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,19 +87,46 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">FellowOakDicomLogger</span></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Microsoft.Extensions.Logging.ILogger</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Log.html">FellowOakDicom.Log</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_Log_FellowOakDicomLogger_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FellowOakDicomLogger : Extensions.Logging.ILogger</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Fellow Oak DICOM now supports Microsoft.Extensions.Logging&quot;)]
+public class FellowOakDicomLogger : ILogger</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_Log_FellowOakDicomLogger__ctor_" data-uid="FellowOakDicom.Log.FellowOakDicomLogger.#ctor*"></a>
   <h4 id="FellowOakDicom_Log_FellowOakDicomLogger__ctor_FellowOakDicom_Log_ILogger_" data-uid="FellowOakDicom.Log.FellowOakDicomLogger.#ctor(FellowOakDicom.Log.ILogger)">FellowOakDicomLogger(ILogger)</h4>
   <div class="markdown level1 summary"></div>
@@ -127,8 +154,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_Log_FellowOakDicomLogger_BeginScope_" data-uid="FellowOakDicom.Log.FellowOakDicomLogger.BeginScope*"></a>
   <h4 id="FellowOakDicom_Log_FellowOakDicomLogger_BeginScope__1___0_" data-uid="FellowOakDicom.Log.FellowOakDicomLogger.BeginScope``1(``0)">BeginScope&lt;TState&gt;(TState)</h4>
   <div class="markdown level1 summary"></div>
@@ -164,7 +189,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDisposable</span></td>
+        <td><span class="xref">System.IDisposable</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -184,15 +209,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_FellowOakDicomLogger_IsEnabled_" data-uid="FellowOakDicom.Log.FellowOakDicomLogger.IsEnabled*"></a>
-  <h4 id="FellowOakDicom_Log_FellowOakDicomLogger_IsEnabled_Microsoft_Extensions_Logging_LogLevel_" data-uid="FellowOakDicom.Log.FellowOakDicomLogger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)">IsEnabled(Extensions.Logging.LogLevel)</h4>
+  <h4 id="FellowOakDicom_Log_FellowOakDicomLogger_IsEnabled_Microsoft_Extensions_Logging_LogLevel_" data-uid="FellowOakDicom.Log.FellowOakDicomLogger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)">IsEnabled(LogLevel)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsEnabled(Extensions.Logging.LogLevel logLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsEnabled(LogLevel logLevel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -205,7 +228,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">Extensions.Logging.LogLevel</a></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.LogLevel</span></td>
         <td><span class="parametername">logLevel</span></td>
         <td></td>
       </tr>
@@ -221,20 +244,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_Log_FellowOakDicomLogger_Log_" data-uid="FellowOakDicom.Log.FellowOakDicomLogger.Log*"></a>
-  <h4 id="FellowOakDicom_Log_FellowOakDicomLogger_Log__1_Microsoft_Extensions_Logging_LogLevel_EventId___0_Exception_Func___0_Exception_System_String__" data-uid="FellowOakDicom.Log.FellowOakDicomLogger.Log``1(Microsoft.Extensions.Logging.LogLevel,EventId,``0,Exception,Func{``0,Exception,System.String})">Log&lt;TState&gt;(Extensions.Logging.LogLevel, EventId, TState, Exception, Func&lt;TState, Exception, String&gt;)</h4>
+  <h4 id="FellowOakDicom_Log_FellowOakDicomLogger_Log__1_Microsoft_Extensions_Logging_LogLevel_Microsoft_Extensions_Logging_EventId___0_System_Exception_System_Func___0_System_Exception_System_String__" data-uid="FellowOakDicom.Log.FellowOakDicomLogger.Log``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String})">Log&lt;TState&gt;(LogLevel, EventId, TState, Exception, Func&lt;TState, Exception, String&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Log&lt;TState&gt;(Extensions.Logging.LogLevel logLevel, EventId eventId, TState state, Exception exception, Func&lt;TState, Exception, string&gt; formatter)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Log&lt;TState&gt;(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func&lt;TState, Exception, string&gt; formatter)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -247,12 +268,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">Extensions.Logging.LogLevel</a></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.LogLevel</span></td>
         <td><span class="parametername">logLevel</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">EventId</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.EventId</span></td>
         <td><span class="parametername">eventId</span></td>
         <td></td>
       </tr>
@@ -262,12 +283,12 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Exception</span></td>
+        <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">exception</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;TState, <span class="xref">Exception</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TState, <span class="xref">System.Exception</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">formatter</span></td>
         <td></td>
       </tr>
@@ -288,15 +309,19 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.Extensions.Logging.ILogger</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -313,8 +338,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

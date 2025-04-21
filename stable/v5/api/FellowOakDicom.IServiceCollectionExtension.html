@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,46 +87,45 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">IServiceCollectionExtension</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.html">FellowOakDicom</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_IServiceCollectionExtension_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class IServiceCollectionExtension</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_IServiceCollectionExtension_AddDicomClient_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddDicomClient*"></a>
-  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddDicomClient_IServiceCollection_Action_DicomClientOptions__" data-uid="FellowOakDicom.IServiceCollectionExtension.AddDicomClient(IServiceCollection,Action{DicomClientOptions})">AddDicomClient(IServiceCollection, Action&lt;DicomClientOptions&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddDicomClient_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_FellowOakDicom_Network_Client_DicomClientOptions__" data-uid="FellowOakDicom.IServiceCollectionExtension.AddDicomClient(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{FellowOakDicom.Network.Client.DicomClientOptions})">AddDicomClient(IServiceCollection, Action&lt;DicomClientOptions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds DicomClient services to the specified <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -143,14 +142,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
         <td><span class="parametername">services</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> to add services to.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">DicomClientOptions</span>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="FellowOakDicom.Network.Client.DicomClientOptions.html">DicomClientOptions</a>&gt;</td>
         <td><span class="parametername">options</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="FellowOakDicom.Network.Client.DicomClientOptions.html">DicomClientOptions</a> configuration delegate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -164,20 +165,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
-        <td></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><p>The IServiceCollection so that additional calls can be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IServiceCollectionExtension_AddDicomServer_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddDicomServer*"></a>
-  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddDicomServer_IServiceCollection_Action_DicomServiceOptions__" data-uid="FellowOakDicom.IServiceCollectionExtension.AddDicomServer(IServiceCollection,Action{DicomServiceOptions})">AddDicomServer(IServiceCollection, Action&lt;DicomServiceOptions&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddDicomServer_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_FellowOakDicom_Network_DicomServerOptions__" data-uid="FellowOakDicom.IServiceCollectionExtension.AddDicomServer(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{FellowOakDicom.Network.DicomServerOptions})">AddDicomServer(IServiceCollection, Action&lt;DicomServerOptions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds DicomServer services to the specified <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection AddDicomServer(this IServiceCollection services, Action&lt;DicomServiceOptions&gt; options = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IServiceCollection AddDicomServer(this IServiceCollection services, Action&lt;DicomServerOptions&gt; options = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,14 +191,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
         <td><span class="parametername">services</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> to add services to.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">DicomServiceOptions</span>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a>&gt;</td>
         <td><span class="parametername">options</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a> configuration delegate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -211,16 +214,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
-        <td></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><p>The IServiceCollection so that additional calls can be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IServiceCollectionExtension_AddFellowOakDicom_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddFellowOakDicom*"></a>
-  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddFellowOakDicom_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddFellowOakDicom(IServiceCollection)">AddFellowOakDicom(IServiceCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddFellowOakDicom_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddFellowOakDicom(Microsoft.Extensions.DependencyInjection.IServiceCollection)">AddFellowOakDicom(IServiceCollection)</h4>
+  <div class="markdown level1 summary"><p>Adds default implementations of all required services to the collection if the services haven't already been registered</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -237,7 +240,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
         <td><span class="parametername">services</span></td>
         <td></td>
       </tr>
@@ -253,16 +256,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IServiceCollectionExtension_AddImageManager_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddImageManager*"></a>
-  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddImageManager__1_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddImageManager``1(IServiceCollection)">AddImageManager&lt;TImageManager&gt;(IServiceCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddImageManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddImageManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">AddImageManager&lt;TImageManager&gt;(IServiceCollection)</h4>
+  <div class="markdown level1 summary"><p>Adds <a class="xref" href="FellowOakDicom.Imaging.IImageManager.html">IImageManager</a> services to the specified <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -280,9 +282,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
         <td><span class="parametername">services</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> to add services to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -296,8 +299,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
-        <td></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><p>The IServiceCollection so that additional calls can be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -316,15 +320,14 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IServiceCollectionExtension_AddLogManager_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddLogManager*"></a>
-  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddLogManager__1_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddLogManager``1(IServiceCollection)">AddLogManager&lt;TLogManager&gt;(IServiceCollection)</h4>
+  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddLogManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddLogManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">AddLogManager&lt;TLogManager&gt;(IServiceCollection)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection AddLogManager&lt;TLogManager&gt;(this IServiceCollection services)
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Fellow Oak DICOM now supports Microsoft.Extensions.Logging&quot;)]
+public static IServiceCollection AddLogManager&lt;TLogManager&gt;(this IServiceCollection services)
     where TLogManager : class, ILogManager</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -338,7 +341,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
         <td><span class="parametername">services</span></td>
         <td></td>
       </tr>
@@ -354,7 +357,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -374,11 +377,10 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IServiceCollectionExtension_AddNetworkManager_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddNetworkManager*"></a>
-  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddNetworkManager__1_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddNetworkManager``1(IServiceCollection)">AddNetworkManager&lt;TNetworkManager&gt;(IServiceCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddNetworkManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddNetworkManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">AddNetworkManager&lt;TNetworkManager&gt;(IServiceCollection)</h4>
+  <div class="markdown level1 summary"><p>Adds <a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a> services to the specified <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -396,9 +398,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
         <td><span class="parametername">services</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> to add services to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -412,8 +415,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
-        <td></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><p>The IServiceCollection so that additional calls can be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -432,11 +436,10 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_IServiceCollectionExtension_AddTranscoderManager_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddTranscoderManager*"></a>
-  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddTranscoderManager__1_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddTranscoderManager``1(IServiceCollection)">AddTranscoderManager&lt;TTranscoderManager&gt;(IServiceCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="FellowOakDicom_IServiceCollectionExtension_AddTranscoderManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddTranscoderManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">AddTranscoderManager&lt;TTranscoderManager&gt;(IServiceCollection)</h4>
+  <div class="markdown level1 summary"><p>Adds <a class="xref" href="FellowOakDicom.Imaging.Codec.ITranscoderManager.html">ITranscoderManager</a> services to the specified <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -454,9 +457,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
         <td><span class="parametername">services</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> to add services to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -470,8 +474,186 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><p>The IServiceCollection so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TTranscoderManager</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="FellowOakDicom_IServiceCollectionExtension_TryAddImageManager_" data-uid="FellowOakDicom.IServiceCollectionExtension.TryAddImageManager*"></a>
+  <h4 id="FellowOakDicom_IServiceCollectionExtension_TryAddImageManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.TryAddImageManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">TryAddImageManager&lt;TImageManager&gt;(IServiceCollection)</h4>
+  <div class="markdown level1 summary"><p>Adds <a class="xref" href="FellowOakDicom.Imaging.IImageManager.html">IImageManager</a> services to the specified <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> if they are not already registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IServiceCollection TryAddImageManager&lt;TImageManager&gt;(this IServiceCollection services)
+    where TImageManager : class, IImageManager</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><span class="parametername">services</span></td>
+        <td><p>The <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> to add services to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><p>The IServiceCollection so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TImageManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="FellowOakDicom_IServiceCollectionExtension_TryAddNetworkManager_" data-uid="FellowOakDicom.IServiceCollectionExtension.TryAddNetworkManager*"></a>
+  <h4 id="FellowOakDicom_IServiceCollectionExtension_TryAddNetworkManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.TryAddNetworkManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">TryAddNetworkManager&lt;TNetworkManager&gt;(IServiceCollection)</h4>
+  <div class="markdown level1 summary"><p>Adds <a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a> services to the specified <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> if they are not already registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IServiceCollection TryAddNetworkManager&lt;TNetworkManager&gt;(this IServiceCollection services)
+    where TNetworkManager : class, INetworkManager</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><span class="parametername">services</span></td>
+        <td><p>The <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> to add services to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><p>The IServiceCollection so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TNetworkManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="FellowOakDicom_IServiceCollectionExtension_TryAddTranscoderManager_" data-uid="FellowOakDicom.IServiceCollectionExtension.TryAddTranscoderManager*"></a>
+  <h4 id="FellowOakDicom_IServiceCollectionExtension_TryAddTranscoderManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.TryAddTranscoderManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">TryAddTranscoderManager&lt;TTranscoderManager&gt;(IServiceCollection)</h4>
+  <div class="markdown level1 summary"><p>Adds <a class="xref" href="FellowOakDicom.Imaging.Codec.ITranscoderManager.html">ITranscoderManager</a> services to the specified <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> if they are not already registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IServiceCollection TryAddTranscoderManager&lt;TTranscoderManager&gt;(this IServiceCollection services)
+    where TTranscoderManager : class, ITranscoderManager</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><span class="parametername">services</span></td>
+        <td><p>The <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> to add services to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><p>The IServiceCollection so that additional calls can be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -495,10 +677,6 @@
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -515,8 +693,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

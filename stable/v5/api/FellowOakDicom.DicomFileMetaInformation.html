@@ -12,7 +12,7 @@
    | Fellow Oak DICOM 5 API ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -88,12 +88,21 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></div>
     <div class="level2"><span class="xref">DicomFileMetaInformation</span></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_CompareInstancesByContent">DicomDataset.CompareInstancesByContent</a>
+    </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_InternalTransferSyntax">DicomDataset.InternalTransferSyntax</a>
     </div>
@@ -155,16 +164,25 @@
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_TryGetString_FellowOakDicom_DicomTag_System_String__">DicomDataset.TryGetString(DicomTag, String)</a>
     </div>
     <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_GetPrivateTag_FellowOakDicom_DicomTag_">DicomDataset.GetPrivateTag(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Contains_FellowOakDicom_DicomTag_">DicomDataset.Contains(DicomTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_FunctionalGroupValues_System_Int32_">DicomDataset.FunctionalGroupValues(Int32)</a>
+    </div>
+    <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Validate">DicomDataset.Validate()</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_GetPrivateTag_FellowOakDicom_DicomTag_">DicomDataset.GetPrivateTag(DicomTag)</a>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add_FellowOakDicom_DicomItem_">DicomDataset.Add(DicomItem)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add_FellowOakDicom_DicomItem___">DicomDataset.Add(DicomItem[])</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add_IEnumerable_FellowOakDicom_DicomItem__">DicomDataset.Add(IEnumerable&lt;DicomItem&gt;)</a>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add_System_Collections_Generic_IEnumerable_FellowOakDicom_DicomItem__">DicomDataset.Add(IEnumerable&lt;DicomItem&gt;)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Add__1_FellowOakDicom_DicomTag___0___">DicomDataset.Add&lt;T&gt;(DicomTag, T[])</a>
@@ -179,7 +197,7 @@
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate_FellowOakDicom_DicomItem_">DicomDataset.AddOrUpdate(DicomItem)</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate_IEnumerable_FellowOakDicom_DicomItem__">DicomDataset.AddOrUpdate(IEnumerable&lt;DicomItem&gt;)</a>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate_System_Collections_Generic_IEnumerable_FellowOakDicom_DicomItem__">DicomDataset.AddOrUpdate(IEnumerable&lt;DicomItem&gt;)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate__1_FellowOakDicom_DicomTag___0___">DicomDataset.AddOrUpdate&lt;T&gt;(DicomTag, T[])</a>
@@ -188,13 +206,10 @@
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_AddOrUpdate__1_FellowOakDicom_DicomVR_FellowOakDicom_DicomTag___0___">DicomDataset.AddOrUpdate&lt;T&gt;(DicomVR, DicomTag, T[])</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Contains_FellowOakDicom_DicomTag_">DicomDataset.Contains(DicomTag)</a>
-    </div>
-    <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Remove_FellowOakDicom_DicomTag___">DicomDataset.Remove(DicomTag[])</a>
     </div>
     <div>
-      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Remove_Func_FellowOakDicom_DicomItem_System_Boolean__">DicomDataset.Remove(Func&lt;DicomItem, Boolean&gt;)</a>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Remove_System_Func_FellowOakDicom_DicomItem_System_Boolean__">DicomDataset.Remove(Func&lt;DicomItem, Boolean&gt;)</a>
     </div>
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Clear">DicomDataset.Clear()</a>
@@ -214,17 +229,36 @@
     <div>
       <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_System_Collections_IEnumerable_GetEnumerator">DicomDataset.IEnumerable.GetEnumerator()</a>
     </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Equals_System_Object_">DicomDataset.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_Equals_FellowOakDicom_DicomDataset_">DicomDataset.Equals(DicomDataset)</a>
+    </div>
+    <div>
+      <a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_GetHashCode">DicomDataset.GetHashCode()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.html">FellowOakDicom</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
   <h5 id="FellowOakDicom_DicomFileMetaInformation_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DicomFileMetaInformation : DicomDataset</code></pre>
+    <pre><code class="lang-csharp hljs">public class DicomFileMetaInformation : DicomDataset, IEnumerable&lt;DicomItem&gt;, IEnumerable, IEquatable&lt;DicomDataset&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation__ctor_" data-uid="FellowOakDicom.DicomFileMetaInformation.#ctor*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation__ctor" data-uid="FellowOakDicom.DicomFileMetaInformation.#ctor">DicomFileMetaInformation()</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html">DicomFileMetaInformation</a> class.</p>
@@ -234,8 +268,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DicomFileMetaInformation()</code></pre>
   </div>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation__ctor_" data-uid="FellowOakDicom.DicomFileMetaInformation.#ctor*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation__ctor_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.DicomFileMetaInformation.#ctor(FellowOakDicom.DicomDataset)">DicomFileMetaInformation(DicomDataset)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html">DicomFileMetaInformation</a> class.</p>
@@ -263,8 +295,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation__ctor_" data-uid="FellowOakDicom.DicomFileMetaInformation.#ctor*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation__ctor_FellowOakDicom_DicomFileMetaInformation_" data-uid="FellowOakDicom.DicomFileMetaInformation.#ctor(FellowOakDicom.DicomFileMetaInformation)">DicomFileMetaInformation(DicomFileMetaInformation)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html">DicomFileMetaInformation</a> class.</p>
@@ -294,8 +324,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_ImplementationClassUID_" data-uid="FellowOakDicom.DicomFileMetaInformation.ImplementationClassUID*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_ImplementationClassUID" data-uid="FellowOakDicom.DicomFileMetaInformation.ImplementationClassUID">ImplementationClassUID</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Implementation Class UID.</p>
@@ -320,8 +348,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_ImplementationVersionName_" data-uid="FellowOakDicom.DicomFileMetaInformation.ImplementationVersionName*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_ImplementationVersionName" data-uid="FellowOakDicom.DicomFileMetaInformation.ImplementationVersionName">ImplementationVersionName</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Implementation Version Name.</p>
@@ -341,13 +367,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_MediaStorageSOPClassUID_" data-uid="FellowOakDicom.DicomFileMetaInformation.MediaStorageSOPClassUID*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_MediaStorageSOPClassUID" data-uid="FellowOakDicom.DicomFileMetaInformation.MediaStorageSOPClassUID">MediaStorageSOPClassUID</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Media Storage SOP Class UID.</p>
@@ -372,8 +396,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_MediaStorageSOPInstanceUID_" data-uid="FellowOakDicom.DicomFileMetaInformation.MediaStorageSOPInstanceUID*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_MediaStorageSOPInstanceUID" data-uid="FellowOakDicom.DicomFileMetaInformation.MediaStorageSOPInstanceUID">MediaStorageSOPInstanceUID</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Media Storage SOP Instance UID.</p>
@@ -398,8 +420,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_PrivateInformation_" data-uid="FellowOakDicom.DicomFileMetaInformation.PrivateInformation*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_PrivateInformation" data-uid="FellowOakDicom.DicomFileMetaInformation.PrivateInformation">PrivateInformation</h4>
   <div class="markdown level1 summary"><p>Gets or sets the private information associated with <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#FellowOakDicom_DicomFileMetaInformation_PrivateInformationCreatorUID">PrivateInformationCreatorUID</a>.
@@ -420,13 +440,11 @@ Required if <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#F
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_PrivateInformationCreatorUID_" data-uid="FellowOakDicom.DicomFileMetaInformation.PrivateInformationCreatorUID*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_PrivateInformationCreatorUID" data-uid="FellowOakDicom.DicomFileMetaInformation.PrivateInformationCreatorUID">PrivateInformationCreatorUID</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Private Information Creator UID (optional attribute).</p>
@@ -451,8 +469,6 @@ Required if <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#F
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_ReceivingApplicationEntityTitle_" data-uid="FellowOakDicom.DicomFileMetaInformation.ReceivingApplicationEntityTitle*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_ReceivingApplicationEntityTitle" data-uid="FellowOakDicom.DicomFileMetaInformation.ReceivingApplicationEntityTitle">ReceivingApplicationEntityTitle</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Receiving Application Entity Title (optional attribute).</p>
@@ -472,13 +488,11 @@ Required if <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#F
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_SendingApplicationEntityTitle_" data-uid="FellowOakDicom.DicomFileMetaInformation.SendingApplicationEntityTitle*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_SendingApplicationEntityTitle" data-uid="FellowOakDicom.DicomFileMetaInformation.SendingApplicationEntityTitle">SendingApplicationEntityTitle</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Sending Application Entity Title.</p>
@@ -498,13 +512,11 @@ Required if <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#F
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_SourceApplicationEntityTitle_" data-uid="FellowOakDicom.DicomFileMetaInformation.SourceApplicationEntityTitle*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_SourceApplicationEntityTitle" data-uid="FellowOakDicom.DicomFileMetaInformation.SourceApplicationEntityTitle">SourceApplicationEntityTitle</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Source Application Entity Title.</p>
@@ -524,13 +536,11 @@ Required if <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#F
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_TransferSyntax_" data-uid="FellowOakDicom.DicomFileMetaInformation.TransferSyntax*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_TransferSyntax" data-uid="FellowOakDicom.DicomFileMetaInformation.TransferSyntax">TransferSyntax</h4>
   <div class="markdown level1 summary"><p>Gets or sets the DICOM Part 10 dataset transfer syntax.</p>
@@ -555,8 +565,6 @@ Required if <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#F
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_Version_" data-uid="FellowOakDicom.DicomFileMetaInformation.Version*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_Version" data-uid="FellowOakDicom.DicomFileMetaInformation.Version">Version</h4>
   <div class="markdown level1 summary"><p>Gets or sets the file meta information version.</p>
@@ -576,15 +584,13 @@ Required if <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#F
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="xref">System.Byte</span>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_CreateSourceApplicationEntityTitle_" data-uid="FellowOakDicom.DicomFileMetaInformation.CreateSourceApplicationEntityTitle*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_CreateSourceApplicationEntityTitle" data-uid="FellowOakDicom.DicomFileMetaInformation.CreateSourceApplicationEntityTitle">CreateSourceApplicationEntityTitle()</h4>
   <div class="markdown level1 summary"><p>Create a source application title from the machine name.</p>
@@ -604,14 +610,12 @@ Required if <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#F
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><p>The machine name truncated to a maximum of 16 characters.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_ToString_" data-uid="FellowOakDicom.DicomFileMetaInformation.ToString*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_ToString" data-uid="FellowOakDicom.DicomFileMetaInformation.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
@@ -631,7 +635,7 @@ Required if <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#F
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><p>A string that represents the current object.</p>
 </td>
       </tr>
@@ -639,8 +643,6 @@ Required if <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#F
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_ToString">DicomDataset.ToString()</a></div>
-  
-  
   <a id="FellowOakDicom_DicomFileMetaInformation_ValidateTag_" data-uid="FellowOakDicom.DicomFileMetaInformation.ValidateTag*"></a>
   <h4 id="FellowOakDicom_DicomFileMetaInformation_ValidateTag_FellowOakDicom_DicomTag_" data-uid="FellowOakDicom.DicomFileMetaInformation.ValidateTag(FellowOakDicom.DicomTag)">ValidateTag(DicomTag)</h4>
   <div class="markdown level1 summary"></div>
@@ -668,15 +670,82 @@ Required if <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#F
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FellowOakDicom.DicomDataset.html#FellowOakDicom_DicomDataset_ValidateTag_FellowOakDicom_DicomTag_">DicomDataset.ValidateTag(DicomTag)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_Clone_FellowOakDicom_DicomDataset_">DicomDatasetExtensions.Clone(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_GetDateTime_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTag_FellowOakDicom_DicomTag_">DicomDatasetExtensions.GetDateTime(DicomDataset, DicomTag, DicomTag)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_GetDateTimeOffset_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTag_FellowOakDicom_DicomTag_FellowOakDicom_DicomDataset_">DicomDatasetExtensions.GetDateTimeOffset(DicomDataset, DicomTag, DicomTag, DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_EnumerateMasked_FellowOakDicom_DicomDataset_FellowOakDicom_DicomMaskedTag_">DicomDatasetExtensions.EnumerateMasked(DicomDataset, DicomMaskedTag)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_EnumerateGroup_FellowOakDicom_DicomDataset_System_UInt16_">DicomDatasetExtensions.EnumerateGroup(DicomDataset, UInt16)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_NotValidated_FellowOakDicom_DicomDataset_">DicomDatasetExtensions.NotValidated(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.DicomDatasetExtensions.html#FellowOakDicom_DicomDatasetExtensions_Validated_FellowOakDicom_DicomDataset_">DicomDatasetExtensions.Validated(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.EnumerableExtensions.html#FellowOakDicom_EnumerableExtensions_Each__1_System_Collections_Generic_IEnumerable___0__System_Action___0__">EnumerableExtensions.Each&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.ConsoleExtensions.html#FellowOakDicom_Log_ConsoleExtensions_WriteToConsole_FellowOakDicom_DicomDataset_">ConsoleExtensions.WriteToConsole(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.Extensions.html#FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomDataset_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel_">Extensions.WriteToLog(DicomDataset, ILogger, LogLevel)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.Extensions.html#FellowOakDicom_Log_Extensions_WriteToLog_FellowOakDicom_DicomDataset_FellowOakDicom_Log_ILogger_FellowOakDicom_Log_LogLevel_">Extensions.WriteToLog(DicomDataset, ILogger, LogLevel)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Log.Extensions.html#FellowOakDicom_Log_Extensions_WriteToString_FellowOakDicom_DicomDataset_">Extensions.WriteToString(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Serialization.DicomXML.html#FellowOakDicom_Serialization_DicomXML_WriteToXml_FellowOakDicom_DicomDataset_">DicomXML.WriteToXml(DicomDataset)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_Diff__2_System_Collections_Generic_IEnumerable___0__System_Func___0___0___1__">LinqExtensions.Diff&lt;S, T&gt;(IEnumerable&lt;S&gt;, Func&lt;S, S, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_FilterByType__1_System_Collections_Generic_IEnumerable_System_Object__">LinqExtensions.FilterByType&lt;T&gt;(IEnumerable&lt;Object&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.Imaging.Codec.DicomCodecExtensions.html#FellowOakDicom_Imaging_Codec_DicomCodecExtensions_Clone_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTransferSyntax_FellowOakDicom_Imaging_Codec_DicomCodecParams_">DicomCodecExtensions.Clone(DicomDataset, DicomTransferSyntax, DicomCodecParams)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.IO.Writer.DicomDatasetExtensions.html#FellowOakDicom_IO_Writer_DicomDatasetExtensions_RecalculateGroupLength_FellowOakDicom_DicomDataset_System_UInt16_System_Boolean_">DicomDatasetExtensions.RecalculateGroupLength(DicomDataset, UInt16, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.IO.Writer.DicomDatasetExtensions.html#FellowOakDicom_IO_Writer_DicomDatasetExtensions_RecalculateGroupLengths_FellowOakDicom_DicomDataset_System_Boolean_">DicomDatasetExtensions.RecalculateGroupLengths(DicomDataset, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="FellowOakDicom.IO.Writer.DicomDatasetExtensions.html#FellowOakDicom_IO_Writer_DicomDatasetExtensions_RemoveGroupLengths_FellowOakDicom_DicomDataset_System_Boolean_">DicomDatasetExtensions.RemoveGroupLengths(DicomDataset, Boolean)</a>
+  </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -693,8 +762,8 @@ Required if <a class="xref" href="FellowOakDicom.DicomFileMetaInformation.html#F
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) 2012-2025 fo-dicom contributors
             
-            <span>Copyright (c) 2012-2023 fo-dicom contributors</span>
           </div>
         </div>
       </footer>
