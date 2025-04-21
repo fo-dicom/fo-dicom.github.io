@@ -1,476 +1,721 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
+<!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace FellowOakDicom.Network
-   | Fellow Oak DICOM 5 API </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace FellowOakDicom.Network
-   | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Namespace FellowOakDicom.Network | Fellow Oak DICOM 5 API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace FellowOakDicom.Network | Fellow Oak DICOM 5 API ">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
+            Fellow Oak DICOM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Network">
-  
-  <h1 id="FellowOakDicom_Network" data-uid="FellowOakDicom.Network" class="text-break">Namespace FellowOakDicom.Network
-  </h1>
+
+        <article data-uid="FellowOakDicom.Network">
+
+  <h1 id="FellowOakDicom_Network" data-uid="FellowOakDicom.Network" class="text-break">Namespace FellowOakDicom.Network</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="FellowOakDicom.Network.AAbort.html">AAbort</a></h4>
-      <section><p>A-ABORT</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.AAssociateAC.html">AAssociateAC</a></h4>
-      <section><p>A-ASSOCIATE-AC</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.AAssociateRJ.html">AAssociateRJ</a></h4>
-      <section><p>A-ASSOCIATE-RJ</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.AAssociateRQ.html">AAssociateRQ</a></h4>
-      <section><p>A-ASSOCIATE-RQ</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.AReleaseRP.html">AReleaseRP</a></h4>
-      <section><p>A-RELEASE-RP</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.AReleaseRQ.html">AReleaseRQ</a></h4>
-      <section><p>A-RELEASE-RQ</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.ConnectionClosedPrematurelyException.html">ConnectionClosedPrematurelyException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DefaultDicomServerFactory.html">DefaultDicomServerFactory</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DefaultDicomServerRegistry.html">DefaultDicomServerRegistry</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DesktopNetworkListener.html">DesktopNetworkListener</a></h4>
-      <section><p>.NET implementation of the <a class="xref" href="FellowOakDicom.Network.INetworkListener.html">INetworkListener</a>.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DesktopNetworkManager.html">DesktopNetworkManager</a></h4>
-      <section><p>.NET implementation of <a class="xref" href="FellowOakDicom.Network.NetworkManager.html">NetworkManager</a>.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DesktopNetworkStream.html">DesktopNetworkStream</a></h4>
-      <section><p>.NET implementation of <a class="xref" href="FellowOakDicom.Network.INetworkStream.html">INetworkStream</a>.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomAssociation.html">DicomAssociation</a></h4>
-      <section><p>Representation of a DICOM association.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomAssociationAbortedException.html">DicomAssociationAbortedException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomAssociationRejectedException.html">DicomAssociationRejectedException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomAssociationRequestTimedOutException.html">DicomAssociationRequestTimedOutException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCEchoProvider.html">DicomCEchoProvider</a></h4>
-      <section><p>Implementation of a C-ECHO Service Class Provider.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCEchoRequest.html">DicomCEchoRequest</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCEchoResponse.html">DicomCEchoResponse</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCFindApplicationInfo.html">DicomCFindApplicationInfo</a></h4>
-      <section><p>Implementation of the Query Service Application Information field for the SOP Class Extended Negotiation
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.AAbort.html">AAbort</a></dt>
+      <dd><p>A-ABORT</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.AAssociateAC.html">AAssociateAC</a></dt>
+      <dd><p>A-ASSOCIATE-AC</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.AAssociateRJ.html">AAssociateRJ</a></dt>
+      <dd><p>A-ASSOCIATE-RJ</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.AAssociateRQ.html">AAssociateRQ</a></dt>
+      <dd><p>A-ASSOCIATE-RQ</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.AReleaseRP.html">AReleaseRP</a></dt>
+      <dd><p>A-RELEASE-RP</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.AReleaseRQ.html">AReleaseRQ</a></dt>
+      <dd><p>A-RELEASE-RQ</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.ConnectionClosedPrematurelyException.html">ConnectionClosedPrematurelyException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DefaultDicomServerFactory.html">DefaultDicomServerFactory</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DefaultDicomServerRegistry.html">DefaultDicomServerRegistry</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DesktopNetworkListener.html">DesktopNetworkListener</a></dt>
+      <dd><p>.NET implementation of the <a class="xref" href="FellowOakDicom.Network.INetworkListener.html">INetworkListener</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DesktopNetworkManager.html">DesktopNetworkManager</a></dt>
+      <dd><p>.NET implementation of <a class="xref" href="FellowOakDicom.Network.NetworkManager.html">NetworkManager</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DesktopNetworkStream.html">DesktopNetworkStream</a></dt>
+      <dd><p>.NET implementation of <a class="xref" href="FellowOakDicom.Network.INetworkStream.html">INetworkStream</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomAssociation.html">DicomAssociation</a></dt>
+      <dd><p>Representation of a DICOM association.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomAssociationAbortedException.html">DicomAssociationAbortedException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomAssociationRejectedException.html">DicomAssociationRejectedException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomAssociationRequestTimedOutException.html">DicomAssociationRequestTimedOutException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCEchoProvider.html">DicomCEchoProvider</a></dt>
+      <dd><p>Implementation of a C-ECHO Service Class Provider.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCEchoRequest.html">DicomCEchoRequest</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCEchoResponse.html">DicomCEchoResponse</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCFindApplicationInfo.html">DicomCFindApplicationInfo</a></dt>
+      <dd><p>Implementation of the Query Service Application Information field for the SOP Class Extended Negotiation
 Sub-item. See <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_C.5.html#sect_C.5.1.1">http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_C.5.html#sect_C.5.1.1</a>
 for details on the Service Class Application Information field for C-FIND SOP Classes.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCFindRequest.html">DicomCFindRequest</a></h4>
-      <section><p>Representation of a C-FIND request.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCFindResponse.html">DicomCFindResponse</a></h4>
-      <section><p>Representation of a C-FIND response.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCGetApplicationInfo.html">DicomCGetApplicationInfo</a></h4>
-      <section><p>Implementation of the Retrieve Service Application Information field for the SOP Class Extended Negotiation
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCFindRequest.html">DicomCFindRequest</a></dt>
+      <dd><p>Representation of a C-FIND request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCFindResponse.html">DicomCFindResponse</a></dt>
+      <dd><p>Representation of a C-FIND response.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCGetApplicationInfo.html">DicomCGetApplicationInfo</a></dt>
+      <dd><p>Implementation of the Retrieve Service Application Information field for the SOP Class Extended Negotiation
 Sub-item. See <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_C.5.3.html">http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_C.5.3.html</a>
 for details on the Service Class Application Information field for C-GET SOP Classes.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCGetRequest.html">DicomCGetRequest</a></h4>
-      <section><p>Representation of a C-GET request.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCGetResponse.html">DicomCGetResponse</a></h4>
-      <section><p>Representation of a C-GET response.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCMoveApplicationInfo.html">DicomCMoveApplicationInfo</a></h4>
-      <section><p>Implementation of the Retrieve Service Application Information field for the SOP Class Extended Negotiation
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCGetRequest.html">DicomCGetRequest</a></dt>
+      <dd><p>Representation of a C-GET request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCGetResponse.html">DicomCGetResponse</a></dt>
+      <dd><p>Representation of a C-GET response.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCMoveApplicationInfo.html">DicomCMoveApplicationInfo</a></dt>
+      <dd><p>Implementation of the Retrieve Service Application Information field for the SOP Class Extended Negotiation
 Sub-item. See <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_C.5.2.html">http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_C.5.2.html</a>
 for details on the Service Class Application Information field for C-MOVE SOP Classes.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCMoveRequest.html">DicomCMoveRequest</a></h4>
-      <section><p>Representation of a C-MOVE request.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCMoveResponse.html">DicomCMoveResponse</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCStoreApplicationInfo.html">DicomCStoreApplicationInfo</a></h4>
-      <section><p>Implementation of the Storage Service Application Information field for the SOP Class Extended Negotiation
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCMoveRequest.html">DicomCMoveRequest</a></dt>
+      <dd><p>Representation of a C-MOVE request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCMoveResponse.html">DicomCMoveResponse</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCStoreApplicationInfo.html">DicomCStoreApplicationInfo</a></dt>
+      <dd><p>Implementation of the Storage Service Application Information field for the SOP Class Extended Negotiation
 Sub-item. See <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.3.html#sect_B.3.1">http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.3.html#sect_B.3.1</a> for details
 on the Service Class Application Information field for C-STORE SOP Classes.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCStoreRequest.html">DicomCStoreRequest</a></h4>
-      <section><p>Represents a DICOM C-Store request to be sent to a C-Store SCP or a C-Store request that has been received from a C-Store SCU.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCStoreResponse.html">DicomCStoreResponse</a></h4>
-      <section><p>Represents a DICOM C-Store response to be returned to a C-Store SCU or a C-Store response that has been received from a C-Store SCP.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomExtendedNegotiation.html">DicomExtendedNegotiation</a></h4>
-      <section><p>Class for managing DICOM extended negotiation.
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCStoreRequest.html">DicomCStoreRequest</a></dt>
+      <dd><p>Represents a DICOM C-Store request to be sent to a C-Store SCP or a C-Store request that has been received from a C-Store SCU.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCStoreResponse.html">DicomCStoreResponse</a></dt>
+      <dd><p>Represents a DICOM C-Store response to be returned to a C-Store SCU or a C-Store response that has been received from a C-Store SCP.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomExtendedNegotiation.html">DicomExtendedNegotiation</a></dt>
+      <dd><p>Class for managing DICOM extended negotiation.
 See <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part07/sect_D.3.3.5.html">http://dicom.nema.org/medical/dicom/current/output/chtml/part07/sect_D.3.3.5.html</a>
 and sect_D.3.3.6 for details on the SOP Class (Common) Extended Negotiation Sub-item.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomExtendedNegotiationCollection.html">DicomExtendedNegotiationCollection</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomMessage.html">DicomMessage</a></h4>
-      <section><p>Base class for DIMSE-C and DIMSE-N message items.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNActionRequest.html">DicomNActionRequest</a></h4>
-      <section><p>Representation of an N-ACTION request.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNActionResponse.html">DicomNActionResponse</a></h4>
-      <section><p>Representation of an N-ACTION response message.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNCreateRequest.html">DicomNCreateRequest</a></h4>
-      <section><p>Representation of the N-CREATE request.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNCreateResponse.html">DicomNCreateResponse</a></h4>
-      <section><p>Representation of the N-CREATE response.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNDeleteRequest.html">DicomNDeleteRequest</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNDeleteResponse.html">DicomNDeleteResponse</a></h4>
-      <section><p>Representation of an N-DELETE response.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNetworkException.html">DicomNetworkException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNEventReportRequest.html">DicomNEventReportRequest</a></h4>
-      <section><p>Representation of an N-EVENTREPORT request.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNEventReportResponse.html">DicomNEventReportResponse</a></h4>
-      <section><p>Representation of an N-EVENTREPORT response message.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNGetRequest.html">DicomNGetRequest</a></h4>
-      <section><p>Representation of an N-GET request.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNGetResponse.html">DicomNGetResponse</a></h4>
-      <section><p>Representation of the N-GET response.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNSetRequest.html">DicomNSetRequest</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNSetResponse.html">DicomNSetResponse</a></h4>
-      <section><p>Representation of an N-SET response.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomPresentationContext.html">DicomPresentationContext</a></h4>
-      <section><p>Representation of a presentation context.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomPresentationContextCollection.html">DicomPresentationContextCollection</a></h4>
-      <section><p>Collection of presentation contexts, with unique ID:s.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomPriorityRequest.html">DicomPriorityRequest</a></h4>
-      <section><p>Abstract base class for DICOM requests with priority.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a></h4>
-      <section><p>Base class for DIMSE-C and DIMSE-N request items.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomRequest.OnRequestSentEventArgs.html">DicomRequest.OnRequestSentEventArgs</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomRequest.OnTimeoutEventArgs.html">DicomRequest.OnTimeoutEventArgs</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomRequestTimedOutException.html">DicomRequestTimedOutException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a></h4>
-      <section><p>Base class for DIMSE-C and DIMSE-N response items.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomServer-1.html">DicomServer&lt;T&gt;</a></h4>
-      <section><p>Representation of a DICOM server.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomServerDependencies.html">DicomServerDependencies</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomServerFactory.html">DicomServerFactory</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a></h4>
-      <section><p>Configures the DICOM server startup process</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomServerRegistration.html">DicomServerRegistration</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomServerRegistry.html">DicomServerRegistry</a></h4>
-      <section><p>Register where we keep the running DICOM servers</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomService.html">DicomService</a></h4>
-      <section><p>Base class for DICOM network services.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomServiceApplicationInfo.html">DicomServiceApplicationInfo</a></h4>
-      <section><p>Base class that encapsulates the Service Class Application Information field for the
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomExtendedNegotiationCollection.html">DicomExtendedNegotiationCollection</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomMessage.html">DicomMessage</a></dt>
+      <dd><p>Base class for DIMSE-C and DIMSE-N message items.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNActionRequest.html">DicomNActionRequest</a></dt>
+      <dd><p>Representation of an N-ACTION request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNActionResponse.html">DicomNActionResponse</a></dt>
+      <dd><p>Representation of an N-ACTION response message.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNCreateRequest.html">DicomNCreateRequest</a></dt>
+      <dd><p>Representation of the N-CREATE request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNCreateResponse.html">DicomNCreateResponse</a></dt>
+      <dd><p>Representation of the N-CREATE response.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNDeleteRequest.html">DicomNDeleteRequest</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNDeleteResponse.html">DicomNDeleteResponse</a></dt>
+      <dd><p>Representation of an N-DELETE response.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNEventReportRequest.html">DicomNEventReportRequest</a></dt>
+      <dd><p>Representation of an N-EVENTREPORT request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNEventReportResponse.html">DicomNEventReportResponse</a></dt>
+      <dd><p>Representation of an N-EVENTREPORT response message.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNGetRequest.html">DicomNGetRequest</a></dt>
+      <dd><p>Representation of an N-GET request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNGetResponse.html">DicomNGetResponse</a></dt>
+      <dd><p>Representation of the N-GET response.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNSetRequest.html">DicomNSetRequest</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNSetResponse.html">DicomNSetResponse</a></dt>
+      <dd><p>Representation of an N-SET response.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNetworkException.html">DicomNetworkException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomPresentationContext.html">DicomPresentationContext</a></dt>
+      <dd><p>Representation of a presentation context.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomPresentationContextCollection.html">DicomPresentationContextCollection</a></dt>
+      <dd><p>Collection of presentation contexts, with unique ID:s.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomPriorityRequest.html">DicomPriorityRequest</a></dt>
+      <dd><p>Abstract base class for DICOM requests with priority.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a></dt>
+      <dd><p>Base class for DIMSE-C and DIMSE-N request items.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomRequest.OnRequestSentEventArgs.html">DicomRequest.OnRequestSentEventArgs</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomRequest.OnTimeoutEventArgs.html">DicomRequest.OnTimeoutEventArgs</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomRequestTimedOutException.html">DicomRequestTimedOutException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a></dt>
+      <dd><p>Base class for DIMSE-C and DIMSE-N response items.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomServerDependencies.html">DicomServerDependencies</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomServerFactory.html">DicomServerFactory</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a></dt>
+      <dd><p>Configures the DICOM server startup process</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomServerRegistration.html">DicomServerRegistration</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomServerRegistry.html">DicomServerRegistry</a></dt>
+      <dd><p>Register where we keep the running DICOM servers</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomServer-1.html">DicomServer&lt;T&gt;</a></dt>
+      <dd><p>Representation of a DICOM server.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomService.html">DicomService</a></dt>
+      <dd><p>Base class for DICOM network services.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomServiceApplicationInfo.html">DicomServiceApplicationInfo</a></dt>
+      <dd><p>Base class that encapsulates the Service Class Application Information field for the
 SOP Class Extended Negotiation Sub-item. Inherited classes can implement the application
 information specific to the Service Class specification identified by the SOP Class UID.
 See: <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part07/sect_D.3.3.5.html">http://dicom.nema.org/medical/dicom/current/output/chtml/part07/sect_D.3.3.5.html</a> for
 details on the Service Class Application Information field.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomServiceDependencies.html">DicomServiceDependencies</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a></h4>
-      <section><p>Configures a DICOM service (an instance of an active DICOM connection)</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></h4>
-      <section><p>DICOM Status</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomUserIdentityNegotiation.html">DicomUserIdentityNegotiation</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.NetworkManager.html">NetworkManager</a></h4>
-      <section><p>Abstract manager class for network operations.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.NetworkStreamCreationOptions.html">NetworkStreamCreationOptions</a></h4>
-      <section><p>Contains the necessary parameters to open a new network stream to another DICOM SCP</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.PDataTF.html">PDataTF</a></h4>
-      <section><p>P-DATA-TF</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.PDV.html">PDV</a></h4>
-      <section><p>PDV</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.RawPDU.html">RawPDU</a></h4>
-      <section><p>Encapsulates PDU data for reading or writing</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomCEchoProvider.html">IDicomCEchoProvider</a></h4>
-      <section><p>Interface for C-ECHO service class providers.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomCFindProvider.html">IDicomCFindProvider</a></h4>
-      <section><p>Interface representing event handlers for DIMSE services applicable to C-FIND SOP instances.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomCGetProvider.html">IDicomCGetProvider</a></h4>
-      <section><p>Interface for methods related to a C-GET SCP.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomCMoveProvider.html">IDicomCMoveProvider</a></h4>
-      <section><p>Interface representing event handlers for DIMSE services applicable to C-MOVE SOP instances.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomCStoreProvider.html">IDicomCStoreProvider</a></h4>
-      <section><p>Interface for a DICOM C-STORE Service Class Provider.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomNEventReportRequestProvider.html">IDicomNEventReportRequestProvider</a></h4>
-      <section><p>Interface representing event handler for synchronous storage commitment handling</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomNServiceProvider.html">IDicomNServiceProvider</a></h4>
-      <section><p>Interface representing event handlers for DIMSE services applicable to Normalized SOP instances.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomServer.html">IDicomServer</a></h4>
-      <section><p>Interface representing a DICOM server instance.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomServer-1.html">IDicomServer&lt;TServiceProvider&gt;</a></h4>
-      <section><p>Helper interface to ensure type safety when creating DICOM server objects via <pre><code>DicomServer.Create</code></pre> overloads.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomServerFactory.html">IDicomServerFactory</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomServerRegistry.html">IDicomServerRegistry</a></h4>
-      <section><p>Register where we keep the running DICOM servers</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomService.html">IDicomService</a></h4>
-      <section><p>Common interface for DICOM service users and providers.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomServiceProvider.html">IDicomServiceProvider</a></h4>
-      <section><p>Interface for DICOM service providers.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.IDicomServiceRunner.html">IDicomServiceRunner</a></h4>
-      <section><p>Interface for initializing long-running operations in a DICOM service.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.INetworkListener.html">INetworkListener</a></h4>
-      <section><p>Interface for listening to network stream connections.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.INetworkStream.html">INetworkStream</a></h4>
-      <section><p>Interface representing a network stream.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.PDU.html">PDU</a></h4>
-      <section><p>Interface for PDU</p>
-</section>
-    <h3 id="enums">Enums
-  </h3>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomAbortReason.html">DicomAbortReason</a></h4>
-      <section><p>Abort reason</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomAbortSource.html">DicomAbortSource</a></h4>
-      <section><p>Abort source</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCFindOption.html">DicomCFindOption</a></h4>
-      <section><p>Specifies the options for C-Find SOP Class Extended Negotiation.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCGetOption.html">DicomCGetOption</a></h4>
-      <section><p>Specifies the options for C-Get SOP Class Extended Negotiation.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCMoveOption.html">DicomCMoveOption</a></h4>
-      <section><p>Specifies the options for C-Move SOP Class Extended Negotiation.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCommandField.html">DicomCommandField</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomElementCoercion.html">DicomElementCoercion</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomLevelOfDigitalSignatureSupport.html">DicomLevelOfDigitalSignatureSupport</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomLevelOfSupport.html">DicomLevelOfSupport</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomPresentationContextResult.html">DicomPresentationContextResult</a></h4>
-      <section><p>Enumeration of presentation context results.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomPriority.html">DicomPriority</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomQueryRetrieveLevel.html">DicomQueryRetrieveLevel</a></h4>
-      <section><p>Query/Retrieve level of DICOM command messages, applicable to C-FIND, C-GET and C-MOVE.
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomServiceDependencies.html">DicomServiceDependencies</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a></dt>
+      <dd><p>Configures a DICOM service (an instance of an active DICOM connection)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+      <dd><p>DICOM Status</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomUserIdentityNegotiation.html">DicomUserIdentityNegotiation</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.NetworkManager.html">NetworkManager</a></dt>
+      <dd><p>Abstract manager class for network operations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.NetworkStreamCreationOptions.html">NetworkStreamCreationOptions</a></dt>
+      <dd><p>Contains the necessary parameters to open a new network stream to another DICOM SCP</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.PDV.html">PDV</a></dt>
+      <dd><p>PDV</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.PDataTF.html">PDataTF</a></dt>
+      <dd><p>P-DATA-TF</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.RawPDU.html">RawPDU</a></dt>
+      <dd><p>Encapsulates PDU data for reading or writing</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomCEchoProvider.html">IDicomCEchoProvider</a></dt>
+      <dd><p>Interface for C-ECHO service class providers.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomCFindProvider.html">IDicomCFindProvider</a></dt>
+      <dd><p>Interface representing event handlers for DIMSE services applicable to C-FIND SOP instances.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomCGetProvider.html">IDicomCGetProvider</a></dt>
+      <dd><p>Interface for methods related to a C-GET SCP.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomCMoveProvider.html">IDicomCMoveProvider</a></dt>
+      <dd><p>Interface representing event handlers for DIMSE services applicable to C-MOVE SOP instances.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomCStoreProvider.html">IDicomCStoreProvider</a></dt>
+      <dd><p>Interface for a DICOM C-STORE Service Class Provider.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomNEventReportRequestProvider.html">IDicomNEventReportRequestProvider</a></dt>
+      <dd><p>Interface representing event handler for synchronous storage commitment handling</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomNServiceProvider.html">IDicomNServiceProvider</a></dt>
+      <dd><p>Interface representing event handlers for DIMSE services applicable to Normalized SOP instances.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomServer.html">IDicomServer</a></dt>
+      <dd><p>Interface representing a DICOM server instance.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomServerFactory.html">IDicomServerFactory</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomServerRegistry.html">IDicomServerRegistry</a></dt>
+      <dd><p>Register where we keep the running DICOM servers</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomServer-1.html">IDicomServer&lt;TServiceProvider&gt;</a></dt>
+      <dd><p>Helper interface to ensure type safety when creating DICOM server objects via <pre><code class="lang-csharp">DicomServer.Create</code></pre> overloads.
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomService.html">IDicomService</a></dt>
+      <dd><p>Common interface for DICOM service users and providers.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomServiceProvider.html">IDicomServiceProvider</a></dt>
+      <dd><p>Interface for DICOM service providers.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.IDicomServiceRunner.html">IDicomServiceRunner</a></dt>
+      <dd><p>Interface for initializing long-running operations in a DICOM service.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.INetworkListener.html">INetworkListener</a></dt>
+      <dd><p>Interface for listening to network stream connections.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.INetworkStream.html">INetworkStream</a></dt>
+      <dd><p>Interface representing a network stream.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.PDU.html">PDU</a></dt>
+      <dd><p>Interface for PDU</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomAbortReason.html">DicomAbortReason</a></dt>
+      <dd><p>Abort reason</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomAbortSource.html">DicomAbortSource</a></dt>
+      <dd><p>Abort source</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCFindOption.html">DicomCFindOption</a></dt>
+      <dd><p>Specifies the options for C-Find SOP Class Extended Negotiation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCGetOption.html">DicomCGetOption</a></dt>
+      <dd><p>Specifies the options for C-Get SOP Class Extended Negotiation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCMoveOption.html">DicomCMoveOption</a></dt>
+      <dd><p>Specifies the options for C-Move SOP Class Extended Negotiation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCommandField.html">DicomCommandField</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomElementCoercion.html">DicomElementCoercion</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomLevelOfDigitalSignatureSupport.html">DicomLevelOfDigitalSignatureSupport</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomLevelOfSupport.html">DicomLevelOfSupport</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomPresentationContextResult.html">DicomPresentationContextResult</a></dt>
+      <dd><p>Enumeration of presentation context results.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomPriority.html">DicomPriority</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomQueryRetrieveLevel.html">DicomQueryRetrieveLevel</a></dt>
+      <dd><p>Query/Retrieve level of DICOM command messages, applicable to C-FIND, C-GET and C-MOVE.
 <a class="xref" href="FellowOakDicom.DicomTag.html#FellowOakDicom_DicomTag_QueryRetrieveLevel">QueryRetrieveLevel</a></p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomRejectReason.html">DicomRejectReason</a></h4>
-      <section><p>Rejection reason</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomRejectResult.html">DicomRejectResult</a></h4>
-      <section><p>Rejection result</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomRejectSource.html">DicomRejectSource</a></h4>
-      <section><p>Rejection source</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomState.html">DicomState</a></h4>
-      <section><p>State of a DICOM status code</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomTimeout.html">DicomTimeout</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomUserIdentityType.html">DicomUserIdentityType</a></h4>
-      <section><p>User identity type</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.RawPduType.html">RawPduType</a></h4>
-      <section></section>
-    <h3 id="delegates">Delegates
-  </h3>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCEchoRequest.ResponseDelegate.html">DicomCEchoRequest.ResponseDelegate</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCFindRequest.ResponseDelegate.html">DicomCFindRequest.ResponseDelegate</a></h4>
-      <section><p>Delegate for response received event handling.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCGetRequest.ResponseDelegate.html">DicomCGetRequest.ResponseDelegate</a></h4>
-      <section><p>Represents a callback method to be executed when the response for the DIMSE C-GET request is received.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCMoveRequest.ResponseDelegate.html">DicomCMoveRequest.ResponseDelegate</a></h4>
-      <section><p>Delegate representing a C-MOVE RSP received event handler.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomCStoreRequest.ResponseDelegate.html">DicomCStoreRequest.ResponseDelegate</a></h4>
-      <section><p>Represents a callback method to be executed when the response for the DICOM C-Store request is received.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNActionRequest.ResponseDelegate.html">DicomNActionRequest.ResponseDelegate</a></h4>
-      <section><p>Delegate representing a N-ACTION RSP received event handler.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNCreateRequest.ResponseDelegate.html">DicomNCreateRequest.ResponseDelegate</a></h4>
-      <section><p>Delegate representing a N-CREATE RSP received event handler.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNDeleteRequest.ResponseDelegate.html">DicomNDeleteRequest.ResponseDelegate</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNEventReportRequest.ResponseDelegate.html">DicomNEventReportRequest.ResponseDelegate</a></h4>
-      <section><p>Delegate representing a N-EVENTREPORT RSP received event handler.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNGetRequest.ResponseDelegate.html">DicomNGetRequest.ResponseDelegate</a></h4>
-      <section><p>Delegate representing a N-GET RSP received event handler.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomNSetRequest.ResponseDelegate.html">DicomNSetRequest.ResponseDelegate</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.DicomServiceApplicationInfo.CreateApplicationInfoDelegate.html">DicomServiceApplicationInfo.CreateApplicationInfoDelegate</a></h4>
-      <section><p>Represents a call-back method to be executed when application info is created.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.PDUBytesHandler.html">PDUBytesHandler</a></h4>
-      <section><p>Delegate for passing byte array</p>
-</section>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomRejectReason.html">DicomRejectReason</a></dt>
+      <dd><p>Rejection reason</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomRejectResult.html">DicomRejectResult</a></dt>
+      <dd><p>Rejection result</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomRejectSource.html">DicomRejectSource</a></dt>
+      <dd><p>Rejection source</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomState.html">DicomState</a></dt>
+      <dd><p>State of a DICOM status code</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomTimeout.html">DicomTimeout</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomUserIdentityType.html">DicomUserIdentityType</a></dt>
+      <dd><p>User identity type</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.RawPduType.html">RawPduType</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="delegates">
+Delegates
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCEchoRequest.ResponseDelegate.html">DicomCEchoRequest.ResponseDelegate</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCFindRequest.ResponseDelegate.html">DicomCFindRequest.ResponseDelegate</a></dt>
+      <dd><p>Delegate for response received event handling.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCGetRequest.ResponseDelegate.html">DicomCGetRequest.ResponseDelegate</a></dt>
+      <dd><p>Represents a callback method to be executed when the response for the DIMSE C-GET request is received.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCMoveRequest.ResponseDelegate.html">DicomCMoveRequest.ResponseDelegate</a></dt>
+      <dd><p>Delegate representing a C-MOVE RSP received event handler.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomCStoreRequest.ResponseDelegate.html">DicomCStoreRequest.ResponseDelegate</a></dt>
+      <dd><p>Represents a callback method to be executed when the response for the DICOM C-Store request is received.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNActionRequest.ResponseDelegate.html">DicomNActionRequest.ResponseDelegate</a></dt>
+      <dd><p>Delegate representing a N-ACTION RSP received event handler.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNCreateRequest.ResponseDelegate.html">DicomNCreateRequest.ResponseDelegate</a></dt>
+      <dd><p>Delegate representing a N-CREATE RSP received event handler.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNDeleteRequest.ResponseDelegate.html">DicomNDeleteRequest.ResponseDelegate</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNEventReportRequest.ResponseDelegate.html">DicomNEventReportRequest.ResponseDelegate</a></dt>
+      <dd><p>Delegate representing a N-EVENTREPORT RSP received event handler.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNGetRequest.ResponseDelegate.html">DicomNGetRequest.ResponseDelegate</a></dt>
+      <dd><p>Delegate representing a N-GET RSP received event handler.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomNSetRequest.ResponseDelegate.html">DicomNSetRequest.ResponseDelegate</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.DicomServiceApplicationInfo.CreateApplicationInfoDelegate.html">DicomServiceApplicationInfo.CreateApplicationInfoDelegate</a></dt>
+      <dd><p>Represents a call-back method to be executed when application info is created.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.PDUBytesHandler.html">PDUBytesHandler</a></dt>
+      <dd><p>Delegate for passing byte array</p>
+</dd>
+    </dl>
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2012-2025 fo-dicom contributors
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            Copyright (c) 2012-2025 fo-dicom contributors
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

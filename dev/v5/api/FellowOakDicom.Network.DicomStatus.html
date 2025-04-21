@@ -1,1958 +1,2459 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
+<!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DicomStatus
-   | Fellow Oak DICOM 5 API </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DicomStatus
-   | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Class DicomStatus | Fellow Oak DICOM 5 API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DicomStatus | Fellow Oak DICOM 5 API ">
+      
+      <meta name="description" content="DICOM Status">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/fo-dicom/fo-dicom/new/development/apiSpec/new?filename=FellowOakDicom_Network_DicomStatus.md&amp;value=---%0Auid%3A%20FellowOakDicom.Network.DicomStatus%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
+            Fellow Oak DICOM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Network.DicomStatus">
-  
-  
-  <h1 id="FellowOakDicom_Network_DicomStatus" data-uid="FellowOakDicom.Network.DicomStatus" class="text-break">Class DicomStatus
+
+        <article data-uid="FellowOakDicom.Network.DicomStatus">
+
+
+
+  <h1 id="FellowOakDicom_Network_DicomStatus" data-uid="FellowOakDicom.Network.DicomStatus" class="text-break">
+Class DicomStatus  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h1>
-  <div class="markdown level0 summary"><p>DICOM Status</p>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FellowOakDicom.html">FellowOakDicom</a>.<a class="xref" href="FellowOakDicom.Network.html">Network</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>fo-dicom.core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>DICOM Status</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">DicomStatus</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
-  <h5 id="FellowOakDicom_Network_DicomStatus_syntax">Syntax</h5>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class DicomStatus</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DicomStatus</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, params T[])</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
   <a id="FellowOakDicom_Network_DicomStatus__ctor_" data-uid="FellowOakDicom.Network.DicomStatus.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_DicomStatus__ctor_FellowOakDicom_Network_DicomStatus_System_String_" data-uid="FellowOakDicom.Network.DicomStatus.#ctor(FellowOakDicom.Network.DicomStatus,System.String)">DicomStatus(DicomStatus, String)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomStatus__ctor_FellowOakDicom_Network_DicomStatus_System_String_" data-uid="FellowOakDicom.Network.DicomStatus.#ctor(FellowOakDicom.Network.DicomStatus,System.String)">
+  DicomStatus(DicomStatus, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DicomStatus(DicomStatus status, string comment)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td><span class="parametername">status</span></td>
-        <td><p>The status.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">comment</span></td>
-        <td><p>The comment.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>status</code> <a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd><p>The status.</p>
+</dd>
+    <dt><code>comment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The comment.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomStatus__ctor_" data-uid="FellowOakDicom.Network.DicomStatus.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_DicomStatus__ctor_System_String_FellowOakDicom_Network_DicomState_System_String_" data-uid="FellowOakDicom.Network.DicomStatus.#ctor(System.String,FellowOakDicom.Network.DicomState,System.String)">DicomStatus(String, DicomState, String)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomStatus__ctor_System_String_FellowOakDicom_Network_DicomState_System_String_" data-uid="FellowOakDicom.Network.DicomStatus.#ctor(System.String,FellowOakDicom.Network.DicomState,System.String)">
+  DicomStatus(string, DicomState, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DicomStatus(string code, DicomState status, string desc)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">code</span></td>
-        <td><p>The code.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomState.html">DicomState</a></td>
-        <td><span class="parametername">status</span></td>
-        <td><p>The status.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">desc</span></td>
-        <td><p>The desc.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The code.</p>
+</dd>
+    <dt><code>status</code> <a class="xref" href="FellowOakDicom.Network.DicomState.html">DicomState</a></dt>
+    <dd><p>The status.</p>
+</dd>
+    <dt><code>desc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The desc.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomStatus__ctor_" data-uid="FellowOakDicom.Network.DicomStatus.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_DicomStatus__ctor_System_String_FellowOakDicom_Network_DicomState_System_String_System_String_" data-uid="FellowOakDicom.Network.DicomStatus.#ctor(System.String,FellowOakDicom.Network.DicomState,System.String,System.String)">DicomStatus(String, DicomState, String, String)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomStatus__ctor_System_String_FellowOakDicom_Network_DicomState_System_String_System_String_" data-uid="FellowOakDicom.Network.DicomStatus.#ctor(System.String,FellowOakDicom.Network.DicomState,System.String,System.String)">
+  DicomStatus(string, DicomState, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DicomStatus(string code, DicomState status, string desc, string comment)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">code</span></td>
-        <td><p>The code.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomState.html">DicomState</a></td>
-        <td><span class="parametername">status</span></td>
-        <td><p>The status.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">desc</span></td>
-        <td><p>The desc.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">comment</span></td>
-        <td><p>The comment.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The code.</p>
+</dd>
+    <dt><code>status</code> <a class="xref" href="FellowOakDicom.Network.DicomState.html">DicomState</a></dt>
+    <dd><p>The status.</p>
+</dd>
+    <dt><code>desc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The desc.</p>
+</dd>
+    <dt><code>comment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The comment.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_AttributeListError" data-uid="FellowOakDicom.Network.DicomStatus.AttributeListError">
+  AttributeListError
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L329"><i class="bi bi-code-slash"></i></a>
   </h3>
-  <h4 id="FellowOakDicom_Network_DicomStatus_AttributeListError" data-uid="FellowOakDicom.Network.DicomStatus.AttributeListError">AttributeListError</h4>
+
   <div class="markdown level1 summary"><p>Warning: Attribute list error</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus AttributeListError</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_AttributeValueOutOfRange" data-uid="FellowOakDicom.Network.DicomStatus.AttributeValueOutOfRange">AttributeValueOutOfRange</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_AttributeValueOutOfRange" data-uid="FellowOakDicom.Network.DicomStatus.AttributeValueOutOfRange">
+  AttributeValueOutOfRange
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Warning: Attribute Value Out of Range</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus AttributeValueOutOfRange</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_Cancel" data-uid="FellowOakDicom.Network.DicomStatus.Cancel">Cancel</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_Cancel" data-uid="FellowOakDicom.Network.DicomStatus.Cancel">
+  Cancel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Cancel: Cancel</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus Cancel</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_ClassInstanceConflict" data-uid="FellowOakDicom.Network.DicomStatus.ClassInstanceConflict">ClassInstanceConflict</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_ClassInstanceConflict" data-uid="FellowOakDicom.Network.DicomStatus.ClassInstanceConflict">
+  ClassInstanceConflict
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Class-instance conflict</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus ClassInstanceConflict</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_Code" data-uid="FellowOakDicom.Network.DicomStatus.Code">Code</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_Code" data-uid="FellowOakDicom.Network.DicomStatus.Code">
+  Code
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>DICOM status code.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public readonly ushort Code</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt16</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_Description" data-uid="FellowOakDicom.Network.DicomStatus.Description">Description</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_Description" data-uid="FellowOakDicom.Network.DicomStatus.Description">
+  Description
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Description.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public readonly string Description</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_DuplicateInvocation" data-uid="FellowOakDicom.Network.DicomStatus.DuplicateInvocation">DuplicateInvocation</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_DuplicateInvocation" data-uid="FellowOakDicom.Network.DicomStatus.DuplicateInvocation">
+  DuplicateInvocation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Duplicate invocation</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus DuplicateInvocation</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_DuplicateSOPInstance" data-uid="FellowOakDicom.Network.DicomStatus.DuplicateSOPInstance">DuplicateSOPInstance</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_DuplicateSOPInstance" data-uid="FellowOakDicom.Network.DicomStatus.DuplicateSOPInstance">
+  DuplicateSOPInstance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Duplicate SOP instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus DuplicateSOPInstance</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_ErrorComment" data-uid="FellowOakDicom.Network.DicomStatus.ErrorComment">ErrorComment</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_ErrorComment" data-uid="FellowOakDicom.Network.DicomStatus.ErrorComment">
+  ErrorComment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public readonly string ErrorComment</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_InvalidArgumentValue" data-uid="FellowOakDicom.Network.DicomStatus.InvalidArgumentValue">InvalidArgumentValue</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_InvalidArgumentValue" data-uid="FellowOakDicom.Network.DicomStatus.InvalidArgumentValue">
+  InvalidArgumentValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Invalid argument value</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus InvalidArgumentValue</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_InvalidAttributeValue" data-uid="FellowOakDicom.Network.DicomStatus.InvalidAttributeValue">InvalidAttributeValue</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_InvalidAttributeValue" data-uid="FellowOakDicom.Network.DicomStatus.InvalidAttributeValue">
+  InvalidAttributeValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Invalid attribute value</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus InvalidAttributeValue</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_InvalidObjectInstance" data-uid="FellowOakDicom.Network.DicomStatus.InvalidObjectInstance">InvalidObjectInstance</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_InvalidObjectInstance" data-uid="FellowOakDicom.Network.DicomStatus.InvalidObjectInstance">
+  InvalidObjectInstance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Invalid object instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus InvalidObjectInstance</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_MediaCreationManagementCancellationDeniedForUnspecifiedReason" data-uid="FellowOakDicom.Network.DicomStatus.MediaCreationManagementCancellationDeniedForUnspecifiedReason">MediaCreationManagementCancellationDeniedForUnspecifiedReason</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_MediaCreationManagementCancellationDeniedForUnspecifiedReason" data-uid="FellowOakDicom.Network.DicomStatus.MediaCreationManagementCancellationDeniedForUnspecifiedReason">
+  MediaCreationManagementCancellationDeniedForUnspecifiedReason
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L614"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>MediaCreationManagement Failure: Cancellation denied for unspecified reason</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus MediaCreationManagementCancellationDeniedForUnspecifiedReason</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_MediaCreationManagementDuplicateInitiateMediaCreation" data-uid="FellowOakDicom.Network.DicomStatus.MediaCreationManagementDuplicateInitiateMediaCreation">MediaCreationManagementDuplicateInitiateMediaCreation</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_MediaCreationManagementDuplicateInitiateMediaCreation" data-uid="FellowOakDicom.Network.DicomStatus.MediaCreationManagementDuplicateInitiateMediaCreation">
+  MediaCreationManagementDuplicateInitiateMediaCreation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>MediaCreationManagement Failure: Refused because an Initiate Media Creation action has already been received for this SOP Instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus MediaCreationManagementDuplicateInitiateMediaCreation</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_MediaCreationManagementMediaCreationRequestAlreadyCompleted" data-uid="FellowOakDicom.Network.DicomStatus.MediaCreationManagementMediaCreationRequestAlreadyCompleted">MediaCreationManagementMediaCreationRequestAlreadyCompleted</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_MediaCreationManagementMediaCreationRequestAlreadyCompleted" data-uid="FellowOakDicom.Network.DicomStatus.MediaCreationManagementMediaCreationRequestAlreadyCompleted">
+  MediaCreationManagementMediaCreationRequestAlreadyCompleted
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L602"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>MediaCreationManagement Failure: Media creation request already completed</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus MediaCreationManagementMediaCreationRequestAlreadyCompleted</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_MediaCreationManagementMediaCreationRequestAlreadyInProgress" data-uid="FellowOakDicom.Network.DicomStatus.MediaCreationManagementMediaCreationRequestAlreadyInProgress">MediaCreationManagementMediaCreationRequestAlreadyInProgress</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_MediaCreationManagementMediaCreationRequestAlreadyInProgress" data-uid="FellowOakDicom.Network.DicomStatus.MediaCreationManagementMediaCreationRequestAlreadyInProgress">
+  MediaCreationManagementMediaCreationRequestAlreadyInProgress
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L608"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>MediaCreationManagement Failure: Media creation request already in progress and cannot be interrupted</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus MediaCreationManagementMediaCreationRequestAlreadyInProgress</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_MissingAttribute" data-uid="FellowOakDicom.Network.DicomStatus.MissingAttribute">MissingAttribute</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_MissingAttribute" data-uid="FellowOakDicom.Network.DicomStatus.MissingAttribute">
+  MissingAttribute
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Missing attribute</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus MissingAttribute</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_MissingAttributeValue" data-uid="FellowOakDicom.Network.DicomStatus.MissingAttributeValue">MissingAttributeValue</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_MissingAttributeValue" data-uid="FellowOakDicom.Network.DicomStatus.MissingAttributeValue">
+  MissingAttributeValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Missing attribute value</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus MissingAttributeValue</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_MistypedArgument" data-uid="FellowOakDicom.Network.DicomStatus.MistypedArgument">MistypedArgument</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_MistypedArgument" data-uid="FellowOakDicom.Network.DicomStatus.MistypedArgument">
+  MistypedArgument
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Mistyped argument</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus MistypedArgument</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_NoSuchActionType" data-uid="FellowOakDicom.Network.DicomStatus.NoSuchActionType">NoSuchActionType</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_NoSuchActionType" data-uid="FellowOakDicom.Network.DicomStatus.NoSuchActionType">
+  NoSuchActionType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: No such action type</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus NoSuchActionType</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_NoSuchArgument" data-uid="FellowOakDicom.Network.DicomStatus.NoSuchArgument">NoSuchArgument</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_NoSuchArgument" data-uid="FellowOakDicom.Network.DicomStatus.NoSuchArgument">
+  NoSuchArgument
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: No such argument</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus NoSuchArgument</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_NoSuchEventType" data-uid="FellowOakDicom.Network.DicomStatus.NoSuchEventType">NoSuchEventType</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_NoSuchEventType" data-uid="FellowOakDicom.Network.DicomStatus.NoSuchEventType">
+  NoSuchEventType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: No such event type</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus NoSuchEventType</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_NoSuchObjectInstance" data-uid="FellowOakDicom.Network.DicomStatus.NoSuchObjectInstance">NoSuchObjectInstance</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_NoSuchObjectInstance" data-uid="FellowOakDicom.Network.DicomStatus.NoSuchObjectInstance">
+  NoSuchObjectInstance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: No Such object instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus NoSuchObjectInstance</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_NoSuchSOPClass" data-uid="FellowOakDicom.Network.DicomStatus.NoSuchSOPClass">NoSuchSOPClass</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_NoSuchSOPClass" data-uid="FellowOakDicom.Network.DicomStatus.NoSuchSOPClass">
+  NoSuchSOPClass
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: No Such SOP class</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus NoSuchSOPClass</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_Pending" data-uid="FellowOakDicom.Network.DicomStatus.Pending">Pending</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_Pending" data-uid="FellowOakDicom.Network.DicomStatus.Pending">
+  Pending
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Pending: Pending</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus Pending</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementCombinedImageLargerThanImageBox" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementCombinedImageLargerThanImageBox">PrintManagementCombinedImageLargerThanImageBox</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementCombinedImageLargerThanImageBox" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementCombinedImageLargerThanImageBox">
+  PrintManagementCombinedImageLargerThanImageBox
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Failure: Combined Print Image size is larger than the Image Box size</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementCombinedImageLargerThanImageBox</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementExistingFilmBoxNotPrinted" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementExistingFilmBoxNotPrinted">PrintManagementExistingFilmBoxNotPrinted</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementExistingFilmBoxNotPrinted" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementExistingFilmBoxNotPrinted">
+  PrintManagementExistingFilmBoxNotPrinted
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L590"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Failure: There is an existing film box that has not been printed and N-ACTION at the Film Session level is not supported.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementExistingFilmBoxNotPrinted</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementFilmBoxEmptyPage" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementFilmBoxEmptyPage">PrintManagementFilmBoxEmptyPage</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementFilmBoxEmptyPage" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementFilmBoxEmptyPage">
+  PrintManagementFilmBoxEmptyPage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L530"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Warning: Film box SOP instance hierarchy does not contain image box SOP instances (empty page)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementFilmBoxEmptyPage</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementFilmSessionEmpty" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementFilmSessionEmpty">PrintManagementFilmSessionEmpty</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementFilmSessionEmpty" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementFilmSessionEmpty">
+  PrintManagementFilmSessionEmpty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Failure: Film session SOP instance hierarchy does not contain film box SOP instances</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementFilmSessionEmpty</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementFilmSessionEmptyPage" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementFilmSessionEmptyPage">PrintManagementFilmSessionEmptyPage</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementFilmSessionEmptyPage" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementFilmSessionEmptyPage">
+  PrintManagementFilmSessionEmptyPage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L524"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Warning: Film session SOP instance hierarchy does not contain image box SOP instances (empty page)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementFilmSessionEmptyPage</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementFilmSessionPrintingNotSupported" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementFilmSessionPrintingNotSupported">PrintManagementFilmSessionPrintingNotSupported</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementFilmSessionPrintingNotSupported" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementFilmSessionPrintingNotSupported">
+  PrintManagementFilmSessionPrintingNotSupported
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Warning: Film session printing (collation) is not supported</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementFilmSessionPrintingNotSupported</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementImageCropped" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementImageCropped">PrintManagementImageCropped</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementImageCropped" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementImageCropped">
+  PrintManagementImageCropped
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Warning: Image size is larger than the image box size, the Image has been cropped to fit</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementImageCropped</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementImageDecimated" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementImageDecimated">PrintManagementImageDecimated</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementImageDecimated" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementImageDecimated">
+  PrintManagementImageDecimated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L554"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Warning: Image size or combined print image size is larger than the image box size, image or combined print image has been decimated to fit</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementImageDecimated</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementImageDemagnified" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementImageDemagnified">PrintManagementImageDemagnified</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementImageDemagnified" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementImageDemagnified">
+  PrintManagementImageDemagnified
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L536"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Warning: Image size is larger than image box size, the image has been demagnified</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementImageDemagnified</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementImageLargerThanImageBox" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementImageLargerThanImageBox">PrintManagementImageLargerThanImageBox</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementImageLargerThanImageBox" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementImageLargerThanImageBox">
+  PrintManagementImageLargerThanImageBox
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L572"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Failure: Image size is larger than image box size</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementImageLargerThanImageBox</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementInsufficientMemoryInPrinter" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementInsufficientMemoryInPrinter">PrintManagementInsufficientMemoryInPrinter</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementInsufficientMemoryInPrinter" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementInsufficientMemoryInPrinter">
+  PrintManagementInsufficientMemoryInPrinter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L578"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Failure: Insufficient memory in printer to store the image</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementInsufficientMemoryInPrinter</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementMemoryAllocationNotSupported" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementMemoryAllocationNotSupported">PrintManagementMemoryAllocationNotSupported</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementMemoryAllocationNotSupported" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementMemoryAllocationNotSupported">
+  PrintManagementMemoryAllocationNotSupported
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L512"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Warning: Memory allocation not supported</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementMemoryAllocationNotSupported</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementMinMaxDensityOutOfRange" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementMinMaxDensityOutOfRange">PrintManagementMinMaxDensityOutOfRange</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementMinMaxDensityOutOfRange" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementMinMaxDensityOutOfRange">
+  PrintManagementMinMaxDensityOutOfRange
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Warning: Requested min density or max density outside of printer's operating range</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementMinMaxDensityOutOfRange</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_PrintManagementPrintQueueFull" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementPrintQueueFull">PrintManagementPrintQueueFull</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_PrintManagementPrintQueueFull" data-uid="FellowOakDicom.Network.DicomStatus.PrintManagementPrintQueueFull">
+  PrintManagementPrintQueueFull
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L566"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PrintManagement Failure: Unable to create Print Job SOP Instance; print queue is full</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus PrintManagementPrintQueueFull</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_ProcessingFailure" data-uid="FellowOakDicom.Network.DicomStatus.ProcessingFailure">ProcessingFailure</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_ProcessingFailure" data-uid="FellowOakDicom.Network.DicomStatus.ProcessingFailure">
+  ProcessingFailure
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Processing failure</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus ProcessingFailure</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveIdentifierDoesNotMatchSOPClass" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveIdentifierDoesNotMatchSOPClass">QueryRetrieveIdentifierDoesNotMatchSOPClass</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveIdentifierDoesNotMatchSOPClass" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveIdentifierDoesNotMatchSOPClass">
+  QueryRetrieveIdentifierDoesNotMatchSOPClass
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L488"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>QueryRetrieve Failure: Identifier does not match SOP Class</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus QueryRetrieveIdentifierDoesNotMatchSOPClass</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveMoveDestinationUnknown" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveMoveDestinationUnknown">QueryRetrieveMoveDestinationUnknown</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveMoveDestinationUnknown" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveMoveDestinationUnknown">
+  QueryRetrieveMoveDestinationUnknown
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>QueryRetrieve Failure: Move Destination unknown</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus QueryRetrieveMoveDestinationUnknown</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveOptionalKeysNotSupported" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveOptionalKeysNotSupported">QueryRetrieveOptionalKeysNotSupported</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveOptionalKeysNotSupported" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveOptionalKeysNotSupported">
+  QueryRetrieveOptionalKeysNotSupported
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>QueryRetrieve Pending: Optional Keys Not Supported</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus QueryRetrieveOptionalKeysNotSupported</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveOutOfResources" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveOutOfResources">QueryRetrieveOutOfResources</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveOutOfResources" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveOutOfResources">
+  QueryRetrieveOutOfResources
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>QueryRetrieve Failure: Out of Resources</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus QueryRetrieveOutOfResources</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveSubOpsOneOrMoreFailures" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveSubOpsOneOrMoreFailures">QueryRetrieveSubOpsOneOrMoreFailures</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveSubOpsOneOrMoreFailures" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveSubOpsOneOrMoreFailures">
+  QueryRetrieveSubOpsOneOrMoreFailures
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>QueryRetrieve Warning: Sub-operations Complete - One or more Failures</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus QueryRetrieveSubOpsOneOrMoreFailures</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveUnableToCalculateNumberOfMatches" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveUnableToCalculateNumberOfMatches">QueryRetrieveUnableToCalculateNumberOfMatches</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveUnableToCalculateNumberOfMatches" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveUnableToCalculateNumberOfMatches">
+  QueryRetrieveUnableToCalculateNumberOfMatches
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>QueryRetrieve Failure: Unable to calculate number of matches</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus QueryRetrieveUnableToCalculateNumberOfMatches</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveUnableToPerformSuboperations" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveUnableToPerformSuboperations">QueryRetrieveUnableToPerformSuboperations</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveUnableToPerformSuboperations" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveUnableToPerformSuboperations">
+  QueryRetrieveUnableToPerformSuboperations
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>QueryRetrieve Failure: Unable to perform suboperations</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus QueryRetrieveUnableToPerformSuboperations</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveUnableToProcess" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveUnableToProcess">QueryRetrieveUnableToProcess</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_QueryRetrieveUnableToProcess" data-uid="FellowOakDicom.Network.DicomStatus.QueryRetrieveUnableToProcess">
+  QueryRetrieveUnableToProcess
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>QueryRetrieve Failure: Unable to process</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus QueryRetrieveUnableToProcess</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_ResourceLimitation" data-uid="FellowOakDicom.Network.DicomStatus.ResourceLimitation">ResourceLimitation</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_ResourceLimitation" data-uid="FellowOakDicom.Network.DicomStatus.ResourceLimitation">
+  ResourceLimitation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Resource limitation</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus ResourceLimitation</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_SOPClassNotSupported" data-uid="FellowOakDicom.Network.DicomStatus.SOPClassNotSupported">SOPClassNotSupported</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_SOPClassNotSupported" data-uid="FellowOakDicom.Network.DicomStatus.SOPClassNotSupported">
+  SOPClassNotSupported
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Refused: SOP class not supported</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus SOPClassNotSupported</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_State" data-uid="FellowOakDicom.Network.DicomStatus.State">State</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_State" data-uid="FellowOakDicom.Network.DicomStatus.State">
+  State
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>State of this DICOM status code.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public readonly DicomState State</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomState.html">DicomState</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_StorageCannotUnderstand" data-uid="FellowOakDicom.Network.DicomStatus.StorageCannotUnderstand">StorageCannotUnderstand</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomState.html">DicomState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_StorageCannotUnderstand" data-uid="FellowOakDicom.Network.DicomStatus.StorageCannotUnderstand">
+  StorageCannotUnderstand
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Storage Failure: Cannot understand</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus StorageCannotUnderstand</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_StorageCoercionOfDataElements" data-uid="FellowOakDicom.Network.DicomStatus.StorageCoercionOfDataElements">StorageCoercionOfDataElements</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_StorageCoercionOfDataElements" data-uid="FellowOakDicom.Network.DicomStatus.StorageCoercionOfDataElements">
+  StorageCoercionOfDataElements
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Storage Warning: Coercion of Data Elements</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus StorageCoercionOfDataElements</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_StorageDataSetDoesNotMatchSOPClassError" data-uid="FellowOakDicom.Network.DicomStatus.StorageDataSetDoesNotMatchSOPClassError">StorageDataSetDoesNotMatchSOPClassError</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_StorageDataSetDoesNotMatchSOPClassError" data-uid="FellowOakDicom.Network.DicomStatus.StorageDataSetDoesNotMatchSOPClassError">
+  StorageDataSetDoesNotMatchSOPClassError
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Storage Failure: Data Set does not match SOP Class (Error)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus StorageDataSetDoesNotMatchSOPClassError</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_StorageDataSetDoesNotMatchSOPClassWarning" data-uid="FellowOakDicom.Network.DicomStatus.StorageDataSetDoesNotMatchSOPClassWarning">StorageDataSetDoesNotMatchSOPClassWarning</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_StorageDataSetDoesNotMatchSOPClassWarning" data-uid="FellowOakDicom.Network.DicomStatus.StorageDataSetDoesNotMatchSOPClassWarning">
+  StorageDataSetDoesNotMatchSOPClassWarning
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L452"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Storage Warning: Data Set does not match SOP Class (Warning)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus StorageDataSetDoesNotMatchSOPClassWarning</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_StorageElementsDiscarded" data-uid="FellowOakDicom.Network.DicomStatus.StorageElementsDiscarded">StorageElementsDiscarded</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_StorageElementsDiscarded" data-uid="FellowOakDicom.Network.DicomStatus.StorageElementsDiscarded">
+  StorageElementsDiscarded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Storage Warning: Elements Discarded</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus StorageElementsDiscarded</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_StorageStorageOutOfResources" data-uid="FellowOakDicom.Network.DicomStatus.StorageStorageOutOfResources">StorageStorageOutOfResources</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_StorageStorageOutOfResources" data-uid="FellowOakDicom.Network.DicomStatus.StorageStorageOutOfResources">
+  StorageStorageOutOfResources
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Storage Failure: Out of Resources</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus StorageStorageOutOfResources</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_Success" data-uid="FellowOakDicom.Network.DicomStatus.Success">Success</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_Success" data-uid="FellowOakDicom.Network.DicomStatus.Success">
+  Success
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Success: Success</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus Success</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_UnrecognizedOperation" data-uid="FellowOakDicom.Network.DicomStatus.UnrecognizedOperation">UnrecognizedOperation</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_UnrecognizedOperation" data-uid="FellowOakDicom.Network.DicomStatus.UnrecognizedOperation">
+  UnrecognizedOperation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Failure: Unrecognized operation</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus UnrecognizedOperation</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_Warning" data-uid="FellowOakDicom.Network.DicomStatus.Warning">Warning</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_Warning" data-uid="FellowOakDicom.Network.DicomStatus.Warning">
+  Warning
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Warning: Warning</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus Warning</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomStatus_WarningClass" data-uid="FellowOakDicom.Network.DicomStatus.WarningClass">WarningClass</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_WarningClass" data-uid="FellowOakDicom.Network.DicomStatus.WarningClass">
+  WarningClass
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Warning: Warning Class</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DicomStatus WarningClass</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="FellowOakDicom_Network_DicomStatus_AddKnownDicomStatuses_" data-uid="FellowOakDicom.Network.DicomStatus.AddKnownDicomStatuses*"></a>
-  <h4 id="FellowOakDicom_Network_DicomStatus_AddKnownDicomStatuses_System_Collections_Generic_IEnumerable_FellowOakDicom_Network_DicomStatus__" data-uid="FellowOakDicom.Network.DicomStatus.AddKnownDicomStatuses(System.Collections.Generic.IEnumerable{FellowOakDicom.Network.DicomStatus})">AddKnownDicomStatuses(IEnumerable&lt;DicomStatus&gt;)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_AddKnownDicomStatuses_System_Collections_Generic_IEnumerable_FellowOakDicom_Network_DicomStatus__" data-uid="FellowOakDicom.Network.DicomStatus.AddKnownDicomStatuses(System.Collections.Generic.IEnumerable{FellowOakDicom.Network.DicomStatus})">
+  AddKnownDicomStatuses(IEnumerable&lt;DicomStatus&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Adds a set of known DicomStatuses.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void AddKnownDicomStatuses(IEnumerable&lt;DicomStatus&gt; statuses)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a>&gt;</td>
-        <td><span class="parametername">statuses</span></td>
-        <td><p>The statuses to add.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>statuses</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a>&gt;</dt>
+    <dd><p>The statuses to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomStatus_Equals_" data-uid="FellowOakDicom.Network.DicomStatus.Equals*"></a>
-  <h4 id="FellowOakDicom_Network_DicomStatus_Equals_System_Object_" data-uid="FellowOakDicom.Network.DicomStatus.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified <span class="xref">System.Object</span> is equal to the current <span class="xref">System.Object</span>.</p>
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_Equals_System_Object_" data-uid="FellowOakDicom.Network.DicomStatus.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> is equal to the current <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">obj</span></td>
-        <td><p>The <span class="xref">System.Object</span> to compare with the current <span class="xref">System.Object</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if the specified <span class="xref">System.Object</span> is equal to the current <span class="xref">System.Object</span>; otherwise, false.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.NullReferenceException</span></td>
-        <td><p>The <code data-dev-comment-type="paramref" class="paramref">obj</code> parameter is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> to compare with the current <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> is equal to the current <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullreferenceexception">NullReferenceException</a></dt>
+    <dd><p>The <code class="paramref">obj</code> parameter is null.</p>
+</dd>
+  </dl>
+
+
+
   <a id="FellowOakDicom_Network_DicomStatus_GetHashCode_" data-uid="FellowOakDicom.Network.DicomStatus.GetHashCode*"></a>
-  <h4 id="FellowOakDicom_Network_DicomStatus_GetHashCode" data-uid="FellowOakDicom.Network.DicomStatus.GetHashCode">GetHashCode()</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_GetHashCode" data-uid="FellowOakDicom.Network.DicomStatus.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.GetHashCode()</span></div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomStatus_Lookup_" data-uid="FellowOakDicom.Network.DicomStatus.Lookup*"></a>
-  <h4 id="FellowOakDicom_Network_DicomStatus_Lookup_System_UInt16_" data-uid="FellowOakDicom.Network.DicomStatus.Lookup(System.UInt16)">Lookup(UInt16)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_Lookup_System_UInt16_" data-uid="FellowOakDicom.Network.DicomStatus.Lookup(System.UInt16)">
+  Lookup(ushort)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Looks up the specified code and returns a new instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static DicomStatus Lookup(ushort code)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt16</span></td>
-        <td><span class="parametername">code</span></td>
-        <td><p>The code.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>The code.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomStatus_ToString_" data-uid="FellowOakDicom.Network.DicomStatus.ToString*"></a>
-  <h4 id="FellowOakDicom_Network_DicomStatus_ToString" data-uid="FellowOakDicom.Network.DicomStatus.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns a <span class="xref">System.String</span> that represents the current <span class="xref">System.Object</span>.</p>
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_ToString" data-uid="FellowOakDicom.Network.DicomStatus.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> that represents the current <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A <span class="xref">System.String</span> that represents the current <span class="xref">System.Object</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
-  <h3 id="operators">Operators
-  </h3>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> that represents the current <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
   <a id="FellowOakDicom_Network_DicomStatus_op_Equality_" data-uid="FellowOakDicom.Network.DicomStatus.op_Equality*"></a>
-  <h4 id="FellowOakDicom_Network_DicomStatus_op_Equality_FellowOakDicom_Network_DicomStatus_FellowOakDicom_Network_DicomStatus_" data-uid="FellowOakDicom.Network.DicomStatus.op_Equality(FellowOakDicom.Network.DicomStatus,FellowOakDicom.Network.DicomStatus)">Equality(DicomStatus, DicomStatus)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_op_Equality_FellowOakDicom_Network_DicomStatus_FellowOakDicom_Network_DicomStatus_" data-uid="FellowOakDicom.Network.DicomStatus.op_Equality(FellowOakDicom.Network.DicomStatus,FellowOakDicom.Network.DicomStatus)">
+  operator ==(DicomStatus, DicomStatus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Implements the operator ==.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator ==(DicomStatus s1, DicomStatus s2)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td><span class="parametername">s1</span></td>
-        <td><p>DICOM Status</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td><span class="parametername">s2</span></td>
-        <td><p>DICOM Status</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>The result of the operator.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s1</code> <a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd><p>DICOM Status</p>
+</dd>
+    <dt><code>s2</code> <a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd><p>DICOM Status</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The result of the operator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomStatus_op_Inequality_" data-uid="FellowOakDicom.Network.DicomStatus.op_Inequality*"></a>
-  <h4 id="FellowOakDicom_Network_DicomStatus_op_Inequality_FellowOakDicom_Network_DicomStatus_FellowOakDicom_Network_DicomStatus_" data-uid="FellowOakDicom.Network.DicomStatus.op_Inequality(FellowOakDicom.Network.DicomStatus,FellowOakDicom.Network.DicomStatus)">Inequality(DicomStatus, DicomStatus)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomStatus_op_Inequality_FellowOakDicom_Network_DicomStatus_FellowOakDicom_Network_DicomStatus_" data-uid="FellowOakDicom.Network.DicomStatus.op_Inequality(FellowOakDicom.Network.DicomStatus,FellowOakDicom.Network.DicomStatus)">
+  operator !=(DicomStatus, DicomStatus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomStatus.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Implements the operator !=.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator !=(DicomStatus s1, DicomStatus s2)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td><span class="parametername">s1</span></td>
-        <td><p>DICOM Status</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></td>
-        <td><span class="parametername">s2</span></td>
-        <td><p>DICOM Status</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>The result of the operator.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
-  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s1</code> <a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd><p>DICOM Status</p>
+</dd>
+    <dt><code>s2</code> <a class="xref" href="FellowOakDicom.Network.DicomStatus.html">DicomStatus</a></dt>
+    <dd><p>DICOM Status</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The result of the operator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2012-2025 fo-dicom contributors
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            Copyright (c) 2012-2025 fo-dicom contributors
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

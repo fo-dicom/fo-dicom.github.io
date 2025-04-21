@@ -1,1317 +1,1332 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
+<!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class MatrixD
-   | Fellow Oak DICOM 5 API </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class MatrixD
-   | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Class MatrixD | Fellow Oak DICOM 5 API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MatrixD | Fellow Oak DICOM 5 API ">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/fo-dicom/fo-dicom/new/development/apiSpec/new?filename=FellowOakDicom_Imaging_Mathematics_MatrixD.md&amp;value=---%0Auid%3A%20FellowOakDicom.Imaging.Mathematics.MatrixD%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
+            Fellow Oak DICOM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD">
-  
-  
-  <h1 id="FellowOakDicom_Imaging_Mathematics_MatrixD" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD" class="text-break">Class MatrixD
+
+        <article data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD">
+
+
+
+  <h1 id="FellowOakDicom_Imaging_Mathematics_MatrixD" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD" class="text-break">
+Class MatrixD  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L973"><i class="bi bi-code-slash"></i></a>
   </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">MatrixD</span></div>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FellowOakDicom.html">FellowOakDicom</a>.<a class="xref" href="FellowOakDicom.Imaging.html">Imaging</a>.<a class="xref" href="FellowOakDicom.Imaging.Mathematics.html">Mathematics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>fo-dicom.core.dll</dd></dl>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.Mathematics.html">FellowOakDicom.Imaging.Mathematics</a></h6>
-  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
-  <h5 id="FellowOakDicom_Imaging_Mathematics_MatrixD_syntax">Syntax</h5>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class MatrixD</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <a id="FellowOakDicom_Imaging_Mathematics_MatrixD__ctor_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.#ctor*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD__ctor_System_Double_0__0___" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.#ctor(System.Double[0:,0:])">MatrixD(Double[,])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MatrixD(double[, ] matrix)</code></pre>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MatrixD</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, params T[])</a>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span>[,]</td>
-        <td><span class="parametername">matrix</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD__ctor_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.#ctor*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD__ctor_System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.#ctor(System.Int32,System.Int32)">MatrixD(Int32, Int32)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD__ctor_System_Double_0__0___" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.#ctor(System.Double[0:,0:])">
+  MatrixD(double[,])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L988"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixD(double[,] matrix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_MatrixD__ctor_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.#ctor*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD__ctor_System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.#ctor(System.Int32,System.Int32)">
+  MatrixD(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L983"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public MatrixD(int rows, int cols)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">rows</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">cols</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rows</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>cols</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Columns_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Columns*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Columns" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Columns">Columns</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Columns" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Columns">
+  Columns
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L999"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int Columns { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Determinant_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Determinant*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Determinant" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Determinant">Determinant</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Determinant" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Determinant">
+  Determinant
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1027"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double Determinant { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_IsIdentity_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.IsIdentity*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_IsIdentity" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.IsIdentity">IsIdentity</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_IsIdentity" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.IsIdentity">
+  IsIdentity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1003"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsIdentity { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_IsSquare_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.IsSquare*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_IsSquare" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.IsSquare">IsSquare</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_IsSquare" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.IsSquare">
+  IsSquare
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1001"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsSquare { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Item_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Item*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Item_System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Item(System.Int32,System.Int32)">Item[Int32, Int32]</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Item_System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Item(System.Int32,System.Int32)">
+  this[int, int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1021"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double this[int row, int col] { get; set; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">row</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">col</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>col</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Rows_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Rows*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Rows" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Rows">Rows</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Rows" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Rows">
+  Rows
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L997"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int Rows { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Trace_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Trace*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Trace" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Trace">Trace</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Trace" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Trace">
+  Trace
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double Trace { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Clone_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Clone*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Clone" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Clone">Clone()</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Clone" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Clone">
+  Clone()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public MatrixD Clone()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Column_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Column*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Column_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Column(System.Int32)">Column(Int32)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Column_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Column(System.Int32)">
+  Column(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double[] Column(int col)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">col</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Column_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Column*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Column_System_Int32_System_Double___" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Column(System.Int32,System.Double[])">Column(Int32, Double[])</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Column_System_Int32_System_Double___" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Column(System.Int32,System.Double[])">
+  Column(int, params double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Column(int col, params double[] values)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">col</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span>[]</td>
-        <td><span class="parametername">values</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Equals_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Equals*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Equals_System_Object_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Equals(System.Object)">Equals(Object)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Equals_System_Object_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">obj</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_GetHashCode_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.GetHashCode*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_GetHashCode" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.GetHashCode">GetHashCode()</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_GetHashCode" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.GetHashCode()</span></div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Identity_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Identity*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Identity_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Identity(System.Int32)">Identity(Int32)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Identity_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Identity(System.Int32)">
+  Identity(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MatrixD Identity(int dimensions)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">dimensions</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dimensions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Invert_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Invert*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Invert" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Invert">Invert()</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Invert" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Invert">
+  Invert()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public MatrixD Invert()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_One_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.One*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_One_System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.One(System.Int32,System.Int32)">One(Int32, Int32)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_One_System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.One(System.Int32,System.Int32)">
+  One(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MatrixD One(int rows, int columns)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">rows</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">columns</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rows</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>columns</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Row_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Row*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Row_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Row(System.Int32)">Row(Int32)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Row_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Row(System.Int32)">
+  Row(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double[] Row(int row)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">row</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Row_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Row*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Row_System_Int32_System_Double___" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Row(System.Int32,System.Double[])">Row(Int32, Double[])</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Row_System_Int32_System_Double___" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Row(System.Int32,System.Double[])">
+  Row(int, params double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Row(int row, params double[] values)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">row</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span>[]</td>
-        <td><span class="parametername">values</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_ToString_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.ToString*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_ToString" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.ToString">ToString()</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_ToString" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Transpose_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Transpose*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Transpose" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Transpose">Transpose()</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Transpose" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Transpose">
+  Transpose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public MatrixD Transpose()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_Zero_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Zero*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Zero_System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Zero(System.Int32,System.Int32)">Zero(Int32, Int32)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_Zero_System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.Zero(System.Int32,System.Int32)">
+  Zero(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MatrixD Zero(int rows, int columns)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">rows</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">columns</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="operators">Operators
-  </h3>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rows</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>columns</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Addition_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Addition*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Addition_FellowOakDicom_Imaging_Mathematics_MatrixD_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Addition(FellowOakDicom.Imaging.Mathematics.MatrixD,FellowOakDicom.Imaging.Mathematics.MatrixD)">Addition(MatrixD, MatrixD)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Addition_FellowOakDicom_Imaging_Mathematics_MatrixD_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Addition(FellowOakDicom.Imaging.Mathematics.MatrixD,FellowOakDicom.Imaging.Mathematics.MatrixD)">
+  operator +(MatrixD, MatrixD)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MatrixD operator +(MatrixD a, MatrixD b)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">a</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">b</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Division_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Division*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Division_FellowOakDicom_Imaging_Mathematics_MatrixD_System_Double_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Division(FellowOakDicom.Imaging.Mathematics.MatrixD,System.Double)">Division(MatrixD, Double)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Division_FellowOakDicom_Imaging_Mathematics_MatrixD_System_Double_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Division(FellowOakDicom.Imaging.Mathematics.MatrixD,System.Double)">
+  operator /(MatrixD, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MatrixD operator /(MatrixD a, double d)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">a</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">d</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Equality_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Equality*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Equality_FellowOakDicom_Imaging_Mathematics_MatrixD_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Equality(FellowOakDicom.Imaging.Mathematics.MatrixD,FellowOakDicom.Imaging.Mathematics.MatrixD)">Equality(MatrixD, MatrixD)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Equality_FellowOakDicom_Imaging_Mathematics_MatrixD_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Equality(FellowOakDicom.Imaging.Mathematics.MatrixD,FellowOakDicom.Imaging.Mathematics.MatrixD)">
+  operator ==(MatrixD, MatrixD)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator ==(MatrixD a, MatrixD b)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">a</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">b</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_ExclusiveOr_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_ExclusiveOr*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_ExclusiveOr_FellowOakDicom_Imaging_Mathematics_MatrixD_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_ExclusiveOr(FellowOakDicom.Imaging.Mathematics.MatrixD,System.Int32)">ExclusiveOr(MatrixD, Int32)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_ExclusiveOr_FellowOakDicom_Imaging_Mathematics_MatrixD_System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_ExclusiveOr(FellowOakDicom.Imaging.Mathematics.MatrixD,System.Int32)">
+  operator ^(MatrixD, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1530"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MatrixD operator ^(MatrixD a, int e)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">a</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+    <dt><code>e</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Inequality_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Inequality*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Inequality_FellowOakDicom_Imaging_Mathematics_MatrixD_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Inequality(FellowOakDicom.Imaging.Mathematics.MatrixD,FellowOakDicom.Imaging.Mathematics.MatrixD)">Inequality(MatrixD, MatrixD)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Inequality_FellowOakDicom_Imaging_Mathematics_MatrixD_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Inequality(FellowOakDicom.Imaging.Mathematics.MatrixD,FellowOakDicom.Imaging.Mathematics.MatrixD)">
+  operator !=(MatrixD, MatrixD)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator !=(MatrixD a, MatrixD b)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">a</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">b</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Multiply_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Multiply*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Multiply_FellowOakDicom_Imaging_Mathematics_MatrixD_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Multiply(FellowOakDicom.Imaging.Mathematics.MatrixD,FellowOakDicom.Imaging.Mathematics.MatrixD)">Multiply(MatrixD, MatrixD)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Multiply_FellowOakDicom_Imaging_Mathematics_MatrixD_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Multiply(FellowOakDicom.Imaging.Mathematics.MatrixD,FellowOakDicom.Imaging.Mathematics.MatrixD)">
+  operator *(MatrixD, MatrixD)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MatrixD operator *(MatrixD a, MatrixD b)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">a</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">b</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Multiply_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Multiply*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Multiply_FellowOakDicom_Imaging_Mathematics_MatrixD_System_Double_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Multiply(FellowOakDicom.Imaging.Mathematics.MatrixD,System.Double)">Multiply(MatrixD, Double)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Multiply_FellowOakDicom_Imaging_Mathematics_MatrixD_System_Double_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Multiply(FellowOakDicom.Imaging.Mathematics.MatrixD,System.Double)">
+  operator *(MatrixD, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1495"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MatrixD operator *(MatrixD a, double d)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">a</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">d</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Multiply_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Multiply*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Multiply_FellowOakDicom_Imaging_Mathematics_MatrixD_System_Double___" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Multiply(FellowOakDicom.Imaging.Mathematics.MatrixD,System.Double[])">Multiply(MatrixD, Double[])</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Multiply_FellowOakDicom_Imaging_Mathematics_MatrixD_System_Double___" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Multiply(FellowOakDicom.Imaging.Mathematics.MatrixD,System.Double[])">
+  operator *(MatrixD, double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double[] operator *(MatrixD a, double[] b)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">a</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span>[]</td>
-        <td><span class="parametername">b</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Multiply_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Multiply*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Multiply_System_Double_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Multiply(System.Double,FellowOakDicom.Imaging.Mathematics.MatrixD)">Multiply(Double, MatrixD)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Multiply_System_Double_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Multiply(System.Double,FellowOakDicom.Imaging.Mathematics.MatrixD)">
+  operator *(double, MatrixD)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MatrixD operator *(double d, MatrixD a)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">d</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">a</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Subtraction_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Subtraction*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Subtraction_FellowOakDicom_Imaging_Mathematics_MatrixD_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Subtraction(FellowOakDicom.Imaging.Mathematics.MatrixD,FellowOakDicom.Imaging.Mathematics.MatrixD)">Subtraction(MatrixD, MatrixD)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_Subtraction_FellowOakDicom_Imaging_Mathematics_MatrixD_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_Subtraction(FellowOakDicom.Imaging.Mathematics.MatrixD,FellowOakDicom.Imaging.Mathematics.MatrixD)">
+  operator -(MatrixD, MatrixD)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MatrixD operator -(MatrixD a, MatrixD b)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">a</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">b</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_UnaryNegation_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_UnaryNegation*"></a>
-  <h4 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_UnaryNegation_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_UnaryNegation(FellowOakDicom.Imaging.Mathematics.MatrixD)">UnaryNegation(MatrixD)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_MatrixD_op_UnaryNegation_FellowOakDicom_Imaging_Mathematics_MatrixD_" data-uid="FellowOakDicom.Imaging.Mathematics.MatrixD.op_UnaryNegation(FellowOakDicom.Imaging.Mathematics.MatrixD)">
+  operator -(MatrixD)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Matrix.cs/#L1431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MatrixD operator -(MatrixD a)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td><span class="parametername">a</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
-  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.MatrixD.html">MatrixD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2012-2025 fo-dicom contributors
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            Copyright (c) 2012-2025 fo-dicom contributors
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>
