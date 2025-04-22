@@ -168,7 +168,7 @@ Class PDataTF  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="FellowOakDicom_Network_PDataTF__ctor_FellowOakDicom_Memory_IMemoryProvider_" data-uid="FellowOakDicom.Network.PDataTF.#ctor(FellowOakDicom.Memory.IMemoryProvider)">
   PDataTF(IMemoryProvider)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1570"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1571"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes new P-DATA-TF</p>
@@ -204,7 +204,7 @@ Class PDataTF  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="FellowOakDicom_Network_PDataTF_PDVs" data-uid="FellowOakDicom.Network.PDataTF.PDVs">
   PDVs
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1582"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1583"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>PDVs in this P-DATA-TF</p>
@@ -212,7 +212,7 @@ Class PDataTF  <a class="header-action link-secondary" title="View source" href=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;PDV&gt; PDVs { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;PDV&gt; PDVs { get; }</code></pre>
   </div>
 
 
@@ -221,7 +221,7 @@ Class PDataTF  <a class="header-action link-secondary" title="View source" href=
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FellowOakDicom.Network.PDV.html">PDV</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="FellowOakDicom.Network.PDV.html">PDV</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -236,11 +236,43 @@ Class PDataTF  <a class="header-action link-secondary" title="View source" href=
 </h2>
 
 
+  <a id="FellowOakDicom_Network_PDataTF_AddPDV_" data-uid="FellowOakDicom.Network.PDataTF.AddPDV*"></a>
+
+  <h3 id="FellowOakDicom_Network_PDataTF_AddPDV_FellowOakDicom_Network_PDV_" data-uid="FellowOakDicom.Network.PDataTF.AddPDV(FellowOakDicom.Network.PDV)">
+  AddPDV(PDV)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1586"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a PDV to the PDVs in this P-DATA-TF</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPDV(PDV pdv)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pdv</code> <a class="xref" href="FellowOakDicom.Network.PDV.html">PDV</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_PDataTF_Dispose_" data-uid="FellowOakDicom.Network.PDataTF.Dispose*"></a>
 
   <h3 id="FellowOakDicom_Network_PDataTF_Dispose" data-uid="FellowOakDicom.Network.PDataTF.Dispose">
   Dispose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1656"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1665"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disposes and clears the PDVs</p>
@@ -267,7 +299,7 @@ Class PDataTF  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="FellowOakDicom_Network_PDataTF_Finalize" data-uid="FellowOakDicom.Network.PDataTF.Finalize">
   ~PDataTF()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1579"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1580"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Finalizes P-DATA-TF to avoid issues with improper disposal</p>
@@ -294,7 +326,7 @@ Class PDataTF  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="FellowOakDicom_Network_PDataTF_GetLengthOfPDVs" data-uid="FellowOakDicom.Network.PDataTF.GetLengthOfPDVs">
   GetLengthOfPDVs()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1586"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1594"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Calculates the total length of the PDVs in this P-DATA-TF</p>
@@ -327,7 +359,7 @@ Class PDataTF  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="FellowOakDicom_Network_PDataTF_Read_FellowOakDicom_Network_RawPDU_" data-uid="FellowOakDicom.Network.PDataTF.Read(FellowOakDicom.Network.RawPDU)">
   Read(RawPDU)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1639"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1648"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads P-DATA-TF from PDU buffer</p>
@@ -360,7 +392,7 @@ Class PDataTF  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="FellowOakDicom_Network_PDataTF_ToString" data-uid="FellowOakDicom.Network.PDataTF.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1591"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1599"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -391,7 +423,7 @@ Class PDataTF  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="FellowOakDicom_Network_PDataTF_WriteAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.PDataTF.WriteAsync(System.IO.Stream,System.Threading.CancellationToken)">
   WriteAsync(Stream, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1610"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1618"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Writes P-DATA-TF to the provided stream</p>
