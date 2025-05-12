@@ -7587,7 +7587,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "FellowOakDicom.StructuredReport.DicomMeasuredValue",
-      "Summary": null
+      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.StructuredReport.DicomMeasuredValue.yml\" sourcestartlinenumber=\"1\">Class that represents a measured value in DICOM Structured Reports</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -7601,7 +7601,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "FellowOakDicom.StructuredReport.DicomReferencedSOP",
-      "Summary": null
+      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.StructuredReport.DicomReferencedSOP.yml\" sourcestartlinenumber=\"1\">Class that represents a reference to an SOP Instance</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -7629,7 +7629,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "FellowOakDicom.StructuredReport.DicomStructuredReport",
-      "Summary": null
+      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.StructuredReport.DicomStructuredReport.yml\" sourcestartlinenumber=\"1\">Class for managing DICOM Structured report objects</p>\n"
     },
     {
       "type": "ManagedReference",

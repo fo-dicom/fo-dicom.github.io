@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DicomStructuredReport | Fellow Oak DICOM 5 API ">
       
-      
+      <meta name="description" content="Class for managing DICOM Structured report objects">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="FellowOakDicom_StructuredReport_DicomStructuredReport" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport" class="text-break">
-Class DicomStructuredReport  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L7"><i class="bi bi-code-slash"></i></a>
+Class DicomStructuredReport  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class DicomStructuredReport  <a class="header-action link-secondary" title="View
   <dl><dt>Assembly</dt><dd>fo-dicom.core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Class for managing DICOM Structured report objects</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -212,7 +213,7 @@ Class DicomStructuredReport  <a class="header-action link-secondary" title="View
 
   <h3 id="FellowOakDicom_StructuredReport_DicomStructuredReport__ctor_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.#ctor(FellowOakDicom.DicomDataset)">
   DicomStructuredReport(DicomDataset)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -243,7 +244,7 @@ Class DicomStructuredReport  <a class="header-action link-secondary" title="View
 
   <h3 id="FellowOakDicom_StructuredReport_DicomStructuredReport__ctor_FellowOakDicom_StructuredReport_DicomCodeItem_FellowOakDicom_StructuredReport_DicomContentItem___" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.#ctor(FellowOakDicom.StructuredReport.DicomCodeItem,FellowOakDicom.StructuredReport.DicomContentItem[])">
   DicomStructuredReport(DicomCodeItem, params DicomContentItem[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -261,6 +262,315 @@ Class DicomStructuredReport  <a class="header-action link-secondary" title="View
     <dd></dd>
   </dl>
 
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FellowOakDicom_StructuredReport_DicomStructuredReport_Open_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.Open*"></a>
+
+  <h3 id="FellowOakDicom_StructuredReport_DicomStructuredReport_Open_System_IO_Stream_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.Open(System.IO.Stream)">
+  Open(Stream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Read DICOM StructuredReport</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DicomStructuredReport Open(Stream stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Stream to read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.StructuredReport.DicomStructuredReport.html">DicomStructuredReport</a></dt>
+    <dd><p><a class="xref" href="FellowOakDicom.StructuredReport.DicomStructuredReport.html">DicomStructuredReport</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_StructuredReport_DicomStructuredReport_Open_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.Open*"></a>
+
+  <h3 id="FellowOakDicom_StructuredReport_DicomStructuredReport_Open_System_IO_Stream_System_Text_Encoding_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.Open(System.IO.Stream,System.Text.Encoding)">
+  Open(Stream, Encoding)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Read DICOM StructuredReport</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DicomStructuredReport Open(Stream stream, Encoding fallbackEncoding)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Stream to read.</p>
+</dd>
+    <dt><code>fallbackEncoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>Encoding to use when reading the stream</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.StructuredReport.DicomStructuredReport.html">DicomStructuredReport</a></dt>
+    <dd><p><a class="xref" href="FellowOakDicom.StructuredReport.DicomStructuredReport.html">DicomStructuredReport</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_StructuredReport_DicomStructuredReport_Open_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.Open*"></a>
+
+  <h3 id="FellowOakDicom_StructuredReport_DicomStructuredReport_Open_System_String_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.Open(System.String)">
+  Open(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Read DICOM StructuredReport</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DicomStructuredReport Open(string filename)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of file to read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.StructuredReport.DicomStructuredReport.html">DicomStructuredReport</a></dt>
+    <dd><p><a class="xref" href="FellowOakDicom.StructuredReport.DicomStructuredReport.html">DicomStructuredReport</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_StructuredReport_DicomStructuredReport_Open_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.Open*"></a>
+
+  <h3 id="FellowOakDicom_StructuredReport_DicomStructuredReport_Open_System_String_System_Text_Encoding_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.Open(System.String,System.Text.Encoding)">
+  Open(string, Encoding)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Read DICOM StructuredReport</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DicomStructuredReport Open(string filename, Encoding fallbackEncoding)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of file to read.</p>
+</dd>
+    <dt><code>fallbackEncoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>Encoding to use when reading the file</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.StructuredReport.DicomStructuredReport.html">DicomStructuredReport</a></dt>
+    <dd><p><a class="xref" href="FellowOakDicom.StructuredReport.DicomStructuredReport.html">DicomStructuredReport</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_StructuredReport_DicomStructuredReport_Save_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.Save*"></a>
+
+  <h3 id="FellowOakDicom_StructuredReport_DicomStructuredReport_Save_System_IO_Stream_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.Save(System.IO.Stream)">
+  Save(Stream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Save DICOM Structured Report to stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(Stream stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Stream on which to save DICOM file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_StructuredReport_DicomStructuredReport_Save_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.Save*"></a>
+
+  <h3 id="FellowOakDicom_StructuredReport_DicomStructuredReport_Save_System_String_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.Save(System.String)">
+  Save(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Save DICOM Structured Report to file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(string filename)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_StructuredReport_DicomStructuredReport_SaveAsync_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.SaveAsync*"></a>
+
+  <h3 id="FellowOakDicom_StructuredReport_DicomStructuredReport_SaveAsync_System_IO_Stream_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.SaveAsync(System.IO.Stream)">
+  SaveAsync(Stream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously save DICOM Structured Report to stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SaveAsync(Stream stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Stream on which to save DICOM file.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Awaitable task.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_StructuredReport_DicomStructuredReport_SaveAsync_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.SaveAsync*"></a>
+
+  <h3 id="FellowOakDicom_StructuredReport_DicomStructuredReport_SaveAsync_System_String_" data-uid="FellowOakDicom.StructuredReport.DicomStructuredReport.SaveAsync(System.String)">
+  SaveAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/StructuredReport/DicomStructuredReport.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Save to file asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SaveAsync(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of file.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Awaitable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
+</dd>
+  </dl>
 
 
 
