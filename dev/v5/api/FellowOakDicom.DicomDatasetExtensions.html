@@ -196,7 +196,7 @@ Class DicomDatasetExtensions  <a class="header-action link-secondary" title="Vie
 
   <h3 id="FellowOakDicom_DicomDatasetExtensions_EnumerateGroup_FellowOakDicom_DicomDataset_System_UInt16_" data-uid="FellowOakDicom.DicomDatasetExtensions.EnumerateGroup(FellowOakDicom.DicomDataset,System.UInt16)">
   EnumerateGroup(DicomDataset, ushort)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/DicomDatasetExtensions.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/DicomDatasetExtensions.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enumerates DICOM items for specified group.</p>
@@ -238,7 +238,7 @@ Class DicomDatasetExtensions  <a class="header-action link-secondary" title="Vie
 
   <h3 id="FellowOakDicom_DicomDatasetExtensions_EnumerateMasked_FellowOakDicom_DicomDataset_FellowOakDicom_DicomMaskedTag_" data-uid="FellowOakDicom.DicomDatasetExtensions.EnumerateMasked(FellowOakDicom.DicomDataset,FellowOakDicom.DicomMaskedTag)">
   EnumerateMasked(DicomDataset, DicomMaskedTag)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/DicomDatasetExtensions.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/DicomDatasetExtensions.cs/#L196"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enumerates DICOM items matching mask.</p>
@@ -325,7 +325,7 @@ Class DicomDatasetExtensions  <a class="header-action link-secondary" title="Vie
 
   <h3 id="FellowOakDicom_DicomDatasetExtensions_GetDateTimeOffset_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTag_FellowOakDicom_DicomTag_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.DicomDatasetExtensions.GetDateTimeOffset(FellowOakDicom.DicomDataset,FellowOakDicom.DicomTag,FellowOakDicom.DicomTag,FellowOakDicom.DicomDataset)">
   GetDateTimeOffset(DicomDataset, DicomTag, DicomTag, DicomDataset)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/DicomDatasetExtensions.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/DicomDatasetExtensions.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get a composite <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a> instance based on <code class="paramref">date</code> and <code class="paramref">time</code> values.
@@ -375,7 +375,7 @@ If the dataset is a child sequence item, the <code class="paramref">topLevelData
 
   <h3 id="FellowOakDicom_DicomDatasetExtensions_NotValidated_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.DicomDatasetExtensions.NotValidated(FellowOakDicom.DicomDataset)">
   NotValidated(DicomDataset)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/DicomDatasetExtensions.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/DicomDatasetExtensions.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Turns off validation on the passed DicomDataset and returns this Dataset</p>
@@ -408,11 +408,112 @@ If the dataset is a child sequence item, the <code class="paramref">topLevelData
 
 
 
+  <a id="FellowOakDicom_DicomDatasetExtensions_TryGetDateTime_" data-uid="FellowOakDicom.DicomDatasetExtensions.TryGetDateTime*"></a>
+
+  <h3 id="FellowOakDicom_DicomDatasetExtensions_TryGetDateTime_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTag_FellowOakDicom_DicomTag_System_DateTime__" data-uid="FellowOakDicom.DicomDatasetExtensions.TryGetDateTime(FellowOakDicom.DicomDataset,FellowOakDicom.DicomTag,FellowOakDicom.DicomTag,System.DateTime@)">
+  TryGetDateTime(DicomDataset, DicomTag, DicomTag, out DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/DicomDatasetExtensions.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to get a composite <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> instance based on <code class="paramref">date</code> and <code class="paramref">time</code> values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetDateTime(this DicomDataset dataset, DicomTag date, DicomTag time, out DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dataset</code> <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></dt>
+    <dd><p>Dataset from which data should be retrieved.</p>
+</dd>
+    <dt><code>date</code> <a class="xref" href="FellowOakDicom.DicomTag.html">DicomTag</a></dt>
+    <dd><p>Tag associated with date value.</p>
+</dd>
+    <dt><code>time</code> <a class="xref" href="FellowOakDicom.DicomTag.html">DicomTag</a></dt>
+    <dd><p>Tag associated with time value.</p>
+</dd>
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Composite <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Boolean if the composite DateTime could be extracted.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_DicomDatasetExtensions_TryGetDateTimeOffset_" data-uid="FellowOakDicom.DicomDatasetExtensions.TryGetDateTimeOffset*"></a>
+
+  <h3 id="FellowOakDicom_DicomDatasetExtensions_TryGetDateTimeOffset_FellowOakDicom_DicomDataset_FellowOakDicom_DicomTag_FellowOakDicom_DicomTag_System_DateTimeOffset__FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.DicomDatasetExtensions.TryGetDateTimeOffset(FellowOakDicom.DicomDataset,FellowOakDicom.DicomTag,FellowOakDicom.DicomTag,System.DateTimeOffset@,FellowOakDicom.DicomDataset)">
+  TryGetDateTimeOffset(DicomDataset, DicomTag, DicomTag, out DateTimeOffset, DicomDataset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/DicomDatasetExtensions.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to get a composite <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a> instance based on <code class="paramref">date</code> and <code class="paramref">time</code> values.
+This will take any time zone information specified in the dataset into account.
+If the dataset is a child sequence item, the <code class="paramref">topLevelDataset</code> must be specified to find time zone information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetDateTimeOffset(this DicomDataset dataset, DicomTag date, DicomTag time, out DateTimeOffset datetimeoffset, DicomDataset topLevelDataset = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dataset</code> <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></dt>
+    <dd><p>Dataset from which data should be retrieved.</p>
+</dd>
+    <dt><code>date</code> <a class="xref" href="FellowOakDicom.DicomTag.html">DicomTag</a></dt>
+    <dd><p>Tag associated with date value.</p>
+</dd>
+    <dt><code>time</code> <a class="xref" href="FellowOakDicom.DicomTag.html">DicomTag</a></dt>
+    <dd><p>Tag associated with time value.</p>
+</dd>
+    <dt><code>datetimeoffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd><p>Composite <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>.</p>
+</dd>
+    <dt><code>topLevelDataset</code> <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></dt>
+    <dd><p>The top-level dataset (if different from the current dataset). This is where the time zone information will be located</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Boolean if the composite DateTimeOffset could be extracted.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_DicomDatasetExtensions_Validated_" data-uid="FellowOakDicom.DicomDatasetExtensions.Validated*"></a>
 
   <h3 id="FellowOakDicom_DicomDatasetExtensions_Validated_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.DicomDatasetExtensions.Validated(FellowOakDicom.DicomDataset)">
   Validated(DicomDataset)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/DicomDatasetExtensions.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/DicomDatasetExtensions.cs/#L225"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Turns on validation on the passed DicomDataset and returns this Dataset</p>
