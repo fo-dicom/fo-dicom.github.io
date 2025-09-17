@@ -89,7 +89,7 @@
 
 
   <h1 id="FellowOakDicom_IServiceCollectionExtension" data-uid="FellowOakDicom.IServiceCollectionExtension" class="text-break">
-Class IServiceCollectionExtension  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L73"><i class="bi bi-code-slash"></i></a>
+Class IServiceCollectionExtension  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -156,7 +156,7 @@ Class IServiceCollectionExtension  <a class="header-action link-secondary" title
 
   <h3 id="FellowOakDicom_IServiceCollectionExtension_AddDicomClient_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_FellowOakDicom_Network_Client_DicomClientOptions__" data-uid="FellowOakDicom.IServiceCollectionExtension.AddDicomClient(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{FellowOakDicom.Network.Client.DicomClientOptions})">
   AddDicomClient(IServiceCollection, Action&lt;DicomClientOptions&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds DicomClient services to the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
@@ -198,7 +198,7 @@ Class IServiceCollectionExtension  <a class="header-action link-secondary" title
 
   <h3 id="FellowOakDicom_IServiceCollectionExtension_AddDicomServer_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_FellowOakDicom_Network_DicomServerOptions__" data-uid="FellowOakDicom.IServiceCollectionExtension.AddDicomServer(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{FellowOakDicom.Network.DicomServerOptions})">
   AddDicomServer(IServiceCollection, Action&lt;DicomServerOptions&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds DicomServer services to the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
@@ -238,9 +238,9 @@ Class IServiceCollectionExtension  <a class="header-action link-secondary" title
 
   <a id="FellowOakDicom_IServiceCollectionExtension_AddFellowOakDicom_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddFellowOakDicom*"></a>
 
-  <h3 id="FellowOakDicom_IServiceCollectionExtension_AddFellowOakDicom_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddFellowOakDicom(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
-  AddFellowOakDicom(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <h3 id="FellowOakDicom_IServiceCollectionExtension_AddFellowOakDicom_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_Action_FellowOakDicom_Network_DicomServiceOptions__System_Action_FellowOakDicom_Network_Client_DicomClientOptions__System_Action_FellowOakDicom_Network_DicomServerOptions__" data-uid="FellowOakDicom.IServiceCollectionExtension.AddFellowOakDicom(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Action{FellowOakDicom.Network.DicomServiceOptions},System.Action{FellowOakDicom.Network.Client.DicomClientOptions},System.Action{FellowOakDicom.Network.DicomServerOptions})">
+  AddFellowOakDicom(IServiceCollection, IConfiguration, Action&lt;DicomServiceOptions&gt;, Action&lt;DicomClientOptions&gt;, Action&lt;DicomServerOptions&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds default implementations of all required services to the collection if the services haven't already been registered</p>
@@ -248,12 +248,20 @@ Class IServiceCollectionExtension  <a class="header-action link-secondary" title
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection AddFellowOakDicom(this IServiceCollection services)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IServiceCollection AddFellowOakDicom(this IServiceCollection services, IConfiguration namedConfigurationSection = null, Action&lt;DicomServiceOptions&gt; configureServiceOptions = null, Action&lt;DicomClientOptions&gt; configureClientOptions = null, Action&lt;DicomServerOptions&gt; configureServerOptions = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+    <dd></dd>
+    <dt><code>namedConfigurationSection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></dt>
+    <dd></dd>
+    <dt><code>configureServiceOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>configureClientOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FellowOakDicom.Network.Client.DicomClientOptions.html">DicomClientOptions</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>configureServerOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServerOptions.html">DicomServerOptions</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -277,7 +285,7 @@ Class IServiceCollectionExtension  <a class="header-action link-secondary" title
 
   <h3 id="FellowOakDicom_IServiceCollectionExtension_AddImageManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddImageManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   AddImageManager&lt;TImageManager&gt;(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds <a class="xref" href="FellowOakDicom.Imaging.IImageManager.html">IImageManager</a> services to the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
@@ -321,7 +329,7 @@ Class IServiceCollectionExtension  <a class="header-action link-secondary" title
 
   <h3 id="FellowOakDicom_IServiceCollectionExtension_AddLogManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddLogManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   AddLogManager&lt;TLogManager&gt;(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -363,7 +371,7 @@ public static IServiceCollection AddLogManager&lt;TLogManager&gt;(this IServiceC
 
   <h3 id="FellowOakDicom_IServiceCollectionExtension_AddNetworkManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddNetworkManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   AddNetworkManager&lt;TNetworkManager&gt;(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds <a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a> services to the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
@@ -407,7 +415,7 @@ public static IServiceCollection AddLogManager&lt;TLogManager&gt;(this IServiceC
 
   <h3 id="FellowOakDicom_IServiceCollectionExtension_AddTranscoderManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.AddTranscoderManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   AddTranscoderManager&lt;TTranscoderManager&gt;(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds <a class="xref" href="FellowOakDicom.Imaging.Codec.ITranscoderManager.html">ITranscoderManager</a> services to the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
@@ -451,7 +459,7 @@ public static IServiceCollection AddLogManager&lt;TLogManager&gt;(this IServiceC
 
   <h3 id="FellowOakDicom_IServiceCollectionExtension_TryAddImageManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.TryAddImageManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   TryAddImageManager&lt;TImageManager&gt;(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L208"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds <a class="xref" href="FellowOakDicom.Imaging.IImageManager.html">IImageManager</a> services to the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> if they are not already registered.</p>
@@ -495,7 +503,7 @@ public static IServiceCollection AddLogManager&lt;TLogManager&gt;(this IServiceC
 
   <h3 id="FellowOakDicom_IServiceCollectionExtension_TryAddNetworkManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.TryAddNetworkManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   TryAddNetworkManager&lt;TNetworkManager&gt;(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L230"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds <a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a> services to the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> if they are not already registered.</p>
@@ -539,7 +547,7 @@ public static IServiceCollection AddLogManager&lt;TLogManager&gt;(this IServiceC
 
   <h3 id="FellowOakDicom_IServiceCollectionExtension_TryAddTranscoderManager__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="FellowOakDicom.IServiceCollectionExtension.TryAddTranscoderManager``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   TryAddTranscoderManager&lt;TTranscoderManager&gt;(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Setup.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds <a class="xref" href="FellowOakDicom.Imaging.Codec.ITranscoderManager.html">ITranscoderManager</a> services to the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> if they are not already registered.</p>

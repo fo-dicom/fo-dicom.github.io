@@ -161,16 +161,16 @@ Class DicomServiceDependencies  <a class="header-action link-secondary" title="V
 
   <a id="FellowOakDicom_Network_DicomServiceDependencies__ctor_" data-uid="FellowOakDicom.Network.DicomServiceDependencies.#ctor*"></a>
 
-  <h3 id="FellowOakDicom_Network_DicomServiceDependencies__ctor_Microsoft_Extensions_Logging_ILoggerFactory_FellowOakDicom_Network_INetworkManager_FellowOakDicom_Imaging_Codec_ITranscoderManager_FellowOakDicom_Memory_IMemoryProvider_" data-uid="FellowOakDicom.Network.DicomServiceDependencies.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,FellowOakDicom.Network.INetworkManager,FellowOakDicom.Imaging.Codec.ITranscoderManager,FellowOakDicom.Memory.IMemoryProvider)">
-  DicomServiceDependencies(ILoggerFactory, INetworkManager, ITranscoderManager, IMemoryProvider)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomServiceDependencies.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <h3 id="FellowOakDicom_Network_DicomServiceDependencies__ctor_Microsoft_Extensions_Logging_ILoggerFactory_FellowOakDicom_Network_INetworkManager_FellowOakDicom_Imaging_Codec_ITranscoderManager_FellowOakDicom_Memory_IMemoryProvider_System_IServiceProvider_" data-uid="FellowOakDicom.Network.DicomServiceDependencies.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,FellowOakDicom.Network.INetworkManager,FellowOakDicom.Imaging.Codec.ITranscoderManager,FellowOakDicom.Memory.IMemoryProvider,System.IServiceProvider)">
+  DicomServiceDependencies(ILoggerFactory, INetworkManager, ITranscoderManager, IMemoryProvider, IServiceProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomServiceDependencies.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DicomServiceDependencies(ILoggerFactory loggerFactory, INetworkManager networkManager, ITranscoderManager transcoderManager, IMemoryProvider memoryProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public DicomServiceDependencies(ILoggerFactory loggerFactory, INetworkManager networkManager, ITranscoderManager transcoderManager, IMemoryProvider memoryProvider, IServiceProvider serviceProvider)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -182,6 +182,8 @@ Class DicomServiceDependencies  <a class="header-action link-secondary" title="V
     <dt><code>transcoderManager</code> <a class="xref" href="FellowOakDicom.Imaging.Codec.ITranscoderManager.html">ITranscoderManager</a></dt>
     <dd></dd>
     <dt><code>memoryProvider</code> <a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></dt>
+    <dd></dd>
+    <dt><code>serviceProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
     <dd></dd>
   </dl>
 
@@ -283,6 +285,37 @@ Class DicomServiceDependencies  <a class="header-action link-secondary" title="V
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="FellowOakDicom.Network.INetworkManager.html">INetworkManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Network_DicomServiceDependencies_ServiceProvider_" data-uid="FellowOakDicom.Network.DicomServiceDependencies.ServiceProvider*"></a>
+
+  <h3 id="FellowOakDicom_Network_DicomServiceDependencies_ServiceProvider" data-uid="FellowOakDicom.Network.DicomServiceDependencies.ServiceProvider">
+  ServiceProvider
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomServiceDependencies.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IServiceProvider ServiceProvider { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
     <dd></dd>
   </dl>
 

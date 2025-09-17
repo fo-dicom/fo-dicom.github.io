@@ -7861,6 +7861,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "usage/configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "usage/configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "usage/getting_data.md",
       "output": {
         ".html": {

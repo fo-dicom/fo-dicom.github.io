@@ -167,24 +167,20 @@ Class DefaultDicomClientFactory  <a class="header-action link-secondary" title="
 
   <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor*"></a>
 
-  <h3 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_Microsoft_Extensions_Options_IOptions_FellowOakDicom_Network_Client_DicomClientOptions__Microsoft_Extensions_Options_IOptions_FellowOakDicom_Network_DicomServiceOptions__Microsoft_Extensions_Logging_ILoggerFactory_FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnectionFactory_System_IServiceProvider_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor(Microsoft.Extensions.Options.IOptions{FellowOakDicom.Network.Client.DicomClientOptions},Microsoft.Extensions.Options.IOptions{FellowOakDicom.Network.DicomServiceOptions},Microsoft.Extensions.Logging.ILoggerFactory,FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionFactory,System.IServiceProvider)">
-  DefaultDicomClientFactory(IOptions&lt;DicomClientOptions&gt;, IOptions&lt;DicomServiceOptions&gt;, ILoggerFactory, IAdvancedDicomClientConnectionFactory, IServiceProvider)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/Client/DicomClientFactory.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <h3 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_Microsoft_Extensions_Logging_ILoggerFactory_FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnectionFactory_System_IServiceProvider_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionFactory,System.IServiceProvider)">
+  DefaultDicomClientFactory(ILoggerFactory, IAdvancedDicomClientConnectionFactory, IServiceProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/Client/DicomClientFactory.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DefaultDicomClientFactory(IOptions&lt;DicomClientOptions&gt; defaultClientOptions, IOptions&lt;DicomServiceOptions&gt; defaultServiceOptions, ILoggerFactory loggerFactory, IAdvancedDicomClientConnectionFactory advancedDicomClientConnectionFactory, IServiceProvider serviceProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public DefaultDicomClientFactory(ILoggerFactory loggerFactory, IAdvancedDicomClientConnectionFactory advancedDicomClientConnectionFactory, IServiceProvider serviceProvider)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>defaultClientOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="FellowOakDicom.Network.Client.DicomClientOptions.html">DicomClientOptions</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>defaultServiceOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a>&gt;</dt>
-    <dd></dd>
     <dt><code>loggerFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggerfactory">ILoggerFactory</a></dt>
     <dd></dd>
     <dt><code>advancedDicomClientConnectionFactory</code> <a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionFactory.html">IAdvancedDicomClientConnectionFactory</a></dt>
@@ -212,7 +208,7 @@ Class DefaultDicomClientFactory  <a class="header-action link-secondary" title="
 
   <h3 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_System_String_System_Int32_FellowOakDicom_Network_Tls_ITlsInitiator_System_String_System_String_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create(System.String,System.Int32,FellowOakDicom.Network.Tls.ITlsInitiator,System.String,System.String)">
   Create(string, int, ITlsInitiator, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/Client/DicomClientFactory.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/Client/DicomClientFactory.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes an instance of <a class="xref" href="FellowOakDicom.Network.Client.DicomClient.html">DicomClient</a>.</p>
@@ -262,7 +258,7 @@ Class DefaultDicomClientFactory  <a class="header-action link-secondary" title="
 
   <h3 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_System_String_System_Int32_System_Boolean_System_String_System_String_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create(System.String,System.Int32,System.Boolean,System.String,System.String)">
   Create(string, int, bool, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/Client/DicomClientFactory.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/Client/DicomClientFactory.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes an instance of <a class="xref" href="FellowOakDicom.Network.Client.DicomClient.html">DicomClient</a>.</p>
