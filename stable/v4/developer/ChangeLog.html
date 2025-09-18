@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | fo-dicom 4 API </title>
+    <title>5.2.2 (TBD) | fo-dicom 4 API </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | fo-dicom 4 API ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="title" content="5.2.2 (TBD) | fo-dicom 4 API ">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,719 +77,289 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h3 id="522-tbd">5.2.2 (TBD)</h3>
 
-<h4 id="v409-tbd">v.4.0.9 (TBD)</h4>
 <ul>
-<li>Bug fix: Correct Source PDU Field in Association Abort Request (#984)</li>
+<li>render images with window width &lt; 1, but apply LINEAR_EXACT on rendering (#1905)</li>
 </ul>
-<h4 id="v408-09102020">v.4.0.8 (09/10/2020)</h4>
+<h3 id="521-2025-03-13">5.2.1 (2025-03-13)</h3>
 <ul>
-<li>Add missing properties to IDicomClient interface (#1171)</li>
-<li>Bug fix: No DICOM charset found for GB18030 in .NET Core (#1125)</li>
-<li>Bug fix: Incorrect failed validation for Vr Type DS, both .NET Core and Framework (#1141)</li>
-<li>Update to DICOM Standard 2021a. Nema now also provides Keywords for the UIDs, these are now used. Breaking change: some UID keywords have changed.</li>
-<li>Bug fix: Some non-retired DicomTags had a name including &quot;RETIRED&quot;. Now fixed the generation of DicomTag names. (#1131)</li>
-<li>FrameGeometry is enhanced so that it also works for DX, CR or MG images. (#1138)</li>
-<li>Private Creator UN tags are converted to LO (#1146)</li>
-<li>Bug fix: Ensure timeout detection can never stop prematurely</li>
-<li>Fix parsing of datasets with a final SequenceDelimiterItem at the end (#1157)</li>
-<li>Fix: DicomDirectory did throw exception on calling constructor with no parameters (#1176)</li>
+<li>Fixed regression in parser where group length of VR UN was parsed wrong (#1941)</li>
+<li>UseFellowOakDicom registers the default services only if there are not yet some services registered (#1929)</li>
+<li>update to DICOM Standard 2025a</li>
+</ul>
+<h3 id="520-2025-02-03">5.2.0 (2025-02-03)</h3>
+<ul>
+<li>refactor the parser to make it better maintainable</li>
+<li><strong>Breaking change</strong>: IByteSource interface has changed</li>
+<li>VOI LUT Function with empty value causes a crash (#1891)</li>
+<li>Add ConnectionTimeout to ClientConnectionOptions (#1784)</li>
+<li>Fixed bug, where milliseconds have been cut away when adding a Datetime to a DicomDataset (#1719)</li>
+<li>DicomElement.ValueRepresentation.ValidateString() now throws a DicomValidationException if a null value is passed (#1590)</li>
+<li>The optional AffectedSopInstanceUID is added to the CStoreResponse by default. (#1390)</li>
+<li>Handle invalid DICOM files, that contain &quot;,&quot; as decimal separator in DS values (#1296)</li>
+<li>DicomDataset.AddOrUpdate also allows passing DicomSequence as argument type (#1664)</li>
+<li>Enable reading DICOMDIR files where the offsets are not correctly but at cleast close (#1927)</li>
+<li>Fix parsing files from stream created by HttpClient (#1698)</li>
+<li>update to DICOM Standard 2024e</li>
+</ul>
+<h3 id="515-2024-11-25">5.1.5 (2024-11-25)</h3>
+<ul>
+<li>Fix regression which caused an exception if writing with an empty SpecificCharacterSet tag (#1879)</li>
+<li>Fix issue where DicomDataset.FunctionalGroupValues throws IndexOutOfBounds in case of an empty SharedFunctionalGroupSequence (#1884)</li>
+</ul>
+<h3 id="514-2024-10-27">5.1.4 (2024-10-27)</h3>
+<ul>
+<li>Update to DICOM Standard 2024d</li>
+<li>Fix issue where the main TCP listener loop could be blocked by frozen TLS handshakes (#1766)</li>
+<li>Add support for saving new strings with multi-valued Specific Character Set (#1789)</li>
+<li>Throw a meaningful and explaining JsonException when trying to serialize not supported fragmented data (#1792)</li>
+<li>Fix issue with retrieving correct VR when the DICOM element's length is a blank character (e.g., 0x200A) by modifying the empty string check to specifically handle 0x2020 (#1847)</li>
+<li>Fix bug where under some circumstances (transcode a 8 bit image with odd row or column length from explicit to implicit TS) a odd length pixeldata is written (#1403)</li>
+<li>Fix bug where DicomDataset.GetDicomTag thew an exception if the private tag does not exist in dataset (#1840)</li>
+<li>FO-DICOM.Tests target net8.0-windows instead of net7.0-windows</li>
+<li>Fix rendering of EnhancedMR or EnhancedCT images, that contain any invalid value in any item within the Functional Groups (#1862)</li>
+</ul>
+<h3 id="513-2024-06-27">5.1.3 (2024-06-27)</h3>
+<ul>
+<li>Update to DICOM Standard 2024c</li>
+<li><strong>Breaking change</strong>: Calculation of VOI LUT function LINEAR_EXACT changed as defined since DICOM Standard 2019d</li>
+<li>Add core support for HTJ2K-based transfer syntaxes (not actual codec) (#1687)</li>
+<li>Reduce the memory impact of the DicomDatasetComparer. By a static property DicomDataset.CompareInstancesByContent the usage of DicomDatasetComparer in DicomDataset.Equals can be disabled globally. (#1807)</li>
+<li>Add support for parsing DICOM files where the pixel data is not properly closed with a SequenceDelimitationItem (#1339)</li>
+<li>Update Dicom json converter to handle Infinity values for FL and FD VRs (#1725)</li>
+<li>Fix rendering of files with photometric interpretation YBR_RCT or YBR_ICT (#1734)</li>
+<li>Add support for rendering multiframe DICOM files where last fragment is 0 bytes (#1586)</li>
+<li>Fix rendering multiframe image when rendering several frames in parallel</li>
+<li>Use information from Functional Group Sequences when rendering EnhancedCT, EnhancedMR or BTO objects</li>
+<li>Fix rendering of compressed data where the photometric interpretation changed while decompressing data.</li>
+<li>DicomImage can cache decompressed pixel data, render-LUT or rendered image.</li>
+<li>New properties CacheMode and AutoAplyLUTToAllFrames in DicomImage.</li>
+<li>Fix performance regression in DicomServer (#1776)</li>
+<li>Fix bug where reading parallel from the a stream file returned wrong data (#1653)</li>
+<li>Fix rendering of images with 1 bit stored, where the image does not povide windowing values (#1432)</li>
+<li>Fix issue with applying FallbackEncoding when SpecificCharacterSet tag is missing (#1159)</li>
+<li>Apply FallbackEncoding of DicomServices to the DicomDatasets that are sent through this DicomService (#1642)</li>
+<li>Fix race condition in GenericGrayscalePipeline that could trigger a NullReferenceException (#1759)</li>
+<li>Add resiliency against WindowCenter or WindowWidth containing gibberish (#1756)</li>
+<li>Ignore overlay data that is too small (#1728)</li>
+<li>Allow leading zeros in DS values (#1793)</li>
+<li>Correctly handle gb2312 (ISO 2022 IR 58) character encoding (#1805)</li>
+</ul>
+<h3 id="512-2023-12-21">5.1.2 (2023-12-21)</h3>
+<ul>
+<li>Update to DICOM Standard 2023e</li>
+<li><strong>Breaking change</strong>: Configuration of <code>MaxClientsAllowed</code> must now be done via the <code>configure</code> parameter of <code>IDicomServerFactory.Create(..)</code> instead of using the <code>Options</code> property of a <code>DicomServer</code>.</li>
+<li><strong>Breaking change</strong>: <code>IServiceCollection.AddDicomServer(Action&lt;DicomServiceOptions&gt; configure)</code> was changed to <code>IServiceCollection.AddDicomServer(Action&lt;DicomServerOptions&gt; configure)</code></li>
+<li>fo-dicom.Imaging.Desktop supports net6.0-windows and net7.0-windows targets (#1318)</li>
+<li>FO-DICOM.Tests target net6.0-windows and net7.0-windows and test WPF/WinForms images.</li>
+<li>Added private tags mentioned in RayStation 11A DICOM Conformance Statement (#1612)</li>
+<li>Fix issue where extracting a string from a DICOM dataset could return null if the tag was present but empty</li>
+<li>Extension methods <code>DicomDataset.WriteToLog</code> and <code>DicomFile.WriteToLog</code> now also accept a <code>Microsoft.Extensions.Logging.ILogger</code></li>
+<li>Optimize the common case of adding a single <code>DicomItem</code> to a <code>DicomDataset</code> by adding an overload <code>DicomDataset.Add(DicomItem item)</code> (#1604)</li>
+<li>Immediately throw an exception if DICOM server synchronously fails to start (#1562)</li>
+<li>Fix issue where stopping a DICOM server left the unused services cleanup task running (#1562)</li>
+<li>Add the possibility to configure TCP buffer sizes (#1564)</li>
+<li>Fix incorrect values returned from <code>DicomEncoding.GetCharset()</code> (#1624)</li>
+<li>Tolerate <code>Specific Character Set</code> values misspelled as &quot;ISO-IR ###&quot; additionally to &quot;ISO IR ###&quot;</li>
+<li>Fix issue where reading a DICOM file with large pixel data (&gt; 2 GB) did not work (#1453)</li>
+<li>Fix issue where a DICOM server could stop accepting incoming connections if MaxClientsAllowed is configured and one or more connections never close (#1468)</li>
+<li>Fix issue where a DICOM server could leak memory when one or more connections never close (#1594)</li>
+<li>Fix the issue of 'DicomAttribute not generated in XML when element is of type DicomFragmentSequence'</li>
+<li>Prevent adding duplicate presentation contexts to an association request (#1596)</li>
+<li>Fix issue with missing known DicomTransferSyntax from static DicomTransferSyntax.Entries dictionary (#1644)</li>
+<li>Improve robustness of DicomService when presented with HTTP requests. Bail early if the PDU type is not recognized (#1678)</li>
+<li>Enhancement: Added IEquatable implementation and equality operators for DicomDataset class</li>
+<li>Fix issue where a DICOM server could stop accepting incoming connections if MaxClientsAllowed is configured and one or more connections take longer than one minute to close (#1670)</li>
+</ul>
+<h4 id="511-2023-05-29">5.1.1 (2023-05-29)</h4>
+<ul>
+<li>Fix issue where DicomClient did not send requests when Async Ops Invoked was zero (#1597)</li>
+</ul>
+<h4 id="510-2023-05-21">5.1.0 (2023-05-21)</h4>
+<ul>
+<li><strong>Breaking change</strong>: Switch to Microsoft.Extensions.Logging, replacing FellowOakDicom.Log.ILogger and FellowOakDicom.Log.ILogManager. These are old interfaces are still supported, but they are now marked as obsolete</li>
+<li><strong>Breaking change</strong>: Updated DICOM Dictionary to 2023b. Several DicomTag constant names changed to singular name from plural form (#1469)</li>
+<li>Fix Truncating UIDs during Dimse and PDU logging (#1505)</li>
+<li><strong>Breaking change</strong>: DicomServer factories methods take an instance of ITlsAcceptor instead of a certificate name in case of Tls connection.</li>
+<li>Add the possibility to use some certain client certificate for Tls connections.</li>
+<li>New interfaces ITlsAcceptor and ITlsInitiator give more freedom in handling Tls connections.</li>
+<li>Cache file length in FileByteSource to improve parse speed (#1493)</li>
+<li>Fix reading of DICOM files with extra tags in File Meta Information (#1376)</li>
+<li>Allow accessing person name components for empty items (#1405)</li>
+<li>Fix sending more DICOM requests over an existing association where a request previously timed out (#1396)</li>
+<li>Improve throughput of DicomClient when more requests are added mid-flight (#1396)</li>
+<li>Fix race-condition where Dicom clients could be accepted for connection before the server was fully configured (#1398)</li>
+<li>Fix overwriting of Lossy Compression ratio tag (#1400)</li>
+<li>Fix DicomClientFactory logger name (#1429)</li>
+<li>Fix DicomJsonConverter deserialization to handle invalid private creator item (#1445)</li>
+<li>Improve performance and reduce memory usage when opening DICOM files (#1414)</li>
+<li>Fix rendering of XA/XRF images that include a modality LUT sequence (#1442)</li>
+<li>Fix incorrect conversion of some decimal strings (#1454)</li>
+<li>Disabled dataset validation on <code>DicomFile.Clone()</code> (#1465)</li>
+<li>Fix reading of Confidentiality Profile Attributes from standard (led to missing Clean Graphics option) (#1212)</li>
+<li>Added support for DICOM supplement 225, Multi-Fragment video transfer syntax (#1469)</li>
+<li>Added support for rendering native icon image stored within encapsulated sop instance (#1483)</li>
+<li>Added property to omit adding the default Implicit VR Little Endian transfer syntax for CStoreRequest (#1475)</li>
+<li>Fix blanking of ValueElements in the anonymizer (#1491)</li>
+<li>Throw error when adding private dicom tag without explicit VR (#1462)</li>
+<li>Fix incorrect JSON conversion of inline binaries (#1487)</li>
+<li>Update VR=UI validation to reject empty component (#1509)</li>
+<li>Fix GetDateTimeOffset with default offset from date/time (#1511)</li>
+<li>Fix even length in pixel data by adding payload (#1019)</li>
+<li>Use CommunityToolkit.HighPerformance (#1473)</li>
+<li>Fix JsonDicomConverter number serialization mode 'PreferablyAsNumber' to handle integers greater than int.MaxValue or lesser than int.MinValue (#1521)</li>
+<li>Fixed missing logging of RemoteHost and RemoteIP in SCU (#1518)</li>
+<li>Added null check for EscapeXml in DicomXML (#1392)</li>
+<li>Added private tags from Varian official DICOM Conformance Statements (#1556)</li>
+<li>Fix handling of negative overlay origin (#1559)</li>
+<li>Add better logging for inbound connections (#1561)</li>
+<li>Added User Identity Negotiation support (#1110)</li>
+</ul>
+<h4 id="503-2022-05-23">5.0.3 (2022-05-23)</h4>
+<ul>
+<li><strong>Breaking change</strong>: subclasses of DicomService will have to pass an instance of DicomServiceDependencies along to the DicomService base constructor. This replaces the old LogManager / NetworkManager / TranscoderManager dependencies. (Implemented in the context of #1291)</li>
+<li><strong>Breaking change</strong>: subclasses of DicomServer will have to pass an instance of DicomServerDependencies along to the DicomServer base constructor. This replaces the old NetworkManager / LogManager dependencies. (Implemented in the context of #1291)</li>
+<li><strong>Breaking change</strong>: DicomClient no longer has a NetworkManager, LogManager or TranscoderManager, these are to be configured via dependency injection. (Implemented in the context of #1144)</li>
+<li>Update to DICOM Standard 2022b</li>
+<li>Added option <code>numberSerializationMode</code> to <code>JsonDicomConverter</code> that allows different modes for serializing DS/IS/UV/SV DICOM items, including handling of invalid values (#1354 &amp; #1362)</li>
+<li>Added an extension to get a DateTimeOffset respecting the timezone info in the dataset (#1310)</li>
+<li>Fixed bug where anonymization threw an exception if a DicomTag of VR UI contained no value (#1308)</li>
+<li>Catch exception in logmessage, to avoid making the application crash because of logging (#1288)</li>
+<li>Fixed StreamByteBuffer to read an internally buffered stream completely (#1313)</li>
+<li>Optimize performance and reduce memory allocations in network layer (#1291)</li>
+<li>Fixed bug where disposal of DicomService could throw an exception if the buffered write stream still had content (#1319)</li>
+<li>Improve handling of dropped connections (#1332)</li>
+<li>Add new API for expert DICOM client connections/associations. This new API gives full control over the connection, association and requests when sending DICOM requests (#1144)</li>
+<li>Rewrite &quot;DicomClient&quot; based on the new advanced API. The state based implementation is gone. The public API has remained the same. (#1144)</li>
+<li>Ignore empty VOI LUT and Modality LUT Sequence (#1369)</li>
+<li>Validate calling AE and called AE length when creating a DicomClient (#1323)</li>
+<li>Improve handling of WSI creation: faster offset table calucation and a naming of temp files to allow more than 64.000.</li>
+<li>Change: DicomAnonymizer private fields and methods changed to protected so they can be used in subclasses, made instance methods virtual so they can be overridden in subclasses</li>
+<li>Fix VR's SV and UV VR Length field (#1386)</li>
+</ul>
+<h4 id="502-2022-01-11">5.0.2 (2022-01-11)</h4>
+<ul>
+<li>Update to DICOM Standard 2021e</li>
+<li>Fix issue where opening a DICOM file from a stream writes too much data when saving it again (#1264)</li>
+<li>Add possibility to read from streams without <code>Seek</code> like <code>BrowserFileStream</code> (#1218)</li>
+<li>Add method to convert an array of DicomDatasets into a json string (#1271)</li>
+<li>Improved bilinear interpolation</li>
+<li>Fix issue where sending a deflated DICOM file via C-STORE was sent inflated, causing errors (#1283)</li>
+<li>Optimize performance and reduce memory allocations in network layer (#1267 and #1273)</li>
+<li>Enhance Association Request Timeout (#1284)</li>
+<li>Do not change target encoding for strings that are not encoded (#1301)</li>
+</ul>
+<h4 id="501-2021-11-11">5.0.1 (2021-11-11)</h4>
+<ul>
+<li>Add generated API documentation for versions 4 and 5</li>
+<li>Fix IO Exception with &gt;2GB images (#1148)</li>
+<li>Bug fix: Correct Source PDU Field in Association Abort Request (#984)</li>
+<li>Bug fix: Correct Person Name VR Json model (#1235)</li>
+<li>Vulnerability fix: Use secure version of <code>System.Text.Encodings.Web</code> package (#1223)</li>
+<li>Change: <code>DicomFile.Open</code> now throws a <code>DicomFileException</code> if the file size is less than 132 bytes (#641)</li>
+<li>Add XML documentation to nuget package</li>
+<li>Change: Trying to add a DICOM element with invalid group ID to DICOM meta information now throws <code>DicomDataException</code> (#750)</li>
+<li>Bug fix: Prevent DicomJsonConverter from consuming root end object token (#1251)</li>
+<li>Add missing handling of UV, SV and OV in DicomDatasetReaderObserver.OnElement</li>
+<li>Drastically reduce memory consumption when saving a DICOM file</li>
+<li>Fix rendering of single color image</li>
+</ul>
+<h4 id="500-2021-09-13">5.0.0 (2021-09-13)</h4>
+<ul>
 <li>Update to DICOM Standard 2021b (#1189)</li>
+<li>New helper classes to build up a volume from a stack and calculate stacks/slices out of this volume in arbitrary orientation</li>
+<li>Optional parameter in DicomFile.Open methods to define the limit of large object size (#958)</li>
+<li>Add initial support for code extensions (#43)</li>
+<li>Add possibility to register additional encodings via <code>DicomEncoding.RegisterEncoding()</code></li>
 <li>Do not validate VM for VRs OF, OL and OV (#1186)</li>
 <li>Add possibility to add values for the VRs UV, SV and OV</li>
+<li>Log warning messages on decoding errors (#1200)</li>
 <li>Bug fix: Anonymizer not parsing items in sequences (#1202)</li>
+<li>Fix anonymization of string values in private tags with VR UN</li>
 </ul>
-<h4 id="v407-1112020">v.4.0.7 (11/1/2020)</h4>
+<h4 id="500-alpha5-2021-05-25">5.0.0-alpha5 (2021-05-25)</h4>
 <ul>
-<li>Bug fix: Not able to open deflated dicom file which contains squence (#1097)</li>
-<li>Bug fix: DS VR type value ending with \0 fails to serialize in JsonDicomConverter (#1078)</li>
-<li>Allow disabling validation in JsonDicomConverter</li>
-<li>Bug fix: IPv6 issue in DesktopNetworkStream</li>
-<li>Optimize DicomTag.GetHashCode() (#1088)</li>
+<li>Add missing properties to IDicomClient interface (#1171)</li>
+<li>Fix unintended breaking change, where StringValue of tags with length 0 returned null, but should return string.empty.</li>
+<li>Be more tolerant to recognize Encoding by ignoring the difference of underscore and space.</li>
+<li>JsonDicom supports some VRs as number as well as as string. (#1161)</li>
+<li>Fix anonymizing private tags with explicit transfer syntax (#1181)</li>
+<li>Internal calculation of pixel values are done as double instead of int to avoid consequential errors when calculating (#1153)</li>
+<li>Fix: DicomDirectory did throw exception on calling constructor with no parameters (#1176)</li>
+</ul>
+<h4 id="500-alpha4-2021-03-01">5.0.0-alpha4 (2021-03-01)</h4>
+<ul>
+<li>Bug fix: No DICOM charset found for GB18030 in .NET Core (#1125)</li>
+<li>NLogManager constructor should be public (#1136)</li>
+<li>Update to DICOM Standard 2020e (#1132)</li>
+<li>Use Color32 instead of System.Drawing.Color (#1140)</li>
+<li>FrameGeometry is enhanced so that it also works for DX, CR or MG images. (#1138)</li>
+<li>DicomServerFactory missed the method overload to pass the userState object</li>
+<li>Private Creator UN tags are converted to LO (#1146)</li>
+<li>Bug fix: Ensure timeout detection can never stop prematurely</li>
+<li>Fix parsing of datasets with a final SequenceDelimiterItem at the end. (#1157)</li>
+</ul>
+<h4 id="500-alpha3-and-prior-2020-11-01">5.0.0-alpha3 and prior (2020-11-01)</h4>
+<h5 id="changes">Changes:</h5>
+<ul>
+<li>There is only one library built in NetStandard 2.0 <em>fo-dicom.core</em>.*</li>
+<li>Use <code>Microsoft.Extensions.DependencyInjection</code>. There is an extension method to <code>IServiceCollection.AddDefaultDicomServices()</code> to add all default implementations for the required interfaces.
+<ul>
+<li><em>IFileReferenceFactory:</em> creates a <code>IFileReference</code> instance. Is used internally whenever a Reference to a file is created.</li>
+<li><em>IImageManager:</em> creates a <code>IImage</code> instance. Default is <code>RawImageManager</code>, that returns a byte array. call <code>IServiceCollection.UseImageManager&lt;MyImageManager&gt;()</code> to register an other implementation.</li>
+<li><em>ITranscoderManager:</em> manages the codecs, used by <code>DicomTranscoder</code>. Call <code>IServiceCollection.useTranscoderManager&lt;MyTranscoderManager&gt;()</code> to register an other implementation.</li>
+<li><em>ILogManager:</em> creates a concrete implementation of <code>ILogger</code>.</li>
+<li><em>INetworkManager:</em> creates a listner, opens streams or checks connection status.</li>
+<li><em>IDicomClientFactory:</em> is responsible to return an <code>IDicomClient</code> instance. This may be a new instance everytime or a reused instance per host or whateever.</li>
+<li><em>IDicomServerFactory:</em> creates server instances, manages available ports, etc.</li>
+</ul>
+</li>
+<li>If there is no DI container provided, fo-dicom creates its own internally. To configure it, call <code>new DicomSetupBuilder().RegisterServices(s =&gt; ...).Build();</code>
+There are extension methods for this DicomSetupBuilder like <code>.SkipValidation()</code> or <code>SetDicomServiceLogging(logDataPdus, log DimseDataset)</code>.
+The new interface <code>IServiceProviderHost</code> manages, if there is an internal ServiceProvider or if to use a given Asp.Net Service Provider.</li>
+<li>DicomServer uses DI to create the instances of your <code>DicomService</code>. You can use constructor injection there.</li>
+<li>Make server providers asynchronous</li>
+<li>A new class <code>DicomClientOptions</code> holds all the options of a DicomClient to be passed instead of the huge list of parameters.</li>
+<li><code>DicomServerRegistration</code> manages the started servers per IP/Port.</li>
+<li>Some little memory consumption emprovements in IByteBuffer classes.</li>
+<li>new methods in <code>IByteBuffer</code> to directly manipulate/use the data instead of copying it around multiple times.</li>
+<li>Include Json serialization/deserialization directly into <em>fo-dicom.core</em> based on <code>System.Text.Json</code>.</li>
+<li>Text encoding is now handled when a string is written into a network- or file-stream.</li>
+<li>Switch to IAsyncEnumerator using Microsoft.Bcl.AsyncInterfaces. LanguageVersion is set to 8.0.</li>
+<li>internal: SCU now sends two presentation context per CStoreRequest: one with the original TS and one with the additional and the mandatory ImplicitLittleEndian. So the chance is higher to send the file without conversion. (#1048)</li>
+<li>Optimize DicomTag.GetHashCode()</li>
 <li>Bug fix: Prevent special characters in association requests from crashing Fellow Oak DICOM (#1104)</li>
-<li>Fixes caching of pixel data in DicomImage when rendering the same image multithreaded. (#805)</li>
-<li>Fix handling of MaximumPDULength. DicomServer always repeated the clients value of MaximumPDULength in AssociationAccepted-message instead of returning its own value. (#1084)</li>
-<li>Bug fix: It's very slow to open deflated dicom file. (#1115)</li>
-<li>Bug fix: DicomUID Storage Commitment Push Model SOP Class was mapped to wrng DicomStorageCategory (#1113)</li>
-<li>Handle PresentationStates and StructuredReports when creating a DICOMDIR (#1045)</li>
-<li>Allow conversion of integerString into integer if original string had decimal with trailing zeros</li>
-<li>Bug fix: String decimals ending in . (ex. 10.) throw DicomValidationException even though they can be converted to decimal</li>
-<li>Bug fix: FrameGeometry.PixelSpacingX and FrameGeometry.PixelSpacingY where wrong initialized. Now for clarity they are called PixelSpacingBetweenRows and PixelSpacingBetweenColumns.</li>
-<li>Bug fix: Date (DA) and DateTime (DT) fields didn't support range in validation (#1105)</li>
+<li>Make DicomService more memory efficient. Use existing streams in PDU and do not create new Memorystreams for every PDU. (#1091)</li>
 </ul>
-<h4 id="v406-862020">v.4.0.6 (8/6/2020)</h4>
+<h5 id="breaking-changes">Breaking changes:</h5>
 <ul>
-<li>Update to DICOM Standard 2020b.</li>
-<li>Handle N-Event requests in DicomClient (required for synchronous storage commitment) (#1001)</li>
-<li>Bug fix: Fix DICOM Tag conversion for private tags for element numbers xxff (#1059)</li>
-<li>ImplicitVRLittleEndian always added to presentation context by default causes other transfer syntax to not be accepted (#1048)</li>
-<li>New interface IDicomNEventReportRequestProvider for DicomServer. This is necessary to handle synchronous storage commitment on server (#1055)</li>
-<li>Bug fix: Fix the deserialization issue in JsonDicomConverter for NaN value in VR=FL (#1063)</li>
-<li>Bug fix: IOException when reading/sending file &gt; 2GB. (#1061)</li>
-<li>Bug fix: DicomValidator ValidateLO issue, ESC is a valid character (#1043)</li>
-<li>Bug fix: DicomValidation for UI when AddFile to DicomDirectory (#1053)</li>
-<li>Bug fix: Exception occurred in Indexer of VOISequenceLUT Class (#1062)</li>
-<li>Bug fix: Prevent DicomClient getting stuck when any Exception (except IOException) occurs while sending a PDU over the network (#1054)</li>
-<li>Bug fix: Size of uncompressed YBR_FULL_422 images is calculated wrong (#645)</li>
-<li>Bug fix: YBR_FULL_422 images should have a planar configuration value of zero (#1049)</li>
-<li>When opening a DICOMDIR with invalid offsets, try to find the best matching records in a second run (#828)</li>
-</ul>
-<h4 id="v405-5182020">v.4.0.5 (5/18/2020)</h4>
+<li>namespace changed from <code>Dicom</code> to <code>FellowOakDicom</code></li>
+<li><code>IOManager</code> is removed. Instead of calling <code>IOManager.CreateFileReference(path)</code> now directly create a new instance <code>new Filereference(path)</code>. The same is true for <code>DirecotryReference</code>.</li>
+<li>In general: all *Manager classes with their static <code>.SetImplementation</code> initializers have been replaced by Dependency Injection.</li>
+<li>By default there is only <code>RawImageManager</code> implementation for <code>IImageManager</code>. To have <code>WinFormsImageManager</code> or <code>WPFImageManager</code> you have to reference the package <em>fo-dicom.Imaging.Desktop</em>. To use <code>ImageSharpImageManager</code> you have to reference <em>fo-dicom.Imaging.ImageSharp</em>.</li>
+<li>There are only asynchronous server provider interfaces. All synchronous methods have been replaced by asynchronous.</li>
+<li>Instances of <code>DicomClient</code> and <code>DicomServer</code> are not created directly, but via a <code>DicomClientFactory</code> or a <code>DicomServerFactory</code>.
+If you are in a &quot;DI-Environment&quot; like Asp.Net, then inject a <code>IDicomClientFactory</code> instance and use this to create a DicomClient. otherwise call <code>DicomClientFactory.CreateDicomClient(...)</code>. This is a wrapper around accessing the internal DI container , getting the registered IDicomClientFactory and then calling this. So this is more overhead.</li>
+<li>DicomServiceOptions cannot be passed as parameter to DicomServer constructor/factory any more, but the values of options have to be set to the created instance of DicomServer.</li>
+<li>Classes <code>DicomFileReader</code>, <code>DicomReader</code>, <code>DicomReaderCallbackObserver</code> etc are now internal instead of public, because the resulting Datasets are wrong/inconsistent and need further changes. Therefore its usage is dangerous for users. (#823)</li>
+<li>Removed obsolete methods/classes/properties
 <ul>
-<li>Bug fix: DicomTags of ValueRepresentation LT have not been validated.</li>
-<li>Bug fix: Unawaited task throws unhandled exception caught in finalizer thread when stopping Dicom Server. (#1013)</li>
-<li>Bug fix: dependency of fo-dicom.ImageSharp nuget package was wrong. Now it also requires only netStandard1.3 (#1017)</li>
-<li>Bug fix: Fixed freeze when reading SQ of length 0 (#1009)</li>
-<li>Bug fix: DicomDictionary accessor thew exception on unknown keyword instead of returning null (#996)</li>
-<li>Update version of ImageSharp to rc1</li>
-<li>Bug fix: Comparing instance of class DicomStatus with null returned wrong value (#975)</li>
-<li>Bug fix: Overlay origin cannot be set correctly. (#1028)</li>
-<li>Add encoding to JsonDicomConverter on LO, SH and PN (#1020)</li>
-</ul>
-<h4 id="v404-1172020">v.4.0.4 (1/17/2020)</h4>
-<ul>
-<li>New feature: asynchronous counterparts to IDicomCEchoProvider, IDicomCFindProvider, IDicomCStoreProvider, IDicomCMoveProvider, IDicomCGetProvider and IDicomNServiceProvider</li>
-<li>Bug fix: Prevent SSL handshake freeze from blocking the TCP listener (#923)</li>
-<li>disable validation when cloning/copying existing DicomDatasets. Exceptions has been thrown when anonymizing files that contain invalid content.</li>
-<li>Bug fix: FileReadOption.SkipLargeTags caused that only parts of a FragmentSequece have been read, which then lead to further errors. Now the whole FragmentSequence is skipped if only one part of this sequence is skipped.</li>
-<li>Bug fix: Exception when anonymizing private tags, where the value representation is not known.</li>
-<li>Implementation of IImage with ImageSharp, which is pure managed and can be used on any operation system. (#693)</li>
-<li>Add link to wiki entry in DicomCodecException (#948)</li>
-<li>Bug fix: DicomDataset.TryGetString throws if the element is an empty number-based element (#932)</li>
-<li>Bug fix: Some continuations in the new DicomClient were not properly marked with ConfigureAwait, which could cause trouble</li>
-<li>Bug fix: VOI LUT was not applied correctly (#949)</li>
-<li>Add ReferencedFilmSessionSequence in N-Create message of BasicFilmBox (#967)</li>
-<li>Bug fix: Exception when cloning to Jpeg Process2_4 when parameters are set to null.</li>
-</ul>
-<h4 id="v403-9212019">v.4.0.3 (9/21/2019)</h4>
-<ul>
-<li>Bug fix: Exception when adding an element of VR UR/UT/LT/ST with empty value (#915)</li>
-<li>Bug fix: Exception when opening a file with FileReadOption.SkipLargeTags (#893)</li>
-<li>Bug fix: Do not open new associations on the existing TCP connection (#896)</li>
-<li>Bug fix: Broken images when transcoding to JpegProces14 (#921)</li>
-<li>New feature: Add the ability to enforce a maximum number of DICOM requests per association to the new DICOM client (#898)</li>
-<li>Add AutoValidate property also to DicomDirectory class.</li>
-<li>Add support for timeout detection on DICOM requests. Events on Requests and DicomClient are thrown in case of timeout (#666, #236)</li>
-<li>New Option MaxPDULength in DicomServiceOption.</li>
-<li>Rewrite SOP class extended negotiation support (#740)</li>
-<li>Bug fix: extended negotiations have been accepted by default, but should be explicitly accepted (#900)</li>
-<li>Bug fix: Send only PrintManagementMetaSopClassUid on AssociationRequest instead of all the various SopClassUids of the NCreate and NSet requests (#667)</li>
-<li>Global static property DicomValidation.PerformValidation to turn off validation for every DicomDataset.</li>
-<li>Bug fix: Prevent DICOM client from freezing when too many DICOM requests time out and async operations invoked is a low number</li>
-</ul>
-<h4 id="v402-7302019">v.4.0.2 (7/30/2019)</h4>
-<ul>
-<li>Bug fix: prevent resource leak when DesktopNetworkListener waits for new TCP clients</li>
-<li>Updated to DICOM Dictionary 2019a (#724)</li>
-<li>Add pure managed JpegLosses Decoder to DICOM.NetCore project</li>
-<li>Upgraded native libraries to MSVC platform toolset v141 (VS 2017) (#814)</li>
-<li>Replaced deprecated licenseUrl tags in NuGet specification files (#813)</li>
-<li>Add validation of content when adding DICOM elements to DicomDataset. This validation is skipped when reading files or receiving data via network.</li>
-<li>Be more prudent when releasing association after the linger timeout (#840)</li>
-<li>A completely new DicomClient, under the namespace Dicom.Network.Client.DicomClient (beware of confusion with Dicom.Network.DicomClient!)
-<ul>
-<li>The intent is that the old Dicom.Network.DicomClient will disappear in the next major update, so the namespace confusion shouldn't last very long.</li>
-<li>For now, both versions can be used side by side according to your needs. All of our unit tests cover both implementations.</li>
-<li>The new Dicom.Network.Client.DicomClient sports the following characteristics:
-<ul>
-<li>Redesigned architecture using state pattern. This makes the DicomClient a lot more robust in various scenarios (abort while sending requests, disconnect while releasing association, etc)</li>
-<li>Completely async from the very start</li>
-<li>Full and graceful cancellation support using CancellationToken. Upon cancellation, no more requests will be sent, the association will be released and the connection closed gracefully.</li>
-<li>One DicomClient instance per DICOM server. The host, port and other server related parameters are moved to the DicomClient constructor.</li>
-<li>More hooks to react to the various states a DicomClient goes through. (e.g. when connecting, when lingering the association, etc.)</li>
+<li><code>DicomValidation.AutoValidation</code>: Call <code>DicomSetupBuilder.SkipValidation()</code> instead.</li>
+<li><code>Dicom.Network.DicomClient</code>: use <code>FellowOakDicom.Network.Client.DicomClient</code> instead.</li>
+<li><code>Dicom.Network.IDicomServiceUser</code>: use <code>IDicomClientConnection</code> instead.</li>
+<li><code>ChangeTransferSyntax(..)</code> extension methods for <code>DicomFile</code> and <code>DicomDataset</code>: use the method <code>Clone(..)</code> instead.</li>
+<li><code>DicomDataset.Get&lt;T&gt;</code>: use <code>GetValue</code>, <code>GetValues</code>, <code>GetSingleValue</code> or <code>GetSequence</code> instead.</li>
+<li><code>DicomDataset.AddOrUpdatePixelData</code>: use <code>DicomPixelData.AddFrame(IByteBuffer)</code> to add pixel data to underlying dataset.</li>
+<li><code>DicomUID.Generate(name)</code>: use <code>DicomUID.Generate()</code> instead.</li>
+<li><code>DicomUID.IsValid(uid)</code>: use <code>DicomUID.IsValidUid(uid)</code> instead.</li>
+<li><code>DicomUIDGenerator.Generate()</code> and <code>DicomUIDGenerator.GenerateNew()</code>: use <code>DicomUIDGenerator.GenerateDerivedFromUUID()</code></li>
+<li><code>DicomImage.Dataset</code>, <code>DicomImage.PixelData</code> and <code>DicomImage.PhotometricInterpretation</code>: do not load the DicomImage directly from filename if you also need access to the dataset, but load the DicomDataset from file first and then construct the DicomImage from this loaded DicomDataset. Then you can access both.</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>Bug Fix: Fixed wrong interpretation and application of LUT for PALETTE COLOR images (#817)</li>
-<li>Bug Fix: Allow any SOP Class to be set as Affected SOP CLass in C-FIND requests (#808)</li>
-<li>Bug Fix: Don't drop connection right after releasing an association (#839)</li>
-<li>Bug Fix: Wait for release of previous association before opening a new one  (#833)</li>
-<li>Bug Fix: When a connection is still open but the association is already released, create a new association (#833)</li>
-<li>Bug Fix: When adding datasets to a DicomDirectory where some patientNames have trailing ^, then they were not recognized as one patient (#765)</li>
-<li>Bug Fix: Anonymizer throws exception on private tags (#771)</li>
-<li>Bug Fix: Linear windowing wrong in corner cases (#816)</li>
-<li>Bug Fix: Fix DicomClient getting stuck when sending one request fails completely (#848)</li>
-<li>Added Modality LUT Sequence and VOI LUT Sequence functionality when generating a DICOM Image.</li>
-<li>Bug Fix: Logging requests with very long private tags throws exception (#846)</li>
-<li>Bug Fix: turn off validation when creating CFind-, CGet- or CMove-Requests, since there are no newly generated data included, but already existing UIDs have to be added there. (#860, #842)</li>
-<li>Bug Fix: generation of DicomUID using obsolete method Generate(&quot;name&quot;) resulted in invalid UIDs. (#862)</li>
-<li>Bug Fix: Disabling dataset validation for file meta information objects. (#859)</li>
-<li>Bug Fix: JPEG 2000 decodes wrong colors in .NET Core (#850)</li>
-<li>Enable secure DICOM Tls 1.0, 1.1 and 1.2 (#872)</li>
-<li>Set text encoding of Json to UTF-8, as defined in dicom standard F.2</li>
-<li>Bug Fix: Photometric Interpretation updates on Transfer Syntax changes (#836)</li>
-<li>Bug Fix: DicomOverlayData OriginX and OriginY were swapped</li>
-<li>Bug Fix: Handle Json deserializing of empty values (#873)</li>
-</ul>
-<h4 id="v401-3132019">v.4.0.1 (3/13/2019)</h4>
-<ul>
-<li>change IFileReference and IByteBuffer to have offset of type long so that big files can be processed (#743)</li>
-<li>internally identify dicom servers by port/ipadress combination instead of only port (#699)</li>
-<li>DicomDirectory.AddFile returns a reference to the newly added patient-, study-, series- and instance-Record.</li>
-<li>Update Json DS validation regex (#643)</li>
-<li>Add option to DicomFile.Open how to deal with large tags (#617)</li>
-<li>DicomFileMetaInformation now uses pre-existing SourceAET where possible</li>
-<li>PixelData.GetMinMax now has 2 overloads, one that takes padding into account and one wihtout the padding parameter (#675)</li>
-<li>string.ToUpper() is replaced by string.ToUpperInvariant() to prevent bad character conversion on turkish system</li>
-<li>Fix detecting default windowing if a dataset contains several windows configurations (#741)</li>
-<li>Fix bug in .net core when a image is both flipped in x and y direction (#721)</li>
-<li>Pass through the timeout parameter from DicomClient.Send to the constructor of DesktopNetworkStream (#732)</li>
-<li>Added appveyor.yml file for ci by this setting (#729)</li>
-<li>Bug Fix : anonymized patient name is now encoded with same character set as the original Dicom.</li>
-<li>add DicomUID.IsVolumeStorage.</li>
-<li>Bug Fix : DICOM server may throw DicomDataException on association when non-standard transfer syntax was proposed (#749)</li>
-<li>allow Query/Register/Unregister transfer syntax.</li>
-<li>DicomCFindRequest should allow defnition of Query Retrieve Information Model (#708)</li>
-<li>Bug fix : DicomUIDGenerator.GenerateDerivedFromUUID converts Guids incorrectly to the DICOM &quot;2.25.&quot; + UUID format (#762)</li>
-<li>Bug Fix : TryGetValue, TryGetValues, TryGetSingleValue should return false instead of throw exception. (#746)</li>
-<li>Add methods to calculate localizer lines (#779)</li>
-<li>Bug Fix : DicomPixelData.Create throws Exception if BitsAllocated &gt;= 32 (#716)</li>
-<li>Bug Fix: GetValues<object> on empty element may throw ArgumentOutOfRangeException (#720)</object></li>
-<li>Serilog for .NET Standard 1.3/.NET Core (#772)</li>
-<li>Bug Fix : DicomServer does not close TcpClient/socket after client closed connection (#795)</li>
-<li>Bug Fix : JsonDicomConverter should decode BulkDataURI element(#796)</li>
-<li>Bug Fix: fix deserialization of Json when the VR-property is not on first position (#730)</li>
-<li>DicomClient uses StrongBox to reduce memory consumption (#794)</li>
-<li>Bug Fix: C-STORE request may hang. (#792)</li>
-</ul>
-<h4 id="v400-9242018">v.4.0.0 (9/24/2018)</h4>
-<ul>
-<li>Demonstrate and fix error in RLELossless Transfer Syntax Codec</li>
-<li>Fixing 2 UWP Networking Bugs (#636, #637)</li>
-<li>Add List of known Private UID's (#589)</li>
-<li>DicomReader: Prevent premature exit from privateBadSequence when private sequence contains sub-sequence (#565 #626)</li>
-<li>Saving a file with deflated transfer syntax occasionally fails (#621)</li>
-<li>Anonymizer not removing Sequences (#610 #611)</li>
-<li>Deprecate DicomClient.WaitForAssociation and provide association events (#605 #609)</li>
-<li>Subclassing DicomServer (#602 #604)</li>
-<li>Support CP-1066 (#597 #606)</li>
-<li>DicomDataset.Add and .AddOrUpdate overloads with Encoding parameter (#596 #607)</li>
-<li>Code generator support for anonymization data (#594 #595)</li>
-<li>DicomServer to listen on IPv6 socket (#588 #604)</li>
-<li>DicomAnonymizer blank DicomDate/DicomDateTime to DateTime.MinValue instead of empty value (#576 #593)</li>
-<li>DicomAnonymizer ignores the PatientName and PatientID in the SecurityProfile (#575 #592)</li>
-<li>Private group not added to tag when private tag item is added to dataset (#570 #577)</li>
-<li>ReceivingApplicationEntityTitle and SendingApplicationEntityTitle omitted during Save (#563 #569)</li>
-<li>Downgrade desktop libraries to framework version 4.5 (#561 #562)</li>
-<li>Add support for Unity 2017.1 platform (#560 #585)</li>
-<li>Handle fragmented OW pixel data when creating EncapsulatedPixelData for new pixel data (#553 #586)</li>
-<li>DicomImage is not thread safe (#552 #582)</li>
-<li>DicomUIDGenerator.Generate UID Collisions (Non-unique UIDs) (#546 #571)</li>
-<li>Correct interpolation of rescaled overlay graphics (#545 #558)</li>
-<li>Some getters of optional sequences do not account for missing sequence (#544 #572)</li>
-<li>A-ASSOCIATE-AC PDU parsing incorrect (#543 #583 #590 #591)</li>
-<li>DicomCFindRequest is unsuitable for &quot;Search for Unified Procedure Step (C-FIND)&quot; (#540 #580)</li>
-<li>DicomClient proposes wrong presentation context in .NET core with codec that does not support 16 bit encoding (#538 #600)</li>
-<li>Private tag is listed out or order (#535 #566)</li>
-<li>JsonDicomConverter.ParseTag is very slow for keyword lookups (#533 #531)</li>
-<li>DicomDictionary.GetEnumerator() is very slow (#532 #534)</li>
-<li>DicomPixelData.BitsAllocated setter removed (#528 #564)</li>
-<li>Complete list of transfer syntax fields from the DICOM Standard (#526 #599)</li>
-<li>DicomClient.SendAsync will never return when certain non-transient exceptions are thrown (#525 #584)</li>
-<li>CStore-SCU always adds a PC with LEExplicit and LEImplicit (#524 #541)</li>
-<li>Added Maximum Clients Allowed to restrict connection to SCP (#523 #573)</li>
-<li>Updated JPEG-LS to latest CharLS commit (#517)</li>
-<li>Support for anonymization, deflated and compressed transfer syntaxes on Unity (#496)</li>
-<li>Support for up to 16 bit JPEG 2000 codecs on Android, iOS, Mono and .NET Core (#496)</li>
-<li>Added missing encodings for .NET Core (#481 #486)</li>
-<li>Update to latest DICOM Standard 2018b (#480 #482 #536 #537 #555 #559 #619 #676)</li>
-<li>Convert .NET Core projects to use VS 2017 .csproj project files (#470 #473)</li>
-<li>Add TextWriterLogger (#461 #542)</li>
-<li>Call to DicomServer.Stop does not remove all clients (#456 #464)</li>
-<li>Repository re-organization (#445 #446 #447 #448 #451 #452 #455 #462 #463 #465 #467 #468 #469 #476 #477 #478)</li>
-<li>Hololens support on Unity (#431 #556)</li>
-<li>Deprecate Legacy class library (#415 #449)</li>
-<li>Provide System.Drawing.Bitmap support for image rendering with .NET Core (#409 #450 #459)</li>
-<li>Added optional parameter for use in extended DicomService (#348 #441)</li>
-<li>Consistently asynchronous networking API (#331 #584)</li>
-<li>Pass through unsupported user data during PDU parsing (#242 #443)</li>
-<li>Remove warning messages during build (#33 #438)</li>
-<li>Online and NuGet packages API documentation (#28 #459 #466 #574 #584)</li>
-<li>Status code in respose got lost and mapped to an internally known status code (#616)</li>
-<li>WinFormsImage may throw exception on Dispose or on GC (#634)</li>
-<li>Fix StackOverflowException in Vector3D multiplication (#640)</li>
-</ul>
-<h4 id="v302-4202017">v.3.0.2 (4/20/2017)</h4>
-<ul>
-<li>DicomRejectReason enumerables should be parsed w.r.t. source (#516 #521)</li>
-<li>Incorrect numerical value on RejectReason.ProtocolVersionNotSupported (#515 #520)</li>
-<li>Add private creator to private tags when deserializing json (#512 #513)</li>
-<li>Adding private tags implicitly uses wrong VR (#503 #504)</li>
-<li>Add option in DicomServiceOptions for max PDVs per PDU (#502 #506)</li>
-<li>DicomResponse.ErrorComment is always added in the DicomResponse.Status setter, even for successes (#501 #505)</li>
-<li>DicomStatus.Lookup does not consider priority in matching (#499 #498)</li>
-<li>DesktopNetworkListener can throw an exception which causes DicomServer to stop listening (#495 #519)</li>
-<li>Cannot create DICOMDIR after anonymizing images (#488 #522)</li>
-<li>Cannot parse dicom files if the last tag is a private sequence containing only empty sequence items (#487 #518)</li>
-<li>If the connection is closed by the host, DicomClient will keep trying to send (#472 #489)</li>
-<li>N-CREATE response constructor throws when request command does not contain SOP Instance UID (#484 #485)</li>
-<li>Cannot render YBR_FULL/PARTIAL_422 with odd number of columns (#471 #479)</li>
-<li>Dicom Server listener consumes large amount of memory if http request is sent to listener (#327 #509)</li>
-</ul>
-<h4 id="v301-3062017">v.3.0.1 (3/06/2017)</h4>
-<ul>
-<li>Add runtime directives to enable .NET Native builds for UWP (#424 #460)</li>
-<li>YBR_FULL_422 JPEG Process 14 SV1 compressed image incorrectly decoded (#453 #454)</li>
-</ul>
-<h4 id="v300-2152017">v.3.0.0 (2/15/2017)</h4>
-<ul>
-<li>DICOM Anonymizer preview (#410 #437)</li>
-<li>Client should not send if association rejected (#433 #434)</li>
-<li>Deploy error for Unity based applications on Hololens (#431 #432)</li>
-<li>Add method &quot;AddOrUpdatePixelData&quot; to the DicomDataset (#427 #430)</li>
-<li>Adding too many presentation contexts causes null reference exception in DicomClient.Send (#426 #429)</li>
-<li>Serialize to XML according to DICOM standard PS 3.19, Section A (#425)</li>
-<li>Invalid reference in Universal targets build file (#422 #423)</li>
-<li>Alpha component is zero for color images on UWP, .NET Core and Xamarin platforms (#421 #428)</li>
-<li>Print SCP exception due to insufficient DicomDataset.AddOrUpdate refactoring (#353 #420)</li>
-<li>Invalid decoding of JPEG baseline RGB images with managed JPEG codec (#417 #419)</li>
-<li>DicomFile.Save throwing an exception in DotNetCore for macOS (#411 #413)</li>
-<li>Added method GenerateUuidDerived (#408)</li>
-<li>Padding argument not accounted for in some IPixelData.GetMinMax implementations (#406 #414)</li>
-<li>Incorrect handling of padded buffer end in EvenLengthBuffer.GetByteRange (#405 #412)</li>
-<li>Unhandled exception after error in JPEG native decoding (#394 #399)</li>
-<li>DicomDataset.Get&lt;T[]&gt; on empty tag should not throw (#392 #398)</li>
-<li>Efilm 2.1.2 seems to send funny presentation contexts, break on PDU.read (#391 #397)</li>
-<li>Improved reliability in DicomClient.Send (#389 #407)</li>
-<li>Cannot catch exceptions while doing C-STORE if I close my network connection (#385 #390)</li>
-<li>Handle UN encode group lengths and missing last item delimitation tag (#378 #388)</li>
-<li>Invalid handling of overlay data type, description, subtype and label (#375 #382)</li>
-<li>Incorrect message logged when async ops are not available, but requested (#374 #381)</li>
-<li>Fix get object for all DicomValueElement inheritors (#367 #368)</li>
-<li>Handle parsing sequence items not associated with any sequence (#364 #383 #435 #436)</li>
-<li>System Out Of Memory Exception when saving large DICOM files (#363 #384)</li>
-<li>Null characters not trimmed from string values (#359 #380)</li>
-<li>Corrected JPEG-LS encoding and JPEG decoding for YBR images (#358 #379 #416 #418)</li>
-<li>Cannot override CreateCStoreReceiveStream due to private fields (#357 #386)</li>
-<li>DicomClient multiple C-Store request cause exception when AsyncOps is not negotiated (#356 #400)</li>
-<li>Enable registration of private UIDs (#355 #387)</li>
-<li>DICOM Parse error - Stack empty (#342)</li>
-<li>Invalid abort upon exception in P-Data-TF PDU processing (#341 #401)</li>
-<li>Sufficient image creation when Bits Allocated does not match destination type size (#340 #350)</li>
-<li>Some Dicom Printer refuse print requests from fo-dicom (#336)</li>
-<li>DicomContentItem.Children() throws exception when there are no children (#332 #333)</li>
-<li>Functional changes in Dataset.Add, rename of ChangeTransferSyntax (#330 #343)</li>
-<li>Added support for more date/time formats (#328 #352)</li>
-<li>Exception if Storage Commitment N-Event Report response does not contain EventID tag  (#323 #329)</li>
-<li>ImageDisposableBase implicit destructor missing (#322 #326)</li>
-<li>Dicom Response Message should be sent using the same Presentation Context in the Request (#321)</li>
-<li>DicomDataset.Contains(DicomTag tag) matches on object, will not find private tags (#319 #351)</li>
-<li>Add DICOM VR Codes as constants (#315)</li>
-<li>DicomClient should be able to C-STORE non-Part 10 DICOM files (#306 #307)</li>
-<li>Incorrect dependency in fo-dicom.Universal.nuspec (#300 #301)</li>
-<li>GetDateTime method does not handle missing date and time tags (#299 #302)</li>
-<li>Print SCP sample reports exception due to missing ActionTypeID in N-ACTION response (#298 #308)</li>
-<li>Red and Blue bytes swapped in color images on iOS (#290 #291)</li>
-<li>Support creating DS Value elements from string and IByteBuffer (#288)</li>
-<li>Pixel Data not null-padded to even length (#284 #286)</li>
-<li>Merge core and platform assemblies (#280 #283)</li>
-<li>ChangeTransferSyntax throws an exception (J2k 16-bit -&gt; Jpeg Lossy P 4) (#277 #281)</li>
-<li>Merge DicomUID partial files (#268 #270)</li>
-<li>Wrong description for some tags (#266 #271)</li>
-<li>DicomFileMetaInformation overly intrusive (#265 #285)</li>
-<li>Type 3 property getters in DicomFileMetaInformation throw when tag not defined (#262 #264)</li>
-<li>Invalid DicomDateTime output format (#261 #269)</li>
-<li>NLog Formatted Logging Failing (#258 #260)</li>
-<li>.NET Core Library Build Request (#256 #294 #296 #297 #310 #311 #325 #334)</li>
-<li>Adaptations for fo-dicom on Unity platform (#251 #252 #253 #255 #257 #263 #287 #289 #292 #293)</li>
-<li>Log4net event logging config not working with AssemblyInfo.cs XMLConfigurator (#244 #248)</li>
-<li>Implement SOP Class Extended Negotiation (#241 #243 #304 #305)</li>
-<li>DicomClient.Send DicomAssociationRejectedException not working (#239 #249)</li>
-<li>Dicom.Platform.rd.xml file should be included as Embedded Resource (#237 #247)</li>
-<li>DicomIntegerString.Get&lt;T&gt;() throws for enums and non-int value types (#231 #212 #226)</li>
-<li>Upgrade dictionary to latest DICOM version 2016e (#229 #233 #245 #246 #317 #318 #360 #362 #372 #373)</li>
-<li>Deflate Transfersyntax (#227 #259)</li>
-<li>Use an editorconfig-file (#216 #215)</li>
-<li>Upgrade to Visual Studio 2015 toolset (#214 #217)</li>
-<li>Limited debug info for DicomDataset (#210 #211)</li>
-<li>Allow specifying AbstractSyntax distinct from RequestedSOPClassUID (#208 #209)</li>
-<li>Separate NuGet packages for all supported platforms (#206 #207 #275 #282)</li>
-<li>Support more date-time parser formats (#205)</li>
-<li>DicomDecimalString constructor fails with decimals if CurrentCulture has decimal commas (#202 #203)</li>
-<li>Add VR Other Long (OL) (#201 #232)</li>
-<li>Improved reliability in network operations (#199 #234 #312 #314 #316 #324)</li>
-<li>If DicomServer already running, get instance of them (#191 #250)</li>
-<li>Implement JSON serialization and deserialization of DICOM objects (#182 #186)</li>
-<li>Open and save DicomDirectory to Stream (#181 #235)</li>
-<li>Implement C-GET support (#180 #309)</li>
-<li>Exposing network infos (ip and port) in association (#173 #225 #377)</li>
-<li>Consider implementing DicomDataset.Clone() as &quot;DeepClone&quot; (#153 #313)</li>
-<li>Image compression/decompression for Mono and Xamarin (#128 #279 #295)</li>
-</ul>
-<h4 id="v202-2152016">v2.0.2 (2/15/2016)</h4>
-<ul>
-<li>&quot;Index was outside the bounds of the array&quot; in PrecalculatedLUT indexer (#219 #221)</li>
-<li>DicomReader reads past end of file if empty private sequence is last attribute in dataset (#220 #222)</li>
-<li>DicomReader reads past end of file if first private sequence item is zero length (#223 #224)</li>
-</ul>
-<h4 id="v201-1222016">v2.0.1 (1/22/2016)</h4>
-<ul>
-<li>DICOM CP-246 not handled correctly in DicomReader (#177 #192)</li>
-<li>Fix for #64 breaks parsing of valid datasets (#178 #184 #194)</li>
-<li>Invalid VR in explicit dataset leads to 'silent' stop (#179 #196)</li>
-<li>DicomDictionary.UnknownTag missing new VRs OD, UC and UR (#183 #185)</li>
-<li>DicomPixelData.Create is broken for signed pixel data with BitsAllocated != BitsStored (#187 #189)</li>
-<li>CompositeByteBuffer ArgumentException (#195 #198)</li>
-</ul>
-<h4 id="v200-1142016">v2.0.0 (1/14/2016)</h4>
-<ul>
-<li>Removed Modality Dicom Tag in Study Request (#166)</li>
-<li>Checking for valid Window Center and Window Width values before using in GrayscaleRenderOptions (#161 #163)</li>
-<li>Initialize managers automatically via reflection (#148 #149)</li>
-<li>Message Command Field Priority invalid for C-ECHO and all DIMSE-N Requests (#141 #143)</li>
-<li>Overlay data error corrections (#110 #138 #140)</li>
-<li>Report status for additional presentation contexts (#137 #139)</li>
-<li>Extended stop parsing functionality with support e.g. for sequence depth (#136 #142)</li>
-<li>Handle simultaneous use of explicit sequence length and sequence delimitation item (#64 #135)</li>
-<li>Parse error when encapsulated pixel data appears inside sequence item (#133 #134)</li>
-<li>Universal Windows Platform library with networking, imaging and transcoding capability (#118 #124 #125 #126 #132)</li>
-<li>Improved exception reporting for NLog (#121 #122)</li>
-<li>MetroLog connector is Portable Class Library (#119 #120)</li>
-<li>Fix of concurrency bugs in DicomDictionary (#114 #115 #151 #152)</li>
-<li>Xamarin Android platform library with imaging cabability (#113 #117)</li>
-<li>Xamarin iOS platform library with imaging cabability (#111 #112)</li>
-<li>Portable Core and platform-specific assemblies, including basic Mono implementation (#13 #93 #94 #60 #109)</li>
-<li>Network abstraction layer (#86 #106 #156 #159 #160 #157 #164 #158 #165 #167 #175)</li>
-<li>Transcoder abstraction layer (#102 #105)</li>
-<li>Synchronized LogManager API with other managers (#103 #104)</li>
-<li>Image abstraction layer (#83 #85 #92 #101 #144 #145 #150)</li>
-<li>I/O abstraction layer (#69 #78 #97 #100)</li>
-<li>Provide Task Asynchronous Pattern (async/await) for file I/O and network operations (#65 #90 #96 #98 #99 #107 #116 #130 #131)</li>
-<li>Provide NullLogger for disabled logging (#89 #91)</li>
-<li>Improved NuGet installation procedure for codec assemblies (#87 #88 #123)</li>
-<li>DICOM Dump can ignore private dictionary (#84)</li>
-<li>API for applying color LUT on grayscale image (#79 #81 #146 #147)</li>
-<li>Log4Net connector and NuGet package (#76 #77)</li>
-<li>JPEG, JPEG-LS and JPEG2000 source code updated to latest applicable version (#74 #75)</li>
-<li>Reverted memory mapped file implementation for image loading (#71 #72 #73)</li>
-<li>MetroLog connector and NuGet package (#59 #68)</li>
-</ul>
-<h4 id="v110-8102015">v1.1.0 (8/10/2015)</h4>
-<ul>
-<li>Enable configuration of default encoding in the DicomDatasetReaderObserver (#54)</li>
-<li>DicomDataset.Add(DicomTag, ...) method does not support multi-valued LO, PN, SH and UI tags (#51)</li>
-<li>Explicit VR file parsing failures due to strictness (#47)</li>
-<li>Overlay scaling in WPF images (#46)</li>
-<li>Prevent non-socket related exceptions from being swallowed (#45)</li>
-<li>Codec loading - add logging and default the search filter wildcard (#41)</li>
-<li>Use memory mapped file buffer to improve large image reading (#17)</li>
-<li>Improved reliability in search for native codec assemblies (#14)</li>
-<li>Consistent handling of Get&lt;T&gt; default values (#10)</li>
-<li>DICOM dictionary (tags and UIDs) updated to version 2015c (#9, #44)</li>
-<li>UC, UR and OD value representations added (#9, #48)</li>
-<li>Serilog support added; NLog and Serilog loggers moved to separate assemblies (#8, #34)</li>
-<li>Corrected Color32.B getter (#7)</li>
-<li>Upgraded to .NET 4.5 and C/C++ toolset v120 (#4)</li>
-<li>Use UTF-8 encoding where appropriate (#2, #20, #21)</li>
-<li>Fixed JPEG Codec memory corruption when encoding decoding on the same process for long period (#1)</li>
-</ul>
-<h4 id="v1038-withdrawn">v1.0.38 (withdrawn)</h4>
-<ul>
-<li>Fix OW swap for single byte images</li>
-<li>Better handling of long duration and aborted connections</li>
-<li>Many imported extensions and bug fixes!</li>
-</ul>
-<h4 id="v1037-2192014">v1.0.37 (2/19/2014)</h4>
-<ul>
-<li>Add DICOM Compare tool to project</li>
-<li>Add support for disabling TCP Nagle algorithm</li>
-<li>Better handling of aborted connections</li>
-<li>Fix some UID values containing encoding characters</li>
-<li>Fix extraction of embedded overlays</li>
-<li>Utility methods for calculating window/level</li>
-<li>Use number keys to change W/L calculation mode in dump utility</li>
-<li>Use O key to show/hide overlays in dump utility</li>
-<li>Fix byte swapping for Implicit VR single byte images</li>
-</ul>
-<h4 id="v1036-862013">v1.0.36 (8/6/2013)</h4>
-<ul>
-<li>Fix bug sorting private tags</li>
-<li>Ability to add private tags to dataset</li>
-<li>Better handling of improperly encoded private sequences</li>
-<li>Fix bug adding presentation contexts from requests</li>
-<li>Fix typo in N-Set response handler</li>
-</ul>
-<h4 id="v1035-752013">v1.0.35 (7/5/2013)</h4>
-<ul>
-<li>Fix bug adding presentation contexts with Implicit Little Endian syntax</li>
-<li>Add option to use the remote AE Title as the logger name</li>
-<li>Miscellaneous improvements and fixes</li>
-</ul>
-<h4 id="v1034-6272013">v1.0.34 (6/27/2013)</h4>
-<ul>
-<li>Fix bug returning default value for zero length elements</li>
-<li>Fix exception when disposing DicomDirectory</li>
-<li>Fix menu bug in DICOM Dump utility when changing syntax to JPEG Lossless</li>
-<li>Fix bug matching private DICOM tags</li>
-<li>Add classes for basic structured report creation</li>
-<li>Ability to browse multiframe images in DICOM Dump utility</li>
-<li>Ability to recover when parsing invalid sequences</li>
-<li>Ability to parse improperly encoded private sequences</li>
-</ul>
-<h4 id="v1033-4282013">v1.0.33 (4/28/2013)</h4>
-<ul>
-<li>Add logging abstraction layer to remove runtime dependency on NLog</li>
-<li>Fix bug reading duplicate entries in DICOM dictionary</li>
-<li>Fix bug storing AT values</li>
-<li>Fix bug sorting private DICOM tags</li>
-<li>Fix bug using custom DicomWriteOptions</li>
-</ul>
-<h4 id="v1032-3122013">v1.0.32 (3/12/2013)</h4>
-<ul>
-<li>DICOM Media example by Hesham Desouky</li>
-<li>Move DicomFileScanner to Dicom.Media namespace</li>
-<li>Add WriteToConsole logging extension method</li>
-<li>Increase line length of dataset logging extension methods</li>
-<li>Fix reading of sequences in DICOMDIR files (Hesham Desouky)</li>
-<li>Improve rendering performance by precalculating grayscale LUT</li>
-<li>Ability to render single-bit images</li>
-<li>Fix hash code implementation for private tags</li>
-<li>Miscellaneous improvements and fixes</li>
-</ul>
-<h4 id="v1031-1132013">v1.0.31 (1/13/2013)</h4>
-<ul>
-<li>Improved portability and fewer compiler warnings (Anders Gustafsson)</li>
-<li>Ensure frame buffers created by codecs have even length</li>
-<li>Import DicomFileScanner from mDCM</li>
-<li>Ability to save datasets and images in DICOM Dump utility</li>
-<li>Ability to change tranfer syntax in DICOM Dump utility</li>
-<li>Fix loss of embedded overlay data during compression</li>
-<li>Fix rendering of big endian images</li>
-<li>Miscellaneous improvements and fixes</li>
-</ul>
-<h4 id="v1030-112013">v1.0.30 (1/1/2013)</h4>
-<ul>
-<li>Fix bug rescaling DicomImage (Mahesh Dubey)</li>
-<li>Add rules for matching and transforming DICOM datasets</li>
-<li>Miscellaneous improvements and fixes</li>
-</ul>
-<h4 id="v1029-12222012">v1.0.29 (12/22/2012)</h4>
-<ul>
-<li>Minor modifications to facilitate library porting to Windows Store apps (Anders Gustafsson)</li>
-<li>Convert unit tests to use MS Unit Testing framework</li>
-<li>Move DICOMDIR classes back to Dicom.Media namespace</li>
-<li>Change DicomDirectory Open/Save methods to be consistent with DicomFile usage</li>
-<li>Fix bug decoding single frame from a multiframe image (Mahesh Dubey)</li>
-</ul>
-<h4 id="v1028-12122012">v1.0.28 (12/12/2012)</h4>
-<ul>
-<li>Display exception message in DICOM Dump for image rendering errors</li>
-<li>Remove serialization members</li>
-<li>Fix bug where frame is not added to OtherWordPixelData (Mahesh Dubey)</li>
-<li>Fix bug where exception is not thrown for out of range frame numbers in GetFrame() (Mahesh Dubey)</li>
-<li>Fix bug where internal transfer syntax is not set when transcoding file (Mahesh Dubey)</li>
-<li>Add request/response classes for DICOM Normalized services</li>
-<li>Change DicomCStoreRequest constructor to use SOP Class/Instance UIDs from dataset instead of FMI</li>
-<li>Experimental support for DICOM directory files (Hesham Desouky)</li>
-</ul>
-<h4 id="v1027-10302012">v1.0.27 (10/30/2012)</h4>
-<ul>
-<li>Ensure that file handles are closed after opening or saving DICOM file</li>
-<li>Add ability to move file pointed to by FileReference</li>
-<li>Fix window/level settings not being applied to rendered DicomImage</li>
-<li>Fix processing order of received DIMSE responses</li>
-<li>Process P-Data-TF PDUs on ThreadPool</li>
-<li>Temporary fix for rendering JPEG compressed YBR images</li>
-<li>Fix Async Ops window for associations where it is not negotiated</li>
-<li>Fix bug reading Palette Color LUT with implicit length</li>
-<li>Support decompression and rendering of JPEG Process 2 images</li>
-<li>Enable modification of Window/Level in DicomImage</li>
-</ul>
-<h4 id="v1026-10192012">v1.0.26 (10/19/2012)</h4>
-<ul>
-<li>Advanced DIMSE logging options for DicomService base class</li>
-<li>Advanced configuration options for P-Data-TF PDU buffer lengths</li>
-<li>Fix bug where final PDV may not be written to P-Data-TF PDU</li>
-<li>Fix bug reading DIMSE datasets from network</li>
-</ul>
-<h4 id="v1025-10182012">v1.0.25 (10/18/2012)</h4>
-<ul>
-<li>Fix min/max pixel value calculation for unsigned 32-bit pixel values</li>
-<li>Fix collection modified exception when calculating group lengths</li>
-<li>Better handling of null values when adding elements to dataset</li>
-<li>Fix default values when accessing SS/US element values (Anders Gustafsson, Cureos AB)</li>
-<li>Fix decoding of JPEG2000 images with signed pixel data (Mahesh Dubey)</li>
-<li>Ability to decompress single frame from dataset (Mahesh Dubey)</li>
-<li>Use ThreadPoolQueue to process related response messages in order</li>
-</ul>
-<h4 id="v1024-10012012">v1.0.24 (10/01/2012)</h4>
-<ul>
-<li>Change the default presentation context transfer syntax acceptance behavior to prefer the SCU proposed order</li>
-<li>Reject all presentation contexts that have not already been accepted or rejected when sending association accept</li>
-<li>Add finalizers to temp file classes to catch files not deleted at application exit</li>
-<li>Remove Exists() method from DicomDataset (duplicates functionality of Contains())</li>
-<li>Extension methods for recalculating and removing group length elements</li>
-<li>Force calculation of group lengths when writing File Meta Info and Command datasets</li>
-<li>Fix exception when attempting to display ROI overlays</li>
-<li>Add ability to extract embedded overlays from pixel data</li>
-<li>Detect incorrect transfer syntax in file meta info</li>
-<li>Add support for reading and displaying GE Private Implicit VR Big Endian syntax</li>
-</ul>
-<h4 id="v1023-09262012">v1.0.23 (09/26/2012)</h4>
-<ul>
-<li>Fix W/L calculation creating negative window width</li>
-<li>Round VOI LUT values instead of casting away fraction</li>
-<li>Fix bug reading signed pixel data from buffer</li>
-<li>Fix encoding of JPEG2000 images with signed pixel data</li>
-<li>Throttle queueing of PDUs to prevent out of memory errors for very large datasets</li>
-<li>Better management of PDU buffer memory</li>
-<li>Better handling for irregular specific character sets</li>
-<li>Support displaying images without specified photometric interpretation</li>
-<li>Ability to read files without preamble or file meta information (including ACR-NEMA)</li>
-</ul>
-<h4 id="v1022-09252012">v1.0.22 (09/25/2012)</h4>
-<ul>
-<li>Add Offending Element tags to C-Move response output</li>
-<li>Add exception handling for C-Store requests with unparsable datasets</li>
-<li>Handle ObjectDisposedExceptions in network operations</li>
-<li>Fix transcoding between uncompressed transfer syntaxes</li>
-<li>Don't parse values for IS and DS elements if returning string types</li>
-<li>Add AMICAS private tags (AMICAS0) to private dictionary</li>
-<li>Add support for 32-bit pixel data (Anders Gustafsson, Cureos AB)</li>
-<li>Better handling of default item in Get&lt;&gt; method (Anders Gustafsson, Cureos AB)</li>
-<li>Support opening DicomFile from Stream (Anders Gustafsson, Cureos AB)</li>
-<li>Add support SIGMOID VOI LUT function</li>
-<li>Better handling of size and position of image display window in DICOM Dump</li>
-<li>Fix calculation of W/L from smallest/largest pixel value elements</li>
-<li>Fix viewing of images with bits allocated == 16 and bits stored == 8</li>
-<li>Add support for image scaling in DicomImage</li>
-<li>Use library to scale images before displaying in DICOM Dump</li>
-<li>Calculate W/L from pixel data values if no defaults are available</li>
-<li>Add ability to Get&lt;&gt; Int32 values from US/SS elements</li>
-<li>Add ability to Get&lt;&gt; DicomVR and IByteBuffer from elements</li>
-<li>Add ability to Get&lt;&gt; byte[] from elements</li>
-<li>Add ability to render basic PALETTE COLOR images</li>
-<li>Fix unnecessary byte swap for 8-bit pixel data stored in OW</li>
-<li>Add DicomFileException to allow better chance of recovery from parse errors</li>
-<li>Add maximum PDU length to association output</li>
-<li>Fix major bug in writing PDataTF PDUs; improvements in performance and memory usage</li>
-<li>Add ability to propose additional transfer syntaxes in C-Store request</li>
-</ul>
-<h4 id="v1021-09142012">v1.0.21 (09/14/2012)</h4>
-<ul>
-<li>Add connection close event and socket error handlers to DicomService</li>
-<li>Fix C-Store SCP example's constructor not passing logger</li>
-</ul>
-<h4 id="v1020-09132012">v1.0.20 (09/13/2012)</h4>
-<ul>
-<li>Fix exception in DicomClient when releasing association</li>
-</ul>
-<h4 id="v1019-09132012">v1.0.19 (09/13/2012)</h4>
-<ul>
-<li>Force passing of Logger to DicomService constructor (may be null)</li>
-</ul>
-<h4 id="v1018-09132012">v1.0.18 (09/13/2012)</h4>
-<ul>
-<li>Print Offending Element values when outputing request to log</li>
-<li>Add ability to pass custom logger to DicomService based classes</li>
-</ul>
-<h4 id="v1017-09122012">v1.0.17 (09/12/2012)</h4>
-<ul>
-<li>Check overlay group before attempting to load overlay data</li>
-<li>Add ability to copy value column to clipboard in DICOM Dump</li>
-<li>Fix DicomClient linger timeout and add release timeout</li>
-</ul>
-<h4 id="v1016-09112012">v1.0.16 (09/11/2012)</h4>
-<ul>
-<li>Fix decompression of JPEG Baseline Process 1 images</li>
-<li>Fix conversion of YBR to RGB in JPEG compressed images</li>
-<li>Add ability to handle encapsulated OW pixel data</li>
-<li>Better handling of grayscale images without Window/Level in dataset</li>
-</ul>
-<h4 id="v1015-09062012">v1.0.15 (09/06/2012)</h4>
-<ul>
-<li>Add ability to store user state object in DicomService based classes</li>
-<li>Add ability to store user state object in DicomClient</li>
-<li>Fix handling of UIDs in DicomCFindRequest</li>
-<li>Fix comparison of private DicomTags</li>
-<li>Add shortcut constructor for private DicomTags</li>
-<li>Handle null DicomDateRange in DicomDataset.Add()</li>
-<li>Modality Worklist C-Find helper method</li>
-</ul>
-<h4 id="v1014-09052012">v1.0.14 (09/05/2012)</h4>
-<ul>
-<li>Fix bug in DicomDatasetReaderObserver handling zero length Specific Character Set elements</li>
-<li>Fix bug in DICOM Dump when displaying zero length UIDs</li>
-<li>Load implementation version from assembly info</li>
-</ul>
-<h4 id="v1013-09042012">v1.0.13 (09/04/2012)</h4>
-<ul>
-<li>Add ability for library to create and manage temp files</li>
-<li>User state object for DIMSE requests and responses</li>
-<li>Fix reading of elements with unknown dictionary VR (Justin Wake)</li>
-<li>Fix handling of UIDs in DicomCMoveRequest (Justin Wake)</li>
-<li>Add version to file meta information</li>
-<li>Add support for multiframe images in DicomImage</li>
-</ul>
-<h4 id="v1012-08272012">v1.0.12 (08/27/2012)</h4>
-<ul>
-<li>Add private dictionary to assembly</li>
-<li>Fix parsing errors when reading private dictionaries</li>
-<li>Fix reading of private tags</li>
-<li>Miscellaneous enhancements</li>
-</ul>
-<h4 id="v1011-08232012">v1.0.11 (08/23/2012)</h4>
-<ul>
-<li>Accept unknown transfer syntaxes</li>
-<li>Add ability to write DICOM dataset to string</li>
-</ul>
-<h4 id="v1010-08132012">v1.0.10 (08/13/2012)</h4>
-<ul>
-<li>Fix bug preloading dictionary from another assembly (Mahesh Dubey)</li>
-<li>Add name of UID to DICOM Dump elements</li>
-<li>Better error handling in GetDateTime method</li>
-<li>Persistent temporary file remover</li>
-</ul>
-<h4 id="v109-08022012">v1.0.9 (08/02/2012)</h4>
-<ul>
-<li>Parsing of Attribute Tag element type</li>
-<li>Fix bug displaying compressed images</li>
-<li>Add codec libraries as references to DICOM Dump utility</li>
-<li>Fix bug writing private sequence lengths</li>
-<li>Fix stack overflow when reading datasets with lots of sequences</li>
-<li>Fix big endian pixel data being swapped twice</li>
-</ul>
-<h4 id="v107-07262012">v1.0.7 (07/26/2012)</h4>
-<ul>
-<li>Fix exception when accessing overlay data</li>
-<li>Fix parsing of multi-value string elements</li>
-<li>Add option to display image in DICOM Dump utility</li>
-<li>Fix C-Store request from Conquest causing exception</li>
-</ul>
-<h4 id="v106-07242012">v1.0.6 (07/24/2012)</h4>
-<ul>
-<li>Don't throw exception for invalid UID characters</li>
-<li>Allow casting of OB &amp; UN elements to value types</li>
-</ul>
-<h4 id="v105-07222012">v1.0.5 (07/22/2012)</h4>
-<ul>
-<li>Bug fixes</li>
-<li>DICOM Dump example project</li>
-</ul>
-<h4 id="v104-07182012">v1.0.4 (07/18/2012)</h4>
-<ul>
-<li>Make logger instance protected in DicomService</li>
-<li>Lock DICOM dictionary while loading</li>
-<li>Throw exception if no DICOM dictionary entry is found while adding element to dataset</li>
-<li>Fix bug where status is not being set in DIMSE response</li>
-<li>Fix bug in C-Store SCP where file is inaccessible</li>
-<li>Add C-Store SCP example project</li>
-</ul>
-<h4 id="v103-07112012">v1.0.3 (07/11/2012)</h4>
-<ul>
-<li>Fix parsing of explicit length sequences</li>
-</ul>
-<h4 id="v102-07072012">v1.0.2 (07/07/2012)</h4>
-<ul>
-<li>Image rendering</li>
-<li>Don't create offset table for datasets over 4Gb</li>
-<li>Regenerate dictionary and tags to include grouped elements such as overlays</li>
-<li>Fix bug in ByteBufferEnumerator</li>
-</ul>
-<h4 id="v101-06222012">v1.0.1 (06/22/2012)</h4>
-<ul>
-<li>Initial public release</li>
+<li>DicomStringElement and derived classes do not have the &quot;encoding&quot; parameter in constructor, that takes a string-value</li>
+<li>DicomDataset.Add(OrUpdate) does not take an &quot;encoding&quot; parameter any more, instead the DicomDataset has a property <code>TextEncodings</code>, that is applied to all string-based tags.</li>
+<li>in update to DICOM2020e the keywords, that are provided by Nema, are used. therefore some DicomUID-Names changed.</li>
 </ul>
 </article>
           </div>
@@ -820,7 +390,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Copyright (c) 2012-2021 fo-dicom contributors</span>
+            <span>Copyright (c) 2012-2025 fo-dicom contributors</span>
           </div>
         </div>
       </footer>

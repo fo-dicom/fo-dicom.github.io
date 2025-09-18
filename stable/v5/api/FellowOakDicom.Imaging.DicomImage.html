@@ -1,634 +1,783 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
+<!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DicomImage
-   | Fellow Oak DICOM 5 API </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DicomImage
-   | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Class DicomImage | Fellow Oak DICOM 5 API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DicomImage | Fellow Oak DICOM 5 API ">
+      
+      <meta name="description" content="DICOM Image class for image rendering.">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/fo-dicom/fo-dicom/new/development/apiSpec/new?filename=FellowOakDicom_Imaging_DicomImage.md&amp;value=---%0Auid%3A%20FellowOakDicom.Imaging.DicomImage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
+            Fellow Oak DICOM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Imaging.DicomImage">
-  
-  
-  <h1 id="FellowOakDicom_Imaging_DicomImage" data-uid="FellowOakDicom.Imaging.DicomImage" class="text-break">Class DicomImage
+
+        <article data-uid="FellowOakDicom.Imaging.DicomImage">
+
+
+
+  <h1 id="FellowOakDicom_Imaging_DicomImage" data-uid="FellowOakDicom.Imaging.DicomImage" class="text-break">
+Class DicomImage  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
-  <div class="markdown level0 summary"><p>DICOM Image class for image rendering.</p>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FellowOakDicom.html">FellowOakDicom</a>.<a class="xref" href="FellowOakDicom.Imaging.html">Imaging</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>fo-dicom.core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>DICOM Image class for image rendering.</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">DicomImage</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Imaging.html">FellowOakDicom.Imaging</a></h6>
-  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
-  <h5 id="FellowOakDicom_Imaging_DicomImage_syntax">Syntax</h5>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class DicomImage</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DicomImage</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, params T[])</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
   <a id="FellowOakDicom_Imaging_DicomImage__ctor_" data-uid="FellowOakDicom.Imaging.DicomImage.#ctor*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage__ctor_FellowOakDicom_DicomDataset_System_Int32_" data-uid="FellowOakDicom.Imaging.DicomImage.#ctor(FellowOakDicom.DicomDataset,System.Int32)">DicomImage(DicomDataset, Int32)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage__ctor_FellowOakDicom_DicomDataset_System_Int32_" data-uid="FellowOakDicom.Imaging.DicomImage.#ctor(FellowOakDicom.DicomDataset,System.Int32)">
+  DicomImage(DicomDataset, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Creates DICOM image object from dataset</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DicomImage(DicomDataset dataset, int frame = 0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></td>
-        <td><span class="parametername">dataset</span></td>
-        <td><p>Source dataset</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">frame</span></td>
-        <td><p>Zero-based frame index.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dataset</code> <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></dt>
+    <dd><p>Source dataset</p>
+</dd>
+    <dt><code>frame</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Zero-based frame index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage__ctor_" data-uid="FellowOakDicom.Imaging.DicomImage.#ctor*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage__ctor_System_String_System_Int32_" data-uid="FellowOakDicom.Imaging.DicomImage.#ctor(System.String,System.Int32)">DicomImage(String, Int32)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage__ctor_System_String_System_Int32_" data-uid="FellowOakDicom.Imaging.DicomImage.#ctor(System.String,System.Int32)">
+  DicomImage(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Creates DICOM image object from file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DicomImage(string fileName, int frame = 0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">fileName</span></td>
-        <td><p>Source file</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">frame</span></td>
-        <td><p>Zero-based frame index.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Source file</p>
+</dd>
+    <dt><code>frame</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Zero-based frame index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_AutoApplyLUTToAllFrames_" data-uid="FellowOakDicom.Imaging.DicomImage.AutoApplyLUTToAllFrames*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_AutoApplyLUTToAllFrames" data-uid="FellowOakDicom.Imaging.DicomImage.AutoApplyLUTToAllFrames">AutoApplyLUTToAllFrames</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_AutoApplyLUTToAllFrames" data-uid="FellowOakDicom.Imaging.DicomImage.AutoApplyLUTToAllFrames">
+  AutoApplyLUTToAllFrames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets wether the rendering options of all frames shall be updated when a property is changed, or only the rendering options of the current frame.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool AutoApplyLUTToAllFrames { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_CacheMode_" data-uid="FellowOakDicom.Imaging.DicomImage.CacheMode*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_CacheMode" data-uid="FellowOakDicom.Imaging.DicomImage.CacheMode">CacheMode</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_CacheMode" data-uid="FellowOakDicom.Imaging.DicomImage.CacheMode">
+  CacheMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CacheType CacheMode { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.CacheType.html">CacheType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.CacheType.html">CacheType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_CurrentFrame_" data-uid="FellowOakDicom.Imaging.DicomImage.CurrentFrame*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_CurrentFrame" data-uid="FellowOakDicom.Imaging.DicomImage.CurrentFrame">CurrentFrame</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_CurrentFrame" data-uid="FellowOakDicom.Imaging.DicomImage.CurrentFrame">
+  CurrentFrame
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets the index of the current frame.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int CurrentFrame { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_GrayscaleColorMap_" data-uid="FellowOakDicom.Imaging.DicomImage.GrayscaleColorMap*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_GrayscaleColorMap" data-uid="FellowOakDicom.Imaging.DicomImage.GrayscaleColorMap">GrayscaleColorMap</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_GrayscaleColorMap" data-uid="FellowOakDicom.Imaging.DicomImage.GrayscaleColorMap">
+  GrayscaleColorMap
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets the color map to be applied when rendering grayscale images.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Color32[] GrayscaleColorMap { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.Color32.html">Color32</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Color32.html">Color32</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_Height_" data-uid="FellowOakDicom.Imaging.DicomImage.Height*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_Height" data-uid="FellowOakDicom.Imaging.DicomImage.Height">Height</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_Height" data-uid="FellowOakDicom.Imaging.DicomImage.Height">
+  Height
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Height of image in pixels</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int Height { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_Invert_" data-uid="FellowOakDicom.Imaging.DicomImage.Invert*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_Invert" data-uid="FellowOakDicom.Imaging.DicomImage.Invert">Invert</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_Invert" data-uid="FellowOakDicom.Imaging.DicomImage.Invert">
+  Invert
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets whether to render in inverted grey.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual bool Invert { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_IsGrayscale_" data-uid="FellowOakDicom.Imaging.DicomImage.IsGrayscale*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_IsGrayscale" data-uid="FellowOakDicom.Imaging.DicomImage.IsGrayscale">IsGrayscale</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_IsGrayscale" data-uid="FellowOakDicom.Imaging.DicomImage.IsGrayscale">
+  IsGrayscale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets whether the image is gray scale.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual bool IsGrayscale { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_NumberOfFrames_" data-uid="FellowOakDicom.Imaging.DicomImage.NumberOfFrames*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_NumberOfFrames" data-uid="FellowOakDicom.Imaging.DicomImage.NumberOfFrames">NumberOfFrames</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_NumberOfFrames" data-uid="FellowOakDicom.Imaging.DicomImage.NumberOfFrames">
+  NumberOfFrames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Number of frames contained in image data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int NumberOfFrames { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_OverlayColor_" data-uid="FellowOakDicom.Imaging.DicomImage.OverlayColor*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_OverlayColor" data-uid="FellowOakDicom.Imaging.DicomImage.OverlayColor">OverlayColor</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_OverlayColor" data-uid="FellowOakDicom.Imaging.DicomImage.OverlayColor">
+  OverlayColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets the color used for displaying DICOM overlays. Default is magenta.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int OverlayColor { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_Scale_" data-uid="FellowOakDicom.Imaging.DicomImage.Scale*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_Scale" data-uid="FellowOakDicom.Imaging.DicomImage.Scale">Scale</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_Scale" data-uid="FellowOakDicom.Imaging.DicomImage.Scale">
+  Scale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Scaling factor of the rendered image</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double Scale { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_ShowOverlays_" data-uid="FellowOakDicom.Imaging.DicomImage.ShowOverlays*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_ShowOverlays" data-uid="FellowOakDicom.Imaging.DicomImage.ShowOverlays">ShowOverlays</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_ShowOverlays" data-uid="FellowOakDicom.Imaging.DicomImage.ShowOverlays">
+  ShowOverlays
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Show or hide DICOM overlays</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ShowOverlays { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_UseVOILUT_" data-uid="FellowOakDicom.Imaging.DicomImage.UseVOILUT*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_UseVOILUT" data-uid="FellowOakDicom.Imaging.DicomImage.UseVOILUT">UseVOILUT</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_UseVOILUT" data-uid="FellowOakDicom.Imaging.DicomImage.UseVOILUT">
+  UseVOILUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets whether to use VOI LUT.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual bool UseVOILUT { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_Width_" data-uid="FellowOakDicom.Imaging.DicomImage.Width*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_Width" data-uid="FellowOakDicom.Imaging.DicomImage.Width">Width</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_Width" data-uid="FellowOakDicom.Imaging.DicomImage.Width">
+  Width
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Width of image in pixels</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int Width { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_WindowCenter_" data-uid="FellowOakDicom.Imaging.DicomImage.WindowCenter*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_WindowCenter" data-uid="FellowOakDicom.Imaging.DicomImage.WindowCenter">WindowCenter</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_WindowCenter" data-uid="FellowOakDicom.Imaging.DicomImage.WindowCenter">
+  WindowCenter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets window center of rendered gray scale image.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual double WindowCenter { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_WindowWidth_" data-uid="FellowOakDicom.Imaging.DicomImage.WindowWidth*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_WindowWidth" data-uid="FellowOakDicom.Imaging.DicomImage.WindowWidth">WindowWidth</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_WindowWidth" data-uid="FellowOakDicom.Imaging.DicomImage.WindowWidth">
+  WindowWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets window width of rendered gray scale image.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual double WindowWidth { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="FellowOakDicom_Imaging_DicomImage_RenderImage_" data-uid="FellowOakDicom.Imaging.DicomImage.RenderImage*"></a>
-  <h4 id="FellowOakDicom_Imaging_DicomImage_RenderImage_System_Int32_" data-uid="FellowOakDicom.Imaging.DicomImage.RenderImage(System.Int32)">RenderImage(Int32)</h4>
+
+  <h3 id="FellowOakDicom_Imaging_DicomImage_RenderImage_System_Int32_" data-uid="FellowOakDicom.Imaging.DicomImage.RenderImage(System.Int32)">
+  RenderImage(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomImage.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Renders DICOM image to <a class="xref" href="FellowOakDicom.Imaging.IImage.html">IImage</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual IImage RenderImage(int frame = 0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">frame</span></td>
-        <td><p>Zero-based frame index.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Imaging.IImage.html">IImage</a></td>
-        <td><p>Rendered image</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
-  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frame</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Zero-based frame index.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.IImage.html">IImage</a></dt>
+    <dd><p>Rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2012-2025 fo-dicom contributors
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            Copyright (c) 2012-2025 fo-dicom contributors
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

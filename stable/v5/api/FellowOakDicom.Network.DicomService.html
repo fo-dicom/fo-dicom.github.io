@@ -1,493 +1,649 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
+<!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DicomService
-   | Fellow Oak DICOM 5 API </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DicomService
-   | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Class DicomService | Fellow Oak DICOM 5 API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DicomService | Fellow Oak DICOM 5 API ">
+      
+      <meta name="description" content="Base class for DICOM network services.">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/fo-dicom/fo-dicom/new/development/apiSpec/new?filename=FellowOakDicom_Network_DicomService.md&amp;value=---%0Auid%3A%20FellowOakDicom.Network.DicomService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
+            Fellow Oak DICOM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Network.DicomService">
-  
-  
-  <h1 id="FellowOakDicom_Network_DicomService" data-uid="FellowOakDicom.Network.DicomService" class="text-break">Class DicomService
+
+        <article data-uid="FellowOakDicom.Network.DicomService">
+
+
+
+  <h1 id="FellowOakDicom_Network_DicomService" data-uid="FellowOakDicom.Network.DicomService" class="text-break">
+Class DicomService  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h1>
-  <div class="markdown level0 summary"><p>Base class for DICOM network services.</p>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FellowOakDicom.html">FellowOakDicom</a>.<a class="xref" href="FellowOakDicom.Network.html">Network</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>fo-dicom.core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base class for DICOM network services.</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">DicomService</span></div>
-      <div class="level2"><a class="xref" href="FellowOakDicom.Network.DicomCEchoProvider.html">DicomCEchoProvider</a></div>
-  </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="FellowOakDicom.Network.IDicomServiceRunner.html">IDicomServiceRunner</a></div>
-    <div><span class="xref">System.IDisposable</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
-  <h5 id="FellowOakDicom_Network_DicomService_syntax">Syntax</h5>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class DicomService : IDicomServiceRunner, IDisposable</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DicomService</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="FellowOakDicom.Network.IDicomServiceRunner.html">IDicomServiceRunner</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="FellowOakDicom.Network.DicomCEchoProvider.html">DicomCEchoProvider</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, params T[])</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
   <a id="FellowOakDicom_Network_DicomService__ctor_" data-uid="FellowOakDicom.Network.DicomService.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService__ctor_FellowOakDicom_Network_INetworkStream_System_Text_Encoding_Microsoft_Extensions_Logging_ILogger_FellowOakDicom_Network_DicomServiceDependencies_" data-uid="FellowOakDicom.Network.DicomService.#ctor(FellowOakDicom.Network.INetworkStream,System.Text.Encoding,Microsoft.Extensions.Logging.ILogger,FellowOakDicom.Network.DicomServiceDependencies)">DicomService(INetworkStream, Encoding, ILogger, DicomServiceDependencies)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService__ctor_FellowOakDicom_Network_INetworkStream_System_Text_Encoding_Microsoft_Extensions_Logging_ILogger_FellowOakDicom_Network_DicomServiceDependencies_" data-uid="FellowOakDicom.Network.DicomService.#ctor(FellowOakDicom.Network.INetworkStream,System.Text.Encoding,Microsoft.Extensions.Logging.ILogger,FellowOakDicom.Network.DicomServiceDependencies)">
+  DicomService(INetworkStream, Encoding, ILogger, DicomServiceDependencies)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.Network.DicomService.html">DicomService</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected DicomService(INetworkStream stream, Encoding fallbackEncoding, ILogger logger, DicomServiceDependencies dependencies)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.INetworkStream.html">INetworkStream</a></td>
-        <td><span class="parametername">stream</span></td>
-        <td><p>Network stream.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
-        <td><span class="parametername">fallbackEncoding</span></td>
-        <td><p>Fallback encoding.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
-        <td><span class="parametername">logger</span></td>
-        <td><p>Logger</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomServiceDependencies.html">DicomServiceDependencies</a></td>
-        <td><span class="parametername">dependencies</span></td>
-        <td><p>The dependencies of this DICOM service</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="FellowOakDicom.Network.INetworkStream.html">INetworkStream</a></dt>
+    <dd><p>Network stream.</p>
+</dd>
+    <dt><code>fallbackEncoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>Fallback encoding.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>Logger</p>
+</dd>
+    <dt><code>dependencies</code> <a class="xref" href="FellowOakDicom.Network.DicomServiceDependencies.html">DicomServiceDependencies</a></dt>
+    <dd><p>The dependencies of this DICOM service</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomService__dimseStream" data-uid="FellowOakDicom.Network.DicomService._dimseStream">
+  _dimseStream
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
-  <h4 id="FellowOakDicom_Network_DicomService__dimseStream" data-uid="FellowOakDicom.Network.DicomService._dimseStream">_dimseStream</h4>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected Stream _dimseStream</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomService__dimseStreamFile" data-uid="FellowOakDicom.Network.DicomService._dimseStreamFile">_dimseStreamFile</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomService__dimseStreamFile" data-uid="FellowOakDicom.Network.DicomService._dimseStreamFile">
+  _dimseStreamFile
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected IFileReference _dimseStreamFile</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="FellowOakDicom_Network_DicomService__isDisconnectedFlag" data-uid="FellowOakDicom.Network.DicomService._isDisconnectedFlag">_isDisconnectedFlag</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Network_DicomService__isDisconnectedFlag" data-uid="FellowOakDicom.Network.DicomService._isDisconnectedFlag">
+  _isDisconnectedFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected readonly TaskCompletionSource&lt;bool&gt; _isDisconnectedFlag</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.TaskCompletionSource</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcompletionsource-1">TaskCompletionSource</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
   <a id="FellowOakDicom_Network_DicomService_Association_" data-uid="FellowOakDicom.Network.DicomService.Association*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_Association" data-uid="FellowOakDicom.Network.DicomService.Association">Association</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_Association" data-uid="FellowOakDicom.Network.DicomService.Association">
+  Association
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets the DICOM association.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DicomAssociation Association { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomAssociation.html">DicomAssociation</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomAssociation.html">DicomAssociation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_CanStillProcessPDataTF_" data-uid="FellowOakDicom.Network.DicomService.CanStillProcessPDataTF*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_CanStillProcessPDataTF" data-uid="FellowOakDicom.Network.DicomService.CanStillProcessPDataTF">CanStillProcessPDataTF</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_CanStillProcessPDataTF" data-uid="FellowOakDicom.Network.DicomService.CanStillProcessPDataTF">
+  CanStillProcessPDataTF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets whether or not the connection can still process P-DATA-TF</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool CanStillProcessPDataTF { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_DoHandlePDUBytes_" data-uid="FellowOakDicom.Network.DicomService.DoHandlePDUBytes*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_DoHandlePDUBytes" data-uid="FellowOakDicom.Network.DicomService.DoHandlePDUBytes">DoHandlePDUBytes</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_DoHandlePDUBytes" data-uid="FellowOakDicom.Network.DicomService.DoHandlePDUBytes">
+  DoHandlePDUBytes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets an event handler to handle unsupported PDU bytes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PDUBytesHandler DoHandlePDUBytes { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.PDUBytesHandler.html">PDUBytesHandler</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.PDUBytesHandler.html">PDUBytesHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_IsConnected_" data-uid="FellowOakDicom.Network.DicomService.IsConnected*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_IsConnected" data-uid="FellowOakDicom.Network.DicomService.IsConnected">IsConnected</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_IsConnected" data-uid="FellowOakDicom.Network.DicomService.IsConnected">
+  IsConnected
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets whether or not the service is connected.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsConnected { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_IsSendNextMessageRequired_" data-uid="FellowOakDicom.Network.DicomService.IsSendNextMessageRequired*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_IsSendNextMessageRequired" data-uid="FellowOakDicom.Network.DicomService.IsSendNextMessageRequired">IsSendNextMessageRequired</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_IsSendNextMessageRequired" data-uid="FellowOakDicom.Network.DicomService.IsSendNextMessageRequired">
+  IsSendNextMessageRequired
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets whether or not SendNextMessage is required, i.e. if any requests still have to be sent and there is no send loop currently running.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsSendNextMessageRequired { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_IsSendQueueEmpty_" data-uid="FellowOakDicom.Network.DicomService.IsSendQueueEmpty*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_IsSendQueueEmpty" data-uid="FellowOakDicom.Network.DicomService.IsSendQueueEmpty">IsSendQueueEmpty</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_IsSendQueueEmpty" data-uid="FellowOakDicom.Network.DicomService.IsSendQueueEmpty">
+  IsSendQueueEmpty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets whether or not both the message queue and the pending queue is empty.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsSendQueueEmpty { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_Logger_" data-uid="FellowOakDicom.Network.DicomService.Logger*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_Logger" data-uid="FellowOakDicom.Network.DicomService.Logger">Logger</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_Logger" data-uid="FellowOakDicom.Network.DicomService.Logger">
+  Logger
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets the logger.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ILogger Logger { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_MaximumPDUsInQueue_" data-uid="FellowOakDicom.Network.DicomService.MaximumPDUsInQueue*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_MaximumPDUsInQueue" data-uid="FellowOakDicom.Network.DicomService.MaximumPDUsInQueue">MaximumPDUsInQueue</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_MaximumPDUsInQueue" data-uid="FellowOakDicom.Network.DicomService.MaximumPDUsInQueue">
+  MaximumPDUsInQueue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets the maximum number of PDUs in queue.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int MaximumPDUsInQueue { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_Options_" data-uid="FellowOakDicom.Network.DicomService.Options*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_Options" data-uid="FellowOakDicom.Network.DicomService.Options">Options</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_Options" data-uid="FellowOakDicom.Network.DicomService.Options">
+  Options
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets the DICOM service options.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DicomServiceOptions Options { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_UserState_" data-uid="FellowOakDicom.Network.DicomService.UserState*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_UserState" data-uid="FellowOakDicom.Network.DicomService.UserState">UserState</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_UserState" data-uid="FellowOakDicom.Network.DicomService.UserState">
+  UserState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets a user state associated with the service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public object UserState { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="FellowOakDicom_Network_DicomService_CreateCStoreReceiveStream_" data-uid="FellowOakDicom.Network.DicomService.CreateCStoreReceiveStream*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_CreateCStoreReceiveStream_FellowOakDicom_DicomFile_" data-uid="FellowOakDicom.Network.DicomService.CreateCStoreReceiveStream(FellowOakDicom.DicomFile)">CreateCStoreReceiveStream(DicomFile)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_CreateCStoreReceiveStream_FellowOakDicom_DicomFile_" data-uid="FellowOakDicom.Network.DicomService.CreateCStoreReceiveStream(FellowOakDicom.DicomFile)">
+  CreateCStoreReceiveStream(DicomFile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>The purpose of this method is to return the Stream that a SopInstance received
 via CStoreSCP will be written to.  This default implementation creates a temporary
 file and returns a FileStream on top of it.  Child classes can override this to write
@@ -496,76 +652,124 @@ Beware that some SopInstances can be very large so using a MemoryStream() could 
 out of memory situations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void CreateCStoreReceiveStream(DicomFile file)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>A DicomFile with FileMetaInfo populated.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a></dt>
+    <dd><p>A DicomFile with FileMetaInfo populated.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_Dispose_" data-uid="FellowOakDicom.Network.DicomService.Dispose*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_Dispose" data-uid="FellowOakDicom.Network.DicomService.Dispose">Dispose()</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_Dispose" data-uid="FellowOakDicom.Network.DicomService.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_Dispose_" data-uid="FellowOakDicom.Network.DicomService.Dispose*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_Dispose_System_Boolean_" data-uid="FellowOakDicom.Network.DicomService.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_Dispose_System_Boolean_" data-uid="FellowOakDicom.Network.DicomService.Dispose(System.Boolean)">
+  Dispose(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">disposing</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_Finalize_" data-uid="FellowOakDicom.Network.DicomService.Finalize*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_Finalize" data-uid="FellowOakDicom.Network.DicomService.Finalize">Finalize()</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_Finalize" data-uid="FellowOakDicom.Network.DicomService.Finalize">
+  ~DicomService()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>The finalizer will be called when this instance is not disposed properly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+    <pre><code class="lang-csharp hljs">protected ~DicomService()</code></pre>
   </div>
-  <h5 id="FellowOakDicom_Network_DicomService_Finalize_remarks">Remarks</h5>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="FellowOakDicom_Network_DicomService_Finalize_remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Failing to dispose indicates wrong usage</p>
 </div>
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_GetCStoreDicomFile_" data-uid="FellowOakDicom.Network.DicomService.GetCStoreDicomFile*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_GetCStoreDicomFile" data-uid="FellowOakDicom.Network.DicomService.GetCStoreDicomFile">GetCStoreDicomFile()</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_GetCStoreDicomFile" data-uid="FellowOakDicom.Network.DicomService.GetCStoreDicomFile">
+  GetCStoreDicomFile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>The purpose of this method is to create a DicomFile for the SopInstance received via
 CStoreSCP to pass to the IDicomCStoreProvider.OnCStoreRequest method for processing.
 This default implementation will return a DicomFile if the stream created by
@@ -574,477 +778,454 @@ override CreateCStoreReceiveStream may also want override this to return a Dicom
 for unseekable streams or to do cleanup related to receiving that specific instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual DicomFile GetCStoreDicomFile()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a></td>
-        <td><p>The DicomFile or null if the stream is not seekable.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.DicomFile.html">DicomFile</a></dt>
+    <dd><p>The DicomFile or null if the stream is not seekable.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_OnSendQueueEmptyAsync_" data-uid="FellowOakDicom.Network.DicomService.OnSendQueueEmptyAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_OnSendQueueEmptyAsync" data-uid="FellowOakDicom.Network.DicomService.OnSendQueueEmptyAsync">OnSendQueueEmptyAsync()</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_OnSendQueueEmptyAsync" data-uid="FellowOakDicom.Network.DicomService.OnSendQueueEmptyAsync">
+  OnSendQueueEmptyAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L1696"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Action to perform when send queue is empty.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual Task OnSendQueueEmptyAsync()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_RunAsync_" data-uid="FellowOakDicom.Network.DicomService.RunAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_RunAsync" data-uid="FellowOakDicom.Network.DicomService.RunAsync">RunAsync()</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_RunAsync" data-uid="FellowOakDicom.Network.DicomService.RunAsync">
+  RunAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L1681"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Setup long-running operations that the DICOM service manages.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Task RunAsync()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>Awaitable task maintaining the long-running operation(s).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Awaitable task maintaining the long-running operation(s).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_SendAbortAsync_" data-uid="FellowOakDicom.Network.DicomService.SendAbortAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_SendAbortAsync_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_" data-uid="FellowOakDicom.Network.DicomService.SendAbortAsync(FellowOakDicom.Network.DicomAbortSource,FellowOakDicom.Network.DicomAbortReason)">SendAbortAsync(DicomAbortSource, DicomAbortReason)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_SendAbortAsync_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_" data-uid="FellowOakDicom.Network.DicomService.SendAbortAsync(FellowOakDicom.Network.DicomAbortSource,FellowOakDicom.Network.DicomAbortReason)">
+  SendAbortAsync(DicomAbortSource, DicomAbortReason)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L1666"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Send abort request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected Task SendAbortAsync(DicomAbortSource source, DicomAbortReason reason)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomAbortSource.html">DicomAbortSource</a></td>
-        <td><span class="parametername">source</span></td>
-        <td><p>Abort source.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomAbortReason.html">DicomAbortReason</a></td>
-        <td><span class="parametername">reason</span></td>
-        <td><p>Abort reason.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="FellowOakDicom.Network.DicomAbortSource.html">DicomAbortSource</a></dt>
+    <dd><p>Abort source.</p>
+</dd>
+    <dt><code>reason</code> <a class="xref" href="FellowOakDicom.Network.DicomAbortReason.html">DicomAbortReason</a></dt>
+    <dd><p>Abort reason.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_SendAssociationAcceptAsync_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationAcceptAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_SendAssociationAcceptAsync_FellowOakDicom_Network_DicomAssociation_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationAcceptAsync(FellowOakDicom.Network.DicomAssociation)">SendAssociationAcceptAsync(DicomAssociation)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_SendAssociationAcceptAsync_FellowOakDicom_Network_DicomAssociation_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationAcceptAsync(FellowOakDicom.Network.DicomAssociation)">
+  SendAssociationAcceptAsync(DicomAssociation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L1607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Send association accept response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected Task SendAssociationAcceptAsync(DicomAssociation association)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomAssociation.html">DicomAssociation</a></td>
-        <td><span class="parametername">association</span></td>
-        <td><p>DICOM association.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>association</code> <a class="xref" href="FellowOakDicom.Network.DicomAssociation.html">DicomAssociation</a></dt>
+    <dd><p>DICOM association.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_SendAssociationRejectAsync_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationRejectAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_SendAssociationRejectAsync_FellowOakDicom_Network_DicomRejectResult_FellowOakDicom_Network_DicomRejectSource_FellowOakDicom_Network_DicomRejectReason_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationRejectAsync(FellowOakDicom.Network.DicomRejectResult,FellowOakDicom.Network.DicomRejectSource,FellowOakDicom.Network.DicomRejectReason)">SendAssociationRejectAsync(DicomRejectResult, DicomRejectSource, DicomRejectReason)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_SendAssociationRejectAsync_FellowOakDicom_Network_DicomRejectResult_FellowOakDicom_Network_DicomRejectSource_FellowOakDicom_Network_DicomRejectReason_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationRejectAsync(FellowOakDicom.Network.DicomRejectResult,FellowOakDicom.Network.DicomRejectSource,FellowOakDicom.Network.DicomRejectReason)">
+  SendAssociationRejectAsync(DicomRejectResult, DicomRejectSource, DicomRejectReason)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L1633"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Send association reject response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected Task SendAssociationRejectAsync(DicomRejectResult result, DicomRejectSource source, DicomRejectReason reason)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomRejectResult.html">DicomRejectResult</a></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>Rejection result.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomRejectSource.html">DicomRejectSource</a></td>
-        <td><span class="parametername">source</span></td>
-        <td><p>Rejection source.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomRejectReason.html">DicomRejectReason</a></td>
-        <td><span class="parametername">reason</span></td>
-        <td><p>Rejection reason.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="FellowOakDicom.Network.DicomRejectResult.html">DicomRejectResult</a></dt>
+    <dd><p>Rejection result.</p>
+</dd>
+    <dt><code>source</code> <a class="xref" href="FellowOakDicom.Network.DicomRejectSource.html">DicomRejectSource</a></dt>
+    <dd><p>Rejection source.</p>
+</dd>
+    <dt><code>reason</code> <a class="xref" href="FellowOakDicom.Network.DicomRejectReason.html">DicomRejectReason</a></dt>
+    <dd><p>Rejection reason.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_SendAssociationReleaseRequestAsync_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationReleaseRequestAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_SendAssociationReleaseRequestAsync" data-uid="FellowOakDicom.Network.DicomService.SendAssociationReleaseRequestAsync">SendAssociationReleaseRequestAsync()</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_SendAssociationReleaseRequestAsync" data-uid="FellowOakDicom.Network.DicomService.SendAssociationReleaseRequestAsync">
+  SendAssociationReleaseRequestAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L1644"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Send association release request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected Task SendAssociationReleaseRequestAsync()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_SendAssociationReleaseResponseAsync_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationReleaseResponseAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_SendAssociationReleaseResponseAsync" data-uid="FellowOakDicom.Network.DicomService.SendAssociationReleaseResponseAsync">SendAssociationReleaseResponseAsync()</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_SendAssociationReleaseResponseAsync" data-uid="FellowOakDicom.Network.DicomService.SendAssociationReleaseResponseAsync">
+  SendAssociationReleaseResponseAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L1654"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Send association release response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected Task SendAssociationReleaseResponseAsync()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_SendAssociationRequestAsync_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationRequestAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_SendAssociationRequestAsync_FellowOakDicom_Network_DicomAssociation_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationRequestAsync(FellowOakDicom.Network.DicomAssociation)">SendAssociationRequestAsync(DicomAssociation)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_SendAssociationRequestAsync_FellowOakDicom_Network_DicomAssociation_" data-uid="FellowOakDicom.Network.DicomService.SendAssociationRequestAsync(FellowOakDicom.Network.DicomAssociation)">
+  SendAssociationRequestAsync(DicomAssociation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L1587"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Send association request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected Task SendAssociationRequestAsync(DicomAssociation association)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomAssociation.html">DicomAssociation</a></td>
-        <td><span class="parametername">association</span></td>
-        <td><p>DICOM association.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>association</code> <a class="xref" href="FellowOakDicom.Network.DicomAssociation.html">DicomAssociation</a></dt>
+    <dd><p>DICOM association.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_SendPDUAsync_" data-uid="FellowOakDicom.Network.DicomService.SendPDUAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_SendPDUAsync_FellowOakDicom_Network_PDU_" data-uid="FellowOakDicom.Network.DicomService.SendPDUAsync(FellowOakDicom.Network.PDU)">SendPDUAsync(PDU)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_SendPDUAsync_FellowOakDicom_Network_PDU_" data-uid="FellowOakDicom.Network.DicomService.SendPDUAsync(FellowOakDicom.Network.PDU)">
+  SendPDUAsync(PDU)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Asynchronously send single PDU.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected Task SendPDUAsync(PDU pdu)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.PDU.html">PDU</a></td>
-        <td><span class="parametername">pdu</span></td>
-        <td><p>PDU to send.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>Awaitable task.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pdu</code> <a class="xref" href="FellowOakDicom.Network.PDU.html">PDU</a></dt>
+    <dd><p>PDU to send.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Awaitable task.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_SendRequestAsync_" data-uid="FellowOakDicom.Network.DicomService.SendRequestAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_SendRequestAsync_FellowOakDicom_Network_DicomRequest_" data-uid="FellowOakDicom.Network.DicomService.SendRequestAsync(FellowOakDicom.Network.DicomRequest)">SendRequestAsync(DicomRequest)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_SendRequestAsync_FellowOakDicom_Network_DicomRequest_" data-uid="FellowOakDicom.Network.DicomService.SendRequestAsync(FellowOakDicom.Network.DicomRequest)">
+  SendRequestAsync(DicomRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Send request from service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Task SendRequestAsync(DicomRequest request)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td><p>Request to send.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="FellowOakDicom.Network.DicomRequest.html">DicomRequest</a></dt>
+    <dd><p>Request to send.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_DicomService_SendResponseAsync_" data-uid="FellowOakDicom.Network.DicomService.SendResponseAsync*"></a>
-  <h4 id="FellowOakDicom_Network_DicomService_SendResponseAsync_FellowOakDicom_Network_DicomResponse_" data-uid="FellowOakDicom.Network.DicomService.SendResponseAsync(FellowOakDicom.Network.DicomResponse)">SendResponseAsync(DicomResponse)</h4>
+
+  <h3 id="FellowOakDicom_Network_DicomService_SendResponseAsync_FellowOakDicom_Network_DicomResponse_" data-uid="FellowOakDicom.Network.DicomService.SendResponseAsync(FellowOakDicom.Network.DicomResponse)">
+  SendResponseAsync(DicomResponse)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/DicomService.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Send response from service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected Task SendResponseAsync(DicomResponse response)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a></td>
-        <td><span class="parametername">response</span></td>
-        <td><p>Response to send.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="FellowOakDicom.Network.IDicomServiceRunner.html">IDicomServiceRunner</a>
-  </div>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
-  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>response</code> <a class="xref" href="FellowOakDicom.Network.DicomResponse.html">DicomResponse</a></dt>
+    <dd><p>Response to send.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2012-2025 fo-dicom contributors
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            Copyright (c) 2012-2025 fo-dicom contributors
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

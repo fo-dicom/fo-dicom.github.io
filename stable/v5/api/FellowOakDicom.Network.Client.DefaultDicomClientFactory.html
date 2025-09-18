@@ -1,336 +1,329 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
+<!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DefaultDicomClientFactory
-   | Fellow Oak DICOM 5 API </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DefaultDicomClientFactory
-   | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Class DefaultDicomClientFactory | Fellow Oak DICOM 5 API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DefaultDicomClientFactory | Fellow Oak DICOM 5 API ">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/fo-dicom/fo-dicom/new/development/apiSpec/new?filename=FellowOakDicom_Network_Client_DefaultDicomClientFactory.md&amp;value=---%0Auid%3A%20FellowOakDicom.Network.Client.DefaultDicomClientFactory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
+            Fellow Oak DICOM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory">
-  
-  
-  <h1 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory" class="text-break">Class DefaultDicomClientFactory
+
+        <article data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory">
+
+
+
+  <h1 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory" class="text-break">
+Class DefaultDicomClientFactory  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/Client/DicomClientFactory.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">DefaultDicomClientFactory</span></div>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FellowOakDicom.html">FellowOakDicom</a>.<a class="xref" href="FellowOakDicom.Network.html">Network</a>.<a class="xref" href="FellowOakDicom.Network.Client.html">Client</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>fo-dicom.core.dll</dd></dl>
   </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="FellowOakDicom.Network.Client.IDicomClientFactory.html">IDicomClientFactory</a></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.Client.html">FellowOakDicom.Network.Client</a></h6>
-  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
-  <h5 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_syntax">Syntax</h5>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class DefaultDicomClientFactory : IDicomClientFactory</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_Microsoft_Extensions_Options_IOptions_FellowOakDicom_Network_Client_DicomClientOptions__Microsoft_Extensions_Options_IOptions_FellowOakDicom_Network_DicomServiceOptions__Microsoft_Extensions_Logging_ILoggerFactory_FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnectionFactory_System_IServiceProvider_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor(Microsoft.Extensions.Options.IOptions{FellowOakDicom.Network.Client.DicomClientOptions},Microsoft.Extensions.Options.IOptions{FellowOakDicom.Network.DicomServiceOptions},Microsoft.Extensions.Logging.ILoggerFactory,FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionFactory,System.IServiceProvider)">DefaultDicomClientFactory(IOptions&lt;DicomClientOptions&gt;, IOptions&lt;DicomServiceOptions&gt;, ILoggerFactory, IAdvancedDicomClientConnectionFactory, IServiceProvider)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DefaultDicomClientFactory(IOptions&lt;DicomClientOptions&gt; defaultClientOptions, IOptions&lt;DicomServiceOptions&gt; defaultServiceOptions, ILoggerFactory loggerFactory, IAdvancedDicomClientConnectionFactory advancedDicomClientConnectionFactory, IServiceProvider serviceProvider)</code></pre>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DefaultDicomClientFactory</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="FellowOakDicom.Network.Client.IDicomClientFactory.html">IDicomClientFactory</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, params T[])</a>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Options.IOptions</span>&lt;<a class="xref" href="FellowOakDicom.Network.Client.DicomClientOptions.html">DicomClientOptions</a>&gt;</td>
-        <td><span class="parametername">defaultClientOptions</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Options.IOptions</span>&lt;<a class="xref" href="FellowOakDicom.Network.DicomServiceOptions.html">DicomServiceOptions</a>&gt;</td>
-        <td><span class="parametername">defaultServiceOptions</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Logging.ILoggerFactory</span></td>
-        <td><span class="parametername">loggerFactory</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionFactory.html">IAdvancedDicomClientConnectionFactory</a></td>
-        <td><span class="parametername">advancedDicomClientConnectionFactory</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.IServiceProvider</span></td>
-        <td><span class="parametername">serviceProvider</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor*"></a>
+
+  <h3 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory__ctor_Microsoft_Extensions_Logging_ILoggerFactory_FellowOakDicom_Network_Client_Advanced_Connection_IAdvancedDicomClientConnectionFactory_System_IServiceProvider_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionFactory,System.IServiceProvider)">
+  DefaultDicomClientFactory(ILoggerFactory, IAdvancedDicomClientConnectionFactory, IServiceProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/Client/DicomClientFactory.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
-  <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_System_String_System_Int32_FellowOakDicom_Network_Tls_ITlsInitiator_System_String_System_String_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create(System.String,System.Int32,FellowOakDicom.Network.Tls.ITlsInitiator,System.String,System.String)">Create(String, Int32, ITlsInitiator, String, String)</h4>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultDicomClientFactory(ILoggerFactory loggerFactory, IAdvancedDicomClientConnectionFactory advancedDicomClientConnectionFactory, IServiceProvider serviceProvider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>loggerFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggerfactory">ILoggerFactory</a></dt>
+    <dd></dd>
+    <dt><code>advancedDicomClientConnectionFactory</code> <a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionFactory.html">IAdvancedDicomClientConnectionFactory</a></dt>
+    <dd></dd>
+    <dt><code>serviceProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create*"></a>
+
+  <h3 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_System_String_System_Int32_FellowOakDicom_Network_Tls_ITlsInitiator_System_String_System_String_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create(System.String,System.Int32,FellowOakDicom.Network.Tls.ITlsInitiator,System.String,System.String)">
+  Create(string, int, ITlsInitiator, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/Client/DicomClientFactory.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes an instance of <a class="xref" href="FellowOakDicom.Network.Client.DicomClient.html">DicomClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual IDicomClient Create(string host, int port, ITlsInitiator tlsInitiator, string callingAe, string calledAe)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">host</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">port</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.Tls.ITlsInitiator.html">ITlsInitiator</a></td>
-        <td><span class="parametername">tlsInitiator</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">callingAe</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">calledAe</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.Client.IDicomClient.html">IDicomClient</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>host</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>DICOM host.</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Port.</p>
+</dd>
+    <dt><code>tlsInitiator</code> <a class="xref" href="FellowOakDicom.Network.Tls.ITlsInitiator.html">ITlsInitiator</a></dt>
+    <dd><p>The handler to initialte TLS security, if null then no TLS is enabled.</p>
+</dd>
+    <dt><code>callingAe</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Calling Application Entity Title.</p>
+</dd>
+    <dt><code>calledAe</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Called Application Entity Title.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.Client.IDicomClient.html">IDicomClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create*"></a>
-  <h4 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_System_String_System_Int32_System_Boolean_System_String_System_String_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create(System.String,System.Int32,System.Boolean,System.String,System.String)">Create(String, Int32, Boolean, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+
+  <h3 id="FellowOakDicom_Network_Client_DefaultDicomClientFactory_Create_System_String_System_Int32_System_Boolean_System_String_System_String_" data-uid="FellowOakDicom.Network.Client.DefaultDicomClientFactory.Create(System.String,System.Int32,System.Boolean,System.String,System.String)">
+  Create(string, int, bool, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/Client/DicomClientFactory.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes an instance of <a class="xref" href="FellowOakDicom.Network.Client.DicomClient.html">DicomClient</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual IDicomClient Create(string host, int port, bool useTls, string callingAe, string calledAe)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">host</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">port</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">useTls</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">callingAe</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">calledAe</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.Client.IDicomClient.html">IDicomClient</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="FellowOakDicom.Network.Client.IDicomClientFactory.html">IDicomClientFactory</a>
-  </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
-  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>host</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>DICOM host.</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Port.</p>
+</dd>
+    <dt><code>useTls</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if TLS security should be enabled, false otherwise.</p>
+</dd>
+    <dt><code>callingAe</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Calling Application Entity Title.</p>
+</dd>
+    <dt><code>calledAe</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Called Application Entity Title.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.Client.IDicomClient.html">IDicomClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2012-2025 fo-dicom contributors
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            Copyright (c) 2012-2025 fo-dicom contributors
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

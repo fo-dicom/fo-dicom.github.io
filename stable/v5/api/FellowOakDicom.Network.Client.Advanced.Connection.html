@@ -1,105 +1,121 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
+<!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace FellowOakDicom.Network.Client.Advanced.Connection
-   | Fellow Oak DICOM 5 API </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace FellowOakDicom.Network.Client.Advanced.Connection
-   | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Namespace FellowOakDicom.Network.Client.Advanced.Connection | Fellow Oak DICOM 5 API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace FellowOakDicom.Network.Client.Advanced.Connection | Fellow Oak DICOM 5 API ">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
+            Fellow Oak DICOM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Network.Client.Advanced.Connection">
-  
-  <h1 id="FellowOakDicom_Network_Client_Advanced_Connection" data-uid="FellowOakDicom.Network.Client.Advanced.Connection" class="text-break">Namespace FellowOakDicom.Network.Client.Advanced.Connection
-  </h1>
+
+        <article data-uid="FellowOakDicom.Network.Client.Advanced.Connection">
+
+  <h1 id="FellowOakDicom_Network_Client_Advanced_Connection" data-uid="FellowOakDicom.Network.Client.Advanced.Connection" class="text-break">Namespace FellowOakDicom.Network.Client.Advanced.Connection</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionFactory.html">AdvancedDicomClientConnectionFactory</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.html">AdvancedDicomClientConnectionRequest</a></h4>
-      <section><p>Contains all the knobs and bells needed to open a new connection to a DICOM AE</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequestHandlers.html">AdvancedDicomClientConnectionRequestHandlers</a></h4>
-      <section><p>Contains request handlers for requests that have been sent from a DICOM server to a DICOM client</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.ConnectionClosedEvent.html">ConnectionClosedEvent</a></h4>
-      <section><p>When the TCP connection with the SCP is closed</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DefaultAdvancedDicomClientConnectionFactory.html">DefaultAdvancedDicomClientConnectionFactory</a></h4>
-      <section><p>Represents an advanced DICOM client that exposes the highest amount of manual control over the underlying DICOM communication when sending DICOM requests<br>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionFactory.html">AdvancedDicomClientConnectionFactory</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequest.html">AdvancedDicomClientConnectionRequest</a></dt>
+      <dd><p>Contains all the knobs and bells needed to open a new connection to a DICOM AE</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.AdvancedDicomClientConnectionRequestHandlers.html">AdvancedDicomClientConnectionRequestHandlers</a></dt>
+      <dd><p>Contains request handlers for requests that have been sent from a DICOM server to a DICOM client</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.ConnectionClosedEvent.html">ConnectionClosedEvent</a></dt>
+      <dd><p>When the TCP connection with the SCP is closed</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DefaultAdvancedDicomClientConnectionFactory.html">DefaultAdvancedDicomClientConnectionFactory</a></dt>
+      <dd><p>Represents an advanced DICOM client that exposes the highest amount of manual control over the underlying DICOM communication when sending DICOM requests<br>
 Using an advanced DICOM client, it is possible to manage the lifetime of a DICOM connection + association in a fine-grained manner and send any number of DICOM requests over it<br>
 <br>
 The regular DICOM client is completely built on top of this advanced DICOM client.<br>
@@ -114,45 +130,68 @@ Here is an incomplete sample of the things the regular DICOM client will do for 
 This advanced DICOM client is offered to expert users of the Fellow Oak DICOM library.<br>
 If you do not consider yourself such an expert, please reconsider the compatibility of the regular DicomClient with your use case.</li>
 </ul>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DicomAbortedEvent.html">DicomAbortedEvent</a></h4>
-      <section><p>When the DICOM association is suddenly aborted</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DicomAssociationAcceptedEvent.html">DicomAssociationAcceptedEvent</a></h4>
-      <section><p>When the DICOM association is accepted</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DicomAssociationRejectedEvent.html">DicomAssociationRejectedEvent</a></h4>
-      <section><p>When the DICOM association is rejected</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DicomAssociationReleasedEvent.html">DicomAssociationReleasedEvent</a></h4>
-      <section><p>When the association is released</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.RequestCompletedEvent.html">RequestCompletedEvent</a></h4>
-      <section><p>When a DICOM request is completed and no further responses are expected</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.RequestPendingEvent.html">RequestPendingEvent</a></h4>
-      <section><p>When a DICOM request has been sent to the SCP and is now pending one or more responses</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.RequestTimedOutEvent.html">RequestTimedOutEvent</a></h4>
-      <section><p>When a DICOM request times out</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.SendQueueEmptyEvent.html">SendQueueEmptyEvent</a></h4>
-      <section><p>When the internal DicomService queue is empty, and a call to SendNextMessage will be required to send more requests</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection.html">IAdvancedDicomClientConnection</a></h4>
-      <section><p>Represents an open DICOM connection, which contains two things:<br></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DicomAbortedEvent.html">DicomAbortedEvent</a></dt>
+      <dd><p>When the DICOM association is suddenly aborted</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DicomAssociationAcceptedEvent.html">DicomAssociationAcceptedEvent</a></dt>
+      <dd><p>When the DICOM association is accepted</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DicomAssociationRejectedEvent.html">DicomAssociationRejectedEvent</a></dt>
+      <dd><p>When the DICOM association is rejected</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.DicomAssociationReleasedEvent.html">DicomAssociationReleasedEvent</a></dt>
+      <dd><p>When the association is released</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.RequestCompletedEvent.html">RequestCompletedEvent</a></dt>
+      <dd><p>When a DICOM request is completed and no further responses are expected</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.RequestPendingEvent.html">RequestPendingEvent</a></dt>
+      <dd><p>When a DICOM request has been sent to the SCP and is now pending one or more responses</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.RequestTimedOutEvent.html">RequestTimedOutEvent</a></dt>
+      <dd><p>When a DICOM request times out</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.SendQueueEmptyEvent.html">SendQueueEmptyEvent</a></dt>
+      <dd><p>When the internal DicomService queue is empty, and a call to SendNextMessage will be required to send more requests</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnection.html">IAdvancedDicomClientConnection</a></dt>
+      <dd><p>Represents an open DICOM connection, which contains two things:<br></p>
 <ol>
 <li>An open TCP socket to the port where the other AE is running<br></li>
 <li>A DICOM listener that collects incoming DICOM messages over this socket<br></li>
 </ol>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionEvent.html">IAdvancedDicomClientConnectionEvent</a></h4>
-      <section><p>This is an empty marker interface so it is possible to create collections of the various events that occur in our DICOM network communication</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionFactory.html">IAdvancedDicomClientConnectionFactory</a></h4>
-      <section><p>Represents an advanced DICOM client that exposes the highest amount of manual control over the underlying DICOM communication when sending DICOM requests<br>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionEvent.html">IAdvancedDicomClientConnectionEvent</a></dt>
+      <dd><p>This is an empty marker interface so it is possible to create collections of the various events that occur in our DICOM network communication</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.Network.Client.Advanced.Connection.IAdvancedDicomClientConnectionFactory.html">IAdvancedDicomClientConnectionFactory</a></dt>
+      <dd><p>Represents an advanced DICOM client that exposes the highest amount of manual control over the underlying DICOM communication when sending DICOM requests<br>
 Using an advanced DICOM client, it is possible to manage the lifetime of a DICOM connection + association in a fine-grained manner and send any number of DICOM requests over it<br>
 <br>
 The regular DICOM client is completely built on top of this advanced DICOM client.<br>
@@ -167,37 +206,29 @@ Here is an incomplete sample of the things the regular DICOM client will do for 
 This advanced DICOM client is offered to expert users of the Fellow Oak DICOM library.<br>
 If you do not consider yourself such an expert, please reconsider the compatibility of the regular DicomClient with your use case.</li>
 </ul>
-</section>
+</dd>
+    </dl>
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2012-2025 fo-dicom contributors
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            Copyright (c) 2012-2025 fo-dicom contributors
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

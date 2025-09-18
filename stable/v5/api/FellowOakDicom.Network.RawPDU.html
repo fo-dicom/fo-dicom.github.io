@@ -1,1198 +1,1294 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
+<!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RawPDU
-   | Fellow Oak DICOM 5 API </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RawPDU
-   | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Class RawPDU | Fellow Oak DICOM 5 API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RawPDU | Fellow Oak DICOM 5 API ">
+      
+      <meta name="description" content="Encapsulates PDU data for reading or writing">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/fo-dicom/fo-dicom/new/development/apiSpec/new?filename=FellowOakDicom_Network_RawPDU.md&amp;value=---%0Auid%3A%20FellowOakDicom.Network.RawPDU%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
+            Fellow Oak DICOM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FellowOakDicom.Network.RawPDU">
-  
-  
-  <h1 id="FellowOakDicom_Network_RawPDU" data-uid="FellowOakDicom.Network.RawPDU" class="text-break">Class RawPDU
+
+        <article data-uid="FellowOakDicom.Network.RawPDU">
+
+
+
+  <h1 id="FellowOakDicom_Network_RawPDU" data-uid="FellowOakDicom.Network.RawPDU" class="text-break">
+Class RawPDU  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h1>
-  <div class="markdown level0 summary"><p>Encapsulates PDU data for reading or writing</p>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FellowOakDicom.html">FellowOakDicom</a>.<a class="xref" href="FellowOakDicom.Network.html">Network</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>fo-dicom.core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Encapsulates PDU data for reading or writing</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">RawPDU</span></div>
-  </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-    <div><span class="xref">System.IAsyncDisposable</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="FellowOakDicom.Network.html">FellowOakDicom.Network</a></h6>
-  <h6><strong>Assembly</strong>: fo-dicom.core.dll</h6>
-  <h5 id="FellowOakDicom_Network_RawPDU_syntax">Syntax</h5>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class RawPDU : IDisposable, IAsyncDisposable</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RawPDU</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, params T[])</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
   <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU__ctor_FellowOakDicom_Network_RawPduType_FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(FellowOakDicom.Network.RawPduType,FellowOakDicom.Memory.IMemoryProvider,System.Text.Encoding)">RawPDU(RawPduType, IMemoryProvider, Encoding)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU__ctor_FellowOakDicom_Network_RawPduType_FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(FellowOakDicom.Network.RawPduType,FellowOakDicom.Memory.IMemoryProvider,System.Text.Encoding)">
+  RawPDU(RawPduType, IMemoryProvider, Encoding)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Initializes new PDU for writing</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RawPDU(RawPduType type, IMemoryProvider memoryProvider, Encoding encoding = null)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.RawPduType.html">RawPduType</a></td>
-        <td><span class="parametername">type</span></td>
-        <td><p>Type of PDU</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
-        <td><span class="parametername">memoryProvider</span></td>
-        <td><p>The memory provider that will be used to allocate buffers</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
-        <td><span class="parametername">encoding</span></td>
-        <td><p>The encoding to use for encoding text</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="FellowOakDicom.Network.RawPduType.html">RawPduType</a></dt>
+    <dd><p>Type of PDU</p>
+</dd>
+    <dt><code>memoryProvider</code> <a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></dt>
+    <dd><p>The memory provider that will be used to allocate buffers</p>
+</dd>
+    <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>The encoding to use for encoding text</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU__ctor_FellowOakDicom_Network_RawPduType_FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding_System_IO_Stream_System_Boolean_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(FellowOakDicom.Network.RawPduType,FellowOakDicom.Memory.IMemoryProvider,System.Text.Encoding,System.IO.Stream,System.Boolean)">RawPDU(RawPduType, IMemoryProvider, Encoding, Stream, Boolean)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU__ctor_FellowOakDicom_Network_RawPduType_FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding_System_IO_Stream_System_Boolean_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(FellowOakDicom.Network.RawPduType,FellowOakDicom.Memory.IMemoryProvider,System.Text.Encoding,System.IO.Stream,System.Boolean)">
+  RawPDU(RawPduType, IMemoryProvider, Encoding, Stream, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Initializes new PDU for writing to a stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RawPDU(RawPduType type, IMemoryProvider memoryProvider, Encoding encoding, Stream stream, bool leaveOpen)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.RawPduType.html">RawPduType</a></td>
-        <td><span class="parametername">type</span></td>
-        <td><p>Type of PDU</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
-        <td><span class="parametername">memoryProvider</span></td>
-        <td><p>The memory provider that will be used to allocate buffers</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
-        <td><span class="parametername">encoding</span></td>
-        <td><p>The encoding to use for encoding text</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
-        <td><span class="parametername">stream</span></td>
-        <td><p>The stream to write to</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">leaveOpen</span></td>
-        <td><p>Whether the stream should be disposed or not when this RawPDU is disposed</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="FellowOakDicom.Network.RawPduType.html">RawPduType</a></dt>
+    <dd><p>Type of PDU</p>
+</dd>
+    <dt><code>memoryProvider</code> <a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></dt>
+    <dd><p>The memory provider that will be used to allocate buffers</p>
+</dd>
+    <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>The encoding to use for encoding text</p>
+</dd>
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The stream to write to</p>
+</dd>
+    <dt><code>leaveOpen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether the stream should be disposed or not when this RawPDU is disposed</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU__ctor_System_Byte___FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(System.Byte[],FellowOakDicom.Memory.IMemoryProvider,System.Text.Encoding)">RawPDU(Byte[], IMemoryProvider, Encoding)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU__ctor_System_Byte___FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(System.Byte[],FellowOakDicom.Memory.IMemoryProvider,System.Text.Encoding)">
+  RawPDU(byte[], IMemoryProvider, Encoding)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Initializes new PDU reader from buffer</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RawPDU(byte[] buffer, IMemoryProvider memoryProvider, Encoding encoding = null)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
-        <td><span class="parametername">buffer</span></td>
-        <td><p>Buffer</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
-        <td><span class="parametername">memoryProvider</span></td>
-        <td><p>The memory provider that will be used to allocate buffers</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
-        <td><span class="parametername">encoding</span></td>
-        <td><p>The encoding to use for decoding text</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Buffer</p>
+</dd>
+    <dt><code>memoryProvider</code> <a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></dt>
+    <dd><p>The memory provider that will be used to allocate buffers</p>
+</dd>
+    <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>The encoding to use for decoding text</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU__ctor_" data-uid="FellowOakDicom.Network.RawPDU.#ctor*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU__ctor_System_IO_MemoryStream_FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(System.IO.MemoryStream,FellowOakDicom.Memory.IMemoryProvider,System.Text.Encoding)">RawPDU(MemoryStream, IMemoryProvider, Encoding)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU__ctor_System_IO_MemoryStream_FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding_" data-uid="FellowOakDicom.Network.RawPDU.#ctor(System.IO.MemoryStream,FellowOakDicom.Memory.IMemoryProvider,System.Text.Encoding)">
+  RawPDU(MemoryStream, IMemoryProvider, Encoding)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Initializes new PDU reader from a stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RawPDU(MemoryStream stream, IMemoryProvider memoryProvider, Encoding encoding = null)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.MemoryStream</span></td>
-        <td><span class="parametername">stream</span></td>
-        <td><p>Stream</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></td>
-        <td><span class="parametername">memoryProvider</span></td>
-        <td><p>The memory provider that will be used to allocate buffers</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
-        <td><span class="parametername">encoding</span></td>
-        <td><p>The encoding to use for decoding text</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="FellowOakDicom_Network_RawPDU__ctor_System_IO_MemoryStream_FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding__remarks">Remarks</h5>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.memorystream">MemoryStream</a></dt>
+    <dd><p>Stream</p>
+</dd>
+    <dt><code>memoryProvider</code> <a class="xref" href="FellowOakDicom.Memory.IMemoryProvider.html">IMemoryProvider</a></dt>
+    <dd><p>The memory provider that will be used to allocate buffers</p>
+</dd>
+    <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>The encoding to use for decoding text</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="FellowOakDicom_Network_RawPDU__ctor_System_IO_MemoryStream_FellowOakDicom_Memory_IMemoryProvider_System_Text_Encoding__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>The created object takes ownership of the stream</p>
 </div>
-  <h3 id="properties">Properties
-  </h3>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
   <a id="FellowOakDicom_Network_RawPDU_Length_" data-uid="FellowOakDicom.Network.RawPDU.Length*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Length" data-uid="FellowOakDicom.Network.RawPDU.Length">Length</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Length" data-uid="FellowOakDicom.Network.RawPDU.Length">
+  Length
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PDU length</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public uint Length { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_Type_" data-uid="FellowOakDicom.Network.RawPDU.Type*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Type" data-uid="FellowOakDicom.Network.RawPDU.Type">Type</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Type" data-uid="FellowOakDicom.Network.RawPDU.Type">
+  Type
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>PDU type</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RawPduType Type { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.Network.RawPduType.html">RawPduType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Network.RawPduType.html">RawPduType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="FellowOakDicom_Network_RawPDU_Dispose_" data-uid="FellowOakDicom.Network.RawPDU.Dispose*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Dispose" data-uid="FellowOakDicom.Network.RawPDU.Dispose">Dispose()</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Dispose" data-uid="FellowOakDicom.Network.RawPDU.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_DisposeAsync_" data-uid="FellowOakDicom.Network.RawPDU.DisposeAsync*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_DisposeAsync" data-uid="FellowOakDicom.Network.RawPDU.DisposeAsync">DisposeAsync()</h4>
-  <div class="markdown level1 summary"></div>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_DisposeAsync" data-uid="FellowOakDicom.Network.RawPDU.DisposeAsync">
+  DisposeAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or
+resetting unmanaged resources asynchronously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ValueTask DisposeAsync()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.ValueTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_MarkLength16_" data-uid="FellowOakDicom.Network.RawPDU.MarkLength16*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_MarkLength16_System_String_" data-uid="FellowOakDicom.Network.RawPDU.MarkLength16(System.String)">MarkLength16(String)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_MarkLength16_System_String_" data-uid="FellowOakDicom.Network.RawPDU.MarkLength16(System.String)">
+  MarkLength16(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Marks position to write 16-bit length value</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void MarkLength16(string name)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Field name</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field name</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_ReadByte_" data-uid="FellowOakDicom.Network.RawPDU.ReadByte*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_ReadByte_System_String_" data-uid="FellowOakDicom.Network.RawPDU.ReadByte(System.String)">ReadByte(String)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_ReadByte_System_String_" data-uid="FellowOakDicom.Network.RawPDU.ReadByte(System.String)">
+  ReadByte(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Read byte from PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public byte ReadByte(string name)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Name of field</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Byte</span></td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of field</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Field value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_ReadBytes_" data-uid="FellowOakDicom.Network.RawPDU.ReadBytes*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_ReadBytes_System_String_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.ReadBytes(System.String,System.Byte[],System.Int32,System.Int32)">ReadBytes(String, Byte[], Int32, Int32)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_ReadBytes_System_String_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.ReadBytes(System.String,System.Byte[],System.Int32,System.Int32)">
+  ReadBytes(string, byte[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Read bytes from PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ReadBytes(string name, byte[] buffer, int index, int count)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Name of field</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
-        <td><span class="parametername">buffer</span></td>
-        <td><p>The buffer to read data into</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">index</span></td>
-        <td><p>The starting point in the buffer</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Number of bytes to read</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of field</p>
+</dd>
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>The buffer to read data into</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The starting point in the buffer</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of bytes to read</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_ReadBytes_" data-uid="FellowOakDicom.Network.RawPDU.ReadBytes*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_ReadBytes_System_String_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.ReadBytes(System.String,System.Int32)">ReadBytes(String, Int32)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_ReadBytes_System_String_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.ReadBytes(System.String,System.Int32)">
+  ReadBytes(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Read bytes from PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public byte[] ReadBytes(string name, int count)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Name of field</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Number of bytes to read</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of field</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of bytes to read</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Field value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_ReadString_" data-uid="FellowOakDicom.Network.RawPDU.ReadString*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_ReadString_System_String_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.ReadString(System.String,System.Int32)">ReadString(String, Int32)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_ReadString_System_String_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.ReadString(System.String,System.Int32)">
+  ReadString(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Reads string from PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string ReadString(string name, int numberOfBytes)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Name of field</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">numberOfBytes</span></td>
-        <td><p>Number of bytes to read</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of field</p>
+</dd>
+    <dt><code>numberOfBytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of bytes to read</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_ReadUInt16_" data-uid="FellowOakDicom.Network.RawPDU.ReadUInt16*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_ReadUInt16_System_String_" data-uid="FellowOakDicom.Network.RawPDU.ReadUInt16(System.String)">ReadUInt16(String)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_ReadUInt16_System_String_" data-uid="FellowOakDicom.Network.RawPDU.ReadUInt16(System.String)">
+  ReadUInt16(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Read ushort from PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ushort ReadUInt16(string name)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Name of field</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt16</span></td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of field</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>Field value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_ReadUInt32_" data-uid="FellowOakDicom.Network.RawPDU.ReadUInt32*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_ReadUInt32_System_String_" data-uid="FellowOakDicom.Network.RawPDU.ReadUInt32(System.String)">ReadUInt32(String)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_ReadUInt32_System_String_" data-uid="FellowOakDicom.Network.RawPDU.ReadUInt32(System.String)">
+  ReadUInt32(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Reads uint from PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public uint ReadUInt32(string name)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Name of field</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of field</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>Field value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_Reset_" data-uid="FellowOakDicom.Network.RawPDU.Reset*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Reset" data-uid="FellowOakDicom.Network.RawPDU.Reset">Reset()</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Reset" data-uid="FellowOakDicom.Network.RawPDU.Reset">
+  Reset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Reset PDU read stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_Save_" data-uid="FellowOakDicom.Network.RawPDU.Save*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Save_FellowOakDicom_IO_IFileReference_" data-uid="FellowOakDicom.Network.RawPDU.Save(FellowOakDicom.IO.IFileReference)">Save(IFileReference)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Save_FellowOakDicom_IO_IFileReference_" data-uid="FellowOakDicom.Network.RawPDU.Save(FellowOakDicom.IO.IFileReference)">
+  Save(IFileReference)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Saves PDU to file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Save(IFileReference file)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>file</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a></dt>
+    <dd><p>file</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_SkipBytes_" data-uid="FellowOakDicom.Network.RawPDU.SkipBytes*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_SkipBytes_System_String_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.SkipBytes(System.String,System.Int32)">SkipBytes(String, Int32)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_SkipBytes_System_String_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.SkipBytes(System.String,System.Int32)">
+  SkipBytes(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Skips ahead in PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void SkipBytes(string name, int count)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Name of field</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Number of bytes to skip</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of field</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of bytes to skip</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_ToString_" data-uid="FellowOakDicom.Network.RawPDU.ToString*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_ToString" data-uid="FellowOakDicom.Network.RawPDU.ToString">ToString()</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_ToString" data-uid="FellowOakDicom.Network.RawPDU.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets string describing this PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>PDU description</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>PDU description</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte)">Write(String, Byte)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte)">
+  Write(string, byte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Writes byte to PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Write(string name, byte value)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Field name</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Byte</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field name</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Field value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte,System.Int32)">Write(String, Byte, Int32)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte,System.Int32)">
+  Write(string, byte, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Writes byte to PDU multiple times</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Write(string name, byte value, int count)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Field name</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Byte</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Number of times to write PDU value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field name</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Field value</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of times to write PDU value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte___" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte[])">Write(String, Byte[])</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte___" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte[])">
+  Write(string, byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Writes byte[] to PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Write(string name, byte[] value)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Field name</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field name</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Field value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte[],System.Int32,System.Int32)">Write(String, Byte[], Int32, Int32)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_Byte___System_Int32_System_Int32_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.Byte[],System.Int32,System.Int32)">
+  Write(string, byte[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Writes byte[] to PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Write(string name, byte[] value, int index, int count)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Field name</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">index</span></td>
-        <td><p>The zero based index at which to start reading from the <code data-dev-comment-type="paramref" class="paramref">value</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>How mant bytes from <code data-dev-comment-type="paramref" class="paramref">value</code> to write</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field name</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Field value</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero based index at which to start reading from the <code class="paramref">value</code></p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>How mant bytes from <code class="paramref">value</code> to write</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_String_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.String)">Write(String, String)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_String_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.String)">
+  Write(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Writes string to PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Write(string name, string value)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Field name</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field name</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_String_System_Int32_System_Char_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.String,System.Int32,System.Char)">Write(String, String, Int32, Char)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_String_System_Int32_System_Char_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.String,System.Int32,System.Char)">
+  Write(string, string, int, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Writes string to PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Write(string name, string value, int count, char pad)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Field name</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Number of characters to write</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Char</span></td>
-        <td><span class="parametername">pad</span></td>
-        <td><p>Padding character</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field name</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field value</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of characters to write</p>
+</dd>
+    <dt><code>pad</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>Padding character</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_UInt16_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.UInt16)">Write(String, UInt16)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_UInt16_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.UInt16)">
+  Write(string, ushort)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Writes ushort to PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Write(string name, ushort value)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Field name</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.UInt16</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field name</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>Field value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_Write_" data-uid="FellowOakDicom.Network.RawPDU.Write*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_UInt32_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.UInt32)">Write(String, UInt32)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_Write_System_String_System_UInt32_" data-uid="FellowOakDicom.Network.RawPDU.Write(System.String,System.UInt32)">
+  Write(string, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Writes uint to PDU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Write(string name, uint value)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Field name</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Field value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field name</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>Field value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_WriteLength16_" data-uid="FellowOakDicom.Network.RawPDU.WriteLength16*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_WriteLength16" data-uid="FellowOakDicom.Network.RawPDU.WriteLength16">WriteLength16()</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_WriteLength16" data-uid="FellowOakDicom.Network.RawPDU.WriteLength16">
+  WriteLength16()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Writes 16-bit length to top length marker</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void WriteLength16()</code></pre>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_WritePDU_" data-uid="FellowOakDicom.Network.RawPDU.WritePDU*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_WritePDU_System_IO_Stream_" data-uid="FellowOakDicom.Network.RawPDU.WritePDU(System.IO.Stream)">WritePDU(Stream)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_WritePDU_System_IO_Stream_" data-uid="FellowOakDicom.Network.RawPDU.WritePDU(System.IO.Stream)">
+  WritePDU(Stream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Writes PDU to stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void WritePDU(Stream s)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
-        <td><span class="parametername">s</span></td>
-        <td><p>Output stream</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Output stream</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FellowOakDicom_Network_RawPDU_WritePDUAsync_" data-uid="FellowOakDicom.Network.RawPDU.WritePDUAsync*"></a>
-  <h4 id="FellowOakDicom_Network_RawPDU_WritePDUAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.RawPDU.WritePDUAsync(System.IO.Stream,System.Threading.CancellationToken)">WritePDUAsync(Stream, CancellationToken)</h4>
+
+  <h3 id="FellowOakDicom_Network_RawPDU_WritePDUAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.RawPDU.WritePDUAsync(System.IO.Stream,System.Threading.CancellationToken)">
+  WritePDUAsync(Stream, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Writes PDU to stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task WritePDUAsync(Stream s, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task WritePDUAsync(Stream s, CancellationToken cancellationToken)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
-        <td><span class="parametername">s</span></td>
-        <td><p>Output stream</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The token that cancels the asynchronous write operation</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
-  <div>
-      <span class="xref">System.IAsyncDisposable</span>
-  </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, T[])</a>
-  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Output stream</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The token that cancels the asynchronous write operation</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2012-2025 fo-dicom contributors
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            Copyright (c) 2012-2025 fo-dicom contributors
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

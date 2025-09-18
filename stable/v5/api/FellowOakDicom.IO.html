@@ -1,204 +1,259 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
+<!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace FellowOakDicom.IO
-   | Fellow Oak DICOM 5 API </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace FellowOakDicom.IO
-   | Fellow Oak DICOM 5 API ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Namespace FellowOakDicom.IO | Fellow Oak DICOM 5 API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace FellowOakDicom.IO | Fellow Oak DICOM 5 API ">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
+            Fellow Oak DICOM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FellowOakDicom.IO">
-  
-  <h1 id="FellowOakDicom_IO" data-uid="FellowOakDicom.IO" class="text-break">Namespace FellowOakDicom.IO
-  </h1>
+
+        <article data-uid="FellowOakDicom.IO">
+
+  <h1 id="FellowOakDicom_IO" data-uid="FellowOakDicom.IO" class="text-break">Namespace FellowOakDicom.IO</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="FellowOakDicom.IO.ByteConverter.html">ByteConverter</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.IO.DicomIoException.html">DicomIoException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.IO.DirectoryReference.html">DirectoryReference</a></h4>
-      <section><p>Implementation of the <a class="xref" href="FellowOakDicom.IO.IDirectoryReference.html">IDirectoryReference</a> interface.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.EndianBinaryReader.html">EndianBinaryReader</a></h4>
-      <section><p>Endian aware binary reader.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a></h4>
-      <section><p>Endian aware binary writer.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.FileByteSource.html">FileByteSource</a></h4>
-      <section><p>File byte source for reading.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.FileByteTarget.html">FileByteTarget</a></h4>
-      <section><p>Representation of a file byte target.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.FileReference.html">FileReference</a></h4>
-      <section><p>Implementation of the <a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a> interface.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.FileReferenceFactory.html">FileReferenceFactory</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.IO.MergeStream.html">MergeStream</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.IO.PinnedArray-1.html">PinnedArray&lt;T&gt;</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.IO.PinnedByteArray.html">PinnedByteArray</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.IO.PinnedIntArray.html">PinnedIntArray</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FellowOakDicom.IO.ReadBufferedStream.html">ReadBufferedStream</a></h4>
-      <section><p>This class is a buffered read-only wrapper around another stream.
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.ByteConverter.html">ByteConverter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.DicomIoException.html">DicomIoException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.DirectoryReference.html">DirectoryReference</a></dt>
+      <dd><p>Implementation of the <a class="xref" href="FellowOakDicom.IO.IDirectoryReference.html">IDirectoryReference</a> interface.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.EndianBinaryReader.html">EndianBinaryReader</a></dt>
+      <dd><p>Endian aware binary reader.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.EndianBinaryWriter.html">EndianBinaryWriter</a></dt>
+      <dd><p>Endian aware binary writer.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.FileByteSource.html">FileByteSource</a></dt>
+      <dd><p>File byte source for reading.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.FileByteTarget.html">FileByteTarget</a></dt>
+      <dd><p>Representation of a file byte target.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.FileReference.html">FileReference</a></dt>
+      <dd><p>Implementation of the <a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a> interface.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.FileReferenceFactory.html">FileReferenceFactory</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.MergeStream.html">MergeStream</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.PinnedArray-1.html">PinnedArray&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.PinnedByteArray.html">PinnedByteArray</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.PinnedIntArray.html">PinnedIntArray</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.ReadBufferedStream.html">ReadBufferedStream</a></dt>
+      <dd><p>This class is a buffered read-only wrapper around another stream.
 The parser requires to seek within the stream, so when reading from an unseekable stream, such a buffer is necessary.
 Because the parser does not jump very wide, a small buffer is just fine.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.StreamByteSource.html">StreamByteSource</a></h4>
-      <section><p>Stream byte source for reading.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.StreamByteSourceFactory.html">StreamByteSourceFactory</a></h4>
-      <section><p>Factory for creating a stream byte source for reading.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.StreamByteTarget.html">StreamByteTarget</a></h4>
-      <section><p>Representation of a stream byte target.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.TemporaryFile.html">TemporaryFile</a></h4>
-      <section><p>Support class for creating a temporary file.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.TemporaryFileRemover.html">TemporaryFileRemover</a></h4>
-      <section><p>Support class for removing temporary files, with repeated attempts if required.</p>
-</section>
-    <h3 id="structs">Structs
-  </h3>
-      <h4><a class="xref" href="FellowOakDicom.IO.Endian.html">Endian</a></h4>
-      <section><p>Representation and convenience methods associated with endianness.</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="FellowOakDicom.IO.IByteSource.html">IByteSource</a></h4>
-      <section><p>Byte source interface for reading operations.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.IByteTarget.html">IByteTarget</a></h4>
-      <section><p>Interface representing a byte target for write operations.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.IDirectoryReference.html">IDirectoryReference</a></h4>
-      <section><p>Interface representing reference to a single directory.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a></h4>
-      <section><p>Interface representing reference to a single file.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.IFileReferenceFactory.html">IFileReferenceFactory</a></h4>
-      <section><p>Interface for a factory to create <a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a></p>
-</section>
-    <h3 id="delegates">Delegates
-  </h3>
-      <h4><a class="xref" href="FellowOakDicom.IO.ByteSourceCallback.html">ByteSourceCallback</a></h4>
-      <section><p>Delegate for <a class="xref" href="FellowOakDicom.IO.IByteSource.html">IByteSource</a> callback functions.</p>
-</section>
-      <h4><a class="xref" href="FellowOakDicom.IO.ByteTargetCallback.html">ByteTargetCallback</a></h4>
-      <section><p>Callback delegate for asynchronous <a class="xref" href="FellowOakDicom.IO.IByteTarget.html">IByteTarget</a> operations.</p>
-</section>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.StreamByteSource.html">StreamByteSource</a></dt>
+      <dd><p>Stream byte source for reading.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.StreamByteSourceFactory.html">StreamByteSourceFactory</a></dt>
+      <dd><p>Factory for creating a stream byte source for reading.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.StreamByteTarget.html">StreamByteTarget</a></dt>
+      <dd><p>Representation of a stream byte target.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.TemporaryFile.html">TemporaryFile</a></dt>
+      <dd><p>Support class for creating a temporary file.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.TemporaryFileRemover.html">TemporaryFileRemover</a></dt>
+      <dd><p>Support class for removing temporary files, with repeated attempts if required.</p>
+</dd>
+    </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.Endian.html">Endian</a></dt>
+      <dd><p>Representation and convenience methods associated with endianness.</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.IByteSource.html">IByteSource</a></dt>
+      <dd><p>Byte source interface for reading operations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.IByteTarget.html">IByteTarget</a></dt>
+      <dd><p>Interface representing a byte target for write operations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.IDirectoryReference.html">IDirectoryReference</a></dt>
+      <dd><p>Interface representing reference to a single directory.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a></dt>
+      <dd><p>Interface representing reference to a single file.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.IFileReferenceFactory.html">IFileReferenceFactory</a></dt>
+      <dd><p>Interface for a factory to create <a class="xref" href="FellowOakDicom.IO.IFileReference.html">IFileReference</a></p>
+</dd>
+    </dl>
+    <h3 id="delegates">
+Delegates
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.ByteSourceCallback.html">ByteSourceCallback</a></dt>
+      <dd><p>Delegate for <a class="xref" href="FellowOakDicom.IO.IByteSource.html">IByteSource</a> callback functions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FellowOakDicom.IO.ByteTargetCallback.html">ByteTargetCallback</a></dt>
+      <dd><p>Callback delegate for asynchronous <a class="xref" href="FellowOakDicom.IO.IByteTarget.html">IByteTarget</a> operations.</p>
+</dd>
+    </dl>
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2012-2025 fo-dicom contributors
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            Copyright (c) 2012-2025 fo-dicom contributors
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>
