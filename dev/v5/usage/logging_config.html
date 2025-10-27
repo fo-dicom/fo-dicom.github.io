@@ -113,6 +113,14 @@ If you use <code>Microsoft.Extensions.Logging</code> elsewhere in the same appli
     .Build();
 </code></pre>
 <p>For all other logging libraries, you will have to provide your own implementation of <code>ILogManager</code> and <code>ILogger</code>.</p>
+<h2 id="logging-policy---data-protection-phi">Logging Policy - Data Protection (PHI)</h2>
+<p>fo-dicom's intent is to avoid emitting PHI in library-generated logs.</p>
+<ul>
+<li>The library does not dump DICOM datasets or element values by default.</li>
+<li>Dataset-to-log helpers exist but are opt-in and not invoked by the library.</li>
+<li>PHI may still surface through application code, custom handlers, or exception payloads; therefore, fo-dicom cannot guarantee zero-PHI logging in all deployments.</li>
+<li>If you observe a library message that exposes PHI, please open an issue with a minimal, redacted reproduction so we can evaluate and adjust.</li>
+</ul>
 
 </article>
 
