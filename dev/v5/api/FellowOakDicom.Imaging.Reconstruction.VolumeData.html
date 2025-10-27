@@ -162,9 +162,43 @@ Class VolumeData  <a class="header-action link-secondary" title="View source" hr
 
   <a id="FellowOakDicom_Imaging_Reconstruction_VolumeData__ctor_" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.#ctor*"></a>
 
+  <h3 id="FellowOakDicom_Imaging_Reconstruction_VolumeData__ctor_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.#ctor(FellowOakDicom.DicomDataset)">
+  VolumeData(DicomDataset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a VolumeData object from a multi-layer dataset (eg. Enhanced CT).
+It is strongly recommended this dataset is already decompressed before being passed to this constructor, or each slice will be decompressed separately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VolumeData(DicomDataset dataset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dataset</code> <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></dt>
+    <dd><p>The dataset, containing at least the tag <a class="xref" href="FellowOakDicom.DicomTag.html#FellowOakDicom_DicomTag_NumberOfFrames">NumberOfFrames</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Reconstruction_VolumeData__ctor_" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.#ctor*"></a>
+
   <h3 id="FellowOakDicom_Imaging_Reconstruction_VolumeData__ctor_System_Collections_Generic_IEnumerable_FellowOakDicom_Imaging_Reconstruction_ImageData__" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.#ctor(System.Collections.Generic.IEnumerable{FellowOakDicom.Imaging.Reconstruction.ImageData})">
   VolumeData(IEnumerable&lt;ImageData&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -292,7 +326,7 @@ Class VolumeData  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="FellowOakDicom_Imaging_Reconstruction_VolumeData_Lut" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.Lut">
   Lut
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -389,7 +423,7 @@ Class VolumeData  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="FellowOakDicom_Imaging_Reconstruction_VolumeData_GetCut_FellowOakDicom_Imaging_Mathematics_Point3D_FellowOakDicom_Imaging_Mathematics_Vector3D_FellowOakDicom_Imaging_Mathematics_Vector3D_System_Int32_System_Int32_System_Double_" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.GetCut(FellowOakDicom.Imaging.Mathematics.Point3D,FellowOakDicom.Imaging.Mathematics.Vector3D,FellowOakDicom.Imaging.Mathematics.Vector3D,System.Int32,System.Int32,System.Double)">
   GetCut(Point3D, Vector3D, Vector3D, int, int, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>['1', '0', '0', '0', '0', '-1'] you are dealing with Coronal plane view
