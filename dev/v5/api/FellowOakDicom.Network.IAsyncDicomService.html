@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IDicomService | Fellow Oak DICOM 5 API </title>
+      <title>Interface IAsyncDicomService | Fellow Oak DICOM 5 API </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IDicomService | Fellow Oak DICOM 5 API ">
+      <meta name="title" content="Interface IAsyncDicomService | Fellow Oak DICOM 5 API ">
       
       <meta name="description" content="Common interface for DICOM service users and providers.">
       <link rel="icon" href="../images/favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/fo-dicom/fo-dicom/new/development/apiSpec/new?filename=FellowOakDicom_Network_IDicomService.md&amp;value=---%0Auid%3A%20FellowOakDicom.Network.IDicomService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/fo-dicom/fo-dicom/new/development/apiSpec/new?filename=FellowOakDicom_Network_IAsyncDicomService.md&amp;value=---%0Auid%3A%20FellowOakDicom.Network.IAsyncDicomService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="FellowOakDicom.Network.IDicomService">
+        <article data-uid="FellowOakDicom.Network.IAsyncDicomService">
 
 
 
-  <h1 id="FellowOakDicom_Network_IDicomService" data-uid="FellowOakDicom.Network.IDicomService" class="text-break">
-Interface IDicomService  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/IDicomService.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <h1 id="FellowOakDicom_Network_IAsyncDicomService" data-uid="FellowOakDicom.Network.IAsyncDicomService" class="text-break">
+Interface IAsyncDicomService  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/IDicomService.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Interface IDicomService  <a class="header-action link-secondary" title="View sou
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IDicomService</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IAsyncDicomService</code></pre>
   </div>
 
 
@@ -128,11 +128,11 @@ Interface IDicomService  <a class="header-action link-secondary" title="View sou
 </h2>
 
 
-  <a id="FellowOakDicom_Network_IDicomService_OnConnectionClosed_" data-uid="FellowOakDicom.Network.IDicomService.OnConnectionClosed*"></a>
+  <a id="FellowOakDicom_Network_IAsyncDicomService_OnConnectionClosedAsync_" data-uid="FellowOakDicom.Network.IAsyncDicomService.OnConnectionClosedAsync*"></a>
 
-  <h3 id="FellowOakDicom_Network_IDicomService_OnConnectionClosed_System_Exception_" data-uid="FellowOakDicom.Network.IDicomService.OnConnectionClosed(System.Exception)">
-  OnConnectionClosed(Exception)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/IDicomService.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <h3 id="FellowOakDicom_Network_IAsyncDicomService_OnConnectionClosedAsync_System_Exception_" data-uid="FellowOakDicom.Network.IAsyncDicomService.OnConnectionClosedAsync(System.Exception)">
+  OnConnectionClosedAsync(Exception)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/IDicomService.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Callback when connection is closed.</p>
@@ -140,7 +140,7 @@ Interface IDicomService  <a class="header-action link-secondary" title="View sou
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnConnectionClosed(Exception exception)</code></pre>
+    <pre><code class="lang-csharp hljs">Task OnConnectionClosedAsync(Exception exception)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -148,6 +148,12 @@ Interface IDicomService  <a class="header-action link-secondary" title="View sou
     <dt><code>exception</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
     <dd><p>Exception, if any, that forced connection to close.</p>
 </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -160,12 +166,11 @@ Interface IDicomService  <a class="header-action link-secondary" title="View sou
 
 
 
+  <a id="FellowOakDicom_Network_IAsyncDicomService_OnReceiveAbortAsync_" data-uid="FellowOakDicom.Network.IAsyncDicomService.OnReceiveAbortAsync*"></a>
 
-  <a id="FellowOakDicom_Network_IDicomService_OnReceiveAbort_" data-uid="FellowOakDicom.Network.IDicomService.OnReceiveAbort*"></a>
-
-  <h3 id="FellowOakDicom_Network_IDicomService_OnReceiveAbort_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_" data-uid="FellowOakDicom.Network.IDicomService.OnReceiveAbort(FellowOakDicom.Network.DicomAbortSource,FellowOakDicom.Network.DicomAbortReason)">
-  OnReceiveAbort(DicomAbortSource, DicomAbortReason)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/IDicomService.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <h3 id="FellowOakDicom_Network_IAsyncDicomService_OnReceiveAbortAsync_FellowOakDicom_Network_DicomAbortSource_FellowOakDicom_Network_DicomAbortReason_" data-uid="FellowOakDicom.Network.IAsyncDicomService.OnReceiveAbortAsync(FellowOakDicom.Network.DicomAbortSource,FellowOakDicom.Network.DicomAbortReason)">
+  OnReceiveAbortAsync(DicomAbortSource, DicomAbortReason)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/IDicomService.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Callback on recieving an abort message.</p>
@@ -173,7 +178,7 @@ Interface IDicomService  <a class="header-action link-secondary" title="View sou
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnReceiveAbort(DicomAbortSource source, DicomAbortReason reason)</code></pre>
+    <pre><code class="lang-csharp hljs">Task OnReceiveAbortAsync(DicomAbortSource source, DicomAbortReason reason)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -186,6 +191,11 @@ Interface IDicomService  <a class="header-action link-secondary" title="View sou
 </dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

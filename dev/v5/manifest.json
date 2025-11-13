@@ -6807,6 +6807,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Network.IAsyncDicomService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Network.IAsyncDicomService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FellowOakDicom.Network.IAsyncDicomService",
+      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Network.IAsyncDicomService.yml\" sourcestartlinenumber=\"1\">Common interface for DICOM service users and providers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/FellowOakDicom.Network.IDicomCEchoProvider.yml",
       "output": {
         ".html": {
