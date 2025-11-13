@@ -89,7 +89,7 @@
 
 
   <h1 id="FellowOakDicom_Network_AAssociateRQ" data-uid="FellowOakDicom.Network.AAssociateRQ" class="text-break">
-Class AAssociateRQ  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L498"><i class="bi bi-code-slash"></i></a>
+Class AAssociateRQ  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L499"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -167,7 +167,7 @@ Class AAssociateRQ  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="FellowOakDicom_Network_AAssociateRQ__ctor_FellowOakDicom_Network_DicomAssociation_FellowOakDicom_Memory_IMemoryProvider_" data-uid="FellowOakDicom.Network.AAssociateRQ.#ctor(FellowOakDicom.Network.DicomAssociation,FellowOakDicom.Memory.IMemoryProvider)">
   AAssociateRQ(DicomAssociation, IMemoryProvider)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L509"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes new A-ASSOCIATE-RQ</p>
@@ -207,7 +207,7 @@ Class AAssociateRQ  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="FellowOakDicom_Network_AAssociateRQ_Read_FellowOakDicom_Network_RawPDU_" data-uid="FellowOakDicom.Network.AAssociateRQ.Read(FellowOakDicom.Network.RawPDU)">
   Read(RawPDU)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L705"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L707"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads A-ASSOCIATE-RQ from PDU buffer</p>
@@ -240,7 +240,7 @@ Class AAssociateRQ  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="FellowOakDicom_Network_AAssociateRQ_ToString" data-uid="FellowOakDicom.Network.AAssociateRQ.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L514"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L515"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -271,7 +271,7 @@ Class AAssociateRQ  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="FellowOakDicom_Network_AAssociateRQ_WriteAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.AAssociateRQ.WriteAsync(System.IO.Stream,System.Threading.CancellationToken)">
   WriteAsync(Stream, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L534"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Writes A-ASSOCIATE-RQ to the provided stream</p>
@@ -279,7 +279,7 @@ Class AAssociateRQ  <a class="header-action link-secondary" title="View source" 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task WriteAsync(Stream stream, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;uint&gt; WriteAsync(Stream stream, CancellationToken cancellationToken)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -294,8 +294,8 @@ Class AAssociateRQ  <a class="header-action link-secondary" title="View source" 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd><p>A Task that represents the asynchronous operation</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd><p>A Task that represents the asynchronous operation and the number of</p>
 </dd>
   </dl>
 
@@ -316,7 +316,7 @@ Class AAssociateRQ  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="FellowOakDicom_Network_AAssociateRQ_HandlePDUBytes" data-uid="FellowOakDicom.Network.AAssociateRQ.HandlePDUBytes">
   HandlePDUBytes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L521"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L522"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event to handle unsupported PDU bytes.</p>

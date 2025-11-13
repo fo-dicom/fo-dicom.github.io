@@ -4469,6 +4469,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Log.Metrics.INetworkMetricsCollector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Log.Metrics.INetworkMetricsCollector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FellowOakDicom.Log.Metrics.INetworkMetricsCollector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Log.Metrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Log.Metrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FellowOakDicom.Log.Metrics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/FellowOakDicom.Log.yml",
       "output": {
         ".html": {
