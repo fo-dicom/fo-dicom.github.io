@@ -89,7 +89,7 @@
 
 
   <h1 id="FellowOakDicom_Network_AAssociateAC" data-uid="FellowOakDicom.Network.AAssociateAC" class="text-break">
-Class AAssociateAC  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L874"><i class="bi bi-code-slash"></i></a>
+Class AAssociateAC  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L876"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -167,7 +167,7 @@ Class AAssociateAC  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="FellowOakDicom_Network_AAssociateAC__ctor_FellowOakDicom_Network_DicomAssociation_FellowOakDicom_Memory_IMemoryProvider_" data-uid="FellowOakDicom.Network.AAssociateAC.#ctor(FellowOakDicom.Network.DicomAssociation,FellowOakDicom.Memory.IMemoryProvider)">
   AAssociateAC(DicomAssociation, IMemoryProvider)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L884"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L886"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes new A-ASSOCIATE-AC</p>
@@ -207,7 +207,7 @@ Class AAssociateAC  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="FellowOakDicom_Network_AAssociateAC_Read_FellowOakDicom_Network_RawPDU_" data-uid="FellowOakDicom.Network.AAssociateAC.Read(FellowOakDicom.Network.RawPDU)">
   Read(RawPDU)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1037"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1040"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads A-ASSOCIATE-AC from PDU buffer</p>
@@ -240,7 +240,7 @@ Class AAssociateAC  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="FellowOakDicom_Network_AAssociateAC_ToString" data-uid="FellowOakDicom.Network.AAssociateAC.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L890"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L892"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -271,7 +271,7 @@ Class AAssociateAC  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="FellowOakDicom_Network_AAssociateAC_WriteAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.AAssociateAC.WriteAsync(System.IO.Stream,System.Threading.CancellationToken)">
   WriteAsync(Stream, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L900"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L902"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Writes A-ASSOCIATE-AC to the provided stream</p>
@@ -279,7 +279,7 @@ Class AAssociateAC  <a class="header-action link-secondary" title="View source" 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task WriteAsync(Stream stream, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;uint&gt; WriteAsync(Stream stream, CancellationToken cancellationToken)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -294,7 +294,7 @@ Class AAssociateAC  <a class="header-action link-secondary" title="View source" 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
     <dd><p>A Task that represents the asynchronous operation</p>
 </dd>
   </dl>

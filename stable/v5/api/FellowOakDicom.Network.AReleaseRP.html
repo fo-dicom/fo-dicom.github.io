@@ -89,7 +89,7 @@
 
 
   <h1 id="FellowOakDicom_Network_AReleaseRP" data-uid="FellowOakDicom.Network.AReleaseRP" class="text-break">
-Class AReleaseRP  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1383"><i class="bi bi-code-slash"></i></a>
+Class AReleaseRP  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1388"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -167,7 +167,7 @@ Class AReleaseRP  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="FellowOakDicom_Network_AReleaseRP__ctor_FellowOakDicom_Memory_IMemoryProvider_" data-uid="FellowOakDicom.Network.AReleaseRP.#ctor(FellowOakDicom.Memory.IMemoryProvider)">
   AReleaseRP(IMemoryProvider)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1391"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1396"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new A-RELEASE-RP</p>
@@ -204,7 +204,7 @@ Class AReleaseRP  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="FellowOakDicom_Network_AReleaseRP_Read_FellowOakDicom_Network_RawPDU_" data-uid="FellowOakDicom.Network.AReleaseRP.Read(FellowOakDicom.Network.RawPDU)">
   Read(RawPDU)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1428"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1434"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads A-RELEASE-RP from PDU buffer</p>
@@ -237,7 +237,7 @@ Class AReleaseRP  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="FellowOakDicom_Network_AReleaseRP_ToString" data-uid="FellowOakDicom.Network.AReleaseRP.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1396"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1401"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -268,7 +268,7 @@ Class AReleaseRP  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="FellowOakDicom_Network_AReleaseRP_WriteAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="FellowOakDicom.Network.AReleaseRP.WriteAsync(System.IO.Stream,System.Threading.CancellationToken)">
   WriteAsync(Stream, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1407"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Network/PDU.cs/#L1412"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Writes A-RELEASE-RP to the provided stream</p>
@@ -276,7 +276,7 @@ Class AReleaseRP  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task WriteAsync(Stream stream, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;uint&gt; WriteAsync(Stream stream, CancellationToken cancellationToken)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -291,7 +291,7 @@ Class AReleaseRP  <a class="header-action link-secondary" title="View source" hr
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
     <dd><p>A Task that represents the asynchronous operation</p>
 </dd>
   </dl>

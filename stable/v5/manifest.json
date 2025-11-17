@@ -4469,6 +4469,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Log.Metrics.INetworkMetricsCollector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Log.Metrics.INetworkMetricsCollector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FellowOakDicom.Log.Metrics.INetworkMetricsCollector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Log.Metrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Log.Metrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FellowOakDicom.Log.Metrics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/FellowOakDicom.Log.yml",
       "output": {
         ".html": {
@@ -6807,6 +6835,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Network.IAsyncDicomService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Network.IAsyncDicomService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FellowOakDicom.Network.IAsyncDicomService",
+      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Network.IAsyncDicomService.yml\" sourcestartlinenumber=\"1\">Common interface for DICOM service users and providers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/FellowOakDicom.Network.IDicomCEchoProvider.yml",
       "output": {
         ".html": {
@@ -7885,6 +7927,16 @@
       "output": {
         ".html": {
           "relative_path": "usage/image_rendering.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "usage/instrumentation.md",
+      "output": {
+        ".html": {
+          "relative_path": "usage/instrumentation.html"
         }
       },
       "version": ""
