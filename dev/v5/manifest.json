@@ -7933,6 +7933,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "usage/instrumentation.md",
+      "output": {
+        ".html": {
+          "relative_path": "usage/instrumentation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "usage/logging_config.md",
       "output": {
         ".html": {
