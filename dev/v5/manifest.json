@@ -6957,7 +6957,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "FellowOakDicom.Network.IDicomServer<TServiceProvider>",
-      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Network.IDicomServer-1.yml\" sourcestartlinenumber=\"1\">Helper interface to ensure type safety when creating DICOM server objects via <pre><code class=\"lang-csharp\">DicomServer.Create</code></pre> overloads.\n"
+      "Summary": "<pre><code sourcefile=\"obj/api/FellowOakDicom.Network.IDicomServer-1.yml\" sourcestartlinenumber=\"1\">Helper interface to ensure type safety when creating DICOM server objects via \n</code></pre>\n<pre><code class=\"lang-csharp\">DicomServer.Create</code></pre>\n<p sourcefile=\"obj/api/FellowOakDicom.Network.IDicomServer-1.yml\" sourcestartlinenumber=\"3\">overloads.</p>\n"
     },
     {
       "type": "ManagedReference",
