@@ -231,7 +231,7 @@ Class DicomDirectory  <a class="header-action link-secondary" title="View source
 
   <h3 id="FellowOakDicom_Media_DicomDirectory__ctor_System_Boolean_" data-uid="FellowOakDicom.Media.DicomDirectory.#ctor(System.Boolean)">
   DicomDirectory(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FellowOakDicom.Media.DicomDirectory.html">DicomDirectory</a> class.</p>
@@ -332,6 +332,39 @@ public bool AutoValidate { get; set; }</code></pre>
     <dd><p>If applied file set ID is null or empty.</p>
 </dd>
   </dl>
+
+
+
+  <a id="FellowOakDicom_Media_DicomDirectory_GenerateImageIcons_" data-uid="FellowOakDicom.Media.DicomDirectory.GenerateImageIcons*"></a>
+
+  <h3 id="FellowOakDicom_Media_DicomDirectory_GenerateImageIcons" data-uid="FellowOakDicom.Media.DicomDirectory.GenerateImageIcons">
+  GenerateImageIcons
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets if icon image sequences should be generated from added files if possible.
+This will only work if an IIconGenerator is registered at startup so that fo-dicom can render the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GenerateImageIcons { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
 
 
 
@@ -471,7 +504,7 @@ public bool AutoValidate { get; set; }</code></pre>
 
   <h3 id="FellowOakDicom_Media_DicomDirectory_AddFile_FellowOakDicom_DicomFile_System_String_" data-uid="FellowOakDicom.Media.DicomDirectory.AddFile(FellowOakDicom.DicomFile,System.String)">
   AddFile(DicomFile, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L474"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Add new file to DICOM directory.</p>
@@ -512,7 +545,7 @@ public bool AutoValidate { get; set; }</code></pre>
 
   <h3 id="FellowOakDicom_Media_DicomDirectory_OnSave" data-uid="FellowOakDicom.Media.DicomDirectory.OnSave">
   OnSave()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L373"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Method to call before performing the actual saving.</p>
@@ -539,7 +572,7 @@ public bool AutoValidate { get; set; }</code></pre>
 
   <h3 id="FellowOakDicom_Media_DicomDirectory_Open_System_IO_Stream_" data-uid="FellowOakDicom.Media.DicomDirectory.Open(System.IO.Stream)">
   Open(Stream)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Read DICOM Directory.</p>
@@ -578,7 +611,7 @@ public bool AutoValidate { get; set; }</code></pre>
 
   <h3 id="FellowOakDicom_Media_DicomDirectory_Open_System_IO_Stream_System_Text_Encoding_System_Func_FellowOakDicom_ParseState_System_Boolean__FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.Media.DicomDirectory.Open(System.IO.Stream,System.Text.Encoding,System.Func{FellowOakDicom.ParseState,System.Boolean},FellowOakDicom.FileReadOption,System.Int32)">
   Open(Stream, Encoding, Func&lt;ParseState, bool&gt;, FileReadOption, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L225"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Read DICOM Directory from stream.</p>
@@ -629,7 +662,7 @@ public bool AutoValidate { get; set; }</code></pre>
 
   <h3 id="FellowOakDicom_Media_DicomDirectory_Open_System_String_" data-uid="FellowOakDicom.Media.DicomDirectory.Open(System.String)">
   Open(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Read DICOM Directory.</p>
@@ -668,7 +701,7 @@ public bool AutoValidate { get; set; }</code></pre>
 
   <h3 id="FellowOakDicom_Media_DicomDirectory_Open_System_String_System_Text_Encoding_System_Func_FellowOakDicom_ParseState_System_Boolean__FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.Media.DicomDirectory.Open(System.String,System.Text.Encoding,System.Func{FellowOakDicom.ParseState,System.Boolean},FellowOakDicom.FileReadOption,System.Int32)">
   Open(string, Encoding, Func&lt;ParseState, bool&gt;, FileReadOption, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Read DICOM Directory.</p>
@@ -719,7 +752,7 @@ public bool AutoValidate { get; set; }</code></pre>
 
   <h3 id="FellowOakDicom_Media_DicomDirectory_OpenAsync_System_IO_Stream_" data-uid="FellowOakDicom.Media.DicomDirectory.OpenAsync(System.IO.Stream)">
   OpenAsync(Stream)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L320"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously read DICOM Directory from stream.</p>
@@ -758,7 +791,7 @@ public bool AutoValidate { get; set; }</code></pre>
 
   <h3 id="FellowOakDicom_Media_DicomDirectory_OpenAsync_System_IO_Stream_System_Text_Encoding_System_Func_FellowOakDicom_ParseState_System_Boolean__FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.Media.DicomDirectory.OpenAsync(System.IO.Stream,System.Text.Encoding,System.Func{FellowOakDicom.ParseState,System.Boolean},FellowOakDicom.FileReadOption,System.Int32)">
   OpenAsync(Stream, Encoding, Func&lt;ParseState, bool&gt;, FileReadOption, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L334"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously read DICOM Directory from stream.</p>
@@ -809,7 +842,7 @@ public bool AutoValidate { get; set; }</code></pre>
 
   <h3 id="FellowOakDicom_Media_DicomDirectory_OpenAsync_System_String_" data-uid="FellowOakDicom.Media.DicomDirectory.OpenAsync(System.String)">
   OpenAsync(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L264"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously read DICOM Directory.</p>
@@ -848,7 +881,7 @@ public bool AutoValidate { get; set; }</code></pre>
 
   <h3 id="FellowOakDicom_Media_DicomDirectory_OpenAsync_System_String_System_Text_Encoding_System_Func_FellowOakDicom_ParseState_System_Boolean__FellowOakDicom_FileReadOption_System_Int32_" data-uid="FellowOakDicom.Media.DicomDirectory.OpenAsync(System.String,System.Text.Encoding,System.Func{FellowOakDicom.ParseState,System.Boolean},FellowOakDicom.FileReadOption,System.Int32)">
   OpenAsync(string, Encoding, Func&lt;ParseState, bool&gt;, FileReadOption, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Media/DicomDirectory.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously read DICOM Directory.</p>

@@ -4623,6 +4623,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Media.DicomIconImageSequenceBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Media.DicomIconImageSequenceBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FellowOakDicom.Media.DicomIconImageSequenceBuilder",
+      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Media.DicomIconImageSequenceBuilder.yml\" sourcestartlinenumber=\"1\">Utility for building DICOM Icon Image Sequences from grayscale pixel data.\nProvides consistent icon formatting across all imaging implementations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/FellowOakDicom.Media.DicomScanCompleteCallback.yml",
       "output": {
         ".html": {
@@ -4662,6 +4676,20 @@
       "IsMRef": true,
       "Title": "FellowOakDicom.Media.DicomScanProgressCallback",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Media.IIconGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Media.IIconGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FellowOakDicom.Media.IIconGenerator",
+      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Media.IIconGenerator.yml\" sourcestartlinenumber=\"1\">Interface for generating DICOMDIR icon images from DICOM datasets.\nIcons are 8-bit grayscale thumbnails, maximum 128x128 pixels with preserved aspect ratio.</p>\n"
     },
     {
       "type": "ManagedReference",
