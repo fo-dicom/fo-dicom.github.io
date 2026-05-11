@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SourceGenerationContext | Fellow Oak DICOM 5 API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SourceGenerationContext | Fellow Oak DICOM 5 API ">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
+            Fellow Oak DICOM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FellowOakDicom.Serialization.SourceGenerationContext">
+
+
+
+  <h1 id="FellowOakDicom_Serialization_SourceGenerationContext" data-uid="FellowOakDicom.Serialization.SourceGenerationContext" class="text-break">
+Class SourceGenerationContext  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FellowOakDicom.html">FellowOakDicom</a>.<a class="xref" href="FellowOakDicom.Serialization.html">Serialization</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>fo-dicom.core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonSerializable(typeof(DicomDataset))]
+[JsonSerializable(typeof(DicomDataset[]))]
+public class SourceGenerationContext : JsonSerializerContext, IJsonTypeInfoResolver</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonserializercontext">JsonSerializerContext</a></div>
+      <div><span class="xref">SourceGenerationContext</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.ijsontypeinforesolver">IJsonTypeInfoResolver</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonserializercontext.options">JsonSerializerContext.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, params T[])</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext__ctor_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.#ctor*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext__ctor" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.#ctor">
+  SourceGenerationContext()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SourceGenerationContext()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext__ctor_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.#ctor*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext__ctor_System_Text_Json_JsonSerializerOptions_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+  SourceGenerationContext(JsonSerializerOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an instance of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonserializercontext">JsonSerializerContext</a> and binds it with the indicated <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SourceGenerationContext(JsonSerializerOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd><p>The run time provided options for the context instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_Boolean_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Boolean*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_Boolean" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Boolean">
+  Boolean
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;bool&gt; Boolean { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_Byte_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Byte*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_Byte" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Byte">
+  Byte
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;byte&gt; Byte { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_Default_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Default*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_Default" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Default">
+  Default
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The default <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonserializercontext">JsonSerializerContext</a> associated with a default <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SourceGenerationContext Default { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Serialization.SourceGenerationContext.html">SourceGenerationContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_DicomDataset_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomDataset*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_DicomDataset" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomDataset">
+  DicomDataset
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;DicomDataset&gt; DicomDataset { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_DicomDatasetArray_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomDatasetArray*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_DicomDatasetArray" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomDatasetArray">
+  DicomDatasetArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;DicomDataset[]&gt; DicomDatasetArray { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a>[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_DicomDictionaryEntry_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomDictionaryEntry*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_DicomDictionaryEntry" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomDictionaryEntry">
+  DicomDictionaryEntry
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;DicomDictionaryEntry&gt; DicomDictionaryEntry { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="FellowOakDicom.DicomDictionaryEntry.html">DicomDictionaryEntry</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_DicomItem_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomItem*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_DicomItem" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomItem">
+  DicomItem
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;DicomItem&gt; DicomItem { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="FellowOakDicom.DicomItem.html">DicomItem</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_DicomMaskedTag_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomMaskedTag*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_DicomMaskedTag" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomMaskedTag">
+  DicomMaskedTag
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;DicomMaskedTag&gt; DicomMaskedTag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="FellowOakDicom.DicomMaskedTag.html">DicomMaskedTag</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_DicomPrivateCreator_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomPrivateCreator*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_DicomPrivateCreator" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomPrivateCreator">
+  DicomPrivateCreator
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;DicomPrivateCreator&gt; DicomPrivateCreator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="FellowOakDicom.DicomPrivateCreator.html">DicomPrivateCreator</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_DicomTag_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomTag*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_DicomTag" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomTag">
+  DicomTag
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;DicomTag&gt; DicomTag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="FellowOakDicom.DicomTag.html">DicomTag</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_DicomVM_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomVM*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_DicomVM" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomVM">
+  DicomVM
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;DicomVM&gt; DicomVM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="FellowOakDicom.DicomVM.html">DicomVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_DicomVR_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomVR*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_DicomVR" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomVR">
+  DicomVR
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;DicomVR&gt; DicomVR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="FellowOakDicom.DicomVR.html">DicomVR</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_DicomVRArray_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomVRArray*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_DicomVRArray" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.DicomVRArray">
+  DicomVRArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;DicomVR[]&gt; DicomVRArray { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="FellowOakDicom.DicomVR.html">DicomVR</a>[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_GeneratedSerializerOptions_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.GeneratedSerializerOptions*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_GeneratedSerializerOptions" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.GeneratedSerializerOptions">
+  GeneratedSerializerOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The source-generated options associated with this context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override JsonSerializerOptions? GeneratedSerializerOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_Int32_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Int32*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_Int32" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Int32">
+  Int32
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;int&gt; Int32 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_String_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.String*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_String" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.String">
+  String
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;string&gt; String { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_Type_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Type*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_Type" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Type">
+  Type
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;Type&gt; Type { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_UInt16_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.UInt16*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_UInt16" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.UInt16">
+  UInt16
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;ushort&gt; UInt16 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_UInt32_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.UInt32*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_UInt32" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.UInt32">
+  UInt32
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;uint&gt; UInt32 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_Create_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Create*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_Create_System_Boolean_System_Collections_Generic_IEnumerable_System_Text_Json_Serialization_JsonConverter__" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Create(System.Boolean,System.Collections.Generic.IEnumerable{System.Text.Json.Serialization.JsonConverter})">
+  Create(bool, IEnumerable&lt;JsonConverter&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Serialization/SourceGenerationContext.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnconditionalSuppressMessage(&quot;AssemblyLoadTrimming&quot;, &quot;IL2026:RequiresUnreferencedCode&quot;, Justification = &quot;The returned options will be populated with a JsonSerializerContext&quot;)]
+[UnconditionalSuppressMessage(&quot;AOT&quot;, &quot;IL3050:RequiresDynamicCode&quot;, Justification = &quot;The returned options will be populated with a JsonSerializerContext&quot;)]
+public static SourceGenerationContext Create(bool formatIndented, IEnumerable&lt;JsonConverter&gt; converters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formatIndented</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>converters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter">JsonConverter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Serialization.SourceGenerationContext.html">SourceGenerationContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_Create_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Create*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_Create_System_Boolean_System_Text_Json_Serialization_JsonConverter___" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.Create(System.Boolean,System.Text.Json.Serialization.JsonConverter[])">
+  Create(bool, params JsonConverter[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Serialization/SourceGenerationContext.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SourceGenerationContext Create(bool formatIntended, params JsonConverter[] converters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formatIntended</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>converters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter">JsonConverter</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Serialization.SourceGenerationContext.html">SourceGenerationContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Serialization_SourceGenerationContext_GetTypeInfo_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.GetTypeInfo*"></a>
+
+  <h3 id="FellowOakDicom_Serialization_SourceGenerationContext_GetTypeInfo_System_Type_" data-uid="FellowOakDicom.Serialization.SourceGenerationContext.GetTypeInfo(System.Type)">
+  GetTypeInfo(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets metadata for the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override JsonTypeInfo? GetTypeInfo(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type to fetch metadata for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo">JsonTypeInfo</a></dt>
+    <dd><p>The metadata for the specified type, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the context has no metadata for the type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2012-2026 fo-dicom contributors
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

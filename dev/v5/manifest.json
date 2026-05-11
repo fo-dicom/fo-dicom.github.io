@@ -899,20 +899,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.DicomParseable.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.DicomParseable.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.DicomParseable",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "obj/api/FellowOakDicom.DicomPersonName.yml",
       "output": {
         ".html": {
@@ -7535,6 +7521,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Serialization.JsonExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Serialization.JsonExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FellowOakDicom.Serialization.JsonExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/FellowOakDicom.Serialization.NumberSerializationMode.yml",
       "output": {
         ".html": {
@@ -7546,6 +7546,20 @@
       "IsMRef": true,
       "Title": "FellowOakDicom.Serialization.NumberSerializationMode",
       "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Serialization.NumberSerializationMode.yml\" sourcestartlinenumber=\"1\">Defines the way DICOM numbers (tags with VR: IS, DS, SV and UV) should be serialized</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Serialization.SourceGenerationContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Serialization.SourceGenerationContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FellowOakDicom.Serialization.SourceGenerationContext",
+      "Summary": null
     },
     {
       "type": "ManagedReference",

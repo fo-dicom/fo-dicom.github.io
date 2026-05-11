@@ -153,7 +153,16 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader.read#system-io-binaryreader-read(system-char()-system-int32-system-int32)">BinaryReader.Read(char[], int, int)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader.read#system-io-binaryreader-read(system-span((system-byte)))">BinaryReader.Read(Span&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader.read#system-io-binaryreader-read(system-span((system-char)))">BinaryReader.Read(Span&lt;char&gt;)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader.read7bitencodedint">BinaryReader.Read7BitEncodedInt()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader.read7bitencodedint64">BinaryReader.Read7BitEncodedInt64()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader.readboolean">BinaryReader.ReadBoolean()</a>
@@ -172,6 +181,9 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader.readdecimal">BinaryReader.ReadDecimal()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader.readhalf">BinaryReader.ReadHalf()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader.readsbyte">BinaryReader.ReadSByte()</a>
@@ -548,7 +560,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L591"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads an 8-byte floating point value from the current stream and advances the current position of the stream by eight bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -559,7 +572,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>An 8-byte floating point value read from the current stream.</p>
+</dd>
   </dl>
 
 
@@ -569,6 +583,18 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>The end of the stream is reached.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurred.</p>
+</dd>
+  </dl>
 
 
 
@@ -579,7 +605,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L550"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads a 2-byte signed integer from the current stream and advances the current position of the stream by two bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -590,7 +617,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
-    <dd></dd>
+    <dd><p>A 2-byte signed integer read from the current stream.</p>
+</dd>
   </dl>
 
 
@@ -600,6 +628,18 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>The end of the stream is reached.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurred.</p>
+</dd>
+  </dl>
 
 
 
@@ -610,7 +650,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L560"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads a 4-byte signed integer from the current stream and advances the current position of the stream by four bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -621,7 +662,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>A 4-byte signed integer read from the current stream.</p>
+</dd>
   </dl>
 
 
@@ -631,6 +673,18 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>The end of the stream is reached.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurred.</p>
+</dd>
+  </dl>
 
 
 
@@ -641,7 +695,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L570"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads an 8-byte signed integer from the current stream and advances the current position of the stream by eight bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -652,7 +707,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd></dd>
+    <dd><p>An 8-byte signed integer read from the current stream.</p>
+</dd>
   </dl>
 
 
@@ -662,6 +718,18 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>The end of the stream is reached.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurred.</p>
+</dd>
+  </dl>
 
 
 
@@ -672,7 +740,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L580"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads a 4-byte floating point value from the current stream and advances the current position of the stream by four bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -683,7 +752,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>A 4-byte floating point value read from the current stream.</p>
+</dd>
   </dl>
 
 
@@ -693,6 +763,18 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>The end of the stream is reached.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurred.</p>
+</dd>
+  </dl>
 
 
 
@@ -703,7 +785,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L602"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads a 2-byte unsigned integer from the current stream using little-endian encoding and advances the position of the stream by two bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -714,7 +797,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
-    <dd></dd>
+    <dd><p>A 2-byte unsigned integer read from this stream.</p>
+</dd>
   </dl>
 
 
@@ -724,6 +808,18 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>The end of the stream is reached.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurred.</p>
+</dd>
+  </dl>
 
 
 
@@ -734,7 +830,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L612"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads a 4-byte unsigned integer from the current stream and advances the position of the stream by four bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -745,7 +842,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>A 4-byte unsigned integer read from this stream.</p>
+</dd>
   </dl>
 
 
@@ -755,6 +853,18 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>The end of the stream is reached.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurred.</p>
+</dd>
+  </dl>
 
 
 
@@ -765,7 +875,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L622"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads an 8-byte unsigned integer from the current stream and advances the position of the stream by eight bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -776,7 +887,8 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
-    <dd></dd>
+    <dd><p>An 8-byte unsigned integer read from this stream.</p>
+</dd>
   </dl>
 
 
@@ -786,6 +898,18 @@ Class EndianBinaryReader  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception">EndOfStreamException</a></dt>
+    <dd><p>The end of the stream is reached.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurred.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+  </dl>
 
 
 

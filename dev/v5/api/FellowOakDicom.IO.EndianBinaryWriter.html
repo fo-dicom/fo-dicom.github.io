@@ -102,7 +102,7 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EndianBinaryWriter : BinaryWriter, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class EndianBinaryWriter : BinaryWriter, IAsyncDisposable, IDisposable</code></pre>
   </div>
 
 
@@ -120,6 +120,7 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     </dd>
   </dl>
@@ -142,6 +143,9 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter.dispose#system-io-binarywriter-dispose(system-boolean)">BinaryWriter.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter.disposeasync">BinaryWriter.DisposeAsync()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter.flush">BinaryWriter.Flush()</a>
@@ -174,6 +178,15 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter.write#system-io-binarywriter-write(system-decimal)">BinaryWriter.Write(decimal)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter.write#system-io-binarywriter-write(system-half)">BinaryWriter.Write(Half)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter.write#system-io-binarywriter-write(system-readonlyspan((system-byte)))">BinaryWriter.Write(ReadOnlySpan&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter.write#system-io-binarywriter-write(system-readonlyspan((system-char)))">BinaryWriter.Write(ReadOnlySpan&lt;char&gt;)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter.write#system-io-binarywriter-write(system-sbyte)">BinaryWriter.Write(sbyte)</a>
     </div>
     <div>
@@ -181,6 +194,9 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter.write7bitencodedint">BinaryWriter.Write7BitEncodedInt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter.write7bitencodedint64">BinaryWriter.Write7BitEncodedInt64(long)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter.basestream">BinaryWriter.BaseStream</a>
@@ -526,7 +542,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L822"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes an eight-byte floating-point value to the current stream and advances the stream position by eight bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -536,7 +553,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>The eight-byte floating-point value to write.</p>
+</dd>
   </dl>
 
 
@@ -547,6 +565,15 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurs.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+  </dl>
 
 
 
@@ -557,7 +584,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L878"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes a two-byte signed integer to the current stream and advances the stream position by two bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -567,7 +595,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
-    <dd></dd>
+    <dd><p>The two-byte signed integer to write.</p>
+</dd>
   </dl>
 
 
@@ -578,6 +607,15 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurs.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+  </dl>
 
 
 
@@ -588,7 +626,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L850"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes a four-byte signed integer to the current stream and advances the stream position by four bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -598,7 +637,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The four-byte signed integer to write.</p>
+</dd>
   </dl>
 
 
@@ -609,6 +649,15 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurs.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+  </dl>
 
 
 
@@ -619,7 +668,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L864"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes an eight-byte signed integer to the current stream and advances the stream position by eight bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -629,7 +679,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd></dd>
+    <dd><p>The eight-byte signed integer to write.</p>
+</dd>
   </dl>
 
 
@@ -640,6 +691,15 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurs.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+  </dl>
 
 
 
@@ -650,7 +710,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L836"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes a four-byte floating-point value to the current stream and advances the stream position by four bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -660,7 +721,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The four-byte floating-point value to write.</p>
+</dd>
   </dl>
 
 
@@ -671,6 +733,15 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurs.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+  </dl>
 
 
 
@@ -681,7 +752,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L920"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes a two-byte unsigned integer to the current stream and advances the stream position by two bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -691,7 +763,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
-    <dd></dd>
+    <dd><p>The two-byte unsigned integer to write.</p>
+</dd>
   </dl>
 
 
@@ -702,6 +775,15 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurs.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+  </dl>
 
 
 
@@ -712,7 +794,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L892"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes a four-byte unsigned integer to the current stream and advances the stream position by four bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -722,7 +805,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The four-byte unsigned integer to write.</p>
+</dd>
   </dl>
 
 
@@ -733,6 +817,15 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurs.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+  </dl>
 
 
 
@@ -743,7 +836,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/IO/Endian.cs/#L906"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes an eight-byte unsigned integer to the current stream and advances the stream position by eight bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -753,7 +847,8 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
-    <dd></dd>
+    <dd><p>The eight-byte unsigned integer to write.</p>
+</dd>
   </dl>
 
 
@@ -764,6 +859,15 @@ Class EndianBinaryWriter  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurs.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+  </dl>
 
 
 
