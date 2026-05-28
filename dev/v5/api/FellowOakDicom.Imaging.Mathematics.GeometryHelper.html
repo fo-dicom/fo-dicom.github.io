@@ -89,7 +89,7 @@
 
 
   <h1 id="FellowOakDicom_Imaging_Mathematics_GeometryHelper" data-uid="FellowOakDicom.Imaging.Mathematics.GeometryHelper" class="text-break">
-Class GeometryHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/GeometryHelper.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class GeometryHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/GeometryHelper.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -156,7 +156,7 @@ Class GeometryHelper  <a class="header-action link-secondary" title="View source
 
   <h3 id="FellowOakDicom_Imaging_Mathematics_GeometryHelper_GetBoundingBox_FellowOakDicom_Imaging_FrameGeometry_" data-uid="FellowOakDicom.Imaging.Mathematics.GeometryHelper.GetBoundingBox(FellowOakDicom.Imaging.FrameGeometry)">
   GetBoundingBox(FrameGeometry)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/GeometryHelper.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/GeometryHelper.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Finds the bounding box of the geometry by finding the bounding box of the 4 corners</p>
@@ -164,7 +164,7 @@ Class GeometryHelper  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static (Point3D min, Point3D max) GetBoundingBox(this FrameGeometry geometry)</code></pre>
+    <pre><code class="lang-csharp hljs">public static (Point3&lt;decimal&gt; min, Point3&lt;decimal&gt; max) GetBoundingBox(this FrameGeometry geometry)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -175,7 +175,7 @@ Class GeometryHelper  <a class="header-action link-secondary" title="View source
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt>(<a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-fellowoakdicom.imaging.mathematics.point3d,fellowoakdicom.imaging.mathematics.point3d-.min">min</a>, <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-fellowoakdicom.imaging.mathematics.point3d,fellowoakdicom.imaging.mathematics.point3d-.max">max</a>)</dt>
+    <dt>(<a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-fellowoakdicom.imaging.mathematics.point3-system.decimal-,fellowoakdicom.imaging.mathematics.point3-system.decimal--.min">min</a>, <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-fellowoakdicom.imaging.mathematics.point3-system.decimal-,fellowoakdicom.imaging.mathematics.point3-system.decimal--.max">max</a>)</dt>
     <dd></dd>
   </dl>
 
@@ -191,9 +191,9 @@ Class GeometryHelper  <a class="header-action link-secondary" title="View source
 
   <a id="FellowOakDicom_Imaging_Mathematics_GeometryHelper_GetBoundingBox_" data-uid="FellowOakDicom.Imaging.Mathematics.GeometryHelper.GetBoundingBox*"></a>
 
-  <h3 id="FellowOakDicom_Imaging_Mathematics_GeometryHelper_GetBoundingBox_System_Collections_Generic_IEnumerable_FellowOakDicom_Imaging_Mathematics_Point3D__" data-uid="FellowOakDicom.Imaging.Mathematics.GeometryHelper.GetBoundingBox(System.Collections.Generic.IEnumerable{FellowOakDicom.Imaging.Mathematics.Point3D})">
-  GetBoundingBox(IEnumerable&lt;Point3D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/GeometryHelper.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <h3 id="FellowOakDicom_Imaging_Mathematics_GeometryHelper_GetBoundingBox__1_System_Collections_Generic_IEnumerable_FellowOakDicom_Imaging_Mathematics_Point3___0___" data-uid="FellowOakDicom.Imaging.Mathematics.GeometryHelper.GetBoundingBox``1(System.Collections.Generic.IEnumerable{FellowOakDicom.Imaging.Mathematics.Point3{``0}})">
+  GetBoundingBox&lt;T&gt;(IEnumerable&lt;Point3&lt;T&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/GeometryHelper.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Finds the bounding box of a list of points in space.</p>
@@ -201,21 +201,26 @@ Class GeometryHelper  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static (Point3D min, Point3D max) GetBoundingBox(this IEnumerable&lt;Point3D&gt; points)</code></pre>
+    <pre><code class="lang-csharp hljs">public static (Point3&lt;T&gt; min, Point3&lt;T&gt; max) GetBoundingBox&lt;T&gt;(this IEnumerable&lt;Point3&lt;T&gt;&gt; points) where T : INumber&lt;T&gt;</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>points</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a>&gt;</dt>
+    <dt><code>points</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;T&gt;&gt;</dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt>(<a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-fellowoakdicom.imaging.mathematics.point3d,fellowoakdicom.imaging.mathematics.point3d-.min">min</a>, <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-fellowoakdicom.imaging.mathematics.point3d,fellowoakdicom.imaging.mathematics.point3d-.max">max</a>)</dt>
+    <dt>(<a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;T&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-fellowoakdicom.imaging.mathematics.point3---0-,fellowoakdicom.imaging.mathematics.point3---0--.min">min</a>, <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;T&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-fellowoakdicom.imaging.mathematics.point3---0-,fellowoakdicom.imaging.mathematics.point3---0--.max">max</a>)</dt>
     <dd></dd>
   </dl>
 
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -230,7 +235,7 @@ Class GeometryHelper  <a class="header-action link-secondary" title="View source
 
   <h3 id="FellowOakDicom_Imaging_Mathematics_GeometryHelper_Min_System_Double___" data-uid="FellowOakDicom.Imaging.Mathematics.GeometryHelper.Min(System.Double[])">
   Min(params double[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/GeometryHelper.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/GeometryHelper.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the minimal value of all the values</p>

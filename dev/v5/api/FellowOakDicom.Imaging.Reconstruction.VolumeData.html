@@ -164,7 +164,7 @@ Class VolumeData  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="FellowOakDicom_Imaging_Reconstruction_VolumeData__ctor_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.#ctor(FellowOakDicom.DicomDataset)">
   VolumeData(DicomDataset)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructs a VolumeData object from a multi-layer dataset (eg. Enhanced CT).
@@ -198,7 +198,7 @@ It is strongly recommended this dataset is already decompressed before being pas
 
   <h3 id="FellowOakDicom_Imaging_Reconstruction_VolumeData__ctor_System_Collections_Generic_IEnumerable_FellowOakDicom_Imaging_Reconstruction_ImageData__" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.#ctor(System.Collections.Generic.IEnumerable{FellowOakDicom.Imaging.Reconstruction.ImageData})">
   VolumeData(IEnumerable&lt;ImageData&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -240,7 +240,7 @@ It is strongly recommended this dataset is already decompressed before being pas
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Point3D BoundingMax { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Point3&lt;decimal&gt; BoundingMax { get; }</code></pre>
   </div>
 
 
@@ -249,7 +249,7 @@ It is strongly recommended this dataset is already decompressed before being pas
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -271,7 +271,7 @@ It is strongly recommended this dataset is already decompressed before being pas
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Point3D BoundingMin { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Point3&lt;decimal&gt; BoundingMin { get; }</code></pre>
   </div>
 
 
@@ -280,7 +280,7 @@ It is strongly recommended this dataset is already decompressed before being pas
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -295,7 +295,7 @@ It is strongly recommended this dataset is already decompressed before being pas
 
   <h3 id="FellowOakDicom_Imaging_Reconstruction_VolumeData_CommonData" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.CommonData">
   CommonData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -326,7 +326,7 @@ It is strongly recommended this dataset is already decompressed before being pas
 
   <h3 id="FellowOakDicom_Imaging_Reconstruction_VolumeData_Lut" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.Lut">
   Lut
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -364,7 +364,7 @@ It is strongly recommended this dataset is already decompressed before being pas
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double PixelSpacingInSource { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public decimal PixelSpacingInSource { get; }</code></pre>
   </div>
 
 
@@ -373,7 +373,7 @@ It is strongly recommended this dataset is already decompressed before being pas
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
     <dd></dd>
   </dl>
 
@@ -395,7 +395,7 @@ It is strongly recommended this dataset is already decompressed before being pas
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IntervalD SliceSpaces { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Interval&lt;decimal&gt; SliceSpaces { get; }</code></pre>
   </div>
 
 
@@ -404,7 +404,7 @@ It is strongly recommended this dataset is already decompressed before being pas
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.IntervalD.html">IntervalD</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Interval-1.html">Interval</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -421,9 +421,9 @@ It is strongly recommended this dataset is already decompressed before being pas
 
   <a id="FellowOakDicom_Imaging_Reconstruction_VolumeData_GetCut_" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.GetCut*"></a>
 
-  <h3 id="FellowOakDicom_Imaging_Reconstruction_VolumeData_GetCut_FellowOakDicom_Imaging_Mathematics_Point3D_FellowOakDicom_Imaging_Mathematics_Vector3D_FellowOakDicom_Imaging_Mathematics_Vector3D_System_Int32_System_Int32_System_Double_" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.GetCut(FellowOakDicom.Imaging.Mathematics.Point3D,FellowOakDicom.Imaging.Mathematics.Vector3D,FellowOakDicom.Imaging.Mathematics.Vector3D,System.Int32,System.Int32,System.Double)">
-  GetCut(Point3D, Vector3D, Vector3D, int, int, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <h3 id="FellowOakDicom_Imaging_Reconstruction_VolumeData_GetCut_FellowOakDicom_Imaging_Mathematics_Point3_System_Decimal__FellowOakDicom_Imaging_Mathematics_Vector3_System_Decimal__FellowOakDicom_Imaging_Mathematics_Vector3_System_Decimal__System_Int32_System_Int32_System_Decimal_" data-uid="FellowOakDicom.Imaging.Reconstruction.VolumeData.GetCut(FellowOakDicom.Imaging.Mathematics.Point3{System.Decimal},FellowOakDicom.Imaging.Mathematics.Vector3{System.Decimal},FellowOakDicom.Imaging.Mathematics.Vector3{System.Decimal},System.Int32,System.Int32,System.Decimal)">
+  GetCut(Point3&lt;decimal&gt;, Vector3&lt;decimal&gt;, Vector3&lt;decimal&gt;, int, int, decimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/VolumeData.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>['1', '0', '0', '0', '0', '-1'] you are dealing with Coronal plane view
@@ -433,22 +433,22 @@ It is strongly recommended this dataset is already decompressed before being pas
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double[] GetCut(Point3D topleft, Vector3D rowDir, Vector3D colDir, int rows, int cols, double spacing)</code></pre>
+    <pre><code class="lang-csharp hljs">public double[] GetCut(Point3&lt;decimal&gt; topleft, Vector3&lt;decimal&gt; rowDir, Vector3&lt;decimal&gt; colDir, int rows, int cols, decimal spacing)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>topleft</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a></dt>
+    <dt><code>topleft</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
-    <dt><code>rowDir</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3D.html">Vector3D</a></dt>
+    <dt><code>rowDir</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
-    <dt><code>colDir</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3D.html">Vector3D</a></dt>
+    <dt><code>colDir</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
     <dt><code>rows</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
     <dt><code>cols</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
-    <dt><code>spacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dt><code>spacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
     <dd></dd>
   </dl>
 

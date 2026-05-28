@@ -89,7 +89,7 @@
 
 
   <h1 id="FellowOakDicom_Imaging_FrameGeometry" data-uid="FellowOakDicom.Imaging.FrameGeometry" class="text-break">
-Class FrameGeometry  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L27"><i class="bi bi-code-slash"></i></a>
+Class FrameGeometry  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -166,7 +166,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry__ctor_FellowOakDicom_DicomDataset_System_Int32_" data-uid="FellowOakDicom.Imaging.FrameGeometry.#ctor(FellowOakDicom.DicomDataset,System.Int32)">
   FrameGeometry(DicomDataset, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A convenience class that extracts all data from a DicomDataset, that is relevant for geometry calculations.</p>
@@ -200,27 +200,27 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <a id="FellowOakDicom_Imaging_FrameGeometry__ctor_" data-uid="FellowOakDicom.Imaging.FrameGeometry.#ctor*"></a>
 
-  <h3 id="FellowOakDicom_Imaging_FrameGeometry__ctor_System_String_System_Double___System_Double___System_Double___System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.FrameGeometry.#ctor(System.String,System.Double[],System.Double[],System.Double[],System.Int32,System.Int32)">
-  FrameGeometry(string, double[], double[], double[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <h3 id="FellowOakDicom_Imaging_FrameGeometry__ctor_System_String_System_Decimal___System_Decimal___System_Decimal___System_Int32_System_Int32_" data-uid="FellowOakDicom.Imaging.FrameGeometry.#ctor(System.String,System.Decimal[],System.Decimal[],System.Decimal[],System.Int32,System.Int32)">
+  FrameGeometry(string, decimal[], decimal[], decimal[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FrameGeometry(string frameOfReferenceUid, double[] imagePatientPosition, double[] imagePatientOrientation, double[] pixelSpacing, int width, int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public FrameGeometry(string frameOfReferenceUid, decimal[] imagePatientPosition, decimal[] imagePatientOrientation, decimal[] pixelSpacing, int width, int height)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>frameOfReferenceUid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>imagePatientPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dt><code>imagePatientPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>[]</dt>
     <dd></dd>
-    <dt><code>imagePatientOrientation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dt><code>imagePatientOrientation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>[]</dt>
     <dd></dd>
-    <dt><code>pixelSpacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dt><code>pixelSpacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>[]</dt>
     <dd></dd>
     <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
@@ -247,14 +247,14 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_DirectionColumn" data-uid="FellowOakDicom.Imaging.FrameGeometry.DirectionColumn">
   DirectionColumn
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3D DirectionColumn { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3&lt;decimal&gt; DirectionColumn { get; }</code></pre>
   </div>
 
 
@@ -263,7 +263,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3D.html">Vector3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -278,14 +278,14 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_DirectionNormal" data-uid="FellowOakDicom.Imaging.FrameGeometry.DirectionNormal">
   DirectionNormal
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3D DirectionNormal { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3&lt;decimal&gt; DirectionNormal { get; }</code></pre>
   </div>
 
 
@@ -294,7 +294,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3D.html">Vector3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -309,14 +309,14 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_DirectionRow" data-uid="FellowOakDicom.Imaging.FrameGeometry.DirectionRow">
   DirectionRow
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3D DirectionRow { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3&lt;decimal&gt; DirectionRow { get; }</code></pre>
   </div>
 
 
@@ -325,7 +325,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3D.html">Vector3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -340,7 +340,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_FrameOfReferenceUid" data-uid="FellowOakDicom.Imaging.FrameGeometry.FrameOfReferenceUid">
   FrameOfReferenceUid
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -371,7 +371,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_FrameSize" data-uid="FellowOakDicom.Imaging.FrameGeometry.FrameSize">
   FrameSize
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -402,7 +402,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_GeometryType" data-uid="FellowOakDicom.Imaging.FrameGeometry.GeometryType">
   GeometryType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -433,7 +433,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_HasGeometryData" data-uid="FellowOakDicom.Imaging.FrameGeometry.HasGeometryData">
   HasGeometryData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -464,7 +464,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_Orientation" data-uid="FellowOakDicom.Imaging.FrameGeometry.Orientation">
   Orientation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -495,14 +495,14 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_PixelSpacingBetweenColumns" data-uid="FellowOakDicom.Imaging.FrameGeometry.PixelSpacingBetweenColumns">
   PixelSpacingBetweenColumns
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double PixelSpacingBetweenColumns { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public decimal PixelSpacingBetweenColumns { get; }</code></pre>
   </div>
 
 
@@ -511,7 +511,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
     <dd></dd>
   </dl>
 
@@ -526,14 +526,14 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_PixelSpacingBetweenRows" data-uid="FellowOakDicom.Imaging.FrameGeometry.PixelSpacingBetweenRows">
   PixelSpacingBetweenRows
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double PixelSpacingBetweenRows { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public decimal PixelSpacingBetweenRows { get; }</code></pre>
   </div>
 
 
@@ -542,7 +542,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
     <dd></dd>
   </dl>
 
@@ -557,14 +557,14 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_PointBottomLeft" data-uid="FellowOakDicom.Imaging.FrameGeometry.PointBottomLeft">
   PointBottomLeft
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Point3D PointBottomLeft { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Point3&lt;decimal&gt; PointBottomLeft { get; }</code></pre>
   </div>
 
 
@@ -573,7 +573,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -588,14 +588,14 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_PointBottomRight" data-uid="FellowOakDicom.Imaging.FrameGeometry.PointBottomRight">
   PointBottomRight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Point3D PointBottomRight { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Point3&lt;decimal&gt; PointBottomRight { get; }</code></pre>
   </div>
 
 
@@ -604,7 +604,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -619,14 +619,14 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_PointTopLeft" data-uid="FellowOakDicom.Imaging.FrameGeometry.PointTopLeft">
   PointTopLeft
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Point3D PointTopLeft { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Point3&lt;decimal&gt; PointTopLeft { get; }</code></pre>
   </div>
 
 
@@ -635,7 +635,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -650,14 +650,14 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_PointTopRight" data-uid="FellowOakDicom.Imaging.FrameGeometry.PointTopRight">
   PointTopRight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Point3D PointTopRight { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Point3&lt;decimal&gt; PointTopRight { get; }</code></pre>
   </div>
 
 
@@ -666,7 +666,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -685,14 +685,14 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h3 id="FellowOakDicom_Imaging_FrameGeometry_TransformImagePointToPatient_FellowOakDicom_Imaging_Mathematics_Point2_" data-uid="FellowOakDicom.Imaging.FrameGeometry.TransformImagePointToPatient(FellowOakDicom.Imaging.Mathematics.Point2)">
   TransformImagePointToPatient(Point2)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Point3D TransformImagePointToPatient(Point2 imagePoint)</code></pre>
+    <pre><code class="lang-csharp hljs">public Point3&lt;decimal&gt; TransformImagePointToPatient(Point2 imagePoint)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -703,7 +703,7 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -719,27 +719,27 @@ Class FrameGeometry  <a class="header-action link-secondary" title="View source"
 
   <a id="FellowOakDicom_Imaging_FrameGeometry_TransformPatientPointToImage_" data-uid="FellowOakDicom.Imaging.FrameGeometry.TransformPatientPointToImage*"></a>
 
-  <h3 id="FellowOakDicom_Imaging_FrameGeometry_TransformPatientPointToImage_FellowOakDicom_Imaging_Mathematics_Point3D_" data-uid="FellowOakDicom.Imaging.FrameGeometry.TransformPatientPointToImage(FellowOakDicom.Imaging.Mathematics.Point3D)">
-  TransformPatientPointToImage(Point3D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  <h3 id="FellowOakDicom_Imaging_FrameGeometry_TransformPatientPointToImage_FellowOakDicom_Imaging_Mathematics_Point3_System_Decimal__" data-uid="FellowOakDicom.Imaging.FrameGeometry.TransformPatientPointToImage(FellowOakDicom.Imaging.Mathematics.Point3{System.Decimal})">
+  TransformPatientPointToImage(Point3&lt;decimal&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/FrameGeometry.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Point2D TransformPatientPointToImage(Point3D patientPoint)</code></pre>
+    <pre><code class="lang-csharp hljs">public Point2&lt;decimal&gt; TransformPatientPointToImage(Point3&lt;decimal&gt; patientPoint)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>patientPoint</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a></dt>
+    <dt><code>patientPoint</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point2D.html">Point2D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point2-1.html">Point2</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 

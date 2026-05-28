@@ -3503,30 +3503,44 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.IntervalD.yml",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Interval-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.IntervalD.html"
+          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Interval-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.IntervalD",
-      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Imaging.Mathematics.IntervalD.yml\" sourcestartlinenumber=\"1\">Represents an interval of double values</p>\n"
+      "Title": "FellowOakDicom.Imaging.Mathematics.Interval<T>",
+      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Imaging.Mathematics.Interval-1.yml\" sourcestartlinenumber=\"1\">Represents an interval of double values</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Line3D.yml",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Line3-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Line3D.html"
+          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Line3-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.Line3D",
+      "Title": "FellowOakDicom.Imaging.Mathematics.Line3<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Matrix-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Matrix-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FellowOakDicom.Imaging.Mathematics.Matrix<T>",
       "Summary": null
     },
     {
@@ -3545,30 +3559,16 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.MatrixD.yml",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.MovingAverage-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.MatrixD.html"
+          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.MovingAverage-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.MatrixD",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.MatrixF.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.MatrixF.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.MatrixF",
+      "Title": "FellowOakDicom.Imaging.Mathematics.MovingAverage<T>",
       "Summary": null
     },
     {
@@ -3587,59 +3587,45 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.MovingAverageD.yml",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Orientation3-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.MovingAverageD.html"
+          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Orientation3-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.MovingAverageD",
+      "Title": "FellowOakDicom.Imaging.Mathematics.Orientation3<T>",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.MovingAverageF.yml",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Plane3-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.MovingAverageF.html"
+          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Plane3-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.MovingAverageF",
+      "Title": "FellowOakDicom.Imaging.Mathematics.Plane3<T>",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Orientation3D.yml",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Point2-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Orientation3D.html"
+          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Point2-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.Orientation3D",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Plane3D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Plane3D.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.Plane3D",
-      "Summary": null
+      "Title": "FellowOakDicom.Imaging.Mathematics.Point2<T>",
+      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Imaging.Mathematics.Point2-1.yml\" sourcestartlinenumber=\"1\">Coordinate in 2D space with floating point values</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3657,86 +3643,72 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Point2D.yml",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Point3-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Point2D.html"
+          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Point3-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.Point2D",
-      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Imaging.Mathematics.Point2D.yml\" sourcestartlinenumber=\"1\">Coordinate in 2D space with floating point values</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Point3D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Point3D.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.Point3D",
+      "Title": "FellowOakDicom.Imaging.Mathematics.Point3<T>",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.RectF.yml",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Rect-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.RectF.html"
+          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Rect-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.RectF",
-      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Imaging.Mathematics.RectF.yml\" sourcestartlinenumber=\"1\">Representation of a floating-point rectangle.</p>\n"
+      "Title": "FellowOakDicom.Imaging.Mathematics.Rect<T>",
+      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Imaging.Mathematics.Rect-1.yml\" sourcestartlinenumber=\"1\">Representation of a floating-point rectangle.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Segment3D.yml",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Segment3-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Segment3D.html"
+          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Segment3-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.Segment3D",
+      "Title": "FellowOakDicom.Imaging.Mathematics.Segment3<T>",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Slice3D.yml",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Slice3-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Slice3D.html"
+          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Slice3-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.Slice3D",
+      "Title": "FellowOakDicom.Imaging.Mathematics.Slice3<T>",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Vector3D.yml",
+      "source_relative_path": "obj/api/FellowOakDicom.Imaging.Mathematics.Vector3-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Vector3D.html"
+          "relative_path": "api/FellowOakDicom.Imaging.Mathematics.Vector3-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "FellowOakDicom.Imaging.Mathematics.Vector3D",
+      "Title": "FellowOakDicom.Imaging.Mathematics.Vector3<T>",
       "Summary": null
     },
     {

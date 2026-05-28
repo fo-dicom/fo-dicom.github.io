@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Vector3&lt;T&gt; | Fellow Oak DICOM 5 API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Vector3&lt;T&gt; | Fellow Oak DICOM 5 API ">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/fo-dicom/fo-dicom/new/development/apiSpec/new?filename=FellowOakDicom_Imaging_Mathematics_Vector3_1.md&amp;value=---%0Auid%3A%20FellowOakDicom.Imaging.Mathematics.Vector3%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Fellow Oak DICOM">
+            Fellow Oak DICOM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1">
+
+
+
+  <h1 id="FellowOakDicom_Imaging_Mathematics_Vector3_1" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1" class="text-break">
+Class Vector3&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FellowOakDicom.html">FellowOakDicom</a>.<a class="xref" href="FellowOakDicom.Imaging.html">Imaging</a>.<a class="xref" href="FellowOakDicom.Imaging.Mathematics.html">Mathematics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>fo-dicom.core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Vector3&lt;T&gt; where T : INumber&lt;T&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Vector3&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FellowOakDicom.Tools.LinqExtensions.html#FellowOakDicom_Tools_LinqExtensions_IsOneOf__1___0___0___">LinqExtensions.IsOneOf&lt;T&gt;(T, params T[])</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1__ctor_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.#ctor*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1__ctor" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.#ctor">
+  Vector3()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1__ctor_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.#ctor*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1__ctor_FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.#ctor(FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  Vector3(Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3(Vector3&lt;T&gt; v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1__ctor_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.#ctor*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1__ctor__0__0__0_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.#ctor(`0,`0,`0)">
+  Vector3(T, T, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3(T x, T y, T z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>y</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>z</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1__ctor_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.#ctor*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1__ctor__0___" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.#ctor(`0[])">
+  Vector3(T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3(T[] v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> T[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1__ctor_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.#ctor*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1__ctor__0___System_Int32_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.#ctor(`0[],System.Int32)">
+  Vector3(T[], int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3(T[] v, int start)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> T[]</dt>
+    <dd></dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_AxisX" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.AxisX">
+  AxisX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector3&lt;T&gt; AxisX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_AxisY" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.AxisY">
+  AxisY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector3&lt;T&gt; AxisY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_AxisZ" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.AxisZ">
+  AxisZ
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector3&lt;T&gt; AxisZ</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Zero" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Zero">
+  Zero
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector3&lt;T&gt; Zero</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_IsZero_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.IsZero*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_IsZero" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.IsZero">
+  IsZero
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsZero { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_X_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.X*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_X" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.X">
+  X
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T X { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Y_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Y*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Y" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Y">
+  Y
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Y { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Z_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Z*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Z" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Z">
+  Z
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Z { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Clone_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Clone*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Clone" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Clone">
+  Clone()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3&lt;T&gt; Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_CrossProduct_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.CrossProduct*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_CrossProduct_FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.CrossProduct(FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  CrossProduct(Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3&lt;T&gt; CrossProduct(Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Distance_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Distance*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Distance_FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Distance(FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  Distance(Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Distance(Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_DotProduct_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.DotProduct*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_DotProduct_FellowOakDicom_Imaging_Mathematics_Point3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.DotProduct(FellowOakDicom.Imaging.Mathematics.Point3{`0})">
+  DotProduct(Point3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T DotProduct(Point3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_DotProduct_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.DotProduct*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_DotProduct_FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.DotProduct(FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  DotProduct(Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T DotProduct(Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Equals_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Equals*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Equals_System_Object_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_GetHashCode_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.GetHashCode*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_GetHashCode" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_IsPerpendicular_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.IsPerpendicular*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_IsPerpendicular_FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.IsPerpendicular(FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  IsPerpendicular(Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPerpendicular(Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Length_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Length*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Length" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Length">
+  Length()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Length()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Magnitude_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Magnitude*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Magnitude" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Magnitude">
+  Magnitude()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Magnitude()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Max_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Max*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Max_FellowOakDicom_Imaging_Mathematics_Vector3__0__FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Max(FellowOakDicom.Imaging.Mathematics.Vector3{`0},FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  Max(Vector3&lt;T&gt;, Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3&lt;T&gt; Max(Vector3&lt;T&gt; a, Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Min_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Min*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Min_FellowOakDicom_Imaging_Mathematics_Vector3__0__FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Min(FellowOakDicom.Imaging.Mathematics.Vector3{`0},FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  Min(Vector3&lt;T&gt;, Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3&lt;T&gt; Min(Vector3&lt;T&gt; a, Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_NearestAxis_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.NearestAxis*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_NearestAxis" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.NearestAxis">
+  NearestAxis()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3&lt;T&gt; NearestAxis()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Normalize_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Normalize*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Normalize" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Normalize">
+  Normalize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3&lt;T&gt; Normalize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Reflect_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Reflect*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Reflect_FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Reflect(FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  Reflect(Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3&lt;T&gt; Reflect(Vector3&lt;T&gt; normal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>normal</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Rotate_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Rotate*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_Rotate_FellowOakDicom_Imaging_Mathematics_Vector3__0___0_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.Rotate(FellowOakDicom.Imaging.Mathematics.Vector3{`0},`0)">
+  Rotate(Vector3&lt;T&gt;, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3&lt;T&gt; Rotate(Vector3&lt;T&gt; axis, T angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>axis</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>angle</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_ToArray_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.ToArray*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_ToArray" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.ToArray">
+  ToArray()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] ToArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_ToPoint_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.ToPoint*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_ToPoint" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.ToPoint">
+  ToPoint()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point3&lt;T&gt; ToPoint()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_ToString_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.ToString*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_ToString" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Addition_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Addition*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Addition_FellowOakDicom_Imaging_Mathematics_Vector3__0__FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Addition(FellowOakDicom.Imaging.Mathematics.Vector3{`0},FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  operator +(Vector3&lt;T&gt;, Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3&lt;T&gt; operator +(Vector3&lt;T&gt; a, Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Division_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Division*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Division_FellowOakDicom_Imaging_Mathematics_Vector3__0___0_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Division(FellowOakDicom.Imaging.Mathematics.Vector3{`0},`0)">
+  operator /(Vector3&lt;T&gt;, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3&lt;T&gt; operator /(Vector3&lt;T&gt; a, T b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Equality_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Equality*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Equality_FellowOakDicom_Imaging_Mathematics_Vector3__0__FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Equality(FellowOakDicom.Imaging.Mathematics.Vector3{`0},FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  operator ==(Vector3&lt;T&gt;, Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Vector3&lt;T&gt; a, Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_GreaterThan_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_GreaterThan*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_GreaterThan_FellowOakDicom_Imaging_Mathematics_Vector3__0__FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_GreaterThan(FellowOakDicom.Imaging.Mathematics.Vector3{`0},FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  operator &gt;(Vector3&lt;T&gt;, Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(Vector3&lt;T&gt; a, Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_GreaterThanOrEqual_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_GreaterThanOrEqual_FellowOakDicom_Imaging_Mathematics_Vector3__0__FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_GreaterThanOrEqual(FellowOakDicom.Imaging.Mathematics.Vector3{`0},FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  operator &gt;=(Vector3&lt;T&gt;, Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(Vector3&lt;T&gt; a, Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Inequality_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Inequality*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Inequality_FellowOakDicom_Imaging_Mathematics_Vector3__0__FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Inequality(FellowOakDicom.Imaging.Mathematics.Vector3{`0},FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  operator !=(Vector3&lt;T&gt;, Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Vector3&lt;T&gt; a, Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_LessThan_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_LessThan*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_LessThan_FellowOakDicom_Imaging_Mathematics_Vector3__0__FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_LessThan(FellowOakDicom.Imaging.Mathematics.Vector3{`0},FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  operator &lt;(Vector3&lt;T&gt;, Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(Vector3&lt;T&gt; a, Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_LessThanOrEqual_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_LessThanOrEqual*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_LessThanOrEqual_FellowOakDicom_Imaging_Mathematics_Vector3__0__FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_LessThanOrEqual(FellowOakDicom.Imaging.Mathematics.Vector3{`0},FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  operator &lt;=(Vector3&lt;T&gt;, Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(Vector3&lt;T&gt; a, Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Multiply_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Multiply*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Multiply_FellowOakDicom_Imaging_Mathematics_Vector3__0__FellowOakDicom_Imaging_Mathematics_Point3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Multiply(FellowOakDicom.Imaging.Mathematics.Vector3{`0},FellowOakDicom.Imaging.Mathematics.Point3{`0})">
+  operator *(Vector3&lt;T&gt;, Point3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T operator *(Vector3&lt;T&gt; a, Point3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Multiply_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Multiply*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Multiply_FellowOakDicom_Imaging_Mathematics_Vector3__0__FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Multiply(FellowOakDicom.Imaging.Mathematics.Vector3{`0},FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  operator *(Vector3&lt;T&gt;, Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T operator *(Vector3&lt;T&gt; a, Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Multiply_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Multiply*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Multiply_FellowOakDicom_Imaging_Mathematics_Vector3__0___0_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Multiply(FellowOakDicom.Imaging.Mathematics.Vector3{`0},`0)">
+  operator *(Vector3&lt;T&gt;, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3&lt;T&gt; operator *(Vector3&lt;T&gt; a, T b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Multiply_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Multiply*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Multiply__0_FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Multiply(`0,FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  operator *(T, Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3&lt;T&gt; operator *(T a, Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Subtraction_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Subtraction*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_Subtraction_FellowOakDicom_Imaging_Mathematics_Vector3__0__FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_Subtraction(FellowOakDicom.Imaging.Mathematics.Vector3{`0},FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  operator -(Vector3&lt;T&gt;, Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3&lt;T&gt; operator -(Vector3&lt;T&gt; a, Vector3&lt;T&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_UnaryNegation_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_UnaryNegation*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_UnaryNegation_FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_UnaryNegation(FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  operator -(Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3&lt;T&gt; operator -(Vector3&lt;T&gt; a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_UnaryPlus_" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_UnaryPlus*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_Mathematics_Vector3_1_op_UnaryPlus_FellowOakDicom_Imaging_Mathematics_Vector3__0__" data-uid="FellowOakDicom.Imaging.Mathematics.Vector3`1.op_UnaryPlus(FellowOakDicom.Imaging.Mathematics.Vector3{`0})">
+  operator +(Vector3&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Mathematics/Geometry3.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3&lt;T&gt; operator +(Vector3&lt;T&gt; a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (c) 2012-2026 fo-dicom contributors
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

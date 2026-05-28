@@ -162,8 +162,8 @@ Class Slice  <a class="header-action link-secondary" title="View source" href="h
 
   <a id="FellowOakDicom_Imaging_Reconstruction_Slice__ctor_" data-uid="FellowOakDicom.Imaging.Reconstruction.Slice.#ctor*"></a>
 
-  <h3 id="FellowOakDicom_Imaging_Reconstruction_Slice__ctor_FellowOakDicom_Imaging_Reconstruction_VolumeData_FellowOakDicom_Imaging_Mathematics_Point3D_FellowOakDicom_Imaging_Mathematics_Vector3D_FellowOakDicom_Imaging_Mathematics_Vector3D_System_Int32_System_Int32_System_Double_" data-uid="FellowOakDicom.Imaging.Reconstruction.Slice.#ctor(FellowOakDicom.Imaging.Reconstruction.VolumeData,FellowOakDicom.Imaging.Mathematics.Point3D,FellowOakDicom.Imaging.Mathematics.Vector3D,FellowOakDicom.Imaging.Mathematics.Vector3D,System.Int32,System.Int32,System.Double)">
-  Slice(VolumeData, Point3D, Vector3D, Vector3D, int, int, double)
+  <h3 id="FellowOakDicom_Imaging_Reconstruction_Slice__ctor_FellowOakDicom_Imaging_Reconstruction_VolumeData_FellowOakDicom_Imaging_Mathematics_Point3_System_Decimal__FellowOakDicom_Imaging_Mathematics_Vector3_System_Decimal__FellowOakDicom_Imaging_Mathematics_Vector3_System_Decimal__System_Int32_System_Int32_System_Decimal_" data-uid="FellowOakDicom.Imaging.Reconstruction.Slice.#ctor(FellowOakDicom.Imaging.Reconstruction.VolumeData,FellowOakDicom.Imaging.Mathematics.Point3{System.Decimal},FellowOakDicom.Imaging.Mathematics.Vector3{System.Decimal},FellowOakDicom.Imaging.Mathematics.Vector3{System.Decimal},System.Int32,System.Int32,System.Decimal)">
+  Slice(VolumeData, Point3&lt;decimal&gt;, Vector3&lt;decimal&gt;, Vector3&lt;decimal&gt;, int, int, decimal)
   <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/Reconstruction/Slice.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -171,24 +171,24 @@ Class Slice  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Slice(VolumeData volume, Point3D topLeft, Vector3D rowDir, Vector3D colDir, int rows, int cols, double spacing)</code></pre>
+    <pre><code class="lang-csharp hljs">public Slice(VolumeData volume, Point3&lt;decimal&gt; topLeft, Vector3&lt;decimal&gt; rowDir, Vector3&lt;decimal&gt; colDir, int rows, int cols, decimal spacing)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>volume</code> <a class="xref" href="FellowOakDicom.Imaging.Reconstruction.VolumeData.html">VolumeData</a></dt>
     <dd></dd>
-    <dt><code>topLeft</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a></dt>
+    <dt><code>topLeft</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
-    <dt><code>rowDir</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3D.html">Vector3D</a></dt>
+    <dt><code>rowDir</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
-    <dt><code>colDir</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3D.html">Vector3D</a></dt>
+    <dt><code>colDir</code> <a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
     <dt><code>rows</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
     <dt><code>cols</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
-    <dt><code>spacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dt><code>spacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
     <dd></dd>
   </dl>
 
@@ -218,7 +218,7 @@ Class Slice  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3D ColumnDirection { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3&lt;decimal&gt; ColumnDirection { get; }</code></pre>
   </div>
 
 
@@ -227,7 +227,7 @@ Class Slice  <a class="header-action link-secondary" title="View source" href="h
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3D.html">Vector3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -280,7 +280,7 @@ Class Slice  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3D RowDirection { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3&lt;decimal&gt; RowDirection { get; }</code></pre>
   </div>
 
 
@@ -289,7 +289,7 @@ Class Slice  <a class="header-action link-secondary" title="View source" href="h
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3D.html">Vector3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Vector3-1.html">Vector3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -342,7 +342,7 @@ Class Slice  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Spacing { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public decimal Spacing { get; }</code></pre>
   </div>
 
 
@@ -351,7 +351,7 @@ Class Slice  <a class="header-action link-secondary" title="View source" href="h
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
     <dd></dd>
   </dl>
 
@@ -373,7 +373,7 @@ Class Slice  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Point3D TopLeft { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Point3&lt;decimal&gt; TopLeft { get; }</code></pre>
   </div>
 
 
@@ -382,7 +382,7 @@ Class Slice  <a class="header-action link-secondary" title="View source" href="h
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3D.html">Point3D</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Point3-1.html">Point3</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -408,13 +408,13 @@ Class Slice  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IntervalD GetMinMaxValue()</code></pre>
+    <pre><code class="lang-csharp hljs">public Interval&lt;double&gt; GetMinMaxValue()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.IntervalD.html">IntervalD</a></dt>
+    <dt><a class="xref" href="FellowOakDicom.Imaging.Mathematics.Interval-1.html">Interval</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
     <dd></dd>
   </dl>
 
