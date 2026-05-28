@@ -842,20 +842,21 @@ or color-by-pixel.</p>
 
 
 
-  <a id="FellowOakDicom_Imaging_DicomPixelData_Create_" data-uid="FellowOakDicom.Imaging.DicomPixelData.Create*"></a>
+  <a id="FellowOakDicom_Imaging_DicomPixelData_CreateFromDataset_" data-uid="FellowOakDicom.Imaging.DicomPixelData.CreateFromDataset*"></a>
 
-  <h3 id="FellowOakDicom_Imaging_DicomPixelData_Create_FellowOakDicom_DicomDataset_System_Boolean_" data-uid="FellowOakDicom.Imaging.DicomPixelData.Create(FellowOakDicom.DicomDataset,System.Boolean)">
-  Create(DicomDataset, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomPixelData.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  <h3 id="FellowOakDicom_Imaging_DicomPixelData_CreateFromDataset_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.Imaging.DicomPixelData.CreateFromDataset(FellowOakDicom.DicomDataset)">
+  CreateFromDataset(DicomDataset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomPixelData.cs/#L331"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>A factory method to initialize new instance of <a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData</a> implementation either
-<a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData.OtherWordPixelData</a>, <a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData.OtherBytePixelData</a>, or <a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData.EncapsulatedPixelData</a></p>
+  <div class="markdown level1 summary"><p>A factory method to initialize new instance of <a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData</a> to read <a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData</a>
+from <code class="paramref">dataset</code>, implementation either <a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData.OtherWordPixelData</a>,
+<a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData.OtherBytePixelData</a>, or <a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData.EncapsulatedPixelData</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DicomPixelData Create(DicomDataset dataset, bool newPixelData = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DicomPixelData CreateFromDataset(DicomDataset dataset)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -863,10 +864,46 @@ or color-by-pixel.</p>
     <dt><code>dataset</code> <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></dt>
     <dd><p>Source DICOM Dataset</p>
 </dd>
-    <dt><code>newPixelData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>true if new <a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData</a>will be created for current dataset,
-false to read <a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData</a> from <code class="paramref">dataset</code>.
-Default is false (read)</p>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData</a></dt>
+    <dd><p>New instance of DicomPixelData</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FellowOakDicom_Imaging_DicomPixelData_CreateNew_" data-uid="FellowOakDicom.Imaging.DicomPixelData.CreateNew*"></a>
+
+  <h3 id="FellowOakDicom_Imaging_DicomPixelData_CreateNew_FellowOakDicom_DicomDataset_" data-uid="FellowOakDicom.Imaging.DicomPixelData.CreateNew(FellowOakDicom.DicomDataset)">
+  CreateNew(DicomDataset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fo-dicom/fo-dicom/blob/development/FO-DICOM.Core/Imaging/DicomPixelData.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A factory method to create new instance of <a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData</a> and add it to the <code class="paramref">dataset</code>,
+implementation either <a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData.OtherWordPixelData</a>, <a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData.OtherBytePixelData</a>, or
+<a class="xref" href="FellowOakDicom.Imaging.DicomPixelData.html">DicomPixelData.EncapsulatedPixelData</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DicomPixelData CreateNew(DicomDataset dataset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dataset</code> <a class="xref" href="FellowOakDicom.DicomDataset.html">DicomDataset</a></dt>
+    <dd><p>Source DICOM Dataset</p>
 </dd>
   </dl>
 
