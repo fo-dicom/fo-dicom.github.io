@@ -97,6 +97,7 @@
 <li>new encapsulated pixeldata is now always stored correctly as OB (#2117)</li>
 <li>breaking change: DicomPixelData.Create(dataset, bool) is split up to DicomPixelData.CreateNew(dataset) and DicomPixelData.CreateFromDataset(dataset)</li>
 <li>remove IEquatable<dicomdataset> from DicomDataset, because this prevents the overloaded Equals methods from being invoked (#2119)</dicomdataset></li>
+<li>Release resource and semaphore if creating a SCP failes (#2116)</li>
 </ul>
 <h3 id="526-2026-03-30">5.2.6 (2026-03-30)</h3>
 <ul>
