@@ -94,7 +94,7 @@
 <pre><code>T As&lt;T&gt;();
 </code></pre>
 <p>which allows you to cast the <code>IImage</code> object to the real image type on whatever platform you are targeting!</p>
-<p>Which <code>IImage</code> implementation to use is determined in the <code>ImageManager</code> class (compare with <code>LogManager</code> and <code>TranscoderManager</code>). In core library <em>RawImage</em> based imaging is selected by default. To select an other imaging, call:</p>
+<p>Which <code>IImage</code> implementation to use is determined in the <code>ImageManager</code> class (compare with <code>TranscoderManager</code>). In core library <em>RawImage</em> based imaging is selected by default. To select an other imaging, call:</p>
 <pre><code>new DicomSetupBuilder()
     .RegisterServices(s =&gt; s.AddImageManager&lt;ImageSharpImageManager&gt;())
     .Build();

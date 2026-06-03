@@ -4287,34 +4287,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Log.ExtensionsForLogLevel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Log.ExtensionsForLogLevel.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.Log.ExtensionsForLogLevel",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Log.FellowOakDicomLogger.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Log.FellowOakDicomLogger.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.Log.FellowOakDicomLogger",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "obj/api/FellowOakDicom.Log.HexWriter.yml",
       "output": {
         ".html": {
@@ -4325,48 +4297,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "FellowOakDicom.Log.HexWriter",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Log.ILogManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Log.ILogManager.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.Log.ILogManager",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Log.ILogger-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Log.ILogger-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.Log.ILogger<T>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Log.ILogger.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Log.ILogger.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.Log.ILogger",
       "Summary": null
     },
     {
@@ -4382,48 +4312,6 @@
       "IsMRef": true,
       "Title": "FellowOakDicom.Log.LogCategories",
       "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Log.LogCategories.yml\" sourcestartlinenumber=\"1\">Exposes the various logging categories that are used</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Log.LogLevel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Log.LogLevel.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.Log.LogLevel",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Log.LogManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Log.LogManager.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.Log.LogManager",
-      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Log.LogManager.yml\" sourcestartlinenumber=\"1\">Main class for logging management.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Log.Logger.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Log.Logger.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.Log.Logger",
-      "Summary": "<p sourcefile=\"obj/api/FellowOakDicom.Log.Logger.yml\" sourcestartlinenumber=\"1\">Abstract base class for loggers.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -7437,20 +7325,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/FellowOakDicom.Serialization.DicomArrayJsonConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FellowOakDicom.Serialization.DicomArrayJsonConverter.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "FellowOakDicom.Serialization.DicomArrayJsonConverter",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "obj/api/FellowOakDicom.Serialization.DicomJson.yml",
       "output": {
         ".html": {
@@ -8024,16 +7898,6 @@
       "output": {
         ".html": {
           "relative_path": "usage/upgrade4to5.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "usage/usage.md",
-      "output": {
-        ".html": {
-          "relative_path": "usage/usage.html"
         }
       },
       "version": ""
