@@ -89,6 +89,7 @@
 <h3 id="600-alpha1-tbd">6.0.0-alpha1 (TBD)</h3>
 <ul>
 <li>breaking change: remove obsolete classes and methods (#2124)</li>
+<li>Observe per-connection RunningDicomService task exception in DicomServer to prevent UnobservedTaskException leaks on malformed PDUs (#2149)</li>
 <li>Fix RawPDU.ToString throwing FormatException on .NET 8+ (Enum.TryFormat now rejects multi-character format specs like <code>X2</code>) by casting the enum to its underlying byte (#2147)</li>
 <li>Add depth guard to DicomReader to prevent unbounded SQ recursion (#2114)</li>
 <li>breaking change: update targetframeworks to net8, net9 and net10, netstandard2.0 is dropped</li>
